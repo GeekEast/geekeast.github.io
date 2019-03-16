@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="n6Y_FmNt0m-wUrpqzi4bnOH_dap6ns4L_afwT_535mo">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/developer.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/developer16.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":5},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+
+  
+
+
+
+
+  <meta name="description" content="Introduction Install Node.js Run Node.js Node Module System NPM">
+<meta name="keywords" content="Frontend,Nodejs,Restful API">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js 构建RESTful API">
+<meta property="og:url" content="https://geekeast.github.io/nodejs.html">
+<meta property="og:site_name" content="雪中印">
+<meta property="og:description" content="Introduction Install Node.js Run Node.js Node Module System NPM">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-14T07:51:56.455Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Node.js 构建RESTful API">
+<meta name="twitter:description" content="Introduction Install Node.js Run Node.js Node Module System NPM">
+
+
+
+
+
+
+  <link rel="canonical" href="https://geekeast.github.io/nodejs.html">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Node.js 构建RESTful API | 雪中印</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">雪中印</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">心底清静方为道 退步原来是向前</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">17</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">8</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">28</span></a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/nodejs.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Node.js 构建RESTful API
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-12 15:52:57" itemprop="dateCreated datePublished" datetime="2019-03-12T15:52:57+10:30">2019-03-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Web-Development/" itemprop="url" rel="index"><span itemprop="name">Web Development</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon" title="Views">
+            <i class="fa fa-eye"></i>
+            
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">12k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">9 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <ul>
+<li>Introduction</li>
+<li>Install Node.js</li>
+<li>Run Node.js</li>
+<li>Node Module System</li>
+<li>NPM</li>
+</ul>
+<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>
+<p>[toc]</p>
+<hr>
+<h2 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h2>
+<h3 id="what-is-nodejs"><a class="markdownIt-Anchor" href="#what-is-nodejs"></a> What is <code>Node.js</code>?</h3>
+<blockquote>
+<p>Running Environemnt for <code>Javascript</code> outside browsers, often used for create backend services - <code>API</code>. Node is ideal for building highly-scalable, data-insentive and real-time apps.</p>
+</blockquote>
+<ul>
+<li>Easy to develop</li>
+<li>Can be used for prototyping and agile development</li>
+<li>Can be used in industry for large projects like Uber, Paypal, Netflix and Walmart.</li>
+<li>Friendly for javascript programmers</li>
+<li>Big community to support, libs</li>
+<li>I have alreay install node <code>yarn</code></li>
+</ul>
+<h3 id="where-is-node-from"><a class="markdownIt-Anchor" href="#where-is-node-from"></a> Where is <code>Node</code> from?</h3>
+<ul>
+<li>extract the javascript engine from Chrome called <code>v8</code></li>
+<li>integrate the <code>v8</code> with additional modules</li>
+</ul>
+<h3 id="asynchronous-in-nodejs"><a class="markdownIt-Anchor" href="#asynchronous-in-nodejs"></a> Asynchronous in Node.js</h3>
+<ul>
+<li>Synchronous by default in <span class="exturl" data-url="aHR0cDovL0FTUC5uZXQ=" title="http://ASP.net">ASP.net<i class="fa fa-external-link"></i></span></li>
+<li>Asynchronous by default in nodejs</li>
+<li>异步机制：使用<code>Event Queue</code>,频繁检查，执行任务</li>
+</ul>
+<h3 id="what-is-nodejs-used-for"><a class="markdownIt-Anchor" href="#what-is-nodejs-used-for"></a> What is Node.js used for?</h3>
+<ul>
+<li>Node is ideal for I/O Intensive Applications.</li>
+<li>Node is not ideal for CPU Intensive Applications like <code>video encoding</code> and <code>image processing</code> applications.</li>
+</ul>
+<hr>
+<h2 id="install-nodejs"><a class="markdownIt-Anchor" href="#install-nodejs"></a> Install Node.js</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 也可以下载mac安装包</span></span><br><span class="line">brew install node</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看版本</span></span><br><span class="line">node --version</span><br></pre></td></tr></table></figure>
+<h2 id="run-nodejs"><a class="markdownIt-Anchor" href="#run-nodejs"></a> Run Node.js</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cd workspace</span><br><span class="line">mkdir newApp</span><br><span class="line">cd newApp</span><br><span class="line">code . # use VS code</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> create js file and run</span></span><br><span class="line">node app.js # for example</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Code Example</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hello = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'hello world'</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">hello(); <span class="comment">// vscode execute through node automatically</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>) <span class="comment">// error</span></span><br><span class="line"><span class="comment">// no window in node, that's for browser.</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="node-module-system"><a class="markdownIt-Anchor" href="#node-module-system"></a> Node Module System</h2>
+<h3 id="global-object"><a class="markdownIt-Anchor" href="#global-object"></a> Global object</h3>
+<blockquote>
+<p>object that we can access everywhere, there is an object called <code>global</code>.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">global.console.log(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">global.setTimeout();</span><br><span class="line">global.clearTimeout();</span><br><span class="line"></span><br><span class="line">global.setInterval();</span><br><span class="line">global.clearInterval();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>But in browser, the <code>global</code> obejct is the <code>window</code> object.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.console.log(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">window</span>.setTimeout();</span><br><span class="line"><span class="built_in">window</span>.clearTimeout();</span><br><span class="line"></span><br><span class="line"><span class="built_in">window</span>.setInterval();</span><br><span class="line"><span class="built_in">window</span>.clearInterval();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>And we can just simplify it in whichever env.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">setTimeout();</span><br><span class="line">clearTimeout();</span><br><span class="line"></span><br><span class="line">setInterval();</span><br><span class="line">clearInterval();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>But if you design your own obejct, it doesn’t belongs to <code>global</code> obejct. <code>node different global and local</code></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> message = <span class="string">"hello"</span>;</span><br><span class="line"><span class="built_in">console</span>.log(global.message);<span class="comment">// undefinded error</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>However it belongs to <code>window</code> if you use the browser rather than node. <code>window literally eat all food all things belong to window.</code></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> message = <span class="string">'hello'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.message);</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="insights-why-we-need-to-use-module"><a class="markdownIt-Anchor" href="#insights-why-we-need-to-use-module"></a> Insights: Why we need to use Module?</h3>
+<ul>
+<li>Node is better. Browser is worse.</li>
+<li>Two js run in browser, with two variables or methods of the same name, the later one will override the previous one.</li>
+<li>
+<blockquote>
+<p>Therefore, we use module to <code>localize</code> variables to avoid <code>collapse</code>.</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><strong>在浏览器中，所有变量和方法都属于window</strong><br>
+<strong>在Node中，如非特别定义，所有变量和方法都属于自己所在的文件，而不属于global</strong></p>
+</blockquote>
+<hr>
+<h3 id="module-import-and-export"><a class="markdownIt-Anchor" href="#module-import-and-export"></a> Module Import and Export</h3>
+<ul>
+<li>Module like <strong><code>private</code></strong> in Java</li>
+<li>Export <strong><code>module.exports.log = log</code></strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ./logger.js</span></span><br><span class="line"><span class="keyword">var</span> url = <span class="string">"http://www.example.com/login"</span>;</span><br><span class="line">log = <span class="function">(<span class="params">m</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(m)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// export the log function as log.</span></span><br><span class="line"><span class="string">`module.exports.log = log;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">// export single function </span></span><br><span class="line"><span class="string">module.exports = log;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">// Or</span></span><br><span class="line"><span class="string">moduel.exports = &#123;</span></span><br><span class="line"><span class="string">    log: log,</span></span><br><span class="line"><span class="string">    url: url</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Import <strong><code>const {log, url} = require('./logger')</code></strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Way One</span></span><br><span class="line"><span class="keyword">const</span> logger = <span class="built_in">require</span>(<span class="string">'./logger'</span>) <span class="comment">// const is better</span></span><br><span class="line"><span class="comment">// execute the log method</span></span><br><span class="line">logger.log();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Way Two - better, more lightweight</span></span><br><span class="line"><span class="keyword">const</span> &#123;log, url&#125; = <span class="built_in">require</span>(<span class="string">'./logger'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// If it is a single function</span></span><br><span class="line"><span class="comment">// module.exports = log;</span></span><br><span class="line"><span class="keyword">const</span> log = <span class="built_in">require</span>(<span class="string">'./logger'</span>);</span><br><span class="line">log(<span class="string">"hello"</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>'./logger'</code> vs <code>'logger'</code>
+<ul>
+<li><code>'./logger'</code>: Current Ddirectory</li>
+<li><code>'logger'</code>:
+<ul>
+<li>
+<ol>
+<li>Built in</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Current Directory</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>in node_modules</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="node-wrapper"><a class="markdownIt-Anchor" href="#node-wrapper"></a> Node Wrapper</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params">exports, require, module, __filename, __dirname</span>) </span>&#123; </span><br><span class="line">   <span class="comment">// file code</span></span><br><span class="line">   <span class="built_in">console</span>.log(exports);</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">require</span>);</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">module</span>);</span><br><span class="line">   <span class="built_in">console</span>.log(__filename);</span><br><span class="line">   <span class="built_in">console</span>.log(__dirname);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="node-modules-api"><a class="markdownIt-Anchor" href="#node-modules-api"></a> Node Modules API</h3>
+<p><span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Rpc3QvbGF0ZXN0LXYxMC54L2RvY3MvYXBpLw==" title="https://nodejs.org/dist/latest-v10.x/docs/api/">Docs<i class="fa fa-external-link"></i></span></p>
+<ul>
+<li>File System</li>
+<li>HTTP</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">const</span> server = http.createServer();</span><br><span class="line"></span><br><span class="line"><span class="comment">// action after connection event</span></span><br><span class="line">server.on(<span class="string">'connection'</span>,(<span class="function"><span class="params">s</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">"new connection."</span>))); <span class="comment">// very low level</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// port 3003</span></span><br><span class="line">server.listen(<span class="number">3003</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Listening on port 3000...'</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = http.createServer(</span><br><span class="line">    (req,res) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (req.url === <span class="string">'/'</span>)&#123;</span><br><span class="line">            res.write(<span class="string">"hello world"</span>);</span><br><span class="line">            res.end();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (req.url === <span class="string">'/api'</span>) &#123;</span><br><span class="line">            res.write(<span class="built_in">JSON</span>.stringify(&#123;</span><br><span class="line">                <span class="string">"1"</span>:<span class="number">2</span></span><br><span class="line">            &#125;));</span><br><span class="line">            res.end();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">);</span><br><span class="line"><span class="comment">// port 3003</span></span><br><span class="line">server.listen(<span class="number">3003</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Listening on port 3003...'</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>OS</li>
+<li>Path</li>
+<li>Process</li>
+<li>Query Strings</li>
+<li>Stream</li>
+</ul>
+<h2 id="npm"><a class="markdownIt-Anchor" href="#npm"></a> NPM</h2>
+<h3 id="create-npm-project"><a class="markdownIt-Anchor" href="#create-npm-project"></a> Create NPM Project</h3>
+<h4 id="switch-version-of-npm"><a class="markdownIt-Anchor" href="#switch-version-of-npm"></a> Switch Version of npm</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm i -g npm@5.5.1</span><br></pre></td></tr></table></figure>
+<h4 id="create-packagejson-file"><a class="markdownIt-Anchor" href="#create-packagejson-file"></a> Create <code>package.json</code> file</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br><span class="line"><span class="meta">#</span><span class="bash"> default settings</span></span><br><span class="line">npm init --yes</span><br></pre></td></tr></table></figure>
+<h4 id="install-node-package"><a class="markdownIt-Anchor" href="#install-node-package"></a> Install Node Package</h4>
+<ul>
+<li>package is installed in <code>node_modules</code></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install underscore</span><br><span class="line"><span class="meta">#</span><span class="bash"> shorter</span></span><br><span class="line">npm i underscore</span><br><span class="line"><span class="meta">#</span><span class="bash"> you don<span class="string">'t have to add --save anyore</span></span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>A better way <strong><code>yarn</code></strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yarn add underscore</span><br><span class="line">yarn remove underscore</span><br></pre></td></tr></table></figure>
+<ul>
+<li>install all package in <code>package.json</code></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn</span><br><span class="line"><span class="meta">#</span><span class="bash"> or</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
+<h4 id="git-ignore-packages-to-push"><a class="markdownIt-Anchor" href="#git-ignore-packages-to-push"></a> Git Ignore Packages to Push</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">touch .gitignore</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># inside .gitignore</span></span></span><br><span class="line">node_modules/</span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m "..."</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<h4 id="underscorejs"><a class="markdownIt-Anchor" href="#underscorejs"></a> Underscore.js</h4>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">'underscore'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(_.contains([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<h4 id="semantic-versioning"><a class="markdownIt-Anchor" href="#semantic-versioning"></a> Semantic Versioning</h4>
+<ul>
+<li>
+<p>4.13.6</p>
+<ul>
+<li>(Patch) 6: bugs fixing version</li>
+<li>(Minor) 13: new features version without breaking exsiting API</li>
+<li>(Main) 4: new features version with breaking existing application</li>
+</ul>
+</li>
+<li>
+<p>exact version : <code>4.13.6</code></p>
+</li>
+<li>
+<p>stable Major and Minor: <code>~4.13.6</code></p>
+</li>
+<li>
+<p>stable Major: <code>^4.13.6</code></p>
+</li>
+</ul>
+<h4 id="inspect-installed-versions"><a class="markdownIt-Anchor" href="#inspect-installed-versions"></a> Inspect installed versions</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yarn list</span><br><span class="line">yarn list --depth=0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 效果是不一样的</span></span><br><span class="line">npm list</span><br><span class="line">npm list --depth=0</span><br></pre></td></tr></table></figure>
+<h4 id="view-packages"><a class="markdownIt-Anchor" href="#view-packages"></a> View Packages</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm view mongoose</span><br><span class="line">npm view mongoose dependencies</span><br></pre></td></tr></table></figure>
+<h4 id="update-outdated-packages"><a class="markdownIt-Anchor" href="#update-outdated-packages"></a> Update outdated packages</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm outdated</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> this will only update minor and patch update</span></span><br><span class="line">npm update</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> update <span class="keyword">for</span> major update</span></span><br><span class="line">sudo npm i -g npm-check-updates</span><br><span class="line">ncu -u # to upgrade the json file</span><br><span class="line">yarn # execute the update</span><br></pre></td></tr></table></figure>
+<h4 id="install-packages-only-for-dev"><a class="markdownIt-Anchor" href="#install-packages-only-for-dev"></a> Install Packages only for Dev</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i jshint --save-dev</span><br></pre></td></tr></table></figure>
+<h4 id="uninstall-packages"><a class="markdownIt-Anchor" href="#uninstall-packages"></a> Uninstall Packages</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm un mongoose</span><br><span class="line"><span class="meta">#</span><span class="bash"> or</span></span><br><span class="line">yarn remove mongoose</span><br></pre></td></tr></table></figure>
+<h3 id="global-packages"><a class="markdownIt-Anchor" href="#global-packages"></a> Global Packages</h3>
+<ul>
+<li>Global: can be used under any folders</li>
+<li>Local: can only be used withon on folder</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> update the npm to the latest version</span></span><br><span class="line">sudo npm i -g npm</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> to see all outdated global packages</span></span><br><span class="line">npm -g outdated</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> uninstall global packages</span></span><br><span class="line">npm un -g npm</span><br></pre></td></tr></table></figure>
+<h3 id="npm-registry"><a class="markdownIt-Anchor" href="#npm-registry"></a> NPM Registry</h3>
+<h4 id="publish-your-own-package-to-npm-registry"><a class="markdownIt-Anchor" href="#publish-your-own-package-to-npm-registry"></a> Publish Your Own Package to NPM Registry</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> prepare the project</span></span><br><span class="line">mkdir lion-lib</span><br><span class="line">cd lion-lib/</span><br><span class="line">npm init --yes</span><br><span class="line">touch index.js</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// index.js</span></span><br><span class="line"><span class="built_in">module</span>.exports.url = <span class="string">"asdadsad"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> register <span class="keyword">for</span> registry</span></span><br><span class="line">npm adduser</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> login</span></span><br><span class="line">npm login</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> make sure your package name is unique <span class="keyword">in</span> the pacakge.json file and the push to the registry</span></span><br><span class="line">npm publish</span><br></pre></td></tr></table></figure>
+<h4 id="updating-your-published-packages"><a class="markdownIt-Anchor" href="#updating-your-published-packages"></a> Updating your Published Packages</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> first you have to update the versio number</span></span><br><span class="line">npm version major</span><br><span class="line">npm version minor</span><br><span class="line">npn version patch</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="keyword">then</span> publish to the registry</span></span><br><span class="line">npm publish</span><br></pre></td></tr></table></figure>
+<h2 id="restful-service"><a class="markdownIt-Anchor" href="#restful-service"></a> RESTful Service</h2>
+<h3 id="rest-definition"><a class="markdownIt-Anchor" href="#rest-definition"></a> REST Definition</h3>
+<blockquote>
+<p>REST: Representational State Transfer<br>
+It’s a <code>convention</code> for building these HTTP serivces.</p>
+</blockquote>
+<h3 id="http-protocol"><a class="markdownIt-Anchor" href="#http-protocol"></a> HTTP Protocol</h3>
+<table>
+    <tr>
+        <td bgcolor="blue">
+            <center>
+                <font color="orange" size="5">
+                    Http://vidly.com/api/customers/1
+                </font>
+            </center>
+        </td>
+    </tr>
+</table>
+<ul>
+<li><code>Http</code>: Protocol</li>
+<li><code>vidly.com</code>: Domain</li>
+<li><code>api</code>: Path</li>
+<li><code>customers</code>: Resource</li>
+<li><code>1</code>: Resource Unique Identifier</li>
+</ul>
+<h3 id="http-methods"><a class="markdownIt-Anchor" href="#http-methods"></a> HTTP Methods</h3>
+<ul>
+<li>GET: retrive resources</li>
+<li>POST: upload resources</li>
+<li>PUT: update global resources</li>
+<li>PATCH: update local resources</li>
+<li>DELETE: delete resources</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET /api/customers</span><br><span class="line">GET /api/customers/<span class="number">1</span></span><br><span class="line">PUT /api/customers/<span class="number">1</span></span><br><span class="line">DELETE /api/customers/<span class="number">1</span></span><br><span class="line">POST /api/customers</span><br></pre></td></tr></table></figure>
+<h2 id="node-monitor"><a class="markdownIt-Anchor" href="#node-monitor"></a> Node Monitor</h2>
+<blockquote>
+<p>Reload the Node Automatically when changes apply.</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo npm i -g nodemon</span><br><span class="line"><span class="meta">#</span><span class="bash"> instead of node app.js</span></span><br><span class="line">nodemon app.js</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在配置vscode code runner为nodemon之后，nodemon失效</li>
+<li>shell中<code>nodemon app.js</code>, nodemon不会失效.</li>
+<li>推荐使用shell的方式</li>
+</ul>
+<h2 id="express-framework"><a class="markdownIt-Anchor" href="#express-framework"></a> Express framework</h2>
+<h3 id="get-to-know-express"><a class="markdownIt-Anchor" href="#get-to-know-express"></a> Get to know express</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> inspect it <span class="keyword">in</span> shell</span></span><br><span class="line">npm view express</span><br><span class="line"><span class="meta">#</span><span class="bash"> get the official website</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> http://expressjs.com/</span></span><br></pre></td></tr></table></figure>
+<h3 id="install-express"><a class="markdownIt-Anchor" href="#install-express"></a> Install Express</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add express</span><br></pre></td></tr></table></figure>
+<h3 id="hello-world"><a class="markdownIt-Anchor" href="#hello-world"></a> Hello World</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Import express and initialize an app</span></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line"><span class="keyword">var</span> port = process.env.PORT || <span class="number">3000</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Set routes</span></span><br><span class="line">app.get(<span class="string">'/'</span>,(req, res) =&gt; &#123;</span><br><span class="line">  res.send(<span class="string">"Hello World"</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// start listen</span></span><br><span class="line">app.listen(port);</span><br></pre></td></tr></table></figure>
+<h3 id="basic-routes"><a class="markdownIt-Anchor" href="#basic-routes"></a> <span class="exturl" data-url="aHR0cHM6Ly9leHByZXNzanMuY29tL3poLWNuL2d1aWRlL3JvdXRpbmcuaHRtbA==" title="https://expressjs.com/zh-cn/guide/routing.html">Basic Routes<i class="fa fa-external-link"></i></span></h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.METHOD(URL,CALLBACK_FUNC)</span><br></pre></td></tr></table></figure>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy5leHByZXNzanMuY29tLmNuLzR4L2FwaS5odG1sI3JlcQ==" title="http://www.expressjs.com.cn/4x/api.html#req"><code>Req Method</code><i class="fa fa-external-link"></i></span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Method</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">req.get()</td>
+<td style="text-align:left">获取header中某属性的值</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="exturl" data-url="aHR0cDovL3JlcS5pcw==" title="http://req.is">req.is<i class="fa fa-external-link"></i></span>()</td>
+<td style="text-align:left">判别Content-Type</td>
+</tr>
+</tbody>
+</table>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy5leHByZXNzanMuY29tLmNuLzR4L2FwaS5odG1sI3JlcQ==" title="http://www.expressjs.com.cn/4x/api.html#req"><code>Req Properties</code><i class="fa fa-external-link"></i></span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">req.body</td>
+<td style="text-align:left">键值对数据</td>
+</tr>
+<tr>
+<td style="text-align:left">req.cookies</td>
+<td style="text-align:left">获取cookies</td>
+</tr>
+<tr>
+<td style="text-align:left">req.hostname</td>
+<td style="text-align:left">获取域名</td>
+</tr>
+<tr>
+<td style="text-align:left">req.ip</td>
+<td style="text-align:left">获取ip</td>
+</tr>
+<tr>
+<td style="text-align:left">req.method</td>
+<td style="text-align:left">获取方法</td>
+</tr>
+<tr>
+<td style="text-align:left">req.originalUrl</td>
+<td style="text-align:left">完整url</td>
+</tr>
+<tr>
+<td style="text-align:left">req.baseUrl</td>
+<td style="text-align:left">路由插入的路径</td>
+</tr>
+<tr>
+<td style="text-align:left">req.path</td>
+<td style="text-align:left">细节路径</td>
+</tr>
+<tr>
+<td style="text-align:left">req.params</td>
+<td style="text-align:left">存储参数化数据</td>
+</tr>
+<tr>
+<td style="text-align:left">req.protocol</td>
+<td style="text-align:left">http/https</td>
+</tr>
+<tr>
+<td style="text-align:left">req.query</td>
+<td style="text-align:left">获取url中?间所夹参数</td>
+</tr>
+</tbody>
+</table>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy5leHByZXNzanMuY29tLmNuLzR4L2FwaS5odG1sI3Jlcw==" title="http://www.expressjs.com.cn/4x/api.html#res"><code>Res Method</code><i class="fa fa-external-link"></i></span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Method</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">res.download()</td>
+<td style="text-align:left">提示将要下载文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">res.end()</td>
+<td style="text-align:left">结束响应进程。</td>
+</tr>
+<tr>
+<td style="text-align:left">res.json()</td>
+<td style="text-align:left">发送 JSON 响应。</td>
+</tr>
+<tr>
+<td style="text-align:left">res.jsonp()</td>
+<td style="text-align:left">在 JSONP 的支持下发送 JSON 响应。</td>
+</tr>
+<tr>
+<td style="text-align:left">res.redirect()</td>
+<td style="text-align:left">重定向请求。</td>
+</tr>
+<tr>
+<td style="text-align:left">res.render()</td>
+<td style="text-align:left">呈现视图模板。</td>
+</tr>
+<tr>
+<td style="text-align:left">res.send()</td>
+<td style="text-align:left">发送各种类型的响应。</td>
+</tr>
+<tr>
+<td style="text-align:left">res.sendFile</td>
+<td style="text-align:left">以八位元流形式发送文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">res.sendStatus()</td>
+<td style="text-align:left">设置响应状态码并以响应主体形式发送其字符串表示。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="middleware-routes"><a class="markdownIt-Anchor" href="#middleware-routes"></a> <span class="exturl" data-url="aHR0cHM6Ly9leHByZXNzanMuY29tL2VuL2d1aWRlL3JvdXRpbmcuaHRtbA==" title="https://expressjs.com/en/guide/routing.html">Middleware Routes<i class="fa fa-external-link"></i></span></h3>
+<p><code>统一请求中间件：适合做User Authentication</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Import express and initialize an app</span></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line"><span class="keyword">var</span> port = process.env.PORT || <span class="number">3000</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Set routes</span></span><br><span class="line">app.all(<span class="string">'/'</span>, (req,res,next) =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'authentication'</span>);</span><br><span class="line">  next();</span><br><span class="line">&#125;);</span><br><span class="line">app.get(<span class="string">'/'</span>,(req, res) =&gt; &#123;</span><br><span class="line">  res.send(<span class="string">"How are you?"</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// start listen</span></span><br><span class="line">app.listen(port);</span><br></pre></td></tr></table></figure>
+<p><code>单一路径多个回调</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// configure express</span></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line"><span class="keyword">var</span> port = process.env.PORT || <span class="number">3000</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// routes</span></span><br><span class="line">app.route(<span class="string">"/"</span>).get(<span class="function">(<span class="params">req,res</span>)=&gt;</span> &#123;</span><br><span class="line">    res.send(<span class="string">"get test"</span>);</span><br><span class="line">&#125;).post(<span class="function">(<span class="params">req,res</span>)=&gt;</span> &#123;</span><br><span class="line">    res.send(<span class="string">"post test"</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// listen</span></span><br><span class="line">app.listen(port);</span><br></pre></td></tr></table></figure>
+<p><code>express.Router</code></p>
+<blockquote>
+<p>Use the express.Router class to create <strong>modular</strong>, <strong>mountable</strong> route handlers. A Router instance is a complete <strong>middleware</strong> and <strong>routing</strong> <strong>system</strong>; for this reason, it is often referred to as a “mini-app”.</p>
+</blockquote>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy5leHByZXNzanMuY29tLmNuLzR4L2FwaS5odG1sI3JvdXRlci5hbGw=" title="http://www.expressjs.com.cn/4x/api.html#router.all"><code>Router Method</code><i class="fa fa-external-link"></i></span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Method</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">router.all()</td>
+<td style="text-align:left">匹配所有http请求，无中间件</td>
+</tr>
+<tr>
+<td style="text-align:left">router.get()</td>
+<td style="text-align:left">匹配GET请求</td>
+</tr>
+<tr>
+<td style="text-align:left">router.param()</td>
+<td style="text-align:left">匹配特定参数</td>
+</tr>
+<tr>
+<td style="text-align:left">router.route()</td>
+<td style="text-align:left">单一路径匹配多个回调</td>
+</tr>
+<tr>
+<td style="text-align:left">router.use()</td>
+<td style="text-align:left">匹配所有http请求, 添加中间件</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bird.js</span></span><br><span class="line"><span class="comment">// Import express and initialize an app</span></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line"><span class="keyword">var</span> router = express.Router();  </span><br><span class="line"><span class="keyword">var</span> port = process.env.PORT || <span class="number">3000</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// middleware</span></span><br><span class="line">router.use(<span class="function">(<span class="params">req,res,next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"authentication"</span>);</span><br><span class="line">  next();</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">"/"</span>,(req,res) =&gt; &#123;</span><br><span class="line">  res.send(<span class="string">"main page."</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">router.post(<span class="string">"/"</span>,(req,res) =&gt; &#123;</span><br><span class="line">  res.send(<span class="string">"main post."</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">"/about"</span>, (req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">"about page."</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// mount the middleware(router);</span></span><br><span class="line">app.use(<span class="string">'/'</span>,router);</span><br><span class="line"><span class="comment">// start listen</span></span><br><span class="line">app.listen(port);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports.router = router;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>route.use’s callback is a middleware</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// main.js</span></span><br><span class="line"><span class="keyword">var</span> &#123;router&#125; = <span class="built_in">require</span>(<span class="string">'./birds'</span>);</span><br><span class="line"><span class="comment">// birds is also a middleware</span></span><br><span class="line">app.use(<span class="string">'/birds'</span>, birds);</span><br><span class="line">app.listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
+<p><code>Parameter Route</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Import express and initialize an app</span></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line"><span class="keyword">var</span> router = express.Router();</span><br><span class="line"><span class="keyword">var</span> port = process.env.PORT || <span class="number">3000</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// middleware</span></span><br><span class="line">router.use(<span class="function">(<span class="params">req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'authentication'</span>);</span><br><span class="line">	next();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/'</span>, (req, res) =&gt; &#123;</span><br><span class="line">	res.send(<span class="string">'Main Page.'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//实际上 ： 充当了一个通配作用，通配规则如何，请看验证参数</span></span><br><span class="line">router.get(<span class="string">'/:id'</span>, (req, res) =&gt; &#123;</span><br><span class="line">	res.send(<span class="string">'id namespace.'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.post(<span class="string">'/'</span>, (req, res) =&gt; &#123;</span><br><span class="line">	res.send(<span class="string">'main post.'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/about'</span>, (req, res) =&gt; &#123;</span><br><span class="line">	res.send(<span class="string">'about page.'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// mount the middleware(router);</span></span><br><span class="line">app.use(<span class="string">'/'</span>, router);</span><br><span class="line"><span class="comment">// start listen</span></span><br><span class="line">app.listen(port);</span><br></pre></td></tr></table></figure>
+<p><code>Parameter Check</code></p>
+<blockquote>
+<p>有時候我們會需要針對傳入的路由參數來進行篩選或驗證，例如檢查使用者所輸入的字串是否是合法的名稱，這時候就可以使用 .param() 這個專門用來處理參數的 middleware：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Import express and initialize an app</span></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> app = express();</span><br><span class="line"><span class="keyword">var</span> router = express.Router();</span><br><span class="line"><span class="keyword">var</span> port = process.env.PORT || <span class="number">3000</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// middleware</span></span><br><span class="line">router.use(<span class="function">(<span class="params">req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'authentication'</span>);</span><br><span class="line">	next();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/'</span>, (req, res) =&gt; &#123;</span><br><span class="line">	res.send(<span class="string">'Main Page.'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 位于路由之前，充当另外一个middleware</span></span><br><span class="line">router.param(<span class="string">'id'</span>, (req, res, next, id) =&gt; &#123;</span><br><span class="line">	<span class="comment">// validation logi here</span></span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'valid id'</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// send back request</span></span><br><span class="line">	req.id = id;</span><br><span class="line">	next();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/:id/:name'</span>, (req, res) =&gt; &#123;</span><br><span class="line">	res.send(req.params);</span><br><span class="line">	<span class="comment">// res.send(req.params.name);</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.post(<span class="string">'/'</span>, (req, res) =&gt; &#123;</span><br><span class="line">	res.send(<span class="string">'main post.'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/about'</span>, (req, res) =&gt; &#123;</span><br><span class="line">	res.send(<span class="string">'about page.'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// mount the middleware(router);</span></span><br><span class="line">app.use(<span class="string">'/'</span>, router);</span><br><span class="line"><span class="comment">// start listen</span></span><br><span class="line">app.listen(port);</span><br></pre></td></tr></table></figure>
+<h3 id="express-request"><a class="markdownIt-Anchor" href="#express-request"></a> Express Request</h3>
+
+      
+
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 60px 0 0; margin: auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/images/zeng.jpg" alt="James Tan wechat" style="width: 14em; max-width: 100%;">
+  <div style="margin-top: 20px">人工智能学习资源 欢迎订阅我的公众号</div>
+</div>
+
+    
+
+    
+      
+    
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者:  </strong>James Tan</li>
+  <li class="post-copyright-link">
+    <strong>本文链接: </strong>
+    
+    <a href="https://geekeast.github.io/nodejs.html" title="Node.js 构建RESTful API">https://geekeast.github.io/nodejs.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明:  </strong>除特殊声明外，本站博文均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议，转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Frontend/" rel="tag"># Frontend</a>
+          
+            <a href="/tags/Nodejs/" rel="tag"># Nodejs</a>
+          
+            <a href="/tags/Restful-API/" rel="tag"># Restful API</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/backendallinone.html" rel="next" title="后端工程师技术图谱">
+                <i class="fa fa-chevron-left"></i> 后端工程师技术图谱
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/git-credential.html" rel="prev" title="Git Push 免输账户密码">
+                Git Push 免输账户密码 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="James Tan">
+            
+              <p class="site-author-name" itemprop="name">James Tan</p>
+              <div class="site-description motion-element" itemprop="description">Sharing is the best way to learn.</div>
+          </div>
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0Lw==" title="GitHub &rarr; https://github.com/GeekEast/"><i class="fa fa-fw fa-github"></i></span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9KYW1lc1RhMTAwMTIyNDY=" title="Twitter &rarr; https://twitter.com/JamesTa10012246"><i class="fa fa-fw fa-twitter"></i></span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="bWFpbHRvOnN4LmJhMjAxN0BnbWFpbC5jb20=" title="E-Mail &rarr; mailto:sx.ba2017@gmail.com"><i class="fa fa-fw fa-envelope"></i></span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1plbkdfeGlhbmd0" title="CSDN &rarr; https://blog.csdn.net/ZenG_xiangt"><i class="fa fa-fw fa-contao"></i></span>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-heart"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <span class="exturl" data-url="aHR0cHM6Ly9sZWFybnhpbnltaW51dGVzLmNvbS8=" title="https://learnxinyminutes.com/">Learn X in Y minutes</span>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-text"> </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-text"> Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#what-is-nodejs"><span class="nav-text"> What is Node.js?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#where-is-node-from"><span class="nav-text"> Where is Node from?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#asynchronous-in-nodejs"><span class="nav-text"> Asynchronous in Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#what-is-nodejs-used-for"><span class="nav-text"> What is Node.js used for?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install-nodejs"><span class="nav-text"> Install Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#run-nodejs"><span class="nav-text"> Run Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#node-module-system"><span class="nav-text"> Node Module System</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#global-object"><span class="nav-text"> Global object</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#insights-why-we-need-to-use-module"><span class="nav-text"> Insights: Why we need to use Module?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#module-import-and-export"><span class="nav-text"> Module Import and Export</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#node-wrapper"><span class="nav-text"> Node Wrapper</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#node-modules-api"><span class="nav-text"> Node Modules API</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#npm"><span class="nav-text"> NPM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#create-npm-project"><span class="nav-text"> Create NPM Project</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#switch-version-of-npm"><span class="nav-text"> Switch Version of npm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#create-packagejson-file"><span class="nav-text"> Create package.json file</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#install-node-package"><span class="nav-text"> Install Node Package</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-ignore-packages-to-push"><span class="nav-text"> Git Ignore Packages to Push</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#underscorejs"><span class="nav-text"> Underscore.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#semantic-versioning"><span class="nav-text"> Semantic Versioning</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#inspect-installed-versions"><span class="nav-text"> Inspect installed versions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#view-packages"><span class="nav-text"> View Packages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#update-outdated-packages"><span class="nav-text"> Update outdated packages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#install-packages-only-for-dev"><span class="nav-text"> Install Packages only for Dev</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#uninstall-packages"><span class="nav-text"> Uninstall Packages</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#global-packages"><span class="nav-text"> Global Packages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm-registry"><span class="nav-text"> NPM Registry</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#publish-your-own-package-to-npm-registry"><span class="nav-text"> Publish Your Own Package to NPM Registry</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#updating-your-published-packages"><span class="nav-text"> Updating your Published Packages</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#restful-service"><span class="nav-text"> RESTful Service</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#rest-definition"><span class="nav-text"> REST Definition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http-protocol"><span class="nav-text"> HTTP Protocol</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http-methods"><span class="nav-text"> HTTP Methods</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#node-monitor"><span class="nav-text"> Node Monitor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#express-framework"><span class="nav-text"> Express framework</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#get-to-know-express"><span class="nav-text"> Get to know express</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#install-express"><span class="nav-text"> Install Express</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hello-world"><span class="nav-text"> Hello World</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#basic-routes"><span class="nav-text"> Basic Routes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#middleware-routes"><span class="nav-text"> Middleware Routes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#express-request"><span class="nav-text"> Express Request</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ZenG</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+  
+
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'e3bc82557deb4539bea0',
+    clientSecret: 'ccd5f13f3f7cba21085500585cfc05da2591baf4',
+    repo: 'blog_comment',
+    owner: 'GeekEast',
+    admin: ['GeekEast'],
+    id: md5(location.pathname),
+    
+      language: 'en',
+    
+    distractionFreeMode: 'false'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('5');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 17170,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
+
+  
+
+  
+  <script src="/js/src/js.cookie.js?v=7.0.1"></script>
+  <script src="/js/src/scroll-cookie.js?v=7.0.1"></script>
+
+
+  
+  <script src="/js/src/exturl.js?v=7.0.1"></script>
+
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      
+        background-color: #eee;
+        background-image: linear-gradient(#fcfcfc, #eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+      
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      
+        right: 4px;
+        top: 8px;
+      
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1;
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; // Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.readOnly = true;
+        ta.value = code;
+        document.body.appendChild(ta);
+        ta.select();
+        ta.setSelectionRange(0, code.length);
+        ta.readOnly = false;
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('Copied');
+          else $(this).text('Copy failed');
+        
+        ta.blur(); // For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('Copy');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":125,"height":125,"position":"right","hOffset":-20,"vOffset":-20},"mobile":{"show":false}});</script></body>
+</html>
