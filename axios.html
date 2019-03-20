@@ -24,13 +24,6 @@
 
 
 
-  
-  
-    
-    
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
-
 
 
 
@@ -51,7 +44,9 @@
 
   
   
-  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5">
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
 
 
 
@@ -59,7 +54,9 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+  
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="/css/main.css?v=7.0.1">
 
@@ -121,7 +118,7 @@
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="Install Axios Import Axios Promise Async/await Axios API without async/await Request Config/Options Axios Response Object Axios Error Object Axios Instance">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-14T07:51:56.452Z">
+<meta property="og:updated_time" content="2019-03-20T01:13:56.956Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Asynchronous Client - Axios">
 <meta name="twitter:description" content="Install Axios Import Axios Promise Async/await Axios API without async/await Request Config/Options Axios Response Object Axios Error Object Axios Instance">
@@ -262,7 +259,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">18</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">20</span></a>
 
   </li>
         
@@ -439,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
+                <time title="Modified: 2019-03-20 11:43:56" itemprop="dateModified" datetime="2019-03-20T11:43:56+10:30">2019-03-20</time>
               
             
           </span>
@@ -490,7 +487,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">4.2k</span>
+                <span title="Symbols count in article">4.4k</span>
               
 
               
@@ -536,21 +533,23 @@
 <li>Axios <code>Instance</code></li>
 </ul>
 <a id="more"></a>
-<h1 id="http-client-axios"><a class="markdownIt-Anchor" href="#http-client-axios"></a> HTTP client - Axios</h1>
-<h2 id="1-install-axios"><a class="markdownIt-Anchor" href="#1-install-axios"></a> 1. Install Axios</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install ---save aixos</span><br><span class="line"><span class="meta">#</span><span class="bash"> or</span></span><br><span class="line">yarn add axios</span><br></pre></td></tr></table></figure>
-<h2 id="2-import-axios"><a class="markdownIt-Anchor" href="#2-import-axios"></a> 2. Import Axios</h2>
+<h2 id="install-axios"><a class="markdownIt-Anchor" href="#install-axios"></a> Install Axios</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install ---save axios</span><br><span class="line"><span class="meta">#</span><span class="bash"> or</span></span><br><span class="line">yarn add axios</span><br></pre></td></tr></table></figure>
+<h2 id="import-axios"><a class="markdownIt-Anchor" href="#import-axios"></a> Import Axios</h2>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// react style</span></span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">"axios"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// javascript style</span></span><br><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>();</span><br></pre></td></tr></table></figure>
-<h2 id="3-promise"><a class="markdownIt-Anchor" href="#3-promise"></a> 3. Promise</h2>
+<h2 id="promise"><a class="markdownIt-Anchor" href="#promise"></a> Promise</h2>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> (<span class="comment">//异步操作成功) &#123;</span></span><br><span class="line">		resolve(value); <span class="comment">// resolve 是请求成功后的解决方案</span></span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		reject(value); <span class="comment">// reject 是请求失败后的解决方案</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="4-asyncawait"><a class="markdownIt-Anchor" href="#4-asyncawait"></a> 4. async/await</h2>
+<h2 id="asyncawait"><a class="markdownIt-Anchor" href="#asyncawait"></a> async/await</h2>
 <ul>
 <li><code>async</code>: async ensures that the function returns a promise, and wraps non-promises in it. [强制返回 promise]</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Promise</span>.resolve(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">f().then(alert); <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/****** Automatically Wrap ********/</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line">f().then(alert); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li><code>await</code>: The keyword await makes JavaScript wait until that promise settles and returns its result.[卡后方到最近一级 block 间的代码]</li>
+<li><code>await</code>: The keyword await makes JavaScript wait until that promise settles and returns its result.</li>
 </ul>
+<div class="note success">
+            <p>在async代码框内部，是synchronous执行；<br>在async代码框外部，是asynchronous执行。</p>
+          </div>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// works only inside async functions, the following is wrong</span></span><br><span class="line">res = <span class="keyword">await</span> axios(&#123;</span><br><span class="line">  url: <span class="string">"https://api.github.com/users/KrunalLathiya"</span>,</span><br><span class="line">  method: <span class="string">"get"</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(res);</span><br></pre></td></tr></table></figure>
 <ul>
 <li>Wrap the <code>await</code> with <code>async</code></li>
@@ -565,7 +564,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="5-axios-api-without-asyncawait"><a class="markdownIt-Anchor" href="#5-axios-api-without-asyncawait"></a> 5. Axios API without async/await</h2>
+<h2 id="axios-api-without-asyncawait"><a class="markdownIt-Anchor" href="#axios-api-without-asyncawait"></a> Axios API without async/await</h2>
 <ul>
 <li>API methods</li>
 </ul>
@@ -574,7 +573,7 @@
 <li>Elegant usage</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">"axios"</span>);</span><br><span class="line"></span><br><span class="line">getGithubData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  axios</span><br><span class="line">    .get(<span class="string">"https://api.github.com/users/KrunalLathiya"</span>, &#123;</span><br><span class="line">      params: &#123;</span><br><span class="line">        ID: <span class="number">12345</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(res.data.login);</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(err);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">getGithubData();</span><br></pre></td></tr></table></figure>
-<h2 id="6-request-configoptions"><a class="markdownIt-Anchor" href="#6-request-configoptions"></a> 6. Request Config/Options</h2>
+<h2 id="request-configoptions"><a class="markdownIt-Anchor" href="#request-configoptions"></a> Request Config/Options</h2>
 <ul>
 <li>Authorization (GET)</li>
 </ul>
@@ -583,7 +582,7 @@
 <li>Authorization (POST)</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">"axios"</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> data = &#123;</span><br><span class="line">  email: <span class="string">"test@163.com"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> config = &#123;</span><br><span class="line">  headers: &#123;</span><br><span class="line">    <span class="string">"Content-Type"</span>: <span class="string">"application/x-www-form-urlencoded"</span>,</span><br><span class="line">    Authorization: <span class="string">"Bearer "</span> + <span class="string">"token"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  responseType: <span class="string">"blob"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">getGithubData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  axios</span><br><span class="line">    .post(<span class="string">"http://appdivident.com"</span>, data, config)</span><br><span class="line">    .then(<span class="function"><span class="params">res</span> =&gt;</span> <span class="built_in">console</span>.log(res.data))</span><br><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> <span class="built_in">console</span>.log(err));</span><br><span class="line">&#125;;</span><br><span class="line">getGithubData();</span><br></pre></td></tr></table></figure>
-<h2 id="7-axios-response-object"><a class="markdownIt-Anchor" href="#7-axios-response-object"></a> 7. Axios Response Object</h2>
+<h2 id="axios-response-object"><a class="markdownIt-Anchor" href="#axios-response-object"></a> Axios Response Object</h2>
 <ul>
 <li><code>data</code>: the payload returned from the server. By default, Axios expects JSON and will parse this back into a JavaScript object for you.</li>
 <li><code>status</code>: the HTTP code returned from the server.</li>
@@ -592,15 +591,19 @@
 <li><code>config</code>: the original request configuration.</li>
 <li><code>request</code>: the actual XMLHttpRequest object (when running in a browser).</li>
 </ul>
-<h2 id="8-axios-error-object"><a class="markdownIt-Anchor" href="#8-axios-error-object"></a> 8. Axios Error Object</h2>
+<h2 id="axios-error-object"><a class="markdownIt-Anchor" href="#axios-error-object"></a> Axios Error Object</h2>
 <ul>
 <li><code>message</code>: the error message text</li>
 <li><code>response</code>: the response obejct (if received) as described in the previous section.</li>
 <li><code>request</code>: the actual XMLHttpRequest object (when running in a browser).</li>
 <li><code>config</code>: the original request configuration</li>
 </ul>
-<h2 id="9-axios-instance"><a class="markdownIt-Anchor" href="#9-axios-instance"></a> 9. Axios Instance</h2>
+<h2 id="axios-instance"><a class="markdownIt-Anchor" href="#axios-instance"></a> Axios Instance</h2>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">"axios"</span>);</span><br><span class="line">request = axios.create(&#123;</span><br><span class="line">  baseURL: <span class="string">"http://ec2-13-211-47-167.ap-southeast-2.compute.amazonaws.com:3000"</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">request.get(<span class="string">"/articles"</span>).then(<span class="function"><span class="params">res</span> =&gt;</span> <span class="built_in">console</span>.log(res.data));</span><br></pre></td></tr></table></figure>
+<h2 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h2>
+<div class="note success">
+            <h3 id="何时使用asyncawait何时使用axios自带api"><a class="markdownIt-Anchor" href="#何时使用asyncawait何时使用axios自带api"></a> 何时使用async/await,何时使用axios自带API?</h3><ul><li>async/await: 自定义复杂代码块</li><li>axios API: 简单代码块调用</li></ul>
+          </div>
       
 
       
@@ -876,7 +879,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#http-client-axios"><span class="nav-number">1.</span> <span class="nav-text"> HTTP client - Axios</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-install-axios"><span class="nav-number">1.1.</span> <span class="nav-text"> 1. Install Axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-import-axios"><span class="nav-number">1.2.</span> <span class="nav-text"> 2. Import Axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-promise"><span class="nav-number">1.3.</span> <span class="nav-text"> 3. Promise</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-asyncawait"><span class="nav-number">1.4.</span> <span class="nav-text"> 4. async/await</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-axios-api-without-asyncawait"><span class="nav-number">1.5.</span> <span class="nav-text"> 5. Axios API without async/await</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-request-configoptions"><span class="nav-number">1.6.</span> <span class="nav-text"> 6. Request Config/Options</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-axios-response-object"><span class="nav-number">1.7.</span> <span class="nav-text"> 7. Axios Response Object</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-axios-error-object"><span class="nav-number">1.8.</span> <span class="nav-text"> 8. Axios Error Object</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-axios-instance"><span class="nav-number">1.9.</span> <span class="nav-text"> 9. Axios Instance</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#install-axios"><span class="nav-number">1.</span> <span class="nav-text"> Install Axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#import-axios"><span class="nav-number">2.</span> <span class="nav-text"> Import Axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#promise"><span class="nav-number">3.</span> <span class="nav-text"> Promise</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#asyncawait"><span class="nav-number">4.</span> <span class="nav-text"> async/await</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios-api-without-asyncawait"><span class="nav-number">5.</span> <span class="nav-text"> Axios API without async/await</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#request-configoptions"><span class="nav-number">6.</span> <span class="nav-text"> Request Config/Options</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios-response-object"><span class="nav-number">7.</span> <span class="nav-text"> Axios Response Object</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios-error-object"><span class="nav-number">8.</span> <span class="nav-text"> Axios Error Object</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios-instance"><span class="nav-number">9.</span> <span class="nav-text"> Axios Instance</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#summary"><span class="nav-number">10.</span> <span class="nav-text"> Summary</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#何时使用asyncawait何时使用axios自带api"><span class="nav-number">10.1.</span> <span class="nav-text"> 何时使用async/await,何时使用axios自带API?</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -997,8 +1000,10 @@
   
     
     
+      
+    
   
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
+  <script color="0,3,255" opacity="0.8" zindex="-1" count="99" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js"></script>
 
 
 
@@ -1007,18 +1012,18 @@
 
 
 
-
-
-
-  
 
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+
 
   
-  <script src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
 
   
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
@@ -1027,10 +1032,10 @@
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
 
   
-  <script src="/lib/reading_progress/reading_progress.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js"></script>
 
 
   
@@ -1067,6 +1072,8 @@
   
   
   
+    
+  
 
   
 
@@ -1080,11 +1087,15 @@
   
     
 
+  
+
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 
 
 
