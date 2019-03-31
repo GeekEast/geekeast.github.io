@@ -259,7 +259,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">20</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">22</span></a>
 
   </li>
         
@@ -278,7 +278,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">9</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">10</span></a>
 
   </li>
         
@@ -297,7 +297,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">30</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">32</span></a>
 
   </li>
 
@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/linuxcommands.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/postgreinstallonmac.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -398,7 +398,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/linuxcommands.html" class="post-title-link" itemprop="url">Linux Commands All in One</a>
+                <a href="/postgreinstallonmac.html" class="post-title-link" itemprop="url">Install PostGres in Mac</a>
               
             
           </h2>
@@ -421,16 +421,42 @@
                 
               
 
-              <time title="Created: 2019-03-20 09:23:25 / Modified: 09:50:00" itemprop="dateCreated datePublished" datetime="2019-03-20T09:23:25+10:30">2019-03-20</time>
+              <time title="Created: 2019-03-26 12:02:00" itemprop="dateCreated datePublished" datetime="2019-03-26T12:02:00+10:30">2019-03-26</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-03-31 16:42:52" itemprop="dateModified" datetime="2019-03-31T16:42:52+10:30">2019-03-31</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Database/" itemprop="url" rel="index"><span itemprop="name">Database</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -489,13 +515,16 @@
 
       
         
-          <div class="note ">
-            <p></p>
-          </div>
+          <h3 id="installation"><a class="markdownIt-Anchor" href="#installation"></a> Installation</h3>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="keyword">update</span></span><br><span class="line">brew doctor</span><br><span class="line">brew install postgresql</span><br></pre></td></tr></table></figure>
+<h3 id="initialize-db"><a class="markdownIt-Anchor" href="#initialize-db"></a> Initialize DB</h3>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">initdb /usr/local/var/postgres</span><br></pre></td></tr></table></figure>
+<h3 id="start-service"><a class="markdownIt-Anchor" href="#start-service"></a> Start Service</h3>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pg_ctl -D /usr/local/var/postgres -<span class="keyword">l</span> /usr/local/var/postgres/server.<span class="built_in">log</span> start</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/linuxcommands.html#more" rel="contents">
+              <a class="btn" href="/postgreinstallonmac.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -553,7 +582,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/requirevsimport.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/swaggerexpress.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -573,7 +602,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/requirevsimport.html" class="post-title-link" itemprop="url">Using Node.js require vs. ES6 import/export</a>
+                <a href="/swaggerexpress.html" class="post-title-link" itemprop="url">swaggerexpress</a>
               
             
           </h2>
@@ -596,12 +625,22 @@
                 
               
 
-              <time title="Created: 2019-03-19 15:15:06 / Modified: 15:21:00" itemprop="dateCreated datePublished" datetime="2019-03-19T15:15:06+10:30">2019-03-19</time>
+              <time title="Created: 2019-03-25 15:21:20" itemprop="dateCreated datePublished" datetime="2019-03-25T15:21:20+10:30">2019-03-25</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-03-28 09:54:51" itemprop="dateModified" datetime="2019-03-28T09:54:51+10:30">2019-03-28</time>
               
             
           </span>
@@ -629,7 +668,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">210</span>
+                <span title="Symbols count in article">151</span>
               
 
               
@@ -664,16 +703,13 @@
 
       
         
-          <div class="note info">
-            <p>Are there any performance benefits to using one over the other?</p>
+          <div class="note ">
+            <p></p>
           </div>
-<blockquote>
-<p>The current answer is no, because none of the current browser engines implements import/export from the ES6 standard.</p>
-</blockquote>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/requirevsimport.html#more" rel="contents">
+              <a class="btn" href="/swaggerexpress.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -720,7 +756,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 

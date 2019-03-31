@@ -2,170 +2,184 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://geekeast.github.io/dailynotes.html</loc>
+    <loc>https://geekeast.github.io/linuxcommands.html</loc>
     
-    <lastmod>2019-03-24T03:48:29.141Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/gitlfs.html</loc>
-    
-    <lastmod>2019-03-22T08:29:41.914Z</lastmod>
+    <lastmod>2019-03-31T06:13:41.017Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/admindata.html</loc>
+    <loc>https://geekeast.github.io/postgreinstallonmac.html</loc>
     
-    <lastmod>2019-03-22T07:39:35.502Z</lastmod>
+    <lastmod>2019-03-31T06:12:52.893Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/nodejs.html</loc>
     
-    <lastmod>2019-03-20T06:21:31.957Z</lastmod>
+    <lastmod>2019-03-31T06:11:15.215Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/mdtutorial.html</loc>
+    <loc>https://geekeast.github.io/dailynotes.html</loc>
     
-    <lastmod>2019-03-20T04:50:21.980Z</lastmod>
+    <lastmod>2019-03-31T05:56:12.277Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/swaggerexpress.html</loc>
+    
+    <lastmod>2019-03-27T23:24:51.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/axios.html</loc>
     
-    <lastmod>2019-03-20T01:13:56.956Z</lastmod>
+    <lastmod>2019-03-26T23:55:38.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/linuxcommands.html</loc>
+    <loc>https://geekeast.github.io/gitlfs.html</loc>
     
-    <lastmod>2019-03-19T23:20:00.825Z</lastmod>
+    <lastmod>2019-03-22T08:29:41.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/admindata.html</loc>
+    
+    <lastmod>2019-03-22T07:39:35.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/mdtutorial.html</loc>
+    
+    <lastmod>2019-03-20T04:50:21.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/requirevsimport.html</loc>
     
-    <lastmod>2019-03-19T04:51:00.422Z</lastmod>
+    <lastmod>2019-03-19T04:51:00.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/dizigui.html</loc>
     
-    <lastmod>2019-03-16T05:57:42.756Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.456Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.456Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/mlinterview.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.455Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.455Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.455Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/htmlloading.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.454Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/git-credential.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.454Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/jielv.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.454Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/mdresume.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.454Z</lastmod>
+    <lastmod>2019-03-16T05:57:42.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/coderpath.html</loc>
     
-    <lastmod>2019-03-14T07:51:56.453Z</lastmod>
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/course-recommendation.html</loc>
     
-    <lastmod>2019-03-14T07:51:56.453Z</lastmod>
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/es6.html</loc>
     
-    <lastmod>2019-03-14T07:51:56.453Z</lastmod>
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/findbigfilelinux.html</loc>
     
-    <lastmod>2019-03-14T07:51:56.453Z</lastmod>
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/fofafenqi.html</loc>
     
-    <lastmod>2019-03-14T07:51:56.453Z</lastmod>
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/git-credential.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/htmlloading.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/jielv.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/mdresume.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/mlinterview.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/backendallinone.html</loc>
     
-    <lastmod>2019-03-14T07:51:56.452Z</lastmod>
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/about/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/project/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
