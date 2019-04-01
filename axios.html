@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="Install Axios Import Axios Promise Async/await Axios API without async/await Request Config/Options Axios Response Object Axios Error Object Axios Instance">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-01T04:31:07.541Z">
+<meta property="og:updated_time" content="2019-04-01T10:07:43.219Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Asynchronous Client - Axios">
 <meta name="twitter:description" content="Install Axios Import Axios Promise Async/await Axios API without async/await Request Config/Options Axios Response Object Axios Error Object Axios Instance">
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-04-01 15:01:07" itemprop="dateModified" datetime="2019-04-01T15:01:07+10:30">2019-04-01</time>
+                <time title="Modified: 2019-04-01 20:37:43" itemprop="dateModified" datetime="2019-04-01T20:37:43+10:30">2019-04-01</time>
               
             
           </span>
@@ -570,7 +570,7 @@
 <h3 id="right"><a class="markdownIt-Anchor" href="#right"></a> Right</h3>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getDefinitions</span>(<span class="params">tables</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> final = <span class="string">'definitions:\n'</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">const</span> table <span class="keyword">of</span> tables) &#123;</span><br><span class="line">		<span class="keyword">const</span> sql = <span class="string">`SELECT column_name, is_nullable, data_type</span></span><br><span class="line"><span class="string">                 FROM information_schema.columns</span></span><br><span class="line"><span class="string">		             WHERE table_name  = '<span class="subst">$&#123;table&#125;</span>'`</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">const</span> result = <span class="keyword">await</span> pool.query(sql); <span class="comment">// return result</span></span><br><span class="line">			<span class="keyword">const</span> data = result.rows;</span><br><span class="line">			final += getSingleTable(table, data);</span><br><span class="line">		&#125;<span class="keyword">catch</span>(err) &#123;  <span class="comment">// error is catched in try/catch block</span></span><br><span class="line">			<span class="built_in">console</span>.log(err.stack);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <div class="note success">
-            <p>Put a await before a promise won’t work<br>Put a await ebfore a promise’s result works.</p>
+            <p>Put a await before a promise won’t work.<br>Put a await ebfore a promise’s result works.</p>
           </div>
 <h2 id="axios-api-without-asyncawait"><a class="markdownIt-Anchor" href="#axios-api-without-asyncawait"></a> Axios API without async/await</h2>
 <ul>
