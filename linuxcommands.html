@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="File Permission  r: Read w: Write x: eXecute     Binary Octal Permission     000 0 —   001 1 –x   010 2 -w-   011 3 -wx   100 4 r–   101 5 r-x   110 6 rw-   111 7 rwx">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-31T06:13:41.017Z">
+<meta property="og:updated_time" content="2019-04-02T22:52:52.549Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux Commands All in One">
 <meta name="twitter:description" content="File Permission  r: Read w: Write x: eXecute     Binary Octal Permission     000 0 —   001 1 –x   010 2 -w-   011 3 -wx   100 4 r–   101 5 r-x   110 6 rw-   111 7 rwx">
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-03-31 16:43:41" itemprop="dateModified" datetime="2019-03-31T16:43:41+10:30">2019-03-31</time>
+                <time title="Modified: 2019-04-03 09:22:52" itemprop="dateModified" datetime="2019-04-03T09:22:52+10:30">2019-04-03</time>
               
             
           </span>
@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.1k</span>
+                <span title="Symbols count in article">1.3k</span>
               
 
               
@@ -604,6 +604,62 @@
 <blockquote>
 <p>modify the read, write and execute permission of files or directories.</p>
 </blockquote>
+<ol>
+<li>属主权限</li>
+<li>属组权限</li>
+<li>其它用户权限</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Octal number</th>
+<th style="text-align:center">Symbolic</th>
+<th style="text-align:center">Permission</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>0</code></td>
+<td style="text-align:center"><code>---</code></td>
+<td style="text-align:center">none</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>1</code></td>
+<td style="text-align:center"><code>--x</code></td>
+<td style="text-align:center">execute</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>2</code></td>
+<td style="text-align:center"><code>-w-</code></td>
+<td style="text-align:center">write</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>3</code></td>
+<td style="text-align:center"><code>-wx</code></td>
+<td style="text-align:center">write/execute</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>4</code></td>
+<td style="text-align:center"><code>r--</code></td>
+<td style="text-align:center">read</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>5</code></td>
+<td style="text-align:center"><code>r-x</code></td>
+<td style="text-align:center">read/execute</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>6</code></td>
+<td style="text-align:center"><code>rw-</code></td>
+<td style="text-align:center">read/write</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>7</code></td>
+<td style="text-align:center"><code>rwx</code></td>
+<td style="text-align:center">read/write/execute</td>
+</tr>
+</tbody>
+</table>
 <h3 id="examples-3"><a class="markdownIt-Anchor" href="#examples-3"></a> Examples</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
