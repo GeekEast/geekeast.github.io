@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/pg.html</loc>
+    
+    <lastmod>2019-04-10T06:48:18.814Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/swaggerTutorial.html</loc>
     
-    <lastmod>2019-04-10T06:41:21.113Z</lastmod>
+    <lastmod>2019-04-10T06:42:47.853Z</lastmod>
     
   </url>
   
@@ -170,14 +177,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
+    <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     

@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="Install Axios Import Axios Promise Async/await Axios API without async/await Request Config/Options Axios Response Object Axios Error Object Axios Instance">
-<meta name="keywords" content="Async,Javascript,React">
+  <meta name="description" content="Connection Pool 123456789101112const &amp;#123; Pool &amp;#125; = require(&apos;pg&apos;);const pool = new Pool(&amp;#123;	user: process.env.POSTGRES_USERNAME,	host: process.env.POSTGRES_HOST,	database: process.env.POSTGR">
+<meta name="keywords" content="Postgre,Node,Restful API,DB Client">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Asynchronous Client - Axios">
-<meta property="og:url" content="https://geekeast.github.io/axios.html">
+<meta property="og:title" content="node-postgres Tutorial">
+<meta property="og:url" content="https://geekeast.github.io/pg.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Install Axios Import Axios Promise Async/await Axios API without async/await Request Config/Options Axios Response Object Axios Error Object Axios Instance">
+<meta property="og:description" content="Connection Pool 123456789101112const &amp;#123; Pool &amp;#125; = require(&apos;pg&apos;);const pool = new Pool(&amp;#123;	user: process.env.POSTGRES_USERNAME,	host: process.env.POSTGRES_HOST,	database: process.env.POSTGR">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-01T10:07:43.219Z">
+<meta property="og:updated_time" content="2019-04-10T06:48:18.814Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Asynchronous Client - Axios">
-<meta name="twitter:description" content="Install Axios Import Axios Promise Async/await Axios API without async/await Request Config/Options Axios Response Object Axios Error Object Axios Instance">
+<meta name="twitter:title" content="node-postgres Tutorial">
+<meta name="twitter:description" content="Connection Pool 123456789101112const &amp;#123; Pool &amp;#125; = require(&apos;pg&apos;);const pool = new Pool(&amp;#123;	user: process.env.POSTGRES_USERNAME,	host: process.env.POSTGRES_HOST,	database: process.env.POSTGR">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/axios.html">
+  <link rel="canonical" href="https://geekeast.github.io/pg.html">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Asynchronous Client - Axios | 雪中印</title>
+  <title>node-postgres Tutorial | 雪中印</title>
   
 
 
@@ -380,7 +380,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/axios.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/pg.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -397,7 +397,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Asynchronous Client - Axios
+          <h2 class="post-title" itemprop="name headline">node-postgres Tutorial
 
               
             
@@ -421,22 +421,12 @@
                 
               
 
-              <time title="Created: 2019-03-08 17:40:21" itemprop="dateCreated datePublished" datetime="2019-03-08T17:40:21+10:30">2019-03-08</time>
+              <time title="Created: 2019-04-10 16:12:55 / Modified: 16:18:18" itemprop="dateCreated datePublished" datetime="2019-04-10T16:12:55+09:30">2019-04-10</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-04-01 20:37:43" itemprop="dateModified" datetime="2019-04-01T20:37:43+10:30">2019-04-01</time>
               
             
           </span>
@@ -451,7 +441,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Web-Development/" itemprop="url" rel="index"><span itemprop="name">Web Development</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DB-Client/" itemprop="url" rel="index"><span itemprop="name">DB Client</span></a></span>
 
                 
                 
@@ -487,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">5.7k</span>
+                <span title="Symbols count in article">683</span>
               
 
               
@@ -501,7 +491,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">4 mins.</span>
+                <span title="Reading time">1 mins.</span>
               
             </div>
           
@@ -521,97 +511,16 @@
       
 
       
-        <ul>
-<li><code>Install</code> Axios</li>
-<li><code>Import</code> Axios</li>
-<li><code>Promise</code></li>
-<li><code>Async/await</code></li>
-<li>Axios <code>API</code> without async/await</li>
-<li>Request <code>Config/Options</code></li>
-<li>Axios Response Object</li>
-<li>Axios Error Object</li>
-<li>Axios <code>Instance</code></li>
-</ul>
+        <h2 id="connection-pool"><a class="markdownIt-Anchor" href="#connection-pool"></a> Connection Pool</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; Pool &#125; = <span class="built_in">require</span>(<span class="string">'pg'</span>);</span><br><span class="line"><span class="keyword">const</span> pool = <span class="keyword">new</span> Pool(&#123;</span><br><span class="line">	user: process.env.POSTGRES_USERNAME,</span><br><span class="line">	host: process.env.POSTGRES_HOST,</span><br><span class="line">	database: process.env.POSTGRES_DATABASE,</span><br><span class="line">	password: process.env.POSTGRES_PASSWORD,</span><br><span class="line">	port: process.env.POSTGRES_PORT,</span><br><span class="line">	max: process.env.POSTGRES_MAX_CONNECTION</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	pool</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="install-axios"><a class="markdownIt-Anchor" href="#install-axios"></a> Install Axios</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install ---save axios</span><br><span class="line"><span class="meta">#</span><span class="bash"> or</span></span><br><span class="line">yarn add axios</span><br></pre></td></tr></table></figure>
-<h2 id="import-axios"><a class="markdownIt-Anchor" href="#import-axios"></a> Import Axios</h2>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// react style</span></span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">"axios"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// javascript style</span></span><br><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>();</span><br></pre></td></tr></table></figure>
-<h2 id="promise"><a class="markdownIt-Anchor" href="#promise"></a> Promise</h2>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> (<span class="comment">//异步操作成功) &#123;</span></span><br><span class="line">		resolve(value); <span class="comment">// resolve 是请求成功后的解决方案</span></span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		reject(value); <span class="comment">// reject 是请求失败后的解决方案</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="asyncawait"><a class="markdownIt-Anchor" href="#asyncawait"></a> async/await</h2>
+<h2 id="pool-usage"><a class="markdownIt-Anchor" href="#pool-usage"></a> Pool Usage</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">   <span class="keyword">const</span> &#123; pool &#125; = <span class="built_in">require</span>(<span class="string">'../utils/db'</span>);</span><br><span class="line"><span class="keyword">const</span> sql = <span class="string">'select * from users'</span>;</span><br><span class="line">pool</span><br><span class="line">.query(sql)</span><br><span class="line">.then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">	res.status(<span class="number">200</span>).send(result.rows);</span><br><span class="line">&#125;)</span><br><span class="line">.catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="built_in">console</span>.log(err.stack);</span><br><span class="line">	res.status(<span class="number">400</span>).json(err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="references"><a class="markdownIt-Anchor" href="#references"></a> References:</h2>
 <ul>
-<li><code>async</code>: async ensures that the function returns a promise, and wraps non-promises in it. [强制返回 promise]</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9ub2RlLXBvc3RncmVzLmNvbS8=" title="https://node-postgres.com/">node-postgres<i class="fa fa-external-link"></i></span></li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Promise</span>.resolve(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line">f().then(alert); <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/****** Automatically Wrap ********/</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line">f().then(alert); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>await</code>: The keyword await makes JavaScript wait until that promise settles and returns its result.</li>
-</ul>
-<div class="note success">
-            <p>在async代码框内部，是synchronous执行；<br>在async代码框外部，是asynchronous执行。</p>
-          </div>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// works only inside async functions, the following is wrong</span></span><br><span class="line">res = <span class="keyword">await</span> axios(&#123;</span><br><span class="line">  url: <span class="string">"https://api.github.com/users/KrunalLathiya"</span>,</span><br><span class="line">  method: <span class="string">"get"</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(res);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Wrap the <code>await</code> with <code>async</code></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// run in the chrome console</span></span><br><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">"axios"</span>);</span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getData</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">  res = <span class="keyword">await</span> axios(&#123;</span><br><span class="line">    <span class="comment">// await only stuck code afterwards but within the same async block</span></span><br><span class="line">    url: <span class="string">"https://api.github.com/users/KrunalLathiya"</span>,</span><br><span class="line">    method: <span class="string">"get"</span></span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">0</span>);</span><br><span class="line">getData();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// the result is 0 - 1 - 3 - 2</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>Conclusion:
-<ul>
-<li><code>async</code>: a wrapper of <code>await</code> which forces to return a promise.</li>
-<li><code>await</code> to stuck code afterwards which needs a wrapper ( async )</li>
-<li>They are twins.</li>
-</ul>
-</li>
-</ul>
-<h2 id="promise-asyncawait"><a class="markdownIt-Anchor" href="#promise-asyncawait"></a> Promise + async/await</h2>
-<h3 id="wrong"><a class="markdownIt-Anchor" href="#wrong"></a> Wrong</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getDefinitions</span>(<span class="params">tables</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> final = <span class="string">'definitions:\n'</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">const</span> table <span class="keyword">of</span> tables) &#123;</span><br><span class="line">		<span class="keyword">const</span> sql = <span class="string">`SELECT column_name, is_nullable, data_type</span></span><br><span class="line"><span class="string">                 FROM information_schema.columns</span></span><br><span class="line"><span class="string">		             WHERE table_name  = '<span class="subst">$&#123;table&#125;</span>'`</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">await</span> pool <span class="comment">// put a await before a promise won't work</span></span><br><span class="line">               <span class="comment">// put a await ebfore a promise's reult works.</span></span><br><span class="line">			.query(sql)</span><br><span class="line">			.then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">				<span class="keyword">const</span> data = result.rows;</span><br><span class="line">				final += getSingleTable(table, data);</span><br><span class="line">			&#125;)</span><br><span class="line">			.catch(<span class="function">(<span class="params">err</span>) =&gt;</span> &#123;</span><br><span class="line">				<span class="built_in">console</span>.log(err.stack);</span><br><span class="line">			&#125;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="right"><a class="markdownIt-Anchor" href="#right"></a> Right</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getDefinitions</span>(<span class="params">tables</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">let</span> final = <span class="string">'definitions:\n'</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">const</span> table <span class="keyword">of</span> tables) &#123;</span><br><span class="line">		<span class="keyword">const</span> sql = <span class="string">`SELECT column_name, is_nullable, data_type</span></span><br><span class="line"><span class="string">                 FROM information_schema.columns</span></span><br><span class="line"><span class="string">		             WHERE table_name  = '<span class="subst">$&#123;table&#125;</span>'`</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">const</span> result = <span class="keyword">await</span> pool.query(sql); <span class="comment">// return result</span></span><br><span class="line">			<span class="keyword">const</span> data = result.rows;</span><br><span class="line">			final += getSingleTable(table, data);</span><br><span class="line">		&#125;<span class="keyword">catch</span>(err) &#123;  <span class="comment">// error is catched in try/catch block</span></span><br><span class="line">			<span class="built_in">console</span>.log(err.stack);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<div class="note success">
-            <p>Put a await before a promise won’t work.<br>Put a await ebfore a promise’s result works.</p>
-          </div>
-<h2 id="axios-api-without-asyncawait"><a class="markdownIt-Anchor" href="#axios-api-without-asyncawait"></a> Axios API without async/await</h2>
-<ul>
-<li>API methods</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">axios.get(); <span class="comment">// get data</span></span><br><span class="line">axios.post(); <span class="comment">// insert new data</span></span><br><span class="line">axios.put(); <span class="comment">// replace old</span></span><br><span class="line">axios.delete(); <span class="comment">// remove data</span></span><br><span class="line">axios.patch(); <span class="comment">// send only changed data</span></span><br><span class="line">axios.options();</span><br><span class="line">axios.head();</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Elegant usage</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">"axios"</span>);</span><br><span class="line"></span><br><span class="line">getGithubData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  axios</span><br><span class="line">    .get(<span class="string">"https://api.github.com/users/KrunalLathiya"</span>, &#123;</span><br><span class="line">      params: &#123;</span><br><span class="line">        ID: <span class="number">12345</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(res.data.login);</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(err);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">getGithubData();</span><br></pre></td></tr></table></figure>
-<h2 id="request-configoptions"><a class="markdownIt-Anchor" href="#request-configoptions"></a> Request Config/Options</h2>
-<ul>
-<li>Authorization (GET)</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">"axios"</span>);</span><br><span class="line"></span><br><span class="line">getGithubData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  axios</span><br><span class="line">    .get(<span class="string">"https://appdividend.com"</span>, &#123;</span><br><span class="line">      <span class="comment">// params: &#123;&#125; ..</span></span><br><span class="line">      headers: &#123;</span><br><span class="line">        Authorization: <span class="string">"Bearer "</span> + <span class="string">""</span> <span class="comment">//the token is a variable which holds the token</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function"><span class="params">res</span> =&gt;</span> <span class="built_in">console</span>.log(res))</span><br><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> <span class="built_in">console</span>.log(err));</span><br><span class="line">&#125;;</span><br><span class="line">getGithubData();</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Authorization (POST)</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">"axios"</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> data = &#123;</span><br><span class="line">  email: <span class="string">"test@163.com"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> config = &#123;</span><br><span class="line">  headers: &#123;</span><br><span class="line">    <span class="string">"Content-Type"</span>: <span class="string">"application/x-www-form-urlencoded"</span>,</span><br><span class="line">    Authorization: <span class="string">"Bearer "</span> + <span class="string">"token"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  responseType: <span class="string">"blob"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">getGithubData = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  axios</span><br><span class="line">    .post(<span class="string">"http://appdivident.com"</span>, data, config)</span><br><span class="line">    .then(<span class="function"><span class="params">res</span> =&gt;</span> <span class="built_in">console</span>.log(res.data))</span><br><span class="line">    .catch(<span class="function"><span class="params">err</span> =&gt;</span> <span class="built_in">console</span>.log(err));</span><br><span class="line">&#125;;</span><br><span class="line">getGithubData();</span><br></pre></td></tr></table></figure>
-<h2 id="axios-response-object"><a class="markdownIt-Anchor" href="#axios-response-object"></a> Axios Response Object</h2>
-<ul>
-<li><code>data</code>: the payload returned from the server. By default, Axios expects JSON and will parse this back into a JavaScript object for you.</li>
-<li><code>status</code>: the HTTP code returned from the server.</li>
-<li><code>statusText</code>: the HTTP status message returned by the server.</li>
-<li><code>headers</code>: all the headers sent back by the server.</li>
-<li><code>config</code>: the original request configuration.</li>
-<li><code>request</code>: the actual XMLHttpRequest object (when running in a browser).</li>
-</ul>
-<h2 id="axios-error-object"><a class="markdownIt-Anchor" href="#axios-error-object"></a> Axios Error Object</h2>
-<ul>
-<li><code>message</code>: the error message text</li>
-<li><code>response</code>: the response obejct (if received) as described in the previous section.</li>
-<li><code>request</code>: the actual XMLHttpRequest object (when running in a browser).</li>
-<li><code>config</code>: the original request configuration</li>
-</ul>
-<h2 id="axios-instance"><a class="markdownIt-Anchor" href="#axios-instance"></a> Axios Instance</h2>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">"axios"</span>);</span><br><span class="line">request = axios.create(&#123;</span><br><span class="line">  baseURL: <span class="string">"http://ec2-13-211-47-167.ap-southeast-2.compute.amazonaws.com:3000"</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">request.get(<span class="string">"/articles"</span>).then(<span class="function"><span class="params">res</span> =&gt;</span> <span class="built_in">console</span>.log(res.data));</span><br></pre></td></tr></table></figure>
-<h2 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h2>
-<div class="note success">
-            <h3 id="何时使用asyncawait何时使用axios自带api"><a class="markdownIt-Anchor" href="#何时使用asyncawait何时使用axios自带api"></a> 何时使用async/await,何时使用axios自带API?</h3><ul><li>async/await: 自定义复杂代码块</li><li>axios API: 简单代码块调用</li></ul><blockquote><p>注意： promise本来就是异步的。</p></blockquote>
-          </div>
+<hr>
 
       
 
@@ -627,7 +536,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/es6.html" rel="bookmark">Next Generation JavaScript</a></div>
+      <div class="popular-posts-title"><a href="/nodejs.html" rel="bookmark">Node.js 构建RESTful API</a></div>
       
     </li>
   
@@ -670,7 +579,7 @@
   <li class="post-copyright-link">
     <strong>本文链接: </strong>
     
-    <a href="https://geekeast.github.io/axios.html" title="Asynchronous Client - Axios">https://geekeast.github.io/axios.html</a>
+    <a href="https://geekeast.github.io/pg.html" title="node-postgres Tutorial">https://geekeast.github.io/pg.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明:  </strong>除特殊声明外，本站博文均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议，转载请注明出处！</li>
@@ -684,11 +593,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Async/" rel="tag"># Async</a>
+            <a href="/tags/Postgre/" rel="tag"># Postgre</a>
           
-            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
+            <a href="/tags/Node/" rel="tag"># Node</a>
           
-            <a href="/tags/React/" rel="tag"># React</a>
+            <a href="/tags/Restful-API/" rel="tag"># Restful API</a>
+          
+            <a href="/tags/DB-Client/" rel="tag"># DB Client</a>
           
         </div>
       
@@ -713,8 +624,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/mdtutorial.html" rel="next" title="Hexo Markdown">
-                <i class="fa fa-chevron-left"></i> Hexo Markdown
+              <a href="/swaggerTutorial.html" rel="next" title="Integrate Express with Swagger">
+                <i class="fa fa-chevron-left"></i> Integrate Express with Swagger
               </a>
             
           </div>
@@ -722,10 +633,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/admindata.html" rel="prev" title="Admin Dashboard MRD">
-                Admin Dashboard MRD <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -888,7 +795,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#install-axios"><span class="nav-number">1.</span> <span class="nav-text"> Install Axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#import-axios"><span class="nav-number">2.</span> <span class="nav-text"> Import Axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#promise"><span class="nav-number">3.</span> <span class="nav-text"> Promise</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#asyncawait"><span class="nav-number">4.</span> <span class="nav-text"> async/await</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#promise-asyncawait"><span class="nav-number">5.</span> <span class="nav-text"> Promise + async/await</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#wrong"><span class="nav-number">5.1.</span> <span class="nav-text"> Wrong</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#right"><span class="nav-number">5.2.</span> <span class="nav-text"> Right</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios-api-without-asyncawait"><span class="nav-number">6.</span> <span class="nav-text"> Axios API without async/await</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#request-configoptions"><span class="nav-number">7.</span> <span class="nav-text"> Request Config/Options</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios-response-object"><span class="nav-number">8.</span> <span class="nav-text"> Axios Response Object</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios-error-object"><span class="nav-number">9.</span> <span class="nav-text"> Axios Error Object</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios-instance"><span class="nav-number">10.</span> <span class="nav-text"> Axios Instance</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#summary"><span class="nav-number">11.</span> <span class="nav-text"> Summary</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#何时使用asyncawait何时使用axios自带api"><span class="nav-number">11.1.</span> <span class="nav-text"> 何时使用async/await,何时使用axios自带API?</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#connection-pool"><span class="nav-number">1.</span> <span class="nav-text"> Connection Pool</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pool-usage"><span class="nav-number">2.</span> <span class="nav-text"> Pool Usage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#references"><span class="nav-number">3.</span> <span class="nav-text"> References:</span></a></li></ol></div>
             
 
           </div>

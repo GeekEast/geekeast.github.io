@@ -259,7 +259,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">23</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">24</span></a>
 
   </li>
         
@@ -278,7 +278,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">12</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">13</span></a>
 
   </li>
         
@@ -297,7 +297,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">36</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">39</span></a>
 
   </li>
 
@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/swaggerTutorial.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/pg.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -398,7 +398,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/swaggerTutorial.html" class="post-title-link" itemprop="url">Integrate Express with Swagger</a>
+                <a href="/pg.html" class="post-title-link" itemprop="url">node-postgres Tutorial</a>
               
             
           </h2>
@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-04-10 15:43:43 / Modified: 16:11:21" itemprop="dateCreated datePublished" datetime="2019-04-10T15:43:43+09:30">2019-04-10</time>
+              <time title="Created: 2019-04-10 16:12:55 / Modified: 16:18:18" itemprop="dateCreated datePublished" datetime="2019-04-10T16:12:55+09:30">2019-04-10</time>
             
 
             
@@ -441,7 +441,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Restful-API/" itemprop="url" rel="index"><span itemprop="name">Restful API</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DB-Client/" itemprop="url" rel="index"><span itemprop="name">DB Client</span></a></span>
 
                 
                 
@@ -470,7 +470,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">176k</span>
+                <span title="Symbols count in article">683</span>
               
 
               
@@ -484,7 +484,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">2:08</span>
+                <span title="Reading time">1 mins.</span>
               
             </div>
           
@@ -505,11 +505,12 @@
 
       
         
-          Encrypted Post. Please Enter Token.
+          <h2 id="connection-pool"><a class="markdownIt-Anchor" href="#connection-pool"></a> Connection Pool</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; Pool &#125; = <span class="built_in">require</span>(<span class="string">'pg'</span>);</span><br><span class="line"><span class="keyword">const</span> pool = <span class="keyword">new</span> Pool(&#123;</span><br><span class="line">	user: process.env.POSTGRES_USERNAME,</span><br><span class="line">	host: process.env.POSTGRES_HOST,</span><br><span class="line">	database: process.env.POSTGRES_DATABASE,</span><br><span class="line">	password: process.env.POSTGRES_PASSWORD,</span><br><span class="line">	port: process.env.POSTGRES_PORT,</span><br><span class="line">	max: process.env.POSTGRES_MAX_CONNECTION</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	pool</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/swaggerTutorial.html#more" rel="contents">
+              <a class="btn" href="/pg.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -567,7 +568,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/mymacshortcut.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/swaggerTutorial.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -587,7 +588,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/mymacshortcut.html" class="post-title-link" itemprop="url">Mac Shortcuts</a>
+                <a href="/swaggerTutorial.html" class="post-title-link" itemprop="url">Integrate Express with Swagger</a>
               
             
           </h2>
@@ -610,22 +611,12 @@
                 
               
 
-              <time title="Created: 2019-03-31 19:35:36" itemprop="dateCreated datePublished" datetime="2019-03-31T19:35:36+10:30">2019-03-31</time>
+              <time title="Created: 2019-04-10 15:43:43 / Modified: 16:12:47" itemprop="dateCreated datePublished" datetime="2019-04-10T15:43:43+09:30">2019-04-10</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-04-06 14:03:06" itemprop="dateModified" datetime="2019-04-06T14:03:06+10:30">2019-04-06</time>
               
             
           </span>
@@ -640,7 +631,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Mac/" itemprop="url" rel="index"><span itemprop="name">Mac</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Restful-API/" itemprop="url" rel="index"><span itemprop="name">Restful API</span></a></span>
 
                 
                 
@@ -669,7 +660,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.1k</span>
+                <span title="Symbols count in article">177k</span>
               
 
               
@@ -683,7 +674,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2:09</span>
               
             </div>
           
@@ -704,31 +695,11 @@
 
       
         
-          <p>Alfred: Double <code>Command</code><br>
-Alfred file search: <code>Space</code> + Search Content<br>
-Alfred file preview: <code>shift</code><br>
-Alfred Search Chrome Bookmark: <code>b</code> + Search Content<br>
-Alfred 查单词 <code>define opera</code><br>
-Alfred 模糊单词拼写查询：<code>spell dialect</code><br>
-Alfred 查看剪切板：<code>clip</code><br>
-Alfred 清空剪切板：<code>clean</code><br>
-Alfred google翻译： <code>translate sth</code><br>
-Alfred google搜索： <code>ggl sth</code><br>
-Alfred map搜索: <code>maps sth</code><br>
-Alfred gmail搜索： <code>gmail sth</code><br>
-Alfred 添加文件进缓存：<code>Option</code> + <code>Up</code><br>
-Alfred 添加文件进缓存，然后光标下移： <code>Option</code> + <code>Down</code><br>
-Alfred 删除缓存最后一个文件： <code>Option</code> + <code>Left</code><br>
-Alfred 缓存文件action: <code>Option</code> + <code>Right</code><br>
-Alfred Home Folder: `</p>
-<p>调出Preferences: <code>Command</code> + <code>&lt;</code><br>
-<code>切换APP：Command</code> + <code>Tab</code><br>
-全屏: <code>Control</code>-<code>Command</code>-<code>F</code><br>
-修改后：<code>Control</code>+ <code>Space</code> [基于BetterTouchTool]</p>
+          Encrypted Post. Please Enter Token.
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/mymacshortcut.html#more" rel="contents">
+              <a class="btn" href="/swaggerTutorial.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
