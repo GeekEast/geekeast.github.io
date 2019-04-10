@@ -4,14 +4,98 @@
   <url>
     <loc>https://geekeast.github.io/admindata.html</loc>
     
-    <lastmod>2019-04-10T07:12:31.303Z</lastmod>
+    <lastmod>2019-04-10T07:27:50.442Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/aria2c.html</loc>
+    
+    <lastmod>2019-04-10T07:27:46.950Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/aws-command.html</loc>
+    
+    <lastmod>2019-04-10T07:27:34.380Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/nodeapi.html</loc>
+    
+    <lastmod>2019-04-10T07:27:19.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/expressTutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:27:09.781Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/linuxcommands.html</loc>
     
-    <lastmod>2019-04-10T07:12:14.827Z</lastmod>
+    <lastmod>2019-04-10T07:26:48.989Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/nodetutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:26:14.834Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/postgreinstallonmac.html</loc>
+    
+    <lastmod>2019-04-10T07:26:03.242Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/ubuntuinstallzsh.html</loc>
+    
+    <lastmod>2019-04-10T07:25:52.661Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/postgresTutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:20:39.133Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/mymacshortcut.html</loc>
+    
+    <lastmod>2019-04-10T07:19:51.779Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/vscodeTutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:17:59.638Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/javscriptTutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:15:39.410Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/installnodepostgreonubuntu.html</loc>
+    
+    <lastmod>2019-04-10T07:15:15.575Z</lastmod>
     
   </url>
   
@@ -19,20 +103,6 @@
     <loc>https://geekeast.github.io/mdtutorial.html</loc>
     
     <lastmod>2019-04-10T07:12:04.192Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/nodejs.html</loc>
-    
-    <lastmod>2019-04-10T07:11:59.354Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/postgresTutorial.html</loc>
-    
-    <lastmod>2019-04-10T07:11:43.971Z</lastmod>
     
   </url>
   
@@ -58,20 +128,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/vscodeTutorial.html</loc>
-    
-    <lastmod>2019-04-10T07:11:02.992Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javscriptTutorial.html</loc>
-    
-    <lastmod>2019-04-10T07:10:47.435Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/pg.html</loc>
     
     <lastmod>2019-04-10T06:49:28.988Z</lastmod>
@@ -93,13 +149,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/mymacshortcut.html</loc>
-    
-    <lastmod>2019-04-06T03:33:06.189Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/dailynotes.html</loc>
     
     <lastmod>2019-04-06T03:20:20.725Z</lastmod>
@@ -110,13 +159,6 @@
     <loc>https://geekeast.github.io/axios.html</loc>
     
     <lastmod>2019-04-01T10:07:43.219Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/postgreinstallonmac.html</loc>
-    
-    <lastmod>2019-03-31T06:12:52.893Z</lastmod>
     
   </url>
   
@@ -212,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
+    <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
