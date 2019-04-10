@@ -2,9 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/admindata.html</loc>
+    
+    <lastmod>2019-04-10T07:12:31.303Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/linuxcommands.html</loc>
+    
+    <lastmod>2019-04-10T07:12:14.827Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/mdtutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:12:04.192Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/nodejs.html</loc>
+    
+    <lastmod>2019-04-10T07:11:59.354Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/postgresTutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:11:43.971Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/restfulProtocol.html</loc>
+    
+    <lastmod>2019-04-10T07:11:34.611Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/routermatch.html</loc>
+    
+    <lastmod>2019-04-10T07:11:23.255Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/ssrinfo.html</loc>
+    
+    <lastmod>2019-04-10T07:11:14.375Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/vscodeTutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:11:02.992Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/javscriptTutorial.html</loc>
+    
+    <lastmod>2019-04-10T07:10:47.435Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/pg.html</loc>
     
-    <lastmod>2019-04-10T06:48:18.814Z</lastmod>
+    <lastmod>2019-04-10T06:49:28.988Z</lastmod>
     
   </url>
   
@@ -37,20 +107,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/linuxcommands.html</loc>
-    
-    <lastmod>2019-04-02T22:52:52.549Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/mdtutorial.html</loc>
-    
-    <lastmod>2019-04-02T02:53:37.492Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/axios.html</loc>
     
     <lastmod>2019-04-01T10:07:43.219Z</lastmod>
@@ -61,20 +117,6 @@
     <loc>https://geekeast.github.io/postgreinstallonmac.html</loc>
     
     <lastmod>2019-03-31T06:12:52.893Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/nodejs.html</loc>
-    
-    <lastmod>2019-03-31T06:11:15.215Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/admindata.html</loc>
-    
-    <lastmod>2019-03-22T07:39:35.000Z</lastmod>
     
   </url>
   
@@ -170,14 +212,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
+    <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
