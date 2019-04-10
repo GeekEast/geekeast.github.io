@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/ubuntuinstallzsh.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/linuxcommands.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -398,7 +398,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/ubuntuinstallzsh.html" class="post-title-link" itemprop="url">Install Zsh on Ubuntu 18.04</a>
+                <a href="/linuxcommands.html" class="post-title-link" itemprop="url">Ubuntu Commands All in One</a>
               
             
           </h2>
@@ -421,32 +421,26 @@
                 
               
 
-              <time title="Created: 2019-04-10 16:46:01 / Modified: 16:55:52" itemprop="dateCreated datePublished" datetime="2019-04-10T16:46:01+09:30">2019-04-10</time>
+              <time title="Created: 2019-03-20 09:23:25" itemprop="dateCreated datePublished" datetime="2019-03-20T09:23:25+10:30">2019-03-20</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-04-10 16:56:48" itemprop="dateModified" datetime="2019-04-10T16:56:48+09:30">2019-04-10</time>
               
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Installation/" itemprop="url" rel="index"><span itemprop="name">Installation</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -470,7 +464,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">608</span>
+                <span title="Symbols count in article">1.7k</span>
               
 
               
@@ -505,12 +499,67 @@
 
       
         
-          <h2 id="ubuntu-install-zsh-oh-my-zsh-plugins"><a class="markdownIt-Anchor" href="#ubuntu-install-zsh-oh-my-zsh-plugins"></a> Ubuntu Install Zsh &amp; Oh My Zsh &amp; Plugins</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install -y zsh</span><br><span class="line">sh -c <span class="string">"<span class="variable">$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span>  <span class="comment"># need password.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># install plugins</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-autosuggestions</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</span><br><span class="line">nano ~/.zshrc</span><br><span class="line">plugins=(git zsh-autosuggestions zsh-syntax-highlighting) <span class="comment"># ~/.zshrc</span></span><br><span class="line"><span class="comment"># theme 'amuse'</span></span><br><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
+          <h2 id="file-permission"><a class="markdownIt-Anchor" href="#file-permission"></a> File Permission</h2>
+<ul>
+<li>r: Read</li>
+<li>w: Write</li>
+<li>x: eXecute</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Binary</th>
+<th style="text-align:left">Octal</th>
+<th style="text-align:left">Permission</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">000</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">—</td>
+</tr>
+<tr>
+<td style="text-align:left">001</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">–x</td>
+</tr>
+<tr>
+<td style="text-align:left">010</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">-w-</td>
+</tr>
+<tr>
+<td style="text-align:left">011</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">-wx</td>
+</tr>
+<tr>
+<td style="text-align:left">100</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">r–</td>
+</tr>
+<tr>
+<td style="text-align:left">101</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">r-x</td>
+</tr>
+<tr>
+<td style="text-align:left">110</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">rw-</td>
+</tr>
+<tr>
+<td style="text-align:left">111</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">rwx</td>
+</tr>
+</tbody>
+</table>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/ubuntuinstallzsh.html#more" rel="contents">
+              <a class="btn" href="/linuxcommands.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -568,7 +617,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/installnodepostgreonubuntu.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/requirevsimport.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -588,7 +637,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/installnodepostgreonubuntu.html" class="post-title-link" itemprop="url">Install Node/Postgres on Ubuntu 18.04</a>
+                <a href="/requirevsimport.html" class="post-title-link" itemprop="url">Using Node.js require vs. ES6 import/export</a>
               
             
           </h2>
@@ -611,7 +660,7 @@
                 
               
 
-              <time title="Created: 2019-04-10 16:43:26 / Modified: 16:45:15" itemprop="dateCreated datePublished" datetime="2019-04-10T16:43:26+09:30">2019-04-10</time>
+              <time title="Created: 2019-03-19 15:15:06 / Modified: 15:21:00" itemprop="dateCreated datePublished" datetime="2019-03-19T15:15:06+10:30">2019-03-19</time>
             
 
             
@@ -621,22 +670,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Installation/" itemprop="url" rel="index"><span itemprop="name">Installation</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -660,7 +693,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.1k</span>
+                <span title="Symbols count in article">210</span>
               
 
               
@@ -695,18 +728,1224 @@
 
       
         
-          <h2 id="install-nodejs-yarn-in-ubuntu-18"><a class="markdownIt-Anchor" href="#install-nodejs-yarn-in-ubuntu-18"></a> Install Node.js + Yarn in Ubuntu 18</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update &amp;&amp; sudo apt install -y nodejs npm &amp;&amp; nodejs -v &amp;&amp; npm -v</span><br></pre></td></tr></table></figure>
-<h2 id="install-yarn-in-ubuntu-18"><a class="markdownIt-Anchor" href="#install-yarn-in-ubuntu-18"></a> Install Yarn in Ubuntu 18</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - &amp;&amp; \</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"deb https://dl.yarnpkg.com/debian/ stable main"</span> | sudo tee /etc/apt/sources.list.d/yarn.list &amp;&amp; \</span><br><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install -y --no-install-recommends yarn</span><br></pre></td></tr></table></figure>
-<h2 id="install-git-in-ubuntu-18"><a class="markdownIt-Anchor" href="#install-git-in-ubuntu-18"></a> Install Git in Ubuntu 18</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update &amp;&amp; sudo apt install -y git &amp;&amp; git --version</span><br></pre></td></tr></table></figure>
-<h2 id="github-generate-ssh-key"><a class="markdownIt-Anchor" href="#github-generate-ssh-key"></a> Github Generate SSH key</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">"sx.ba2017@gmail.com"</span> &amp;&amp; cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+          <div class="note info">
+            <p>Are there any performance benefits to using one over the other?</p>
+          </div>
+<blockquote>
+<p>The current answer is no, because none of the current browser engines implements import/export from the ES6 standard.</p>
+</blockquote>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/installnodepostgreonubuntu.html#more" rel="contents">
+              <a class="btn" href="/requirevsimport.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/dizigui.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/dizigui.html" class="post-title-link" itemprop="url">弟子规讲课稿讨论</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-16 15:00:19 / Modified: 16:27:42" itemprop="dateCreated datePublished" datetime="2019-03-16T15:00:19+10:30">2019-03-16</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/传统文化/" itemprop="url" rel="index"><span itemprop="name">传统文化</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">5.6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">4 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          Encrypted Post. Please Enter Token.
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/dizigui.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/git-credential.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/git-credential.html" class="post-title-link" itemprop="url">Git Push 免输账户密码</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-14 10:58:56 / Modified: 18:21:56" itemprop="dateCreated datePublished" datetime="2019-03-14T10:58:56+10:30">2019-03-14</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">126</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git config --global credential.helper store</span><br><span class="line"></span><br><span class="line">git push</span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">type</span> your username and password</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Next time you don<span class="string">'t have to type</span></span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/nodeapi.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/nodeapi.html" class="post-title-link" itemprop="url">Node.js 构建RESTful API</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-12 15:52:57" itemprop="dateCreated datePublished" datetime="2019-03-12T15:52:57+10:30">2019-03-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-04-10 16:57:19" itemprop="dateModified" datetime="2019-04-10T16:57:19+09:30">2019-04-10</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Web-Development/" itemprop="url" rel="index"><span itemprop="name">Web Development</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">49k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">36 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <ul>
+<li>Introduction</li>
+<li>Install Node.js</li>
+<li>Run Node.js</li>
+<li>Node Module System</li>
+<li>NPM</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/nodeapi.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/backendallinone.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/backendallinone.html" class="post-title-link" itemprop="url">后端工程师技术图谱</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-12 13:17:41" itemprop="dateCreated datePublished" datetime="2019-03-12T13:17:41+10:30">2019-03-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Career/" itemprop="url" rel="index"><span itemprop="name">Career</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">2.4k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <ul>
+<li>数据结构</li>
+<li>常用算法</li>
+<li>并发</li>
+<li>操作系统</li>
+<li>设计模式</li>
+<li>运维 &amp; 统计 &amp; 技术支持</li>
+<li>中间件</li>
+<li>网络</li>
+<li>数据库</li>
+<li>搜索引擎<br>
+…</li>
+</ul>
+<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/backendallinone.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </h2></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/jielv.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/jielv.html" class="post-title-link" itemprop="url">为什么在中国，规定白衣不能阅戒?</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-11 14:44:10" itemprop="dateCreated datePublished" datetime="2019-03-11T14:44:10+10:30">2019-03-11</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Buddhism/" itemprop="url" rel="index"><span itemprop="name">Buddhism</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">266</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><ul class="markdownIt-TOC">
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%A7%84%E5%AE%9A%E7%99%BD%E8%A1%A3%E4%B8%8D%E8%83%BD%E9%98%85%E6%88%92">为什么在中国，规定白衣不能阅戒？</a>
+<ul>
+<li><a href="#1-%E5%B0%8F%E4%B9%98%E6%88%92%E6%98%AF%E5%9C%A8%E5%8D%B0%E5%BA%A6%E6%8C%87%E5%AE%9A%E4%BC%A0%E5%88%B0%E4%B8%AD%E5%9B%BD%E7%8E%AF%E5%A2%83%E5%8F%91%E7%94%9F%E5%B7%A8%E5%A4%A7%E5%8F%98%E5%8C%96%E4%BD%BF%E5%BE%97%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%BD%9B%E5%BC%9F%E5%AD%90%E4%BB%AC%E5%BE%88%E9%9A%BE%E5%81%9A%E5%88%B0%E6%89%80%E6%9C%89%E6%88%92%E8%A7%84%E6%80%95%E4%B8%96%E4%BA%BA%E4%BB%A5%E6%AD%A4%E6%9D%A5%E6%94%BB%E5%87%BB%E5%83%A7%E4%BE%A3%E8%AF%8B%E6%AF%81%E4%BD%9B%E6%95%99">1. 小乘戒是在印度指定，传到中国环境发生巨大变化，使得中国的佛弟子们很难做到所有戒规，怕世人以此来攻击僧侣，诋毁佛教。</a></li>
+<li><a href="#2-%E5%A4%A7%E4%B9%98%E6%9E%9C%E4%BD%8D%E7%9A%84%E8%8F%A9%E8%90%A8%E5%88%A9%E7%94%A8%E5%90%84%E7%A7%8D%E5%96%84%E5%B7%A7%E6%96%B9%E4%BE%BF%E6%99%AE%E5%BA%A6%E4%BC%97%E7%94%9F%E7%99%BD%E8%A1%A3%E9%98%85%E6%88%92%E6%98%93%E4%BD%BF%E5%BE%97%E4%B8%96%E4%BA%BA%E8%AF%BD%E8%B0%A4-%E8%AF%8B%E6%AF%81%E6%9E%9C%E4%BD%8D%E8%8F%A9%E8%90%A8%E9%80%A0%E4%B8%8B%E5%8F%A3%E4%B8%9A">2. 大乘果位的菩萨利用各种善巧方便，普度众生，白衣阅戒，易使得世人诽谤、诋毁果位菩萨，造下口业。</a></li>
+</ul>
+</li>
+</ul>
+</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jielv.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/fofafenqi.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/fofafenqi.html" class="post-title-link" itemprop="url">佛法在印度的分期弘扬以及三乘教学</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-11 13:58:27" itemprop="dateCreated datePublished" datetime="2019-03-11T13:58:27+10:30">2019-03-11</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Buddhism/" itemprop="url" rel="index"><span itemprop="name">Buddhism</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">872</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><ul class="markdownIt-TOC">
+<li><a href="#%E4%B8%80-%E5%B0%8F%E4%B9%98%E4%BD%9B%E6%95%99%E6%97%B6%E6%9C%9F">一。小乘佛教时期</a>
+<ul>
+<li><a href="#1-%E5%8E%9F%E5%A7%8B%E4%BD%9B%E6%95%99%E6%97%B6%E6%9C%9F">1. 原始佛教时期</a></li>
+<li><a href="#2-%E9%83%A8%E6%B4%BE%E4%BD%9B%E6%95%99%E6%97%B6%E6%9C%9F">2. 部派佛教时期</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8C-%E5%A4%A7%E4%B9%98%E4%BD%9B%E6%95%99%E6%97%B6%E6%9C%9F">二。 大乘佛教时期</a></li>
+<li><a href="#%E4%B8%89-%E5%AF%86%E6%95%99%E6%97%B6%E6%9C%9F">三。 密教时期</a></li>
+<li><a href="#%E5%9B%9B-%E5%B0%8F%E4%B9%98-%E5%A4%A7%E4%B9%98-%E5%AF%86%E4%B9%98">四。 小乘、大乘、密乘</a></li>
+<li><a href="#%E4%BA%94-%E6%95%99%E5%A4%96%E5%88%AB%E4%BC%A0">五。 教外别传</a></li>
+</ul>
+</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/fofafenqi.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -753,7 +1992,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
