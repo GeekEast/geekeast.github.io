@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="ORM:  pros:  Simple Suitable for smal query easy to reuse   cons:  new things to learn slow down the performance when query is complex.     SQL  pros:  easy to optimise   cons:  can be quite complex">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-11T06:01:08.282Z">
+<meta property="og:updated_time" content="2019-04-11T06:12:01.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ORM vs SQL">
 <meta name="twitter:description" content="ORM:  pros:  Simple Suitable for smal query easy to reuse   cons:  new things to learn slow down the performance when query is complex.     SQL  pros:  easy to optimise   cons:  can be quite complex">
@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-04-11 14:58:14 / Modified: 15:31:08" itemprop="dateCreated datePublished" datetime="2019-04-11T14:58:14+09:30">2019-04-11</time>
+              <time title="Created: 2019-04-11 14:58:14 / Modified: 15:42:01" itemprop="dateCreated datePublished" datetime="2019-04-11T14:58:14+09:30">2019-04-11</time>
             
 
             
@@ -477,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">226</span>
+                <span title="Symbols count in article">2.8k</span>
               
 
               
@@ -491,7 +491,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2 mins.</span>
               
             </div>
           
@@ -543,6 +543,30 @@
 </ul>
 <a id="more"></a>
 <hr>
+<h2 id="layers-of-abstraction"><a class="markdownIt-Anchor" href="#layers-of-abstraction"></a> Layers of Abstraction</h2>
+<h3 id="low-level-database-driver"><a class="markdownIt-Anchor" href="#low-level-database-driver"></a> Low Level: Database Driver</h3>
+<p>This is basically as low-level as you can get — short of manually generating TCP packets and delivering them to the database. A database driver is going to handle connecting to a database (and sometimes connection pooling). At this level you’re going to be writing raw SQL strings and delivering them to a database, and receiving a response from the database. In the Node.js ecosystem there are many libraries operating at this layer. Here are three popular libraries:</p>
+<ul>
+<li>mysql: MySQL (13k stars / 330k weekly downloads)</li>
+<li>pg: PostgreSQL (6k stars / 520k weekly downloads)</li>
+<li>sqlite3: SQLite (3k stars / 120k weekly downloads)</li>
+</ul>
+<p>Each of these libraries essentially works the same way: take the database credentials, instantiate a new database instance, connect to the database, and send it queries in the form of a string and asynchronously handle the result.</p>
+<p>Here is a simple example using the pg module to get a list of ingredients required to cook Chicken Tikka Masala:</p>
+<h3 id="middle-level-query-builder"><a class="markdownIt-Anchor" href="#middle-level-query-builder"></a> Middle Level: Query Builder</h3>
+<p>This is the intermediary level between using the simpler Database Driver module vs a full-fledged ORM. The most notable module which operates at this layer is Knex. This module is able to generate queries for a few different SQL dialects. This module depends on one of the aforementioned libraries — you’ll need to install the particular ones you plan on using with Knex.</p>
+<ul>
+<li>knex: Query Builder (8k stars / 170k weekly downloads)</li>
+</ul>
+<p>When creating a Knex instance you provide the connection details, along with the dialect you plan on using and are then able to start making queries. The queries you write will closely resemble the underlying SQL queries. One nicety is that you’re able to programmatically generate dynamic queries in a much more convenient way than if you were to concatenate strings together to form SQL (which often introduces security vulnerabilities).</p>
+<h3 id="high-level-orm"><a class="markdownIt-Anchor" href="#high-level-orm"></a> High Level: ORM</h3>
+<p>This is the highest level of abstraction we’re going to consider. When working with ORMs we typically need to do a lot more configuration ahead of time. The point of an ORM, as the name implies, is to map a record in a relational database to an object (typically, but not always, a class instance) in our application. What this means is that we’re defining the structure of these objects, as well as their relationships, in our application code.</p>
+<ul>
+<li>sequelize: (16k stars / 270k weekly downloads)</li>
+<li>bookshelf: Knex based (5k stars / 23k weekly downloads)</li>
+<li>waterline: (5k stars / 20k weekly downloads)</li>
+<li>objection: Knex based (3k stars / 20k weekly downloads)</li>
+</ul>
 
       
 
@@ -827,7 +851,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#orm"><span class="nav-number">1.</span> <span class="nav-text"> ORM:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sql"><span class="nav-number">2.</span> <span class="nav-text"> SQL</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#orm"><span class="nav-number">1.</span> <span class="nav-text"> ORM:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sql"><span class="nav-number">2.</span> <span class="nav-text"> SQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#layers-of-abstraction"><span class="nav-number">3.</span> <span class="nav-text"> Layers of Abstraction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#low-level-database-driver"><span class="nav-number">3.1.</span> <span class="nav-text"> Low Level: Database Driver</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#middle-level-query-builder"><span class="nav-number">3.2.</span> <span class="nav-text"> Middle Level: Query Builder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#high-level-orm"><span class="nav-number">3.3.</span> <span class="nav-text"> High Level: ORM</span></a></li></ol></li></ol></div>
             
 
           </div>
