@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/resuablesql.html</loc>
+    
+    <lastmod>2019-04-11T06:01:08.282Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/linuxcommands.html</loc>
+    
+    <lastmod>2019-04-11T03:43:43.031Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/admindata.html</loc>
     
     <lastmod>2019-04-10T07:27:50.442Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>https://geekeast.github.io/expressTutorial.html</loc>
     
     <lastmod>2019-04-10T07:27:09.781Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linuxcommands.html</loc>
-    
-    <lastmod>2019-04-10T07:26:48.989Z</lastmod>
     
   </url>
   
@@ -205,13 +212,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/fofafenqi.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/git-credential.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -220,6 +220,13 @@
   
   <url>
     <loc>https://geekeast.github.io/htmlloading.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/fofafenqi.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -254,14 +261,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
+    <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     

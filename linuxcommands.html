@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="File Permission  r: Read w: Write x: eXecute     Binary Octal Permission     000 0 —   001 1 –x   010 2 -w-   011 3 -wx   100 4 r–   101 5 r-x   110 6 rw-   111 7 rwx">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-10T07:26:48.989Z">
+<meta property="og:updated_time" content="2019-04-11T03:43:43.031Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu Commands All in One">
 <meta name="twitter:description" content="File Permission  r: Read w: Write x: eXecute     Binary Octal Permission     000 0 —   001 1 –x   010 2 -w-   011 3 -wx   100 4 r–   101 5 r-x   110 6 rw-   111 7 rwx">
@@ -259,7 +259,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">36</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">37</span></a>
 
   </li>
         
@@ -297,7 +297,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">50</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">51</span></a>
 
   </li>
 
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-04-10 16:56:48" itemprop="dateModified" datetime="2019-04-10T16:56:48+09:30">2019-04-10</time>
+                <time title="Modified: 2019-04-11 13:13:43" itemprop="dateModified" datetime="2019-04-11T13:13:43+09:30">2019-04-11</time>
               
             
           </span>
@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.7k</span>
+                <span title="Symbols count in article">1.8k</span>
               
 
               
@@ -670,6 +670,8 @@
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$USER</span>"</span></span><br></pre></td></tr></table></figure>
 <h2 id="falling-back-to-a-fallback-locale-cutf-8"><a class="markdownIt-Anchor" href="#falling-back-to-a-fallback-locale-cutf-8"></a> <code>Falling back to a fallback locale (&quot;C.UTF-8&quot;)</code></h2>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-locale LC_ALL=<span class="string">"en_US.UTF-8"</span></span><br></pre></td></tr></table></figure>
+<h2 id="chownchmod"><a class="markdownIt-Anchor" href="#chownchmod"></a> chown/chmod</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chown -R <span class="variable">$USER</span>:<span class="variable">$USER</span> ./  修改非隐藏文件</span><br><span class="line">chown -R <span class="variable">$USER</span>:<span class="variable">$USER</span> ./.[^.]* <span class="comment"># 修改隐藏文件</span></span><br></pre></td></tr></table></figure>
 
       
 
@@ -924,7 +926,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#file-permission"><span class="nav-number">1.</span> <span class="nav-text"> File Permission</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mkdir"><span class="nav-number">2.</span> <span class="nav-text"> mkdir</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#options"><span class="nav-number">2.1.</span> <span class="nav-text"> Options:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#params"><span class="nav-number">2.2.</span> <span class="nav-text"> Params:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example"><span class="nav-number">2.3.</span> <span class="nav-text"> Example:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#id"><span class="nav-number">3.</span> <span class="nav-text"> id</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#options-2"><span class="nav-number">3.1.</span> <span class="nav-text"> Options</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples"><span class="nav-number">3.2.</span> <span class="nav-text"> Examples</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chown"><span class="nav-number">4.</span> <span class="nav-text"> chown</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#options-3"><span class="nav-number">4.1.</span> <span class="nav-text"> Options:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples-2"><span class="nav-number">4.2.</span> <span class="nav-text"> Examples</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chmod"><span class="nav-number">5.</span> <span class="nav-text"> chmod</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-shell-换行"><span class="nav-number">6.</span> <span class="nav-text"> Linux Shell 换行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给shell命令设置alias"><span class="nav-number">7.</span> <span class="nav-text"> 给shell命令设置alias</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#some-alias"><span class="nav-number">8.</span> <span class="nav-text"> Some Alias</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ubuntu获取当前用户名"><span class="nav-number">9.</span> <span class="nav-text"> Ubuntu获取当前用户名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#falling-back-to-a-fallback-locale-cutf-8"><span class="nav-number">10.</span> <span class="nav-text"> Falling back to a fallback locale (&quot;C.UTF-8&quot;)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#file-permission"><span class="nav-number">1.</span> <span class="nav-text"> File Permission</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mkdir"><span class="nav-number">2.</span> <span class="nav-text"> mkdir</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#options"><span class="nav-number">2.1.</span> <span class="nav-text"> Options:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#params"><span class="nav-number">2.2.</span> <span class="nav-text"> Params:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#example"><span class="nav-number">2.3.</span> <span class="nav-text"> Example:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#id"><span class="nav-number">3.</span> <span class="nav-text"> id</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#options-2"><span class="nav-number">3.1.</span> <span class="nav-text"> Options</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples"><span class="nav-number">3.2.</span> <span class="nav-text"> Examples</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chown"><span class="nav-number">4.</span> <span class="nav-text"> chown</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#options-3"><span class="nav-number">4.1.</span> <span class="nav-text"> Options:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples-2"><span class="nav-number">4.2.</span> <span class="nav-text"> Examples</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chmod"><span class="nav-number">5.</span> <span class="nav-text"> chmod</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-shell-换行"><span class="nav-number">6.</span> <span class="nav-text"> Linux Shell 换行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给shell命令设置alias"><span class="nav-number">7.</span> <span class="nav-text"> 给shell命令设置alias</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#some-alias"><span class="nav-number">8.</span> <span class="nav-text"> Some Alias</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ubuntu获取当前用户名"><span class="nav-number">9.</span> <span class="nav-text"> Ubuntu获取当前用户名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#falling-back-to-a-fallback-locale-cutf-8"><span class="nav-number">10.</span> <span class="nav-text"> Falling back to a fallback locale (&quot;C.UTF-8&quot;)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chownchmod"><span class="nav-number">11.</span> <span class="nav-text"> chown/chmod</span></a></li></ol></div>
             
 
           </div>
