@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="查找当前目录下大于100mb的所有文件 1find . -type f -size +100M  显示当前目录大小 1du -sh .  显示当前目录或者文件夹的所占磁盘空间 1du -sh *  显示前十个占用空间最大的目录 1du -s * | sort -nr | head">
-<meta name="keywords" content="Linux">
+  <meta name="description" content="定时任务  Install Node Schedule with Timezone Setting 1yarn add node-schedule-tz  Schedule Module in Node.js 123456789101112131415161718const schedule = require(&apos;node-schedule-tz&apos;);const slack = require(">
+<meta name="keywords" content="Node.js,Schedule">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux&#x2F;Unix下查找大于100mb的文件">
-<meta property="og:url" content="https://geekeast.github.io/findbigfilelinux.html">
+<meta property="og:title" content="nodescheduler">
+<meta property="og:url" content="https://geekeast.github.io/nodescheduler.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="查找当前目录下大于100mb的所有文件 1find . -type f -size +100M  显示当前目录大小 1du -sh .  显示当前目录或者文件夹的所占磁盘空间 1du -sh *  显示前十个占用空间最大的目录 1du -s * | sort -nr | head">
+<meta property="og:description" content="定时任务  Install Node Schedule with Timezone Setting 1yarn add node-schedule-tz  Schedule Module in Node.js 123456789101112131415161718const schedule = require(&apos;node-schedule-tz&apos;);const slack = require(">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-14T07:51:56.000Z">
+<meta property="og:updated_time" content="2019-04-15T11:19:33.141Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux&#x2F;Unix下查找大于100mb的文件">
-<meta name="twitter:description" content="查找当前目录下大于100mb的所有文件 1find . -type f -size +100M  显示当前目录大小 1du -sh .  显示当前目录或者文件夹的所占磁盘空间 1du -sh *  显示前十个占用空间最大的目录 1du -s * | sort -nr | head">
+<meta name="twitter:title" content="nodescheduler">
+<meta name="twitter:description" content="定时任务  Install Node Schedule with Timezone Setting 1yarn add node-schedule-tz  Schedule Module in Node.js 123456789101112131415161718const schedule = require(&apos;node-schedule-tz&apos;);const slack = require(">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/findbigfilelinux.html">
+  <link rel="canonical" href="https://geekeast.github.io/nodescheduler.html">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Linux/Unix下查找大于100mb的文件 | 雪中印</title>
+  <title>nodescheduler | 雪中印</title>
   
 
 
@@ -380,7 +380,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/findbigfilelinux.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/nodescheduler.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -397,7 +397,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Linux/Unix下查找大于100mb的文件
+          <h2 class="post-title" itemprop="name headline">nodescheduler
 
               
             
@@ -421,22 +421,12 @@
                 
               
 
-              <time title="Created: 2019-03-09 12:35:21" itemprop="dateCreated datePublished" datetime="2019-03-09T12:35:21+10:30">2019-03-09</time>
+              <time title="Created: 2019-04-15 20:38:04 / Modified: 20:49:33" itemprop="dateCreated datePublished" datetime="2019-04-15T20:38:04+09:30">2019-04-15</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
               
             
           </span>
@@ -451,7 +441,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Backend/" itemprop="url" rel="index"><span itemprop="name">Backend</span></a></span>
 
                 
                 
@@ -487,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">143</span>
+                <span title="Symbols count in article">7.1k</span>
               
 
               
@@ -501,7 +491,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">5 mins.</span>
               
             </div>
           
@@ -521,15 +511,17 @@
       
 
       
-        <h3 id="查找当前目录下大于100mb的所有文件"><a class="markdownIt-Anchor" href="#查找当前目录下大于100mb的所有文件"></a> 查找当前目录下大于100mb的所有文件</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -type f -size +100M</span><br></pre></td></tr></table></figure>
-<h3 id="显示当前目录大小"><a class="markdownIt-Anchor" href="#显示当前目录大小"></a> 显示当前目录大小</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh .</span><br></pre></td></tr></table></figure>
-<h3 id="显示当前目录或者文件夹的所占磁盘空间"><a class="markdownIt-Anchor" href="#显示当前目录或者文件夹的所占磁盘空间"></a> 显示当前目录或者文件夹的所占磁盘空间</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
-<h3 id="显示前十个占用空间最大的目录"><a class="markdownIt-Anchor" href="#显示前十个占用空间最大的目录"></a> 显示前十个占用空间最大的目录</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -s * | sort -nr | head</span><br></pre></td></tr></table></figure>
+        <h2 id="定时任务"><a class="markdownIt-Anchor" href="#定时任务"></a> 定时任务</h2>
+<h3 id="install-node-schedule-with-timezone-setting"><a class="markdownIt-Anchor" href="#install-node-schedule-with-timezone-setting"></a> Install Node Schedule with Timezone Setting</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add node-schedule-tz</span><br></pre></td></tr></table></figure>
+<h3 id="schedule-module-in-nodejs"><a class="markdownIt-Anchor" href="#schedule-module-in-nodejs"></a> Schedule Module in Node.js</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> schedule = <span class="built_in">require</span>(<span class="string">'node-schedule-tz'</span>);</span><br><span class="line"><span class="keyword">const</span> slack = <span class="built_in">require</span>(<span class="string">'./slack'</span>);</span><br><span class="line"><span class="keyword">const</span> gmail = <span class="built_in">require</span>(<span class="string">'./mail'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// execute task at 10am every Friday.</span></span><br><span class="line"><span class="keyword">var</span> rule = <span class="keyword">new</span> schedule.RecurrenceRule();</span><br><span class="line">rule.tz = <span class="string">'Australia/Sydney'</span>;</span><br><span class="line">rule.dayOfWeek = [ <span class="number">5</span> ]; <span class="comment">// every Friday  from 0 to 6</span></span><br><span class="line">rule.hour = <span class="number">10</span>; <span class="comment">// 10am</span></span><br><span class="line">rule.minute = <span class="number">0</span>; </span><br><span class="line">rule.second = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// start the job</span></span><br><span class="line">schedule.scheduleJob(rule, () =&gt; &#123;</span><br><span class="line">	slack();</span><br><span class="line">	gmail();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="slack-webhook"><a class="markdownIt-Anchor" href="#slack-webhook"></a> Slack Webhook</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">'request'</span>);</span><br><span class="line"><span class="keyword">const</span> data = <span class="built_in">require</span>(<span class="string">'./data'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> ceoID = <span class="string">'U4APNJLKF'</span>;</span><br><span class="line"><span class="keyword">const</span> dataString = &#123;</span><br><span class="line">	<span class="comment">// CEO's member ID in slack</span></span><br><span class="line">	text: <span class="string">`Hi, &lt;@<span class="subst">$&#123;ceoID&#125;</span>&gt;. Please check reports for this week. \n \</span></span><br><span class="line"><span class="string">&lt;<span class="subst">$&#123;data.irapt.url&#125;</span>|1. Weekly Report for <span class="subst">$&#123;data.irapt.name&#125;</span>&gt; \n \</span></span><br><span class="line"><span class="string">&lt;<span class="subst">$&#123;data.flinders.url&#125;</span>|2. Weekly Report for <span class="subst">$&#123;data.flinders.name&#125;</span>&gt; \n \</span></span><br><span class="line"><span class="string">&lt;<span class="subst">$&#123;data.banna.url&#125;</span>|3. Weekly Report for <span class="subst">$&#123;data.banna.name&#125;</span>&gt;`</span>,</span><br><span class="line">	mrkdwn: <span class="literal">true</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> headers = &#123;</span><br><span class="line">	<span class="string">'Content-type'</span>: <span class="string">'application/json'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> options = &#123;</span><br><span class="line">	url: <span class="string">'https://hooks.slack.com/services/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'</span>,</span><br><span class="line">	method: <span class="string">'POST'</span>,</span><br><span class="line">	headers: headers,</span><br><span class="line">	body: <span class="built_in">JSON</span>.stringify(dataString)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callback</span>(<span class="params">error, response, body</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="number">200</span>) &#123;</span><br><span class="line">		<span class="built_in">console</span>.log(body);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">	request(options, callback);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="gmail-sender"><a class="markdownIt-Anchor" href="#gmail-sender"></a> Gmail Sender</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> nodemailer = <span class="built_in">require</span>(<span class="string">'nodemailer'</span>);</span><br><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">'axios'</span>);</span><br><span class="line"><span class="keyword">const</span> request = axios.create(&#123; <span class="attr">baseURL</span>: <span class="string">'http://localhost:3500/'</span> &#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> transporter = nodemailer.createTransport(&#123;</span><br><span class="line">	service: <span class="string">'gmail'</span>,</span><br><span class="line">	auth: &#123;</span><br><span class="line">		user: <span class="string">'xiang.tan@tcpinpoint.com'</span>,</span><br><span class="line">		pass: <span class="string">'sx492021'</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">generateReport</span>(<span class="params">portfolio_name, unit, mau_id, mau_name</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">const</span> prepare_number_of_projects = <span class="keyword">await</span> request.get(<span class="string">'/portfolios/projects/create/count'</span>, &#123;</span><br><span class="line">		params: &#123; <span class="attr">name</span>: portfolio_name, <span class="attr">unit</span>: unit &#125;</span><br><span class="line">	&#125;);</span><br><span class="line">	<span class="keyword">const</span> number_of_projects_created = prepare_number_of_projects.data[<span class="number">0</span>].count;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> prepare_number_of_projects_open = <span class="keyword">await</span> request.get(<span class="string">'/portfolios/projects/open/count'</span>, &#123;</span><br><span class="line">		params: &#123; <span class="attr">name</span>: portfolio_name &#125;</span><br><span class="line">	&#125;);</span><br><span class="line">	<span class="keyword">const</span> number_of_projects_open = prepare_number_of_projects_open.data[<span class="number">0</span>].count;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> prepare_number_of_closed_tasks = <span class="keyword">await</span> request.get(<span class="string">'/portfolios/tasks/close/count'</span>, &#123;</span><br><span class="line">		params: &#123; <span class="attr">mau</span>: mau_id, <span class="attr">name</span>: portfolio_name, <span class="attr">unit</span>: <span class="number">10000</span> &#125;</span><br><span class="line">	&#125;);</span><br><span class="line">	<span class="keyword">const</span> number_of_closed_tasks = prepare_number_of_closed_tasks.data[<span class="number">0</span>].count;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> prepare_number_of_comments = <span class="keyword">await</span> request.get(<span class="string">'/portfolios/comments/count'</span>, &#123;</span><br><span class="line">		params: &#123; <span class="attr">mau</span>: mau_id, <span class="attr">name</span>: portfolio_name, <span class="attr">unit</span>: <span class="number">10000</span> &#125;</span><br><span class="line">	&#125;);</span><br><span class="line">	<span class="keyword">const</span> number_of_comments = prepare_number_of_comments.data[<span class="number">0</span>].count;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> prepare_most_tasks_behind_user_name = <span class="keyword">await</span> request.get(<span class="string">'/portfolios/tasks-projects/behind'</span>, &#123;</span><br><span class="line">		params: &#123; <span class="attr">name</span>: portfolio_name &#125;</span><br><span class="line">	&#125;);</span><br><span class="line">	<span class="keyword">const</span> result = prepare_most_tasks_behind_user_name.data;</span><br><span class="line">	<span class="keyword">let</span> most_tasks_behind_user_name = [];</span><br><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line">		<span class="keyword">let</span> max = <span class="built_in">parseInt</span>(result[<span class="number">0</span>].number_of_behind_tasks);</span><br><span class="line">		<span class="keyword">for</span> (item <span class="keyword">of</span> result) &#123;</span><br><span class="line">			<span class="keyword">let</span> c_item_n = <span class="built_in">parseInt</span>(item.number_of_behind_tasks);</span><br><span class="line">			<span class="keyword">if</span> (c_item_n === max) &#123;</span><br><span class="line">				most_tasks_behind_user_name.push(item.name);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">		<span class="built_in">console</span>.log(err);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> user_flag = most_tasks_behind_user_name.length &gt; <span class="number">1</span> ? <span class="string">'users'</span> : <span class="string">'user'</span>;</span><br><span class="line">	<span class="keyword">const</span> is_flag = most_tasks_behind_user_name.length &gt; <span class="number">1</span> ? <span class="string">'are'</span> : <span class="string">'is'</span>;</span><br><span class="line">	most_tasks_behind_user_name = most_tasks_behind_user_name.join(<span class="string">' and '</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> prepare_number_of_projects_behind = <span class="keyword">await</span> request.get(<span class="string">'/portfolios/projects/behind/count'</span>, &#123;</span><br><span class="line">		params: &#123; <span class="attr">name</span>: portfolio_name &#125;</span><br><span class="line">	&#125;);</span><br><span class="line">	<span class="keyword">const</span> number_of_projects_behind = prepare_number_of_projects_behind.data[<span class="number">0</span>].count;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> prepare_number_of_projects_ahead = <span class="keyword">await</span> request.get(<span class="string">'/portfolios/projects/ahead/count'</span>, &#123;</span><br><span class="line">		params: &#123; <span class="attr">name</span>: portfolio_name &#125;</span><br><span class="line">	&#125;);</span><br><span class="line">	<span class="keyword">const</span> number_of_projects_ahead = prepare_number_of_projects_ahead.data[<span class="number">0</span>].count;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">const</span> html = <span class="string">`&lt;!DOCTYPE html&gt;    &lt;html&gt;    &lt;head&gt;      &lt;meta charset="utf-8"&gt;      &lt;meta name="viewport" content="width=device-width"&gt;      &lt;title&gt;Weekly Report for <span class="subst">$&#123;portfolio_name.toUpperCase()&#125;</span>&lt;/title&gt;    &lt;/head&gt;    &lt;body&gt;     ✅Begin Weekly Briefing: &lt;br&gt;&lt;br&gt;     In the last 7 days &lt;b&gt;<span class="subst">$&#123;number_of_projects_created&#125;</span>&lt;/b&gt; Projects were started across the <span class="subst">$&#123;portfolio_name.toUpperCase()&#125;</span> portfolio of properties.       There are currently &lt;b&gt;<span class="subst">$&#123;number_of_projects_open&#125;</span>&lt;/b&gt; number of Active Projects underway across the <span class="subst">$&#123;portfolio_name.toUpperCase()&#125;</span> portfolio of properties. &lt;br&gt;      &lt;br&gt;     The most active user was &lt;b&gt;<span class="subst">$&#123;mau_name&#125;</span>&lt;/b&gt; with &lt;b&gt;<span class="subst">$&#123;number_of_closed_tasks&#125;</span>&lt;/b&gt; tasks closed and &lt;b&gt;<span class="subst">$&#123;number_of_comments&#125;</span>&lt;/b&gt; comments left on TCPinpoint.🌟&lt;br&gt;&lt;br&gt;     The <span class="subst">$&#123;user_flag&#125;</span> with the most number of tasks over due <span class="subst">$&#123;is_flag&#125;</span> &lt;b&gt;<span class="subst">$&#123;most_tasks_behind_user_name&#125;</span>&lt;/b&gt;.&lt;br&gt;&lt;br&gt;     There are &lt;b&gt;<span class="subst">$&#123;number_of_projects_behind&#125;</span>&lt;/b&gt; number of projects as showing Behind (the definition of a 'Behind Project' indicates any project that has tasks showing Behind their due date) across the <span class="subst">$&#123;portfolio_name.toUpperCase()&#125;</span> portfolio of properties.&lt;br&gt;&lt;br&gt;     There are &lt;b&gt;<span class="subst">$&#123;number_of_projects_ahead&#125;</span>&lt;/b&gt; number of projects as showing as Ahead, or on schedule (the definition of a 'on schedule' project indicates any project that has tasks showing as completed or to be completed in the future), across the <span class="subst">$&#123;portfolio_name.toUpperCase()&#125;</span> portfolio of properties.    &lt;/body&gt;    &lt;/html&gt;`</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">sendReport</span>(<span class="params">portfolio_name, unit, mau_id, mau_name</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">const</span> ceoEmail = <span class="string">'rachel@tcpinpoint.com'</span>;</span><br><span class="line">	<span class="keyword">const</span> html = <span class="keyword">await</span> generateReport(portfolio_name, unit, mau_id, mau_name);</span><br><span class="line">	<span class="keyword">const</span> mailOptions = &#123;</span><br><span class="line">		<span class="keyword">from</span>: <span class="string">'"James Tan" &lt;xiang.tan@tcpinpoint.com&gt;'</span>, <span class="comment">// login user must equel to this user</span></span><br><span class="line">		to: ceoEmail,</span><br><span class="line">		subject: <span class="string">`Weekly Report for <span class="subst">$&#123;portfolio_name.toUpperCase()&#125;</span>`</span>,</span><br><span class="line">		text: <span class="string">''</span>,</span><br><span class="line">		html: html</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">	transporter.sendMail(mailOptions, <span class="function"><span class="keyword">function</span>(<span class="params">error, info</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (error) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">console</span>.log(error);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">'Message sent: '</span> + info.response);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">	sendReport(<span class="string">'irapt'</span>, <span class="number">7</span>, <span class="string">'ed725f2c-0e68-4fe3-a275-8c10543897f3'</span>, <span class="string">'Kelven Cross'</span>);</span><br><span class="line">	sendReport(<span class="string">'flinder'</span>, <span class="number">7</span>, <span class="string">'7d70372f-2a14-49c5-bf0f-b87e98c0f2d7'</span>, <span class="string">'Alan Hall'</span>);</span><br><span class="line">	sendReport(<span class="string">'banna'</span>, <span class="number">7</span>, <span class="string">'88126da0-2643-4630-8e65-e4e1dd4a2b20'</span>, <span class="string">'Sam Strahan'</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
+<hr>
 
       
 
@@ -545,7 +537,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/awkparsecsv.html" rel="bookmark">AWK 读取csv输出csv</a></div>
+      <div class="popular-posts-title"><a href="/installnodepostgreonubuntu.html" rel="bookmark">Install Node/Postgres on Ubuntu 18.04</a></div>
       
     </li>
   
@@ -588,7 +580,7 @@
   <li class="post-copyright-link">
     <strong>本文链接: </strong>
     
-    <a href="https://geekeast.github.io/findbigfilelinux.html" title="Linux/Unix下查找大于100mb的文件">https://geekeast.github.io/findbigfilelinux.html</a>
+    <a href="https://geekeast.github.io/nodescheduler.html" title="nodescheduler">https://geekeast.github.io/nodescheduler.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明:  </strong>除特殊声明外，本站博文均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议，转载请注明出处！</li>
@@ -602,7 +594,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/Node-js/" rel="tag"># Node.js</a>
+          
+            <a href="/tags/Schedule/" rel="tag"># Schedule</a>
           
         </div>
       
@@ -627,8 +621,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/mlinterview.html" rel="next" title="机器学习面试攻略(国内)">
-                <i class="fa fa-chevron-left"></i> 机器学习面试攻略(国内)
+              <a href="/awkparsecsv.html" rel="next" title="AWK 读取csv输出csv">
+                <i class="fa fa-chevron-left"></i> AWK 读取csv输出csv
               </a>
             
           </div>
@@ -636,10 +630,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/htmlloading.html" rel="prev" title="HTML页面加载过程">
-                HTML页面加载过程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -802,7 +792,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#查找当前目录下大于100mb的所有文件"><span class="nav-number">1.</span> <span class="nav-text"> 查找当前目录下大于100mb的所有文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示当前目录大小"><span class="nav-number">2.</span> <span class="nav-text"> 显示当前目录大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示当前目录或者文件夹的所占磁盘空间"><span class="nav-number">3.</span> <span class="nav-text"> 显示当前目录或者文件夹的所占磁盘空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示前十个占用空间最大的目录"><span class="nav-number">4.</span> <span class="nav-text"> 显示前十个占用空间最大的目录</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#定时任务"><span class="nav-number">1.</span> <span class="nav-text"> 定时任务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#install-node-schedule-with-timezone-setting"><span class="nav-number">1.1.</span> <span class="nav-text"> Install Node Schedule with Timezone Setting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#schedule-module-in-nodejs"><span class="nav-number">1.2.</span> <span class="nav-text"> Schedule Module in Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slack-webhook"><span class="nav-number">1.3.</span> <span class="nav-text"> Slack Webhook</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gmail-sender"><span class="nav-number">1.4.</span> <span class="nav-text"> Gmail Sender</span></a></li></ol></li></ol></div>
             
 
           </div>
