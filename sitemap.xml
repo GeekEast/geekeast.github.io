@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/nodescheduler.html</loc>
+    
+    <lastmod>2019-04-21T06:16:41.670Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/dailynotes.html</loc>
     
     <lastmod>2019-04-21T06:14:07.717Z</lastmod>
@@ -180,13 +187,6 @@
     <loc>https://geekeast.github.io/amplifyreactnotemaker.html</loc>
     
     <lastmod>2019-04-21T04:08:20.250Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/nodescheduler.html</loc>
-    
-    <lastmod>2019-04-15T11:46:41.249Z</lastmod>
     
   </url>
   
