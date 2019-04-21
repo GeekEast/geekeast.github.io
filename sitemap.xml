@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/admindata.html</loc>
+    
+    <lastmod>2019-04-21T04:16:40.809Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/installnodepostgreonubuntu.html</loc>
+    
+    <lastmod>2019-04-21T04:16:37.449Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/vscodeTutorial.html</loc>
     
     <lastmod>2019-04-21T04:16:29.725Z</lastmod>
@@ -82,13 +96,6 @@
     <loc>https://geekeast.github.io/javscriptTutorial.html</loc>
     
     <lastmod>2019-04-21T04:13:46.858Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/installnodepostgreonubuntu.html</loc>
-    
-    <lastmod>2019-04-21T04:13:38.048Z</lastmod>
     
   </url>
   
@@ -187,13 +194,6 @@
     <loc>https://geekeast.github.io/resuablesql.html</loc>
     
     <lastmod>2019-04-11T06:18:57.398Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/admindata.html</loc>
-    
-    <lastmod>2019-04-10T07:27:50.442Z</lastmod>
     
   </url>
   
