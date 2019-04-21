@@ -2,16 +2,170 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://geekeast.github.io/amplifyreactnotemaker.html</loc>
+    <loc>https://geekeast.github.io/vscodeTutorial.html</loc>
     
-    <lastmod>2019-04-21T04:08:20.250Z</lastmod>
+    <lastmod>2019-04-21T04:16:29.725Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/ubuntuinstallzsh.html</loc>
+    
+    <lastmod>2019-04-21T04:16:18.813Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/swaggerTutorial.html</loc>
+    
+    <lastmod>2019-04-21T04:16:01.413Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/ssrinfo.html</loc>
+    
+    <lastmod>2019-04-21T04:15:55.855Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/routermatch.html</loc>
+    
+    <lastmod>2019-04-21T04:15:39.619Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/restfulProtocol.html</loc>
+    
+    <lastmod>2019-04-21T04:15:26.635Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/requirevsimport.html</loc>
+    
+    <lastmod>2019-04-21T04:15:15.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/pg.html</loc>
+    
+    <lastmod>2019-04-21T04:14:48.810Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/nodetutorial.html</loc>
+    
+    <lastmod>2019-04-21T04:14:42.540Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/nodeapi.html</loc>
+    
+    <lastmod>2019-04-21T04:14:28.001Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/linuxcommands.html</loc>
+    
+    <lastmod>2019-04-21T04:14:03.008Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/javscriptTutorial.html</loc>
+    
+    <lastmod>2019-04-21T04:13:46.858Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/installnodepostgreonubuntu.html</loc>
+    
+    <lastmod>2019-04-21T04:13:38.048Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/htmlloading.html</loc>
+    
+    <lastmod>2019-04-21T04:13:28.332Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/expressTutorial.html</loc>
+    
+    <lastmod>2019-04-21T04:13:03.079Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/es6.html</loc>
+    
+    <lastmod>2019-04-21T04:12:41.797Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/dizigui.html</loc>
+    
+    <lastmod>2019-04-21T04:12:28.806Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/course-recommendation.html</loc>
+    
+    <lastmod>2019-04-21T04:12:03.176Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/coderpath.html</loc>
+    
+    <lastmod>2019-04-21T04:11:49.185Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/certificate.html</loc>
     
-    <lastmod>2019-04-20T10:06:13.176Z</lastmod>
+    <lastmod>2019-04-21T04:11:24.651Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/backendallinone.html</loc>
+    
+    <lastmod>2019-04-21T04:10:46.763Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/axios.html</loc>
+    
+    <lastmod>2019-04-21T04:10:27.983Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/aria2c.html</loc>
+    
+    <lastmod>2019-04-21T04:10:06.648Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/amplifyreactnotemaker.html</loc>
+    
+    <lastmod>2019-04-21T04:08:20.250Z</lastmod>
     
   </url>
   
@@ -30,13 +184,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/linuxcommands.html</loc>
-    
-    <lastmod>2019-04-13T09:33:45.972Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/resuablesql.html</loc>
     
     <lastmod>2019-04-11T06:18:57.398Z</lastmod>
@@ -51,13 +198,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/aria2c.html</loc>
-    
-    <lastmod>2019-04-10T07:27:46.950Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/aws-command.html</loc>
     
     <lastmod>2019-04-10T07:27:34.380Z</lastmod>
@@ -65,37 +205,9 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/nodeapi.html</loc>
-    
-    <lastmod>2019-04-10T07:27:19.145Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/expressTutorial.html</loc>
-    
-    <lastmod>2019-04-10T07:27:09.781Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/nodetutorial.html</loc>
-    
-    <lastmod>2019-04-10T07:26:14.834Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/postgreinstallonmac.html</loc>
     
     <lastmod>2019-04-10T07:26:03.242Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/ubuntuinstallzsh.html</loc>
-    
-    <lastmod>2019-04-10T07:25:52.661Z</lastmod>
     
   </url>
   
@@ -114,65 +226,9 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/vscodeTutorial.html</loc>
-    
-    <lastmod>2019-04-10T07:17:59.638Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javscriptTutorial.html</loc>
-    
-    <lastmod>2019-04-10T07:15:39.410Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/installnodepostgreonubuntu.html</loc>
-    
-    <lastmod>2019-04-10T07:15:15.575Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/mdtutorial.html</loc>
     
     <lastmod>2019-04-10T07:12:04.192Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/restfulProtocol.html</loc>
-    
-    <lastmod>2019-04-10T07:11:34.611Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/routermatch.html</loc>
-    
-    <lastmod>2019-04-10T07:11:23.255Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/ssrinfo.html</loc>
-    
-    <lastmod>2019-04-10T07:11:14.375Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/pg.html</loc>
-    
-    <lastmod>2019-04-10T06:49:28.988Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/swaggerTutorial.html</loc>
-    
-    <lastmod>2019-04-10T06:42:47.853Z</lastmod>
     
   </url>
   
@@ -187,48 +243,6 @@
     <loc>https://geekeast.github.io/dailynotes.html</loc>
     
     <lastmod>2019-04-06T03:20:20.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/axios.html</loc>
-    
-    <lastmod>2019-04-01T10:07:43.219Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/requirevsimport.html</loc>
-    
-    <lastmod>2019-03-19T04:51:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/dizigui.html</loc>
-    
-    <lastmod>2019-03-16T05:57:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/coderpath.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/course-recommendation.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/es6.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
@@ -254,13 +268,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/htmlloading.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/jielv.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -276,13 +283,6 @@
   
   <url>
     <loc>https://geekeast.github.io/mlinterview.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backendallinone.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
