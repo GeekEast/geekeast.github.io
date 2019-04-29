@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Positioning 12345678910111213141516171819202122232425.test&amp;#123;  /* In the flow of document */  /* default value for every element. no reference point. cannot move. */  position: static; /* 或者什么都不写">
-<meta name="keywords" content="Frontend,CSS">
+  <meta name="description" content="Positioning  Default: static   In the flow of Document 12345678910.flow &amp;#123;  /* default value for every element. no reference point. cannot move. */  position: static; /* 或者什么都不写 */  top: 50px; /*">
+<meta name="keywords" content="CSS,Frontend">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS Position">
 <meta property="og:url" content="https://geekeast.github.io/position.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Positioning 12345678910111213141516171819202122232425.test&amp;#123;  /* In the flow of document */  /* default value for every element. no reference point. cannot move. */  position: static; /* 或者什么都不写">
+<meta property="og:description" content="Positioning  Default: static   In the flow of Document 12345678910.flow &amp;#123;  /* default value for every element. no reference point. cannot move. */  position: static; /* 或者什么都不写 */  top: 50px; /*">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-29T01:17:06.780Z">
+<meta property="og:updated_time" content="2019-04-29T01:30:25.680Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS Position">
-<meta name="twitter:description" content="Positioning 12345678910111213141516171819202122232425.test&amp;#123;  /* In the flow of document */  /* default value for every element. no reference point. cannot move. */  position: static; /* 或者什么都不写">
+<meta name="twitter:description" content="Positioning  Default: static   In the flow of Document 12345678910.flow &amp;#123;  /* default value for every element. no reference point. cannot move. */  position: static; /* 或者什么都不写 */  top: 50px; /*">
 
 
 
@@ -259,7 +259,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">46</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">47</span></a>
 
   </li>
         
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-04-29 10:47:06" itemprop="dateModified" datetime="2019-04-29T10:47:06+09:30">2019-04-29</time>
+                <time title="Modified: 2019-04-29 11:00:25" itemprop="dateModified" datetime="2019-04-29T11:00:25+09:30">2019-04-29</time>
               
             
           </span>
@@ -487,7 +487,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">743</span>
+                <span title="Symbols count in article">899</span>
               
 
               
@@ -522,7 +522,25 @@
 
       
         <h2 id="positioning"><a class="markdownIt-Anchor" href="#positioning"></a> Positioning</h2>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test</span>&#123;</span><br><span class="line">  <span class="comment">/* In the flow of document */</span></span><br><span class="line">  <span class="comment">/* default value for every element. no reference point. cannot move. */</span></span><br><span class="line">  <span class="attribute">position</span>: static; <span class="comment">/* 或者什么都不写 */</span></span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>; <span class="comment">/* 无效 */</span></span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>; <span class="comment">/* 无效 */</span></span><br><span class="line">  <span class="comment">/* offset from its static position */</span></span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>; <span class="comment">/* 有效 */</span></span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>; <span class="comment">/* 有效 */</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="comment">/* out of the flow of document */</span></span><br><span class="line">  <span class="comment">/* a fixed postion within the viewport */</span></span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>; </span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>; </span><br><span class="line">  <span class="comment">/* a fixed position within its containing element */</span></span><br><span class="line">  <span class="comment">/* The containing element is the viewport by default. */</span></span><br><span class="line">  <span class="comment">/* How to set the direct containing elememt? set the containing-element position as relative */</span></span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Default: static</li>
+</ul>
+<h3 id="in-the-flow-of-document"><a class="markdownIt-Anchor" href="#in-the-flow-of-document"></a> In the flow of Document</h3>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.flow</span> &#123;</span><br><span class="line">  <span class="comment">/* default value for every element. no reference point. cannot move. */</span></span><br><span class="line">  <span class="attribute">position</span>: static; <span class="comment">/* 或者什么都不写 */</span></span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>; <span class="comment">/* 无效 */</span></span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>; <span class="comment">/* 无效 */</span></span><br><span class="line">  <span class="comment">/* offset from its static position */</span></span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>; <span class="comment">/* 有效 */</span></span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>; <span class="comment">/* 有效 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="out-of-the-flow-of-document"><a class="markdownIt-Anchor" href="#out-of-the-flow-of-document"></a> Out of the flow of Document</h3>
+<ul>
+<li>Relative to Viewport</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.view</span> &#123;</span><br><span class="line">  <span class="comment">/* out of the flow of document */</span></span><br><span class="line">  <span class="comment">/* a fixed postion within the viewport */</span></span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>; </span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Relative to Containing Element
+<ul>
+<li>The containing element is the viewport by default.</li>
+<li>How to set the direct containing elememt? set the containing-element position as relative.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="comment">/* a fixd position within its containing element */</span></span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>
 
       
@@ -546,6 +564,13 @@
     <li class="popular-posts-item">
       
       
+      <div class="popular-posts-title"><a href="/csszindex.html" rel="bookmark">CSS 元素层叠关系</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
       <div class="popular-posts-title"><a href="/flexbox.html" rel="bookmark">Compelete guide to flexbox</a></div>
       
     </li>
@@ -554,13 +579,6 @@
       
       
       <div class="popular-posts-title"><a href="/lengthpercentage.html" rel="bookmark">CSS百分比长度</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/certificate.html" rel="bookmark">IT Courses List</a></div>
       
     </li>
   
@@ -617,9 +635,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Frontend/" rel="tag"># Frontend</a>
-          
             <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+            <a href="/tags/Frontend/" rel="tag"># Frontend</a>
           
         </div>
       
@@ -819,7 +837,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#positioning"><span class="nav-number">1.</span> <span class="nav-text"> Positioning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number">2.</span> <span class="nav-text"> </span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#positioning"><span class="nav-number">1.</span> <span class="nav-text"> Positioning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#in-the-flow-of-document"><span class="nav-number">1.1.</span> <span class="nav-text"> In the flow of Document</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#out-of-the-flow-of-document"><span class="nav-number">1.2.</span> <span class="nav-text"> Out of the flow of Document</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number">2.</span> <span class="nav-text"> </span></a></li></ol></div>
             
 
           </div>
