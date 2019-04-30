@@ -110,24 +110,28 @@
 
 
 
-  <meta name="description" content="Sharing is the best way to learn.">
-<meta name="keywords" content="CMU">
-<meta property="og:type" content="website">
-<meta property="og:title" content="雪中印">
-<meta property="og:url" content="https://geekeast.github.io/categories/Frontend/index.html">
+  <meta name="description" content="模式 这里的模式是指代码分离的方式。  MVC模式 我更喜欢叫它MCV模式，将一个项目的代码分离为数据、控制和视图。Model负责数据管理，Controller负责Model和View的沟通，而View负责呈现视图。注意view不是视图本身，而是呈现视图需要的代码。 这样的代码分离方式，有利于数据的复用，有利于控制器的复用，有利于视图代码的复用。 但是，不利于数据+控制器+视图代码的复用。MVC">
+<meta name="keywords" content="React,Fullstack,MVC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React vs MVC">
+<meta property="og:url" content="https://geekeast.github.io/reactvsmvc.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Sharing is the best way to learn.">
+<meta property="og:description" content="模式 这里的模式是指代码分离的方式。  MVC模式 我更喜欢叫它MCV模式，将一个项目的代码分离为数据、控制和视图。Model负责数据管理，Controller负责Model和View的沟通，而View负责呈现视图。注意view不是视图本身，而是呈现视图需要的代码。 这样的代码分离方式，有利于数据的复用，有利于控制器的复用，有利于视图代码的复用。 但是，不利于数据+控制器+视图代码的复用。MVC">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-140353%402x.png">
+<meta property="og:image" content="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-140759%402x.png">
+<meta property="og:updated_time" content="2019-04-30T05:25:02.003Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="雪中印">
-<meta name="twitter:description" content="Sharing is the best way to learn.">
+<meta name="twitter:title" content="React vs MVC">
+<meta name="twitter:description" content="模式 这里的模式是指代码分离的方式。  MVC模式 我更喜欢叫它MCV模式，将一个项目的代码分离为数据、控制和视图。Model负责数据管理，Controller负责Model和View的沟通，而View负责呈现视图。注意view不是视图本身，而是呈现视图需要的代码。 这样的代码分离方式，有利于数据的复用，有利于控制器的复用，有利于视图代码的复用。 但是，不利于数据+控制器+视图代码的复用。MVC">
+<meta name="twitter:image" content="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-140353%402x.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/categories/Frontend/">
+  <link rel="canonical" href="https://geekeast.github.io/reactvsmvc.html">
 
 
 
@@ -137,7 +141,7 @@
   };
 </script>
 
-  <title>Category: Frontend | 雪中印</title>
+  <title>React vs MVC | 雪中印</title>
   
 
 
@@ -185,7 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,7 +269,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -357,236 +361,358 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Frontend<small>Category</small>
-        </h2>
-      </div>
-
-      
-        
+  
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/reactvsmvc.html">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/htmldimension.html" itemprop="url">
-            
-              <span itemprop="name">HTML 页面维度</span>
-            
-          </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">React vs MVC
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-29T14:17:04+09:30" content="2019-04-29">
-          04-29
-        </time>
-      </div>
+              
+            
+          </h2>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-30 13:50:53 / Modified: 14:55:02" itemprop="dateCreated datePublished" datetime="2019-04-30T13:50:53+09:30">2019-04-30</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon" title="Views">
+            <i class="fa fa-eye"></i>
+            
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">700</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/csszindex.html" itemprop="url">
-            
-              <span itemprop="name">CSS 元素层叠关系</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-29T10:50:49+09:30" content="2019-04-29">
-          04-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/position.html" itemprop="url">
-            
-              <span itemprop="name">CSS Position</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-28T18:51:11+09:30" content="2019-04-28">
-          04-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/lengthpercentage.html" itemprop="url">
-            
-              <span itemprop="name">CSS百分比长度</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-28T18:50:39+09:30" content="2019-04-28">
-          04-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <h2 id="模式"><a class="markdownIt-Anchor" href="#模式"></a> 模式</h2>
+<p>这里的模式是指代码分离的方式。</p>
+<h2 id="mvc模式"><a class="markdownIt-Anchor" href="#mvc模式"></a> MVC模式</h2>
+<p>我更喜欢叫它MCV模式，将一个项目的代码分离为数据、控制和视图。Model负责数据管理，Controller负责Model和View的沟通，而View负责呈现视图。注意view不是视图本身，而是呈现视图需要的代码。</p>
+<p>这样的代码分离方式，有利于数据的复用，有利于控制器的复用，有利于视图代码的复用。<br>
+但是，不利于数据+控制器+视图代码的复用。MVC的复用模式是这样的：<br>
+<img src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-140353%402x.png"></p>
+<h2 id="react模式"><a class="markdownIt-Anchor" href="#react模式"></a> React模式</h2>
+<p>而React的复用模式是这样的：<br>
+<img src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-140759%402x.png"><br>
+是不是感觉在MVC上面横切了一刀！</p>
+<p>这样可以实现 一个组件的完整复用，包括数据，控制器和视图层。<br>
+控制器：func + state + props(context consumer/redux client)<br>
+数据管理：func + state + props(context consumer/redux client)<br>
+视图： func + state + props(context consumer/redux client)</p>
+<p>进一步看，其实不是这么简单，React不是简单的MVC的横截。它融合了MVC的横截以及MVC本身。<br>
+抛去代码不看，React中最重要的其实是数据流。<br>
+一个组件里一定有view，一定有数据（state,props,…）,一定有控制器(func);</p>
+<h2 id="react模式总结"><a class="markdownIt-Anchor" href="#react模式总结"></a> React模式总结</h2>
+<ul>
+<li>变量和方法紧密相关，模型和控制紧密联动。</li>
+<li>数据（变量+方法）共享的方式：
+<ul>
+<li>
+<ol>
+<li>变量提升和向下传递(传func以改变，传变量以引用)</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>React Context</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>React Redux</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+<hr>
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/css3.html" itemprop="url">
-            
-              <span itemprop="name">CSS3 New Features</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-28T18:49:34+09:30" content="2019-04-28">
-          04-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/flexbox.html" itemprop="url">
-            
-              <span itemprop="name">Compelete guide to flexbox</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-28T18:47:17+09:30" content="2019-04-28">
-          04-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/htmlloading.html" itemprop="url">
-            
-              <span itemprop="name">HTML页面加载过程</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-09T13:07:40+10:30" content="2019-03-09">
-          03-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
 
       
     </div>
 
+    
+      
+
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/reactstatefunc.html" rel="bookmark">React 数据传递</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/amplifyreactnotemaker.html" rel="bookmark">Build React Project With Amplify - NoteMaker</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/axios.html" rel="bookmark">Asynchronous Client - Axios</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/router.html" rel="bookmark">React Router 小记 (未完)</a></div>
+      
+    </li>
+  
+  </ul>
+
+
+    
+
+    
+    
+    
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 60px 0 0; margin: auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/images/zeng.jpg" alt="James Tan wechat" style="width: 14em; max-width: 100%;">
+  <div style="margin-top: 20px">人工智能学习资源 欢迎订阅我的公众号</div>
+</div>
+
+    
+
+    
+      
+    
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者:  </strong>James Tan</li>
+  <li class="post-copyright-link">
+    <strong>本文链接: </strong>
+    
+    <a href="https://geekeast.github.io/reactvsmvc.html" title="React vs MVC">https://geekeast.github.io/reactvsmvc.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明:  </strong>除特殊声明外，本站博文均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议，转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/React/" rel="tag"># React</a>
+          
+            <a href="/tags/Fullstack/" rel="tag"># Fullstack</a>
+          
+            <a href="/tags/MVC/" rel="tag"># MVC</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/reactstatefunc.html" rel="next" title="React 数据传递">
+                <i class="fa fa-chevron-left"></i> React 数据传递
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -606,8 +732,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -704,6 +839,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#模式"><span class="nav-number">1.</span> <span class="nav-text"> 模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mvc模式"><span class="nav-number">2.</span> <span class="nav-text"> MVC模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#react模式"><span class="nav-number">3.</span> <span class="nav-text"> React模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#react模式总结"><span class="nav-number">4.</span> <span class="nav-text"> React模式总结</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -877,6 +1029,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -898,6 +1054,41 @@
 
   
 
+
+  
+    
+
+  
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'e3bc82557deb4539bea0',
+    clientSecret: 'ccd5f13f3f7cba21085500585cfc05da2591baf4',
+    repo: 'blog_comment',
+    owner: 'GeekEast',
+    admin: ['GeekEast'],
+    id: md5(location.pathname),
+    
+      language: 'en',
+    
+    distractionFreeMode: 'false'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
@@ -1240,6 +1431,25 @@
   
 
   
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 17170,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
 
   
 

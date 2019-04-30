@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/reactvsmvc.html</loc>
+    
+    <lastmod>2019-04-30T05:25:02.003Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/reactstatefunc.html</loc>
     
-    <lastmod>2019-04-30T02:52:01.091Z</lastmod>
+    <lastmod>2019-04-30T02:56:48.331Z</lastmod>
     
   </url>
   
