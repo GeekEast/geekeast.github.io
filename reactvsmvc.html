@@ -120,7 +120,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-140353%402x.png">
 <meta property="og:image" content="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-140759%402x.png">
-<meta property="og:updated_time" content="2019-04-30T05:25:02.003Z">
+<meta property="og:updated_time" content="2019-04-30T05:27:50.737Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React vs MVC">
 <meta name="twitter:description" content="模式 这里的模式是指代码分离的方式。  MVC模式 我更喜欢叫它MCV模式，将一个项目的代码分离为数据、控制和视图。Model负责数据管理，Controller负责Model和View的沟通，而View负责呈现视图。注意view不是视图本身，而是呈现视图需要的代码。 这样的代码分离方式，有利于数据的复用，有利于控制器的复用，有利于视图代码的复用。 但是，不利于数据+控制器+视图代码的复用。MVC">
@@ -424,7 +424,7 @@
                 
               
 
-              <time title="Created: 2019-04-30 13:50:53 / Modified: 14:55:02" itemprop="dateCreated datePublished" datetime="2019-04-30T13:50:53+09:30">2019-04-30</time>
+              <time title="Created: 2019-04-30 13:50:53 / Modified: 14:57:50" itemprop="dateCreated datePublished" datetime="2019-04-30T13:50:53+09:30">2019-04-30</time>
             
 
             
@@ -480,7 +480,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">700</span>
+                <span title="Symbols count in article">703</span>
               
 
               
@@ -533,28 +533,9 @@
 抛去代码不看，React中最重要的其实是数据流。<br>
 一个组件里一定有view，一定有数据（state,props,…）,一定有控制器(func);</p>
 <h2 id="react模式总结"><a class="markdownIt-Anchor" href="#react模式总结"></a> React模式总结</h2>
-<ul>
-<li>变量和方法紧密相关，模型和控制紧密联动。</li>
-<li>数据（变量+方法）共享的方式：
-<ul>
-<li>
-<ol>
-<li>变量提升和向下传递(传func以改变，传变量以引用)</li>
-</ol>
-</li>
-<li>
-<ol start="2">
-<li>React Context</li>
-</ol>
-</li>
-<li>
-<ol start="3">
-<li>React Redux</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
+<div class="note success">
+            <ul><li>变量和方法紧密相关，模型和控制紧密联动。</li><li>数据（变量+方法）共享的方式：<ul><li><ol><li>变量提升和向下传递(传func以改变，传变量以引用)</li></ol></li><li><ol start="2"><li>React Context</li></ol></li><li><ol start="3"><li>React Redux</li></ol></li></ul></li></ul>
+          </div>
 <a id="more"></a>
 <hr>
 
