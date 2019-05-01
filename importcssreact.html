@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Context 今天在一个React项目里面，相近办法把node-modules里的两个css的文件给载入到index中的link，以失败告终。  Reason: React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。  Solution:  通过在React入口文件处载入node-modules中的css文件即可 通">
+  <meta name="description" content="Context 今天在一个React项目里面，相近办法把node-modules里的两个css的文件给载入到index中的link，以失败告终。  Reason: React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。  Solution:  通过在React入口文件处载入node-modules中的css文件即可">
 <meta name="keywords" content="React,Frontend,CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Import Stylesheets into React">
 <meta property="og:url" content="https://geekeast.github.io/importcssreact.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Context 今天在一个React项目里面，相近办法把node-modules里的两个css的文件给载入到index中的link，以失败告终。  Reason: React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。  Solution:  通过在React入口文件处载入node-modules中的css文件即可 通">
+<meta property="og:description" content="Context 今天在一个React项目里面，相近办法把node-modules里的两个css的文件给载入到index中的link，以失败告终。  Reason: React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。  Solution:  通过在React入口文件处载入node-modules中的css文件即可">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-01T09:21:39.908Z">
+<meta property="og:updated_time" content="2019-05-01T11:06:52.766Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Import Stylesheets into React">
-<meta name="twitter:description" content="Context 今天在一个React项目里面，相近办法把node-modules里的两个css的文件给载入到index中的link，以失败告终。  Reason: React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。  Solution:  通过在React入口文件处载入node-modules中的css文件即可 通">
+<meta name="twitter:description" content="Context 今天在一个React项目里面，相近办法把node-modules里的两个css的文件给载入到index中的link，以失败告终。  Reason: React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。  Solution:  通过在React入口文件处载入node-modules中的css文件即可">
 
 
 
@@ -259,7 +259,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">56</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">57</span></a>
 
   </li>
         
@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-05-01 18:39:35 / Modified: 18:51:39" itemprop="dateCreated datePublished" datetime="2019-05-01T18:39:35+09:30">2019-05-01</time>
+              <time title="Created: 2019-05-01 18:39:35 / Modified: 20:36:52" itemprop="dateCreated datePublished" datetime="2019-05-01T18:39:35+09:30">2019-05-01</time>
             
 
             
@@ -477,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">233</span>
+                <span title="Symbols count in article">307</span>
               
 
               
@@ -517,7 +517,12 @@
 <p>React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。</p>
 <h2 id="solution"><a class="markdownIt-Anchor" href="#solution"></a> Solution:</h2>
 <ol>
-<li>通过在React入口文件处载入node-modules中的css文件即可</li>
+<li>通过在React入口文件处载入node-modules中的css文件即可
+<ol>
+<li>import ‘…/node_modules/…’</li>
+<li>import ‘package-name/…’  会直接从node_modules中导入</li>
+</ol>
+</li>
 <li>通过gulp工具，将css文件复制到public文件夹下即可</li>
 </ol>
 <a id="more"></a>
@@ -551,14 +556,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
+      <div class="popular-posts-title"><a href="/cssh1.html" rel="bookmark">CSS 小杂碎</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/csszindex.html" rel="bookmark">CSS 元素层叠关系</a></div>
+      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
       
     </li>
   
