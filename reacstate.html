@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="this.setState({val1: value}) will automatically create val1 in state. You don’t have initialize it in the state unless you want to customize its default value.">
+  <meta name="description" content="Automatically add state variable this.setState({val1: value}) will automatically create val1 in state. You don’t have initialize it in the state unless you want to customize its default value.  ? : 1">
 <meta name="keywords" content="React,Frontend">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React State">
+<meta property="og:title" content="React Tricks">
 <meta property="og:url" content="https://geekeast.github.io/reacstate.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="this.setState({val1: value}) will automatically create val1 in state. You don’t have initialize it in the state unless you want to customize its default value.">
+<meta property="og:description" content="Automatically add state variable this.setState({val1: value}) will automatically create val1 in state. You don’t have initialize it in the state unless you want to customize its default value.  ? : 1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-03T03:11:42.027Z">
+<meta property="og:updated_time" content="2019-05-03T03:31:14.311Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React State">
-<meta name="twitter:description" content="this.setState({val1: value}) will automatically create val1 in state. You don’t have initialize it in the state unless you want to customize its default value.">
+<meta name="twitter:title" content="React Tricks">
+<meta name="twitter:description" content="Automatically add state variable this.setState({val1: value}) will automatically create val1 in state. You don’t have initialize it in the state unless you want to customize its default value.  ? : 1">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>React State | 雪中印</title>
+  <title>React Tricks | 雪中印</title>
   
 
 
@@ -397,7 +397,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">React State
+          <h2 class="post-title" itemprop="name headline">React Tricks
 
               
             
@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-05-03 12:34:30 / Modified: 12:41:42" itemprop="dateCreated datePublished" datetime="2019-05-03T12:34:30+09:30">2019-05-03</time>
+              <time title="Created: 2019-05-03 12:34:30 / Modified: 13:01:14" itemprop="dateCreated datePublished" datetime="2019-05-03T12:34:30+09:30">2019-05-03</time>
             
 
             
@@ -477,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">162</span>
+                <span title="Symbols count in article">285</span>
               
 
               
@@ -511,7 +511,13 @@
       
 
       
-        <p><code>this.setState({val1: value})</code> will automatically create <code>val1</code> in state. You don’t have initialize it in the state unless you want to customize its default value.</p>
+        <h3 id="automatically-add-state-variable"><a class="markdownIt-Anchor" href="#automatically-add-state-variable"></a> Automatically add state variable</h3>
+<p><code>this.setState({val1: value})</code> will automatically create <code>val1</code> in state. You don’t have initialize it in the state unless you want to customize its default value.</p>
+<h3 id><a class="markdownIt-Anchor" href="#"></a> ? :</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">good? <span class="keyword">do</span> good : <span class="keyword">do</span> bad</span><br></pre></td></tr></table></figure>
+<h3 id="-2"><a class="markdownIt-Anchor" href="#-2"></a> &amp;&amp;</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a &amp;&amp; <span class="keyword">do</span> a</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a &amp;&amp; b &amp;&amp; c</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <hr>
 
@@ -593,7 +599,7 @@
   <li class="post-copyright-link">
     <strong>本文链接: </strong>
     
-    <a href="https://geekeast.github.io/reacstate.html" title="React State">https://geekeast.github.io/reacstate.html</a>
+    <a href="https://geekeast.github.io/reacstate.html" title="React Tricks">https://geekeast.github.io/reacstate.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明:  </strong>除特殊声明外，本站博文均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议，转载请注明出处！</li>
@@ -687,8 +693,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -785,6 +800,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#automatically-add-state-variable"><span class="nav-number">1.</span> <span class="nav-text"> Automatically add state variable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text"> ? :</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#-2"><span class="nav-number">3.</span> <span class="nav-text"> &amp;&amp;</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
