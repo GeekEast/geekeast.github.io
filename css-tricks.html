@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="Deploy to server  helmet compression  12345678// prod.jsconst helmet = require(&apos;helmet&apos;);const compression = require(&apos;compression&apos;);module.exports = app =&amp;gt; &amp;#123;  app.use(helmet());  app.use(comp">
-<meta name="keywords" content="Node.js">
+  <meta name="description" content="How to add style to html?  Inline CSS Style  Not Recommended for most cases.  HTML: 123&amp;lt;div style=&quot;color: black; background: red&quot;&amp;gt;    Hello World!&amp;lt;/div&amp;gt;  &amp;lt;head&amp;gt; CSS Style  For singl">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Node.js Tutorial">
-<meta property="og:url" content="https://geekeast.github.io/nodetutorial.html">
+<meta property="og:title" content="CSS Tricks">
+<meta property="og:url" content="https://geekeast.github.io/css-tricks.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Deploy to server  helmet compression  12345678// prod.jsconst helmet = require(&apos;helmet&apos;);const compression = require(&apos;compression&apos;);module.exports = app =&amp;gt; &amp;#123;  app.use(helmet());  app.use(comp">
+<meta property="og:description" content="How to add style to html?  Inline CSS Style  Not Recommended for most cases.  HTML: 123&amp;lt;div style=&quot;color: black; background: red&quot;&amp;gt;    Hello World!&amp;lt;/div&amp;gt;  &amp;lt;head&amp;gt; CSS Style  For singl">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-21T04:14:42.540Z">
+<meta property="og:updated_time" content="2019-05-21T06:24:31.916Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Node.js Tutorial">
-<meta name="twitter:description" content="Deploy to server  helmet compression  12345678// prod.jsconst helmet = require(&apos;helmet&apos;);const compression = require(&apos;compression&apos;);module.exports = app =&amp;gt; &amp;#123;  app.use(helmet());  app.use(comp">
+<meta name="twitter:title" content="CSS Tricks">
+<meta name="twitter:description" content="How to add style to html?  Inline CSS Style  Not Recommended for most cases.  HTML: 123&amp;lt;div style=&quot;color: black; background: red&quot;&amp;gt;    Hello World!&amp;lt;/div&amp;gt;  &amp;lt;head&amp;gt; CSS Style  For singl">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/nodetutorial.html">
+  <link rel="canonical" href="https://geekeast.github.io/css-tricks.html">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Node.js Tutorial | 雪中印</title>
+  <title>CSS Tricks | 雪中印</title>
   
 
 
@@ -380,7 +380,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/nodetutorial.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/css-tricks.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -397,7 +397,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Node.js Tutorial
+          <h2 class="post-title" itemprop="name headline">CSS Tricks
 
               
             
@@ -421,22 +421,12 @@
                 
               
 
-              <time title="Created: 2019-04-10 16:51:06" itemprop="dateCreated datePublished" datetime="2019-04-10T16:51:06+09:30">2019-04-10</time>
+              <time title="Created: 2019-05-21 15:40:50 / Modified: 15:54:31" itemprop="dateCreated datePublished" datetime="2019-05-21T15:40:50+09:30">2019-05-21</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-04-21 13:44:42" itemprop="dateModified" datetime="2019-04-21T13:44:42+09:30">2019-04-21</time>
               
             
           </span>
@@ -451,7 +441,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Backend/" itemprop="url" rel="index"><span itemprop="name">Backend</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
 
                 
                 
@@ -487,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">497</span>
+                <span title="Symbols count in article">1.4k</span>
               
 
               
@@ -521,19 +511,28 @@
       
 
       
-        <h2 id="deploy-to-server"><a class="markdownIt-Anchor" href="#deploy-to-server"></a> Deploy to server</h2>
-<ol>
-<li>helmet</li>
-<li>compression</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// prod.js</span></span><br><span class="line"><span class="keyword">const</span> helmet = <span class="built_in">require</span>(<span class="string">'helmet'</span>);</span><br><span class="line"><span class="keyword">const</span> compression = <span class="built_in">require</span>(<span class="string">'compression'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="params">app</span> =&gt;</span> &#123;</span><br><span class="line">  app.use(helmet());</span><br><span class="line">  app.use(compression());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="configure-packagejson"><a class="markdownIt-Anchor" href="#configure-packagejson"></a> Configure package.json</h2>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// index.js</span></span><br><span class="line"><span class="built_in">require</span>(<span class="string">'prod.js'</span>)(app);</span><br></pre></td></tr></table></figure>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// package.json</span><br><span class="line">  "scripts": &#123;</span><br><span class="line">    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",</span><br><span class="line">    "start": "node app.js"</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
-<h2 id="安装pm2-本机多发package-manager"><a class="markdownIt-Anchor" href="#安装pm2-本机多发package-manager"></a> 安装pm2, 本机多发package manager</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo npm i -g pm2</span><br><span class="line">pm2 completion install</span><br></pre></td></tr></table></figure>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vemhvdWppZS9wL25vZGVqczQuaHRtbA==" title="https://www.cnblogs.com/zhoujie/p/nodejs4.html">pm2<i class="fa fa-external-link"></i></span></p>
+        <h2 id="how-to-add-style-to-html"><a class="markdownIt-Anchor" href="#how-to-add-style-to-html"></a> How to add style to html?</h2>
+<h3 id="inline-css-style"><a class="markdownIt-Anchor" href="#inline-css-style"></a> Inline CSS Style</h3>
+<ul>
+<li>Not Recommended for most cases.</li>
+</ul>
+<p><strong>HTML:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"color: black; background: red"</span>&gt;</span></span><br><span class="line">    Hello World!</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="head-css-style"><a class="markdownIt-Anchor" href="#head-css-style"></a> <code>&lt;head&gt;</code> CSS Style</h3>
+<ul>
+<li>For single page</li>
+</ul>
+<p><strong>HTML:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">        <span class="selector-class">.text</span> &#123;</span></span><br><span class="line"><span class="undefined">            color: black</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        body &#123;</span></span><br><span class="line"><span class="undefined">            background: white;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">        Hello World!</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
+<h3 id="css-file"><a class="markdownIt-Anchor" href="#css-file"></a> CSS file</h3>
+<ul>
+<li>Mutile-html reuse; recommended</li>
+</ul>
+<p><strong>HTML:</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"main.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">    Hello World!</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>CSS:</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 
       
@@ -550,28 +549,28 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/installnodepostgreonubuntu.html" rel="bookmark">Install Node/Postgres on Ubuntu 18.04</a></div>
+      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/nodescheduler.html" rel="bookmark">Node.js 定时任务</a></div>
+      <div class="popular-posts-title"><a href="/cssfrostedglass.html" rel="bookmark">CSS Frosted Glass Effect</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/requirevsimport.html" rel="bookmark">Using Node.js require vs. ES6 import/export</a></div>
+      <div class="popular-posts-title"><a href="/csszindex.html" rel="bookmark">CSS 元素层叠关系</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/yarn.html" rel="bookmark">Yarn add with version</a></div>
+      <div class="popular-posts-title"><a href="/cssh1.html" rel="bookmark">CSS 小杂碎</a></div>
       
     </li>
   
@@ -614,7 +613,7 @@
   <li class="post-copyright-link">
     <strong>本文链接: </strong>
     
-    <a href="https://geekeast.github.io/nodetutorial.html" title="Node.js Tutorial">https://geekeast.github.io/nodetutorial.html</a>
+    <a href="https://geekeast.github.io/css-tricks.html" title="CSS Tricks">https://geekeast.github.io/css-tricks.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明:  </strong>除特殊声明外，本站博文均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议，转载请注明出处！</li>
@@ -628,7 +627,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Node-js/" rel="tag"># Node.js</a>
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
           
         </div>
       
@@ -653,8 +652,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/aria2c.html" rel="next" title="Install aria2c on Mac">
-                <i class="fa fa-chevron-left"></i> Install aria2c on Mac
+              <a href="/reacstate.html" rel="next" title="React Tricks">
+                <i class="fa fa-chevron-left"></i> React Tricks
               </a>
             
           </div>
@@ -662,10 +661,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/expressTutorial.html" rel="prev" title="Express Tutorial">
-                Express Tutorial <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -828,7 +823,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#deploy-to-server"><span class="nav-number">1.</span> <span class="nav-text"> Deploy to server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#configure-packagejson"><span class="nav-number">2.</span> <span class="nav-text"> Configure package.json</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装pm2-本机多发package-manager"><span class="nav-number">3.</span> <span class="nav-text"> 安装pm2, 本机多发package manager</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#how-to-add-style-to-html"><span class="nav-number">1.</span> <span class="nav-text"> How to add style to html?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#inline-css-style"><span class="nav-number">1.1.</span> <span class="nav-text"> Inline CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#head-css-style"><span class="nav-number">1.2.</span> <span class="nav-text"> &lt;head&gt; CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-file"><span class="nav-number">1.3.</span> <span class="nav-text"> CSS file</span></a></li></ol></li></ol></div>
             
 
           </div>
