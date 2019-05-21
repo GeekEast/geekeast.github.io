@@ -126,7 +126,7 @@
 <meta property="og:image" content="https://css-tricks.com/wp-content/uploads/2010/05/cssspecificity-calc-3v2.jpg">
 <meta property="og:image" content="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png">
 <meta property="og:image" content="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png">
-<meta property="og:updated_time" content="2019-05-21T08:51:15.771Z">
+<meta property="og:updated_time" content="2019-05-21T12:43:35.962Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS Tricks">
 <meta name="twitter:description" content="How to add style to html?  Inline CSS Style  Not Recommended for most cases.  HTML: 123&amp;lt;div style=&quot;color: black; background: red&quot;&amp;gt;    Hello World!&amp;lt;/div&amp;gt;  &amp;lt;head&amp;gt; CSS Style  For singl">
@@ -430,7 +430,7 @@
                 
               
 
-              <time title="Created: 2019-05-21 15:40:50 / Modified: 18:21:15" itemprop="dateCreated datePublished" datetime="2019-05-21T15:40:50+09:30">2019-05-21</time>
+              <time title="Created: 2019-05-21 15:40:50 / Modified: 22:13:35" itemprop="dateCreated datePublished" datetime="2019-05-21T15:40:50+09:30">2019-05-21</time>
             
 
             
@@ -486,7 +486,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">3.3k</span>
+                <span title="Symbols count in article">4.6k</span>
               
 
               
@@ -500,7 +500,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">2 mins.</span>
+                <span title="Reading time">3 mins.</span>
               
             </div>
           
@@ -576,7 +576,7 @@
 <tr>
 <td><code>*</code></td>
 <td>Selects all elements</td>
-<td>全部，不推荐</td>
+<td>全局默认,建议body</td>
 </tr>
 <tr>
 <td><code>p</code></td>
@@ -644,6 +644,16 @@
 <img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png"><br>
 <img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png"></li>
 </ul>
+<h2 id="margin-collapsing"><a class="markdownIt-Anchor" href="#margin-collapsing"></a> Margin Collapsing</h2>
+<blockquote>
+<p>It happens by default to resolve the collapsing of two adjecent margin by eliminating the shorter one.</p>
+</blockquote>
+<p><strong>1. Adjacent Siblings</strong><br>
+In this case, the first element might have a margin of 10px  (on all sides let’s say) and the second one has 5px  (or 20px  - the values don’t matter).CSS will collapse the margins and only add the bigger one between the elements. So if we got margins of 10px  and 5px , a 10px  margin would be added between the elements?</p>
+<p><strong>2. A parent with children that have a margin</strong><br>
+To be precise, the first and/ or last or the only child has to have margins (top and/ or bottom). In that case, the parent elements margin will collapse with the child element(s)’ margins. Again, the bigger margin wins and will be applied to the parent element.If the parent element has padding, inline content (other than the child elements) or a border, this behavior should not occur, the child margin will instead be added to the content of the wrapping parent element.</p>
+<p><strong>3. An empty element with margins</strong><br>
+This case probably doesn’t occur that often but if you got an element with no content, no padding, no border and no height, then the top and bottom margin will be merged into one single margin. Again, the bigger one wins.</p>
 
       
 
@@ -666,14 +676,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
+      <div class="popular-posts-title"><a href="/cssfrostedglass.html" rel="bookmark">CSS Frosted Glass Effect</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/cssfrostedglass.html" rel="bookmark">CSS Frosted Glass Effect</a></div>
+      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
       
     </li>
   
@@ -937,7 +947,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#how-to-add-style-to-html"><span class="nav-number">1.</span> <span class="nav-text"> How to add style to html?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#inline-css-style"><span class="nav-number">1.1.</span> <span class="nav-text"> Inline CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#head-css-style"><span class="nav-number">1.2.</span> <span class="nav-text"> &lt;head&gt; CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-file"><span class="nav-number">1.3.</span> <span class="nav-text"> CSS file</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#things-you-can-do-with-headhead"><span class="nav-number">2.</span> <span class="nav-text"> Things you can do with &lt;head&gt;&lt;/head&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-selector"><span class="nav-number">3.</span> <span class="nav-text"> CSS Selector</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-specificity"><span class="nav-number">4.</span> <span class="nav-text"> CSS Specificity</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#simple-case"><span class="nav-number">4.1.</span> <span class="nav-text"> Simple Case</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#real-case"><span class="nav-number">4.2.</span> <span class="nav-text"> Real Case</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#how-to-add-style-to-html"><span class="nav-number">1.</span> <span class="nav-text"> How to add style to html?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#inline-css-style"><span class="nav-number">1.1.</span> <span class="nav-text"> Inline CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#head-css-style"><span class="nav-number">1.2.</span> <span class="nav-text"> &lt;head&gt; CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-file"><span class="nav-number">1.3.</span> <span class="nav-text"> CSS file</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#things-you-can-do-with-headhead"><span class="nav-number">2.</span> <span class="nav-text"> Things you can do with &lt;head&gt;&lt;/head&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-selector"><span class="nav-number">3.</span> <span class="nav-text"> CSS Selector</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-specificity"><span class="nav-number">4.</span> <span class="nav-text"> CSS Specificity</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#simple-case"><span class="nav-number">4.1.</span> <span class="nav-text"> Simple Case</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#real-case"><span class="nav-number">4.2.</span> <span class="nav-text"> Real Case</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#margin-collapsing"><span class="nav-number">5.</span> <span class="nav-text"> Margin Collapsing</span></a></li></ol></div>
             
 
           </div>
