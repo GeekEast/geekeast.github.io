@@ -119,7 +119,14 @@
 <meta property="og:description" content="How to add style to html?  Inline CSS Style  Not Recommended for most cases.  HTML: 123&amp;lt;div style=&quot;color: black; background: red&quot;&amp;gt;    Hello World!&amp;lt;/div&amp;gt;  &amp;lt;head&amp;gt; CSS Style  For singl">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://css-tricks.com/wp-content/uploads/2018/11/cascade-07.svg">
-<meta property="og:updated_time" content="2019-05-21T08:26:16.274Z">
+<meta property="og:image" content="https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png">
+<meta property="og:image" content="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-1.png">
+<meta property="og:image" content="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-2.png">
+<meta property="og:image" content="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-3.png">
+<meta property="og:image" content="https://css-tricks.com/wp-content/uploads/2010/05/cssspecificity-calc-3v2.jpg">
+<meta property="og:image" content="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png">
+<meta property="og:image" content="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png">
+<meta property="og:updated_time" content="2019-05-21T08:45:22.598Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS Tricks">
 <meta name="twitter:description" content="How to add style to html?  Inline CSS Style  Not Recommended for most cases.  HTML: 123&amp;lt;div style=&quot;color: black; background: red&quot;&amp;gt;    Hello World!&amp;lt;/div&amp;gt;  &amp;lt;head&amp;gt; CSS Style  For singl">
@@ -423,7 +430,7 @@
                 
               
 
-              <time title="Created: 2019-05-21 15:40:50 / Modified: 17:56:16" itemprop="dateCreated datePublished" datetime="2019-05-21T15:40:50+09:30">2019-05-21</time>
+              <time title="Created: 2019-05-21 15:40:50 / Modified: 18:15:22" itemprop="dateCreated datePublished" datetime="2019-05-21T15:40:50+09:30">2019-05-21</time>
             
 
             
@@ -479,7 +486,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">3.1k</span>
+                <span title="Symbols count in article">3.3k</span>
               
 
               
@@ -550,7 +557,6 @@
 <table>
 <thead>
 <tr>
-<th>Selector</th>
 <th>Example</th>
 <th>Description</th>
 <th>Stress</th>
@@ -558,81 +564,86 @@
 </thead>
 <tbody>
 <tr>
-<td><code>.class</code></td>
 <td><code>.btn</code></td>
 <td>Select all elements with class=“btn”</td>
 <td>类</td>
 </tr>
 <tr>
-<td><code>#id</code></td>
 <td><code>#firstname</code></td>
 <td>Selects the element with id=“firstname”</td>
 <td>ID</td>
 </tr>
 <tr>
 <td><code>*</code></td>
-<td><code>*</code></td>
 <td>Selects all elements</td>
 <td>全部，不推荐</td>
 </tr>
 <tr>
-<td><code>elment</code></td>
 <td><code>p</code></td>
 <td>Selects all <code>&lt;p&gt;</code> elements</td>
 <td>单个</td>
 </tr>
 <tr>
-<td><code>element, element</code></td>
 <td><code>div, p</code></td>
 <td>any <code>&lt;div&gt;</code> elements and <code>&lt;p&gt;</code> elements</td>
 <td>多个</td>
 </tr>
 <tr>
-<td><code>element element</code></td>
 <td><code>div p</code></td>
 <td>any <code>&lt;p&gt;</code> item that is a descendant of an <code>&lt;div&gt;</code></td>
 <td>子类</td>
 </tr>
 <tr>
-<td><code>element &gt; element</code></td>
 <td><code>div &gt; p</code></td>
 <td>any <code>&lt;p&gt;</code> item that is a direct descendant of an <code>&lt;div&gt;</code></td>
 <td>最近子类</td>
 </tr>
 <tr>
-<td><code>element1 ~ element2</code></td>
 <td><code>div ~ p</code></td>
 <td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with something in between.</td>
 <td>弟弟</td>
 </tr>
 <tr>
-<td><code>element + element</code></td>
 <td><code>div + p</code></td>
 <td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with nothing in between.</td>
 <td>最近弟弟</td>
 </tr>
 <tr>
-<td><code>[attribute]</code></td>
 <td><code>[href]</code></td>
 <td>style all element with a href attribute.</td>
 <td>属性</td>
 </tr>
 <tr>
-<td><code>:pseudo-class</code></td>
 <td><code>:hover</code></td>
 <td>selects elements when the mouse cursor is current over them</td>
 <td>状态</td>
 </tr>
 <tr>
-<td><code>::pseudo-element</code></td>
 <td><code>::before</code></td>
 <td>allows you to insert content onto a page from CSS</td>
 <td>内容</td>
 </tr>
 </tbody>
 </table>
-<hr>
-<p><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/uploads/2018/11/cascade-07.svg"></p>
+<h2 id="css-specificity"><a class="markdownIt-Anchor" href="#css-specificity"></a> CSS Specificity</h2>
+<h3 id="simple-case"><a class="markdownIt-Anchor" href="#simple-case"></a> Simple Case</h3>
+<p><code>Inheritance &gt; CSS file Tags(div, p) &gt; CSS file Class &gt; CSS file Id &gt; Inline Style &gt; !Important</code></p>
+<p><img style="display: block; width: 100%; margin-left:auto; margin-right: auto" src="https://css-tricks.com/wp-content/uploads/2018/11/cascade-07.svg"></p>
+<h3 id="real-case"><a class="markdownIt-Anchor" href="#real-case"></a> Real Case</h3>
+<p><img style="width: 10%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png"></p>
+<ul>
+<li>Element: div,p</li>
+<li>class/psuedo-class/attibute: .</li>
+<li>id: #</li>
+<li>inline: <code>&lt;style&gt;</code></li>
+</ul>
+<p><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-1.png"><br>
+<img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-2.png"><br>
+<img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-3.png"><br>
+<strong>Update</strong>: The :not() sort-of-pseudo-class adds no specificity by itself, only what’s inside the parens is added to specificity value.<br>
+<img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/uploads/2010/05/cssspecificity-calc-3v2.jpg"><br>
+<img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png"><br>
+<img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png"></p>
 
       
 
@@ -648,13 +659,6 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
       <div class="popular-posts-title"><a href="/cssfrostedglass.html" rel="bookmark">CSS Frosted Glass Effect</a></div>
       
     </li>
@@ -662,7 +666,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/csszindex.html" rel="bookmark">CSS 元素层叠关系</a></div>
+      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
       
     </li>
   
@@ -670,6 +674,13 @@
       
       
       <div class="popular-posts-title"><a href="/cssh1.html" rel="bookmark">CSS 小杂碎</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/csszindex.html" rel="bookmark">CSS 元素层叠关系</a></div>
       
     </li>
   
@@ -922,7 +933,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#how-to-add-style-to-html"><span class="nav-number">1.</span> <span class="nav-text"> How to add style to html?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#inline-css-style"><span class="nav-number">1.1.</span> <span class="nav-text"> Inline CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#head-css-style"><span class="nav-number">1.2.</span> <span class="nav-text"> &lt;head&gt; CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-file"><span class="nav-number">1.3.</span> <span class="nav-text"> CSS file</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#things-you-can-do-with-headhead"><span class="nav-number">2.</span> <span class="nav-text"> Things you can do with &lt;head&gt;&lt;/head&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-selector"><span class="nav-number">3.</span> <span class="nav-text"> CSS Selector</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#how-to-add-style-to-html"><span class="nav-number">1.</span> <span class="nav-text"> How to add style to html?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#inline-css-style"><span class="nav-number">1.1.</span> <span class="nav-text"> Inline CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#head-css-style"><span class="nav-number">1.2.</span> <span class="nav-text"> &lt;head&gt; CSS Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-file"><span class="nav-number">1.3.</span> <span class="nav-text"> CSS file</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#things-you-can-do-with-headhead"><span class="nav-number">2.</span> <span class="nav-text"> Things you can do with &lt;head&gt;&lt;/head&gt;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-selector"><span class="nav-number">3.</span> <span class="nav-text"> CSS Selector</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#css-specificity"><span class="nav-number">4.</span> <span class="nav-text"> CSS Specificity</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#simple-case"><span class="nav-number">4.1.</span> <span class="nav-text"> Simple Case</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#real-case"><span class="nav-number">4.2.</span> <span class="nav-text"> Real Case</span></a></li></ol></li></ol></div>
             
 
           </div>
