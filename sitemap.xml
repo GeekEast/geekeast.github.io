@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/css-auto.html</loc>
+    
+    <lastmod>2019-05-21T09:05:32.795Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/css-tricks.html</loc>
     
     <lastmod>2019-05-21T08:51:15.771Z</lastmod>
@@ -422,14 +429,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
+    <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
