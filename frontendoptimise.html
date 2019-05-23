@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="vscode多光标编辑  手动: Option + left click 尾部: 选中 + shift + option + i 同词: command + shift + l   设置 Remote Browser 12345678&quot;remoteBrowser.connectionOptions&quot;: &amp;#123;    &quot;host&quot;: &quot;host&quot;,  // MANDATORY    &quot;use">
-<meta name="keywords" content="Vscode">
+  <meta name="description" content="code spliting tree shaking lazy loading">
+<meta name="keywords" content="Frontend,Performance">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vscode Tutorial">
-<meta property="og:url" content="https://geekeast.github.io/vscodeTutorial.html">
+<meta property="og:title" content="前端优化三大法宝">
+<meta property="og:url" content="https://geekeast.github.io/frontendoptimise.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="vscode多光标编辑  手动: Option + left click 尾部: 选中 + shift + option + i 同词: command + shift + l   设置 Remote Browser 12345678&quot;remoteBrowser.connectionOptions&quot;: &amp;#123;    &quot;host&quot;: &quot;host&quot;,  // MANDATORY    &quot;use">
+<meta property="og:description" content="code spliting tree shaking lazy loading">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-21T04:16:29.725Z">
+<meta property="og:updated_time" content="2019-05-23T05:24:18.047Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vscode Tutorial">
-<meta name="twitter:description" content="vscode多光标编辑  手动: Option + left click 尾部: 选中 + shift + option + i 同词: command + shift + l   设置 Remote Browser 12345678&quot;remoteBrowser.connectionOptions&quot;: &amp;#123;    &quot;host&quot;: &quot;host&quot;,  // MANDATORY    &quot;use">
+<meta name="twitter:title" content="前端优化三大法宝">
+<meta name="twitter:description" content="code spliting tree shaking lazy loading">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/vscodeTutorial.html">
+  <link rel="canonical" href="https://geekeast.github.io/frontendoptimise.html">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Vscode Tutorial | 雪中印</title>
+  <title>前端优化三大法宝 | 雪中印</title>
   
 
 
@@ -380,7 +380,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/vscodeTutorial.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/frontendoptimise.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -397,7 +397,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Vscode Tutorial
+          <h2 class="post-title" itemprop="name headline">前端优化三大法宝
 
               
             
@@ -421,22 +421,12 @@
                 
               
 
-              <time title="Created: 2019-04-10 16:27:01" itemprop="dateCreated datePublished" datetime="2019-04-10T16:27:01+09:30">2019-04-10</time>
+              <time title="Created: 2019-05-23 14:51:37 / Modified: 14:54:18" itemprop="dateCreated datePublished" datetime="2019-05-23T14:51:37+09:30">2019-05-23</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-04-21 13:46:29" itemprop="dateModified" datetime="2019-04-21T13:46:29+09:30">2019-04-21</time>
               
             
           </span>
@@ -451,7 +441,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Editor/" itemprop="url" rel="index"><span itemprop="name">Editor</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
 
                 
                 
@@ -487,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">539</span>
+                <span title="Symbols count in article">44</span>
               
 
               
@@ -521,14 +511,11 @@
       
 
       
-        <h2 id="vscode多光标编辑"><a class="markdownIt-Anchor" href="#vscode多光标编辑"></a> vscode多光标编辑</h2>
-<ol>
-<li>手动: <code>Option</code> + <code>left click</code></li>
-<li>尾部: 选中 + <code>shift</code> + <code>option</code> + <code>i</code></li>
-<li>同词: <code>command</code> + <code>shift</code> + <code>l</code></li>
-</ol>
-<h2 id="设置-remote-browser"><a class="markdownIt-Anchor" href="#设置-remote-browser"></a> 设置 Remote Browser</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">"remoteBrowser.connectionOptions": &#123;</span><br><span class="line">    "host": "host",  // MANDATORY</span><br><span class="line">    "username": "ubuntu", // MANDATORY</span><br><span class="line">    "privateKey": "/Users/xiangt/tcp-admin-stats-api.pem",  // Path to private key on local machine</span><br><span class="line">    "localHostname": "localhost",</span><br><span class="line">    "localUsername": "xiangt",   // Identify as myuser@myhost</span><br><span class="line">    "defaultPath": "/home/ubuntu/tcp-stats-api" // Default directory to start in on connect (Absolute path)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <ul>
+<li>code spliting</li>
+<li>tree shaking</li>
+<li>lazy loading</li>
+</ul>
 <h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>
 
       
@@ -538,6 +525,39 @@
 
     
       
+
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/certificate.html" rel="bookmark">IT Courses List</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/cssdisplay.html" rel="bookmark">CSS block inline inline-block</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/cssfrostedglass.html" rel="bookmark">CSS Frosted Glass Effect</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
+      
+    </li>
+  
+  </ul>
 
 
     
@@ -576,7 +596,7 @@
   <li class="post-copyright-link">
     <strong>本文链接: </strong>
     
-    <a href="https://geekeast.github.io/vscodeTutorial.html" title="Vscode Tutorial">https://geekeast.github.io/vscodeTutorial.html</a>
+    <a href="https://geekeast.github.io/frontendoptimise.html" title="前端优化三大法宝">https://geekeast.github.io/frontendoptimise.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明:  </strong>除特殊声明外，本站博文均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议，转载请注明出处！</li>
@@ -590,7 +610,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Vscode/" rel="tag"># Vscode</a>
+            <a href="/tags/Frontend/" rel="tag"># Frontend</a>
+          
+            <a href="/tags/Performance/" rel="tag"># Performance</a>
           
         </div>
       
@@ -615,8 +637,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/postgresTutorial.html" rel="next" title="Postgres Tutorial">
-                <i class="fa fa-chevron-left"></i> Postgres Tutorial
+              <a href="/cssdisplay.html" rel="next" title="CSS block inline inline-block">
+                <i class="fa fa-chevron-left"></i> CSS block inline inline-block
               </a>
             
           </div>
@@ -624,10 +646,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/ssrinfo.html" rel="prev" title="SSR Information">
-                SSR Information <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -790,7 +808,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vscode多光标编辑"><span class="nav-number">1.</span> <span class="nav-text"> vscode多光标编辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置-remote-browser"><span class="nav-number">2.</span> <span class="nav-text"> 设置 Remote Browser</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number">3.</span> <span class="nav-text"> </span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number">1.</span> <span class="nav-text"> </span></a></li></ol></div>
             
 
           </div>

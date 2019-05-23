@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/frontendoptimise.html</loc>
+    
+    <lastmod>2019-05-23T05:24:18.047Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/cssdisplay.html</loc>
     
     <lastmod>2019-05-21T14:49:55.407Z</lastmod>
@@ -450,14 +457,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
+    <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
