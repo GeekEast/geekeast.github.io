@@ -2,23 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://geekeast.github.io/frontendoptimise.html</loc>
+    <loc>https://geekeast.github.io/codebuild.html</loc>
     
-    <lastmod>2019-05-23T05:24:18.047Z</lastmod>
+    <lastmod>2019-05-25T01:19:18.361Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/cssdisplay.html</loc>
+    <loc>https://geekeast.github.io/codecommit.html</loc>
     
-    <lastmod>2019-05-21T14:49:55.407Z</lastmod>
+    <lastmod>2019-05-25T01:17:39.287Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/managemutiplerolesaws.html</loc>
+    
+    <lastmod>2019-05-24T04:59:35.858Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/elasticbeanstalk.html</loc>
+    
+    <lastmod>2019-05-24T04:21:10.373Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://geekeast.github.io/css-tricks.html</loc>
     
-    <lastmod>2019-05-21T14:07:31.366Z</lastmod>
+    <lastmod>2019-05-24T04:21:07.204Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/pr.html</loc>
+    
+    <lastmod>2019-05-24T04:21:02.232Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/cssdisplay.html</loc>
+    
+    <lastmod>2019-05-23T05:24:53.060Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontendoptimise.html</loc>
+    
+    <lastmod>2019-05-23T05:24:18.047Z</lastmod>
     
   </url>
   
@@ -401,14 +436,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/findbigfilelinux.html</loc>
+    <loc>https://geekeast.github.io/fofafenqi.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/fofafenqi.html</loc>
+    <loc>https://geekeast.github.io/findbigfilelinux.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -457,14 +492,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
+    <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
