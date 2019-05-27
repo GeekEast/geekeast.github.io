@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/elasticbeanstalk.html</loc>
+    
+    <lastmod>2019-05-27T14:16:30.869Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/linuxcommands.html</loc>
+    
+    <lastmod>2019-05-26T05:19:06.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/codecommit.html</loc>
+    
+    <lastmod>2019-05-25T23:43:54.987Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/codebuild.html</loc>
     
-    <lastmod>2019-05-25T03:00:23.042Z</lastmod>
+    <lastmod>2019-05-25T11:41:12.361Z</lastmod>
     
   </url>
   
@@ -16,23 +37,9 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/codecommit.html</loc>
-    
-    <lastmod>2019-05-25T01:17:39.287Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/managemutiplerolesaws.html</loc>
     
     <lastmod>2019-05-24T04:59:35.858Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/elasticbeanstalk.html</loc>
-    
-    <lastmod>2019-05-24T04:21:10.373Z</lastmod>
     
   </url>
   
@@ -299,13 +306,6 @@
     <loc>https://geekeast.github.io/nodeapi.html</loc>
     
     <lastmod>2019-04-21T04:14:28.001Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linuxcommands.html</loc>
-    
-    <lastmod>2019-04-21T04:14:03.008Z</lastmod>
     
   </url>
   
