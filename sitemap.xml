@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://geekeast.github.io/test2.html</loc>
+    <loc>https://geekeast.github.io/learnitbydoing.html</loc>
     
-    <lastmod>2019-05-29T01:44:03.217Z</lastmod>
+    <lastmod>2019-05-29T01:52:45.315Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/pg.html</loc>
+    
+    <lastmod>2019-05-29T01:51:02.435Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>https://geekeast.github.io/nodeapi.html</loc>
     
     <lastmod>2019-05-29T00:46:26.372Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/learningthinking.html</loc>
-    
-    <lastmod>2019-05-29T00:43:18.736Z</lastmod>
     
   </url>
   
@@ -187,20 +187,6 @@
     <loc>https://geekeast.github.io/lengthpercentage.html</loc>
     
     <lastmod>2019-04-30T00:37:54.256Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/pg.html</loc>
-    
-    <lastmod>2019-04-30T00:37:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/learnitbydoing.html</loc>
-    
-    <lastmod>2019-04-29T05:06:19.474Z</lastmod>
     
   </url>
   
