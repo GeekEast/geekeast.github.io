@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-05-29T00:43:18.736Z</updated>
+  <updated>2019-05-29T01:37:04.366Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://geekeast.github.io/test.html"/>
+    <id>https://geekeast.github.io/test.html</id>
+    <published>2019-05-29T01:36:50.000Z</published>
+    <updated>2019-05-29T01:37:04.366Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note ">            <p></p>          </div><p>测试一下，不行啊</p><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note &quot;&gt;
+            &lt;p&gt;&lt;/p&gt;
+          &lt;/div&gt;
+&lt;p&gt;测试一下，不行啊&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>学习进阶论</title>
@@ -666,43 +687,6 @@ Unless: &lt;strong&gt;Some functions might need to set initial state after some 
       <category term="Fullstack" scheme="https://geekeast.github.io/tags/Fullstack/"/>
     
       <category term="MVC" scheme="https://geekeast.github.io/tags/MVC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React 数据传递</title>
-    <link href="https://geekeast.github.io/reactstatefunc.html"/>
-    <id>https://geekeast.github.io/reactstatefunc.html</id>
-    <published>2019-04-30T01:35:18.000Z</published>
-    <updated>2019-04-30T02:56:48.331Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="引言"><a class="markdownIt-Anchor" href="#引言"></a> 引言</h2><ul><li>我们先来看几个问题<ul><li>React中的变量应该放在那个component里？ - 变量的归属</li><li>如何判断一个变量需要传入到一个component？- 变量的使用</li><li>React的中函数应该放在那个component里？ - 方法的归属</li><li>如何判断一个函数需要传入到一个component里? - 方法的使用</li></ul></li></ul><h2 id="导图"><a class="markdownIt-Anchor" href="#导图"></a> 导图</h2><br><img style="width: 100%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-113717.png"><a id="more"></a><br> <h2 id="归属"><a class="markdownIt-Anchor" href="#归属"></a> 归属</h2><p>在一个React项目中，有很多个组件，这些组件构成一颗巨大的树，我们称之为<code>组件树(Component Tree)</code>.那么，如何确定方法和变量在组件树的<strong>原生位置</strong>呢？这涉及到方法和变量的<code>归属</code>。因为方法的归属相对固定，也较容易理解，先撸它。</p><div class="note info no-icon">            <p>方法的诞生是直接服务于state的改变的，所以方法的归属其实是要跟随其紧密相关的state变量.</p>          </div><p>接下里看变量的归属。归属不涉及props，因为<strong>state是指从哪里来，props指的是到哪里去</strong>，这个我们后面会讨论。变量的归属，我总结有以下两种情况：</p><ul><li>组件A和组件B是<code>兄弟组件</code>，组件C是二者的最近父组件，如果有一个state变量v, 是在A和B之间进行共享的，就要将其归属在父组件C中。这里之所有在<code>最近</code>父组件中，是为了避免多层数据传递造成的不必要损耗（姑且这么说，我对于react的性能还有待于深入研究）。</li><li>组件A和组件B是父子组件，如果有一个state变量v,且原生于B. 在这种情况下，如果A中有方法会导致B的变化，可以但不推荐讲v提升到A组件中。推荐的做法是将v放置于B中，在B中用另外一个方法触发v的变化和A中的方法。这样做可以将子组件尽量和父组件分离，<code>最大化解耦，提高代码复用</code>。</li></ul><h2 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h2><p>这里的使用是指<code>到哪里去</code>。方法的使用是指方法要传到哪个component里面，变量的使用是指在state中的某个变量要传到哪个component里面.</p><p>这里有一个讨论的<strong>前提</strong>：方法和变量的传递是通过<code>props</code>或者<code>context</code>的方式。到哪里去的问题也可以转化成：<strong>要在哪里传入特定的props，要在哪里封装context的consumer</strong>。另外一种情况是Redux，我看的还少，就暂不讨论，抛砖引玉。</p><ul><li>方法的使用的基本准则是哪个component触发了这个方法，就把这个方法传给谁。如果component不触发该方法，则不要传入。</li><li>变量的使用的基本准则是哪个component需要引用该变量，就把这个变量传给谁。如果component不引用该变量，则不要传入。</li></ul><div class="note warning">            <p>引用变量而非<strong>改变</strong>变量。变量的改变要求通过方法来实现，而这个方法要尽量跟变量在一个component里面。如果一个子组件里面会触发某个父组件变量的改变，无需将该变量传入到子组件中。</p>          </div><h2 id="进阶"><a class="markdownIt-Anchor" href="#进阶"></a> 进阶</h2><p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLjUxY3RvLmNvbS9jaGVuZ3lhbmxpLzIzMTA4NjE=" title="https://blog.51cto.com/chengyanli/2310861">React总结篇之二_设计高质量的React组件<i class="fa fa-external-link"></i></span></p><h2 id="center如有不恰当的地方请在下方讨论区告知感激不尽center"><a class="markdownIt-Anchor" href="#center如有不恰当的地方请在下方讨论区告知感激不尽center"></a> <center>如有不恰当的地方，请在下方讨论区告知，感激不尽！</center></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#引言&quot;&gt;&lt;/a&gt; 引言&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;我们先来看几个问题
-&lt;ul&gt;
-&lt;li&gt;React中的变量应该放在那个component里？ - 变量的归属&lt;/li&gt;
-&lt;li&gt;如何判断一个变量需要传入到一个component？- 变量的使用&lt;/li&gt;
-&lt;li&gt;React的中函数应该放在那个component里？ - 方法的归属&lt;/li&gt;
-&lt;li&gt;如何判断一个函数需要传入到一个component里? - 方法的使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;导图&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#导图&quot;&gt;&lt;/a&gt; 导图&lt;/h2&gt;
-&lt;br&gt;
-&lt;img style=&quot;width: 100%; margin: auto&quot; src=&quot;https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-113717.png&quot;&gt;
-    
-    </summary>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
-    
-    
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/tags/Fullstack/"/>
     
   </entry>
   
