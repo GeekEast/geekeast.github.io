@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-05-28T03:29:01.791Z</updated>
+  <updated>2019-05-29T06:11:43.654Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,102 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Suppressing a repeated column value in PostgreSQL</title>
+    <link href="https://geekeast.github.io/pgpartion.html"/>
+    <id>https://geekeast.github.io/pgpartion.html</id>
+    <published>2019-05-29T06:01:59.000Z</published>
+    <updated>2019-05-29T06:11:43.654Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="backgroud"><a class="markdownIt-Anchor" href="#backgroud"></a> Backgroud:</h3><ul><li>Table I had</li></ul><table><thead><tr><th style="text-align:center">Name</th><th style="text-align:center">Project</th><th style="text-align:center">Roles</th></tr></thead><tbody><tr><td style="text-align:center">James</td><td style="text-align:center">Python</td><td style="text-align:center">Admin</td></tr><tr><td style="text-align:center">James</td><td style="text-align:center">Python</td><td style="text-align:center">Coder</td></tr><tr><td style="text-align:center">James</td><td style="text-align:center">Java</td><td style="text-align:center">Coder</td></tr></tbody></table><ul><li>The Result I Want</li></ul><table><thead><tr><th style="text-align:center">Name</th><th style="text-align:center">Project</th><th style="text-align:center">Roles</th></tr></thead><tbody><tr><td style="text-align:center"><code>James</code></td><td style="text-align:center">Python</td><td style="text-align:center"><code>Admin, Coder</code></td></tr><tr><td style="text-align:center"></td><td style="text-align:center">Java</td><td style="text-align:center">Coder</td></tr></tbody></table><h3 id="research"><a class="markdownIt-Anchor" href="#research"></a> Research</h3><ul><li>Oracle <code>Break On</code> with <code>Partition by</code></li><li>Unfortunately, Postgres doesn’t have <code>Break On</code></li></ul><h3 id="solution"><a class="markdownIt-Anchor" href="#solution"></a> Solution</h3><ul><li>Use <code>string_agg(distinct lower(xxx), ',')</code> to combime roles.</li><li>Use <code>row_number() over partition by xxx</code> to get the Row Number</li><li>Use <code>case</code> clause to remove duplicates of name based on the Row Number</li></ul><h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3><p><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjgxMDg2ODIvc3VwcHJlc3NpbmctYS1yZXBlYXRlZC1jb2x1bW4tdmFsdWUtaW4tcG9zdGdyZXNxbA==" title="https://stackoverflow.com/questions/28108682/suppressing-a-repeated-column-value-in-postgresql">Stack Overflow<i class="fa fa-external-link"></i></span></p><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;backgroud&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#backgroud&quot;&gt;&lt;/a&gt; Backgroud:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Table I had&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Name&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Project&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Roles&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;James&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Python&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Admin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;James&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Python&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Coder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;James&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Java&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Coder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;The Result I Want&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Name&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Project&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Roles&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;James&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Python&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Admin, Coder&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Java&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Coder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;research&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#research&quot;&gt;&lt;/a&gt; Research&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Oracle &lt;code&gt;Break On&lt;/code&gt; with &lt;code&gt;Partition by&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Unfortunately, Postgres doesn’t have &lt;code&gt;Break On&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;solution&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#solution&quot;&gt;&lt;/a&gt; Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;string_agg(distinct lower(xxx), &#39;,&#39;)&lt;/code&gt; to combime roles.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;row_number() over partition by xxx&lt;/code&gt; to get the Row Number&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;case&lt;/code&gt; clause to remove duplicates of name based on the Row Number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;reference&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#reference&quot;&gt;&lt;/a&gt; Reference&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/28108682/suppressing-a-repeated-column-value-in-postgresql&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Database" scheme="https://geekeast.github.io/categories/Database/"/>
+    
+    
+      <category term="Postgres" scheme="https://geekeast.github.io/tags/Postgres/"/>
+    
+      <category term="SQL" scheme="https://geekeast.github.io/tags/SQL/"/>
+    
+      <category term="Break On" scheme="https://geekeast.github.io/tags/Break-On/"/>
+    
+      <category term="Partition By" scheme="https://geekeast.github.io/tags/Partition-By/"/>
+    
+      <category term="Remove Duplicates" scheme="https://geekeast.github.io/tags/Remove-Duplicates/"/>
+    
+  </entry>
   
   <entry>
     <title>Node.js 发消息至Slack</title>
@@ -667,59 +763,6 @@ Unless: &lt;strong&gt;Some functions might need to set initial state after some 
       <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
     
       <category term="Fullstack" scheme="https://geekeast.github.io/tags/Fullstack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IT学习方法论</title>
-    <link href="https://geekeast.github.io/learnitbydoing.html"/>
-    <id>https://geekeast.github.io/learnitbydoing.html</id>
-    <published>2019-04-29T04:56:15.000Z</published>
-    <updated>2019-05-29T01:52:45.315Z</updated>
-    
-    <content type="html"><![CDATA[<div class="note warning">            <h2 id="核心-learn-by-doing"><a class="markdownIt-Anchor" href="#核心-learn-by-doing"></a> 核心： Learn By Doing</h2>          </div><ul><li>掌握基本知识，能够构建大致雏形</li><li>在线寻找项目，udemy等平台，跟着撸一遍<ul><li>在撸的时候，不断google，积累相关资源</li><li>在撸的时候，寻找知识主导的教程，形成自己的模块化知识</li><li>在撸的时候，内化的知识要定期总结成Blog</li><li>在撸的时候，通过version control来控制代码变化，为代码复习积累资源</li><li>在撸的时候，写清楚需求文档，为后续阶段使用</li></ul></li><li>根据写出来的需求文档或者代码框架，自己从头到尾再撸一遍</li><li>无需求文档，直接撸一遍</li></ul><h2 id="学习方法进化论"><a class="markdownIt-Anchor" href="#学习方法进化论"></a> 学习方法进化论</h2><ul><li>学渣的就不说了，属于<code>不用心</code>的类别</li><li>伪学霸，<code>大致分类</code>，可类比作<code>Array</code></li><li>学霸，<code>族谱分类</code>，可类比作<code>Tree</code></li><li>学神，<code>知识图谱</code>，可类比作<code>Graph</code></li></ul><p><img style="width: 80%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/lp1.jpeg"><br><img style="width: 80%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/lp2.jpeg"><br><img style="width: 80%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/lp3.jpeg"></p><div class="note success">            <p>在平时学习的过程中，要将知识模块化(<code>解耦</code>)，加强复用以便建立知识图谱。</p>          </div><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note warning&quot;&gt;
-            &lt;h2 id=&quot;核心-learn-by-doing&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#核心-learn-by-doing&quot;&gt;&lt;/a&gt; 核心： Learn By Doing&lt;/h2&gt;
-          &lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;掌握基本知识，能够构建大致雏形&lt;/li&gt;
-&lt;li&gt;在线寻找项目，udemy等平台，跟着撸一遍
-&lt;ul&gt;
-&lt;li&gt;在撸的时候，不断google，积累相关资源&lt;/li&gt;
-&lt;li&gt;在撸的时候，寻找知识主导的教程，形成自己的模块化知识&lt;/li&gt;
-&lt;li&gt;在撸的时候，内化的知识要定期总结成Blog&lt;/li&gt;
-&lt;li&gt;在撸的时候，通过version control来控制代码变化，为代码复习积累资源&lt;/li&gt;
-&lt;li&gt;在撸的时候，写清楚需求文档，为后续阶段使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;根据写出来的需求文档或者代码框架，自己从头到尾再撸一遍&lt;/li&gt;
-&lt;li&gt;无需求文档，直接撸一遍&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;学习方法进化论&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#学习方法进化论&quot;&gt;&lt;/a&gt; 学习方法进化论&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;学渣的就不说了，属于&lt;code&gt;不用心&lt;/code&gt;的类别&lt;/li&gt;
-&lt;li&gt;伪学霸，&lt;code&gt;大致分类&lt;/code&gt;，可类比作&lt;code&gt;Array&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;学霸，&lt;code&gt;族谱分类&lt;/code&gt;，可类比作&lt;code&gt;Tree&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;学神，&lt;code&gt;知识图谱&lt;/code&gt;，可类比作&lt;code&gt;Graph&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img style=&quot;width: 80%; margin: auto&quot; src=&quot;https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/lp1.jpeg&quot;&gt;&lt;br&gt;
-&lt;img style=&quot;width: 80%; margin: auto&quot; src=&quot;https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/lp2.jpeg&quot;&gt;&lt;br&gt;
-&lt;img style=&quot;width: 80%; margin: auto&quot; src=&quot;https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/lp3.jpeg&quot;&gt;&lt;/p&gt;
-&lt;div class=&quot;note success&quot;&gt;
-            &lt;p&gt;在平时学习的过程中，要将知识模块化(&lt;code&gt;解耦&lt;/code&gt;)，加强复用以便建立知识图谱。&lt;/p&gt;
-          &lt;/div&gt;
-    
-    </summary>
-    
-      <category term="Methodology" scheme="https://geekeast.github.io/categories/Methodology/"/>
-    
-    
-      <category term="IT" scheme="https://geekeast.github.io/tags/IT/"/>
-    
-      <category term="Project" scheme="https://geekeast.github.io/tags/Project/"/>
     
   </entry>
   
