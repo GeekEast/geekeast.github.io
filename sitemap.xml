@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/nodeapi.html</loc>
+    
+    <lastmod>2019-06-02T12:47:10.086Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/pgpartion.html</loc>
     
     <lastmod>2019-05-29T06:11:43.654Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://geekeast.github.io/pg.html</loc>
     
     <lastmod>2019-05-29T01:51:02.435Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/nodeapi.html</loc>
-    
-    <lastmod>2019-05-29T00:46:26.372Z</lastmod>
     
   </url>
   
