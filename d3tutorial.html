@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Concept  Document: Element in a web page. SVG: Scalable Vector Graphics. It defines vector-based graphics in XML format. Selection: an arraqy of nodes in DOM.   Introduction  Without D3.js  123456//">
+  <meta name="description" content="Concept  Document: Element in a web page. SVG: Scalable Vector Graphics. It defines vector-based graphics in XML format. Here “scalable” means that, if you zoom in or out on an object, it would not a">
 <meta name="keywords" content="Frontend,Data Visualization,D3.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="D3.js Tutorial">
 <meta property="og:url" content="https://geekeast.github.io/d3tutorial.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Concept  Document: Element in a web page. SVG: Scalable Vector Graphics. It defines vector-based graphics in XML format. Selection: an arraqy of nodes in DOM.   Introduction  Without D3.js  123456//">
+<meta property="og:description" content="Concept  Document: Element in a web page. SVG: Scalable Vector Graphics. It defines vector-based graphics in XML format. Here “scalable” means that, if you zoom in or out on an object, it would not a">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-03T04:13:01.314Z">
+<meta property="og:updated_time" content="2019-06-03T04:24:04.543Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="D3.js Tutorial">
-<meta name="twitter:description" content="Concept  Document: Element in a web page. SVG: Scalable Vector Graphics. It defines vector-based graphics in XML format. Selection: an arraqy of nodes in DOM.   Introduction  Without D3.js  123456//">
+<meta name="twitter:description" content="Concept  Document: Element in a web page. SVG: Scalable Vector Graphics. It defines vector-based graphics in XML format. Here “scalable” means that, if you zoom in or out on an object, it would not a">
 
 
 
@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-06-03 12:00:26 / Modified: 13:43:01" itemprop="dateCreated datePublished" datetime="2019-06-03T12:00:26+09:30">2019-06-03</time>
+              <time title="Created: 2019-06-03 12:00:26 / Modified: 13:54:04" itemprop="dateCreated datePublished" datetime="2019-06-03T12:00:26+09:30">2019-06-03</time>
             
 
             
@@ -477,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">2.8k</span>
+                <span title="Symbols count in article">2.9k</span>
               
 
               
@@ -514,7 +514,7 @@
         <h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3>
 <ul>
 <li>Document: Element in a web page.</li>
-<li>SVG: Scalable <span class="exturl" data-url="aHR0cHM6Ly92ZWN0b3ItY29udmVyc2lvbnMuY29tL3ZlY3Rvcml6aW5nL3Jhc3Rlcl92c192ZWN0b3IuaHRtbA==" title="https://vector-conversions.com/vectorizing/raster_vs_vector.html">Vector Graphics<i class="fa fa-external-link"></i></span>. It defines vector-based graphics in <strong>XML</strong> format.</li>
+<li>SVG: Scalable <span class="exturl" data-url="aHR0cHM6Ly92ZWN0b3ItY29udmVyc2lvbnMuY29tL3ZlY3Rvcml6aW5nL3Jhc3Rlcl92c192ZWN0b3IuaHRtbA==" title="https://vector-conversions.com/vectorizing/raster_vs_vector.html">Vector Graphics<i class="fa fa-external-link"></i></span>. It defines vector-based graphics in <strong>XML</strong> format. <strong>Here “scalable” means that, if you zoom in or out on an object, it would not appear pixelated.</strong></li>
 <li>Selection: an arraqy of <strong>nodes</strong> in DOM.</li>
 </ul>
 <h3 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h3>
@@ -564,7 +564,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"circle"</span>)</span><br><span class="line">  .transition()</span><br><span class="line">  .duration(<span class="number">750</span>) <span class="comment">// element stay</span></span><br><span class="line">  .delay(<span class="function"><span class="keyword">function</span>(<span class="params">d,i</span>) </span>&#123; <span class="keyword">return</span> i * <span class="number">10</span>;&#125;) <span class="comment">// element delay</span></span><br><span class="line">  .attr(<span class="string">"r"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123; <span class="keyword">return</span> <span class="built_in">Math</span>.sqrt(d*scale);&#125;);</span><br></pre></td></tr></table></figure>
 <h3 id="basic-methods"><a class="markdownIt-Anchor" href="#basic-methods"></a> Basic Methods</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select() <span class="comment">// select the 1st node</span></span><br><span class="line">selectAll() <span class="comment">// select all nodes</span></span><br><span class="line">append(); <span class="comment">// add new nodes</span></span><br><span class="line">text(); <span class="comment">// get current text</span></span><br><span class="line">text(<span class="string">"text"</span>) <span class="comment">// set text</span></span><br><span class="line">data(); <span class="comment">// attach data to nodes</span></span><br><span class="line">enter(); <span class="comment">// create missing nodes</span></span><br><span class="line">exit(); <span class="comment">// delete unnecessary nodes</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">select() <span class="comment">// select the 1st node</span></span><br><span class="line">selectAll() <span class="comment">// select all nodes</span></span><br><span class="line">append(); <span class="comment">// add new nodes</span></span><br><span class="line">text(); <span class="comment">// get current text</span></span><br><span class="line">text(<span class="string">"text"</span>) <span class="comment">// set text</span></span><br><span class="line">data(); <span class="comment">// attach data to nodes</span></span><br><span class="line">enter(); <span class="comment">// create missing nodes</span></span><br><span class="line">exit(); <span class="comment">// delete unnecessary nodes</span></span><br><span class="line">style(); <span class="comment">// add css styles</span></span><br><span class="line">attr(); <span class="comment">// add html attributes like class="bn"</span></span><br></pre></td></tr></table></figure>
 <hr>
 
       
@@ -595,14 +595,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/csszindex.html" rel="bookmark">CSS 元素层叠关系</a></div>
+      <div class="popular-posts-title"><a href="/cssfrostedglass.html" rel="bookmark">CSS Frosted Glass Effect</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/cssh1.html" rel="bookmark">CSS 小杂碎</a></div>
+      <div class="popular-posts-title"><a href="/csszindex.html" rel="bookmark">CSS 元素层叠关系</a></div>
       
     </li>
   
