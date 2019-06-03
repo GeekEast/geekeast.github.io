@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-05-29T06:11:43.654Z</updated>
+  <updated>2019-06-03T04:13:01.314Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>D3.js Tutorial</title>
+    <link href="https://geekeast.github.io/d3tutorial.html"/>
+    <id>https://geekeast.github.io/d3tutorial.html</id>
+    <published>2019-06-03T02:30:26.000Z</published>
+    <updated>2019-06-03T04:13:01.314Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3><ul><li>Document: Element in a web page.</li><li>SVG: Scalable <span class="exturl" data-url="aHR0cHM6Ly92ZWN0b3ItY29udmVyc2lvbnMuY29tL3ZlY3Rvcml6aW5nL3Jhc3Rlcl92c192ZWN0b3IuaHRtbA==" title="https://vector-conversions.com/vectorizing/raster_vs_vector.html">Vector Graphics<i class="fa fa-external-link"></i></span>. It defines vector-based graphics in <strong>XML</strong> format.</li><li>Selection: an arraqy of <strong>nodes</strong> in DOM.</li></ul><h3 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h3><ul><li>Without D3.js</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Tedious Iteration</span></span><br><span class="line"><span class="keyword">var</span> paragraphs = docuemnt.getElementsByTagName(<span class="string">"p"</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i =<span class="number">0</span>; i &lt; paragraphs.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> pargraph = paragraphs.item(i);</span><br><span class="line">    paragraph.style.setProperty(<span class="string">"color"</span>, <span class="string">"blue"</span>, <span class="literal">null</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>With D3.js</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// a group of elements manipulation</span></span><br><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="string">"blue"</span>);</span><br><span class="line"><span class="comment">// individual element manipulation - the first found</span></span><br><span class="line">d3.select(<span class="string">"body"</span>).style(<span class="string">"background-color"</span>, <span class="string">"black"</span>);</span><br></pre></td></tr></table></figure><h3 id="dynamic-properties"><a class="markdownIt-Anchor" href="#dynamic-properties"></a> Dynamic Properties</h3><blockquote><p>Dynamic means use <code>function</code> rather than <code>constants</code> to return content</p></blockquote><ul><li>Randomly color paragraphs.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"rsl("</span> + <span class="built_in">Math</span>.random()*<span class="number">360</span> + <span class="string">",100%,50%)"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ul><li>shades of gray for even and odd nodes</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d, i</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> i % <span class="number">2</span> ? <span class="string">"#fff"</span> : <span class="string">"#eee"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ul><li><code>d</code> for individual bounded <strong>data</strong></li><li><code>i</code> for <strong>index</strong></li><li><code>first d for first node</code>, <code>second d for second node</code> and son on …</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">'p'</span>)</span><br><span class="line">  .data([<span class="number">4</span>,<span class="number">8</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">23</span>,<span class="number">42</span>]) <span class="comment">// pass data to each node</span></span><br><span class="line">  .style(<span class="string">"font-size"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> d + <span class="string">"px"</span>;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure><p>Once the data has been <code>bound</code> to the document, you can omit the <code>data</code> operator; D3 will retrieve the previously-bound data. This allows you to recompute properties without rebinding. <strong>How?</strong></p><a id="more"></a><h3 id="enter-and-exit"><a class="markdownIt-Anchor" href="#enter-and-exit"></a> Enter and Exit</h3><ul><li>The number of data &gt; The number of nodes.</li><li>The <code>extra</code> data can be used as enter selection to <strong>create new nodes</strong>.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">d3.select(<span class="string">"body"</span>)</span><br><span class="line">  .selectAll(<span class="string">"p"</span>)</span><br><span class="line">  .data([<span class="number">4</span>,<span class="number">8</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">23</span>,<span class="number">42</span>])</span><br><span class="line">  .enter().append(<span class="string">"p"</span>)</span><br><span class="line">    .text(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"I'm number "</span> + d + <span class="string">"!"</span>;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure><h4 id="good-practices"><a class="markdownIt-Anchor" href="#good-practices"></a> Good Practices</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// updatding nodes</span></span><br><span class="line"><span class="keyword">var</span> p = d3.select(<span class="string">"body"</span>)</span><br><span class="line">          .selectAll(<span class="string">"p"</span>)</span><br><span class="line">          .data([<span class="number">4</span>,<span class="number">8</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">23</span>,<span class="number">42</span>])</span><br><span class="line">          .text(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;<span class="keyword">return</span> d;&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Enter Nodes - Create nodes</span></span><br><span class="line">p.enter() </span><br><span class="line"> .append(<span class="string">"p"</span>) <span class="comment">// the append method is necessary</span></span><br><span class="line"> .text(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;<span class="keyword">return</span> d;&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Exit Nodes - delete unnecessary nodes(not data)</span></span><br><span class="line">p.exit()</span><br><span class="line"> .remove();</span><br></pre></td></tr></table></figure><h3 id="transition"><a class="markdownIt-Anchor" href="#transition"></a> Transition</h3><ul><li>fade the background of the page to black</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d3.select(<span class="string">"body"</span>).transition()</span><br><span class="line">    .style(<span class="string">"background-color"</span>, <span class="string">"black"</span>);</span><br></pre></td></tr></table></figure><ul><li>resize circles in a symbil map with a staggered delay</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"circle"</span>)</span><br><span class="line">  .transition()</span><br><span class="line">  .duration(<span class="number">750</span>) <span class="comment">// element stay</span></span><br><span class="line">  .delay(<span class="function"><span class="keyword">function</span>(<span class="params">d,i</span>) </span>&#123; <span class="keyword">return</span> i * <span class="number">10</span>;&#125;) <span class="comment">// element delay</span></span><br><span class="line">  .attr(<span class="string">"r"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123; <span class="keyword">return</span> <span class="built_in">Math</span>.sqrt(d*scale);&#125;);</span><br></pre></td></tr></table></figure><h3 id="basic-methods"><a class="markdownIt-Anchor" href="#basic-methods"></a> Basic Methods</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select() <span class="comment">// select the 1st node</span></span><br><span class="line">selectAll() <span class="comment">// select all nodes</span></span><br><span class="line">append(); <span class="comment">// add new nodes</span></span><br><span class="line">text(); <span class="comment">// get current text</span></span><br><span class="line">text(<span class="string">"text"</span>) <span class="comment">// set text</span></span><br><span class="line">data(); <span class="comment">// attach data to nodes</span></span><br><span class="line">enter(); <span class="comment">// create missing nodes</span></span><br><span class="line">exit(); <span class="comment">// delete unnecessary nodes</span></span><br></pre></td></tr></table></figure><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;concept&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#concept&quot;&gt;&lt;/a&gt; Concept&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Document: Element in a web page.&lt;/li&gt;
+&lt;li&gt;SVG: Scalable &lt;a href=&quot;https://vector-conversions.com/vectorizing/raster_vs_vector.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Vector Graphics&lt;/a&gt;. It defines vector-based graphics in &lt;strong&gt;XML&lt;/strong&gt; format.&lt;/li&gt;
+&lt;li&gt;Selection: an arraqy of &lt;strong&gt;nodes&lt;/strong&gt; in DOM.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;introduction&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#introduction&quot;&gt;&lt;/a&gt; Introduction&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Without D3.js&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Tedious Iteration&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; paragraphs = docuemnt.getElementsByTagName(&lt;span class=&quot;string&quot;&gt;&quot;p&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i =&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; paragraphs.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; pargraph = paragraphs.item(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    paragraph.style.setProperty(&lt;span class=&quot;string&quot;&gt;&quot;color&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;blue&quot;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;With D3.js&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// a group of elements manipulation&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;d3.selectAll(&lt;span class=&quot;string&quot;&gt;&quot;p&quot;&lt;/span&gt;).style(&lt;span class=&quot;string&quot;&gt;&quot;color&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;blue&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// individual element manipulation - the first found&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;d3.select(&lt;span class=&quot;string&quot;&gt;&quot;body&quot;&lt;/span&gt;).style(&lt;span class=&quot;string&quot;&gt;&quot;background-color&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;black&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;dynamic-properties&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#dynamic-properties&quot;&gt;&lt;/a&gt; Dynamic Properties&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dynamic means use &lt;code&gt;function&lt;/code&gt; rather than &lt;code&gt;constants&lt;/code&gt; to return content&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Randomly color paragraphs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;d3.selectAll(&lt;span class=&quot;string&quot;&gt;&quot;p&quot;&lt;/span&gt;).style(&lt;span class=&quot;string&quot;&gt;&quot;color&quot;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;rsl(&quot;&lt;/span&gt; + &lt;span class=&quot;built_in&quot;&gt;Math&lt;/span&gt;.random()*&lt;span class=&quot;number&quot;&gt;360&lt;/span&gt; + &lt;span class=&quot;string&quot;&gt;&quot;,100%,50%)&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;shades of gray for even and odd nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;d3.selectAll(&lt;span class=&quot;string&quot;&gt;&quot;p&quot;&lt;/span&gt;).style(&lt;span class=&quot;string&quot;&gt;&quot;color&quot;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;d, i&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; i % &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ? &lt;span class=&quot;string&quot;&gt;&quot;#fff&quot;&lt;/span&gt; : &lt;span class=&quot;string&quot;&gt;&quot;#eee&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;d&lt;/code&gt; for individual bounded &lt;strong&gt;data&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i&lt;/code&gt; for &lt;strong&gt;index&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;first d for first node&lt;/code&gt;, &lt;code&gt;second d for second node&lt;/code&gt; and son on …&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;d3.selectAll(&lt;span class=&quot;string&quot;&gt;&#39;p&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  .data([&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;16&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;23&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;42&lt;/span&gt;]) &lt;span class=&quot;comment&quot;&gt;// pass data to each node&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  .style(&lt;span class=&quot;string&quot;&gt;&quot;font-size&quot;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;d&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; d + &lt;span class=&quot;string&quot;&gt;&quot;px&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Once the data has been &lt;code&gt;bound&lt;/code&gt; to the document, you can omit the &lt;code&gt;data&lt;/code&gt; operator; D3 will retrieve the previously-bound data. This allows you to recompute properties without rebinding. &lt;strong&gt;How?&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Analytics" scheme="https://geekeast.github.io/categories/Analytics/"/>
+    
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
+      <category term="Data Visualization" scheme="https://geekeast.github.io/tags/Data-Visualization/"/>
+    
+      <category term="D3.js" scheme="https://geekeast.github.io/tags/D3-js/"/>
+    
+  </entry>
   
   <entry>
     <title>Suppressing a repeated column value in PostgreSQL</title>
@@ -492,9 +551,9 @@ Unless: &lt;strong&gt;Some functions might need to set initial state after some 
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
       <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
+      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
     
   </entry>
   
@@ -612,9 +671,9 @@ Unless: &lt;strong&gt;Some functions might need to set initial state after some 
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
       <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
+      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
     
@@ -642,9 +701,9 @@ Unless: &lt;strong&gt;Some functions might need to set initial state after some 
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
       <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
+      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
     
       <category term="UI" scheme="https://geekeast.github.io/tags/UI/"/>
     
@@ -726,43 +785,6 @@ Unless: &lt;strong&gt;Some functions might need to set initial state after some 
       <category term="Fullstack" scheme="https://geekeast.github.io/tags/Fullstack/"/>
     
       <category term="MVC" scheme="https://geekeast.github.io/tags/MVC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React 数据传递</title>
-    <link href="https://geekeast.github.io/reactstatefunc.html"/>
-    <id>https://geekeast.github.io/reactstatefunc.html</id>
-    <published>2019-04-30T01:35:18.000Z</published>
-    <updated>2019-04-30T02:56:48.331Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="引言"><a class="markdownIt-Anchor" href="#引言"></a> 引言</h2><ul><li>我们先来看几个问题<ul><li>React中的变量应该放在那个component里？ - 变量的归属</li><li>如何判断一个变量需要传入到一个component？- 变量的使用</li><li>React的中函数应该放在那个component里？ - 方法的归属</li><li>如何判断一个函数需要传入到一个component里? - 方法的使用</li></ul></li></ul><h2 id="导图"><a class="markdownIt-Anchor" href="#导图"></a> 导图</h2><br><img style="width: 100%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-113717.png"><a id="more"></a><br> <h2 id="归属"><a class="markdownIt-Anchor" href="#归属"></a> 归属</h2><p>在一个React项目中，有很多个组件，这些组件构成一颗巨大的树，我们称之为<code>组件树(Component Tree)</code>.那么，如何确定方法和变量在组件树的<strong>原生位置</strong>呢？这涉及到方法和变量的<code>归属</code>。因为方法的归属相对固定，也较容易理解，先撸它。</p><div class="note info no-icon">            <p>方法的诞生是直接服务于state的改变的，所以方法的归属其实是要跟随其紧密相关的state变量.</p>          </div><p>接下里看变量的归属。归属不涉及props，因为<strong>state是指从哪里来，props指的是到哪里去</strong>，这个我们后面会讨论。变量的归属，我总结有以下两种情况：</p><ul><li>组件A和组件B是<code>兄弟组件</code>，组件C是二者的最近父组件，如果有一个state变量v, 是在A和B之间进行共享的，就要将其归属在父组件C中。这里之所有在<code>最近</code>父组件中，是为了避免多层数据传递造成的不必要损耗（姑且这么说，我对于react的性能还有待于深入研究）。</li><li>组件A和组件B是父子组件，如果有一个state变量v,且原生于B. 在这种情况下，如果A中有方法会导致B的变化，可以但不推荐讲v提升到A组件中。推荐的做法是将v放置于B中，在B中用另外一个方法触发v的变化和A中的方法。这样做可以将子组件尽量和父组件分离，<code>最大化解耦，提高代码复用</code>。</li></ul><h2 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h2><p>这里的使用是指<code>到哪里去</code>。方法的使用是指方法要传到哪个component里面，变量的使用是指在state中的某个变量要传到哪个component里面.</p><p>这里有一个讨论的<strong>前提</strong>：方法和变量的传递是通过<code>props</code>或者<code>context</code>的方式。到哪里去的问题也可以转化成：<strong>要在哪里传入特定的props，要在哪里封装context的consumer</strong>。另外一种情况是Redux，我看的还少，就暂不讨论，抛砖引玉。</p><ul><li>方法的使用的基本准则是哪个component触发了这个方法，就把这个方法传给谁。如果component不触发该方法，则不要传入。</li><li>变量的使用的基本准则是哪个component需要引用该变量，就把这个变量传给谁。如果component不引用该变量，则不要传入。</li></ul><div class="note warning">            <p>引用变量而非<strong>改变</strong>变量。变量的改变要求通过方法来实现，而这个方法要尽量跟变量在一个component里面。如果一个子组件里面会触发某个父组件变量的改变，无需将该变量传入到子组件中。</p>          </div><h2 id="进阶"><a class="markdownIt-Anchor" href="#进阶"></a> 进阶</h2><p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLjUxY3RvLmNvbS9jaGVuZ3lhbmxpLzIzMTA4NjE=" title="https://blog.51cto.com/chengyanli/2310861">React总结篇之二_设计高质量的React组件<i class="fa fa-external-link"></i></span></p><h2 id="center如有不恰当的地方请在下方讨论区告知感激不尽center"><a class="markdownIt-Anchor" href="#center如有不恰当的地方请在下方讨论区告知感激不尽center"></a> <center>如有不恰当的地方，请在下方讨论区告知，感激不尽！</center></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#引言&quot;&gt;&lt;/a&gt; 引言&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;我们先来看几个问题
-&lt;ul&gt;
-&lt;li&gt;React中的变量应该放在那个component里？ - 变量的归属&lt;/li&gt;
-&lt;li&gt;如何判断一个变量需要传入到一个component？- 变量的使用&lt;/li&gt;
-&lt;li&gt;React的中函数应该放在那个component里？ - 方法的归属&lt;/li&gt;
-&lt;li&gt;如何判断一个函数需要传入到一个component里? - 方法的使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;导图&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#导图&quot;&gt;&lt;/a&gt; 导图&lt;/h2&gt;
-&lt;br&gt;
-&lt;img style=&quot;width: 100%; margin: auto&quot; src=&quot;https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-113717.png&quot;&gt;
-    
-    </summary>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
-    
-    
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/tags/Fullstack/"/>
     
   </entry>
   
