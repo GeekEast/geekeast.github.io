@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="Concept  Document: Element in a web page. SVG: Scalable Vector Graphics. It defines vector-based graphics in XML format. Here “scalable” means that, if you zoom in or out on an object, it would not a">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-03T04:24:04.543Z">
+<meta property="og:updated_time" content="2019-06-05T07:17:51.333Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="D3.js Tutorial">
 <meta name="twitter:description" content="Concept  Document: Element in a web page. SVG: Scalable Vector Graphics. It defines vector-based graphics in XML format. Here “scalable” means that, if you zoom in or out on an object, it would not a">
@@ -421,12 +421,22 @@
                 
               
 
-              <time title="Created: 2019-06-03 12:00:26 / Modified: 13:54:04" itemprop="dateCreated datePublished" datetime="2019-06-03T12:00:26+09:30">2019-06-03</time>
+              <time title="Created: 2019-06-03 12:00:26" itemprop="dateCreated datePublished" datetime="2019-06-03T12:00:26+09:30">2019-06-03</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-06-05 16:47:51" itemprop="dateModified" datetime="2019-06-05T16:47:51+09:30">2019-06-05</time>
               
             
           </span>
@@ -477,7 +487,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">2.9k</span>
+                <span title="Symbols count in article">3.3k</span>
               
 
               
@@ -540,7 +550,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d, i</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> i % <span class="number">2</span> ? <span class="string">"#fff"</span> : <span class="string">"#eee"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>d</code> for individual bounded <strong>data</strong></li>
-<li><code>i</code> for <strong>index</strong></li>
+<li><code>i</code> for <strong>index</strong>, start from <code>0</code></li>
 <li><code>first d for first node</code>, <code>second d for second node</code> and son on …</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">'p'</span>)</span><br><span class="line">  .data([<span class="number">4</span>,<span class="number">8</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">23</span>,<span class="number">42</span>]) <span class="comment">// pass data to each node</span></span><br><span class="line">  .style(<span class="string">"font-size"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> d + <span class="string">"px"</span>;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
@@ -564,7 +574,18 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"circle"</span>)</span><br><span class="line">  .transition()</span><br><span class="line">  .duration(<span class="number">750</span>) <span class="comment">// element stay</span></span><br><span class="line">  .delay(<span class="function"><span class="keyword">function</span>(<span class="params">d,i</span>) </span>&#123; <span class="keyword">return</span> i * <span class="number">10</span>;&#125;) <span class="comment">// element delay</span></span><br><span class="line">  .attr(<span class="string">"r"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123; <span class="keyword">return</span> <span class="built_in">Math</span>.sqrt(d*scale);&#125;);</span><br></pre></td></tr></table></figure>
 <h3 id="basic-methods"><a class="markdownIt-Anchor" href="#basic-methods"></a> Basic Methods</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">select() <span class="comment">// select the 1st node</span></span><br><span class="line">selectAll() <span class="comment">// select all nodes</span></span><br><span class="line">append(); <span class="comment">// add new nodes</span></span><br><span class="line">text(); <span class="comment">// get current text</span></span><br><span class="line">text(<span class="string">"text"</span>) <span class="comment">// set text</span></span><br><span class="line">data(); <span class="comment">// attach data to nodes</span></span><br><span class="line">enter(); <span class="comment">// create missing nodes</span></span><br><span class="line">exit(); <span class="comment">// delete unnecessary nodes</span></span><br><span class="line">style(); <span class="comment">// add css styles</span></span><br><span class="line">attr(); <span class="comment">// add html attributes like class="bn"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">select() <span class="comment">// select the 1st node</span></span><br><span class="line">selectAll() <span class="comment">// select all nodes</span></span><br><span class="line">append(); <span class="comment">// add new nodes</span></span><br><span class="line">text(); <span class="comment">// get current text</span></span><br><span class="line">text(<span class="string">"text"</span>) <span class="comment">// set text</span></span><br><span class="line">data(); <span class="comment">// attach data to nodes</span></span><br><span class="line">enter(); <span class="comment">// create missing nodes</span></span><br><span class="line">exit(); <span class="comment">// delete unnecessary nodes</span></span><br><span class="line">style(); <span class="comment">// add css styles</span></span><br><span class="line">attr(); <span class="comment">// add html attributes like class="bn"</span></span><br><span class="line">scale(); <span class="comment">// scale element in page.</span></span><br><span class="line">domain(); <span class="comment">// input range of scale</span></span><br><span class="line">range(); <span class="comment">// output range of scale</span></span><br></pre></td></tr></table></figure>
+<h3 id="svg"><a class="markdownIt-Anchor" href="#svg"></a> SVG</h3>
+<ul>
+<li>SVG shape for a web page must go within an HTML <code>svg</code> tag.</li>
+<li>When setting the width and height for SVG, use the <code>attr()</code> rather than <code>style()</code> method. Because SVG is not based on pixel.</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9sZWFybi5mcmVlY29kZWNhbXAub3JnL2RhdGEtdmlzdWFsaXphdGlvbi9kYXRhLXZpc3VhbGl6YXRpb24td2l0aC1kMy9sZWFybi1hYm91dC1zdmctaW4tZDM=" title="https://learn.freecodecamp.org/data-visualization/data-visualization-with-d3/learn-about-svg-in-d3">More<i class="fa fa-external-link"></i></span></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- used to group sub svg within svg --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">g</span>&gt;</span><span class="tag">&lt;/<span class="name">g</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="resource"><a class="markdownIt-Anchor" href="#resource"></a> Resource</h2>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZGFzaGluZ2QzanMuY29tL2xlc3NvbnM=" title="https://www.dashingd3js.com/lessons">Dashing D3.js<i class="fa fa-external-link"></i></span></li>
+</ul>
 <hr>
 
       
@@ -889,7 +910,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#concept"><span class="nav-number">1.</span> <span class="nav-text"> Concept</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#introduction"><span class="nav-number">2.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dynamic-properties"><span class="nav-number">3.</span> <span class="nav-text"> Dynamic Properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#enter-and-exit"><span class="nav-number">4.</span> <span class="nav-text"> Enter and Exit</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#good-practices"><span class="nav-number">4.1.</span> <span class="nav-text"> Good Practices</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#transition"><span class="nav-number">5.</span> <span class="nav-text"> Transition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#basic-methods"><span class="nav-number">6.</span> <span class="nav-text"> Basic Methods</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#concept"><span class="nav-number">1.</span> <span class="nav-text"> Concept</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#introduction"><span class="nav-number">2.</span> <span class="nav-text"> Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dynamic-properties"><span class="nav-number">3.</span> <span class="nav-text"> Dynamic Properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#enter-and-exit"><span class="nav-number">4.</span> <span class="nav-text"> Enter and Exit</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#good-practices"><span class="nav-number">4.1.</span> <span class="nav-text"> Good Practices</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#transition"><span class="nav-number">5.</span> <span class="nav-text"> Transition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#basic-methods"><span class="nav-number">6.</span> <span class="nav-text"> Basic Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#svg"><span class="nav-number">7.</span> <span class="nav-text"> SVG</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#resource"><span class="nav-number"></span> <span class="nav-text"> Resource</span></a></li></div>
             
 
           </div>
