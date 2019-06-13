@@ -119,7 +119,7 @@
 <meta property="og:description" content="引言  我们先来看几个问题  React中的变量应该放在哪个component里？ - 变量的归属 如何判断一个变量需要传入到一个component？- 变量的传递 React的中函数应该放在那个component里？ - 方法的归属 如何判断一个函数需要传入到一个component里? - 方法的传递     导图">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/WX20190430-113717.png">
-<meta property="og:updated_time" content="2019-06-13T01:55:23.127Z">
+<meta property="og:updated_time" content="2019-06-13T02:19:33.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React 数据传递">
 <meta name="twitter:description" content="引言  我们先来看几个问题  React中的变量应该放在哪个component里？ - 变量的归属 如何判断一个变量需要传入到一个component？- 变量的传递 React的中函数应该放在那个component里？ - 方法的归属 如何判断一个函数需要传入到一个component里? - 方法的传递     导图">
@@ -438,7 +438,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-06-13 11:25:23" itemprop="dateModified" datetime="2019-06-13T11:25:23+09:30">2019-06-13</time>
+                <time title="Modified: 2019-06-13 11:49:33" itemprop="dateModified" datetime="2019-06-13T11:49:33+09:30">2019-06-13</time>
               
             
           </span>
@@ -489,7 +489,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.2k</span>
+                <span title="Symbols count in article">1.1k</span>
               
 
               
@@ -547,8 +547,8 @@
 <p>接下里是变量的归属。归属不涉及props，因为<strong>state是指从哪里来，props指的是到哪里去</strong>，这个我们后面会讨论。变量的归属，我总结有以下两种情况：</p>
 <ul>
 <li>组件A和组件B是<code>兄弟组件</code>，组件C是二者的最近父组件，如果有一个state变量v, 是在A和B之间进行共享的，就要将其归属在父组件C中。这里之所以放置v在<code>最近</code>父组件中，是为了避免多层数据传递造成的不必要损耗（姑且这么说，我对于react的性能还有待于深入研究）。</li>
-<li>组件A和组件B是父子组件，如果有一个state变量v,且原生于B. 在这种情况下，如果A中有方法会导致B的变化，可以但不推荐讲v提升到A组件中。推荐的做法是将v放置于B中，在B中用另外一个方法触发v的变化和A中的方法。这样做可以将子组件尽量和父组件分离，<code>最大化解耦，提高代码复用</code>。</li>
 </ul>
+<!-- - 组件A和组件B是父子组件，如果有一个state变量v,且原生于B. 在这种情况下，如果A中有方法会导致B的变化，可以但不推荐讲v提升到A组件中。推荐的做法是 将v放置于B中，在B中设定一个方法m1触发v的变化, 在A中设置另外一个方法m2以props形式传入到B中，然后m1内部会触发m2方法。这样做可以将子组件尽量和父组件分离，`最大化解耦，提高代码复用`。 -->
 <h2 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h2>
 <p>这里的使用是指<code>到哪里去</code>。方法的使用是指方法要传到哪个component里面，变量的使用是指在state中的某个变量要传到哪个component里面.</p>
 <p>这里有一个讨论的<strong>前提</strong>：方法和变量的传递是通过<code>props</code>或者<code>context</code>的方式。到哪里去的问题也可以转化成：<strong>要在哪里传入特定的props，要在哪里封装context的consumer</strong>。另外一种情况是Redux，我看的还少，就暂不讨论，抛砖引玉。</p>
@@ -584,14 +584,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/axios.html" rel="bookmark">Asynchronous Client - Axios</a></div>
+      <div class="popular-posts-title"><a href="/amplifyreactnotemaker.html" rel="bookmark">Build React Project With Amplify - NoteMaker</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/amplifyreactnotemaker.html" rel="bookmark">Build React Project With Amplify - NoteMaker</a></div>
+      <div class="popular-posts-title"><a href="/axios.html" rel="bookmark">Asynchronous Client - Axios</a></div>
       
     </li>
   
