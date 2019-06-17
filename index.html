@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-06-17 16:07:38 / Modified: 16:12:54" itemprop="dateCreated datePublished" datetime="2019-06-17T16:07:38+09:30">2019-06-17</time>
+              <time title="Created: 2019-06-17 16:07:38 / Modified: 16:13:50" itemprop="dateCreated datePublished" datetime="2019-06-17T16:07:38+09:30">2019-06-17</time>
             
 
             
@@ -454,7 +454,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.8k</span>
+                <span title="Symbols count in article">3.8k</span>
               
 
               
@@ -468,7 +468,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">3 mins.</span>
               
             </div>
           
@@ -501,18 +501,50 @@
 <h3 id="children-components"><a class="markdownIt-Anchor" href="#children-components"></a> Children Components</h3>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;ApprovalCard&gt;</span><br><span class="line">    &lt;CommentDetail</span><br><span class="line">        author=<span class="string">"Sam"</span></span><br><span class="line">        timeAgo=<span class="string">"Today at 4:45PM"</span></span><br><span class="line">        content=<span class="string">"Nice blog post"</span></span><br><span class="line">        avatar = &#123;faker.image.avatar()&#125;</span><br><span class="line">    /&gt;</span><br><span class="line">&lt;<span class="regexp">/ApprovalCard&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// compoment ApprovalCard</span></span><br><span class="line">&lt;div className=<span class="string">"content"</span>&gt; &#123;<span class="keyword">this</span>.props.children&#125; &lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
-<!-- ### Fetch User Geo Location
-[Geo Location](https://www.udemy.com/react-redux/learn/lecture/12531190#overview)
-
-### React Lifecycle
-- Why we use lifecycle methods?
-
-<img style="width: 100%; margin: auto" src="https://cdn-images-1.medium.com/max/2400/1*sn-ftowp0_VVRbeUAFECMA.png "></img>
-
-### Update State
-```javascript
-this.setState({});
-``` -->
+<h3 id="fetch-user-geo-location"><a class="markdownIt-Anchor" href="#fetch-user-geo-location"></a> Fetch User Geo Location</h3>
+<p><a href="https://www.udemy.com/react-redux/learn/lecture/12531190#overview" target="_blank" rel="noopener">Geo Location</a></p>
+<h3 id="react-lifecycle"><a class="markdownIt-Anchor" href="#react-lifecycle"></a> React Lifecycle</h3>
+<ul>
+<li>Why we use lifecycle methods?</li>
+</ul>
+<p><img style="width: 100%; margin: auto" src="https://cdn-images-1.medium.com/max/2400/1*sn-ftowp0_VVRbeUAFECMA.png "></p>
+<h3 id="update-state"><a class="markdownIt-Anchor" href="#update-state"></a> Update State</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.setState(&#123;&#125;);</span><br></pre></td></tr></table></figure>
+<!-- add style -->
+<h3 id="loading-spinner"><a class="markdownIt-Anchor" href="#loading-spinner"></a> Loading Spinner</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">render() &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.state.xxx === <span class="literal">null</span>) <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">Spinner</span>/&gt;</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="default-props"><a class="markdownIt-Anchor" href="#default-props"></a> Default Props</h3>
+<ul>
+<li>Simple way</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="keyword">this</span>.props.sth || <span class="string">"hello"</span>&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Better Way</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Spinner = <span class="function"><span class="params">()</span> =&gt;</span> &#123;&#125; <span class="comment">// one component as class or function</span></span><br><span class="line">Spinner.defaultProps = &#123;&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="define-method-in-class"><a class="markdownIt-Anchor" href="#define-method-in-class"></a> Define Method in Class</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SearchBar</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">    <span class="comment">// normal definition</span></span><br><span class="line">    onFormSubmit(event) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="solve-this-context"><a class="markdownIt-Anchor" href="#solve-this-context"></a> Solve <code>this</code> Context</h3>
+<ul>
+<li>Bind</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>() &#123;</span><br><span class="line">        <span class="comment">// guide this to this instance(because this is in the constructor)</span></span><br><span class="line">        <span class="keyword">this</span>.drive = <span class="keyword">this</span>.drive.bind(<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Arrow Function</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// prerequisite: babel</span></span><br><span class="line">onFormSubmit = <span class="function">(<span class="params">event</span>) =&gt;</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Inline Arrow Function</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// normal definition</span></span><br><span class="line">onFormSubmit(event) &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// this will cause unpredictable error </span></span><br><span class="line">&lt;form onSubmit=&#123;<span class="keyword">this</span>.onFormSubmit&#125;/&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// this is proper way </span></span><br><span class="line">&lt;form onSubmit=&#123;() =&gt; <span class="keyword">this</span>.onFormSubmit()&#125;/&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="render-list"><a class="markdownIt-Anchor" href="#render-list"></a> Render List</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ImageList = <span class="function"><span class="params">props</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> imageList =  props.images.map( <span class="function"><span class="params">image</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">key</span> = <span class="string">&#123;image.id&#125;</span> <span class="attr">src</span> = <span class="string">&#123;image.urls.regular&#125;</span> /&gt;</span></span></span><br><span class="line"><span class="xml">    &#125;)</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line">    return &lt;React.Fragment&gt;&#123;imageList&#125;&lt;/React.Fragment&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="react-ref"><a class="markdownIt-Anchor" href="#react-ref"></a> React Ref</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ImageCard</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">        <span class="keyword">super</span>(props);</span><br><span class="line">        <span class="comment">// Core code: initialzie in constructor</span></span><br><span class="line">        <span class="keyword">this</span>.imageRef = React.createRef();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    render() &#123;</span><br><span class="line">        <span class="keyword">return</span> </span><br><span class="line">        &lt;React.Fragment&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                <span class="comment">// 🐂 Core code: assign in code.</span></span><br><span class="line">                &lt;img ref=&#123;<span class="keyword">this</span>.imageRef&#125;&gt;</span><br><span class="line">            &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>React.Fragment&gt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="some-methods"><a class="markdownIt-Anchor" href="#some-methods"></a> Some Methods</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">event.target.value</span><br><span class="line">event.preventDefault();</span><br><span class="line">addEventListener(<span class="string">'load'</span>, func);</span><br></pre></td></tr></table></figure>
+<h2 id="resources"><a class="markdownIt-Anchor" href="#resources"></a> Resources</h2>
+<p><a href="http://www.react.express/" target="_blank" rel="noopener">React Express</a></p>
           <!--noindex-->
           
             <div class="post-button text-center">
