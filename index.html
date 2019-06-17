@@ -421,7 +421,7 @@
                 
               
 
-              <time title="Created: 2019-06-17 16:07:38 / Modified: 16:15:02" itemprop="dateCreated datePublished" datetime="2019-06-17T16:07:38+09:30">2019-06-17</time>
+              <time title="Created: 2019-06-17 16:07:38 / Modified: 16:15:57" itemprop="dateCreated datePublished" datetime="2019-06-17T16:07:38+09:30">2019-06-17</time>
             
 
             
@@ -470,7 +470,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">3.8k</span>
+                <span title="Symbols count in article">4k</span>
               
 
               
@@ -526,7 +526,20 @@
 <p><img style="width: 100%; margin: auto" src="https://cdn-images-1.medium.com/max/2400/1*sn-ftowp0_VVRbeUAFECMA.png "></p>
 <h3 id="update-state"><a class="markdownIt-Anchor" href="#update-state"></a> Update State</h3>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.setState(&#123;&#125;);</span><br></pre></td></tr></table></figure>
-<!-- add style -->
+<h3 id="add-styles"><a class="markdownIt-Anchor" href="#add-styles"></a> Add Styles</h3>
+<ul>
+<li>General
+<ul>
+<li>Load <code>CSS</code> file in <code>index.js</code> <strong>OR</strong> Load <code>CSS</code> CDN in <code>index.html</code></li>
+<li>Apply proper <code>className</code> to element</li>
+</ul>
+</li>
+<li>Inline
+<ul>
+<li>use <code>style</code> props: <code>style:</code> <strong>OR</strong> component specific style method</li>
+</ul>
+</li>
+</ul>
 <h3 id="loading-spinner"><a class="markdownIt-Anchor" href="#loading-spinner"></a> Loading Spinner</h3>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">render() &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.state.xxx === <span class="literal">null</span>) <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">Spinner</span>/&gt;</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="default-props"><a class="markdownIt-Anchor" href="#default-props"></a> Default Props</h3>
