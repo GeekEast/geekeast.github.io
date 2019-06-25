@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-06-21T07:24:15.282Z</updated>
+  <updated>2019-06-25T09:30:14.271Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>区分Session和Cookie</title>
+    <link href="https://geekeast.github.io/session-cookies.html"/>
+    <id>https://geekeast.github.io/session-cookies.html</id>
+    <published>2019-06-25T08:41:10.000Z</published>
+    <updated>2019-06-25T09:30:14.271Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3><p>HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种<code>身份验证机制</code>。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的<code>半个钥匙</code>，cookie是用户每次发起http请求都要携带的<code>另一半钥匙</code>，服务器会通过比对着会得知当前请求时来自于哪个用户。</p><h3 id="http-process"><a class="markdownIt-Anchor" href="#http-process"></a> HTTP Process:</h3><ol><li>客户端第一次发起请求</li><li>服务端响应请求，生成用于表示当前用户的session，并且将一半钥匙第一次存储到响应的cookie中</li><li>客户端收到响应，拿到了一半钥匙。</li><li>客户端再次发起请求，服务器收到请求，获取cookie中的一半钥匙，服务器进行比对，验证用户及用户状态</li></ol><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;concept&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#concept&quot;&gt;&lt;/a&gt; Concept&lt;/h3&gt;
+&lt;p&gt;HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种&lt;code&gt;身份验证机制&lt;/code&gt;。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的&lt;code&gt;半个钥匙&lt;/code&gt;，cookie是用户每次发起http请求都要携带的&lt;code&gt;另一半钥匙&lt;/code&gt;，服务器会通过比对着会得知当前请求时来自于哪个用户。&lt;/p&gt;
+&lt;h3 id=&quot;http-process&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#http-process&quot;&gt;&lt;/a&gt; HTTP Process:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;客户端第一次发起请求&lt;/li&gt;
+&lt;li&gt;服务端响应请求，生成用于表示当前用户的session，并且将一半钥匙第一次存储到响应的cookie中&lt;/li&gt;
+&lt;li&gt;客户端收到响应，拿到了一半钥匙。&lt;/li&gt;
+&lt;li&gt;客户端再次发起请求，服务器收到请求，获取cookie中的一半钥匙，服务器进行比对，验证用户及用户状态&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
+      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript中的类型判断</title>
     <link href="https://geekeast.github.io/checktypeinjs.html"/>
     <id>https://geekeast.github.io/checktypeinjs.html</id>
     <published>2019-06-21T07:16:49.000Z</published>
-    <updated>2019-06-21T07:24:15.282Z</updated>
+    <updated>2019-06-25T08:41:48.533Z</updated>
     
     <content type="html"><![CDATA[<h3 id="difference"><a class="markdownIt-Anchor" href="#difference"></a> Difference</h3><ul><li><code>typeof</code>: only judge between string, number, boolean, object, function, symbol and  undefined.</li><li><code>instanceof</code>: can judge instance inside object, like array, but sometime not accurate.</li><li><code>Object.prototype.toString.call</code>: the most <strong>accurate</strong> one.</li></ul><h3 id="method-1-typeof"><a class="markdownIt-Anchor" href="#method-1-typeof"></a> Method 1: typeof</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// null and array will all be judge as object</span></span><br><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(x <span class="keyword">typeof</span> object);</span><br></pre></td></tr></table></figure><h3 id="method-2-instanceof"><a class="markdownIt-Anchor" href="#method-2-instanceof"></a> Method 2: instanceof</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(x instance <span class="keyword">of</span> <span class="built_in">Array</span>);</span><br></pre></td></tr></table></figure><h3 id="method-3-objectprototypetostringcall"><a class="markdownIt-Anchor" href="#method-3-objectprototypetostringcall"></a> Method 3: Object.prototype.toString.call</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(x))</span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
     
@@ -730,45 +762,6 @@ Unless: &lt;strong&gt;Some functions might need to set initial state after some 
       <category term="Node.js" scheme="https://geekeast.github.io/tags/Node-js/"/>
     
       <category term="Yarn" scheme="https://geekeast.github.io/tags/Yarn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Import Stylesheets into React</title>
-    <link href="https://geekeast.github.io/importcssreact.html"/>
-    <id>https://geekeast.github.io/importcssreact.html</id>
-    <published>2019-05-01T09:09:35.000Z</published>
-    <updated>2019-05-02T01:56:40.447Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="context"><a class="markdownIt-Anchor" href="#context"></a> Context</h2><p>今天在一个React项目里面，相近办法把node-modules里的两个css的文件给载入到index中的link，以失败告终。</p><h2 id="reason"><a class="markdownIt-Anchor" href="#reason"></a> Reason:</h2><p>React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。</p><h2 id="solution"><a class="markdownIt-Anchor" href="#solution"></a> Solution:</h2><ol><li>通过在React入口文件处载入node-modules中的css文件即可<ol><li>import ‘…/node_modules/…’</li><li>import ‘package-name/…’  会直接从node_modules中导入</li></ol></li><li>通过gulp工具，将css文件复制到public文件夹下即可</li></ol><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;context&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#context&quot;&gt;&lt;/a&gt; Context&lt;/h2&gt;
-&lt;p&gt;今天在一个React项目里面，相近办法把node-modules里的两个css的文件给载入到index中的link，以失败告终。&lt;/p&gt;
-&lt;h2 id=&quot;reason&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#reason&quot;&gt;&lt;/a&gt; Reason:&lt;/h2&gt;
-&lt;p&gt;React项目启动后，并不能access到node-modules文件，也就是说node-modules只是你在写代码时可见的东西。&lt;/p&gt;
-&lt;h2 id=&quot;solution&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#solution&quot;&gt;&lt;/a&gt; Solution:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;通过在React入口文件处载入node-modules中的css文件即可
-&lt;ol&gt;
-&lt;li&gt;import ‘…/node_modules/…’&lt;/li&gt;
-&lt;li&gt;import ‘package-name/…’  会直接从node_modules中导入&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;通过gulp工具，将css文件复制到public文件夹下即可&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
-    
-    
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
-    
-      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
     
   </entry>
   

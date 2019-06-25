@@ -110,24 +110,25 @@
 
 
 
-  <meta name="description" content="Sharing is the best way to learn.">
-<meta name="keywords" content="CMU">
-<meta property="og:type" content="website">
-<meta property="og:title" content="雪中印">
-<meta property="og:url" content="https://geekeast.github.io/page/12/index.html">
+  <meta name="description" content="Concept HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种身份验证机制。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的半个钥匙，cookie是用户每次发起http请求都要携带的另一半钥匙，服务器会通过比对着会得知当前请求时来自于哪个用户。  H">
+<meta name="keywords" content="Frontend,Network">
+<meta property="og:type" content="article">
+<meta property="og:title" content="区分Session和Cookie">
+<meta property="og:url" content="https://geekeast.github.io/session-cookies.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Sharing is the best way to learn.">
+<meta property="og:description" content="Concept HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种身份验证机制。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的半个钥匙，cookie是用户每次发起http请求都要携带的另一半钥匙，服务器会通过比对着会得知当前请求时来自于哪个用户。  H">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-25T09:30:14.271Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="雪中印">
-<meta name="twitter:description" content="Sharing is the best way to learn.">
+<meta name="twitter:title" content="区分Session和Cookie">
+<meta name="twitter:description" content="Concept HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种身份验证机制。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的半个钥匙，cookie是用户每次发起http请求都要携带的另一半钥匙，服务器会通过比对着会得知当前请求时来自于哪个用户。  H">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/page/12/">
+  <link rel="canonical" href="https://geekeast.github.io/session-cookies.html">
 
 
 
@@ -137,7 +138,7 @@
   };
 </script>
 
-  <title>雪中印 – 心底清静方为道 退步原来是向前</title>
+  <title>区分Session和Cookie | 雪中印</title>
   
 
 
@@ -185,8 +186,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -361,9 +361,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -371,6 +371,8 @@
   
   
 
+  
+    <div class="reading-progress-bar"></div>
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -378,7 +380,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/htmlloading.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/session-cookies.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -395,10 +397,8 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/htmlloading.html" class="post-title-link" itemprop="url">HTML页面加载过程</a>
+          <h2 class="post-title" itemprop="name headline">区分Session和Cookie
+
               
             
           </h2>
@@ -421,1039 +421,12 @@
                 
               
 
-              <time title="Created: 2019-03-09 13:07:40" itemprop="dateCreated datePublished" datetime="2019-03-09T13:07:40+10:30">2019-03-09</time>
+              <time title="Created: 2019-06-25 18:11:10 / Modified: 19:00:14" itemprop="dateCreated datePublished" datetime="2019-06-25T18:11:10+09:30">2019-06-25</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-04-21 13:43:28" itemprop="dateModified" datetime="2019-04-21T13:43:28+09:30">2019-04-21</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">325</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="页面加载过程"><a class="markdownIt-Anchor" href="#页面加载过程"></a> 页面加载过程</h3>
-<p>url解析 -&gt; DNS查询 -&gt; 资源请求 -&gt; 浏览器解析</p>
-<h3 id="url结构"><a class="markdownIt-Anchor" href="#url结构"></a> url结构</h3>
-<p>协议 + 域名 + 端口 + 路径 + 参数 + 哈希</p>
-<h3 id="dns查询"><a class="markdownIt-Anchor" href="#dns查询"></a> DNS查询</h3>
-<p>浏览器  -   DNS缓存+DNS服务器<br>
-dns-fetch: fetch the ip address for some dns and cache</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/htmlloading.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/findbigfilelinux.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/findbigfilelinux.html" class="post-title-link" itemprop="url">Linux/Unix下查找大于100mb的文件</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-09 12:35:21" itemprop="dateCreated datePublished" datetime="2019-03-09T12:35:21+10:30">2019-03-09</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">143</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="查找当前目录下大于100mb的所有文件"><a class="markdownIt-Anchor" href="#查找当前目录下大于100mb的所有文件"></a> 查找当前目录下大于100mb的所有文件</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -type f -size +100M</span><br></pre></td></tr></table></figure>
-<h3 id="显示当前目录大小"><a class="markdownIt-Anchor" href="#显示当前目录大小"></a> 显示当前目录大小</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh .</span><br></pre></td></tr></table></figure>
-<h3 id="显示当前目录或者文件夹的所占磁盘空间"><a class="markdownIt-Anchor" href="#显示当前目录或者文件夹的所占磁盘空间"></a> 显示当前目录或者文件夹的所占磁盘空间</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh *</span><br></pre></td></tr></table></figure>
-<h3 id="显示前十个占用空间最大的目录"><a class="markdownIt-Anchor" href="#显示前十个占用空间最大的目录"></a> 显示前十个占用空间最大的目录</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -s * | sort -nr | head</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/findbigfilelinux.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/mlinterview.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/mlinterview.html" class="post-title-link" itemprop="url">机器学习面试攻略(国内)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-09 10:33:43" itemprop="dateCreated datePublished" datetime="2019-03-09T10:33:43+10:30">2019-03-09</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Career/" itemprop="url" rel="index"><span itemprop="name">Career</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">1.4k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><ul class="markdownIt-TOC">
-<li><a href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%B1%82%E8%81%8C%E6%94%BB%E7%95%A5%E5%9B%BD%E5%86%85">机器学习求职攻略(国内)</a>
-<ul>
-<li><a href="#ai%E5%B2%97%E4%BD%8D%E6%8B%9B%E8%81%98%E6%B5%81%E7%A8%8B">AI岗位招聘流程</a></li>
-<li><a href="#%E5%85%AC%E5%8F%B8%E4%B8%8E%E5%B2%97%E4%BD%8D%E7%9B%98%E7%82%B9">公司与岗位盘点</a></li>
-<li><a href="#%E7%AE%80%E5%8E%86%E7%9A%84%E4%B9%A6%E5%86%99%E5%92%8C%E4%BC%98%E5%8C%96">简历的书写和优化</a></li>
-<li><a href="#%E9%A1%B9%E7%9B%AE%E4%B8%8E%E7%AB%9E%E8%B5%9B">项目与竞赛</a></li>
-<li><a href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%9D%A2%E8%AF%95%E8%80%83%E5%AF%9F%E7%82%B9">机器学习面试考察点</a></li>
-<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%A8%A1%E6%A0%B7">面试题的真实模样</a></li>
-</ul>
-</li>
-</ul>
-</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/mlinterview.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/mdresume.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/mdresume.html" class="post-title-link" itemprop="url">My Resume (Markdown)</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-09 10:15:18" itemprop="dateCreated datePublished" datetime="2019-03-09T10:15:18+10:30">2019-03-09</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-03-14 18:21:56" itemprop="dateModified" datetime="2019-03-14T18:21:56+10:30">2019-03-14</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Career/" itemprop="url" rel="index"><span itemprop="name">Career</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">36k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">26 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          Encrypted Post. Please Enter Token.
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/mdresume.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/admindata.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/admindata.html" class="post-title-link" itemprop="url">Admin Dashboard MRD</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-09 00:42:43" itemprop="dateCreated datePublished" datetime="2019-03-09T00:42:43+10:30">2019-03-09</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-04-21 13:46:40" itemprop="dateModified" datetime="2019-04-21T13:46:40+09:30">2019-04-21</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Job/" itemprop="url" rel="index"><span itemprop="name">Job</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">25k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">18 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          Encrypted Post. Please Enter Token.
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/admindata.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/axios.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/axios.html" class="post-title-link" itemprop="url">Asynchronous Client - Axios</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-08 17:40:21" itemprop="dateCreated datePublished" datetime="2019-03-08T17:40:21+10:30">2019-03-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-04-21 13:40:27" itemprop="dateModified" datetime="2019-04-21T13:40:27+09:30">2019-04-21</time>
               
             
           </span>
@@ -1485,6 +458,13 @@ dns-fetch: fetch the ip address for some dns and cache</p>
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon" title="Views">
+            <i class="fa fa-eye"></i>
+            
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
             <div class="post-symbolscount">
@@ -1497,7 +477,7 @@ dns-fetch: fetch the ip address for some dns and cache</p>
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">5.7k</span>
+                <span title="Symbols count in article">347</span>
               
 
               
@@ -1511,7 +491,7 @@ dns-fetch: fetch the ip address for some dns and cache</p>
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">4 mins.</span>
+                <span title="Reading time">1 mins.</span>
               
             </div>
           
@@ -1531,38 +511,71 @@ dns-fetch: fetch the ip address for some dns and cache</p>
       
 
       
-        
-          <ul>
-<li><code>Install</code> Axios</li>
-<li><code>Import</code> Axios</li>
-<li><code>Promise</code></li>
-<li><code>Async/await</code></li>
-<li>Axios <code>API</code> without async/await</li>
-<li>Request <code>Config/Options</code></li>
-<li>Axios Response Object</li>
-<li>Axios Error Object</li>
-<li>Axios <code>Instance</code></li>
-</ul>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/axios.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3>
+<p>HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种<code>身份验证机制</code>。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的<code>半个钥匙</code>，cookie是用户每次发起http请求都要携带的<code>另一半钥匙</code>，服务器会通过比对着会得知当前请求时来自于哪个用户。</p>
+<h3 id="http-process"><a class="markdownIt-Anchor" href="#http-process"></a> HTTP Process:</h3>
+<ol>
+<li>客户端第一次发起请求</li>
+<li>服务端响应请求，生成用于表示当前用户的session，并且将一半钥匙第一次存储到响应的cookie中</li>
+<li>客户端收到响应，拿到了一半钥匙。</li>
+<li>客户端再次发起请求，服务器收到请求，获取cookie中的一半钥匙，服务器进行比对，验证用户及用户状态</li>
+</ol>
+<a id="more"></a>
+<hr>
+
       
 
       
     </div>
 
     
+      
+
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/checktypeinjs.html" rel="bookmark">JavaScript中的类型判断</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/css3.html" rel="bookmark">CSS3 New Features</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/certificate.html" rel="bookmark">IT Courses List</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/cssdisplay.html" rel="bookmark">CSS block inline inline-block</a></div>
+      
+    </li>
+  
+  </ul>
+
+
+    
 
     
     
     
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 60px 0 0; margin: auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/images/zeng.jpg" alt="James Tan wechat" style="width: 14em; max-width: 100%;">
+  <div style="margin-top: 20px">人工智能学习资源 欢迎订阅我的公众号</div>
+</div>
 
     
 
@@ -1571,14 +584,76 @@ dns-fetch: fetch the ip address for some dns and cache</p>
     
     
 
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者:  </strong>James Tan</li>
+  <li class="post-copyright-link">
+    <strong>本文链接: </strong>
+    
+    <a href="https://geekeast.github.io/session-cookies.html" title="区分Session和Cookie">https://geekeast.github.io/session-cookies.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明:  </strong>除特殊声明外，本站博文均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议，转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
 
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Frontend/" rel="tag"># Frontend</a>
+          
+            <a href="/tags/Network/" rel="tag"># Network</a>
+          
+        </div>
       
 
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/checktypeinjs.html" rel="next" title="JavaScript中的类型判断">
+                <i class="fa fa-chevron-left"></i> JavaScript中的类型判断
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
     </footer>
   </div>
@@ -1588,18 +663,19 @@ dns-fetch: fetch the ip address for some dns and cache</p>
   </article>
 
 
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1619,8 +695,17 @@ dns-fetch: fetch the ip address for some dns and cache</p>
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1747,6 +832,23 @@ dns-fetch: fetch the ip address for some dns and cache</p>
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#concept"><span class="nav-number">1.</span> <span class="nav-text"> Concept</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http-process"><span class="nav-number">2.</span> <span class="nav-text"> HTTP Process:</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1920,6 +1022,10 @@ dns-fetch: fetch the ip address for some dns and cache</p>
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -1934,30 +1040,48 @@ dns-fetch: fetch the ip address for some dns and cache</p>
   
 
   
+
+  
+  
+  
+
+  
+
+
+  
     
-      
+
+  
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'e3bc82557deb4539bea0',
+    clientSecret: 'ccd5f13f3f7cba21085500585cfc05da2591baf4',
+    repo: 'blog_comment',
+    owner: 'GeekEast',
+    admin: ['GeekEast'],
+    id: md5(location.pathname),
     
-  
+      language: 'en',
+    
+    distractionFreeMode: 'false'
+  });
+  gitalk.render('gitalk-container');
+</script>
 
   
-  
-  
-    <script src="//cdn.jsdelivr.net/npm/quicklink@1.0.0/dist/quicklink.umd.js"></script>
-    <script>
-      
-        window.addEventListener('load', () => {
-          quicklink({
-    timeout: 3000,
-    priority: true,
-    ignores: [uri => uri.includes('#'),uri => uri == 'https://geekeast.github.io/page/12/',]
-});
-        });
-      
-    </script>
-  
-
-  
-
 
 
   
@@ -2300,6 +1424,25 @@ dns-fetch: fetch the ip address for some dns and cache</p>
   
 
   
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 17170,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
 
   
 
