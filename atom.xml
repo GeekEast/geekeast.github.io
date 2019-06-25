@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-06-25T09:30:14.271Z</updated>
+  <updated>2019-06-25T09:32:11.984Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://geekeast.github.io/session-cookies.html"/>
     <id>https://geekeast.github.io/session-cookies.html</id>
     <published>2019-06-25T08:41:10.000Z</published>
-    <updated>2019-06-25T09:30:14.271Z</updated>
+    <updated>2019-06-25T09:32:11.984Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3><p>HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种<code>身份验证机制</code>。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的<code>半个钥匙</code>，cookie是用户每次发起http请求都要携带的<code>另一半钥匙</code>，服务器会通过比对着会得知当前请求时来自于哪个用户。</p><h3 id="http-process"><a class="markdownIt-Anchor" href="#http-process"></a> HTTP Process:</h3><ol><li>客户端第一次发起请求</li><li>服务端响应请求，生成用于表示当前用户的session，并且将一半钥匙第一次存储到响应的cookie中</li><li>客户端收到响应，拿到了一半钥匙。</li><li>客户端再次发起请求，服务器收到请求，获取cookie中的一半钥匙，服务器进行比对，验证用户及用户状态</li></ol><a id="more"></a><hr>]]></content>
+    <content type="html"><![CDATA[<h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3><p>HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种<code>身份验证机制</code>。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的<code>半个钥匙</code>，cookie是用户每次发起http请求都要携带的<code>另一半钥匙</code>，服务器会通过比对着会得知当前请求时来自于哪个用户。</p><h3 id="http-process"><a class="markdownIt-Anchor" href="#http-process"></a> HTTP Process:</h3><ol><li>客户端<code>第一次</code>发起请求。</li><li>服务端响应请求，生成用于表示当前用户的<code>session</code>并存储，并且将一半钥匙第一次存储到响应的cookie中。</li><li>客户端收到响应，拿到了一半钥匙存储在<code>cookie</code>当中。</li><li>客户端再次发起请求，服务器收到请求，获取<code>cookie</code>中的一半钥匙，服务器进行比对，验证用户及用户状态</li></ol><a id="more"></a><hr>]]></content>
     
     <summary type="html">
     
@@ -31,10 +31,10 @@
 &lt;p&gt;HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种&lt;code&gt;身份验证机制&lt;/code&gt;。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的&lt;code&gt;半个钥匙&lt;/code&gt;，cookie是用户每次发起http请求都要携带的&lt;code&gt;另一半钥匙&lt;/code&gt;，服务器会通过比对着会得知当前请求时来自于哪个用户。&lt;/p&gt;
 &lt;h3 id=&quot;http-process&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#http-process&quot;&gt;&lt;/a&gt; HTTP Process:&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;客户端第一次发起请求&lt;/li&gt;
-&lt;li&gt;服务端响应请求，生成用于表示当前用户的session，并且将一半钥匙第一次存储到响应的cookie中&lt;/li&gt;
-&lt;li&gt;客户端收到响应，拿到了一半钥匙。&lt;/li&gt;
-&lt;li&gt;客户端再次发起请求，服务器收到请求，获取cookie中的一半钥匙，服务器进行比对，验证用户及用户状态&lt;/li&gt;
+&lt;li&gt;客户端&lt;code&gt;第一次&lt;/code&gt;发起请求。&lt;/li&gt;
+&lt;li&gt;服务端响应请求，生成用于表示当前用户的&lt;code&gt;session&lt;/code&gt;并存储，并且将一半钥匙第一次存储到响应的cookie中。&lt;/li&gt;
+&lt;li&gt;客户端收到响应，拿到了一半钥匙存储在&lt;code&gt;cookie&lt;/code&gt;当中。&lt;/li&gt;
+&lt;li&gt;客户端再次发起请求，服务器收到请求，获取&lt;code&gt;cookie&lt;/code&gt;中的一半钥匙，服务器进行比对，验证用户及用户状态&lt;/li&gt;
 &lt;/ol&gt;
     
     </summary>
