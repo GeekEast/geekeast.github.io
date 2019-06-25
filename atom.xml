@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-06-25T09:32:46.889Z</updated>
+  <updated>2019-06-25T12:22:25.075Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -17,11 +17,73 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Javascript中的继承机制</title>
+    <link href="https://geekeast.github.io/javascriptinheritance.html"/>
+    <id>https://geekeast.github.io/javascriptinheritance.html</id>
+    <published>2019-06-25T12:07:55.000Z</published>
+    <updated>2019-06-25T12:22:25.075Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="what-is-the-inheritance-mechanism-in-javascript"><a class="markdownIt-Anchor" href="#what-is-the-inheritance-mechanism-in-javascript"></a> What is the inheritance mechanism in Javascript?</h2><h3 id="constructor-is-class-class-is-constructor"><a class="markdownIt-Anchor" href="#constructor-is-class-class-is-constructor"></a> Constructor is Class ^ Class is Constructor</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// this is the constructor as well as the class</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line"><span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> cat = <span class="keyword">new</span> Cat(<span class="string">'Kitty'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(cat);</span><br></pre></td></tr></table></figure><h3 id="class-vs-instance"><a class="markdownIt-Anchor" href="#class-vs-instance"></a> Class vs Instance</h3><ul><li><strong>Instance Variable/Function</strong> in <code>Constructor</code>: In Javascript, all attributes or functions which is shared across all the instances or is specially designed for the class, or the same idea of <code>static</code> is store in <code>prototype</code>. I called it the <code>Blueprint</code>.</li><li><strong>Class Variable/Fucntion</strong> in <code>Prototype</code>: In Javascript, all attributes or functions that is only used within specific instances are initialize and stored in the the <code>constructor function</code>.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>) </span>&#123; <span class="keyword">this</span>.name = name; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// key-value pair storage</span></span><br><span class="line">Cat.prototype = &#123;</span><br><span class="line">  run: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Start running...'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> cat = <span class="keyword">new</span> Cat(<span class="string">'Kitty'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(cat);</span><br></pre></td></tr></table></figure><h3 id="links"><a class="markdownIt-Anchor" href="#links"></a> Links</h3><h2 id="javascript继承机制的设计思想"><a class="markdownIt-Anchor" href="#javascript继承机制的设计思想"></a> <span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTEvMDYvZGVzaWduaW5nX2lkZWFzX29mX2luaGVyaXRhbmNlX21lY2hhbmlzbV9pbl9qYXZhc2NyaXB0Lmh0bWw=" title="http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html">Javascript继承机制的设计思想<i class="fa fa-external-link"></i></span></h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;what-is-the-inheritance-mechanism-in-javascript&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#what-is-the-inheritance-mechanism-in-javascript
+      
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
+    
+      <category term="Inheritance" scheme="https://geekeast.github.io/tags/Inheritance/"/>
+    
+      <category term="Prototype" scheme="https://geekeast.github.io/tags/Prototype/"/>
+    
+      <category term="Blueprint" scheme="https://geekeast.github.io/tags/Blueprint/"/>
+    
+      <category term="OOP" scheme="https://geekeast.github.io/tags/OOP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typescript中的装饰器</title>
+    <link href="https://geekeast.github.io/tsdecorators.html"/>
+    <id>https://geekeast.github.io/tsdecorators.html</id>
+    <published>2019-06-25T10:44:18.000Z</published>
+    <updated>2019-06-25T12:22:26.681Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="constructor"><a class="markdownIt-Anchor" href="#constructor"></a> constructor</h3><h3 id="prototype"><a class="markdownIt-Anchor" href="#prototype"></a> prototype</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Boat</span> </span>&#123;</span><br><span class="line">    color: string = <span class="string">'red'</span>;</span><br><span class="line">    pilot(): <span class="keyword">void</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'switch'</span>);</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Boat = <span class="comment">/** @class */</span> (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Boat</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.color = <span class="string">'red'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Boat.prototype.pilot = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'switch'</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> Boat;</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;constructor&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#constructor&quot;&gt;&lt;/a&gt; constructor&lt;/h3&gt;
+&lt;h3 id=&quot;prototype&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#prototype&quot;&gt;&lt;/a&gt; prototype&lt;/h3&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Boat&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    color: string = &lt;span class=&quot;string&quot;&gt;&#39;red&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    pilot(): &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;switch&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;   &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; Boat = &lt;span class=&quot;comment&quot;&gt;/** @class */&lt;/span&gt; (&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Boat&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.color = &lt;span class=&quot;string&quot;&gt;&#39;red&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Boat.prototype.pilot = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;switch&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boat;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;());&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/tags/Fullstack/"/>
+    
+      <category term="Decorator" scheme="https://geekeast.github.io/tags/Decorator/"/>
+    
+      <category term="Typescript" scheme="https://geekeast.github.io/tags/Typescript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>区分Session和Cookie</title>
     <link href="https://geekeast.github.io/session-cookies.html"/>
     <id>https://geekeast.github.io/session-cookies.html</id>
     <published>2019-06-25T08:41:10.000Z</published>
-    <updated>2019-06-25T09:32:46.889Z</updated>
+    <updated>2019-06-25T10:44:05.354Z</updated>
     
     <content type="html"><![CDATA[<h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3><p>HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种<code>身份验证机制</code>。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的<code>半个钥匙</code>，cookie是用户每次发起http请求都要携带的<code>另一半钥匙</code>，服务器会通过比对着会得知当前请求时来自于哪个用户。</p><h3 id="http-process"><a class="markdownIt-Anchor" href="#http-process"></a> HTTP Process:</h3><ol><li>客户端<code>第一次</code>发起请求。</li><li>服务端响应请求，生成用于表示当前用户的<code>session</code>并存储，并且将一半钥匙第一次存储到响应的cookie中。</li><li>客户端收到响应，拿到了一半钥匙存储在<code>cookie</code>当中。</li><li>客户端再次发起请求，服务器收到请求，获取<code>cookie</code>中的一半钥匙，服务器进行比对，验证用户及用户状态</li></ol><h3 id="links"><a class="markdownIt-Anchor" href="#links"></a> Links</h3><p><span class="exturl" data-url="aHR0cHM6Ly9mbGF2aW9jb3Blcy5jb20vZXhwcmVzcy1zZXNzaW9ucy8=" title="https://flaviocopes.com/express-sessions/">Express session<i class="fa fa-external-link"></i></span></p><a id="more"></a><hr>]]></content>
     
@@ -709,61 +771,6 @@ Unless: &lt;strong&gt;Some functions might need to set initial state after some 
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
     
       <category term="Frosted Glass" scheme="https://geekeast.github.io/tags/Frosted-Glass/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Websites built with React.js</title>
-    <link href="https://geekeast.github.io/whousereact.html"/>
-    <id>https://geekeast.github.io/whousereact.html</id>
-    <published>2019-05-01T10:56:46.000Z</published>
-    <updated>2019-05-15T02:52:17.118Z</updated>
-    
-    <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2hhbmFjYWRlbXkub3JnLw==" title="https://www.khanacademy.org/">Khan Academy<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cuY29kZWNhZGVteS5jb20v" title="https://www.codecademy.com/">Codecademy<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cubnl0aW1lcy5jb20v" title="https://www.nytimes.com/">New York Times<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cuZHJvcGJveC5jb20vP2xhbmRpbmc9ZGJ2Mg==" title="https://www.dropbox.com/?landing=dbv2">Dropbox<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cubmV0ZmxpeC5jb20vYXUv" title="https://www.netflix.com/au/">Netflix<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWlyYm5iLmNvbS8=" title="https://www.airbnb.com/">Airbnb<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9oYXNobm9kZS5jb20v" title="https://hashnode.com/">Hashnode<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly93d3cuc2t5c2Nhbm5lci5jb20uYXU=" title="https://www.skyscanner.com.au">Skyscanner<i class="fa fa-external-link"></i></span></p><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://www.khanacademy.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Khan Academy&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.codecademy.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Codecademy&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.nytimes.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;New York Times&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.dropbox.com/?landing=dbv2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Dropbox&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.netflix.com/au/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Netflix&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.airbnb.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Airbnb&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://hashnode.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hashnode&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://www.skyscanner.com.au&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Skyscanner&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
-    
-    
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Yarn add with version</title>
-    <link href="https://geekeast.github.io/yarn.html"/>
-    <id>https://geekeast.github.io/yarn.html</id>
-    <published>2019-05-01T10:21:01.000Z</published>
-    <updated>2019-05-01T11:05:57.385Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add @version/react-router-v3</span><br></pre></td></tr></table></figure><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yarn add @version/react-router-v3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
-    
-    
-      <category term="Node.js" scheme="https://geekeast.github.io/tags/Node-js/"/>
-    
-      <category term="Yarn" scheme="https://geekeast.github.io/tags/Yarn/"/>
     
   </entry>
   

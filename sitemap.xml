@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/tsdecorators.html</loc>
+    
+    <lastmod>2019-06-25T12:22:26.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/javascriptinheritance.html</loc>
+    
+    <lastmod>2019-06-25T12:22:25.075Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/session-cookies.html</loc>
     
-    <lastmod>2019-06-25T09:32:46.889Z</lastmod>
+    <lastmod>2019-06-25T10:44:05.354Z</lastmod>
     
   </url>
   
