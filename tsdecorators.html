@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="Essence  Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property D">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-26T05:33:20.432Z">
+<meta property="og:updated_time" content="2019-06-26T10:56:48.408Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Typescript中的装饰器">
 <meta name="twitter:description" content="Essence  Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property D">
@@ -259,7 +259,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">77</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">78</span></a>
 
   </li>
         
@@ -278,7 +278,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">21</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">22</span></a>
 
   </li>
         
@@ -297,7 +297,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">93</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">95</span></a>
 
   </li>
 
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-06-26 15:03:20" itemprop="dateModified" datetime="2019-06-26T15:03:20+09:30">2019-06-26</time>
+                <time title="Modified: 2019-06-26 20:26:48" itemprop="dateModified" datetime="2019-06-26T20:26:48+09:30">2019-06-26</time>
               
             
           </span>
@@ -487,7 +487,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">6.2k</span>
+                <span title="Symbols count in article">6.4k</span>
               
 
               
@@ -501,7 +501,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">4 mins.</span>
+                <span title="Reading time">5 mins.</span>
               
             </div>
           
@@ -579,12 +579,17 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"f(): evaluated"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">target, propertyKey: string, descriptor: PropertyDescriptor</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"f(): called"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">g</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"g(): evaluated"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">target, propertyKey: string, descriptor: PropertyDescriptor</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"g(): called"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">C</span> </span>&#123;</span><br><span class="line">    @f()</span><br><span class="line">    @g()</span><br><span class="line">    method() &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">f(): evaluated</span><br><span class="line">g(): evaluated</span><br><span class="line">g(): called</span><br><span class="line">f(): called</span><br></pre></td></tr></table></figure>
 <h3 id="decorator-evaluation"><a class="markdownIt-Anchor" href="#decorator-evaluation"></a> Decorator Evaluation</h3>
-<p>There is a well defined order to how decorators applied to various declarations inside of a class are applied: <strong>From Instance to Blueprint</strong></p>
+<p>There is a well defined order to how decorators applied to various declarations inside of a class are applied: <strong>From Instance to Blueprint</strong> <strong>从类里到类外</strong></p>
 <ul>
 <li>Parameter Decorators, followed by Method, Accessor, or Property Decorators are applied for each <code>instance</code> member.</li>
 <li>Parameter Decorators, followed by Method, Accessor, or Property Decorators are applied for each <code>static</code> member.</li>
 <li>Parameter Decorators are applied for the <code>constructor</code>.</li>
 <li>Class Decorators are applied for the <code>class</code>.</li>
+</ul>
+<h3 id="reflect-metadata"><a class="markdownIt-Anchor" href="#reflect-metadata"></a> Reflect Metadata</h3>
+<ul>
+<li>metadata is just an invisible attribute of javascript object.</li>
+<li>you can add define/get metadata of javascript object throuth <code>reflect-metadata</code>.</li>
 </ul>
 <hr>
 
@@ -907,7 +912,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#essence"><span class="nav-number">1.</span> <span class="nav-text"> Essence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#method-decorator"><span class="nav-number">2.</span> <span class="nav-text"> Method Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#accessor-decorator"><span class="nav-number">3.</span> <span class="nav-text"> Accessor Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-factory"><span class="nav-number">4.</span> <span class="nav-text"> Decorator Factory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#property-decorator"><span class="nav-number">5.</span> <span class="nav-text"> Property Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class-decorator"><span class="nav-number">6.</span> <span class="nav-text"> Class Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parameter-decorator"><span class="nav-number">7.</span> <span class="nav-text"> Parameter Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-composition"><span class="nav-number">8.</span> <span class="nav-text"> Decorator Composition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-evaluation"><span class="nav-number">9.</span> <span class="nav-text"> Decorator Evaluation</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#essence"><span class="nav-number">1.</span> <span class="nav-text"> Essence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#method-decorator"><span class="nav-number">2.</span> <span class="nav-text"> Method Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#accessor-decorator"><span class="nav-number">3.</span> <span class="nav-text"> Accessor Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-factory"><span class="nav-number">4.</span> <span class="nav-text"> Decorator Factory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#property-decorator"><span class="nav-number">5.</span> <span class="nav-text"> Property Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class-decorator"><span class="nav-number">6.</span> <span class="nav-text"> Class Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parameter-decorator"><span class="nav-number">7.</span> <span class="nav-text"> Parameter Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-composition"><span class="nav-number">8.</span> <span class="nav-text"> Decorator Composition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-evaluation"><span class="nav-number">9.</span> <span class="nav-text"> Decorator Evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reflect-metadata"><span class="nav-number">10.</span> <span class="nav-text"> Reflect Metadata</span></a></li></ol></div>
             
 
           </div>
