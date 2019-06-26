@@ -614,12 +614,22 @@
                 
               
 
-              <time title="Created: 2019-06-25 20:14:18 / Modified: 21:52:26" itemprop="dateCreated datePublished" datetime="2019-06-25T20:14:18+09:30">2019-06-25</time>
+              <time title="Created: 2019-06-25 20:14:18" itemprop="dateCreated datePublished" datetime="2019-06-25T20:14:18+09:30">2019-06-25</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-06-26 11:50:46" itemprop="dateModified" datetime="2019-06-26T11:50:46+09:30">2019-06-26</time>
               
             
           </span>
@@ -663,7 +673,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">378</span>
+                <span title="Symbols count in article">4.5k</span>
               
 
               
@@ -677,7 +687,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">3 mins.</span>
               
             </div>
           
@@ -698,10 +708,12 @@
 
       
         
-          <h3 id="constructor"><a class="markdownIt-Anchor" href="#constructor"></a> constructor</h3>
-<h3 id="prototype"><a class="markdownIt-Anchor" href="#prototype"></a> prototype</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Boat</span> </span>&#123;</span><br><span class="line">    color: string = <span class="string">'red'</span>;</span><br><span class="line">    pilot(): <span class="keyword">void</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'switch'</span>);</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Boat = <span class="comment">/** @class */</span> (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Boat</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.color = <span class="string">'red'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Boat.prototype.pilot = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'switch'</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> Boat;</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure>
+          <h3 id="method-decorator"><a class="markdownIt-Anchor" href="#method-decorator"></a> Method Decorator</h3>
+<ul>
+<li>Function wrapping on the method.</li>
+<li>The decorator is applied to the <code>Property Descriptor</code> for the method, and can be used to <code>observe</code>, <code>modify</code>, or <code>replace</code> a method definition.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// this is called class</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Boat</span> </span>&#123;</span><br><span class="line">	<span class="comment">// this is called property</span></span><br><span class="line">	color: string = <span class="string">'red'</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// this is called accessor</span></span><br><span class="line">	<span class="keyword">get</span> formattedColor(): string &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">''</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * logError: must be a function</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	@logError</span><br><span class="line">	<span class="comment">// this is called method</span></span><br><span class="line">	pilot(</span><br><span class="line">		name: <span class="built_in">String</span> <span class="comment">// this is called parameter</span></span><br><span class="line">	): <span class="keyword">void</span> &#123;</span><br><span class="line">		<span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * @param target  Constructor function or the prototype of the class.</span></span><br><span class="line"><span class="comment"> * @param key  The name of the method.</span></span><br><span class="line"><span class="comment"> * @param desc The Property Descriptor for the method. value, writtable, enumerable, configurable</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">logError</span>(<span class="params">target: any, key: string, desc: PropertyDescriptor</span>): <span class="title">void</span> </span>&#123;</span><br><span class="line">	<span class="comment">// this is the method itself.</span></span><br><span class="line">	<span class="keyword">const</span> method = desc.value;</span><br><span class="line">	<span class="comment">// modify the pilot function before run it.</span></span><br><span class="line">	desc.value = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="built_in">console</span>.log(<span class="string">'Run Descriptor'</span>);</span><br><span class="line">			method();</span><br><span class="line">		&#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">			<span class="built_in">console</span>.log(<span class="string">'Method Fail'</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> boat = <span class="keyword">new</span> Boat();</span><br><span class="line"></span><br><span class="line">boat.pilot(<span class="string">''</span>);</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
