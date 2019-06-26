@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property Descriptor">
+  <meta name="description" content="Essence  Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property D">
 <meta name="keywords" content="Fullstack,Decorator,Typescript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Typescript中的装饰器">
 <meta property="og:url" content="https://geekeast.github.io/tsdecorators.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property Descriptor">
+<meta property="og:description" content="Essence  Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property D">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-26T04:55:54.813Z">
+<meta property="og:updated_time" content="2019-06-26T05:33:20.432Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Typescript中的装饰器">
-<meta name="twitter:description" content="Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property Descriptor">
+<meta name="twitter:description" content="Essence  Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property D">
 
 
 
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-06-26 14:25:54" itemprop="dateModified" datetime="2019-06-26T14:25:54+09:30">2019-06-26</time>
+                <time title="Modified: 2019-06-26 15:03:20" itemprop="dateModified" datetime="2019-06-26T15:03:20+09:30">2019-06-26</time>
               
             
           </span>
@@ -487,7 +487,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">4.6k</span>
+                <span title="Symbols count in article">6.2k</span>
               
 
               
@@ -501,7 +501,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">3 mins.</span>
+                <span title="Reading time">4 mins.</span>
               
             </div>
           
@@ -521,7 +521,8 @@
       
 
       
-        <ul>
+        <h3 id="essence"><a class="markdownIt-Anchor" href="#essence"></a> Essence</h3>
+<ul>
 <li>Why we need decorator?
 <ul>
 <li><strong>To reuse code!</strong></li>
@@ -566,6 +567,25 @@
 <li>The parameter decorator is applied to the <code>function for a class constructor</code> or <code>method declaration</code>.</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Employee</span> </span>&#123;</span><br><span class="line">	greet(@logParameter message: string): string &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">`hello <span class="subst">$&#123;message&#125;</span>`</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * @param target the prototype of the class.</span></span><br><span class="line"><span class="comment"> * @param propertyName  name of the method</span></span><br><span class="line"><span class="comment"> * @param index position of the parameter in the argument array</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">logParameter</span>(<span class="params">target: any, propertyName: string, index: number</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(propertyName,index);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> emp = <span class="keyword">new</span> Employee();</span><br><span class="line">emp.greet(<span class="string">'hello'</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="decorator-composition"><a class="markdownIt-Anchor" href="#decorator-composition"></a> Decorator Composition</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// single line</span></span><br><span class="line">@f @g x</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mutilines</span></span><br><span class="line">@f</span><br><span class="line">@g</span><br><span class="line">x</span><br></pre></td></tr></table></figure>
+<p>When multiple decorators apply to a single declaration, their evaluation is similar to <code>function composition</code> in mathematics. In this model, when composing functions f and g, the resulting composite (f ∘ g)(x) is equivalent to f(g(x)).</p>
+<p>As such, the following steps are performed when evaluating multiple decorators on a single declaration in TypeScript:</p>
+<ul>
+<li>The expressions for each decorator are evaluated top-to-bottom.</li>
+<li>The results are then called as functions from bottom-to-top.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"f(): evaluated"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">target, propertyKey: string, descriptor: PropertyDescriptor</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"f(): called"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">g</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"g(): evaluated"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">target, propertyKey: string, descriptor: PropertyDescriptor</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"g(): called"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">C</span> </span>&#123;</span><br><span class="line">    @f()</span><br><span class="line">    @g()</span><br><span class="line">    method() &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">f(): evaluated</span><br><span class="line">g(): evaluated</span><br><span class="line">g(): called</span><br><span class="line">f(): called</span><br></pre></td></tr></table></figure>
+<h3 id="decorator-evaluation"><a class="markdownIt-Anchor" href="#decorator-evaluation"></a> Decorator Evaluation</h3>
+<p>There is a well defined order to how decorators applied to various declarations inside of a class are applied: <strong>From Instance to Blueprint</strong></p>
+<ul>
+<li>Parameter Decorators, followed by Method, Accessor, or Property Decorators are applied for each <code>instance</code> member.</li>
+<li>Parameter Decorators, followed by Method, Accessor, or Property Decorators are applied for each <code>static</code> member.</li>
+<li>Parameter Decorators are applied for the <code>constructor</code>.</li>
+<li>Class Decorators are applied for the <code>class</code>.</li>
+</ul>
 <hr>
 
       
@@ -887,7 +907,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#method-decorator"><span class="nav-number">1.</span> <span class="nav-text"> Method Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#accessor-decorator"><span class="nav-number">2.</span> <span class="nav-text"> Accessor Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-factory"><span class="nav-number">3.</span> <span class="nav-text"> Decorator Factory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#property-decorator"><span class="nav-number">4.</span> <span class="nav-text"> Property Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class-decorator"><span class="nav-number">5.</span> <span class="nav-text"> Class Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parameter-decorator"><span class="nav-number">6.</span> <span class="nav-text"> Parameter Decorator</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#essence"><span class="nav-number">1.</span> <span class="nav-text"> Essence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#method-decorator"><span class="nav-number">2.</span> <span class="nav-text"> Method Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#accessor-decorator"><span class="nav-number">3.</span> <span class="nav-text"> Accessor Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-factory"><span class="nav-number">4.</span> <span class="nav-text"> Decorator Factory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#property-decorator"><span class="nav-number">5.</span> <span class="nav-text"> Property Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class-decorator"><span class="nav-number">6.</span> <span class="nav-text"> Class Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parameter-decorator"><span class="nav-number">7.</span> <span class="nav-text"> Parameter Decorator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-composition"><span class="nav-number">8.</span> <span class="nav-text"> Decorator Composition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#decorator-evaluation"><span class="nav-number">9.</span> <span class="nav-text"> Decorator Evaluation</span></a></li></ol></div>
             
 
           </div>
