@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Essence  Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property D">
+  <meta name="description" content="Essence  Why we need decorator? To reuse code! Notion: Decorator can only be used inside/on a class. Decorator will be ran when a class is defined rather than an instance is created. Mutilple Decorat">
 <meta name="keywords" content="Fullstack,Decorator,Typescript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Typescript中的装饰器">
 <meta property="og:url" content="https://geekeast.github.io/tsdecorators.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Essence  Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property D">
+<meta property="og:description" content="Essence  Why we need decorator? To reuse code! Notion: Decorator can only be used inside/on a class. Decorator will be ran when a class is defined rather than an instance is created. Mutilple Decorat">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-26T10:56:48.408Z">
+<meta property="og:updated_time" content="2019-06-30T13:48:02.327Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Typescript中的装饰器">
-<meta name="twitter:description" content="Essence  Why we need decorator?  To reuse code!   Notion: Decorator can only be used inside/on a class.   Method Decorator  Function wrapping on the method. The decorator is applied to the Property D">
+<meta name="twitter:description" content="Essence  Why we need decorator? To reuse code! Notion: Decorator can only be used inside/on a class. Decorator will be ran when a class is defined rather than an instance is created. Mutilple Decorat">
 
 
 
@@ -259,7 +259,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">78</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">79</span></a>
 
   </li>
         
@@ -278,7 +278,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">22</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">23</span></a>
 
   </li>
         
@@ -297,7 +297,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">95</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">97</span></a>
 
   </li>
 
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-06-26 20:26:48" itemprop="dateModified" datetime="2019-06-26T20:26:48+09:30">2019-06-26</time>
+                <time title="Modified: 2019-06-30 23:18:02" itemprop="dateModified" datetime="2019-06-30T23:18:02+09:30">2019-06-30</time>
               
             
           </span>
@@ -487,7 +487,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">6.4k</span>
+                <span title="Symbols count in article">7.2k</span>
               
 
               
@@ -523,12 +523,10 @@
       
         <h3 id="essence"><a class="markdownIt-Anchor" href="#essence"></a> Essence</h3>
 <ul>
-<li>Why we need decorator?
-<ul>
-<li><strong>To reuse code!</strong></li>
-</ul>
-</li>
+<li>Why we need decorator? <strong>To reuse code!</strong></li>
 <li>Notion: Decorator can <code>only</code> be used inside/on a <strong>class</strong>.</li>
+<li>Decorator will be ran when a <strong>class is defined</strong> rather than an <code>instance is created</code>.</li>
+<li>Mutilple Decorators will be run from <code>last line to first line</code>.</li>
 </ul>
 <h3 id="method-decorator"><a class="markdownIt-Anchor" href="#method-decorator"></a> Method Decorator</h3>
 <ul>
@@ -588,9 +586,10 @@
 </ul>
 <h3 id="reflect-metadata"><a class="markdownIt-Anchor" href="#reflect-metadata"></a> Reflect Metadata</h3>
 <ul>
-<li>metadata is just an invisible attribute of javascript object.</li>
+<li>metadata is just an invisible attribute of javascript <code>object</code>.</li>
 <li>you can add define/get metadata of javascript object throuth <code>reflect-metadata</code>.</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'reflect-metadata'</span>;</span><br><span class="line"></span><br><span class="line">@getMetadata</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Plane</span> </span>&#123;</span><br><span class="line">	<span class="comment">// instance variable</span></span><br><span class="line">	color: string = <span class="string">'red'</span>;</span><br><span class="line"></span><br><span class="line">	@markFly(<span class="string">'secret'</span>)</span><br><span class="line">	fly(): <span class="keyword">void</span> &#123;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">'vrrrrrrr...'</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">markFly</span>(<span class="params">secretInfo: string</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">target: Plane, key: String</span>) </span>&#123;</span><br><span class="line">		<span class="comment">// attach metadata to target.key, which is the fly function;</span></span><br><span class="line">		<span class="built_in">Reflect</span>.defineMetadata(secretInfo, target, key);</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param target the constructor of Plane</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getMetadata</span>(<span class="params">target: typeof Plane</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> target.prototype) &#123;</span><br><span class="line">		<span class="keyword">const</span> secrect = <span class="built_in">Reflect</span>.getMetadata(<span class="string">'secrect'</span>, target.prototype, key);</span><br><span class="line">		<span class="built_in">console</span>.log(secrect);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 
       
@@ -614,14 +613,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/reactstatefunc.html" rel="bookmark">React 数据传递</a></div>
+      <div class="popular-posts-title"><a href="/reactvsmvc.html" rel="bookmark">React vs MVC</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/reactvsmvc.html" rel="bookmark">React vs MVC</a></div>
+      <div class="popular-posts-title"><a href="/reactstatefunc.html" rel="bookmark">React 数据传递</a></div>
       
     </li>
   
