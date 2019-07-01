@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-07-01T06:01:12.578Z</updated>
+  <updated>2019-07-01T06:41:10.751Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://geekeast.github.io/downgradetonode8mac.html"/>
     <id>https://geekeast.github.io/downgradetonode8mac.html</id>
     <published>2019-07-01T04:36:49.000Z</published>
-    <updated>2019-07-01T06:01:12.578Z</updated>
+    <updated>2019-07-01T06:41:10.751Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">brew search node</span><br><span class="line">brew unlink node</span><br><span class="line">brew install node@8</span><br><span class="line"><span class="comment"># link node to version 8, either</span></span><br><span class="line">brew link node@8</span><br><span class="line">brew link --force --overwrite node@8</span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
     
