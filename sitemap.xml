@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/css-tricks.html</loc>
+    
+    <lastmod>2019-07-09T04:45:08.371Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/dailynotes.html</loc>
     
     <lastmod>2019-07-01T06:49:34.171Z</lastmod>
@@ -166,13 +173,6 @@
     <loc>https://geekeast.github.io/managemutiplerolesaws.html</loc>
     
     <lastmod>2019-05-24T04:59:35.858Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/css-tricks.html</loc>
-    
-    <lastmod>2019-05-24T04:21:07.204Z</lastmod>
     
   </url>
   
@@ -520,13 +520,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/git-credential.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/mdresume.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -541,6 +534,20 @@
   </url>
   
   <url>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/git-credential.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/fofafenqi.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -549,13 +556,6 @@
   
   <url>
     <loc>https://geekeast.github.io/findbigfilelinux.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/mlinterview.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -583,7 +583,7 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
+    <loc>https://geekeast.github.io/mlinterview.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
