@@ -695,9 +695,9 @@
     <link href="https://geekeast.github.io/cssdisplay.html"/>
     <id>https://geekeast.github.io/cssdisplay.html</id>
     <published>2019-05-21T13:36:43.000Z</published>
-    <updated>2019-05-23T05:24:53.060Z</updated>
+    <updated>2019-07-09T23:54:15.526Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>display的默认值视type而定；</p></blockquote><table><thead><tr><th>Value</th><th>Description</th><th>Note</th></tr></thead><tbody><tr><td>block</td><td><code>独占一行</code> <code>宽度默认为父级宽度</code> <code>有height/width</code> <code>有margin/padding</code></td><td></td></tr><tr><td>inline</td><td><code>不独占一行</code> <code>宽度随内容变化</code> <code>无heigh/width</code> <code>仅水平marign/padding生效</code></td><td></td></tr><tr><td>inline-block</td><td><code>不独占一行</code> <code>宽度随内容变化</code> <code>有height/width</code> <code>有margin/padding</code></td><td><code>高宽</code> <code>padding</code> <code>margin</code></td></tr><tr><td>none</td><td><code>不予显示</code> <code>不占空间</code></td><td></td></tr><tr><td>hidden</td><td><code>不予显示</code> <code>占据空间</code></td><td></td></tr></tbody></table><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>display的默认值视type而定；</p></blockquote><table><thead><tr><th>Value</th><th>Description</th><th>Note</th></tr></thead><tbody><tr><td>block</td><td><code>独占一行</code> <code>宽度默认为父级宽度</code> <code>有height/width</code> <code>有margin/padding</code></td><td></td></tr><tr><td>inline</td><td><code>不独占一行</code> <code>宽度随内容变化</code> <code>无heigh/width</code> <code>仅水平marign/padding生效</code></td><td></td></tr><tr><td>inline-block</td><td><code>不独占一行</code> <code>宽度默认随内容变化</code> <code>有height/width</code> <code>有margin/padding</code></td><td><code>高宽</code> <code>padding</code> <code>margin</code></td></tr><tr><td>none</td><td><code>不予显示</code> <code>不占空间</code></td><td></td></tr><tr><td>hidden</td><td><code>不予显示</code> <code>占据空间</code></td><td></td></tr></tbody></table><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
     
     <summary type="html">
     
@@ -725,7 +725,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;inline-block&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;不独占一行&lt;/code&gt; &lt;code&gt;宽度随内容变化&lt;/code&gt; &lt;code&gt;有height/width&lt;/code&gt; &lt;code&gt;有margin/padding&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;不独占一行&lt;/code&gt; &lt;code&gt;宽度默认随内容变化&lt;/code&gt; &lt;code&gt;有height/width&lt;/code&gt; &lt;code&gt;有margin/padding&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;高宽&lt;/code&gt; &lt;code&gt;padding&lt;/code&gt; &lt;code&gt;margin&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
