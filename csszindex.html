@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="Z-index 123div &amp;#123;    z-index: 1 /* 整数 */&amp;#125;   在未设定z-index的情况下，从底层到上层依次是：  The background and borders of the root element Descendant non-positioned blocks, in order of appearance in the HTML De">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-10T13:20:23.701Z">
+<meta property="og:updated_time" content="2019-07-10T14:35:29.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS z-index">
 <meta name="twitter:description" content="Z-index 123div &amp;#123;    z-index: 1 /* 整数 */&amp;#125;   在未设定z-index的情况下，从底层到上层依次是：  The background and borders of the root element Descendant non-positioned blocks, in order of appearance in the HTML De">
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-07-10 22:50:23" itemprop="dateModified" datetime="2019-07-10T22:50:23+09:30">2019-07-10</time>
+                <time title="Modified: 2019-07-11 00:05:29" itemprop="dateModified" datetime="2019-07-11T00:05:29+09:30">2019-07-11</time>
               
             
           </span>
@@ -487,7 +487,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">446</span>
+                <span title="Symbols count in article">553</span>
               
 
               
@@ -537,9 +537,17 @@
 <ul>
 <li>数值越大，优先级越高；</li>
 <li>同层non-static元素的z-index相同，同样遵循<strong>in order of appearance in the HTML</strong></li>
+<li>context的子元素优先级比context本身要高</li>
 <li>注意：父元素a的优先级比父元素b的优先级低，那么无论父元素a的子元素b的优先级多高，都不会覆盖父元素b</li>
 </ul>
 </li>
+</ul>
+<h3 id="methodology-of-comparing-z-index"><a class="markdownIt-Anchor" href="#methodology-of-comparing-z-index"></a> Methodology of Comparing Z-index</h3>
+<ul>
+<li>比较在html中的位置</li>
+<li>比较三种层次</li>
+<li>比较z-index大小</li>
+<li>比较html中的前后位置</li>
 </ul>
 <h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>
 
@@ -571,14 +579,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/cssdisplay.html" rel="bookmark">CSS block inline inline-block</a></div>
+      <div class="popular-posts-title"><a href="/cssfrostedglass.html" rel="bookmark">CSS Frosted Glass Effect</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/cssfrostedglass.html" rel="bookmark">CSS Frosted Glass Effect</a></div>
+      <div class="popular-posts-title"><a href="/cssdisplay.html" rel="bookmark">CSS block inline inline-block</a></div>
       
     </li>
   
@@ -1120,7 +1128,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#z-index"><span class="nav-number">1.</span> <span class="nav-text"> Z-index</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number">2.</span> <span class="nav-text"> </span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#z-index"><span class="nav-number">1.</span> <span class="nav-text"> Z-index</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#methodology-of-comparing-z-index"><span class="nav-number">1.1.</span> <span class="nav-text"> Methodology of Comparing Z-index</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number">2.</span> <span class="nav-text"> </span></a></li></ol></div>
             
 
           </div>
