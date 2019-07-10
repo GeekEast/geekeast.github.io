@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Z-index 123div &amp;#123;    z-index: 1 /* 整数 */&amp;#125; z-index 控制着页面元素之间的重叠关系; z-index 生效的前提是：页面元素position非默认值，即static  数值越大，优先级越高； 注意：父元素a的优先级比父元素b的优先级低，那么无论父元素a的子元素b的优先级多高，都不会覆盖父元素b">
+  <meta name="description" content="Z-index 123div &amp;#123;    z-index: 1 /* 整数 */&amp;#125;   在未设定z-index的情况下，从底层到上层依次是：  The background and borders of the root element Descendant non-positioned blocks, in order of appearance in the HTML De">
 <meta name="keywords" content="Frontend,CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS 元素层叠关系">
+<meta property="og:title" content="CSS z-index">
 <meta property="og:url" content="https://geekeast.github.io/csszindex.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Z-index 123div &amp;#123;    z-index: 1 /* 整数 */&amp;#125; z-index 控制着页面元素之间的重叠关系; z-index 生效的前提是：页面元素position非默认值，即static  数值越大，优先级越高； 注意：父元素a的优先级比父元素b的优先级低，那么无论父元素a的子元素b的优先级多高，都不会覆盖父元素b">
+<meta property="og:description" content="Z-index 123div &amp;#123;    z-index: 1 /* 整数 */&amp;#125;   在未设定z-index的情况下，从底层到上层依次是：  The background and borders of the root element Descendant non-positioned blocks, in order of appearance in the HTML De">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-29T04:49:01.871Z">
+<meta property="og:updated_time" content="2019-07-10T13:20:23.701Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 元素层叠关系">
-<meta name="twitter:description" content="Z-index 123div &amp;#123;    z-index: 1 /* 整数 */&amp;#125; z-index 控制着页面元素之间的重叠关系; z-index 生效的前提是：页面元素position非默认值，即static  数值越大，优先级越高； 注意：父元素a的优先级比父元素b的优先级低，那么无论父元素a的子元素b的优先级多高，都不会覆盖父元素b">
+<meta name="twitter:title" content="CSS z-index">
+<meta name="twitter:description" content="Z-index 123div &amp;#123;    z-index: 1 /* 整数 */&amp;#125;   在未设定z-index的情况下，从底层到上层依次是：  The background and borders of the root element Descendant non-positioned blocks, in order of appearance in the HTML De">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>CSS 元素层叠关系 | 雪中印</title>
+  <title>CSS z-index | 雪中印</title>
   
 
 
@@ -397,7 +397,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">CSS 元素层叠关系
+          <h2 class="post-title" itemprop="name headline">CSS z-index
 
               
             
@@ -421,12 +421,22 @@
                 
               
 
-              <time title="Created: 2019-04-29 10:50:49 / Modified: 14:19:01" itemprop="dateCreated datePublished" datetime="2019-04-29T10:50:49+09:30">2019-04-29</time>
+              <time title="Created: 2019-04-29 10:50:49" itemprop="dateCreated datePublished" datetime="2019-04-29T10:50:49+09:30">2019-04-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-07-10 22:50:23" itemprop="dateModified" datetime="2019-07-10T22:50:23+09:30">2019-07-10</time>
               
             
           </span>
@@ -477,7 +487,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">184</span>
+                <span title="Symbols count in article">446</span>
               
 
               
@@ -513,11 +523,23 @@
       
         <h2 id="z-index"><a class="markdownIt-Anchor" href="#z-index"></a> Z-index</h2>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">1</span> <span class="comment">/* 整数 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><code>z-index</code> 控制着页面元素之间的重叠关系;<br>
-<code>z-index</code> 生效的前提是：页面元素<code>position</code>非默认值，即static</p>
+<ul>
+<li>
+<p>在未设定z-index的情况下，从底层到上层依次是：</p>
+<ol>
+<li>The background and borders of the root element</li>
+<li>Descendant non-positioned blocks, <strong>in order of appearance in the HTML</strong></li>
+<li>Descendant positioned elements, <strong>in order of appearance in the HTML</strong></li>
+</ol>
+</li>
+<li>
+<p><code>z-index</code> 生效的前提是：页面元素<code>position</code>非默认值，即<code>non-static</code></p>
 <ul>
 <li>数值越大，优先级越高；</li>
+<li>同层non-static元素的z-index相同，同样遵循<strong>in order of appearance in the HTML</strong></li>
 <li>注意：父元素a的优先级比父元素b的优先级低，那么无论父元素a的子元素b的优先级多高，都不会覆盖父元素b</li>
+</ul>
+</li>
 </ul>
 <h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>
 
