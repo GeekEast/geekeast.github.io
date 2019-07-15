@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-07-01T06:41:10.751Z</updated>
+  <updated>2019-07-15T02:11:10.992Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,231 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Box-sizing in CSS</title>
+    <link href="https://geekeast.github.io/cssboxsizing.html"/>
+    <id>https://geekeast.github.io/cssboxsizing.html</id>
+    <published>2019-07-15T02:10:12.000Z</published>
+    <updated>2019-07-15T02:11:10.992Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="box-sizing"><a class="markdownIt-Anchor" href="#box-sizing"></a> Box-Sizing</h2><ul><li>width/height的设定默认是content的，不包含padding，border和margin</li><li>width/height设定包含padding和border: box-sizing: border-box</li><li>width/height设定无法将margin包含进去，只能手工减去margin的大小</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;box-sizing&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#box-sizing&quot;&gt;&lt;/a&gt; Box-Sizing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;width/height的设定默认是content的，不包含padding，border和margin&lt;/li&gt;
+&lt;li&gt;width/height设定包含padding和border: box-sizing: border-box&lt;/li&gt;
+&lt;li&gt;width/height设定无法将margin包含进去，只能手工减去margin的大小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
+    
+    
+      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Margin Collapsing</title>
+    <link href="https://geekeast.github.io/margincollapsing.html"/>
+    <id>https://geekeast.github.io/margincollapsing.html</id>
+    <published>2019-07-15T02:08:30.000Z</published>
+    <updated>2019-07-15T02:08:56.321Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="margin-collapsing"><a class="markdownIt-Anchor" href="#margin-collapsing"></a> Margin Collapsing</h2><blockquote><p>It happens by default to resolve the collapsing of two adjecent margin by eliminating the shorter one.</p></blockquote><p><strong>1. Adjacent Siblings</strong><br>In this case, the first element might have a margin of 10px  (on all sides let’s say) and the second one has 5px  (or 20px  - the values don’t matter).CSS will collapse the margins and only add the bigger one between the elements. So if we got margins of 10px  and 5px , a 10px  margin would be added between the elements?</p><p><strong>2. A parent with children that have a margin</strong><br>To be precise, the first and/ or last or the only child has to have margins (top and/ or bottom). In that case, the parent elements margin will collapse with the child element(s)’ margins. Again, the bigger margin wins and will be applied to the parent element.If the parent element has padding, inline content (other than the child elements) or a border, this behavior should not occur, the child margin will instead be added to the content of the wrapping parent element.</p><p><strong>3. An empty element with margins</strong><br>This case probably doesn’t occur that often but if you got an element with no content, no padding, no border and no height, then the top and bottom margin will be merged into one single margin. Again, the bigger one wins.</p><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;margin-collapsing&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#margin-collapsing&quot;&gt;&lt;/a&gt; Margin Collapsing&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It happens by default to resolve the collapsing of two adjecent margin by eliminating the shorter one.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;1. Adjacent Siblings&lt;/strong&gt;&lt;br&gt;
+In this case, the first element might have a margin of 10px  (on all sides let’s say) and the second one has 5px  (or 20px  - the values don’t matter).CSS will collapse the margins and only add the bigger one between the elements. So if we got margins of 10px  and 5px , a 10px  margin would be added between the elements?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. A parent with children that have a margin&lt;/strong&gt;&lt;br&gt;
+To be precise, the first and/ or last or the only child has to have margins (top and/ or bottom). In that case, the parent elements margin will collapse with the child element(s)’ margins. Again, the bigger margin wins and will be applied to the parent element.If the parent element has padding, inline content (other than the child elements) or a border, this behavior should not occur, the child margin will instead be added to the content of the wrapping parent element.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. An empty element with margins&lt;/strong&gt;&lt;br&gt;
+This case probably doesn’t occur that often but if you got an element with no content, no padding, no border and no height, then the top and bottom margin will be merged into one single margin. Again, the bigger one wins.&lt;/p&gt;
+&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
+    
+    
+      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS Selector</title>
+    <link href="https://geekeast.github.io/cssselector.html"/>
+    <id>https://geekeast.github.io/cssselector.html</id>
+    <published>2019-07-15T02:06:45.000Z</published>
+    <updated>2019-07-15T02:07:41.278Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="css-selector"><a class="markdownIt-Anchor" href="#css-selector"></a> CSS Selector</h2><table><thead><tr><th>Example</th><th>Description</th><th>Stress</th></tr></thead><tbody><tr><td><code>.btn</code></td><td>Select all elements with class=“btn”</td><td>类</td></tr><tr><td><code>#firstname</code></td><td>Selects the element with id=“firstname”</td><td>ID</td></tr><tr><td><code>*</code></td><td>Selects all elements</td><td>继承断层时应用</td></tr><tr><td><code>p</code></td><td>Selects all <code>&lt;p&gt;</code> elements</td><td>单个元素</td></tr><tr><td><code>div, p</code></td><td>any <code>&lt;div&gt;</code> elements and <code>&lt;p&gt;</code> elements</td><td>多个元素</td></tr><tr><td><code>div p</code></td><td>any <code>&lt;p&gt;</code> item that is a descendant of an <code>&lt;div&gt;</code></td><td>儿子们</td></tr><tr><td><code>div.btn</code></td><td><code>div</code> element with <code>btn</code> as class</td><td>单个元素(<strong>多个条件无空格</strong>)</td></tr><tr><td><code>div &gt; p</code></td><td>any <code>&lt;p&gt;</code> item that is a direct descendant of an <code>&lt;div&gt;</code></td><td>最亲儿子(only one)</td></tr><tr><td><code>div ~ p</code></td><td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with something in between.</td><td>弟弟们</td></tr><tr><td><code>div + p</code></td><td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with nothing in between.</td><td>最近弟弟(only one)</td></tr><tr><td><code>[href]</code></td><td>style all element with a href attribute.</td><td>属性</td></tr><tr><td><code>:hover</code></td><td>selects elements when the mouse cursor is current over them</td><td>状态</td></tr><tr><td><code>::before</code></td><td>allows you to insert content onto a page from CSS</td><td>内容</td></tr></tbody></table><a id="more"></a><h2 id="css-specificity"><a class="markdownIt-Anchor" href="#css-specificity"></a> CSS Specificity</h2><h3 id="simple-case"><a class="markdownIt-Anchor" href="#simple-case"></a> Simple Case</h3><p><code>Inheritance &gt; CSS file Tags(div, p) &gt; CSS file Class &gt; CSS file Id &gt; Inline Style &gt; !Important</code></p><p><img style="display: block; width: 100%; margin-left:auto; margin-right: auto" src="https://css-tricks.com/wp-content/uploads/2018/11/cascade-07.svg"></p><h3 id="real-case"><a class="markdownIt-Anchor" href="#real-case"></a> Real Case</h3><p><span class="exturl" data-url="aHR0cHM6Ly9zcGVjaWZpY2l0eS5rZWVnYW4uc3Qv" title="https://specificity.keegan.st/">Online Calculator<i class="fa fa-external-link"></i></span></p><p><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png"></p><ul><li>Element/pseudo element: div,p,:first-letter</li><li>class/psuedo-class/attibute: .col_3, ::hover, [href]</li><li>id: #nav</li><li>inline: <code>&lt;style&gt;</code><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-1.png"><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-2.png"><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-3.png"><br><strong>Update</strong>: The :not() sort-of-pseudo-class adds no specificity by itself, only what’s inside the parens is added to specificity value.<br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/uploads/2010/05/cssspecificity-calc-3v2.jpg"><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png"><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png"></li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;css-selector&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#css-selector&quot;&gt;&lt;/a&gt; CSS Selector&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Example&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Stress&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;.btn&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Select all elements with class=“btn”&lt;/td&gt;
+&lt;td&gt;类&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;#firstname&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Selects the element with id=“firstname”&lt;/td&gt;
+&lt;td&gt;ID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Selects all elements&lt;/td&gt;
+&lt;td&gt;继承断层时应用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Selects all &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
+&lt;td&gt;单个元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;div, p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;any &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements and &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
+&lt;td&gt;多个元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;div p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;any &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; item that is a descendant of an &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;儿子们&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;div.btn&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;div&lt;/code&gt; element with &lt;code&gt;btn&lt;/code&gt; as class&lt;/td&gt;
+&lt;td&gt;单个元素(&lt;strong&gt;多个条件无空格&lt;/strong&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;div &amp;gt; p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;any &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; item that is a direct descendant of an &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;最亲儿子(only one)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;div ~ p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;any &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; after an &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; with something in between.&lt;/td&gt;
+&lt;td&gt;弟弟们&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;div + p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;any &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; after an &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; with nothing in between.&lt;/td&gt;
+&lt;td&gt;最近弟弟(only one)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;[href]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;style all element with a href attribute.&lt;/td&gt;
+&lt;td&gt;属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;:hover&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;selects elements when the mouse cursor is current over them&lt;/td&gt;
+&lt;td&gt;状态&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;::before&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;allows you to insert content onto a page from CSS&lt;/td&gt;
+&lt;td&gt;内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    
+    </summary>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
+    
+    
+      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>What you can do in `&lt;head&gt;&lt;/head&gt;`</title>
+    <link href="https://geekeast.github.io/htmlhead.html"/>
+    <id>https://geekeast.github.io/htmlhead.html</id>
+    <published>2019-07-15T02:05:21.000Z</published>
+    <updated>2019-07-15T02:06:28.729Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="things-you-can-do-with-headhead"><a class="markdownIt-Anchor" href="#things-you-can-do-with-headhead"></a> Things you can do with <code>&lt;head&gt;&lt;/head&gt;</code></h2><ul><li>charset</li><li>viewport</li><li>compatible</li><li>title</li><li>favicon</li><li>css</li><li>import google fonts</li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"style.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- import google fonts that you can specify it in css file - main.css --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://fonts.googleapis.com/css?family=Baloo+Bhai|Indie+Flower&amp;display=swap"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"main.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;things-you-can-do-with-headhead&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#things-you-can-do-with-headhead&quot;&gt;&lt;/a&gt; Things you can do with &lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;charset&lt;/li&gt;
+&lt;li&gt;viewport&lt;/li&gt;
+&lt;li&gt;compatible&lt;/li&gt;
+&lt;li&gt;title&lt;/li&gt;
+&lt;li&gt;favicon&lt;/li&gt;
+&lt;li&gt;css&lt;/li&gt;
+&lt;li&gt;import google fonts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width=device-width, initial-scale=1.0&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;X-UA-Compatible&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;ie=edge&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;Document&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;style.css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;shortcut icon&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;favicon.ico&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;image/x-icon&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- import google fonts that you can specify it in css file - main.css --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;https://fonts.googleapis.com/css?family=Baloo+Bhai|Indie+Flower&amp;amp;display=swap&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;main.css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
+    
+    
+      <category term="HTML" scheme="https://geekeast.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3 Ways to Add CSS</title>
+    <link href="https://geekeast.github.io/csswaystoaddstyle.html"/>
+    <id>https://geekeast.github.io/csswaystoaddstyle.html</id>
+    <published>2019-07-15T02:03:36.000Z</published>
+    <updated>2019-07-15T02:04:59.592Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="how-to-add-style-to-html"><a class="markdownIt-Anchor" href="#how-to-add-style-to-html"></a> How to add style to html?</h2><h3 id="inline-css-style"><a class="markdownIt-Anchor" href="#inline-css-style"></a> Inline CSS Style</h3><ul><li>Not Recommended for most cases.</li></ul><p><strong>HTML:</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"color: black; background: red"</span>&gt;</span></span><br><span class="line">    Hello World!</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="head-css-style"><a class="markdownIt-Anchor" href="#head-css-style"></a> <code>&lt;head&gt;</code> CSS Style</h3><ul><li>For single page</li></ul><p><strong>HTML:</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">        <span class="selector-class">.text</span> &#123;</span></span><br><span class="line"><span class="undefined">            color: black</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        body &#123;</span></span><br><span class="line"><span class="undefined">            background: white;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">        Hello World!</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="css-file"><a class="markdownIt-Anchor" href="#css-file"></a> CSS file</h3><ul><li>Mutile-html reuse; recommended</li></ul><p><strong>HTML:</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"main.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">    Hello World!</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p><strong>CSS:</strong></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;how-to-add-style-to-html&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#how-to-add-style-to-html&quot;&gt;&lt;/a&gt; How to add style to html?&lt;/h2&gt;
+&lt;h3 id=&quot;inline-css-style&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#inline-css-style&quot;&gt;&lt;/a&gt; Inline CSS Style&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Not Recommended for most cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;HTML:&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;color: black; background: red&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Hello World!&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;head-css-style&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#head-css-style&quot;&gt;&lt;/a&gt; &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; CSS Style&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;For single page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;HTML:&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;lang&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width=device-width, initial-scale=1.0&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;X-UA-Compatible&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;content&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;ie=edge&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;Document&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;css&quot;&gt;        &lt;span class=&quot;selector-class&quot;&gt;.text&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;undefined&quot;&gt;            color: black&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;undefined&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;undefined&quot;&gt;        body &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;undefined&quot;&gt;            background: white;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;undefined&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;undefined&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Hello World!&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
+    
+    
+      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac Downgrade to Node.js Verison 8</title>
@@ -579,206 +804,6 @@
       <category term="AWS" scheme="https://geekeast.github.io/tags/AWS/"/>
     
       <category term="Code Commit" scheme="https://geekeast.github.io/tags/Code-Commit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PR 相关网站</title>
-    <link href="https://geekeast.github.io/pr.html"/>
-    <id>https://geekeast.github.io/pr.html</id>
-    <published>2019-05-24T04:10:57.000Z</published>
-    <updated>2019-05-24T04:21:02.232Z</updated>
-    
-    <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly9pbW1pLmhvbWVhZmZhaXJzLmdvdi5hdS92aXNhcy9nZXR0aW5nLWEtdmlzYS92aXNhLWxpc3Rpbmcvc2tpbGxlZC1pbmRlcGVuZGVudC0xODkvcG9pbnRzLXRhYmxl" title="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-table">Subclass 189<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9pbW1pLmhvbWVhZmZhaXJzLmdvdi5hdS92aXNhcy9nZXR0aW5nLWEtdmlzYS92aXNhLWxpc3Rpbmcvc2tpbGxlZC1ub21pbmF0ZWQtMTkwL3BvaW50cy10YWJsZQ==" title="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190/points-table">Subclass 190<i class="fa fa-external-link"></i></span></p><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-table&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Subclass 189&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190/points-table&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Subclass 190&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Australia" scheme="https://geekeast.github.io/categories/Australia/"/>
-    
-    
-      <category term="PR" scheme="https://geekeast.github.io/tags/PR/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Node.js App CI/CD Example with Elastic Beanstalk and Circle CI</title>
-    <link href="https://geekeast.github.io/elasticbeanstalk.html"/>
-    <id>https://geekeast.github.io/elasticbeanstalk.html</id>
-    <published>2019-05-23T06:32:22.000Z</published>
-    <updated>2019-05-27T14:16:30.869Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="simple-skeleton-of-cicd"><a class="markdownIt-Anchor" href="#simple-skeleton-of-cicd"></a> Simple Skeleton of CI/CD</h2><p><img style="width: 60%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/cicdprocess.png"></p><h2 id="related-concepts"><a class="markdownIt-Anchor" href="#related-concepts"></a> Related Concepts:</h2><ul><li><strong>CI</strong>: <strong>Continuous Integration</strong>: Merge Branch to master after passing the building and testing stage</li><li><strong>CD</strong>:<ul><li>Continuous Delivery</li><li><strong>Continuous Deployment</strong>: run the code in production server(s)<br><img style="width: 40%; margin: auto" src="https://www.nastel.com/wp-content/uploads/blogpic-32.png"></li></ul></li></ul><h2 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools:</h2><ul><li>Node.js with yarn</li><li>Git</li><li>Github</li><li>Circle CI</li><li>Elastic Beanstalk</li></ul><h2 id="about-elastic-beanstalk"><a class="markdownIt-Anchor" href="#about-elastic-beanstalk"></a> About Elastic Beanstalk</h2><ul><li>Configure the <code>production environment</code> for your code, for example with Ubuntu 16.04 and Node.js 10.</li><li>Configure the command to <code>start runing</code> your application, for example <code>npm start</code>.</li><li>Configure <code>security</code>, <code>load balancing</code> and <code>auto scaling</code> service from aws.</li></ul><a id="more"></a><h2 id="steps-from-scratch"><a class="markdownIt-Anchor" href="#steps-from-scratch"></a> Steps from Scratch</h2><h3 id="create-your-project-locally"><a class="markdownIt-Anchor" href="#create-your-project-locally"></a> Create your project Locally</h3><ul><li><ol><li><a href="https://geekeast.github.io/installnodepostgreonubuntu.html">Install Node.js and Yarn on Ubuntu 18.04</a></li></ol></li><li><ol start="2"><li>Create the project</li></ol></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir project_demo &amp;&amp; <span class="built_in">cd</span> project_demo</span><br><span class="line">npm init --yes &amp;&amp; yarn add express</span><br><span class="line">touch app.js &amp;&amp; nano app.js</span><br></pre></td></tr></table></figure><ul><li><ol start="3"><li>Copy and paste the code to app.js</li></ol></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line"><span class="keyword">const</span> port = <span class="number">3000</span></span><br><span class="line">app.get(<span class="string">'/'</span>, (req, res) =&gt; res.send(<span class="string">'Hello World!'</span>))</span><br><span class="line">app.listen(port, () =&gt; <span class="built_in">console</span>.log(<span class="string">`Example app listening on port <span class="subst">$&#123;port&#125;</span>!`</span>))</span><br></pre></td></tr></table></figure><ul><li><ol start="4"><li>Run the app on local machine</li></ol></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node app.js</span><br></pre></td></tr></table></figure><ol start="5"><li>If app runs successfully, you will see “Hello World!” in <span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDozMDAw" title="http://localhost:3000">localhost:3000<i class="fa fa-external-link"></i></span></li></ol><h3 id="set-up-github"><a class="markdownIt-Anchor" href="#set-up-github"></a> Set up GitHub</h3><ul><li><ol><li>Register for an account</li></ol></li><li><ol start="2"><li>Create a repository the following.<br><img style="width: 40%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/createrepo.png"><br><img style="width: 40%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/uploadgit.png"></li></ol></li><li><ol start="3"><li>Push your code to github</li></ol></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project_demo</span><br><span class="line">git init</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'first commit'</span></span><br><span class="line">git remote add origin git@github.com:GeekEast/cicd_sample.git</span><br><span class="line"><span class="comment"># If you don't switch branch, you could just use git push for the next time</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure><ul><li><ol start="4"><li>Github intializaion if completed.<br><img style="width: 40%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/firstpsuh.jpg"></li></ol></li></ul><h3 id="configure-circle-ci"><a class="markdownIt-Anchor" href="#configure-circle-ci"></a> Configure Circle CI</h3><ul><li><ol><li>Sign in <span class="exturl" data-url="aHR0cHM6Ly9jaXJjbGVjaS5jb20vdmNzLWF1dGhvcml6ZS8=" title="https://circleci.com/vcs-authorize/">Circle CI<i class="fa fa-external-link"></i></span> using Github Account</li></ol></li><li><ol start="2"><li><code>Add Project</code> on the left of page</li></ol></li><li><ol start="3"><li>Select your project in github and click on <code>Set Up Project</code></li></ol></li><li><ol start="4"><li>Add the configuration file</li></ol></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project_demo</span><br><span class="line">mkdir .circleci</span><br><span class="line">touch .circleci/config.yml</span><br><span class="line">nano .circleci/config.yml</span><br></pre></td></tr></table></figure><ul><li><ol start="5"><li>Copy and paste to config.yml</li></ol></li></ul><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line"><span class="attr">  build:</span></span><br><span class="line"><span class="attr">    docker:</span></span><br><span class="line"><span class="attr">      - image:</span> <span class="string">circleci/node:11.13.0</span></span><br><span class="line">    <span class="comment"># source code will be put into this repo</span></span><br><span class="line"><span class="attr">    working_directory:</span> <span class="string">~/project_build</span></span><br><span class="line">    <span class="comment"># run the following code in the repo directory</span></span><br><span class="line"><span class="attr">    steps:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">checkout</span></span><br><span class="line"><span class="attr">      - run:</span> </span><br><span class="line"><span class="attr">          name:</span> <span class="string">Install</span> <span class="string">Node</span> <span class="string">Packages</span></span><br><span class="line"><span class="attr">          command:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            yarn install</span></span><br></pre></td></tr></table></figure><ul><li><ol start="5"><li>Add .gitignore file</li></ol></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project_demo</span><br><span class="line">touch .gitignore &amp;&amp; nano .gitignore</span><br></pre></td></tr></table></figure><ul><li><ol start="6"><li>Copy and paste to .gitignore file</li></ol></li></ul><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!<span class="selector-tag">--</span> <span class="selector-tag">to</span> <span class="selector-tag">avoid</span> <span class="selector-tag">pushing</span> <span class="selector-tag">this</span> <span class="selector-tag">to</span> <span class="selector-tag">github</span> <span class="selector-tag">repo</span> <span class="selector-tag">because</span> <span class="selector-tag">this</span> <span class="selector-tag">can</span> <span class="selector-tag">be</span> <span class="selector-tag">installed</span> <span class="selector-tag">using</span> <span class="selector-tag">node</span> <span class="selector-tag">commnad</span> <span class="selector-tag">--</span>&gt;</span><br><span class="line"><span class="selector-tag">node_modules</span></span><br></pre></td></tr></table></figure><ul><li><ol start="7"><li>Push to Github</li></ol></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project_demo</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'set up circle-ci'</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure><ul><li><ol start="8"><li>Click <code>Start Building</code> on CircleCI Page</li></ol></li><li><ol start="9"><li>Then circle ci will show it build and test your app successfully.<br><img style="width: 100%; height:auto; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/circlecisucceed.jpg"></li></ol></li><li><ol start="10"><li><strong>After this, everytime you push code to your master of git repo, it will trigger cicleci to automatically build and test your code.</strong></li></ol></li></ul><h3 id="configure-elastic-beanstalk-locally-aws"><a class="markdownIt-Anchor" href="#configure-elastic-beanstalk-locally-aws"></a> Configure Elastic Beanstalk (Locally -&gt; AWS)</h3><ul><li>aws online<ul><li>Sign up an aws account</li><li>create the elastic beanstalk full access role to the user</li><li>create the user credentials and downloaded to your local machine</li></ul></li><li>aws locally<ul><li><p>install and configure awscli</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">aws configure</span><br><span class="line"><span class="comment"># Or modify config and credentials in ~/.aws</span></span><br></pre></td></tr></table></figure></li><li><p>configure credentials</p></li><li><p>install awsebcli</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install awsebcli</span><br></pre></td></tr></table></figure></li><li><p>initialize eb in your project</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">eb init</span><br><span class="line">eb create demo-prod</span><br></pre></td></tr></table></figure></li><li><p>modify the .gitignore file</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">node_modules</span></span><br><span class="line"># <span class="selector-tag">Elastic</span> <span class="selector-tag">Beanstalk</span> <span class="selector-tag">Files</span></span><br><span class="line"><span class="selector-class">.elasticbeanstalk</span><span class="comment">/*</span></span><br><span class="line"><span class="comment">!.elasticbeanstalk/*.cfg.yml</span></span><br><span class="line"><span class="comment">!.elasticbeanstalk/*.global.yml</span></span><br><span class="line"><span class="comment">!.elasticbeanstalk/config.yml</span></span><br></pre></td></tr></table></figure></li><li><p>first deploy</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eb deploy</span><br></pre></td></tr></table></figure></li></ul></li></ul><h3 id="configure-elastic-beanstalk-with-circle-ci"><a class="markdownIt-Anchor" href="#configure-elastic-beanstalk-with-circle-ci"></a> Configure Elastic Beanstalk with Circle CI</h3><ul><li>Set AWS credentials as Environemnt Variable in Circle CI</li><li>Modify the ebs configure yaml file</li></ul><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line"><span class="attr">  build:</span></span><br><span class="line"><span class="attr">    docker:</span></span><br><span class="line"><span class="attr">      - image:</span> <span class="string">circleci/node:11.13.0</span></span><br><span class="line">    <span class="comment"># source code will be put into this repo</span></span><br><span class="line"><span class="attr">    working_directory:</span> <span class="string">~/project_build</span></span><br><span class="line">    <span class="comment"># run the following code in the repo directory</span></span><br><span class="line"><span class="attr">    steps:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">checkout</span></span><br><span class="line"><span class="attr">      - run:</span> </span><br><span class="line"><span class="attr">          name:</span> <span class="string">Install</span> <span class="string">Node</span> <span class="string">Packages</span></span><br><span class="line"><span class="attr">          command:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            yarn install</span></span><br><span class="line"><span class="string"></span><span class="attr">  deployment:</span></span><br><span class="line"><span class="attr">    docker:</span></span><br><span class="line"><span class="attr">      - image:</span> <span class="string">circleci/python:2.7</span></span><br><span class="line"><span class="attr">    working_directory:</span> <span class="string">~/project_deployment</span></span><br><span class="line"><span class="attr">    steps:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">checkout</span></span><br><span class="line"><span class="attr">      - run:</span> </span><br><span class="line"><span class="attr">          name:</span> <span class="string">Install</span> <span class="string">AWS</span> <span class="string">CLI</span> <span class="string">&amp;</span> <span class="string">PM2</span></span><br><span class="line"><span class="attr">          command:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            sudo pip install awsebcli --upgrade</span></span><br><span class="line"><span class="string"></span><span class="attr">      - run:</span> </span><br><span class="line"><span class="attr">          name:</span> <span class="string">Create</span> <span class="string">AWS</span> <span class="string">Credentials</span> <span class="string">Manually</span></span><br><span class="line"><span class="attr">          command:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            mkdir ~/.aws</span></span><br><span class="line"><span class="string">            touch ~/.aws/config</span></span><br><span class="line"><span class="string">            chmod 600 ~/.aws/config</span></span><br><span class="line"><span class="string">            echo "[profile eb-cli]" &gt; ~/.aws/config</span></span><br><span class="line"><span class="string">            echo "region=ap-southeast-2" &gt;&gt; ~/.aws/config</span></span><br><span class="line"><span class="string">            echo "aws_access_key_id=$AWS_ACCESS_KEY_ID" &gt;&gt; ~/.aws/config</span></span><br><span class="line"><span class="string">            echo "aws_secret_access_key=$AWS_SECRET_ACCESS_KEY" &gt;&gt; ~/.aws/config</span></span><br><span class="line"><span class="string"></span><span class="attr">      - run:</span></span><br><span class="line"><span class="attr">          name:</span> <span class="string">Deploy</span> <span class="string">to</span> <span class="string">EB</span> <span class="string">if</span> <span class="string">branch</span> <span class="string">is</span> <span class="string">master</span></span><br><span class="line"><span class="attr">          command:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            eb use demo-prod --profile eb-cli</span></span><br><span class="line"><span class="string">            eb deploy --profile eb-cli</span></span><br><span class="line"><span class="string"></span><span class="attr">workflows:</span></span><br><span class="line"><span class="attr">  version:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">  build-deploy:</span></span><br><span class="line"><span class="attr">    jobs:</span></span><br><span class="line"><span class="attr">      - build:</span></span><br><span class="line"><span class="attr">          filters:</span></span><br><span class="line"><span class="attr">            branches:</span></span><br><span class="line"><span class="attr">              ignore:</span></span><br><span class="line"><span class="bullet">                -</span> <span class="string">master</span></span><br><span class="line"><span class="attr">      - deployment:</span></span><br><span class="line"><span class="attr">          filters:</span></span><br><span class="line"><span class="attr">            branches:</span></span><br><span class="line"><span class="attr">              only:</span></span><br><span class="line"><span class="bullet">                -</span> <span class="string">master</span></span><br></pre></td></tr></table></figure><ul><li>Each time you merge a branch to master, to deployment to elastic beanstalk will be executed</li></ul><h3 id="customize-the-start-command-in-elastic-beanstalk"><a class="markdownIt-Anchor" href="#customize-the-start-command-in-elastic-beanstalk"></a> Customize the <code>start</code> command in elastic beanstalk</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project_demo</span><br><span class="line">mkdir .ebextensions</span><br><span class="line">touch .ebextensions/node-settings.config &amp;&amp; nano .ebextensions/node-settings.config</span><br></pre></td></tr></table></figure><ul><li>modify the node-settings.config file</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">option_settings:</span><br><span class="line">  aws:elasticbeanstalk:container:nodejs: </span><br><span class="line">    NodeCommand: &quot;npm start&quot;</span><br><span class="line">    ProxyServer: nginx</span><br><span class="line">    GzipCompression: true</span><br></pre></td></tr></table></figure><ul><li>modify the package.json file</li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// package.json</span><br><span class="line">"scripts": &#123;</span><br><span class="line">    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",</span><br><span class="line">    "start": "node ./node_modules/pm2/bin/pm2 start app.js utils/scheduler/reports.js -i max",</span><br><span class="line">    "poststart": "node ./node_modules/pm2/bin/pm2 logs"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="important-notes"><a class="markdownIt-Anchor" href="#important-notes"></a> Important Notes</h3><ul><li>After 1st deployment from local, you could use aws ebs console to create environment and customize more configurations like security group, auto scaling and load balancing</li><li>If there is any error, please use the aws eb console &gt; logs to inspect the issue.</li></ul><h3 id="not-covered"><a class="markdownIt-Anchor" href="#not-covered"></a> Not Covered:</h3><ul><li>How proxy server works and how to configure it?</li></ul><h2 id="good-references"><a class="markdownIt-Anchor" href="#good-references"></a> Good References:</h2><p><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL0BwYXVsY2hlbl85NjUwLyVFOCVCNiU4NSVFNiU5NiVCMCVFNiU4OSU4QiVFNyU5QSU4NCVFNCVCOCU4MCVFNiU5NyVBNWNpLWNkJUU1JTg4JTlEJUU5JUFCJTk0JUU5JUE5JTk3LSVFNCVCRCVCRiVFNyU5NCVBOGNpcmNsZWNpLWdpdGh1Yi1mbG93JUU4JTg3JUFBJUU1JThCJTk1JUU5JTgzJUE4JUU3JUJEJUIybm9kZS1qcyVFNiU5NiVCQ2F3cy1lbGFzdGljLWJlYW5zdGFsay1lN2FmM2E2NWFlNjE=" title="https://medium.com/@paulchen_9650/%E8%B6%85%E6%96%B0%E6%89%8B%E7%9A%84%E4%B8%80%E6%97%A5ci-cd%E5%88%9D%E9%AB%94%E9%A9%97-%E4%BD%BF%E7%94%A8circleci-github-flow%E8%87%AA%E5%8B%95%E9%83%A8%E7%BD%B2node-js%E6%96%BCaws-elastic-beanstalk-e7af3a65ae61">超新手的一日CI/CD初體驗，使用CircleCi、Github-Flow自動部署Node.JS於AWS Elastic Beanstalk<i class="fa fa-external-link"></i></span></p><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;simple-skeleton-of-cicd&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#simple-skeleton-of-cicd&quot;&gt;&lt;/a&gt; Simple Skeleton of CI/CD&lt;/h2&gt;
-&lt;p&gt;&lt;img style=&quot;width: 60%; margin: auto&quot; src=&quot;https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/cicdprocess.png&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;related-concepts&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#related-concepts&quot;&gt;&lt;/a&gt; Related Concepts:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;CI&lt;/strong&gt;: &lt;strong&gt;Continuous Integration&lt;/strong&gt;: Merge Branch to master after passing the building and testing stage&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CD&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Continuous Delivery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Continuous Deployment&lt;/strong&gt;: run the code in production server(s)&lt;br&gt;
-&lt;img style=&quot;width: 40%; margin: auto&quot; src=&quot;https://www.nastel.com/wp-content/uploads/blogpic-32.png&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;tools&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tools&quot;&gt;&lt;/a&gt; Tools:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Node.js with yarn&lt;/li&gt;
-&lt;li&gt;Git&lt;/li&gt;
-&lt;li&gt;Github&lt;/li&gt;
-&lt;li&gt;Circle CI&lt;/li&gt;
-&lt;li&gt;Elastic Beanstalk&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;about-elastic-beanstalk&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#about-elastic-beanstalk&quot;&gt;&lt;/a&gt; About Elastic Beanstalk&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Configure the &lt;code&gt;production environment&lt;/code&gt; for your code, for example with Ubuntu 16.04 and Node.js 10.&lt;/li&gt;
-&lt;li&gt;Configure the command to &lt;code&gt;start runing&lt;/code&gt; your application, for example &lt;code&gt;npm start&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Configure &lt;code&gt;security&lt;/code&gt;, &lt;code&gt;load balancing&lt;/code&gt; and &lt;code&gt;auto scaling&lt;/code&gt; service from aws.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
-    
-    
-      <category term="AWS" scheme="https://geekeast.github.io/tags/AWS/"/>
-    
-      <category term="DevOps" scheme="https://geekeast.github.io/tags/DevOps/"/>
-    
-      <category term="Elastic Beanstalk" scheme="https://geekeast.github.io/tags/Elastic-Beanstalk/"/>
-    
-      <category term="Circle CI" scheme="https://geekeast.github.io/tags/Circle-CI/"/>
-    
-      <category term="CI/CD" scheme="https://geekeast.github.io/tags/CI-CD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端优化三大法宝</title>
-    <link href="https://geekeast.github.io/frontendoptimise.html"/>
-    <id>https://geekeast.github.io/frontendoptimise.html</id>
-    <published>2019-05-23T05:21:37.000Z</published>
-    <updated>2019-05-23T05:24:18.047Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>code spliting</li><li>tree shaking</li><li>lazy loading</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;code spliting&lt;/li&gt;
-&lt;li&gt;tree shaking&lt;/li&gt;
-&lt;li&gt;lazy loading&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
-    
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
-    
-      <category term="Performance" scheme="https://geekeast.github.io/tags/Performance/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS block inline inline-block</title>
-    <link href="https://geekeast.github.io/cssdisplay.html"/>
-    <id>https://geekeast.github.io/cssdisplay.html</id>
-    <published>2019-05-21T13:36:43.000Z</published>
-    <updated>2019-07-10T00:01:54.877Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>display的默认值视type而定；</p></blockquote><table><thead><tr><th>Value</th><th>Description</th><th>Note</th></tr></thead><tbody><tr><td>block</td><td><code>独占一行</code> <code>宽度默认为父级宽度</code> <code>有height/width</code> <code>有margin/padding</code></td><td></td></tr><tr><td>inline</td><td><code>不独占一行</code> <code>宽度随内容变化</code> <code>无heigh/width</code> <code>仅水平marign/padding生效</code></td><td></td></tr><tr><td>inline-block</td><td><code>不独占一行</code> <code>宽度默认随内容变化</code> <code>有height/width</code> <code>有margin/padding</code></td><td><code>高宽</code> <code>padding</code> <code>margin</code></td></tr><tr><td>none</td><td><code>不予显示</code> <code>不占空间</code></td><td></td></tr><tr><td>hidden</td><td><code>不予显示</code> <code>占据空间</code></td><td></td></tr></tbody></table><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;display的默认值视type而定；&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;th&gt;Note&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;block&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;独占一行&lt;/code&gt; &lt;code&gt;宽度默认为父级宽度&lt;/code&gt; &lt;code&gt;有height/width&lt;/code&gt; &lt;code&gt;有margin/padding&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;inline&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;不独占一行&lt;/code&gt; &lt;code&gt;宽度随内容变化&lt;/code&gt; &lt;code&gt;无heigh/width&lt;/code&gt; &lt;code&gt;仅水平marign/padding生效&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;inline-block&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;不独占一行&lt;/code&gt; &lt;code&gt;宽度默认随内容变化&lt;/code&gt; &lt;code&gt;有height/width&lt;/code&gt; &lt;code&gt;有margin/padding&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;高宽&lt;/code&gt; &lt;code&gt;padding&lt;/code&gt; &lt;code&gt;margin&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;none&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;不予显示&lt;/code&gt; &lt;code&gt;不占空间&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;hidden&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;不予显示&lt;/code&gt; &lt;code&gt;占据空间&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
-    
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
-    
-      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS中的auto关键字</title>
-    <link href="https://geekeast.github.io/css-auto.html"/>
-    <id>https://geekeast.github.io/css-auto.html</id>
-    <published>2019-05-21T09:03:10.000Z</published>
-    <updated>2019-05-21T09:40:38.099Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="image居中"><a class="markdownIt-Anchor" href="#image居中"></a> Image居中</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">"width: 100%; margin-left:auto; margin-right:auto"</span> <span class="attr">src</span>=<span class="string">"https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png"</span>&gt;</span><span class="tag">&lt;/<span class="name">img</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png"></p><ul><li>为什么<code>auto</code>可以实现img的居中？</li><li>答： 因为CSS规范中说明了：一个有特定宽度的元素，若左右边距为auto，浏览器会取它的容器和该容器的宽度<strong>之差</strong>，<strong>除以2</strong>，作为该元素的<strong>左边距</strong>和<strong>右边距</strong>。</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;image居中&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#image居中&quot;&gt;&lt;/a&gt; Image居中&lt;/h2&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width: 100%; margin-left:auto; margin-right:auto&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img style=&quot;width: 100%; margin:auto&quot; src=&quot;https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png&quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;为什么&lt;code&gt;auto&lt;/code&gt;可以实现img的居中？&lt;/li&gt;
-&lt;li&gt;答： 因为CSS规范中说明了：一个有特定宽度的元素，若左右边距为auto，浏览器会取它的容器和该容器的宽度&lt;strong&gt;之差&lt;/strong&gt;，&lt;strong&gt;除以2&lt;/strong&gt;，作为该元素的&lt;strong&gt;左边距&lt;/strong&gt;和&lt;strong&gt;右边距&lt;/strong&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
-    
-    
-      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
     
   </entry>
   
