@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-07-15T02:11:10.992Z</updated>
+  <updated>2019-07-15T02:51:16.256Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Manipulate CSS via Javascript</title>
+    <link href="https://geekeast.github.io/cssjavascript.html"/>
+    <id>https://geekeast.github.io/cssjavascript.html</id>
+    <published>2019-07-15T02:49:00.000Z</published>
+    <updated>2019-07-15T02:51:16.256Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="how-to-add-javascript"><a class="markdownIt-Anchor" href="#how-to-add-javascript"></a> How to add Javascript?</h3><ul><li>Method 1: End within the <code>body</code> tag</li><li>Method 2: Seperate Js file and then add to the end within the <code>body</code> tag</li></ul><h3 id="change-style-property"><a class="markdownIt-Anchor" href="#change-style-property"></a> change Style Property</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> backdrop = <span class="built_in">document</span>.querySelector(<span class="string">'.backdrop'</span>);</span><br><span class="line"><span class="comment">// this will add style to element level</span></span><br><span class="line">backdrop.style.display = <span class="string">'block'</span>;</span><br></pre></td></tr></table></figure><h3 id="dynamically-change-style-property"><a class="markdownIt-Anchor" href="#dynamically-change-style-property"></a> Dynamically change Style Property</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> backdrop = <span class="built_in">document</span>.querySelector(<span class="string">'.backdrop'</span>);</span><br><span class="line"><span class="keyword">var</span> modal = <span class="built_in">document</span>.querySelector(<span class="string">'.modal'</span>);</span><br><span class="line"><span class="keyword">var</span> selectPlanButtons = <span class="built_in">document</span>.querySelectorALL(<span class="string">'.plan button'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">0</span>; i&lt; selectPlanButtons.length;i++)&#123;</span><br><span class="line">    selectPlanButtons[i].addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        modal.style.display = <span class="string">'block'</span>;</span><br><span class="line">        backdrop.style.display = <span class="string">'block'</span>;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="add-remoing-css-classes-via-js"><a class="markdownIt-Anchor" href="#add-remoing-css-classes-via-js"></a> Add &amp; Remoing CSS classes via JS</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">modal.className = <span class="string">'open'</span>; <span class="comment">// overwrite way</span></span><br><span class="line">modal.classList.add(<span class="string">'open'</span>); </span><br><span class="line">modal.classList.remove(<span class="string">'open'</span>);</span><br></pre></td></tr></table></figure><h3 id="ways-to-access-style-of-html-element-using-javascript"><a class="markdownIt-Anchor" href="#ways-to-access-style-of-html-element-using-javascript"></a> Ways to access Style of HTML element using Javascript</h3><ol><li><code>backdrop.style.backgroundImage</code></li><li><code>backdrop.style['backgournd-image']</code></li></ol><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;how-to-add-javascript&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#how-to-add-javascript&quot;&gt;&lt;/a&gt; How to add Javascript?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Method 1: End within the &lt;code&gt;body&lt;/code&gt; tag&lt;/li&gt;
+&lt;li&gt;Method 2: Seperate Js file and then add to the end within the &lt;code&gt;body&lt;/code&gt; tag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;change-style-property&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#change-style-property&quot;&gt;&lt;/a&gt; change Style Property&lt;/h3&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; backdrop = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.querySelector(&lt;span class=&quot;string&quot;&gt;&#39;.backdrop&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// this will add style to element level&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;backdrop.style.display = &lt;span class=&quot;string&quot;&gt;&#39;block&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;dynamically-change-style-property&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#dynamically-change-style-property&quot;&gt;&lt;/a&gt; Dynamically change Style Property&lt;/h3&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; backdrop = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.querySelector(&lt;span class=&quot;string&quot;&gt;&#39;.backdrop&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; modal = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.querySelector(&lt;span class=&quot;string&quot;&gt;&#39;.modal&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; selectPlanButtons = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.querySelectorALL(&lt;span class=&quot;string&quot;&gt;&#39;.plan button&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i&amp;lt; selectPlanButtons.length;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    selectPlanButtons[i].addEventListener(&lt;span class=&quot;string&quot;&gt;&#39;click&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        modal.style.display = &lt;span class=&quot;string&quot;&gt;&#39;block&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        backdrop.style.display = &lt;span class=&quot;string&quot;&gt;&#39;block&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
+    
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
+    
+      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Box-sizing in CSS</title>
@@ -776,34 +808,6 @@ This case probably doesn’t occur that often but if you got an element with no 
       <category term="DevOps" scheme="https://geekeast.github.io/tags/DevOps/"/>
     
       <category term="CI/CD" scheme="https://geekeast.github.io/tags/CI-CD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AWS Code Commit</title>
-    <link href="https://geekeast.github.io/codecommit.html"/>
-    <id>https://geekeast.github.io/codecommit.html</id>
-    <published>2019-05-24T04:21:20.000Z</published>
-    <updated>2019-05-25T23:43:54.987Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="关于"><a class="markdownIt-Anchor" href="#关于"></a> 关于</h2><p>AWS Code Commit is another ‘github’ or ‘gitlab’, which allows to you <code>host</code> your own code with version control tools like git cli.</p><h2 id="基本操作"><a class="markdownIt-Anchor" href="#基本操作"></a> 基本操作</h2><h3 id="前提"><a class="markdownIt-Anchor" href="#前提"></a> 前提</h3><ul><li>IAM roles for full access to AWS code Commit</li></ul><h3 id="新建目录"><a class="markdownIt-Anchor" href="#新建目录"></a> 新建目录</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># list all commands</span></span><br><span class="line">aws codecommit <span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># create repository</span></span><br><span class="line">aws codecommit create-repository --repository-name=admin-report-api</span><br></pre></td></tr></table></figure><h3 id="产生git秘钥"><a class="markdownIt-Anchor" href="#产生git秘钥"></a> 产生Git秘钥</h3><ul><li>In IAM &gt; User &gt; Security Credential &gt; HTTPS Git credentials for AWS CodeCommit &gt; Generate</li><li><code>Click</code> generate to get your git credentials.</li></ul><blockquote><p>Note: You <code>cannot</code> customize this.</p></blockquote><h3 id="克隆到本地"><a class="markdownIt-Anchor" href="#克隆到本地"></a> 克隆到本地</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/admin-report-api</span><br><span class="line"><span class="comment"># then enter the username and password generated from above step.</span></span><br></pre></td></tr></table></figure><h3 id="推送到目录"><a class="markdownIt-Anchor" href="#推送到目录"></a> 推送到目录</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'initialize'</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure><h3 id="分支操作"><a class="markdownIt-Anchor" href="#分支操作"></a> 分支操作</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># check the current brance</span></span><br><span class="line">git branch</span><br><span class="line"><span class="comment"># change to another brance</span></span><br><span class="line">git checkout -b newBranch</span><br><span class="line"><span class="comment"># git checkout means change to another branch.</span></span><br><span class="line"><span class="comment"># git checkout -b means create a branch and then change to it.</span></span><br><span class="line"></span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'test new branch'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一次使用次命令</span></span><br><span class="line">git push -u origin newBranch</span><br><span class="line"><span class="comment"># 后面可以使用</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure><h3 id="merge-branch"><a class="markdownIt-Anchor" href="#merge-branch"></a> Merge Branch</h3><ul><li>CodeCommit &gt; Source &gt; Repositories &gt; Pull Request &gt; Create Pull Request</li><li>merge后可以选择删除source branch</li></ul><h3 id="compare-commit"><a class="markdownIt-Anchor" href="#compare-commit"></a> Compare Commit</h3><ul><li>CodeCommit &gt; Source &gt; Repositories &gt; commits &gt; compare commits</li></ul><h2 id="整合aws其他服务"><a class="markdownIt-Anchor" href="#整合aws其他服务"></a> 整合AWS其他服务</h2><ul><li><span class="exturl" data-url="aHR0cHM6Ly93d3cudWRlbXkuY29tL2Rldm9wcy1vbi1hd3MtdXNpbmctY29kZS1zZXJ2aWNlcy9sZWFybi9sZWN0dXJlLzEyODQwNTkwI292ZXJ2aWV3" title="https://www.udemy.com/devops-on-aws-using-code-services/learn/lecture/12840590#overview">Simple Notification Service(SNS)<i class="fa fa-external-link"></i></span><ul><li>Email</li><li>SMS</li></ul></li><li><span class="exturl" data-url="aHR0cHM6Ly93d3cudWRlbXkuY29tL2Rldm9wcy1vbi1hd3MtdXNpbmctY29kZS1zZXJ2aWNlcy9sZWFybi9sZWN0dXJlLzEyODQwNTk0I292ZXJ2aWV3" title="https://www.udemy.com/devops-on-aws-using-code-services/learn/lecture/12840594#overview">Lambda Function<i class="fa fa-external-link"></i></span><ul><li>prerequisite: IAM role for lambda function execute</li><li>settings &gt; trigger (lambda function created at first)</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;关于&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#关于&quot;&gt;&lt;/a&gt; 关于&lt;/h2&gt;
-&lt;p&gt;AWS Code Commit is another ‘github’ or ‘gitlab’, which allows to you &lt;co
-      
-    
-    </summary>
-    
-      <category term="DevOps" scheme="https://geekeast.github.io/categories/DevOps/"/>
-    
-    
-      <category term="AWS" scheme="https://geekeast.github.io/tags/AWS/"/>
-    
-      <category term="Code Commit" scheme="https://geekeast.github.io/tags/Code-Commit/"/>
     
   </entry>
   
