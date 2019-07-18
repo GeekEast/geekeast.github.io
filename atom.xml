@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-07-15T02:53:08.630Z</updated>
+  <updated>2019-07-18T03:45:28.816Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to prepare SDE resume in America?</title>
+    <link href="https://geekeast.github.io/usaitresume.html"/>
+    <id>https://geekeast.github.io/usaitresume.html</id>
+    <published>2019-07-18T03:18:10.000Z</published>
+    <updated>2019-07-18T03:45:28.816Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="education"><a class="markdownIt-Anchor" href="#education"></a> Education</h3><ul><li>University</li><li>Major(Non-cs Major doesn’t matter)</li><li>Graduation Time</li><li><strong>CS related Courses</strong></li><li>GPA (above 3.5)</li></ul><h3 id="experience"><a class="markdownIt-Anchor" href="#experience"></a> Experience</h3><ul><li>Core Part I</li><li>Intership | Jobs: Company, Period, Position</li><li>Process: Project, Problems, Solution</li></ul><h3 id="projects"><a class="markdownIt-Anchor" href="#projects"></a> Projects</h3><ul><li>Core Part II</li><li>Name, period, role</li><li>Process: including key technologies</li><li>Result: your impact</li><li>From near to far, 1-3 Key Projects</li></ul><div class="note info">            <h3 id="example"><a class="markdownIt-Anchor" href="#example"></a> Example</h3><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190718-130911.png">          </div><ul><li>Format:<ul><li>Summary</li><li>2-3 key techs and results</li><li>Your impact to prove the value.</li></ul></li></ul><h3 id="skills"><a class="markdownIt-Anchor" href="#skills"></a> Skills</h3><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;education&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#education&quot;&gt;&lt;/a&gt; Education&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;University&lt;/li&gt;
+&lt;li&gt;Major(Non-cs Major doesn’t matter)&lt;/li&gt;
+&lt;li&gt;Graduation Time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CS related Courses&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;GPA (above 3.5)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;experience&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#experience&quot;&gt;&lt;/a&gt; Experience&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Core Part I&lt;/li&gt;
+&lt;li&gt;Intership | Jobs: Company, Period, Position&lt;/li&gt;
+&lt;li&gt;Process: Project, Problems, Solution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;projects&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#projects&quot;&gt;&lt;/a&gt; Projects&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Core Part II&lt;/li&gt;
+&lt;li&gt;Name, period, role&lt;/li&gt;
+&lt;li&gt;Process: including key technologies&lt;/li&gt;
+&lt;li&gt;Result: your impact&lt;/li&gt;
+&lt;li&gt;From near to far, 1-3 Key Projects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;note info&quot;&gt;
+            &lt;h3 id=&quot;example&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#example&quot;&gt;&lt;/a&gt; Example&lt;/h3&gt;&lt;img style=&quot;width: 80%; margin: auto&quot; src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190718-130911.png&quot;&gt;
+          &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Format:
+&lt;ul&gt;
+&lt;li&gt;Summary&lt;/li&gt;
+&lt;li&gt;2-3 key techs and results&lt;/li&gt;
+&lt;li&gt;Your impact to prove the value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;skills&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#skills&quot;&gt;&lt;/a&gt; Skills&lt;/h3&gt;
+&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Job" scheme="https://geekeast.github.io/categories/Job/"/>
+    
+    
+      <category term="Job" scheme="https://geekeast.github.io/tags/Job/"/>
+    
+      <category term="Resume" scheme="https://geekeast.github.io/tags/Resume/"/>
+    
+  </entry>
   
   <entry>
     <title>Manipulate CSS via Javascript</title>
@@ -773,41 +832,6 @@ This case probably doesn’t occur that often but if you got an element with no 
       <category term="Node.js" scheme="https://geekeast.github.io/tags/Node-js/"/>
     
       <category term="Gmail" scheme="https://geekeast.github.io/tags/Gmail/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AWS Config Switch Roles</title>
-    <link href="https://geekeast.github.io/managemutiplerolesaws.html"/>
-    <id>https://geekeast.github.io/managemutiplerolesaws.html</id>
-    <published>2019-05-24T04:36:06.000Z</published>
-    <updated>2019-05-24T04:59:35.858Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="prerequsite"><a class="markdownIt-Anchor" href="#prerequsite"></a> Prerequsite</h3><ul><li>VS code with Command Line Tool</li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">code ~/.aws/config</span><br><span class="line">code ~/.aws/credentials</span><br></pre></td></tr></table></figure><h3 id="how-to-switch-the-role"><a class="markdownIt-Anchor" href="#how-to-switch-the-role"></a> How to Switch the role?</h3><ul><li>Modify the role that you want to the default role.</li><li>run <code>aws configure</code> to make it valid.</li></ul><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;prerequsite&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#prerequsite&quot;&gt;&lt;/a&gt; Prerequsite&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;VS code with Command Line Tool&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;code ~/.aws/config&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;code ~/.aws/credentials&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;how-to-switch-the-role&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#how-to-switch-the-role&quot;&gt;&lt;/a&gt; How to Switch the role?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Modify the role that you want to the default role.&lt;/li&gt;
-&lt;li&gt;run &lt;code&gt;aws configure&lt;/code&gt; to make it valid.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="AWS" scheme="https://geekeast.github.io/categories/AWS/"/>
-    
-    
-      <category term="AWS" scheme="https://geekeast.github.io/tags/AWS/"/>
-    
-      <category term="DevOps" scheme="https://geekeast.github.io/tags/DevOps/"/>
-    
-      <category term="CI/CD" scheme="https://geekeast.github.io/tags/CI-CD/"/>
     
   </entry>
   

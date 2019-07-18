@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/usaitresume.html</loc>
+    
+    <lastmod>2019-07-18T03:45:28.816Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/flexbox.html</loc>
     
     <lastmod>2019-07-17T00:40:40.065Z</lastmod>
@@ -562,13 +569,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/mdresume.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -576,21 +576,7 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/mlinterview.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/fofafenqi.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/findbigfilelinux.html</loc>
+    <loc>https://geekeast.github.io/jielv.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -604,14 +590,28 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
+    <loc>https://geekeast.github.io/mlinterview.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
+    <loc>https://geekeast.github.io/findbigfilelinux.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/fofafenqi.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -625,7 +625,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/jielv.html</loc>
+    <loc>https://geekeast.github.io/project/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
