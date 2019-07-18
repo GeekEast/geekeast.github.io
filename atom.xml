@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-07-18T03:54:31.207Z</updated>
+  <updated>2019-07-18T04:11:15.237Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pitfalls for IT Interview</title>
+    <link href="https://geekeast.github.io/usaitinterview.html"/>
+    <id>https://geekeast.github.io/usaitinterview.html</id>
+    <published>2019-07-18T03:55:36.000Z</published>
+    <updated>2019-07-18T04:11:15.237Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Interview = Practice + Performance</p></blockquote><h3 id="practice刷题"><a class="markdownIt-Anchor" href="#practice刷题"></a> Practice(刷题)</h3><ul><li>Issues: many leetcode, no difference</li><li>Solution(精刷):<ul><li>Understand problems thoroughly(&gt;=30mins)<ul><li><strong>associate</strong> other problems</li><li>start from <strong>brute force</strong> solution</li></ul></li><li>Review, Summary and Association<ul><li>What <strong>algorithms</strong> of solutions</li><li><strong>related</strong> problems and <strong>difference</strong></li></ul></li><li><strong>Mark</strong> and Rewrite again.</li></ul></li></ul><h3 id="performance表现"><a class="markdownIt-Anchor" href="#performance表现"></a> Performance(表现)</h3><ul><li>Issues: feeling good, no offers</li><li>Solution:<ul><li>make the interviewer comfortable</li><li>Communication is very important as a colleague<ul><li>Ask questions and make problems clear</li><li>don’t just bury your head and no speaking</li><li>You need to perform even you saw the question before.</li></ul></li></ul></li><li>Attitude:<ul><li>Take the interviewee as your colleague.</li><li>you are doing a product, not just a problem.</li></ul></li></ul><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Interview = Practice + Performance&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;practice刷题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#practice刷题&quot;&gt;&lt;/a&gt; Practice(刷题)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Issues: many leetcode, no difference&lt;/li&gt;
+&lt;li&gt;Solution(精刷):
+&lt;ul&gt;
+&lt;li&gt;Understand problems thoroughly(&amp;gt;=30mins)
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;associate&lt;/strong&gt; other problems&lt;/li&gt;
+&lt;li&gt;start from &lt;strong&gt;brute force&lt;/strong&gt; solution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Review, Summary and Association
+&lt;ul&gt;
+&lt;li&gt;What &lt;strong&gt;algorithms&lt;/strong&gt; of solutions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;related&lt;/strong&gt; problems and &lt;strong&gt;difference&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mark&lt;/strong&gt; and Rewrite again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;performance表现&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#performance表现&quot;&gt;&lt;/a&gt; Performance(表现)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Issues: feeling good, no offers&lt;/li&gt;
+&lt;li&gt;Solution:
+&lt;ul&gt;
+&lt;li&gt;make the interviewer comfortable&lt;/li&gt;
+&lt;li&gt;Communication is very important as a colleague
+&lt;ul&gt;
+&lt;li&gt;Ask questions and make problems clear&lt;/li&gt;
+&lt;li&gt;don’t just bury your head and no speaking&lt;/li&gt;
+&lt;li&gt;You need to perform even you saw the question before.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Attitude:
+&lt;ul&gt;
+&lt;li&gt;Take the interviewee as your colleague.&lt;/li&gt;
+&lt;li&gt;you are doing a product, not just a problem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Job" scheme="https://geekeast.github.io/categories/Job/"/>
+    
+    
+      <category term="Job" scheme="https://geekeast.github.io/tags/Job/"/>
+    
+      <category term="Interview" scheme="https://geekeast.github.io/tags/Interview/"/>
+    
+  </entry>
   
   <entry>
     <title>How to prepare SDE resume in America?</title>
@@ -790,34 +859,6 @@ This case probably doesn’t occur that often but if you got an element with no 
       <category term="Slack" scheme="https://geekeast.github.io/tags/Slack/"/>
     
       <category term="Webhook" scheme="https://geekeast.github.io/tags/Webhook/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Node 发送Gmail</title>
-    <link href="https://geekeast.github.io/nodesendgmail.html"/>
-    <id>https://geekeast.github.io/nodesendgmail.html</id>
-    <published>2019-05-28T03:12:00.000Z</published>
-    <updated>2019-05-28T03:13:38.460Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="install-package"><a class="markdownIt-Anchor" href="#install-package"></a> Install Package</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add nodemailer</span><br></pre></td></tr></table></figure><h3 id="send-gmail-in-nodejs"><a class="markdownIt-Anchor" href="#send-gmail-in-nodejs"></a> Send Gmail in Node.js</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// import package</span></span><br><span class="line"><span class="keyword">const</span> nodemailer = <span class="built_in">require</span>(<span class="string">'nodemailer'</span>);</span><br><span class="line"><span class="comment">// create email sender</span></span><br><span class="line"><span class="keyword">var</span> transporter = nodemailer.createTransport(&#123;</span><br><span class="line">service: <span class="string">'gmail'</span>,</span><br><span class="line">auth: &#123;</span><br><span class="line">user: <span class="string">'example@xxx.com'</span>,</span><br><span class="line">pass: <span class="string">'*****'</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// function to send email</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">sendHtml</span>(<span class="params"> dest</span>) </span>&#123;</span><br><span class="line"><span class="keyword">const</span> html = <span class="string">'&lt;!DOCTYPE html&gt;    &lt;html&gt;    &lt;head&gt;      &lt;meta charset="utf-8"&gt;      &lt;meta name="viewport" content="width=device-width"&gt;      &lt;title&gt;Welcome&lt;/title&gt;    &lt;/head&gt;    &lt;body&gt; Hello World&lt;/body&gt;    &lt;/html&gt;'</span></span><br><span class="line"><span class="keyword">const</span> mailOptions = &#123;</span><br><span class="line"><span class="keyword">from</span>: <span class="string">'"Name" example@xxx.com'</span>, <span class="comment">// login user must equel to this user</span></span><br><span class="line">to: dest,</span><br><span class="line">subject: <span class="string">`Subject`</span>,</span><br><span class="line">text: <span class="string">''</span>,</span><br><span class="line">html: html</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// start sending</span></span><br><span class="line">transporter.sendMail(mailOptions, <span class="function"><span class="keyword">function</span>(<span class="params">error, info</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// error handling</span></span><br><span class="line"><span class="keyword">if</span> (error) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="built_in">console</span>.log(error);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Message sent: '</span> + info.response);</span><br><span class="line">&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sendHtml(<span class="string">'dest@xxx.com'</span>);</span><br></pre></td></tr></table></figure><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;install-package&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#install-package&quot;&gt;&lt;/a&gt; Install Package&lt;/h3&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yarn add nodemailer&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;send-gmail-in-nodejs&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#send-gmail-in-nodejs&quot;&gt;&lt;/a&gt; Send Gmail in Node.js&lt;/h3&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// import package&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; nodemailer = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;nodemailer&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// create email sender&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; transporter = nodemailer.createTransport(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	service: &lt;span class=&quot;string&quot;&gt;&#39;gmail&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	auth: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		user: &lt;span class=&quot;string&quot;&gt;&#39;example@xxx.com&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		pass: &lt;span class=&quot;string&quot;&gt;&#39;*****&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// function to send email&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sendHtml&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; dest&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; html = &lt;span class=&quot;string&quot;&gt;&#39;&amp;lt;!DOCTYPE html&amp;gt;    &amp;lt;html&amp;gt;    &amp;lt;head&amp;gt;      &amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;      &amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&amp;gt;      &amp;lt;title&amp;gt;Welcome&amp;lt;/title&amp;gt;    &amp;lt;/head&amp;gt;    &amp;lt;body&amp;gt; Hello World&amp;lt;/body&amp;gt;    &amp;lt;/html&amp;gt;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; mailOptions = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;&quot;Name&quot; example@xxx.com&#39;&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;// login user must equel to this user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		to: dest,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		subject: &lt;span class=&quot;string&quot;&gt;`Subject`&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		text: &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		html: html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;// start sending&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	transporter.sendMail(mailOptions, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;error, info&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// error handling&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (error) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(error);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;Message sent: &#39;&lt;/span&gt; + info.response);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sendHtml(&lt;span class=&quot;string&quot;&gt;&#39;dest@xxx.com&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Backend" scheme="https://geekeast.github.io/categories/Backend/"/>
-    
-    
-      <category term="Node.js" scheme="https://geekeast.github.io/tags/Node-js/"/>
-    
-      <category term="Gmail" scheme="https://geekeast.github.io/tags/Gmail/"/>
     
   </entry>
   
