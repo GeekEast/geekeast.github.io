@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-07-18T04:11:15.237Z</updated>
+  <updated>2019-07-23T00:03:21.376Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -17,11 +17,83 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Facebook Flux</title>
+    <link href="https://geekeast.github.io/facebookflux.html"/>
+    <id>https://geekeast.github.io/facebookflux.html</id>
+    <published>2019-07-22T23:49:11.000Z</published>
+    <updated>2019-07-23T00:03:21.376Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="main-structure"><a class="markdownIt-Anchor" href="#main-structure"></a> Main Structure</h3><ul><li>View(视图层)</li><li>Action(动作)：视图层发出的动作指令</li><li>Dispatcher(派发器): 接收Actions，执行callback</li><li>Store(数据层): 存储state</li></ul><img style="width:80%; margin:auto" src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016011503.png"><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;main-structure&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#main-structure&quot;&gt;&lt;/a&gt; Main Structure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;View(视图层)&lt;/li&gt;
+&lt;li&gt;Action(动作)：视图层发出的动作指令&lt;/li&gt;
+&lt;li&gt;Dispatcher(派发器): 接收Actions，执行callback&lt;/li&gt;
+&lt;li&gt;Store(数据层): 存储state&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img style=&quot;width:80%; margin:auto&quot; src=&quot;http://www.ruanyifeng.com/blogimg/asset/2016/bg2016011503.png&quot;&gt;
+    
+    </summary>
+    
+      <category term="Architecture" scheme="https://geekeast.github.io/categories/Architecture/"/>
+    
+    
+      <category term="Architecture" scheme="https://geekeast.github.io/tags/Architecture/"/>
+    
+      <category term="Flux" scheme="https://geekeast.github.io/tags/Flux/"/>
+    
+      <category term="FaceBook" scheme="https://geekeast.github.io/tags/FaceBook/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React Redux</title>
+    <link href="https://geekeast.github.io/react-redux.html"/>
+    <id>https://geekeast.github.io/react-redux.html</id>
+    <published>2019-07-22T04:03:59.000Z</published>
+    <updated>2019-07-22T23:49:23.076Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="what-is-redux"><a class="markdownIt-Anchor" href="#what-is-redux"></a> What is Redux?</h3><ul><li><strong>state</strong> management library</li><li>make <strong>creating</strong> complex app <strong>easier</strong></li><li>not only for React</li></ul><h3 id="react-without-redux"><a class="markdownIt-Anchor" href="#react-without-redux"></a> React without Redux</h3><ul><li>Difficult to communicate between components</li><li>No obvious code structure</li></ul><blockquote><p>Therefore, it’s difficult to write large and complex applications.</p></blockquote><h3 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h3><p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTYvMDkvcmVkdXhfdHV0b3JpYWxfcGFydF9vbmVfYmFzaWNfdXNhZ2VzLmh0bWw=" title="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html">Redux 入门教程（一）：基本用法<i class="fa fa-external-link"></i></span></p><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;what-is-redux&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#what-is-redux&quot;&gt;&lt;/a&gt; What is Redux?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;state&lt;/strong&gt; management library&lt;/li&gt;
+&lt;li&gt;make &lt;strong&gt;creating&lt;/strong&gt; complex app &lt;strong&gt;easier&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;not only for React&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;react-without-redux&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#react-without-redux&quot;&gt;&lt;/a&gt; React without Redux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Difficult to communicate between components&lt;/li&gt;
+&lt;li&gt;No obvious code structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Therefore, it’s difficult to write large and complex applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;references&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#references&quot;&gt;&lt;/a&gt; References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux 入门教程（一）：基本用法&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
+    
+      <category term="Redux" scheme="https://geekeast.github.io/tags/Redux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Pitfalls for IT Interview</title>
     <link href="https://geekeast.github.io/usaitinterview.html"/>
     <id>https://geekeast.github.io/usaitinterview.html</id>
     <published>2019-07-18T03:55:36.000Z</published>
-    <updated>2019-07-18T04:11:15.237Z</updated>
+    <updated>2019-07-18T04:12:44.834Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Interview = Practice + Performance</p></blockquote><h3 id="practice刷题"><a class="markdownIt-Anchor" href="#practice刷题"></a> Practice(刷题)</h3><ul><li>Issues: many leetcode, no difference</li><li>Solution(精刷):<ul><li>Understand problems thoroughly(&gt;=30mins)<ul><li><strong>associate</strong> other problems</li><li>start from <strong>brute force</strong> solution</li></ul></li><li>Review, Summary and Association<ul><li>What <strong>algorithms</strong> of solutions</li><li><strong>related</strong> problems and <strong>difference</strong></li></ul></li><li><strong>Mark</strong> and Rewrite again.</li></ul></li></ul><h3 id="performance表现"><a class="markdownIt-Anchor" href="#performance表现"></a> Performance(表现)</h3><ul><li>Issues: feeling good, no offers</li><li>Solution:<ul><li>make the interviewer comfortable</li><li>Communication is very important as a colleague<ul><li>Ask questions and make problems clear</li><li>don’t just bury your head and no speaking</li><li>You need to perform even you saw the question before.</li></ul></li></ul></li><li>Attitude:<ul><li>Take the interviewee as your colleague.</li><li>you are doing a product, not just a problem.</li></ul></li></ul><a id="more"></a><hr>]]></content>
     
@@ -733,132 +805,6 @@ This case probably doesn’t occur that often but if you got an element with no 
       <category term="Data Visualization" scheme="https://geekeast.github.io/tags/Data-Visualization/"/>
     
       <category term="D3.js" scheme="https://geekeast.github.io/tags/D3-js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Suppressing a repeated column value in PostgreSQL</title>
-    <link href="https://geekeast.github.io/pgpartion.html"/>
-    <id>https://geekeast.github.io/pgpartion.html</id>
-    <published>2019-05-29T06:01:59.000Z</published>
-    <updated>2019-05-29T06:11:43.654Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="backgroud"><a class="markdownIt-Anchor" href="#backgroud"></a> Backgroud:</h3><ul><li>Table I had</li></ul><table><thead><tr><th style="text-align:center">Name</th><th style="text-align:center">Project</th><th style="text-align:center">Roles</th></tr></thead><tbody><tr><td style="text-align:center">James</td><td style="text-align:center">Python</td><td style="text-align:center">Admin</td></tr><tr><td style="text-align:center">James</td><td style="text-align:center">Python</td><td style="text-align:center">Coder</td></tr><tr><td style="text-align:center">James</td><td style="text-align:center">Java</td><td style="text-align:center">Coder</td></tr></tbody></table><ul><li>The Result I Want</li></ul><table><thead><tr><th style="text-align:center">Name</th><th style="text-align:center">Project</th><th style="text-align:center">Roles</th></tr></thead><tbody><tr><td style="text-align:center"><code>James</code></td><td style="text-align:center">Python</td><td style="text-align:center"><code>Admin, Coder</code></td></tr><tr><td style="text-align:center"></td><td style="text-align:center">Java</td><td style="text-align:center">Coder</td></tr></tbody></table><h3 id="research"><a class="markdownIt-Anchor" href="#research"></a> Research</h3><ul><li>Oracle <code>Break On</code> with <code>Partition by</code></li><li>Unfortunately, Postgres doesn’t have <code>Break On</code></li></ul><h3 id="solution"><a class="markdownIt-Anchor" href="#solution"></a> Solution</h3><ul><li>Use <code>string_agg(distinct lower(xxx), ',')</code> to combime roles.</li><li>Use <code>row_number() over partition by xxx</code> to get the Row Number</li><li>Use <code>case</code> clause to remove duplicates of name based on the Row Number</li></ul><h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3><p><span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjgxMDg2ODIvc3VwcHJlc3NpbmctYS1yZXBlYXRlZC1jb2x1bW4tdmFsdWUtaW4tcG9zdGdyZXNxbA==" title="https://stackoverflow.com/questions/28108682/suppressing-a-repeated-column-value-in-postgresql">Stack Overflow<i class="fa fa-external-link"></i></span></p><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;backgroud&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#backgroud&quot;&gt;&lt;/a&gt; Backgroud:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Table I had&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Name&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Project&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Roles&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;James&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Python&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Admin&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;James&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Python&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Coder&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;James&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Java&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Coder&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;The Result I Want&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Name&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Project&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Roles&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;James&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Python&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Admin, Coder&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Java&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;Coder&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;research&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#research&quot;&gt;&lt;/a&gt; Research&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Oracle &lt;code&gt;Break On&lt;/code&gt; with &lt;code&gt;Partition by&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Unfortunately, Postgres doesn’t have &lt;code&gt;Break On&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;solution&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#solution&quot;&gt;&lt;/a&gt; Solution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Use &lt;code&gt;string_agg(distinct lower(xxx), &#39;,&#39;)&lt;/code&gt; to combime roles.&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;row_number() over partition by xxx&lt;/code&gt; to get the Row Number&lt;/li&gt;
-&lt;li&gt;Use &lt;code&gt;case&lt;/code&gt; clause to remove duplicates of name based on the Row Number&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;reference&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#reference&quot;&gt;&lt;/a&gt; Reference&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/28108682/suppressing-a-repeated-column-value-in-postgresql&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Database" scheme="https://geekeast.github.io/categories/Database/"/>
-    
-    
-      <category term="Postgres" scheme="https://geekeast.github.io/tags/Postgres/"/>
-    
-      <category term="SQL" scheme="https://geekeast.github.io/tags/SQL/"/>
-    
-      <category term="Break On" scheme="https://geekeast.github.io/tags/Break-On/"/>
-    
-      <category term="Partition By" scheme="https://geekeast.github.io/tags/Partition-By/"/>
-    
-      <category term="Remove Duplicates" scheme="https://geekeast.github.io/tags/Remove-Duplicates/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Node.js 发消息至Slack</title>
-    <link href="https://geekeast.github.io/slackmessage.html"/>
-    <id>https://geekeast.github.io/slackmessage.html</id>
-    <published>2019-05-28T03:13:56.000Z</published>
-    <updated>2019-05-28T03:29:01.791Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="tutorials-for-slack-webhook"><a class="markdownIt-Anchor" href="#tutorials-for-slack-webhook"></a> <span class="exturl" data-url="aHR0cHM6Ly9hcGkuc2xhY2suY29tL2luY29taW5nLXdlYmhvb2tz" title="https://api.slack.com/incoming-webhooks">Tutorials for Slack Webhook<i class="fa fa-external-link"></i></span></h2><h3 id="install-packages"><a class="markdownIt-Anchor" href="#install-packages"></a> Install Packages</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add request</span><br></pre></td></tr></table></figure><h3 id="send-message-to-slack-channel"><a class="markdownIt-Anchor" href="#send-message-to-slack-channel"></a> Send message to Slack Channel</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">'request'</span>);</span><br><span class="line"><span class="keyword">const</span> options = &#123;</span><br><span class="line">url: <span class="string">'https://hooks.slack.com/services/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'</span>,</span><br><span class="line">method: <span class="string">'POST'</span>,</span><br><span class="line">headers: &#123;</span><br><span class="line">    <span class="string">'Content-type'</span>: <span class="string">'application/json'</span></span><br><span class="line">  &#125;,</span><br><span class="line">body: <span class="built_in">JSON</span>.stringify(&#123;</span><br><span class="line">    text: <span class="string">'hello'</span>,</span><br><span class="line">    mrkdwn: <span class="literal">true</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callback</span>(<span class="params">error, response, body</span>) </span>&#123;</span><br><span class="line"><span class="keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="number">200</span>) &#123;</span><br><span class="line"><span class="built_in">console</span>.log(body);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">request(options, callback);</span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;tutorials-for-slack-webhook&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tutorials-for-slack-webhook&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://api.slack.com/incoming-webhooks&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tutorials for Slack Webhook&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;install-packages&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#install-packages&quot;&gt;&lt;/a&gt; Install Packages&lt;/h3&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;yarn add request&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;send-message-to-slack-channel&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#send-message-to-slack-channel&quot;&gt;&lt;/a&gt; Send message to Slack Channel&lt;/h3&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; request = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;request&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; options = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	url: &lt;span class=&quot;string&quot;&gt;&#39;https://hooks.slack.com/services/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&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	method: &lt;span class=&quot;string&quot;&gt;&#39;POST&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	headers: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&#39;Content-type&#39;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;application/json&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	body: &lt;span class=&quot;built_in&quot;&gt;JSON&lt;/span&gt;.stringify(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    text: &lt;span class=&quot;string&quot;&gt;&#39;hello&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    mrkdwn: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;callback&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;error, response, body&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!error &amp;amp;&amp;amp; response.statusCode == &lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(body);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;request(options, callback);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Backend" scheme="https://geekeast.github.io/categories/Backend/"/>
-    
-    
-      <category term="Node.js" scheme="https://geekeast.github.io/tags/Node-js/"/>
-    
-      <category term="Slack" scheme="https://geekeast.github.io/tags/Slack/"/>
-    
-      <category term="Webhook" scheme="https://geekeast.github.io/tags/Webhook/"/>
     
   </entry>
   
