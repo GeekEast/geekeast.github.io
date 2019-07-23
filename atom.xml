@@ -54,71 +54,13 @@
     <link href="https://geekeast.github.io/react-redux.html"/>
     <id>https://geekeast.github.io/react-redux.html</id>
     <published>2019-07-22T04:03:59.000Z</published>
-    <updated>2019-07-23T01:59:05.568Z</updated>
+    <updated>2019-07-23T02:01:24.030Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="what-is-redux"><a class="markdownIt-Anchor" href="#what-is-redux"></a> What is Redux?</h3><ul><li><strong>state</strong> management library</li><li>make <strong>creating</strong> complex app <strong>easier</strong></li><li>not only for React</li></ul><h3 id="react-without-redux"><a class="markdownIt-Anchor" href="#react-without-redux"></a> React without Redux</h3><ul><li>Difficult to communicate between components</li><li>No obvious code structure</li></ul><blockquote><p>Therefore, it’s difficult to write large and complex applications.</p></blockquote><h3 id="when-to-use-redux"><a class="markdownIt-Anchor" href="#when-to-use-redux"></a> When to use Redux</h3><ul><li>Different users have different ways to use.</li><li>Colloboration between users.</li><li>Intense commnunication wtih servers or with websocket.</li><li>View need to get data from multiple sources.</li></ul><blockquote><p>Summaruy: Interaction Intense, Multiple Data Sources.</p></blockquote><h3 id="main-structure"><a class="markdownIt-Anchor" href="#main-structure"></a> Main Structure</h3><ol><li><strong>&quot;What happened in the view?&quot;</strong></li><li><strong>&quot;How to send actions to store?&quot;</strong></li><li><strong>&quot;How to update the store in response to actions?&quot;</strong></li></ol><ul><li><strong>Actions</strong>: payloads send from view to store.</li><li><code>dispatch()</code>: function to send action from view to store</li><li><strong>Reducers</strong>: specify how state changes in response to actions sent to the store. Reducer review <code>current state</code> and <code>action</code> as parameters.</li><li><strong>Store</strong>: hold state; return state <code>getState()</code>; update state <code>dispatch(action)</code>, register listener <code>subscribe(listener)</code></li></ul><h3 id="question"><a class="markdownIt-Anchor" href="#question"></a> Question</h3><ul><li><strong>How the redux match between reducer and action?</strong><ul><li>It happens internal within the store.</li><li>All the reducers will check the action type (<strong>Iteration</strong>)</li></ul></li><li><strong>Can we deal with same type of actions in different reducers?</strong><ul><li>Sure!</li><li><strong>All</strong> these reducers will be triggerred when the action come.</li></ul></li><li><strong>Why we need use action creator?</strong><ul><li>The reason is like whey you use decorator or wrapper function.</li><li><strong>Reason one</strong>: trigger in the future.</li><li><strong>Reason two</strong>: pass external parameters</li></ul></li></ul><h3 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h3><table><thead><tr><th>Name</th><th>What</th><th>Where</th><th>Analogy</th><th>Example</th></tr></thead><tbody><tr><td><strong>Action</strong></td><td>Payloads send from view to store.</td><td>View</td><td>HTTP Post Body</td><td><code>{ type: 'SONG_SELECTED', payload: &quot;Hello world&quot; }</code></td></tr><tr><td><strong>Action Creator</strong></td><td>Function to generate actions</td><td>View</td><td>Wrapper / <strong>Decorator</strong></td><td><code>(song) =&gt; {type:'SONG_SELECTED', payload: song}</code></td></tr><tr><td><code>dispatch()</code></td><td>Function that sends actions to store</td><td>View</td><td>gmail()</td><td><code>dispatch(action)</code></td></tr><tr><td><strong>State</strong></td><td>Data needs to be centralized</td><td>Store</td><td>Static Variable in Java</td><td></td></tr><tr><td><strong>Reducer</strong></td><td>Function to update state according to action</td><td>Store</td><td>Setter method in Java</td><td><code>(selectSong = null, action) =&gt; {if (action.type === 'SONG_SELECTED') return action.payload;} return selectedSong</code></td></tr><tr><td><strong>Store</strong></td><td>The place to store state and reducer</td><td>Global</td><td>Bank</td><td><code>createStore(combinedReducers)</code></td></tr></tbody></table><h3 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h3><p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTYvMDkvcmVkdXhfdHV0b3JpYWxfcGFydF9vbmVfYmFzaWNfdXNhZ2VzLmh0bWw=" title="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html">Redux 入门教程（一）：基本用法<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvZ2V0dGluZy1zdGFydGVkLXdpdGgtcmVkdXg=" title="https://egghead.io/courses/getting-started-with-redux">Redux Basics<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvc3RhcnQtbGVhcm5pbmctcmVhY3Q=" title="https://egghead.io/courses/start-learning-react">Redux Advanced<i class="fa fa-external-link"></i></span></p><a id="more"></a><hr>]]></content>
+    <content type="html"><![CDATA[<h3 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h3><table><thead><tr><th>Name</th><th>What</th><th>Where</th><th>Analogy</th><th>Example</th></tr></thead><tbody><tr><td><strong>Action</strong></td><td>Payloads send from view to store.</td><td>View</td><td>HTTP Post Body</td><td><code>{ type: 'SONG_SELECTED', payload: &quot;Hello world&quot; }</code></td></tr><tr><td><strong>Action Creator</strong></td><td>Function to generate actions</td><td>View</td><td>Wrapper / <strong>Decorator</strong></td><td><code>(song) =&gt; {type:'SONG_SELECTED', payload: song}</code></td></tr><tr><td><code>dispatch()</code></td><td>Function that sends actions to store</td><td>View</td><td>gmail()</td><td><code>dispatch(action)</code></td></tr><tr><td><strong>State</strong></td><td>Data needs to be centralized</td><td>Store</td><td>Static Variable in Java</td><td></td></tr><tr><td><strong>Reducer</strong></td><td>Function to update state according to action</td><td>Store</td><td>Setter method in Java</td><td><code>(selectSong = null, action) =&gt; {if (action.type === 'SONG_SELECTED') return action.payload;} return selectedSong</code></td></tr><tr><td><strong>Store</strong></td><td>The place to store state and reducer</td><td>Global</td><td>Bank</td><td><code>createStore(combinedReducers)</code></td></tr></tbody></table> <a id="more"></a><h3 id="what-is-redux"><a class="markdownIt-Anchor" href="#what-is-redux"></a> What is Redux?</h3><ul><li><strong>state</strong> management library</li><li>make <strong>creating</strong> complex app <strong>easier</strong></li><li>not only for React</li></ul><h3 id="react-without-redux"><a class="markdownIt-Anchor" href="#react-without-redux"></a> React without Redux</h3><ul><li>Difficult to communicate between components</li><li>No obvious code structure</li></ul><blockquote><p>Therefore, it’s difficult to write large and complex applications.</p></blockquote><h3 id="when-to-use-redux"><a class="markdownIt-Anchor" href="#when-to-use-redux"></a> When to use Redux</h3><ul><li>Different users have different ways to use.</li><li>Colloboration between users.</li><li>Intense commnunication wtih servers or with websocket.</li><li>View need to get data from multiple sources.</li></ul><blockquote><p>Summaruy: Interaction Intense, Multiple Data Sources.</p></blockquote><h3 id="main-structure"><a class="markdownIt-Anchor" href="#main-structure"></a> Main Structure</h3><ol><li><strong>&quot;What happened in the view?&quot;</strong></li><li><strong>&quot;How to send actions to store?&quot;</strong></li><li><strong>&quot;How to update the store in response to actions?&quot;</strong></li></ol><ul><li><strong>Actions</strong>: payloads send from view to store.</li><li><code>dispatch()</code>: function to send action from view to store</li><li><strong>Reducers</strong>: specify how state changes in response to actions sent to the store. Reducer review <code>current state</code> and <code>action</code> as parameters.</li><li><strong>Store</strong>: hold state; return state <code>getState()</code>; update state <code>dispatch(action)</code>, register listener <code>subscribe(listener)</code></li></ul><h3 id="question"><a class="markdownIt-Anchor" href="#question"></a> Question</h3><ul><li><strong>How the redux match between reducer and action?</strong><ul><li>It happens internal within the store.</li><li>All the reducers will check the action type (<strong>Iteration</strong>)</li></ul></li><li><strong>Can we deal with same type of actions in different reducers?</strong><ul><li>Sure!</li><li><strong>All</strong> these reducers will be triggerred when the action come.</li></ul></li><li><strong>Why we need use action creator?</strong><ul><li>The reason is like whey you use decorator or wrapper function.</li><li><strong>Reason one</strong>: trigger in the future.</li><li><strong>Reason two</strong>: pass external parameters</li></ul></li></ul><h3 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h3><p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTYvMDkvcmVkdXhfdHV0b3JpYWxfcGFydF9vbmVfYmFzaWNfdXNhZ2VzLmh0bWw=" title="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html">Redux 入门教程（一）：基本用法<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvZ2V0dGluZy1zdGFydGVkLXdpdGgtcmVkdXg=" title="https://egghead.io/courses/getting-started-with-redux">Redux Basics<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvc3RhcnQtbGVhcm5pbmctcmVhY3Q=" title="https://egghead.io/courses/start-learning-react">Redux Advanced<i class="fa fa-external-link"></i></span></p><hr>]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;what-is-redux&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#what-is-redux&quot;&gt;&lt;/a&gt; What is Redux?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;state&lt;/strong&gt; management library&lt;/li&gt;
-&lt;li&gt;make &lt;strong&gt;creating&lt;/strong&gt; complex app &lt;strong&gt;easier&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;not only for React&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;react-without-redux&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#react-without-redux&quot;&gt;&lt;/a&gt; React without Redux&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Difficult to communicate between components&lt;/li&gt;
-&lt;li&gt;No obvious code structure&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Therefore, it’s difficult to write large and complex applications.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;when-to-use-redux&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#when-to-use-redux&quot;&gt;&lt;/a&gt; When to use Redux&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Different users have different ways to use.&lt;/li&gt;
-&lt;li&gt;Colloboration between users.&lt;/li&gt;
-&lt;li&gt;Intense commnunication wtih servers or with websocket.&lt;/li&gt;
-&lt;li&gt;View need to get data from multiple sources.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Summaruy: Interaction Intense, Multiple Data Sources.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;main-structure&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#main-structure&quot;&gt;&lt;/a&gt; Main Structure&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;&amp;quot;What happened in the view?&amp;quot;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&amp;quot;How to send actions to store?&amp;quot;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&amp;quot;How to update the store in response to actions?&amp;quot;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Actions&lt;/strong&gt;: payloads send from view to store.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dispatch()&lt;/code&gt;: function to send action from view to store&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reducers&lt;/strong&gt;: specify how state changes in response to actions sent to the store. Reducer review &lt;code&gt;current state&lt;/code&gt; and &lt;code&gt;action&lt;/code&gt; as parameters.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Store&lt;/strong&gt;: hold state; return state &lt;code&gt;getState()&lt;/code&gt;; update state &lt;code&gt;dispatch(action)&lt;/code&gt;, register listener &lt;code&gt;subscribe(listener)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;question&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#question&quot;&gt;&lt;/a&gt; Question&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;How the redux match between reducer and action?&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;It happens internal within the store.&lt;/li&gt;
-&lt;li&gt;All the reducers will check the action type (&lt;strong&gt;Iteration&lt;/strong&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Can we deal with same type of actions in different reducers?&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Sure!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;All&lt;/strong&gt; these reducers will be triggerred when the action come.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Why we need use action creator?&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;The reason is like whey you use decorator or wrapper function.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reason one&lt;/strong&gt;: trigger in the future.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reason two&lt;/strong&gt;: pass external parameters&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;summary&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#summary&quot;&gt;&lt;/a&gt; Summary&lt;/h3&gt;
+      &lt;h3 id=&quot;summary&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#summary&quot;&gt;&lt;/a&gt; Summary&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -174,10 +116,6 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&quot;references&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#references&quot;&gt;&lt;/a&gt; References&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux 入门教程（一）：基本用法&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://egghead.io/courses/getting-started-with-redux&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux Basics&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://egghead.io/courses/start-learning-react&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux Advanced&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     

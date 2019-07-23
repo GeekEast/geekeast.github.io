@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="What is Redux?  state management library make creating complex app easier not only for React   React without Redux  Difficult to communicate between components No obvious code structure   Therefore,">
+  <meta name="description" content="Summary    Name What Where Analogy Example     Action Payloads send from view to store. View HTTP Post Body { type: &apos;SONG_SELECTED&apos;, payload: &amp;quot;Hello world&amp;quot; }   Action Creator Function to ge">
 <meta name="keywords" content="React,Redux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React Redux">
 <meta property="og:url" content="https://geekeast.github.io/react-redux.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="What is Redux?  state management library make creating complex app easier not only for React   React without Redux  Difficult to communicate between components No obvious code structure   Therefore,">
+<meta property="og:description" content="Summary    Name What Where Analogy Example     Action Payloads send from view to store. View HTTP Post Body { type: &apos;SONG_SELECTED&apos;, payload: &amp;quot;Hello world&amp;quot; }   Action Creator Function to ge">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-23T01:59:05.568Z">
+<meta property="og:updated_time" content="2019-07-23T02:01:24.030Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Redux">
-<meta name="twitter:description" content="What is Redux?  state management library make creating complex app easier not only for React   React without Redux  Difficult to communicate between components No obvious code structure   Therefore,">
+<meta name="twitter:description" content="Summary    Name What Where Analogy Example     Action Payloads send from view to store. View HTTP Post Body { type: &apos;SONG_SELECTED&apos;, payload: &amp;quot;Hello world&amp;quot; }   Action Creator Function to ge">
 
 
 
@@ -436,7 +436,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-07-23 11:29:05" itemprop="dateModified" datetime="2019-07-23T11:29:05+09:30">2019-07-23</time>
+                <time title="Modified: 2019-07-23 11:31:24" itemprop="dateModified" datetime="2019-07-23T11:31:24+09:30">2019-07-23</time>
               
             
           </span>
@@ -521,7 +521,64 @@
       
 
       
-        <h3 id="what-is-redux"><a class="markdownIt-Anchor" href="#what-is-redux"></a> What is Redux?</h3>
+        <h3 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>What</th>
+<th>Where</th>
+<th>Analogy</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Action</strong></td>
+<td>Payloads send from view to store.</td>
+<td>View</td>
+<td>HTTP Post Body</td>
+<td><code>{ type: 'SONG_SELECTED', payload: &quot;Hello world&quot; }</code></td>
+</tr>
+<tr>
+<td><strong>Action Creator</strong></td>
+<td>Function to generate actions</td>
+<td>View</td>
+<td>Wrapper / <strong>Decorator</strong></td>
+<td><code>(song) =&gt; {type:'SONG_SELECTED', payload: song}</code></td>
+</tr>
+<tr>
+<td><code>dispatch()</code></td>
+<td>Function that sends actions to store</td>
+<td>View</td>
+<td>gmail()</td>
+<td><code>dispatch(action)</code></td>
+</tr>
+<tr>
+<td><strong>State</strong></td>
+<td>Data needs to be centralized</td>
+<td>Store</td>
+<td>Static Variable in Java</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Reducer</strong></td>
+<td>Function to update state according to action</td>
+<td>Store</td>
+<td>Setter method in Java</td>
+<td><code>(selectSong = null, action) =&gt; {if (action.type === 'SONG_SELECTED') return action.payload;} return selectedSong</code></td>
+</tr>
+<tr>
+<td><strong>Store</strong></td>
+<td>The place to store state and reducer</td>
+<td>Global</td>
+<td>Bank</td>
+<td><code>createStore(combinedReducers)</code></td>
+</tr>
+</tbody>
+</table>
+ <a id="more"></a>
+<h3 id="what-is-redux"><a class="markdownIt-Anchor" href="#what-is-redux"></a> What is Redux?</h3>
 <ul>
 <li><strong>state</strong> management library</li>
 <li>make <strong>creating</strong> complex app <strong>easier</strong></li>
@@ -579,67 +636,10 @@
 </ul>
 </li>
 </ul>
-<h3 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>What</th>
-<th>Where</th>
-<th>Analogy</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Action</strong></td>
-<td>Payloads send from view to store.</td>
-<td>View</td>
-<td>HTTP Post Body</td>
-<td><code>{ type: 'SONG_SELECTED', payload: &quot;Hello world&quot; }</code></td>
-</tr>
-<tr>
-<td><strong>Action Creator</strong></td>
-<td>Function to generate actions</td>
-<td>View</td>
-<td>Wrapper / <strong>Decorator</strong></td>
-<td><code>(song) =&gt; {type:'SONG_SELECTED', payload: song}</code></td>
-</tr>
-<tr>
-<td><code>dispatch()</code></td>
-<td>Function that sends actions to store</td>
-<td>View</td>
-<td>gmail()</td>
-<td><code>dispatch(action)</code></td>
-</tr>
-<tr>
-<td><strong>State</strong></td>
-<td>Data needs to be centralized</td>
-<td>Store</td>
-<td>Static Variable in Java</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Reducer</strong></td>
-<td>Function to update state according to action</td>
-<td>Store</td>
-<td>Setter method in Java</td>
-<td><code>(selectSong = null, action) =&gt; {if (action.type === 'SONG_SELECTED') return action.payload;} return selectedSong</code></td>
-</tr>
-<tr>
-<td><strong>Store</strong></td>
-<td>The place to store state and reducer</td>
-<td>Global</td>
-<td>Bank</td>
-<td><code>createStore(combinedReducers)</code></td>
-</tr>
-</tbody>
-</table>
 <h3 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h3>
 <p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTYvMDkvcmVkdXhfdHV0b3JpYWxfcGFydF9vbmVfYmFzaWNfdXNhZ2VzLmh0bWw=" title="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html">Redux 入门教程（一）：基本用法<i class="fa fa-external-link"></i></span><br>
 <span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvZ2V0dGluZy1zdGFydGVkLXdpdGgtcmVkdXg=" title="https://egghead.io/courses/getting-started-with-redux">Redux Basics<i class="fa fa-external-link"></i></span><br>
 <span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvc3RhcnQtbGVhcm5pbmctcmVhY3Q=" title="https://egghead.io/courses/start-learning-react">Redux Advanced<i class="fa fa-external-link"></i></span></p>
-<a id="more"></a>
 <hr>
 
       
@@ -677,7 +677,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/reactstatefunc.html" rel="bookmark">React 数据传递</a></div>
+      <div class="popular-posts-title"><a href="/reacstate.html" rel="bookmark">React Tricks</a></div>
       
     </li>
   
@@ -1229,7 +1229,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#what-is-redux"><span class="nav-number">1.</span> <span class="nav-text"> What is Redux?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#react-without-redux"><span class="nav-number">2.</span> <span class="nav-text"> React without Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#when-to-use-redux"><span class="nav-number">3.</span> <span class="nav-text"> When to use Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-structure"><span class="nav-number">4.</span> <span class="nav-text"> Main Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#question"><span class="nav-number">5.</span> <span class="nav-text"> Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">6.</span> <span class="nav-text"> Summary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#references"><span class="nav-number">7.</span> <span class="nav-text"> References</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">1.</span> <span class="nav-text"> Summary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#what-is-redux"><span class="nav-number">2.</span> <span class="nav-text"> What is Redux?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#react-without-redux"><span class="nav-number">3.</span> <span class="nav-text"> React without Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#when-to-use-redux"><span class="nav-number">4.</span> <span class="nav-text"> When to use Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-structure"><span class="nav-number">5.</span> <span class="nav-text"> Main Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#question"><span class="nav-number">6.</span> <span class="nav-text"> Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#references"><span class="nav-number">7.</span> <span class="nav-text"> References</span></a></li></ol></div>
             
 
           </div>
