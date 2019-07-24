@@ -119,7 +119,8 @@
 <meta property="og:description" content="Key Points    Name What Where Analogy Example     Action Payloads send from view to store. View HTTP Post Body { type: &apos;SONG_SELECTED&apos;, payload: &amp;quot;Hello world&amp;quot; }   Action Creator Function to">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/reduxarchitect.png">
-<meta property="og:updated_time" content="2019-07-24T02:25:50.275Z">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190724-163943%402x.png">
+<meta property="og:updated_time" content="2019-07-24T07:11:44.450Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Redux">
 <meta name="twitter:description" content="Key Points    Name What Where Analogy Example     Action Payloads send from view to store. View HTTP Post Body { type: &apos;SONG_SELECTED&apos;, payload: &amp;quot;Hello world&amp;quot; }   Action Creator Function to">
@@ -430,7 +431,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-07-24 11:55:50" itemprop="dateModified" datetime="2019-07-24T11:55:50+09:30">2019-07-24</time>
+                <time title="Modified: 2019-07-24 16:41:44" itemprop="dateModified" datetime="2019-07-24T16:41:44+09:30">2019-07-24</time>
               
             
           </span>
@@ -481,7 +482,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">3.2k</span>
+                <span title="Symbols count in article">3.4k</span>
               
 
               
@@ -580,6 +581,8 @@
 </table>
 <h3 id="architecture"><a class="markdownIt-Anchor" href="#architecture"></a> Architecture</h3>
 <img style="width:100%; margin:auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/reduxarchitect.png">
+<h3 id="essence"><a class="markdownIt-Anchor" href="#essence"></a> Essence</h3>
+<img style="width:100%; margin:auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190724-163943%402x.png">
  <a id="more"></a>
 <h3 id="when-to-use-redux"><a class="markdownIt-Anchor" href="#when-to-use-redux"></a> When to use Redux</h3>
 <ul>
@@ -628,6 +631,13 @@
 <ul>
 <li>Usage of state and the state itself is similar to <code>many-to-one</code> relationship.</li>
 <li>Reducer is used to reduce manipulation to update state.</li>
+</ul>
+</li>
+<li><strong>What is difference bewtween <code>ownProps</code> and <code>ReduxProps</code>?</strong>
+<ul>
+<li><code>ownProps</code> is props passed from <code>parent components</code>.</li>
+<li><code>ReduxProps</code> is props passed from <code>redux</code>.</li>
+<li><code>ownProps</code> is used to pass <code>normal</code> props to <code>mapStateToProps</code> function</li>
 </ul>
 </li>
 </ul>
@@ -1238,6 +1248,10 @@
                     <span class="exturl" data-url="aHR0cHM6Ly9nZXRib290c3RyYXAuY29tL2RvY3MvNC4xL2NvbnRlbnQvdGFibGVzLw==" title="https://getbootstrap.com/docs/4.1/content/tables/">Bootstrap</span>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <span class="exturl" data-url="aHR0cHM6Ly93d3cudHdpdGNoLnR2Lw==" title="https://www.twitch.tv/">Twitch TV</span>
+                  </li>
+                
               </ul>
             </div>
           
@@ -1261,7 +1275,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#key-points"><span class="nav-number">1.</span> <span class="nav-text"> Key Points</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#architecture"><span class="nav-number">2.</span> <span class="nav-text"> Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#when-to-use-redux"><span class="nav-number">3.</span> <span class="nav-text"> When to use Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-structure"><span class="nav-number">4.</span> <span class="nav-text"> Main Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#question"><span class="nav-number">5.</span> <span class="nav-text"> Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#important"><span class="nav-number">6.</span> <span class="nav-text"> Important</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#reducers"><span class="nav-number">6.1.</span> <span class="nav-text"> Reducers</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#action-creators"><span class="nav-number">6.2.</span> <span class="nav-text"> Action creators</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#references"><span class="nav-number">7.</span> <span class="nav-text"> References</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo"><span class="nav-number">8.</span> <span class="nav-text"> Demo</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#key-points"><span class="nav-number">1.</span> <span class="nav-text"> Key Points</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#architecture"><span class="nav-number">2.</span> <span class="nav-text"> Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#essence"><span class="nav-number">3.</span> <span class="nav-text"> Essence</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#when-to-use-redux"><span class="nav-number">4.</span> <span class="nav-text"> When to use Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-structure"><span class="nav-number">5.</span> <span class="nav-text"> Main Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#question"><span class="nav-number">6.</span> <span class="nav-text"> Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#important"><span class="nav-number">7.</span> <span class="nav-text"> Important</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#reducers"><span class="nav-number">7.1.</span> <span class="nav-text"> Reducers</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#action-creators"><span class="nav-number">7.2.</span> <span class="nav-text"> Action creators</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#references"><span class="nav-number">8.</span> <span class="nav-text"> References</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo"><span class="nav-number">9.</span> <span class="nav-text"> Demo</span></a></li></ol></div>
             
 
           </div>
