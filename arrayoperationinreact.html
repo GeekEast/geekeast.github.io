@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Bad Practice Good Practice     state.pop() state.filter(..)   state.push(&apos;a&apos;) [...state,&apos;hi&apos;]   state[0]=&apos;hi&apos; state.map(...)   state.name=&apos;Sam&apos; {...state,name:&apos;Sam&apos;}   delete state.name {...state,a">
-<meta name="keywords" content="React">
+  <meta name="description" content="Array    Manipulation Bad Practice Good Practice     Add state.push(&apos;a&apos;) [...state,&apos;hi&apos;]   Remove state.pop() state.filter(..)   Update state[0]=&apos;hi&apos; state.map(...)     Object    Manipulation Bad Pra">
+<meta name="keywords" content="React,Array,Object">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Manipulate Array in React">
+<meta property="og:title" content="RUD in React">
 <meta property="og:url" content="https://geekeast.github.io/arrayoperationinreact.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Bad Practice Good Practice     state.pop() state.filter(..)   state.push(&apos;a&apos;) [...state,&apos;hi&apos;]   state[0]=&apos;hi&apos; state.map(...)   state.name=&apos;Sam&apos; {...state,name:&apos;Sam&apos;}   delete state.name {...state,a">
+<meta property="og:description" content="Array    Manipulation Bad Practice Good Practice     Add state.push(&apos;a&apos;) [...state,&apos;hi&apos;]   Remove state.pop() state.filter(..)   Update state[0]=&apos;hi&apos; state.map(...)     Object    Manipulation Bad Pra">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-24T01:26:51.572Z">
+<meta property="og:updated_time" content="2019-07-24T01:31:17.316Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Manipulate Array in React">
-<meta name="twitter:description" content="Bad Practice Good Practice     state.pop() state.filter(..)   state.push(&apos;a&apos;) [...state,&apos;hi&apos;]   state[0]=&apos;hi&apos; state.map(...)   state.name=&apos;Sam&apos; {...state,name:&apos;Sam&apos;}   delete state.name {...state,a">
+<meta name="twitter:title" content="RUD in React">
+<meta name="twitter:description" content="Array    Manipulation Bad Practice Good Practice     Add state.push(&apos;a&apos;) [...state,&apos;hi&apos;]   Remove state.pop() state.filter(..)   Update state[0]=&apos;hi&apos; state.map(...)     Object    Manipulation Bad Pra">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Manipulate Array in React | 雪中印</title>
+  <title>RUD in React | 雪中印</title>
   
 
 
@@ -389,7 +389,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Manipulate Array in React
+          <h2 class="post-title" itemprop="name headline">RUD in React
 
               
             
@@ -413,7 +413,7 @@
                 
               
 
-              <time title="Created: 2019-07-24 10:52:02 / Modified: 10:56:51" itemprop="dateCreated datePublished" datetime="2019-07-24T10:52:02+09:30">2019-07-24</time>
+              <time title="Created: 2019-07-24 10:52:02 / Modified: 11:01:17" itemprop="dateCreated datePublished" datetime="2019-07-24T10:52:02+09:30">2019-07-24</time>
             
 
             
@@ -469,7 +469,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">219</span>
+                <span title="Symbols count in article">364</span>
               
 
               
@@ -503,33 +503,57 @@
       
 
       
-        <table>
+        <h3 id="array"><a class="markdownIt-Anchor" href="#array"></a> Array</h3>
+<table>
 <thead>
 <tr>
+<th style="text-align:center">Manipulation</th>
 <th style="text-align:center">Bad Practice</th>
 <th style="text-align:center">Good Practice</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>state.pop()</code></td>
-<td style="text-align:center"><code>state.filter(..)</code></td>
-</tr>
-<tr>
+<td style="text-align:center"><code>Add</code></td>
 <td style="text-align:center"><code>state.push('a')</code></td>
 <td style="text-align:center"><code>[...state,'hi']</code></td>
 </tr>
 <tr>
+<td style="text-align:center"><code>Remove</code></td>
+<td style="text-align:center"><code>state.pop()</code></td>
+<td style="text-align:center"><code>state.filter(..)</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>Update</code></td>
 <td style="text-align:center"><code>state[0]='hi'</code></td>
 <td style="text-align:center"><code>state.map(...)</code></td>
 </tr>
+</tbody>
+</table>
+<h3 id="object"><a class="markdownIt-Anchor" href="#object"></a> Object</h3>
+<table>
+<thead>
 <tr>
-<td style="text-align:center"><code>state.name='Sam'</code></td>
-<td style="text-align:center"><code>{...state,name:'Sam'}</code></td>
+<th style="text-align:center">Manipulation</th>
+<th style="text-align:center">Bad Practice</th>
+<th style="text-align:center">Good Practice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>Add</code></td>
+<td style="text-align:center"><code>state.age=30</code></td>
+<td style="text-align:center"><code>{...state,age:30}</code></td>
 </tr>
 <tr>
+<td style="text-align:center"><code>Remove</code></td>
 <td style="text-align:center"><code>delete state.name</code></td>
 <td style="text-align:center"><code>{...state,age:undefined}</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><code>Update</code></td>
+<td style="text-align:center"><code>state.name='Sam'</code></td>
+<td style="text-align:center"><code>{...state,name:'Sam'}</code></td>
 </tr>
 </tbody>
 </table>
@@ -550,7 +574,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/reacttutorial.html" rel="bookmark">React Tutorial</a></div>
+      <div class="popular-posts-title"><a href="/reactuilibrary.html" rel="bookmark">React UI Library</a></div>
       
     </li>
   
@@ -605,6 +629,10 @@
         <div class="post-tags">
           
             <a href="/tags/React/" rel="tag"># React</a>
+          
+            <a href="/tags/Array/" rel="tag"># Array</a>
+          
+            <a href="/tags/Object/" rel="tag"># Object</a>
           
         </div>
       
@@ -682,8 +710,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -986,7 +1023,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">102</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">104</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -1115,6 +1156,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#array"><span class="nav-number">1.</span> <span class="nav-text"> Array</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#object"><span class="nav-number">2.</span> <span class="nav-text"> Object</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
