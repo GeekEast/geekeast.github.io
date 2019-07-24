@@ -119,7 +119,7 @@
 <meta property="og:description" content="Key Points    Name What Where Analogy Example     Action Payloads send from view to store. View HTTP Post Body { type: &apos;SONG_SELECTED&apos;, payload: &amp;quot;Hello world&amp;quot; }   Action Creator Function to">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/reduxarchitect.png">
-<meta property="og:updated_time" content="2019-07-24T02:07:43.992Z">
+<meta property="og:updated_time" content="2019-07-24T02:25:50.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Redux">
 <meta name="twitter:description" content="Key Points    Name What Where Analogy Example     Action Payloads send from view to store. View HTTP Post Body { type: &apos;SONG_SELECTED&apos;, payload: &amp;quot;Hello world&amp;quot; }   Action Creator Function to">
@@ -430,7 +430,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-07-24 11:37:43" itemprop="dateModified" datetime="2019-07-24T11:37:43+09:30">2019-07-24</time>
+                <time title="Modified: 2019-07-24 11:55:50" itemprop="dateModified" datetime="2019-07-24T11:55:50+09:30">2019-07-24</time>
               
             
           </span>
@@ -481,7 +481,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">2.4k</span>
+                <span title="Symbols count in article">3.2k</span>
               
 
               
@@ -630,6 +630,19 @@
 <li>Reducer is used to reduce manipulation to update state.</li>
 </ul>
 </li>
+</ul>
+<h3 id="important"><a class="markdownIt-Anchor" href="#important"></a> Important</h3>
+<h4 id="reducers"><a class="markdownIt-Anchor" href="#reducers"></a> Reducers</h4>
+<ul>
+<li>The key of reducers in the combinedReducers is actually the name of one state.</li>
+<li>The key of reducers must be the same with the return name in the specifc reducer.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mark</span></span><br><span class="line"><span class="keyword">const</span> userReducers = <span class="function">(<span class="params">users = [], action</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="keyword">switch</span> (action.type) &#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="string">'FETCH_USER'</span>:</span><br><span class="line">			<span class="keyword">return</span> [ ...users, action.payload ];</span><br><span class="line">		<span class="keyword">default</span>:</span><br><span class="line">            <span class="comment">// mark</span></span><br><span class="line">			<span class="keyword">return</span> users;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> combineReducers(&#123;</span><br><span class="line">    <span class="comment">// mark</span></span><br><span class="line">	users: userReducers</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="action-creators"><a class="markdownIt-Anchor" href="#action-creators"></a> Action creators</h4>
+<ul>
+<li>Case: when you pass { actionCreator } to connect()</li>
+<li>you need call it actionCreator by <code>this.props.actionCreator()</code> rather than <code>actionCreator()</code></li>
+<li>Reason: because you doesn’t dispatch the action creator in <code>actionCreator()</code> way. But the <code>this.props.actionCreator</code> is will be automatically <strong>dispatched</strong> by connect function</li>
 </ul>
 <h3 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h3>
 <p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTYvMDkvcmVkdXhfdHV0b3JpYWxfcGFydF9vbmVfYmFzaWNfdXNhZ2VzLmh0bWw=" title="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html">阮一峰：Redux 入门教程（一）：基本用法<i class="fa fa-external-link"></i></span><br>
@@ -1248,7 +1261,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#key-points"><span class="nav-number">1.</span> <span class="nav-text"> Key Points</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#architecture"><span class="nav-number">2.</span> <span class="nav-text"> Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#when-to-use-redux"><span class="nav-number">3.</span> <span class="nav-text"> When to use Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-structure"><span class="nav-number">4.</span> <span class="nav-text"> Main Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#question"><span class="nav-number">5.</span> <span class="nav-text"> Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#references"><span class="nav-number">6.</span> <span class="nav-text"> References</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo"><span class="nav-number">7.</span> <span class="nav-text"> Demo</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#key-points"><span class="nav-number">1.</span> <span class="nav-text"> Key Points</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#architecture"><span class="nav-number">2.</span> <span class="nav-text"> Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#when-to-use-redux"><span class="nav-number">3.</span> <span class="nav-text"> When to use Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-structure"><span class="nav-number">4.</span> <span class="nav-text"> Main Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#question"><span class="nav-number">5.</span> <span class="nav-text"> Question</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#important"><span class="nav-number">6.</span> <span class="nav-text"> Important</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#reducers"><span class="nav-number">6.1.</span> <span class="nav-text"> Reducers</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#action-creators"><span class="nav-number">6.2.</span> <span class="nav-text"> Action creators</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#references"><span class="nav-number">7.</span> <span class="nav-text"> References</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo"><span class="nav-number">8.</span> <span class="nav-text"> Demo</span></a></li></ol></div>
             
 
           </div>
