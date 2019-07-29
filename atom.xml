@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-07-24T01:31:17.316Z</updated>
+  <updated>2019-07-29T02:19:55.374Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://geekeast.github.io/arrayoperationinreact.html"/>
     <id>https://geekeast.github.io/arrayoperationinreact.html</id>
     <published>2019-07-24T01:22:02.000Z</published>
-    <updated>2019-07-24T01:31:17.316Z</updated>
+    <updated>2019-07-29T02:19:55.374Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="array"><a class="markdownIt-Anchor" href="#array"></a> Array</h3><table><thead><tr><th style="text-align:center">Manipulation</th><th style="text-align:center">Bad Practice</th><th style="text-align:center">Good Practice</th></tr></thead><tbody><tr><td style="text-align:center"><code>Add</code></td><td style="text-align:center"><code>state.push('a')</code></td><td style="text-align:center"><code>[...state,'hi']</code></td></tr><tr><td style="text-align:center"><code>Remove</code></td><td style="text-align:center"><code>state.pop()</code></td><td style="text-align:center"><code>state.filter(..)</code></td></tr><tr><td style="text-align:center"><code>Update</code></td><td style="text-align:center"><code>state[0]='hi'</code></td><td style="text-align:center"><code>state.map(...)</code></td></tr></tbody></table><h3 id="object"><a class="markdownIt-Anchor" href="#object"></a> Object</h3><table><thead><tr><th style="text-align:center">Manipulation</th><th style="text-align:center">Bad Practice</th><th style="text-align:center">Good Practice</th></tr></thead><tbody><tr><td style="text-align:center"><code>Add</code></td><td style="text-align:center"><code>state.age=30</code></td><td style="text-align:center"><code>{...state,age:30}</code></td></tr><tr><td style="text-align:center"><code>Remove</code></td><td style="text-align:center"><code>delete state.name</code></td><td style="text-align:center"><code>{...state,age:undefined}</code></td></tr><tr><td style="text-align:center"><code>Update</code></td><td style="text-align:center"><code>state.name='Sam'</code></td><td style="text-align:center"><code>{...state,name:'Sam'}</code></td></tr></tbody></table><a id="more"></a><hr>]]></content>
+    <content type="html"><![CDATA[<h3 id="array"><a class="markdownIt-Anchor" href="#array"></a> Array</h3><table><thead><tr><th style="text-align:center">Manipulation</th><th style="text-align:center">Bad Practice</th><th style="text-align:center">Good Practice</th></tr></thead><tbody><tr><td style="text-align:center"><code>Add</code></td><td style="text-align:center"><code>state.push('a')</code></td><td style="text-align:center"><code>[...state,'hi']</code></td></tr><tr><td style="text-align:center"><code>Remove</code></td><td style="text-align:center"><code>state.pop()</code></td><td style="text-align:center"><code>state.filter(..)</code></td></tr><tr><td style="text-align:center"><code>Update</code></td><td style="text-align:center"><code>state[0]='hi'</code></td><td style="text-align:center"><code>state.map(...)</code></td></tr></tbody></table><h3 id="object"><a class="markdownIt-Anchor" href="#object"></a> Object</h3><table><thead><tr><th style="text-align:center">Manipulation</th><th style="text-align:center">Bad Practice</th><th style="text-align:center">Good Practice</th></tr></thead><tbody><tr><td style="text-align:center"><code>Add</code></td><td style="text-align:center"><code>state.age=30</code></td><td style="text-align:center"><code>{...state,age:30}</code></td></tr><tr><td style="text-align:center"><code>Remove</code></td><td style="text-align:center"><code>delete state.name</code></td><td style="text-align:center"><code>{...state,age:undefined}</code> <code>_.omit(state,'age')</code></td></tr><tr><td style="text-align:center"><code>Update</code></td><td style="text-align:center"><code>state.name='Sam'</code></td><td style="text-align:center"><code>{...state,name:'Sam'}</code></td></tr></tbody></table><a id="more"></a><hr>]]></content>
     
     <summary type="html">
     
@@ -72,7 +72,7 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Remove&lt;/code&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;delete state.name&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;{...state,age:undefined}&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;{...state,age:undefined}&lt;/code&gt; &lt;code&gt;_.omit(state,&#39;age&#39;)&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Update&lt;/code&gt;&lt;/td&gt;
