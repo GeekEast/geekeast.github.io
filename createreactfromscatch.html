@@ -111,16 +111,16 @@
 
 
   <meta name="description" content="Tool Description Branch     Git Version Control Repo; Husky; Boilerplate   Webpack Bundler Mode; Server; Debugger; Analyzer; Externalize   Babel Transpiler React Class; Loader; Polyfill   React Com">
-<meta name="keywords" content="React,Webpack,Babel">
+<meta name="keywords" content="CMU">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Create React App from Scratch">
+<meta property="og:title" content="雪中印">
 <meta property="og:url" content="https://geekeast.github.io/createreactfromscatch.html">
 <meta property="og:site_name" content="雪中印">
 <meta property="og:description" content="Tool Description Branch     Git Version Control Repo; Husky; Boilerplate   Webpack Bundler Mode; Server; Debugger; Analyzer; Externalize   Babel Transpiler React Class; Loader; Polyfill   React Com">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-13T06:24:41.273Z">
+<meta property="og:updated_time" content="2019-08-14T04:29:30.127Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Create React App from Scratch">
+<meta name="twitter:title" content="雪中印">
 <meta name="twitter:description" content="Tool Description Branch     Git Version Control Repo; Husky; Boilerplate   Webpack Bundler Mode; Server; Debugger; Analyzer; Externalize   Babel Transpiler React Class; Loader; Polyfill   React Com">
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Create React App from Scratch | 雪中印</title>
+  <title> | 雪中印</title>
   
 
 
@@ -389,7 +389,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Create React App from Scratch
+          <h2 class="post-title" itemprop="name headline">
 
               
             
@@ -413,32 +413,26 @@
                 
               
 
-              <time title="Created: 2019-08-13 15:53:39 / Modified: 15:54:41" itemprop="dateCreated datePublished" datetime="2019-08-13T15:53:39+09:30">2019-08-13</time>
+              <time title="Created: 2019-08-13 15:53:39" itemprop="dateCreated datePublished" datetime="2019-08-13T15:53:39+09:30">2019-08-13</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-08-14 13:59:30" itemprop="dateModified" datetime="2019-08-14T13:59:30+09:30">2019-08-14</time>
               
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -520,7 +514,7 @@
 <tr>
 <td>Webpack</td>
 <td>Bundler</td>
-<td><a href="#5">Mode</a>; <a href="#6">Server</a>; <a href="#7anal">Debugger</a>; <a href="#12">Analyzer</a>; <a href="#13">Externalize</a></td>
+<td><a href="#5">Mode</a>; <a href="#6">Server</a>; <a href="#7">Debugger</a>; <a href="#12">Analyzer</a>; <a href="#13">Externalize</a></td>
 </tr>
 <tr>
 <td>Babel</td>
@@ -554,7 +548,6 @@
 </tr>
 </tbody>
 </table>
-<a id="more"></a>
 <h3 id="1">Intialize Project</h3>
 <ul>
 <li>Create <code>react-webpack</code> folder</li>
@@ -567,7 +560,7 @@
 <ul>
 <li>Initialize <code>.git</code></li>
 </ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">"init"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">"init"</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>Create <code>react-from-scratch</code> in <code>Github</code></li>
 </ul>
@@ -636,7 +629,7 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// package.json</span><br><span class="line">"scripts": &#123;</span><br><span class="line">	"build": "webpack",</span><br><span class="line">	"dev":"webpack --watch --mode development",</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="5">Webpack Config Branching</h3>
 <ul>
-<li>Install <code>yarn add --dev web-merge</code></li>
+<li>Install <code>yarn add --dev webpack-merge</code></li>
 <li>Rename <code>webpack.config.js</code> to <code>webpack.config.base.js</code></li>
 <li>Create <code>webpack.config.prod.js</code> and <code>webpack.config.dev.js</code></li>
 <li>Config <code>webpack.config.prod.js</code></li>
@@ -787,7 +780,7 @@
 <h3 id="18">Code Industry Normalization: ESLint</h3>
 <ul>
 <li>ESLint: hint <code>potential</code> error of code before actually running it.</li>
-<li>Install <code>yarn add --dev eslint eslint-plugin-react</code></li>
+<li>Install <code>yarn add --dev eslint eslint-plugin-react@latest</code></li>
 <li>Modify <code>package.json</code></li>
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">	"build": "webpack --config webpack.config.prod.js",</span><br><span class="line">	"dev": "webpack-dev-server --open --config webpack.config.dev.js",</span><br><span class="line">	"dev:hot": "npm run dev -- --hot",</span><br><span class="line">	"test": "jest",</span><br><span class="line">	"format": "pretty-quick",</span><br><span class="line">	"lint": "eslint ./" // here</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
@@ -893,7 +886,6 @@
 <ul>
 <li>need answer</li>
 </ul>
-<hr>
 
       
 
@@ -902,39 +894,6 @@
 
     
       
-
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/reactrouterreduxstream.html" rel="bookmark">Video Streaming in React</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/amplifyreactnotemaker.html" rel="bookmark">Build React Project With Amplify - NoteMaker</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/axios.html" rel="bookmark">Asynchronous Client - Axios</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/importcssreact.html" rel="bookmark">Import Stylesheets into React</a></div>
-      
-    </li>
-  
-  </ul>
 
 
     
@@ -960,16 +919,6 @@
 
     <footer class="post-footer">
 
-      
-        <div class="post-tags">
-          
-            <a href="/tags/React/" rel="tag"># React</a>
-          
-            <a href="/tags/Webpack/" rel="tag"># Webpack</a>
-          
-            <a href="/tags/Babel/" rel="tag"># Babel</a>
-          
-        </div>
       
 
       
@@ -1370,11 +1319,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">110</span>
+                    <span class="site-state-item-count">108</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
