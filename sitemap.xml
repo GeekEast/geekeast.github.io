@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/cssselector.html</loc>
+    
+    <lastmod>2019-08-15T06:30:58.376Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/learnitbydoing.html</loc>
     
     <lastmod>2019-08-15T03:35:00.080Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://geekeast.github.io/createreactfromscatch.html</loc>
     
     <lastmod>2019-08-15T03:29:39.342Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/cssselector.html</loc>
-    
-    <lastmod>2019-08-12T00:31:48.927Z</lastmod>
     
   </url>
   
@@ -632,7 +632,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/mlinterview.html</loc>
+    <loc>https://geekeast.github.io/mdresume.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/git-credential.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -653,13 +660,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/mdresume.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/fofafenqi.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -667,14 +667,7 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/git-credential.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
+    <loc>https://geekeast.github.io/mlinterview.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -682,6 +675,13 @@
   
   <url>
     <loc>https://geekeast.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
