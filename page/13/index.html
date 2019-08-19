@@ -620,12 +620,22 @@
                 
               
 
-              <time title="Created: 2019-04-10 16:25:36 / Modified: 16:50:39" itemprop="dateCreated datePublished" datetime="2019-04-10T16:25:36+09:30">2019-04-10</time>
+              <time title="Created: 2019-04-10 16:25:36" itemprop="dateCreated datePublished" datetime="2019-04-10T16:25:36+09:30">2019-04-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-08-19 14:24:00" itemprop="dateModified" datetime="2019-08-19T14:24:00+09:30">2019-08-19</time>
               
             
           </span>
@@ -669,7 +679,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">254</span>
+                <span title="Symbols count in article">1.4k</span>
               
 
               
@@ -704,8 +714,13 @@
 
       
         
-          <h2 id="postgres-列出表名"><a class="markdownIt-Anchor" href="#postgres-列出表名"></a> postgres 列出表名</h2>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> information_schema.columns</span><br><span class="line"><span class="keyword">WHERE</span> table_schema = <span class="string">'your_schema'</span></span><br><span class="line">  <span class="keyword">AND</span> table_name   = <span class="string">'your_table'</span></span><br></pre></td></tr></table></figure>
+          <h2 id="install-postgres-on-mac"><a class="markdownIt-Anchor" href="#install-postgres-on-mac"></a> Install Postgres on Mac</h2>
+<h3 id="installation"><a class="markdownIt-Anchor" href="#installation"></a> Installation</h3>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="keyword">update</span></span><br><span class="line">brew doctor</span><br><span class="line">brew install postgresql</span><br></pre></td></tr></table></figure>
+<h3 id="initialize-db"><a class="markdownIt-Anchor" href="#initialize-db"></a> Initialize DB</h3>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">initdb /usr/local/var/postgres</span><br></pre></td></tr></table></figure>
+<h3 id="start-service"><a class="markdownIt-Anchor" href="#start-service"></a> Start Service</h3>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pg_ctl -D /usr/local/var/postgres -<span class="keyword">l</span> /usr/local/var/postgres/server.<span class="built_in">log</span> start</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1615,7 +1630,7 @@ Alfred Home Folder: `</p>
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">99</span>
+                    <span class="site-state-item-count">98</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1925,9 +1940,7 @@ Alfred Home Folder: `</p>
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">114</span>
+                    <span class="site-state-item-count">113</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
