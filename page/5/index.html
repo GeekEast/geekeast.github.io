@@ -1231,7 +1231,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-06-25 18:11:48" itemprop="dateModified" datetime="2019-06-25T18:11:48+09:30">2019-06-25</time>
+                <time title="Modified: 2019-08-21 15:48:56" itemprop="dateModified" datetime="2019-08-21T15:48:56+09:30">2019-08-21</time>
               
             
           </span>
@@ -1275,7 +1275,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">533</span>
+                <span title="Symbols count in article">544</span>
               
 
               
@@ -1312,16 +1312,16 @@
         
           <h3 id="difference"><a class="markdownIt-Anchor" href="#difference"></a> Difference</h3>
 <ul>
-<li><code>typeof</code>: only judge between string, number, boolean, object, function, symbol and  undefined.</li>
+<li><code>typeof</code>: only judge between string, number, boolean, object, function, symbol and undefined.</li>
 <li><code>instanceof</code>: can judge instance inside object, like array, but sometime not accurate.</li>
 <li><code>Object.prototype.toString.call</code>: the most <strong>accurate</strong> one.</li>
 </ul>
 <h3 id="method-1-typeof"><a class="markdownIt-Anchor" href="#method-1-typeof"></a> Method 1: typeof</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// null and array will all be judge as object</span></span><br><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(x <span class="keyword">typeof</span> object);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// null and array will all be judge as object</span></span><br><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> x); <span class="comment">// return object</span></span><br></pre></td></tr></table></figure>
 <h3 id="method-2-instanceof"><a class="markdownIt-Anchor" href="#method-2-instanceof"></a> Method 2: instanceof</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(x instance <span class="keyword">of</span> <span class="built_in">Array</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(x <span class="keyword">instanceof</span> <span class="built_in">Array</span>);</span><br></pre></td></tr></table></figure>
 <h3 id="method-3-objectprototypetostringcall"><a class="markdownIt-Anchor" href="#method-3-objectprototypetostringcall"></a> Method 3: Object.prototype.toString.call</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(x))</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = [];</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(x)[<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
