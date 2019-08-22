@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-08-21T01:54:38.529Z</updated>
+  <updated>2019-08-22T02:24:34.170Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Notes for 22-08-19</title>
+    <link href="https://geekeast.github.io/210819notes.html"/>
+    <id>https://geekeast.github.io/210819notes.html</id>
+    <published>2019-08-22T02:07:04.000Z</published>
+    <updated>2019-08-22T02:24:34.170Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="迷思"><a class="markdownIt-Anchor" href="#迷思"></a> 迷思</h2><ul><li>战略 -&gt; 架构 -&gt; 需求 -&gt; 实现</li><li>架构在前，需求在后，不断补充，不断重构</li><li>ceo负责构建战略架构及需求之间的管道，需求是架构实现的源动力</li><li>Think everything as an object and try to find its class and connects them with creative links.</li><li>Make it secure, make it scalable and make it right.</li></ul><h2 id="博客"><a class="markdownIt-Anchor" href="#博客"></a> 博客</h2><ul><li>先写github，小flow, 模块化，Summary再发到博客上面</li><li>开始重构后端API,以一种异常严肃的方式</li><li>前端的各种配置文件<code>json</code>可以作为一个博客的分类</li></ul><h2 id="oop"><a class="markdownIt-Anchor" href="#oop"></a> OOP</h2><ul><li>泛型比接口的更加宏观，接口可以作用于泛型上作为限制条件</li><li>泛型是关于<code>成员</code>变量的代数化</li></ul><h2 id="javascript"><a class="markdownIt-Anchor" href="#javascript"></a> Javascript</h2><ul><li>JS的三个部分： DOM, BOM, ECMAScript</li></ul><h2 id="vs-code"><a class="markdownIt-Anchor" href="#vs-code"></a> VS Code</h2><ul><li><code>Shift</code> + <code>Command</code> + <code>p</code> + <strong>Fold Level X</strong></li></ul><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;迷思&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#迷思&quot;&gt;&lt;/a&gt; 迷思&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;战略 -&amp;gt; 架构 -&amp;gt; 需求 -&amp;gt; 实现&lt;/li&gt;
+&lt;li&gt;架构在前，需求在后，不断补充，不断重构&lt;/li&gt;
+&lt;li&gt;ceo负责构建战略架构及需求之间的管道，需求是架构实现的源动力&lt;/li&gt;
+&lt;li&gt;Think everything as an object and try to find its class and connects them with creative links.&lt;/li&gt;
+&lt;li&gt;Make it secure, make it scalable and make it right.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;博客&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#博客&quot;&gt;&lt;/a&gt; 博客&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;先写github，小flow, 模块化，Summary再发到博客上面&lt;/li&gt;
+&lt;li&gt;开始重构后端API,以一种异常严肃的方式&lt;/li&gt;
+&lt;li&gt;前端的各种配置文件&lt;code&gt;json&lt;/code&gt;可以作为一个博客的分类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;oop&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#oop&quot;&gt;&lt;/a&gt; OOP&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;泛型比接口的更加宏观，接口可以作用于泛型上作为限制条件&lt;/li&gt;
+&lt;li&gt;泛型是关于&lt;code&gt;成员&lt;/code&gt;变量的代数化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;javascript&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#javascript&quot;&gt;&lt;/a&gt; Javascript&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;JS的三个部分： DOM, BOM, ECMAScript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;vs-code&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#vs-code&quot;&gt;&lt;/a&gt; VS Code&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Shift&lt;/code&gt; + &lt;code&gt;Command&lt;/code&gt; + &lt;code&gt;p&lt;/code&gt; + &lt;strong&gt;Fold Level X&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Daily" scheme="https://geekeast.github.io/categories/Daily/"/>
+    
+    
+      <category term="Dairy" scheme="https://geekeast.github.io/tags/Dairy/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Notes for 20-08-19</title>
     <link href="https://geekeast.github.io/200819notes.html"/>
     <id>https://geekeast.github.io/200819notes.html</id>
     <published>2019-08-20T00:07:58.000Z</published>
-    <updated>2019-08-21T01:54:38.529Z</updated>
+    <updated>2019-08-22T02:07:16.687Z</updated>
     
     <content type="html"><![CDATA[<h3 id="tcpinpoint"><a class="markdownIt-Anchor" href="#tcpinpoint"></a> Tcpinpoint</h3><ul><li>Tcpinpoint: permission &amp;&amp; portfolios 目前是在前端实现的</li><li>Tcpinpoint： git flow删除我code，仗10000000+！下次一定手动备份</li></ul><h3 id="typescript"><a class="markdownIt-Anchor" href="#typescript"></a> <span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uaW0vcG9zdC81ZDUzYTg4OTUxODgyNTdmYWQ2NzFjYmM=" title="https://juejin.im/post/5d53a8895188257fad671cbc">Typescript<i class="fa fa-external-link"></i></span></h3><ul><li>教程：既写正确的教程，也要对比错误的教程</li><li>Typescript: 接口可选属性：<code>age ?: number</code></li><li>Typescript: 接口任意属性：<code>[propName: string]: any</code></li><li>Typescript: 接口只读属性：<code>readonly id: number</code></li><li>Typescript: <code>number[]</code> vs <code>Array&lt;number&gt;</code> 两个是一样的</li><li>Typescript: 接口表示数组：<code>interface { [ index: number] : number }</code></li><li>Typescript: 接口表示函数：<code>interface { (source: string, substring: string): boolean }</code></li><li>Typescript: 方法可选参数：<code>(lastName ?: string)</code></li><li>Typescript: 类型断言: <code>(something: string| number) // &lt;string&gt;something</code></li><li>Typescript: 类型别名：<code>type name = string | number</code></li><li>Typescript: 类setter, getter <code>get name()</code> &amp; <code>set name(...)</code></li><li>Typescript: 类静态方法：<code>static isAnimal(a)</code></li><li>Typescript: 在<code>调用方法</code>时，<code>才</code>决定某些参数(输入或者返回)的类型，因此可以一个方法多种情况下使用</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getData</span>&lt;<span class="title">T</span>&gt;(<span class="params">value:T</span>):<span class="title">T</span></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="迷思"><a class="markdownIt-Anchor" href="#迷思"></a> 迷思</h3><ul><li>人生： 没有完美，只有平衡</li><li>人生：富贵险中求？ 富贵舔中求？</li></ul><hr>]]></content>
     
@@ -336,7 +384,7 @@
     <published>2019-08-06T14:13:43.000Z</published>
     <updated>2019-08-09T07:55:06.624Z</updated>
     
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -376,11 +424,11 @@
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
-    
       <category term="Bootstrap" scheme="https://geekeast.github.io/tags/Bootstrap/"/>
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
     
   </entry>
   
@@ -893,124 +941,6 @@ To be precise, the first and/ or last or the only child has to have margins (top
 &lt;p&gt;&lt;strong&gt;3. An empty element with margins&lt;/strong&gt;&lt;br&gt;
 This case probably doesn’t occur that often but if you got an element with no content, no padding, no border and no height, then the top and bottom margin will be merged into one single margin. Again, the bigger one wins.&lt;/p&gt;
 &lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
-    
-    
-      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS Selector</title>
-    <link href="https://geekeast.github.io/cssselector.html"/>
-    <id>https://geekeast.github.io/cssselector.html</id>
-    <published>2019-07-15T02:06:45.000Z</published>
-    <updated>2019-08-15T06:30:58.376Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="css-selector"><a class="markdownIt-Anchor" href="#css-selector"></a> CSS Selector</h2><table><thead><tr><th>Example</th><th>Description</th><th>Stress</th></tr></thead><tbody><tr><td><code>.btn</code></td><td>Select all elements with class=“btn”</td><td>类</td></tr><tr><td><code>#firstname</code></td><td>Selects the element with id=“firstname”</td><td>ID</td></tr><tr><td><code>*</code></td><td>Selects all elements</td><td>继承断层时应用</td></tr><tr><td><code>p</code></td><td>Selects all <code>&lt;p&gt;</code> elements</td><td>单个元素</td></tr><tr><td><code>div, p</code></td><td>any <code>&lt;div&gt;</code> elements and <code>&lt;p&gt;</code> elements</td><td>多个元素</td></tr><tr><td><code>div p</code></td><td>any <code>&lt;p&gt;</code> item that is a descendant of an <code>&lt;div&gt;</code></td><td>儿子们</td></tr><tr><td><code>div.btn</code></td><td><code>div</code> element with <code>btn</code> as class</td><td>单个元素(<strong>多个条件无空格</strong>)</td></tr><tr><td><code>div &gt; p</code></td><td>any <code>&lt;p&gt;</code> item that is a direct descendant of an <code>&lt;div&gt;</code></td><td>最亲儿子(only one)</td></tr><tr><td><code>div ~ p</code></td><td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with something in between.</td><td>弟弟们</td></tr><tr><td><code>div + p</code></td><td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with nothing in between.</td><td>最近弟弟(only one)</td></tr><tr><td><code>:hover</code></td><td>selects elements when the mouse cursor is current over them</td><td>状态</td></tr><tr><td><code>::before</code></td><td>allows you to insert content onto a page from CSS</td><td>内容</td></tr><tr><td><code>E[attr]</code></td><td><code>a[title]</code></td><td>attribute name exists</td></tr><tr><td><code>E[attr=val]</code></td><td><code>input[type=text]</code></td><td>equal</td></tr><tr><td><code>E[attr*=val]</code></td><td><code>div[class*=font]</code></td><td>attribute values contain</td></tr><tr><td><code>E[attr^=val]</code></td><td><code>div[class^=footer]</code></td><td>start with</td></tr><tr><td><code>E[attr$=val]</code></td><td><code>div[class$=font]</code></td><td>end with</td></tr></tbody></table><a id="more"></a><h2 id="css-specificity"><a class="markdownIt-Anchor" href="#css-specificity"></a> CSS Specificity</h2><h3 id="simple-case"><a class="markdownIt-Anchor" href="#simple-case"></a> Simple Case</h3><p><code>Inheritance &gt; CSS file Tags(div, p) &gt; CSS file Class &gt; CSS file Id &gt; Inline Style &gt; !Important</code></p><p><img style="display: block; width: 100%; margin-left:auto; margin-right: auto" src="https://css-tricks.com/wp-content/uploads/2018/11/cascade-07.svg"></p><h3 id="real-case"><a class="markdownIt-Anchor" href="#real-case"></a> Real Case</h3><p><span class="exturl" data-url="aHR0cHM6Ly9zcGVjaWZpY2l0eS5rZWVnYW4uc3Qv" title="https://specificity.keegan.st/">Online Calculator<i class="fa fa-external-link"></i></span></p><p><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/specificity-calculationbase.png"></p><ul><li>Element/pseudo element: div,p,:first-letter</li><li>class/psuedo-class/attibute: .col_3, ::hover, [href]</li><li>id: #nav</li><li>inline: <code>&lt;style&gt;</code><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-1.png"><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-2.png"><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-3.png"><br><strong>Update</strong>: The :not() sort-of-pseudo-class adds no specificity by itself, only what’s inside the parens is added to specificity value.<br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/uploads/2010/05/cssspecificity-calc-3v2.jpg"><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png"><br><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png"></li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;css-selector&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#css-selector&quot;&gt;&lt;/a&gt; CSS Selector&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Example&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;th&gt;Stress&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.btn&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Select all elements with class=“btn”&lt;/td&gt;
-&lt;td&gt;类&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;#firstname&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Selects the element with id=“firstname”&lt;/td&gt;
-&lt;td&gt;ID&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Selects all elements&lt;/td&gt;
-&lt;td&gt;继承断层时应用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;p&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Selects all &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
-&lt;td&gt;单个元素&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;div, p&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;any &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements and &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
-&lt;td&gt;多个元素&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;div p&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;any &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; item that is a descendant of an &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;儿子们&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;div.btn&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;div&lt;/code&gt; element with &lt;code&gt;btn&lt;/code&gt; as class&lt;/td&gt;
-&lt;td&gt;单个元素(&lt;strong&gt;多个条件无空格&lt;/strong&gt;)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;div &amp;gt; p&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;any &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; item that is a direct descendant of an &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;最亲儿子(only one)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;div ~ p&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;any &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; after an &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; with something in between.&lt;/td&gt;
-&lt;td&gt;弟弟们&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;div + p&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;any &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; after an &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; with nothing in between.&lt;/td&gt;
-&lt;td&gt;最近弟弟(only one)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;:hover&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;selects elements when the mouse cursor is current over them&lt;/td&gt;
-&lt;td&gt;状态&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;::before&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;allows you to insert content onto a page from CSS&lt;/td&gt;
-&lt;td&gt;内容&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;E[attr]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;a[title]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;attribute name exists&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;E[attr=val]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;input[type=text]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;equal&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;E[attr*=val]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;div[class*=font]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;attribute values contain&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;E[attr^=val]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;div[class^=footer]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;start with&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;E[attr$=val]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;div[class$=font]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;end with&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
     
     </summary>
     
