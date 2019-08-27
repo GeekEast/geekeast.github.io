@@ -370,646 +370,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/arrayequal.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/arrayequal.html" class="post-title-link" itemprop="url">Common Utility</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-17 20:05:33" itemprop="dateCreated datePublished" datetime="2019-06-17T20:05:33+09:30">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-06-18 15:35:43" itemprop="dateModified" datetime="2019-06-18T15:35:43+09:30">2019-06-18</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">909</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="how-to-compare-two-array-in-javasript"><a class="markdownIt-Anchor" href="#how-to-compare-two-array-in-javasript"></a> How to compare two array in Javasript</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr1 = [ <span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> ];</span><br><span class="line"><span class="keyword">const</span> arr2 = [ <span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> ];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">arrayEqual</span>(<span class="params">arr1, arr2</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> (</span><br><span class="line">		arr1.length === arr2.length &amp;&amp;</span><br><span class="line">		arr1.every(<span class="function">(<span class="params">e, i</span>) =&gt;</span> &#123;</span><br><span class="line">			<span class="keyword">return</span> e === arr2[i];</span><br><span class="line">		&#125;)</span><br><span class="line">	);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(arrayEqual(arr1, arr2));</span><br></pre></td></tr></table></figure>
-<h3 id="how-to-deep-compare-two-objects"><a class="markdownIt-Anchor" href="#how-to-deep-compare-two-objects"></a> How to deep compare two objects?</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> _ = <span class="built_in">require</span>(<span class="string">'lodash'</span>);</span><br><span class="line"><span class="comment">// https://lodash.com/docs/4.17.11#isEqual</span></span><br><span class="line">_.isEqual(obj1, obj2);</span><br></pre></td></tr></table></figure>
-<h3 id="how-to-converse-an-array-of-objects-as-hashmap"><a class="markdownIt-Anchor" href="#how-to-converse-an-array-of-objects-as-hashmap"></a> How to converse an array of objects as HashMap?</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> sample = [ &#123; <span class="attr">name</span>: <span class="string">'James'</span>, <span class="attr">id</span>: <span class="number">1</span> &#125;, &#123; <span class="attr">name</span>: <span class="string">'william'</span>, <span class="attr">id</span>: <span class="number">2</span> &#125;, &#123; <span class="attr">name</span>: <span class="string">'Jack'</span>, <span class="attr">id</span>: <span class="number">3</span> &#125; ];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">byKey</span>(<span class="params">ori, key</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">	ori.forEach(<span class="function">(<span class="params">element</span>) =&gt;</span> &#123;</span><br><span class="line">		<span class="keyword">const</span> &#123; id, ...rest &#125; = element;</span><br><span class="line">		obj[element[key]] = rest;</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> obj;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(byKey(sample, <span class="string">'id'</span>));</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/arrayequal.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/reacttutorial.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/reacttutorial.html" class="post-title-link" itemprop="url">React Tutorial</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-17 16:07:38" itemprop="dateCreated datePublished" datetime="2019-06-17T16:07:38+09:30">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-07-23 15:57:31" itemprop="dateModified" datetime="2019-07-23T15:57:31+09:30">2019-07-23</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">4k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">3 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="initialize-project"><a class="markdownIt-Anchor" href="#initialize-project"></a> Initialize Project</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. Initialize</span></span><br><span class="line">sudo npm install -g create-react-app</span><br><span class="line">create-react-app project_name</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. open the project in VS-Code</span></span><br><span class="line"><span class="built_in">cd</span> project_name &amp;&amp; code .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. Start the project locally</span></span><br><span class="line">yarn start</span><br></pre></td></tr></table></figure>
-<h3 id="functional-component"><a class="markdownIt-Anchor" href="#functional-component"></a> Functional Component</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> App = <span class="function">(<span class="params">props</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> ()</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure>
-<h3 id="class-component"><a class="markdownIt-Anchor" href="#class-component"></a> Class Component</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">    <span class="comment">// constructor 1: good place to initialize state</span></span><br><span class="line">    <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">        <span class="keyword">super</span>(props);</span><br><span class="line">        <span class="keyword">this</span>.state = &#123; <span class="attr">a</span>: a_value &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// constructor 2: good place to initialize state </span></span><br><span class="line">    state = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// after mounting the page: good place to do data-loading after mounting</span></span><br><span class="line">    componentDidMount() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// after updating the page: good place to do date loading after page updating</span></span><br><span class="line">    componentDidUpdate() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// after unmounting the page: good place to clean up unnecessary resources</span></span><br><span class="line">    componentWillUnmount() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// render the component</span></span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">        <span class="keyword">return</span> ()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/reacttutorial.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/d3tutorial.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/d3tutorial.html" class="post-title-link" itemprop="url">D3.js Tutorial</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-03 12:00:26" itemprop="dateCreated datePublished" datetime="2019-06-03T12:00:26+09:30">2019-06-03</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-06-05 16:47:51" itemprop="dateModified" datetime="2019-06-05T16:47:51+09:30">2019-06-05</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Analytics/" itemprop="url" rel="index"><span itemprop="name">Analytics</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">3.3k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">2 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3>
-<ul>
-<li>Document: Element in a web page.</li>
-<li>SVG: Scalable <a href="https://vector-conversions.com/vectorizing/raster_vs_vector.html" target="_blank" rel="noopener">Vector Graphics</a>. It defines vector-based graphics in <strong>XML</strong> format. <strong>Here “scalable” means that, if you zoom in or out on an object, it would not appear pixelated.</strong></li>
-<li>Selection: an arraqy of <strong>nodes</strong> in DOM.</li>
-</ul>
-<h3 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h3>
-<ul>
-<li>Without D3.js</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Tedious Iteration</span></span><br><span class="line"><span class="keyword">var</span> paragraphs = docuemnt.getElementsByTagName(<span class="string">"p"</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i =<span class="number">0</span>; i &lt; paragraphs.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> pargraph = paragraphs.item(i);</span><br><span class="line">    paragraph.style.setProperty(<span class="string">"color"</span>, <span class="string">"blue"</span>, <span class="literal">null</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>With D3.js</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// a group of elements manipulation</span></span><br><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="string">"blue"</span>);</span><br><span class="line"><span class="comment">// individual element manipulation - the first found</span></span><br><span class="line">d3.select(<span class="string">"body"</span>).style(<span class="string">"background-color"</span>, <span class="string">"black"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="dynamic-properties"><a class="markdownIt-Anchor" href="#dynamic-properties"></a> Dynamic Properties</h3>
-<blockquote>
-<p>Dynamic means use <code>function</code> rather than <code>constants</code> to return content</p>
-</blockquote>
-<ul>
-<li>Randomly color paragraphs.</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"rsl("</span> + <span class="built_in">Math</span>.random()*<span class="number">360</span> + <span class="string">",100%,50%)"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>shades of gray for even and odd nodes</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d, i</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> i % <span class="number">2</span> ? <span class="string">"#fff"</span> : <span class="string">"#eee"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>d</code> for individual bounded <strong>data</strong></li>
-<li><code>i</code> for <strong>index</strong>, start from <code>0</code></li>
-<li><code>first d for first node</code>, <code>second d for second node</code> and son on …</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">'p'</span>)</span><br><span class="line">  .data([<span class="number">4</span>,<span class="number">8</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">23</span>,<span class="number">42</span>]) <span class="comment">// pass data to each node</span></span><br><span class="line">  .style(<span class="string">"font-size"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> d + <span class="string">"px"</span>;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
-<p>Once the data has been <code>bound</code> to the document, you can omit the <code>data</code> operator; D3 will retrieve the previously-bound data. This allows you to recompute properties without rebinding. <strong>How?</strong></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/d3tutorial.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/pgpartion.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1656,11 +1016,648 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/managemutiplerolesaws.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/managemutiplerolesaws.html" class="post-title-link" itemprop="url">AWS Config Switch Roles</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-24 14:06:06 / Modified: 14:29:35" itemprop="dateCreated datePublished" datetime="2019-05-24T14:06:06+09:30">2019-05-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AWS/" itemprop="url" rel="index"><span itemprop="name">AWS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">206</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="prerequsite"><a class="markdownIt-Anchor" href="#prerequsite"></a> Prerequsite</h3>
+<ul>
+<li>VS code with Command Line Tool</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">code ~/.aws/config</span><br><span class="line">code ~/.aws/credentials</span><br></pre></td></tr></table></figure>
+<h3 id="how-to-switch-the-role"><a class="markdownIt-Anchor" href="#how-to-switch-the-role"></a> How to Switch the role?</h3>
+<ul>
+<li>Modify the role that you want to the default role.</li>
+<li>run <code>aws configure</code> to make it valid.</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/managemutiplerolesaws.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/codecommit.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/codecommit.html" class="post-title-link" itemprop="url">AWS Code Commit</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-24 13:51:20" itemprop="dateCreated datePublished" datetime="2019-05-24T13:51:20+09:30">2019-05-24</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-05-26 09:13:54" itemprop="dateModified" datetime="2019-05-26T09:13:54+09:30">2019-05-26</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DevOps/" itemprop="url" rel="index"><span itemprop="name">DevOps</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">1.5k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="关于"><a class="markdownIt-Anchor" href="#关于"></a> 关于</h2>
+<p>AWS Code Commit is another ‘github’ or ‘gitlab’, which allows to you <code>host</code> your own code with version control tools like git cli.</p>
+<h2 id="基本操作"><a class="markdownIt-Anchor" href="#基本操作"></a> 基本操作</h2>
+<h3 id="前提"><a class="markdownIt-Anchor" href="#前提"></a> 前提</h3>
+<ul>
+<li>IAM roles for full access to AWS code Commit</li>
+</ul>
+<h3 id="新建目录"><a class="markdownIt-Anchor" href="#新建目录"></a> 新建目录</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># list all commands</span></span><br><span class="line">aws codecommit <span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># create repository</span></span><br><span class="line">aws codecommit create-repository --repository-name=admin-report-api</span><br></pre></td></tr></table></figure>
+<h3 id="产生git秘钥"><a class="markdownIt-Anchor" href="#产生git秘钥"></a> 产生Git秘钥</h3>
+<ul>
+<li>In IAM &gt; User &gt; Security Credential &gt; HTTPS Git credentials for AWS CodeCommit &gt; Generate</li>
+<li><code>Click</code> generate to get your git credentials.</li>
+</ul>
+<blockquote>
+<p>Note: You <code>cannot</code> customize this.</p>
+</blockquote>
+<h3 id="克隆到本地"><a class="markdownIt-Anchor" href="#克隆到本地"></a> 克隆到本地</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/admin-report-api</span><br><span class="line"><span class="comment"># then enter the username and password generated from above step.</span></span><br></pre></td></tr></table></figure>
+<h3 id="推送到目录"><a class="markdownIt-Anchor" href="#推送到目录"></a> 推送到目录</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'initialize'</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<h3 id="分支操作"><a class="markdownIt-Anchor" href="#分支操作"></a> 分支操作</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># check the current brance</span></span><br><span class="line">git branch</span><br><span class="line"><span class="comment"># change to another brance</span></span><br><span class="line">git checkout -b newBranch</span><br><span class="line"><span class="comment"># git checkout means change to another branch.</span></span><br><span class="line"><span class="comment"># git checkout -b means create a branch and then change to it.</span></span><br><span class="line"></span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'test new branch'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一次使用次命令</span></span><br><span class="line">git push -u origin newBranch</span><br><span class="line"><span class="comment"># 后面可以使用</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<h3 id="merge-branch"><a class="markdownIt-Anchor" href="#merge-branch"></a> Merge Branch</h3>
+<ul>
+<li>CodeCommit &gt; Source &gt; Repositories &gt; Pull Request &gt; Create Pull Request</li>
+<li>merge后可以选择删除source branch</li>
+</ul>
+<h3 id="compare-commit"><a class="markdownIt-Anchor" href="#compare-commit"></a> Compare Commit</h3>
+<ul>
+<li>CodeCommit &gt; Source &gt; Repositories &gt; commits &gt; compare commits</li>
+</ul>
+<h2 id="整合aws其他服务"><a class="markdownIt-Anchor" href="#整合aws其他服务"></a> 整合AWS其他服务</h2>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cudWRlbXkuY29tL2Rldm9wcy1vbi1hd3MtdXNpbmctY29kZS1zZXJ2aWNlcy9sZWFybi9sZWN0dXJlLzEyODQwNTkwI292ZXJ2aWV3" title="https://www.udemy.com/devops-on-aws-using-code-services/learn/lecture/12840590#overview">Simple Notification Service(SNS)<i class="fa fa-external-link"></i></span>
+<ul>
+<li>Email</li>
+<li>SMS</li>
+</ul>
+</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cudWRlbXkuY29tL2Rldm9wcy1vbi1hd3MtdXNpbmctY29kZS1zZXJ2aWNlcy9sZWFybi9sZWN0dXJlLzEyODQwNTk0I292ZXJ2aWV3" title="https://www.udemy.com/devops-on-aws-using-code-services/learn/lecture/12840594#overview">Lambda Function<i class="fa fa-external-link"></i></span>
+<ul>
+<li>prerequisite: IAM role for lambda function execute</li>
+<li>settings &gt; trigger (lambda function created at first)</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/pr.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/pr.html" class="post-title-link" itemprop="url">PR Related Websites</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-24 13:40:57" itemprop="dateCreated datePublished" datetime="2019-05-24T13:40:57+09:30">2019-05-24</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-08-24 10:02:33" itemprop="dateModified" datetime="2019-08-24T10:02:33+09:30">2019-08-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Australia/" itemprop="url" rel="index"><span itemprop="name">Australia</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">28</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-table" target="_blank" rel="noopener">Subclass 189</a><br>
+<a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190/points-table" target="_blank" rel="noopener">Subclass 190</a></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/pr.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1704,7 +1701,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">98</span>
+                    <span class="site-state-item-count">95</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1767,7 +1764,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-count">22</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -2006,7 +2003,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">111</span>
+                    <span class="site-state-item-count">110</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
