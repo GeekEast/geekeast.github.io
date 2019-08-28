@@ -63,17 +63,18 @@
   </entry>
   
   <entry>
-    <title>4 Testing Types in Web</title>
+    <title>Testing Types in Web</title>
     <link href="https://geekeast.github.io/typesoftestingweb.html"/>
     <id>https://geekeast.github.io/typesoftestingweb.html</id>
     <published>2019-08-19T00:31:19.000Z</published>
-    <updated>2019-08-20T23:46:05.043Z</updated>
+    <updated>2019-08-28T03:51:55.632Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><strong>Static Testing</strong>: Typescript</li><li><strong>Unit Testing</strong>: Jest &amp; Enzyme</li><li><strong>Integration Testing</strong>: Cypress, Selenium</li><li><strong>User Acceptance Testing</strong>: Tested by real users</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
+    <content type="html"><![CDATA[<h3 id="types"><a class="markdownIt-Anchor" href="#types"></a> Types</h3><ul><li><strong>Static Testing</strong>: Typescript</li><li><strong>Unit Testing</strong>: Jest &amp; Enzyme</li><li><strong>Integration Testing</strong>: Cypress, Selenium</li><li><strong>User Acceptance Testing</strong>: Tested by real users</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
     
     <summary type="html">
     
-      &lt;ul&gt;
+      &lt;h3 id=&quot;types&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#types&quot;&gt;&lt;/a&gt; Types&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Static Testing&lt;/strong&gt;: Typescript&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Unit Testing&lt;/strong&gt;: Jest &amp;amp; Enzyme&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Integration Testing&lt;/strong&gt;: Cypress, Selenium&lt;/li&gt;

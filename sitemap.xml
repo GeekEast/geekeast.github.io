@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/typesoftestingweb.html</loc>
+    
+    <lastmod>2019-08-28T03:51:55.632Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/3sum.html</loc>
     
     <lastmod>2019-08-28T03:46:24.259Z</lastmod>
@@ -215,13 +222,6 @@
     <loc>https://geekeast.github.io/checktypeinjs.html</loc>
     
     <lastmod>2019-08-21T07:29:25.693Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/typesoftestingweb.html</loc>
-    
-    <lastmod>2019-08-20T23:46:05.043Z</lastmod>
     
   </url>
   
