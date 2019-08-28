@@ -170,20 +170,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/ssrinfo.html</loc>
-    
-    <lastmod>2019-08-09T08:03:30.241Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/dataanalyticsmaterial.html</loc>
-    
-    <lastmod>2019-08-09T07:55:06.624Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/bootstraptutorial.html</loc>
     
     <lastmod>2019-08-05T02:54:57.026Z</lastmod>
@@ -457,13 +443,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/yuzhouquanxilun.html</loc>
-    
-    <lastmod>2019-04-29T03:02:26.164Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/installnodepostgreonubuntu.html</loc>
     
     <lastmod>2019-04-28T09:16:53.092Z</lastmod>
@@ -488,13 +467,6 @@
     <loc>https://geekeast.github.io/ubuntuinstallzsh.html</loc>
     
     <lastmod>2019-04-21T04:16:18.813Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/swaggerTutorial.html</loc>
-    
-    <lastmod>2019-04-21T04:16:01.413Z</lastmod>
     
   </url>
   
@@ -544,13 +516,6 @@
     <loc>https://geekeast.github.io/es6.html</loc>
     
     <lastmod>2019-04-21T04:12:41.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/dizigui.html</loc>
-    
-    <lastmod>2019-04-21T04:12:28.806Z</lastmod>
     
   </url>
   
@@ -625,7 +590,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
+    <loc>https://geekeast.github.io/findbigfilelinux.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/mlinterview.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -646,21 +618,7 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/findbigfilelinux.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/mdresume.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/mlinterview.html</loc>
+    <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
@@ -674,13 +632,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -688,7 +639,7 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/fofafenqi.html</loc>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     

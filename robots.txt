@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 Allow: /archives/
-Allow: /categories/
 Allow: /tags/
+Allow: /categories/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -10,5 +10,6 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
+Disallow: /styles/
 
 Sitemap: https://geekeast.github.io/sitemap.xml
