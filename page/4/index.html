@@ -370,6 +370,501 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/cssselector.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/cssselector.html" class="post-title-link" itemprop="url">CSS Selector</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-15 11:36:45" itemprop="dateCreated datePublished" datetime="2019-07-15T11:36:45+09:30">2019-07-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-08-15 16:00:58" itemprop="dateModified" datetime="2019-08-15T16:00:58+09:30">2019-08-15</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">1.5k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="css-selector"><a class="markdownIt-Anchor" href="#css-selector"></a> CSS Selector</h2>
+<table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+<th>Stress</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.btn</code></td>
+<td>Select all elements with class=“btn”</td>
+<td>类</td>
+</tr>
+<tr>
+<td><code>#firstname</code></td>
+<td>Selects the element with id=“firstname”</td>
+<td>ID</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Selects all elements</td>
+<td>继承断层时应用</td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td>Selects all <code>&lt;p&gt;</code> elements</td>
+<td>单个元素</td>
+</tr>
+<tr>
+<td><code>div, p</code></td>
+<td>any <code>&lt;div&gt;</code> elements and <code>&lt;p&gt;</code> elements</td>
+<td>多个元素</td>
+</tr>
+<tr>
+<td><code>div p</code></td>
+<td>any <code>&lt;p&gt;</code> item that is a descendant of an <code>&lt;div&gt;</code></td>
+<td>儿子们</td>
+</tr>
+<tr>
+<td><code>div.btn</code></td>
+<td><code>div</code> element with <code>btn</code> as class</td>
+<td>单个元素(<strong>多个条件无空格</strong>)</td>
+</tr>
+<tr>
+<td><code>div &gt; p</code></td>
+<td>any <code>&lt;p&gt;</code> item that is a direct descendant of an <code>&lt;div&gt;</code></td>
+<td>最亲儿子(only one)</td>
+</tr>
+<tr>
+<td><code>div ~ p</code></td>
+<td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with something in between.</td>
+<td>弟弟们</td>
+</tr>
+<tr>
+<td><code>div + p</code></td>
+<td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with nothing in between.</td>
+<td>最近弟弟(only one)</td>
+</tr>
+<tr>
+<td><code>:hover</code></td>
+<td>selects elements when the mouse cursor is current over them</td>
+<td>状态</td>
+</tr>
+<tr>
+<td><code>::before</code></td>
+<td>allows you to insert content onto a page from CSS</td>
+<td>内容</td>
+</tr>
+<tr>
+<td><code>E[attr]</code></td>
+<td><code>a[title]</code></td>
+<td>attribute name exists</td>
+</tr>
+<tr>
+<td><code>E[attr=val]</code></td>
+<td><code>input[type=text]</code></td>
+<td>equal</td>
+</tr>
+<tr>
+<td><code>E[attr*=val]</code></td>
+<td><code>div[class*=font]</code></td>
+<td>attribute values contain</td>
+</tr>
+<tr>
+<td><code>E[attr^=val]</code></td>
+<td><code>div[class^=footer]</code></td>
+<td>start with</td>
+</tr>
+<tr>
+<td><code>E[attr$=val]</code></td>
+<td><code>div[class$=font]</code></td>
+<td>end with</td>
+</tr>
+</tbody>
+</table>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cssselector.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/htmlhead.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/htmlhead.html" class="post-title-link" itemprop="url">What you can do in head tag?</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-15 11:35:21 / Modified: 11:53:50" itemprop="dateCreated datePublished" datetime="2019-07-15T11:35:21+09:30">2019-07-15</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">753</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="things-you-can-do-with-headhead"><a class="markdownIt-Anchor" href="#things-you-can-do-with-headhead"></a> Things you can do with <code>&lt;head&gt;&lt;/head&gt;</code></h2>
+<ul>
+<li>charset</li>
+<li>viewport</li>
+<li>compatible</li>
+<li>title</li>
+<li>favicon</li>
+<li>css</li>
+<li>import google fonts</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"style.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- import google fonts that you can specify it in css file - main.css --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://fonts.googleapis.com/css?family=Baloo+Bhai|Indie+Flower&amp;display=swap"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"main.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/htmlhead.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </h2></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/csswaystoaddstyle.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1163,420 +1658,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/javascriptinheritance.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/javascriptinheritance.html" class="post-title-link" itemprop="url">Inheritance in Javascript</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-25 21:37:55" itemprop="dateCreated datePublished" datetime="2019-06-25T21:37:55+09:30">2019-06-25</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-24 10:00:28" itemprop="dateModified" datetime="2019-08-24T10:00:28+09:30">2019-08-24</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">955</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="what-is-the-inheritance-mechanism-in-javascript"><a class="markdownIt-Anchor" href="#what-is-the-inheritance-mechanism-in-javascript"></a> What is the inheritance mechanism in Javascript?</h2>
-<h3 id="constructor-is-class-class-is-constructor"><a class="markdownIt-Anchor" href="#constructor-is-class-class-is-constructor"></a> Constructor is Class ^ Class is Constructor</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// this is the constructor as well as the class</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> cat = <span class="keyword">new</span> Cat(<span class="string">'Kitty'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(cat);</span><br></pre></td></tr></table></figure>
-<h3 id="class-vs-instance"><a class="markdownIt-Anchor" href="#class-vs-instance"></a> Class vs Instance</h3>
-<ul>
-<li><strong>Instance Variable/Function</strong> in <code>Constructor</code>: In Javascript, all attributes or functions which is shared across all the instances or is specially designed for the class, or the same idea of <code>static</code> is store in <code>prototype</code>. I called it the <code>Blueprint</code>.</li>
-<li><strong>Class Variable/Fucntion</strong> in <code>Prototype</code>: In Javascript, all attributes or functions that is only used within specific instances are initialize and stored in the the <code>constructor function</code>.</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>) </span>&#123; <span class="keyword">this</span>.name = name; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// key-value pair storage</span></span><br><span class="line">Cat.prototype = &#123;</span><br><span class="line">  run: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Start running...'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> cat = <span class="keyword">new</span> Cat(<span class="string">'Kitty'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(cat);</span><br></pre></td></tr></table></figure>
-<h3 id="links"><a class="markdownIt-Anchor" href="#links"></a> Links</h3>
-<h2 id="javascript继承机制的设计思想"><a class="markdownIt-Anchor" href="#javascript继承机制的设计思想"></a> <span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTEvMDYvZGVzaWduaW5nX2lkZWFzX29mX2luaGVyaXRhbmNlX21lY2hhbmlzbV9pbl9qYXZhc2NyaXB0Lmh0bWw=" title="http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html">Javascript继承机制的设计思想<i class="fa fa-external-link"></i></span></h2>
-
-          
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/tsdecorators.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/tsdecorators.html" class="post-title-link" itemprop="url">Decorator in Typescript</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-25 20:14:18" itemprop="dateCreated datePublished" datetime="2019-06-25T20:14:18+09:30">2019-06-25</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-24 10:00:50" itemprop="dateModified" datetime="2019-08-24T10:00:50+09:30">2019-08-24</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">7.2k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">5 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="essence"><a class="markdownIt-Anchor" href="#essence"></a> Essence</h3>
-<ul>
-<li>Why we need decorator? <strong>To reuse code!</strong></li>
-<li>Notion: Decorator can <code>only</code> be used inside/on a <strong>class</strong>.</li>
-<li>Decorator will be ran when a <strong>class is defined</strong> rather than an <code>instance is created</code>.</li>
-<li>Mutilple Decorators will be run from <code>last line to first line</code>.</li>
-</ul>
-<h3 id="method-decorator"><a class="markdownIt-Anchor" href="#method-decorator"></a> Method Decorator</h3>
-<ul>
-<li>Function wrapping on the method.</li>
-<li>The decorator is applied to the <code>Property Descriptor</code> for the method, and can be used to <code>observe</code>, <code>modify</code>, or <code>replace</code> a method definition.</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// this is called class</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Boat</span> </span>&#123;</span><br><span class="line">	<span class="comment">// this is called property</span></span><br><span class="line">	color: string = <span class="string">'red'</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// this is called accessor</span></span><br><span class="line">	<span class="keyword">get</span> formattedColor(): string &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">''</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * logError: must be a function</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	@logError</span><br><span class="line">	<span class="comment">// this is called method</span></span><br><span class="line">	pilot(</span><br><span class="line">		name: <span class="built_in">String</span> <span class="comment">// this is called parameter</span></span><br><span class="line">	): <span class="keyword">void</span> &#123;</span><br><span class="line">		<span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * @param target  Constructor function or the prototype of the class.</span></span><br><span class="line"><span class="comment"> * @param key  The name of the method.</span></span><br><span class="line"><span class="comment"> * @param desc The Property Descriptor for the method. value, writtable, enumerable, configurable</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">logError</span>(<span class="params">target: any, key: string, desc: PropertyDescriptor</span>): <span class="title">void</span> </span>&#123;</span><br><span class="line">	<span class="comment">// this is the method itself.</span></span><br><span class="line">	<span class="keyword">const</span> method = desc.value;</span><br><span class="line">	<span class="comment">// modify the pilot function before run it.</span></span><br><span class="line">	desc.value = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="built_in">console</span>.log(<span class="string">'Run Descriptor'</span>);</span><br><span class="line">			method();</span><br><span class="line">		&#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">			<span class="built_in">console</span>.log(<span class="string">'Method Fail'</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> boat = <span class="keyword">new</span> Boat();</span><br><span class="line"></span><br><span class="line">boat.pilot(<span class="string">''</span>);</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/tsdecorators.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1625,7 +1706,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">87</span>
+                    <span class="site-state-item-count">89</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1923,7 +2004,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">99</span>
+                      
+                    
+                    <span class="site-state-item-count">100</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
