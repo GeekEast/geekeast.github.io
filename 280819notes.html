@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="What is the inheritance mechanism in Javascript?  Constructor is Class ^ Class is Constructor 1234567// this is the constructor as well as the classfunction Cat(name) &amp;#123;	this.name = name;&amp;#125;co">
-<meta name="keywords" content="Javascript,Inheritance,Prototype,Blueprint,OOP">
+  <meta name="description" content="Step 1: Enable Elastic Beanstalk Load Balancer Step 2: Config HTTPS to HTTP listening rule in Elastic Beanstalk Step 3: Check the security ruls of Load Balancer Step 4: Config DOMAIN and CNAME to lin">
+<meta name="keywords" content="CMU">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Inheritance in Javascript">
-<meta property="og:url" content="https://geekeast.github.io/javascriptinheritance.html">
+<meta property="og:title" content="28-08-19 Notes">
+<meta property="og:url" content="https://geekeast.github.io/280819notes.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="What is the inheritance mechanism in Javascript?  Constructor is Class ^ Class is Constructor 1234567// this is the constructor as well as the classfunction Cat(name) &amp;#123;	this.name = name;&amp;#125;co">
+<meta property="og:description" content="Step 1: Enable Elastic Beanstalk Load Balancer Step 2: Config HTTPS to HTTP listening rule in Elastic Beanstalk Step 3: Check the security ruls of Load Balancer Step 4: Config DOMAIN and CNAME to lin">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-24T00:30:28.705Z">
+<meta property="og:updated_time" content="2019-08-28T06:18:35.371Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Inheritance in Javascript">
-<meta name="twitter:description" content="What is the inheritance mechanism in Javascript?  Constructor is Class ^ Class is Constructor 1234567// this is the constructor as well as the classfunction Cat(name) &amp;#123;	this.name = name;&amp;#125;co">
+<meta name="twitter:title" content="28-08-19 Notes">
+<meta name="twitter:description" content="Step 1: Enable Elastic Beanstalk Load Balancer Step 2: Config HTTPS to HTTP listening rule in Elastic Beanstalk Step 3: Check the security ruls of Load Balancer Step 4: Config DOMAIN and CNAME to lin">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/javascriptinheritance.html">
+  <link rel="canonical" href="https://geekeast.github.io/280819notes.html">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Inheritance in Javascript | 雪中印</title>
+  <title>28-08-19 Notes | 雪中印</title>
   
 
 
@@ -372,7 +372,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/javascriptinheritance.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/280819notes.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -389,7 +389,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Inheritance in Javascript
+          <h2 class="post-title" itemprop="name headline">28-08-19 Notes
 
               
             
@@ -413,42 +413,16 @@
                 
               
 
-              <time title="Created: 2019-06-25 21:37:55" itemprop="dateCreated datePublished" datetime="2019-06-25T21:37:55+09:30">2019-06-25</time>
+              <time title="Created: 2019-08-28 14:58:35 / Modified: 15:48:35" itemprop="dateCreated datePublished" datetime="2019-08-28T14:58:35+09:30">2019-08-28</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-24 10:00:28" itemprop="dateModified" datetime="2019-08-24T10:00:28+09:30">2019-08-24</time>
               
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -479,7 +453,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">955</span>
+                <span title="Symbols count in article">242</span>
               
 
               
@@ -513,17 +487,13 @@
       
 
       
-        <h2 id="what-is-the-inheritance-mechanism-in-javascript"><a class="markdownIt-Anchor" href="#what-is-the-inheritance-mechanism-in-javascript"></a> What is the inheritance mechanism in Javascript?</h2>
-<h3 id="constructor-is-class-class-is-constructor"><a class="markdownIt-Anchor" href="#constructor-is-class-class-is-constructor"></a> Constructor is Class ^ Class is Constructor</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// this is the constructor as well as the class</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> cat = <span class="keyword">new</span> Cat(<span class="string">'Kitty'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(cat);</span><br></pre></td></tr></table></figure>
-<h3 id="class-vs-instance"><a class="markdownIt-Anchor" href="#class-vs-instance"></a> Class vs Instance</h3>
-<ul>
-<li><strong>Instance Variable/Function</strong> in <code>Constructor</code>: In Javascript, all attributes or functions which is shared across all the instances or is specially designed for the class, or the same idea of <code>static</code> is store in <code>prototype</code>. I called it the <code>Blueprint</code>.</li>
-<li><strong>Class Variable/Fucntion</strong> in <code>Prototype</code>: In Javascript, all attributes or functions that is only used within specific instances are initialize and stored in the the <code>constructor function</code>.</li>
+        <ul>
+<li>Step 1: Enable Elastic Beanstalk Load Balancer</li>
+<li>Step 2: Config HTTPS to HTTP listening rule in Elastic Beanstalk</li>
+<li>Step 3: Check the security ruls of Load Balancer</li>
+<li>Step 4: Config DOMAIN and CNAME to link to EBS url(may not use AWS Route 53)</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Cat</span>(<span class="params">name</span>) </span>&#123; <span class="keyword">this</span>.name = name; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// key-value pair storage</span></span><br><span class="line">Cat.prototype = &#123;</span><br><span class="line">  run: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Start running...'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> cat = <span class="keyword">new</span> Cat(<span class="string">'Kitty'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(cat);</span><br></pre></td></tr></table></figure>
-<h3 id="links"><a class="markdownIt-Anchor" href="#links"></a> Links</h3>
-<h2 id="javascript继承机制的设计思想"><a class="markdownIt-Anchor" href="#javascript继承机制的设计思想"></a> <span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTEvMDYvZGVzaWduaW5nX2lkZWFzX29mX2luaGVyaXRhbmNlX21lY2hhbmlzbV9pbl9qYXZhc2NyaXB0Lmh0bWw=" title="http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html">Javascript继承机制的设计思想<i class="fa fa-external-link"></i></span></h2>
+<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>
 
       
 
@@ -532,39 +502,6 @@
 
     
       
-
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/axios.html" rel="bookmark">Asynchronous Client - Axios</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/arrayequal.html" rel="bookmark">Common Utility</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/checktypeinjs.html" rel="bookmark">Type Check in Javascript</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/cssjavascript.html" rel="bookmark">Manipulate CSS via Javascript</a></div>
-      
-    </li>
-  
-  </ul>
 
 
     
@@ -591,20 +528,6 @@
     <footer class="post-footer">
 
       
-        <div class="post-tags">
-          
-            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
-          
-            <a href="/tags/Inheritance/" rel="tag"># Inheritance</a>
-          
-            <a href="/tags/Prototype/" rel="tag"># Prototype</a>
-          
-            <a href="/tags/Blueprint/" rel="tag"># Blueprint</a>
-          
-            <a href="/tags/OOP/" rel="tag"># OOP</a>
-          
-        </div>
-      
 
       
       
@@ -626,8 +549,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/tsdecorators.html" rel="next" title="Decorator in Typescript">
-                <i class="fa fa-chevron-left"></i> Decorator in Typescript
+              <a href="/sqlformaterminifier.html" rel="next" title="SQL Formatter and Minifier">
+                <i class="fa fa-chevron-left"></i> SQL Formatter and Minifier
               </a>
             
           </div>
@@ -635,10 +558,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/algorithms.html" rel="prev" title="Learning Path of Algorithm">
-                Learning Path of Algorithm <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1182,7 +1101,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#what-is-the-inheritance-mechanism-in-javascript"><span class="nav-number">1.</span> <span class="nav-text"> What is the inheritance mechanism in Javascript?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#constructor-is-class-class-is-constructor"><span class="nav-number">1.1.</span> <span class="nav-text"> Constructor is Class ^ Class is Constructor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class-vs-instance"><span class="nav-number">1.2.</span> <span class="nav-text"> Class vs Instance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#links"><span class="nav-number">1.3.</span> <span class="nav-text"> Links</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript继承机制的设计思想"><span class="nav-number">2.</span> <span class="nav-text"> Javascript继承机制的设计思想</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number">1.</span> <span class="nav-text"> </span></a></li></ol></div>
             
 
           </div>
