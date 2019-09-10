@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/course-recommendation.html</loc>
+    
+    <lastmod>2019-09-10T03:52:21.502Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/configgitssh.html</loc>
     
     <lastmod>2019-09-10T00:39:39.764Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://geekeast.github.io/nodescheduler.html</loc>
     
     <lastmod>2019-08-28T03:37:17.957Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/course-recommendation.html</loc>
-    
-    <lastmod>2019-08-26T00:18:41.637Z</lastmod>
     
   </url>
   
@@ -639,14 +639,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
+    <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
