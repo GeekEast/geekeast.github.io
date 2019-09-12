@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/gitswitchrepo.html</loc>
+    
+    <lastmod>2019-09-12T02:51:20.270Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/gitlabcicd.html</loc>
     
-    <lastmod>2019-09-11T15:31:12.113Z</lastmod>
+    <lastmod>2019-09-11T15:51:20.696Z</lastmod>
     
   </url>
   
