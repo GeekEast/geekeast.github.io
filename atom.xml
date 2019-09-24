@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-09-12T02:51:20.270Z</updated>
+  <updated>2019-09-24T06:36:08.191Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AWS Data Insights Learning Series</title>
+    <link href="https://geekeast.github.io/awsdatalearningseries.html"/>
+    <id>https://geekeast.github.io/awsdatalearningseries.html</id>
+    <published>2019-09-24T06:28:45.000Z</published>
+    <updated>2019-09-24T06:36:08.191Z</updated>
+    
+    <content type="html"><![CDATA[<iframe width="560" height="315" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/video/aws.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/video/aws.mp4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    
+    </summary>
+    
+      <category term="AWS" scheme="https://geekeast.github.io/categories/AWS/"/>
+    
+    
+      <category term="AWS" scheme="https://geekeast.github.io/tags/AWS/"/>
+    
+      <category term="Data Engineer" scheme="https://geekeast.github.io/tags/Data-Engineer/"/>
+    
+      <category term="Data Science" scheme="https://geekeast.github.io/tags/Data-Science/"/>
+    
+  </entry>
   
   <entry>
     <title>Git Switch Repo</title>
@@ -952,34 +978,6 @@
     
     
       <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
-    
-      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Box-sizing in CSS</title>
-    <link href="https://geekeast.github.io/cssboxsizing.html"/>
-    <id>https://geekeast.github.io/cssboxsizing.html</id>
-    <published>2019-07-15T02:10:12.000Z</published>
-    <updated>2019-07-15T02:11:10.992Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="box-sizing"><a class="markdownIt-Anchor" href="#box-sizing"></a> Box-Sizing</h2><ul><li>width/height的设定默认是content的，不包含padding，border和margin</li><li>width/height设定包含padding和border: box-sizing: border-box</li><li>width/height设定无法将margin包含进去，只能手工减去margin的大小</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;box-sizing&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#box-sizing&quot;&gt;&lt;/a&gt; Box-Sizing&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;width/height的设定默认是content的，不包含padding，border和margin&lt;/li&gt;
-&lt;li&gt;width/height设定包含padding和border: box-sizing: border-box&lt;/li&gt;
-&lt;li&gt;width/height设定无法将margin包含进去，只能手工减去margin的大小&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
-    
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
     
