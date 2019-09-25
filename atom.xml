@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-09-25T05:33:32.185Z</updated>
+  <updated>2019-09-25T05:36:23.551Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -17,17 +17,18 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>SOLID Principle</title>
+    <title>Biology &amp; SOLID</title>
     <link href="https://geekeast.github.io/solidprinciple.html"/>
     <id>https://geekeast.github.io/solidprinciple.html</id>
     <published>2019-09-25T02:32:35.000Z</published>
-    <updated>2019-09-25T05:33:32.185Z</updated>
+    <updated>2019-09-25T05:36:23.551Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="cell-core"><a class="markdownIt-Anchor" href="#cell-core"></a> Cell Core</h3><ul><li>Anything that is <strong>not</strong> passed from outside</li><li>Include:<ul><li>Outside: <span style="color: red; font-weight: bold">Strong Coupling<span></span></span></li><li>Self: should be simple, <span id="s" style="color: #0288D2; font-weight: bold">only for one purpose</span>.</li></ul></li></ul><h3 id="span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan"><a class="markdownIt-Anchor" href="#span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan"></a> <span id="o" style="color: #0288D2; font-weight: bold">Cell Wall</span></h3><ul><li>Anything that is passed from outside<ul><li>Level 1. <code>primitive</code>: <code>only</code> one type</li><li>Level 2. <code>function</code>: <code>only</code> one type</li><li>Level 3. <code>class</code>: any class <strong>extends</strong> that class(<span id="l" style="color: #0288D2; font-weight: bold">add new parent sometimes</span>)</li><li>Level 4. <code>interface</code>: any class <strong>implements</strong> that interface(<span id="i" style="color: #0288D2; font-weight: bold">slim</span>)</li><li>Level 5. <code>generics</code>: any type <strong>extends</strong> something (extends = implement)</li></ul></li></ul><h3 id="span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan"><a class="markdownIt-Anchor" href="#span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan"></a> <span id="d" style="color: #0288D2; font-weight: bold">Decoupling</span></h3><ul><li>Move <strong>Outside</strong> things in Cell <code>Core</code> to Cell <code>Wall</code>.</li><li>Make <strong>reference</strong> of things in Cell more <code>abstract</code>.</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2><h3 id="a-hrefssingle-responsibilitya"><a class="markdownIt-Anchor" href="#a-hrefssingle-responsibilitya"></a> <a href="#s">Single Responsibility</a></h3><ul><li>The <code>core</code> of a <strong>cell</strong> should be <code>pure</code>, <code>simple</code> and <code>only</code> for <code>one</code> purpose.</li></ul><h3 id="a-hrefoopenclosea"><a class="markdownIt-Anchor" href="#a-hrefoopenclosea"></a> <a href="#o">Open/Close</a></h3><ul><li>Don’t have to modify <code>core</code> in order to <strong>link</strong> to other cells.</li></ul><h3 id="a-hreflliskv-substitutiona"><a class="markdownIt-Anchor" href="#a-hreflliskv-substitutiona"></a> <a href="#l">Liskv Substitution</a></h3><ul><li>Clothes for <code>children</code> should also be suitable for <code>parents</code>.</li><li>Solution: make <code>new parents</code> between <code>old parents</code> and the <code>child</code>.</li></ul><h3 id="a-hrefiinterface-segregationa"><a class="markdownIt-Anchor" href="#a-hrefiinterface-segregationa"></a> <a href="#i">Interface Segregation</a></h3><ul><li><code>Enough</code> but <strong>not more</strong> things in <code>Interface</code> for it to be implemented in <code>class</code>.</li></ul><h3 id="a-hrefddependency-inversiona"><a class="markdownIt-Anchor" href="#a-hrefddependency-inversiona"></a> <a href="#d">Dependency Inversion</a></h3><ul><li>Cell Wall should use <code>Interface</code>, not <code>class</code>.</li></ul><hr>]]></content>
+    <content type="html"><![CDATA[<h2 id="biology"><a class="markdownIt-Anchor" href="#biology"></a> Biology</h2><h3 id="cell-core"><a class="markdownIt-Anchor" href="#cell-core"></a> Cell Core</h3><ul><li>Anything that is <strong>not</strong> passed from outside</li><li>Include:<ul><li>Outside: <span style="color: red; font-weight: bold">Strong Coupling<span></span></span></li><li>Self: should be simple, <span id="s" style="color: #0288D2; font-weight: bold">only for one purpose</span>.</li></ul></li></ul><h3 id="span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan"><a class="markdownIt-Anchor" href="#span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan"></a> <span id="o" style="color: #0288D2; font-weight: bold">Cell Wall</span></h3><ul><li>Anything that is passed from outside<ul><li>Level 1. <code>primitive</code>: <code>only</code> one type</li><li>Level 2. <code>function</code>: <code>only</code> one type</li><li>Level 3. <code>class</code>: any class <strong>extends</strong> that class(<span id="l" style="color: #0288D2; font-weight: bold">add new parent sometimes</span>)</li><li>Level 4. <code>interface</code>: any class <strong>implements</strong> that interface(<span id="i" style="color: #0288D2; font-weight: bold">slim</span>)</li><li>Level 5. <code>generics</code>: any type <strong>extends</strong> something (extends = implement)</li></ul></li></ul><h3 id="span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan"><a class="markdownIt-Anchor" href="#span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan"></a> <span id="d" style="color: #0288D2; font-weight: bold">Decoupling</span></h3><ul><li>Move <strong>Outside</strong> things in Cell <code>Core</code> to Cell <code>Wall</code>.</li><li>Make <strong>reference</strong> of things in Cell more <code>abstract</code>.</li></ul><a id="more"></a><h2 id="solid"><a class="markdownIt-Anchor" href="#solid"></a> SOLID</h2><h3 id="a-hrefssingle-responsibilitya"><a class="markdownIt-Anchor" href="#a-hrefssingle-responsibilitya"></a> <a href="#s">Single Responsibility</a></h3><ul><li>The <code>core</code> of a <strong>cell</strong> should be <code>pure</code>, <code>simple</code> and <code>only</code> for <code>one</code> purpose.</li></ul><h3 id="a-hrefoopenclosea"><a class="markdownIt-Anchor" href="#a-hrefoopenclosea"></a> <a href="#o">Open/Close</a></h3><ul><li>Don’t have to modify <code>core</code> in order to <strong>link</strong> to other cells.</li></ul><h3 id="a-hreflliskv-substitutiona"><a class="markdownIt-Anchor" href="#a-hreflliskv-substitutiona"></a> <a href="#l">Liskv Substitution</a></h3><ul><li>Clothes for <code>children</code> should also be suitable for <code>parents</code>.</li><li>Solution: make <code>new parents</code> between <code>old parents</code> and the <code>child</code>.</li></ul><h3 id="a-hrefiinterface-segregationa"><a class="markdownIt-Anchor" href="#a-hrefiinterface-segregationa"></a> <a href="#i">Interface Segregation</a></h3><ul><li><code>Enough</code> but <strong>not more</strong> things in <code>Interface</code> for it to be implemented in <code>class</code>.</li></ul><h3 id="a-hrefddependency-inversiona"><a class="markdownIt-Anchor" href="#a-hrefddependency-inversiona"></a> <a href="#d">Dependency Inversion</a></h3><ul><li>Cell Wall should use <code>Interface</code>, not <code>class</code>.</li></ul><hr>]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;cell-core&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cell-core&quot;&gt;&lt;/a&gt; Cell Core&lt;/h3&gt;
+      &lt;h2 id=&quot;biology&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#biology&quot;&gt;&lt;/a&gt; Biology&lt;/h2&gt;
+&lt;h3 id=&quot;cell-core&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cell-core&quot;&gt;&lt;/a&gt; Cell Core&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Anything that is &lt;strong&gt;not&lt;/strong&gt; passed from outside&lt;/li&gt;
 &lt;li&gt;Include:
@@ -54,7 +55,6 @@
 &lt;li&gt;Move &lt;strong&gt;Outside&lt;/strong&gt; things in Cell &lt;code&gt;Core&lt;/code&gt; to Cell &lt;code&gt;Wall&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Make &lt;strong&gt;reference&lt;/strong&gt; of things in Cell more &lt;code&gt;abstract&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
     
     </summary>
     
@@ -591,11 +591,11 @@
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
-    
       <category term="Bootstrap" scheme="https://geekeast.github.io/tags/Bootstrap/"/>
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
     
   </entry>
   
