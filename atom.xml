@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-09-24T09:58:38.190Z</updated>
+  <updated>2019-09-25T05:33:32.185Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SOLID Principle</title>
+    <link href="https://geekeast.github.io/solidprinciple.html"/>
+    <id>https://geekeast.github.io/solidprinciple.html</id>
+    <published>2019-09-25T02:32:35.000Z</published>
+    <updated>2019-09-25T05:33:32.185Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="cell-core"><a class="markdownIt-Anchor" href="#cell-core"></a> Cell Core</h3><ul><li>Anything that is <strong>not</strong> passed from outside</li><li>Include:<ul><li>Outside: <span style="color: red; font-weight: bold">Strong Coupling<span></span></span></li><li>Self: should be simple, <span id="s" style="color: #0288D2; font-weight: bold">only for one purpose</span>.</li></ul></li></ul><h3 id="span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan"><a class="markdownIt-Anchor" href="#span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan"></a> <span id="o" style="color: #0288D2; font-weight: bold">Cell Wall</span></h3><ul><li>Anything that is passed from outside<ul><li>Level 1. <code>primitive</code>: <code>only</code> one type</li><li>Level 2. <code>function</code>: <code>only</code> one type</li><li>Level 3. <code>class</code>: any class <strong>extends</strong> that class(<span id="l" style="color: #0288D2; font-weight: bold">add new parent sometimes</span>)</li><li>Level 4. <code>interface</code>: any class <strong>implements</strong> that interface(<span id="i" style="color: #0288D2; font-weight: bold">slim</span>)</li><li>Level 5. <code>generics</code>: any type <strong>extends</strong> something (extends = implement)</li></ul></li></ul><h3 id="span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan"><a class="markdownIt-Anchor" href="#span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan"></a> <span id="d" style="color: #0288D2; font-weight: bold">Decoupling</span></h3><ul><li>Move <strong>Outside</strong> things in Cell <code>Core</code> to Cell <code>Wall</code>.</li><li>Make <strong>reference</strong> of things in Cell more <code>abstract</code>.</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2><h3 id="a-hrefssingle-responsibilitya"><a class="markdownIt-Anchor" href="#a-hrefssingle-responsibilitya"></a> <a href="#s">Single Responsibility</a></h3><ul><li>The <code>core</code> of a <strong>cell</strong> should be <code>pure</code>, <code>simple</code> and <code>only</code> for <code>one</code> purpose.</li></ul><h3 id="a-hrefoopenclosea"><a class="markdownIt-Anchor" href="#a-hrefoopenclosea"></a> <a href="#o">Open/Close</a></h3><ul><li>Don’t have to modify <code>core</code> in order to <strong>link</strong> to other cells.</li></ul><h3 id="a-hreflliskv-substitutiona"><a class="markdownIt-Anchor" href="#a-hreflliskv-substitutiona"></a> <a href="#l">Liskv Substitution</a></h3><ul><li>Clothes for <code>children</code> should also be suitable for <code>parents</code>.</li><li>Solution: make <code>new parents</code> between <code>old parents</code> and the <code>child</code>.</li></ul><h3 id="a-hrefiinterface-segregationa"><a class="markdownIt-Anchor" href="#a-hrefiinterface-segregationa"></a> <a href="#i">Interface Segregation</a></h3><ul><li><code>Enough</code> but <strong>not more</strong> things in <code>Interface</code> for it to be implemented in <code>class</code>.</li></ul><h3 id="a-hrefddependency-inversiona"><a class="markdownIt-Anchor" href="#a-hrefddependency-inversiona"></a> <a href="#d">Dependency Inversion</a></h3><ul><li>Cell Wall should use <code>Interface</code>, not <code>class</code>.</li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;cell-core&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cell-core&quot;&gt;&lt;/a&gt; Cell Core&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Anything that is &lt;strong&gt;not&lt;/strong&gt; passed from outside&lt;/li&gt;
+&lt;li&gt;Include:
+&lt;ul&gt;
+&lt;li&gt;Outside: &lt;span style=&quot;color: red; font-weight: bold&quot;&gt;Strong Coupling&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Self: should be simple, &lt;span id=&quot;s&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;only for one purpose&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan&quot;&gt;&lt;/a&gt; &lt;span id=&quot;o&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;Cell Wall&lt;/span&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Anything that is passed from outside
+&lt;ul&gt;
+&lt;li&gt;Level 1. &lt;code&gt;primitive&lt;/code&gt;: &lt;code&gt;only&lt;/code&gt; one type&lt;/li&gt;
+&lt;li&gt;Level 2. &lt;code&gt;function&lt;/code&gt;: &lt;code&gt;only&lt;/code&gt; one type&lt;/li&gt;
+&lt;li&gt;Level 3. &lt;code&gt;class&lt;/code&gt;: any class &lt;strong&gt;extends&lt;/strong&gt; that class(&lt;span id=&quot;l&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;add new parent sometimes&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;Level 4. &lt;code&gt;interface&lt;/code&gt;: any class &lt;strong&gt;implements&lt;/strong&gt; that interface(&lt;span id=&quot;i&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;slim&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;Level 5. &lt;code&gt;generics&lt;/code&gt;: any type &lt;strong&gt;extends&lt;/strong&gt; something (extends = implement)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan&quot;&gt;&lt;/a&gt; &lt;span id=&quot;d&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;Decoupling&lt;/span&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Move &lt;strong&gt;Outside&lt;/strong&gt; things in Cell &lt;code&gt;Core&lt;/code&gt; to Cell &lt;code&gt;Wall&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Make &lt;strong&gt;reference&lt;/strong&gt; of things in Cell more &lt;code&gt;abstract&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Object-Oriented Design" scheme="https://geekeast.github.io/categories/Object-Oriented-Design/"/>
+    
+    
+      <category term="OOP" scheme="https://geekeast.github.io/tags/OOP/"/>
+    
+  </entry>
   
   <entry>
     <title>AWS Data Insights Learning Series</title>
@@ -970,38 +1019,6 @@
     
     
       <category term="Resume" scheme="https://geekeast.github.io/tags/Resume/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Manipulate CSS via Javascript</title>
-    <link href="https://geekeast.github.io/cssjavascript.html"/>
-    <id>https://geekeast.github.io/cssjavascript.html</id>
-    <published>2019-07-15T02:49:00.000Z</published>
-    <updated>2019-07-15T02:53:08.630Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="how-to-add-javascript"><a class="markdownIt-Anchor" href="#how-to-add-javascript"></a> How to add Javascript?</h3><ul><li>Method 1: End within the <code>body</code> tag</li><li>Method 2: Seperate Js file and then add to the end within the <code>body</code> tag</li></ul><h3 id="change-style-property"><a class="markdownIt-Anchor" href="#change-style-property"></a> change Style Property</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> backdrop = <span class="built_in">document</span>.querySelector(<span class="string">'.backdrop'</span>);</span><br><span class="line"><span class="comment">// this will add style to element level</span></span><br><span class="line">backdrop.style.display = <span class="string">'block'</span>;</span><br></pre></td></tr></table></figure><h3 id="dynamically-change-style-property"><a class="markdownIt-Anchor" href="#dynamically-change-style-property"></a> Dynamically change Style Property</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> backdrop = <span class="built_in">document</span>.querySelector(<span class="string">'.backdrop'</span>);</span><br><span class="line"><span class="keyword">var</span> modal = <span class="built_in">document</span>.querySelector(<span class="string">'.modal'</span>);</span><br><span class="line"><span class="keyword">var</span> selectPlanButtons = <span class="built_in">document</span>.querySelectorALL(<span class="string">'.plan button'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">0</span>; i&lt; selectPlanButtons.length;i++)&#123;</span><br><span class="line">    selectPlanButtons[i].addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        modal.style.display = <span class="string">'block'</span>;</span><br><span class="line">        backdrop.style.display = <span class="string">'block'</span>;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="add-remoing-css-classes-via-js"><a class="markdownIt-Anchor" href="#add-remoing-css-classes-via-js"></a> Add &amp; Remoing CSS classes via JS</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">modal.className = <span class="string">'open'</span>; <span class="comment">// overwrite way</span></span><br><span class="line">modal.classList.add(<span class="string">'open'</span>); </span><br><span class="line">modal.classList.remove(<span class="string">'open'</span>);</span><br></pre></td></tr></table></figure><h3 id="ways-to-access-style-of-html-element-using-javascript"><a class="markdownIt-Anchor" href="#ways-to-access-style-of-html-element-using-javascript"></a> Ways to access Style of HTML element using Javascript</h3><ol><li><code>backdrop.style.backgroundImage</code></li><li><code>backdrop.style['backgournd-image']</code></li></ol><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;how-to-add-javascript&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#how-to-add-javascript&quot;&gt;&lt;/a&gt; How to add Javascript?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Method 1: End within the &lt;code&gt;body&lt;/code&gt; tag&lt;/li&gt;
-&lt;li&gt;Method 2: Seperate Js file and then add to the end within the &lt;code&gt;body&lt;/code&gt; tag&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;change-style-property&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#change-style-property&quot;&gt;&lt;/a&gt; change Style Property&lt;/h3&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; backdrop = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.querySelector(&lt;span class=&quot;string&quot;&gt;&#39;.backdrop&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// this will add style to element level&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;backdrop.style.display = &lt;span class=&quot;string&quot;&gt;&#39;block&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;dynamically-change-style-property&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#dynamically-change-style-property&quot;&gt;&lt;/a&gt; Dynamically change Style Property&lt;/h3&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; backdrop = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.querySelector(&lt;span class=&quot;string&quot;&gt;&#39;.backdrop&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; modal = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.querySelector(&lt;span class=&quot;string&quot;&gt;&#39;.modal&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; selectPlanButtons = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.querySelectorALL(&lt;span class=&quot;string&quot;&gt;&#39;.plan button&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i&amp;lt; selectPlanButtons.length;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    selectPlanButtons[i].addEventListener(&lt;span class=&quot;string&quot;&gt;&#39;click&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        modal.style.display = &lt;span class=&quot;string&quot;&gt;&#39;block&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        backdrop.style.display = &lt;span class=&quot;string&quot;&gt;&#39;block&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
-    
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
-    
-      <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
     
   </entry>
   
