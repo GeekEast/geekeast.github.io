@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/mdtutorial.html</loc>
+    
+    <lastmod>2019-09-26T03:13:56.454Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/solidprinciple.html</loc>
     
     <lastmod>2019-09-25T05:36:23.551Z</lastmod>
@@ -453,13 +460,6 @@
     <loc>https://geekeast.github.io/cssdisplay.html</loc>
     
     <lastmod>2019-07-10T00:01:54.877Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/mdtutorial.html</loc>
-    
-    <lastmod>2019-07-09T05:22:00.137Z</lastmod>
     
   </url>
   
