@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-09-26T11:39:36.274Z</updated>
+  <updated>2019-09-26T11:51:38.684Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -17,25 +17,17 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Kechengc Assignment 2</title>
+    <title>Assignment 2</title>
     <link href="https://geekeast.github.io/Kechengc.html"/>
     <id>https://geekeast.github.io/Kechengc.html</id>
     <published>2019-09-26T11:36:57.000Z</published>
-    <updated>2019-09-26T11:39:36.274Z</updated>
+    <updated>2019-09-26T11:51:38.684Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="good"><a class="markdownIt-Anchor" href="#good"></a> Good</h3><ol><li>Used Maven</li><li>Good Comments</li><li>Format Well</li></ol><h3 id="bad"><a class="markdownIt-Anchor" href="#bad"></a> Bad</h3><ul><li>Task 1<ul><li>put all things in <code>main</code>, should care about <strong>decouping</strong> and <strong>code reuse</strong>.<ul><li>Suggestion: <code>separate code by functions</code></li></ul></li><li>too less code in dog. <strong>Bad OOP Design</strong></li><li><code>move</code> should be a function of <code>dog</code> instead of <code>playgroud</code></li></ul></li><li>Task 2<ul><li>giveQuiz code <code>reuse</code> rate is very low.</li><li>a lot of things in <code>main</code></li></ul></li></ul><h3 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h3><ul><li>Should care more about code reuse and decoupling.</li></ul><h3 id="please-comment-below-for-any-questions"><a class="markdownIt-Anchor" href="#please-comment-below-for-any-questions"></a> Please Comment below for any questions.</h3><hr>]]></content>
+    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;good&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#good&quot;&gt;&lt;/a&gt; Good&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Used Maven&lt;/li&gt;
-&lt;li&gt;Good Comments&lt;/li&gt;
-&lt;li&gt;Format Well&lt;/li&gt;
-
-      
+      Encrypted Post. Please Enter Token.
     
     </summary>
     
