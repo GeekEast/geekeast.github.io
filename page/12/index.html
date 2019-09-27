@@ -370,7 +370,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/position.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/awkparsecsv.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -390,7 +390,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/position.html" class="post-title-link" itemprop="url">CSS Position</a>
+                <a href="/awkparsecsv.html" class="post-title-link" itemprop="url">AWK parse csv files</a>
               
             
           </h2>
@@ -413,7 +413,7 @@
                 
               
 
-              <time title="Created: 2019-04-28 18:51:11" itemprop="dateCreated datePublished" datetime="2019-04-28T18:51:11+09:30">2019-04-28</time>
+              <time title="Created: 2019-04-14 11:36:08" itemprop="dateCreated datePublished" datetime="2019-04-14T11:36:08+09:30">2019-04-14</time>
             
 
             
@@ -428,7 +428,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-07-15 10:59:17" itemprop="dateModified" datetime="2019-07-15T10:59:17+09:30">2019-07-15</time>
+                <time title="Modified: 2019-08-28 13:08:03" itemprop="dateModified" datetime="2019-08-28T13:08:03+09:30">2019-08-28</time>
               
             
           </span>
@@ -443,7 +443,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
 
                 
                 
@@ -472,7 +472,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">899</span>
+                <span title="Symbols count in article">2.4k</span>
               
 
               
@@ -486,7 +486,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2 mins.</span>
               
             </div>
           
@@ -507,16 +507,11 @@
 
       
         
-          <h2 id="positioning"><a class="markdownIt-Anchor" href="#positioning"></a> Positioning</h2>
-<ul>
-<li>Default: static</li>
-</ul>
-<h3 id="in-the-flow-of-document"><a class="markdownIt-Anchor" href="#in-the-flow-of-document"></a> In the flow of Document</h3>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.flow</span> &#123;</span><br><span class="line">  <span class="comment">/* default value for every element. no reference point. cannot move. */</span></span><br><span class="line">  <span class="attribute">position</span>: static; <span class="comment">/* 或者什么都不写 */</span></span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>; <span class="comment">/* 无效 */</span></span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>; <span class="comment">/* 无效 */</span></span><br><span class="line">  <span class="comment">/* offset from its static position */</span></span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50px</span>; <span class="comment">/* 有效 */</span></span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100px</span>; <span class="comment">/* 有效 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># Please put the input.csv in the same directory as this file.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># if output.csv already exists, delete it.</span></span><br><span class="line"><span class="keyword">if</span> [ -e output.csv ]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    rm -f output.csv</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># awk function to generate the output.csv</span></span><br><span class="line">gawk <span class="string">' # define a function to trim each column</span></span><br><span class="line"><span class="string">       function rtrim(s) &#123; sub(/[ \t\r\n]+$/, "", s); return s &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">BEGIN &#123;</span></span><br><span class="line"><span class="string">    # awk option to escape the comma within quotes.</span></span><br><span class="line"><span class="string">    FPAT = "([^,]*)|(\"[^\"]+\")"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    # initialize an array, which is used to store unique line.</span></span><br><span class="line"><span class="string">    a[0]=""</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#123;   </span></span><br><span class="line"><span class="string">    # get the first name</span></span><br><span class="line"><span class="string">    firstName = ""</span></span><br><span class="line"><span class="string">    if ($4 == "StudentFirstName")&#123;</span></span><br><span class="line"><span class="string">      # correct the column name as First Name</span></span><br><span class="line"><span class="string">      firstName = "First Name"</span></span><br><span class="line"><span class="string">    &#125; else &#123;</span></span><br><span class="line"><span class="string">      # define the firstname without trailing spaces.</span></span><br><span class="line"><span class="string">      firstName = rtrim($4)</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    # get the last name</span></span><br><span class="line"><span class="string">    lastName = ""</span></span><br><span class="line"><span class="string">    if ($6 == "StudentFamilyName")&#123;</span></span><br><span class="line"><span class="string">      # correct the column name as Last Name</span></span><br><span class="line"><span class="string">      lastName = "Last Name"</span></span><br><span class="line"><span class="string">    &#125; else &#123;</span></span><br><span class="line"><span class="string">      # define the firstname without trailing spaces.</span></span><br><span class="line"><span class="string">      lastName = rtrim($6)</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    # get the email</span></span><br><span class="line"><span class="string">    email = ""</span></span><br><span class="line"><span class="string">    if ($9 == "StudentEmailAddress")&#123;</span></span><br><span class="line"><span class="string">      # correct the column name as Email Address</span></span><br><span class="line"><span class="string">      email = "Email Address"</span></span><br><span class="line"><span class="string">    &#125; else &#123;</span></span><br><span class="line"><span class="string">      # define the firstname without trailing spaces.</span></span><br><span class="line"><span class="string">      email = rtrim($9)</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    # get the student id</span></span><br><span class="line"><span class="string">    id = ""</span></span><br><span class="line"><span class="string">    if ($1 == "StudentID")&#123;</span></span><br><span class="line"><span class="string">      # correct the column name as Institition Student ID</span></span><br><span class="line"><span class="string">      id = "Institution Student ID"</span></span><br><span class="line"><span class="string">    &#125; else &#123;</span></span><br><span class="line"><span class="string">      # define the id without trailing spaces.</span></span><br><span class="line"><span class="string">      id = rtrim($1)</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    # define firstname,lastname,email and id as one line, seperated by comma</span></span><br><span class="line"><span class="string">    result = firstName "," lastName "," email "," id</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    # output one line only if it is not duplicated in the pre-defined array</span></span><br><span class="line"><span class="string">    if (!a[result]++) &#123;</span></span><br><span class="line"><span class="string">        # output line by line to file "output.csv"</span></span><br><span class="line"><span class="string">        print(result) &gt;&gt; "output.csv"</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&#125;'</span> input.csv <span class="comment"># the input source</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/position.html#more" rel="contents">
+              <a class="btn" href="/awkparsecsv.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -574,7 +569,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/lengthpercentage.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/resuablesql.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -594,7 +589,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/lengthpercentage.html" class="post-title-link" itemprop="url">CSS Percentage</a>
+                <a href="/resuablesql.html" class="post-title-link" itemprop="url">ORM vs SQL</a>
               
             
           </h2>
@@ -617,22 +612,12 @@
                 
               
 
-              <time title="Created: 2019-04-28 18:50:39" itemprop="dateCreated datePublished" datetime="2019-04-28T18:50:39+09:30">2019-04-28</time>
+              <time title="Created: 2019-04-11 14:58:14 / Modified: 15:48:57" itemprop="dateCreated datePublished" datetime="2019-04-11T14:58:14+09:30">2019-04-11</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-07-15 11:11:58" itemprop="dateModified" datetime="2019-07-15T11:11:58+09:30">2019-07-15</time>
               
             
           </span>
@@ -647,7 +632,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Database/" itemprop="url" rel="index"><span itemprop="name">Database</span></a></span>
 
                 
                 
@@ -676,7 +661,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">503</span>
+                <span title="Symbols count in article">2.8k</span>
               
 
               
@@ -690,7 +675,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2 mins.</span>
               
             </div>
           
@@ -711,17 +696,40 @@
 
       
         
-          <h3 id="css百分比长度单位"><a class="markdownIt-Anchor" href="#css百分比长度单位"></a> CSS百分比长度单位</h3>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test</span> &#123;</span><br><span class="line">  <span class="comment">/* 显示为百分比时，基于父级元素 */</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">90%</span>;</span><br><span class="line">  <span class="comment">/* 显示为百分比时，基于父级元素 */</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <h2 id="orm"><a class="markdownIt-Anchor" href="#orm"></a> ORM:</h2>
 <ul>
-<li>viewport: the rectangle where the webpage shows up scrollable via a scrollbar.</li>
-<li>chrome: all the UI that’s not the webpage, i.e. everything but the viewport.</li>
+<li>pros:
+<ul>
+<li>Simple</li>
+<li>Suitable for smal query</li>
+<li>easy to reuse</li>
 </ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test</span> &#123;</span><br><span class="line">  <span class="comment">/*  1/100 of the viewport height */</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">1vh</span>;</span><br><span class="line">  <span class="comment">/*  1/100 of the viewport width */</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1vw</span> ;</span><br><span class="line">  <span class="comment">/* calculate width and height based on content-box or border-box */</span></span><br><span class="line">  <span class="attribute">box-sizing</span>: content-box | border-box</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>cons:
+<ul>
+<li>new things to learn</li>
+<li>slow down the performance when query is complex.</li>
+</ul>
+</li>
+</ul>
+<h2 id="sql"><a class="markdownIt-Anchor" href="#sql"></a> SQL</h2>
+<ul>
+<li>pros:
+<ul>
+<li>easy to optimise</li>
+</ul>
+</li>
+<li>cons:
+<ul>
+<li>can be quite complex</li>
+<li>can be hard to reuse</li>
+</ul>
+</li>
+</ul>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/lengthpercentage.html#more" rel="contents">
+              <a class="btn" href="/resuablesql.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -779,7 +787,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/css3.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/expressTutorial.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -799,7 +807,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/css3.html" class="post-title-link" itemprop="url">CSS3 New Features</a>
+                <a href="/expressTutorial.html" class="post-title-link" itemprop="url">Express Tutorial</a>
               
             
           </h2>
@@ -822,7 +830,7 @@
                 
               
 
-              <time title="Created: 2019-04-28 18:49:34" itemprop="dateCreated datePublished" datetime="2019-04-28T18:49:34+09:30">2019-04-28</time>
+              <time title="Created: 2019-04-10 16:52:36" itemprop="dateCreated datePublished" datetime="2019-04-10T16:52:36+09:30">2019-04-10</time>
             
 
             
@@ -837,420 +845,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-07-15 11:27:08" itemprop="dateModified" datetime="2019-07-15T11:27:08+09:30">2019-07-15</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">359</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="calc"><a class="markdownIt-Anchor" href="#calc"></a> calc</h3>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="built_in">calc</span>(50%-10px);</span><br><span class="line">  <span class="attribute">width</span>: <span class="built_in">calc</span>(100% / 6);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="css-variables"><a class="markdownIt-Anchor" href="#css-variables"></a> CSS variables</h3>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">   <span class="attribute">--primary-color</span>: hotpink;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">var</span>(--primary-color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="em-rem"><a class="markdownIt-Anchor" href="#em-rem"></a> em, rem</h3>
-<ul>
-<li>em: relative size to the font-szie of its direct or nearest parent.</li>
-<li>rem: relative size of root(html) elemetn; and 1rem means 100% of the root</li>
-</ul>
-<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/css3.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </h2></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/flexbox.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/flexbox.html" class="post-title-link" itemprop="url">Compelete guide to flexbox</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-28 18:47:17" itemprop="dateCreated datePublished" datetime="2019-04-28T18:47:17+09:30">2019-04-28</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-07-17 10:10:40" itemprop="dateModified" datetime="2019-07-17T10:10:40+09:30">2019-07-17</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">1.5k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <ul>
-<li>The <code>Flexbox Layout</code> (Flexible Box) module aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is <strong>unknown and/or dynamic</strong> (thus the word “flex”).</li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-direction</span>: row | row-reverse | column | column-reverse;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: nowrap | wrap | wrap-reverse;</span><br><span class="line">  <span class="attribute">flex-flow</span>: row nowrap   <span class="comment">/* shorthand for flex-direction + flex-wrap */</span>;</span><br><span class="line">  <span class="comment">/* 想象每一列为一条竖线，多条竖线如何对齐， 一般在多列时进行考虑*/</span></span><br><span class="line">  <span class="attribute">justify-content</span>: flex-start | flex-end | center | space-between | space-around | space-evenly <span class="comment">/*  主轴对齐方式 */</span>;</span><br><span class="line">  <span class="comment">/* 想象每一行为一条横线，多条横线如何对齐, 一般在多行是进行考虑 */</span></span><br><span class="line">  <span class="attribute">align-content</span>: flex-start | flex-end | center | stretch | space-between | space-around; <span class="comment">/*  副轴 */</span></span><br><span class="line">  <span class="comment">/* 每条横线中如何对齐（副轴），一般在单行时进行考虑, 单行最大高度为容器高度，多行最大高度为该行最高元素的高度, 默认值为stretch, 在未设定高度时有效*/</span></span><br><span class="line">  <span class="attribute">align-items</span>: flex-start | flex-end | center | stretch | baseline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="comment">/* 单个item的显示序号，序号越大越靠后 */</span></span><br><span class="line">  <span class="attribute">order</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="comment">/* 沿着主轴上，当有闲置空间时的空间分配规则，1表示主轴长度大于flex-basis时尽可能放大, 数字为相对大小，越大表示放得越大. 默认为0, 0为不放大 */</span></span><br><span class="line">  <span class="attribute">flex-grow</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="comment">/* 沿着主轴上，当无闲置空间时的空间分配规则，1表示主轴长度小于flex-basis时尽可能缩小， 数字为相对大小，越小表示缩得越小，默认为1, 0为不缩小 */</span></span><br><span class="line">  <span class="attribute">flex-shrink</span>: <span class="number">1</span>;</span><br><span class="line">  <span class="comment">/* 元素主轴长度，无width、height设定，要么是content-size,要么就是flex-basis */</span></span><br><span class="line">  <span class="attribute">flex-basis</span>: &lt;length&gt; | auto; <span class="comment">/* auto表示基于content */</span></span><br><span class="line">  <span class="comment">/* 推荐使用：shorthand */</span></span><br><span class="line">  <span class="attribute">flex</span>: none | [ &lt;<span class="string">'flex-grow'</span>&gt; &lt;<span class="string">'flex-shrink'</span>&gt;? || &lt;<span class="string">'flex-basis'</span>&gt; ]; </span><br><span class="line">  <span class="comment">/* 单个item副轴上的对齐方式 */</span></span><br><span class="line">  <span class="attribute">align-self</span>: auto | flex-start | flex-end | center | baseline | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><a href="https://codepen.io/enxaneta/full/adLPwv/" target="_blank" rel="noopener">Flexbox Playground</a></li>
-</ul>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/flexbox.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/amplifyreactnotemaker.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/amplifyreactnotemaker.html" class="post-title-link" itemprop="url">Build React Project With Amplify - NoteMaker</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-21 13:22:50" itemprop="dateCreated datePublished" datetime="2019-04-21T13:22:50+09:30">2019-04-21</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-09-24 16:11:24" itemprop="dateModified" datetime="2019-09-24T16:11:24+09:30">2019-09-24</time>
+                <time title="Modified: 2019-04-21 13:43:03" itemprop="dateModified" datetime="2019-04-21T13:43:03+09:30">2019-04-21</time>
               
             
           </span>
@@ -1294,7 +889,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">5.1k</span>
+                <span title="Symbols count in article">120</span>
               
 
               
@@ -1308,7 +903,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">4 mins.</span>
+                <span title="Reading time">1 mins.</span>
               
             </div>
           
@@ -1329,21 +924,15 @@
 
       
         
-          <h2 id="preparation"><a class="markdownIt-Anchor" href="#preparation"></a> Preparation</h2>
-<h3 id="install-create-react-app"><a class="markdownIt-Anchor" href="#install-create-react-app"></a> Install Create-React-App</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo npm i -g create-react-app</span><br><span class="line"><span class="comment"># or</span></span><br><span class="line">yarn global add create-react-app</span><br></pre></td></tr></table></figure>
-<h3 id="install-amplify-cli"><a class="markdownIt-Anchor" href="#install-amplify-cli"></a> Install Amplify Cli</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn global add @aws-amplify/cli</span><br></pre></td></tr></table></figure>
-<h3 id="configure-amplify-with-aws-account"><a class="markdownIt-Anchor" href="#configure-amplify-with-aws-account"></a> Configure Amplify with AWS Account</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">amplify configure</span><br></pre></td></tr></table></figure>
-<h3 id="initialize-project"><a class="markdownIt-Anchor" href="#initialize-project"></a> Initialize Project</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create-react-app project1</span><br></pre></td></tr></table></figure>
-<h3 id="initialize-project-with-amplify"><a class="markdownIt-Anchor" href="#initialize-project-with-amplify"></a> Initialize Project with Amplify</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">amplify init</span><br></pre></td></tr></table></figure>
+          <h2 id="query-vs-params-vs-body"><a class="markdownIt-Anchor" href="#query-vs-params-vs-body"></a> query vs params vs body</h2>
+<p>req.query // search?q=tobi+ferret<br>
+req.params // /companies/:id<br>
+req.body // json file<br>
+<a href="https://i5ting.github.io/node-http/#10601" target="_blank" rel="noopener">express</a></p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/amplifyreactnotemaker.html#more" rel="contents">
+              <a class="btn" href="/expressTutorial.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1401,7 +990,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/certificate.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/nodetutorial.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -1421,7 +1010,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/certificate.html" class="post-title-link" itemprop="url">IT Courses List</a>
+                <a href="/nodetutorial.html" class="post-title-link" itemprop="url">Node.js Tutorial</a>
               
             
           </h2>
@@ -1444,7 +1033,7 @@
                 
               
 
-              <time title="Created: 2019-04-19 10:39:49" itemprop="dateCreated datePublished" datetime="2019-04-19T10:39:49+09:30">2019-04-19</time>
+              <time title="Created: 2019-04-10 16:51:06" itemprop="dateCreated datePublished" datetime="2019-04-10T16:51:06+09:30">2019-04-10</time>
             
 
             
@@ -1459,7 +1048,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-04-21 13:41:24" itemprop="dateModified" datetime="2019-04-21T13:41:24+09:30">2019-04-21</time>
+                <time title="Modified: 2019-04-21 13:44:42" itemprop="dateModified" datetime="2019-04-21T13:44:42+09:30">2019-04-21</time>
               
             
           </span>
@@ -1474,7 +1063,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Career/" itemprop="url" rel="index"><span itemprop="name">Career</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Backend/" itemprop="url" rel="index"><span itemprop="name">Backend</span></a></span>
 
                 
                 
@@ -1503,7 +1092,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">690</span>
+                <span title="Symbols count in article">497</span>
               
 
               
@@ -1538,21 +1127,414 @@
 
       
         
-          <ul>
-<li>AWS Cloud Solution Architect Associate
-<ul>
-<li><a href="https://medium.com/weareservian/aws-csaa-2019-preparation-53447aecae47" target="_blank" rel="noopener">Medium</a></li>
-<li><a href="https://acloud.guru/learn/aws-certified-solutions-architect-associate" target="_blank" rel="noopener">A Cloud Guru (Many Labs)</a></li>
-<li><a href="https://www.udemy.com/aws-certified-solutions-architect-associate/" target="_blank" rel="noopener">Udemy</a></li>
-<li><a href="https://www.whizlabs.com/aws-solutions-architect-associate/" target="_blank" rel="noopener">Whizlab (Exam Practice)</a></li>
-</ul>
-</li>
-</ul>
-<p>The CSAA exam has 65 questions to be answered in 130 minutes. It costs 150 USD. You can cancel or reschedule for free with more than 48 hours to go for the exam. Within 48 hours and a day before the exam, you can reschedule or cancel for 60 USD. I would strongly suggest booking the exam first, you can reschedule it later if you can’t make it or are not prepared. This will give you a tangible goal to work towards, which in my case prevented me from procrastinating.</p>
+          <h2 id="deploy-to-server"><a class="markdownIt-Anchor" href="#deploy-to-server"></a> Deploy to server</h2>
+<ol>
+<li>helmet</li>
+<li>compression</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// prod.js</span></span><br><span class="line"><span class="keyword">const</span> helmet = <span class="built_in">require</span>(<span class="string">'helmet'</span>);</span><br><span class="line"><span class="keyword">const</span> compression = <span class="built_in">require</span>(<span class="string">'compression'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="params">app</span> =&gt;</span> &#123;</span><br><span class="line">  app.use(helmet());</span><br><span class="line">  app.use(compression());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="configure-packagejson"><a class="markdownIt-Anchor" href="#configure-packagejson"></a> Configure package.json</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// index.js</span></span><br><span class="line"><span class="built_in">require</span>(<span class="string">'prod.js'</span>)(app);</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// package.json</span><br><span class="line">  "scripts": &#123;</span><br><span class="line">    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",</span><br><span class="line">    "start": "node app.js"</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+<h2 id="安装pm2-本机多发package-manager"><a class="markdownIt-Anchor" href="#安装pm2-本机多发package-manager"></a> 安装pm2, 本机多发package manager</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo npm i -g pm2</span><br><span class="line">pm2 completion install</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.cnblogs.com/zhoujie/p/nodejs4.html" target="_blank" rel="noopener">pm2</a></p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/certificate.html#more" rel="contents">
+              <a class="btn" href="/nodetutorial.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/aria2c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/aria2c.html" class="post-title-link" itemprop="url">Install aria2c on Mac</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-10 16:48:32" itemprop="dateCreated datePublished" datetime="2019-04-10T16:48:32+09:30">2019-04-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-08-28 13:15:44" itemprop="dateModified" datetime="2019-08-28T13:15:44+09:30">2019-08-28</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">43</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="mac-install-aria2c"><a class="markdownIt-Anchor" href="#mac-install-aria2c"></a> Mac Install Aria2c</h2>
+<p>github -repo: .aria2</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/aria2c.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/aws-command.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/aws-command.html" class="post-title-link" itemprop="url">AWS Commands</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-10 16:46:55 / Modified: 16:57:34" itemprop="dateCreated datePublished" datetime="2019-04-10T16:46:55+09:30">2019-04-10</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AWS/" itemprop="url" rel="index"><span itemprop="name">AWS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">159</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="ec2通过密码ssh"><a class="markdownIt-Anchor" href="#ec2通过密码ssh"></a> ec2通过密码ssh</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/ssh/sshd_configs  <span class="comment"># PasswordAuthentication yes</span></span><br><span class="line">sudo passwd ubuntu</span><br><span class="line">sudo service sshd restart</span><br></pre></td></tr></table></figure>
+<h2 id="ec2设置ubuntu密码"><a class="markdownIt-Anchor" href="#ec2设置ubuntu密码"></a> ec2设置ubuntu密码</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo password ubuntu</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/aws-command.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1599,7 +1581,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1643,7 +1625,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">101</span>
+                    <span class="site-state-item-count">94</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1706,9 +1688,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1959,9 +1939,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-count">105</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>

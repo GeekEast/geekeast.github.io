@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-09-26T13:53:35.722Z</updated>
+  <updated>2019-09-25T05:36:23.551Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,160 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Assignment 2</title>
-    <link href="https://geekeast.github.io/java-ta-2109/ytingj.html"/>
-    <id>https://geekeast.github.io/java-ta-2109/ytingj.html</id>
-    <published>2019-09-26T13:53:07.000Z</published>
-    <updated>2019-09-26T13:53:35.722Z</updated>
-    
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Encrypted Post. Please Enter Token.
-    
-    </summary>
-    
-      <category term="TA" scheme="https://geekeast.github.io/categories/TA/"/>
-    
-    
-      <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assignment 2</title>
-    <link href="https://geekeast.github.io/java-ta-2109/chenluj.html"/>
-    <id>https://geekeast.github.io/java-ta-2109/chenluj.html</id>
-    <published>2019-09-26T13:40:12.000Z</published>
-    <updated>2019-09-26T13:52:21.551Z</updated>
-    
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Encrypted Post. Please Enter Token.
-    
-    </summary>
-    
-      <category term="TA" scheme="https://geekeast.github.io/categories/TA/"/>
-    
-    
-      <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assignment 2</title>
-    <link href="https://geekeast.github.io/java-ta-2109/jiruh.html"/>
-    <id>https://geekeast.github.io/java-ta-2109/jiruh.html</id>
-    <published>2019-09-26T13:30:41.000Z</published>
-    <updated>2019-09-26T13:31:05.494Z</updated>
-    
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Encrypted Post. Please Enter Token.
-    
-    </summary>
-    
-      <category term="TA" scheme="https://geekeast.github.io/categories/TA/"/>
-    
-    
-      <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assignment 2</title>
-    <link href="https://geekeast.github.io/java-ta-2109/petrag.html"/>
-    <id>https://geekeast.github.io/java-ta-2109/petrag.html</id>
-    <published>2019-09-26T13:02:49.000Z</published>
-    <updated>2019-09-26T13:03:20.553Z</updated>
-    
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Encrypted Post. Please Enter Token.
-    
-    </summary>
-    
-      <category term="TA" scheme="https://geekeast.github.io/categories/TA/"/>
-    
-    
-      <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assignment 2</title>
-    <link href="https://geekeast.github.io/java-ta-2109/tfunahas.html"/>
-    <id>https://geekeast.github.io/java-ta-2109/tfunahas.html</id>
-    <published>2019-09-26T12:56:37.000Z</published>
-    <updated>2019-09-26T12:57:52.336Z</updated>
-    
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Encrypted Post. Please Enter Token.
-    
-    </summary>
-    
-      <category term="TA" scheme="https://geekeast.github.io/categories/TA/"/>
-    
-    
-      <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assignment 2</title>
-    <link href="https://geekeast.github.io/java-ta-2109/Pafranci.html"/>
-    <id>https://geekeast.github.io/java-ta-2109/Pafranci.html</id>
-    <published>2019-09-26T12:37:28.000Z</published>
-    <updated>2019-09-26T13:11:06.861Z</updated>
-    
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+/GjhZsbtRTKfGPXhPz/VwmsCc8HsOHAyirk1MA8wOup7aBfvyy0ZZiNCUhh816umeJfp38cn/eO2sD133G7jYRgRcAsdneYnrE4E1TOiD4CiuxmmRlavXOZXaqoloJRTMQcghIJW72zAMyukjPt37LgZb79TIlbqHkrzKMy4GD0vUK6kUdU+GGuXinhiecM3rQjNj3cTYcjA8CKdhMBxqRLr8p5FnamAgdcE60ahOounw1YmgSvEvW67lwhpfCVaFJCHoDmebdSyTqchGj4qUS/1BHnoLKy2fk/+D1Kwz4zSVkE404JM3nZHdaUFOHOJ5XGZB/DvkNo+NTcx7YtiIR/i2hk0GWSuCPjp1DLiMT6tSoetzS1Qi0PwpMm97khD7Lsl5MEdB94hXL8TA8zMuQc07yb90CTnVVfDlJdUzLpMpgMTnxhXGynTDjJQ5XOjnFP7jY/adhH8ndOoVxd2he8CoMJdHgMZzSHw6B5eVo/4PQFMszV3AKm7jycrK07QvPIqNsVaJp7RYT3dTfNoQcbH3WcpniA8ypdrE7NoQUPiYpO0NgvUnWwKdxlgglSCEEOe8jSkw4PItbQ1mcHVPLIUziva4xIhDn1zL36ILPe9wmc7XVe84/N6ga2wHcKSEo2+s+cRwtjEoxvhSfqyu8buMM6R8KOhTHgBi/+KNG8mkYEV4YIvHi6o6LGizcS7twQ25P2cm9bhQpoHpFU0jTu/4YBeklXJznyFOImCwHgloMtFLB4qRMXGo+1h8ZQsodW0w7c8X/yKWjAL1aSMaJ8o2jUd9vHVpR4E26Lsl/Dn1sgeZI43yar6VTdzBXFYD0qY617NqEhZH3KBGy6Pok9QkNLsRoN+IjHMkNfOzgiqzyoWfBv1EBE2xvi3TXpLkSmybUOjek5B4u7Txp/VSzTGCkXFjOgI1gQv3SO6t+4AX4ZELerXvQKVgOyR2kInwmTZJfHGDsJAUyFgEXZjO/tb3pwGGRc1iWkc1Hp8sp0cr3iCuO1YYdUloCV0EUPXmhUIIJskz2PG1E4S9TqdMETLvBmLTqYVkLwJiOAK9nbkuhTfnClKadOaTTuNe367s8nN9rHAwIuZ9Se7s86Kv9Xi1Zp1x2lyWti9lXH5qYwo/Fa5nQME3zyne2dEK1NX/+MavwY4UnSKsn8DY3dRm2Ijo3i0l9MOiinp3LDRoVTj6GIzGoeF6v1fTLY2/QVQdMa4osvB2aNG4G5wp2gRPPLReBxqrK0zR1JfIRyLqD49F0E96Q20ojjunACHuRZEO5ZLVudLhMxwNtPSDinZyEst3tcJfooB8FpuyidTUC7al+mpeyjI+Gj875k5bua71DFCB6Bw+OauM7xxPkTV05SMcc0W50TeIYqGXMGwVq06NXefVx3d2V11m5ik9JNZX3xcpFab2JVD4d4owBPlmhNVTBvYge7yCrBw9eIYXMxUf7os/i6LOOr6C/BpuEm7fduGTakFOSRhiGHl0ApW8/5BwUWCGkGcsRos1wyV0vaPV0SB/4p6VzYtd8buvGo5d7IosPf2h6sRztGIkEfe7uMCctSHTJ6AG8uJopv+u2FTn05/B+czQT75/Sq2akD6+kH/u4EOODU18H9V58kOqfPoIdcOva6WIRmcvc41wMA1CAvYeeBI2SD9otaB3ojVUo6vCmwDnMYOJoHhcdl1nTcsVf8coBW3VFJfVLA0gebpfzzIHMx3mMkKiU3lNsS75kuDm3TrnLV9hAPXxmMzJYeFa39ybnXkVd3nv11X5jbBnNgz57m4fa4F1gYhpnx3b8q1a+zJ8kN9ECs6psZ5YYn6ntUEgMv7P1L7gpCai+zldAFpAgnxgVGRDIVzEUBNOhaNcjzOukmHlzhg8eHhRThaODzpJ6h0sqT/HJa6At64WkVjmFwkhgQ5pRSXISLM5xSluJlASqOqjT6oC9R5hKSx3gXZIqCpyHTy4LdlTqBzt7zfA6vG394shqaqYYOOcM/KcTKFDehOVXZ2Gfvs5fuahV3jkNNk1PkSDczN9vH9tAq2wV9W3A9GjVkUD7yz39dT9c/RyuafHZfgvCdrAyY3iWPuZ3cdYn0bcq94OoDGU2ppjIS8ejohzP7Ify3uqMafg3vx2bi9bB5/I1S/K6AM/ugKFPD0j1Yj8bwNPvSw1dgMl/rp8aUhBMKlQeEMwkAx3SuZj0tM0JEZYT6/uIUsA6OFxcKveAnm27zeg05MSfeZCUWs+YdmM9PrP5qXZCEnVQuIM1dDQxN0+4w9Ke4GtpFQSiBgDzJTUwUb2rU7CqFKV8h/EwLf7Y6dOMedEiRSiyY7NDfeFRbtCAhWqYNCEAfcKSMXXp+eZ+5fvIxllfJdqQdBOEKI2sWtKnZzC/rJ0MjfJG1DHsHxt3ScZZthDuT+k1ti6bEb1SbpXpWolbr06B/UeUh7WhYY4jtNatiPOaULxDXVRM7Kgz9NRZV2IytXPH/MVMMBqMJJviFxYhSEthb8+BJQOEHWDN5E5S96pd6IqflLxakJYKaAdYPNZ7NwaBaBqSHUMYEP/cJ/jLfvbV/VWmVDFFKrYdCNxfyikkFkjU3k+42LHJHG7DPODJZKAAfF7ZTSZonLEKlC+Qvw9/QZPWeoBUqecQf9uYk5Z6x6V4IrAlzE4/hDqLpxmI4AjzMlhWQRwPDU7iMFAsmBYZvlU3ycyMCUjDSN/RxcKbbBlltbOo6aBtKIKs9Q/GRo+rrE=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Encrypted Post. Please Enter Token.
-    
-    </summary>
-    
-      <category term="TA" scheme="https://geekeast.github.io/categories/TA/"/>
-    
-    
-      <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Assignment 2</title>
-    <link href="https://geekeast.github.io/java-ta-2109/Kechengc.html"/>
-    <id>https://geekeast.github.io/java-ta-2109/Kechengc.html</id>
-    <published>2019-09-26T11:36:57.000Z</published>
-    <updated>2019-09-26T12:21:04.567Z</updated>
-    
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Encrypted Post. Please Enter Token.
-    
-    </summary>
-    
-      <category term="TA" scheme="https://geekeast.github.io/categories/TA/"/>
-    
-    
-      <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
-    
-  </entry>
   
   <entry>
     <title>Biology &amp; SOLID</title>
@@ -745,11 +591,434 @@
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
       <category term="Bootstrap" scheme="https://geekeast.github.io/tags/Bootstrap/"/>
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
     
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+  </entry>
+  
+  <entry>
+    <title>Video Streaming in React</title>
+    <link href="https://geekeast.github.io/reactrouterreduxstream.html"/>
+    <id>https://geekeast.github.io/reactrouterreduxstream.html</id>
+    <published>2019-07-30T03:51:56.000Z</published>
+    <updated>2019-07-30T03:55:43.900Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="react-router"><a class="markdownIt-Anchor" href="#react-router"></a> React Router</h2><h3 id="dependency"><a class="markdownIt-Anchor" href="#dependency"></a> Dependency</h3><ul><li><p>react-router-dom</p></li><li><p>Router doesn’t care about <code>localhost:3000</code>, it cares about sth behind <code>localhost:3000</code> like <code>/</code></p></li></ul><h3 id="question"><a class="markdownIt-Anchor" href="#question"></a> Question</h3><ul><li><p><strong>Please see the following code and answer what will happen after enter <code>localhost:3000</code></strong></p> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;BrowserRouter&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/"</span> exact component=&#123;PageOne&#125; /&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/"</span> exact component=&#123;PageTwo&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/BrowserRouter&gt;</span></span><br></pre></td></tr></table></figure><ol><li>The PageOne and PageTwo Component will be both displayed.</li><li>Browser Router will check <code>all</code> the path and matched route will be displayed one by one.</li></ol></li><li><p><strong>Please see the following code and answer what will happen after enter <code>localhost:3000</code></strong></p> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;BrowserRouter&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/"</span>  component=&#123;Home&#125; /&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/pageone"</span>  component=&#123;PageOne&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/BrowserRouter&gt;</span></span><br></pre></td></tr></table></figure><ul><li>The PageOne will be displayed.</li></ul></li></ul><a id="more"></a><ul><li><strong>How React Router match path?</strong><ol><li>For example. for address <code>localhost:3000/page/5</code>, and we have path <code>/</code>, <code>/page</code>, <code>/page/5</code>.</li><li>The History Obejct will extract path from address as <code>/page/5</code></li><li>Then will run this function <code>'/page/5'.contains('/')</code>,<code>'/page/5'.contains('/page')</code>,<code>'/page/5'.contains('/page/5')</code></li><li>And will return <code>all</code> true, so all the path will be matched and the respective components will be returned.</li></ol></li><li><strong>Tell us the difference between using <code>exact</code> and not using <code>exact</code></strong><ol><li>using <code>exact</code> will call something like <code>===</code></li><li>not using <code>exact</code> will call something like <code>contains</code></li></ol></li><li><strong>Why is it a bad practice to use anchor tag in React to redirect to other page within the website?</strong><ol><li>This will cause a new request to the server, which is Network expensive and unnecessary.</li><li>It’s a good practice to use <code>&lt;Link&gt;</code> component from <code>react-router-dom</code>. <code>It's just about showing and hiding different components.</code></li><li>Both way will cause the re-render of component, the difference is the <code>networking</code>.</li></ol></li><li><strong>What will happen if no path is matched in traditional server vs React Router?</strong><ol><li>In traditional server, the default behaviour is to return a 404 page.</li><li>In React Router, the default to to return <code>index.html</code>.</li></ol></li><li><strong>Components like <code>Navigation</code> bar, should you put it inside <code>BrowserRouter</code>, why?</strong><br>1.These are common things you want to display to every page.<br>2.There are <strong>two</strong> ways to solve this problem:<br>3.Outside the router: this works but you <code>cannot</code> use <code>&lt;Link&gt;</code> within the common components.<br>4.Inside the router: this works and you can also use <code>&lt;Link&gt;</code></li><li><strong>Why we use History Object? And How?</strong></li><li>Because we want to manipulate the browser programatically</li><li>Create our own <code>history</code> object as params and use with <code>Router</code> from ‘react-router-dom’ rather than <code>BrowserRouter</code></li><li><strong>Why we need to isolate component when using React-router?</strong><ul><li>For example, <code>edit</code> Streams depends on the state of <code>all</code> streams.</li><li>We need to isolate the streamEdit router component and the streamList router component</li><li>Otherwise, it will cause some error <code>sometimes</code>.</li></ul></li></ul><h3 id="3-routers"><a class="markdownIt-Anchor" href="#3-routers"></a> 3 Routers</h3><table><thead><tr><th>Name</th><th>Column B</th><th>Column C</th></tr></thead><tbody><tr><td>BrowserRouter</td><td><code>localhost:3000/page</code></td><td>add path after Top Level Domain</td></tr><tr><td>HashRouter</td><td><code>localhost:3000/#/page</code></td><td>add a # between TLD and path</td></tr><tr><td>MemoryRouter</td><td><code>localhost:3000</code></td><td>add nothing after TLD</td></tr></tbody></table><h3 id="google-oauth"><a class="markdownIt-Anchor" href="#google-oauth"></a> Google OAuth</h3><p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vaWRlbnRpdHkvcHJvdG9jb2xzL2dvb2dsZXNjb3Blcw==" title="https://developers.google.com/identity/protocols/googlescopes">OAuth 2.0 Scopes for Google APIs<i class="fa fa-external-link"></i></span></p><p><span class="exturl" data-url="aHR0cHM6Ly9jb25zb2xlLmRldmVsb3BlcnMuZ29vZ2xlLmNvbQ==" title="https://console.developers.google.com">Google Console<i class="fa fa-external-link"></i></span></p><p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vaWRlbnRpdHkvc2lnbi1pbi93ZWIvcmVmZXJlbmNlI2dhcGlhdXRoMmluaXRwYXJhbXM=" title="https://developers.google.com/identity/sign-in/web/reference#gapiauth2initparams">gapi docs<i class="fa fa-external-link"></i></span></p><h3 id="configure-redux-dev-tool"><a class="markdownIt-Anchor" href="#configure-redux-dev-tool"></a> Configure Redux Dev Tool</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// index.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; createStore, applyMiddleware, compose &#125; <span class="keyword">from</span> <span class="string">'redux'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> composeEnhancers = <span class="built_in">window</span>.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;</span><br><span class="line">ReactDOM.render(</span><br><span class="line">&lt;Provider store=&#123;createStore(reducers, composeEnhancers(applyMiddleware(thunk)))&#125;&gt;</span><br><span class="line">&lt;App /&gt;</span><br><span class="line">&lt;<span class="regexp">/Provider&gt;,</span></span><br><span class="line"><span class="regexp">document.getElementById('root')</span></span><br></pre></td></tr></table></figure><h3 id="redux-form"><a class="markdownIt-Anchor" href="#redux-form"></a> <span class="exturl" data-url="aHR0cHM6Ly9yZWR1eC1mb3JtLmNvbS84LjIuMi8=" title="https://redux-form.com/8.2.2/">Redux Form<i class="fa fa-external-link"></i></span></h3><ul><li>a convenient reducer for form component</li><li>A convenient solution for communication between views and redux state.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Field, reduxForm &#125; <span class="keyword">from</span> <span class="string">'redux-form'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">StreamForm</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">renderError = <span class="function">(<span class="params">&#123; error, touched &#125;</span>) =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">if</span> (error &amp;&amp; touched) &#123;</span><br><span class="line"><span class="keyword">return</span> (</span><br><span class="line">&lt;div className=<span class="string">"ui error message"</span>&gt;</span><br><span class="line">&lt;div className=<span class="string">"header"</span>&gt; &#123;error&#125;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">);</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// meta is connected with validate function</span></span><br><span class="line">renderInput = <span class="function">(<span class="params">&#123; input, label, meta &#125;</span>) =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">const</span> className = <span class="string">`field <span class="subst">$&#123;meta.error &amp;&amp; meta.touched ? <span class="string">'error'</span> : <span class="string">''</span>&#125;</span>`</span>;</span><br><span class="line"><span class="keyword">return</span> (</span><br><span class="line">&lt;div className=&#123;className&#125;&gt;</span><br><span class="line">&lt;label&gt;&#123;label&#125;&lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">&lt;input &#123;...input&#125; autoComplete="off" /</span>&gt;</span><br><span class="line">&#123;<span class="keyword">this</span>.renderError(meta)&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">);</span></span><br><span class="line"><span class="regexp">&#125;;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">onSubmit = (formValues) =&gt; &#123;</span></span><br><span class="line"><span class="regexp">this.props.onSubmit(formValues);</span></span><br><span class="line"><span class="regexp">&#125;;</span></span><br><span class="line"><span class="regexp">render() &#123;</span></span><br><span class="line"><span class="regexp">return (</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/ magic props with handleSubmit method</span></span><br><span class="line"><span class="regexp">&lt;form onSubmit=&#123;this.props.handleSubmit(this.onSubmit)&#125; className="ui form error"&gt;</span></span><br><span class="line"><span class="regexp">&#123;/</span>* user input field *<span class="regexp">/&#125;</span></span><br><span class="line"><span class="regexp">&lt;Field name="title" component=&#123;this.renderInput&#125; label="Enter Title" /</span>&gt;</span><br><span class="line">&lt;Field name=<span class="string">"description"</span> component=&#123;<span class="keyword">this</span>.renderInput&#125; label=<span class="string">"Enter Description"</span> /&gt;</span><br><span class="line">&lt;button className=<span class="string">"ui button primary"</span>&gt;Submit&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>form&gt;</span><br><span class="line">);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// every time you input will run this function</span></span><br><span class="line"><span class="keyword">const</span> validate = <span class="function">(<span class="params">formValues</span>) =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">const</span> errors = &#123;&#125;;</span><br><span class="line"><span class="keyword">if</span> (!formValues.title) &#123;</span><br><span class="line">errors.title = <span class="string">'You must enter a title'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (!formValues.description) &#123;</span><br><span class="line">errors.description = <span class="string">'You must enter a description'</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> errors;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> reduxForm(&#123; <span class="attr">form</span>: <span class="string">'streamForm'</span>, validate &#125;)(StreamForm);</span><br></pre></td></tr></table></figure><h3 id="convert-object-to-array"><a class="markdownIt-Anchor" href="#convert-object-to-array"></a> Convert Object to Array</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> streams = <span class="built_in">Object</span>.values(object);</span><br></pre></td></tr></table></figure><h3 id="convert-array-to-object"><a class="markdownIt-Anchor" href="#convert-array-to-object"></a> Convert Array to Object</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> streams = _.mapKeys(array,<span class="string">'id'</span>);</span><br></pre></td></tr></table></figure><h3 id="loadsh-mapkeys"><a class="markdownIt-Anchor" href="#loadsh-mapkeys"></a> Loadsh <code>mapKeys()</code></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// this will take '' as the new key and return as an object</span></span><br><span class="line">mapKeys(iterable,(v,k)=&gt;&#123;<span class="keyword">return</span> <span class="string">''</span>&#125;)</span><br><span class="line"><span class="comment">// this will take v[attr_name] as the new key and retur as an object</span></span><br><span class="line">mapKeys(iterable, <span class="string">'attr_name'</span>)</span><br><span class="line"><span class="comment">// equals to </span></span><br><span class="line">mapKeys(iterable, (v,k) =&gt; v[<span class="string">'attr_name'</span>])</span><br></pre></td></tr></table></figure><h3 id="view-update-flow-chart"><a class="markdownIt-Anchor" href="#view-update-flow-chart"></a> View Update Flow Chart</h3><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190729-160600%402x.png"><h3 id="history-object"><a class="markdownIt-Anchor" href="#history-object"></a> History Object</h3><ul><li>It’s more flexible to manage your own history object rather than useing the BrowserRouter’s</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// history.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; createBrowserHistory &#125; <span class="keyword">from</span> <span class="string">'history'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> createBrowserHistory();</span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="comment">// code code</span></span><br><span class="line"><span class="keyword">import</span> &#123; Router, Route &#125; <span class="keyword">from</span> <span class="string">'react-router-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> history <span class="keyword">from</span> <span class="string">'../history'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> App = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">return</span> (</span><br><span class="line">      &lt;div className=<span class="string">"ui container"</span>&gt;</span><br><span class="line">         <span class="comment">// core code</span></span><br><span class="line">&lt;Router history=&#123;history&#125;&gt;</span><br><span class="line">&lt;Header /&gt;</span><br><span class="line">&lt;Route path=<span class="string">"/"</span> exact component=&#123;StreamList&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/Router&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure><h3 id="react-portal"><a class="markdownIt-Anchor" href="#react-portal"></a> React Portal</h3><ul><li>Why we need to use react portal?<ul><li>If we want to use modal, we’d better take it as a child of <code>body</code> element with a <code>z-index</code> value</li><li>Portal is a convenient way to <code>modify</code> the <code>parent</code> component of an existing component.</li></ul></li></ul><h3 id="fragment"><a class="markdownIt-Anchor" href="#fragment"></a> Fragment</h3><ul><li>Why we need to use React Fragment?<ul><li>Some <code>div</code> wrapper will break the styling rules</li><li><code>Fragment</code> is like <code>div</code>, but doesn’t produce any <code>html</code> tags</li></ul></li></ul><h3 id="switch"><a class="markdownIt-Anchor" href="#switch"></a> Switch</h3><ul><li><p>What is switch? What is it used for?</p>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// this will show StreamCreate and StreamShow together</span></span><br><span class="line"><span class="comment">// 同级变量和定量重合问题</span></span><br><span class="line">&lt;Router history=&#123;history&#125;&gt;</span><br><span class="line">&lt;Header /&gt;</span><br><span class="line">&lt;Route path=<span class="string">"/streams/new"</span> exact component=&#123;StreamCreate&#125; /&gt;</span><br><span class="line">&lt;Route path=<span class="string">"/streams/:id"</span> exact component=&#123;StreamShow&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/Router&gt;</span></span><br></pre></td></tr></table></figure><ul><li>Solution</li></ul>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 只会渲染第一个匹配到的路径</span></span><br><span class="line">&lt;Router history=&#123;history&#125;&gt;</span><br><span class="line">&lt;Header /&gt;</span><br><span class="line">&lt;Switch&gt;</span><br><span class="line">&lt;Route path=<span class="string">"/streams/new"</span> exact component=&#123;StreamCreate&#125; /&gt;</span><br><span class="line">&lt;Route path=<span class="string">"/streams/:id"</span> exact component=&#123;StreamShow&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/Switch&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>Router&gt;</span><br></pre></td></tr></table></figure></li><li><p>Conclusion:</p><ul><li><p>Different Lengths: always with <strong><code>exact</code></strong>: order doesn’t matter but for good format - from <strong><code>Long</code></strong> to <strong><code>Short</code></strong></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;Route path=<span class="string">"/streams/"</span> exact component=&#123;StreamShow&#125; /&gt;</span><br><span class="line">&lt;Route path=<span class="string">"/"</span> exact component=&#123;StreamList&#125; /&gt;</span><br></pre></td></tr></table></figure></li><li><p>Same Length: always wrapped with <strong><code>Switch</code></strong>: from <strong><code>Fixed</code></strong> to <strong><code>Variable</code></strong></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Switch&gt;</span><br><span class="line">&lt;Route path=<span class="string">"/streams/new"</span> exact component=&#123;StreamShow&#125; /&gt;</span><br><span class="line">&lt;Route path=<span class="string">"/streams/:id"</span> exact component=&#123;StreamList&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/Switch&gt;</span></span><br></pre></td></tr></table></figure></li></ul></li></ul><h3 id="project-link"><a class="markdownIt-Anchor" href="#project-link"></a> <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L3JlZHV4LXN0cmVhbS1yb3V0ZXI=" title="https://github.com/GeekEast/redux-stream-router">Project Link<i class="fa fa-external-link"></i></span></h3><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;react-router&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#react-router&quot;&gt;&lt;/a&gt; React Router&lt;/h2&gt;
+&lt;h3 id=&quot;dependency&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#dependency&quot;&gt;&lt;/a&gt; Dependency&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;react-router-dom&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Router doesn’t care about &lt;code&gt;localhost:3000&lt;/code&gt;, it cares about sth behind &lt;code&gt;localhost:3000&lt;/code&gt; like &lt;code&gt;/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;question&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#question&quot;&gt;&lt;/a&gt; Question&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Please see the following code and answer what will happen after enter &lt;code&gt;localhost:3000&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;BrowserRouter&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&lt;span class=&quot;string&quot;&gt;&quot;/&quot;&lt;/span&gt; exact component=&amp;#123;PageOne&amp;#125; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&lt;span class=&quot;string&quot;&gt;&quot;/&quot;&lt;/span&gt; exact component=&amp;#123;PageTwo&amp;#125; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&lt;span class=&quot;regexp&quot;&gt;/BrowserRouter&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;The PageOne and PageTwo Component will be both displayed.&lt;/li&gt;
+&lt;li&gt;Browser Router will check &lt;code&gt;all&lt;/code&gt; the path and matched route will be displayed one by one.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Please see the following code and answer what will happen after enter &lt;code&gt;localhost:3000&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;BrowserRouter&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&lt;span class=&quot;string&quot;&gt;&quot;/&quot;&lt;/span&gt;  component=&amp;#123;Home&amp;#125; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;Route path=&lt;span class=&quot;string&quot;&gt;&quot;/pageone&quot;&lt;/span&gt;  component=&amp;#123;PageOne&amp;#125; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&lt;span class=&quot;regexp&quot;&gt;/BrowserRouter&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;The PageOne will be displayed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
+    
+      <category term="Redux" scheme="https://geekeast.github.io/tags/Redux/"/>
+    
+      <category term="Router" scheme="https://geekeast.github.io/tags/Router/"/>
+    
+      <category term="Streaming Video" scheme="https://geekeast.github.io/tags/Streaming-Video/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Read Update and Delete in ES6</title>
+    <link href="https://geekeast.github.io/arrayoperationinreact.html"/>
+    <id>https://geekeast.github.io/arrayoperationinreact.html</id>
+    <published>2019-07-24T01:22:02.000Z</published>
+    <updated>2019-08-31T04:49:46.508Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="array"><a class="markdownIt-Anchor" href="#array"></a> Array</h3><table><thead><tr><th style="text-align:center">Manipulation</th><th style="text-align:center">Bad Practice</th><th style="text-align:center">Good Practice</th></tr></thead><tbody><tr><td style="text-align:center"><code>Add</code></td><td style="text-align:center"><code>state.push('a')</code></td><td style="text-align:center"><code>[...state,'hi']</code></td></tr><tr><td style="text-align:center"><code>Remove</code></td><td style="text-align:center"><code>state.pop()</code></td><td style="text-align:center"><code>state.filter(..)</code></td></tr><tr><td style="text-align:center"><code>Update</code></td><td style="text-align:center"><code>state[0]='hi'</code></td><td style="text-align:center"><code>state.map(...)</code></td></tr></tbody></table><h3 id="object"><a class="markdownIt-Anchor" href="#object"></a> Object</h3><table><thead><tr><th style="text-align:center">Manipulation</th><th style="text-align:center">Bad Practice</th><th style="text-align:center">Good Practice</th></tr></thead><tbody><tr><td style="text-align:center"><code>Add</code></td><td style="text-align:center"><code>state.age=30</code></td><td style="text-align:center"><code>{...state,age:30}</code></td></tr><tr><td style="text-align:center"><code>Remove</code></td><td style="text-align:center"><code>delete state.name</code></td><td style="text-align:center"><code>{...state,age:undefined}</code> <code>_.omit(state,'age')</code></td></tr><tr><td style="text-align:center"><code>Update</code></td><td style="text-align:center"><code>state.name='Sam'</code></td><td style="text-align:center"><code>{...state,name:'Sam'}</code></td></tr></tbody></table><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;array&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#array&quot;&gt;&lt;/a&gt; Array&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Manipulation&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Bad Practice&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Good Practice&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Add&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.push(&#39;a&#39;)&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;[...state,&#39;hi&#39;]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Remove&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.pop()&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.filter(..)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Update&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state[0]=&#39;hi&#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.map(...)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;object&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#object&quot;&gt;&lt;/a&gt; Object&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Manipulation&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Bad Practice&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Good Practice&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Add&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.age=30&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;{...state,age:30}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Remove&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;delete state.name&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;{...state,age:undefined}&lt;/code&gt; &lt;code&gt;_.omit(state,&#39;age&#39;)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Update&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.name=&#39;Sam&#39;&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;{...state,name:&#39;Sam&#39;}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
+    
+      <category term="Array" scheme="https://geekeast.github.io/tags/Array/"/>
+    
+      <category term="Object" scheme="https://geekeast.github.io/tags/Object/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redux Thunk</title>
+    <link href="https://geekeast.github.io/reduxthunk.html"/>
+    <id>https://geekeast.github.io/reduxthunk.html</id>
+    <published>2019-07-23T06:03:22.000Z</published>
+    <updated>2019-07-24T13:06:52.474Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="question"><a class="markdownIt-Anchor" href="#question"></a> Question</h2><ol><li>How to make <code>asynchronous</code> call in Redux React App?<ul><li>the asynchronous request should be called within the <code>action creator</code> in the <code>componentDidMount()</code></li></ul></li><li>I did call the asynchronous request call in action creator, but there two bugs: a. action should be plain objects b. use middleware. What’s the reason?<ul><li>a. <code>async</code> will let the action creator return sth not a plain object. Debug to use <code>babeljs.io</code></li><li>b. using <code>promise</code> will also not solve the problem because you have not got the data before dispatching it to store.</li></ul></li></ol><h3 id="bad-practice"><a class="markdownIt-Anchor" href="#bad-practice"></a> Bad Practice</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> fetchPosts = <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line"><span class="comment">// bad approach</span></span><br><span class="line"><span class="keyword">const</span> &#123; data &#125; = <span class="keyword">await</span> axios.get(<span class="string">'https://jsonplaceholder.typicode.com/posts'</span>);</span><br><span class="line">    <span class="keyword">const</span> posts = data;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// this is not the compiled code, go to babeljs.io</span></span><br><span class="line">    <span class="comment">// doesn't return a plain object because of the `async` </span></span><br><span class="line"><span class="keyword">return</span> &#123;</span><br><span class="line">type: <span class="string">'FETCH_POSTS'</span>,</span><br><span class="line">payload: posts</span><br><span class="line">&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><ol start="3"><li>What’s the right way to do the asynchorous call?<ul><li>use Middleware like Redux Thunk</li></ul></li></ol><h3 id="middleware-way"><a class="markdownIt-Anchor" href="#middleware-way"></a> Middleware Way</h3><ul><li>Middleware allows your action creator to return a <code>function</code> or an <code>action</code></li><li>If you return a <code>function</code> by an action creator, the middleware will automatically call the function</li><li>If you return an <code>action</code>, it acts like the middleware doesn’t do anything.</li><li>Thunk is used to do asynchronous call before the action is arrived at store.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// thunk way</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> fetchPosts = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">async</span> (dispatch, getState) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> &#123; data &#125; = <span class="keyword">await</span> axios.get(<span class="string">'https://jsonplaceholder.typicode.com/posts'</span>);</span><br><span class="line">    <span class="comment">// manually dispatch to store after get right data</span></span><br><span class="line">dispatch(&#123; <span class="attr">type</span>: <span class="string">'FETCH_POSTS'</span>, <span class="attr">payload</span>: data &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="what-is-middleware"><a class="markdownIt-Anchor" href="#what-is-middleware"></a> What is middleware?</h3><ul><li>Middleware is added between <code>reducers</code> and <code>dispatch()</code></li><li>could <code>STOP</code>, <code>MODIFY</code> actions</li><li>Redux-thunk is a middleware to deal with async issues of React.</li></ul><h3 id="memoization"><a class="markdownIt-Anchor" href="#memoization"></a> Memoization</h3><ul><li>is a way to cache <code>function</code></li><li>There are many ways to cache.</li></ul><table><thead><tr><th>Name</th><th>Time</th><th>Where</th></tr></thead><tbody><tr><td>Function cache</td><td>at the same time</td><td>Local</td></tr><tr><td>HTTP cache</td><td>at different time</td><td>Server</td></tr></tbody></table><h4 id="entrance"><a class="markdownIt-Anchor" href="#entrance"></a> Entrance</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUser</span>(<span class="params">id</span>) </span>&#123;</span><br><span class="line">    fetch(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Made a request!"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> memoizedGetUser = _.memoize(getUser);</span><br><span class="line">memoizedGetUser(<span class="number">3</span>);</span><br></pre></td></tr></table></figure><h4 id="wrong"><a class="markdownIt-Anchor" href="#wrong"></a> Wrong!</h4><ul><li>same id, same function, rather than the action itself!</li><li>so same request will still be called multiple times.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fetchUser = _.memoize(<span class="function">(<span class="params">id</span>)=&gt;</span><span class="function">(<span class="params">dispatch</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> response = <span class="keyword">await</span> ...id;</span><br><span class="line">    dispatch(...);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h4 id="wrong-again"><a class="markdownIt-Anchor" href="#wrong-again"></a> Wrong Again!</h4><ul><li>everytime we call fetchUser, we create a new function.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fetchUser = <span class="function">(<span class="params">id</span>) =&gt;</span> _.memoize(<span class="keyword">async</span> (dispatch) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> reponse = <span class="keyword">await</span> ...id;</span><br><span class="line">    dispatch(...);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h4 id="right"><a class="markdownIt-Anchor" href="#right"></a> Right!!!</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// private functions you don't want other programmer to modify</span></span><br><span class="line"><span class="keyword">const</span> _fetchUser = _.memoize(<span class="keyword">async</span> (id, dispatch) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> response = <span class="keyword">await</span> ...id;</span><br><span class="line">    dispatch(...);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">const</span> fetchUser = <span class="function"><span class="params">id</span> =&gt;</span> dispatch =&gt; &#123;</span><br><span class="line">    _fetchUser(id, dispatch);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="the-simpler-way-even-doesnt-work"><a class="markdownIt-Anchor" href="#the-simpler-way-even-doesnt-work"></a> The simpler way even doesn’t work …</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> fetchUser = <span class="function">(<span class="params">id</span>) =&gt;</span> (dispatch) =&gt;</span><br><span class="line">_.memoize(<span class="keyword">async</span> (id, dispatch) =&gt; &#123;</span><br><span class="line"><span class="keyword">const</span> &#123; data &#125; = <span class="keyword">await</span> axios.get(<span class="string">`https://jsonplaceholder.typicode.com/users/<span class="subst">$&#123;id&#125;</span>`</span>);</span><br><span class="line">dispatch(&#123; <span class="attr">type</span>: <span class="string">'FETCH_USER'</span>, <span class="attr">payload</span>: data &#125;);</span><br><span class="line">&#125;)(id, dispatch);</span><br></pre></td></tr></table></figure><h4 id="conclusion-_"><a class="markdownIt-Anchor" href="#conclusion-_"></a> Conclusion @_@</h4><ul><li>always make <code>_.memoize()</code> inside a wrapper function like <code>_fetchUser()</code> if you want to pass <code>parameters</code> into it.</li></ul><h3 id="when-do-you-need-to-use-await"><a class="markdownIt-Anchor" href="#when-do-you-need-to-use-await"></a> When do you need to use <code>await</code>?</h3><ul><li>The current request depends on the response of last request.</li></ul><h3 id="related-projects"><a class="markdownIt-Anchor" href="#related-projects"></a> Related Projects</h3><h2 id="github"><a class="markdownIt-Anchor" href="#github"></a> <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L3JlZHV4LWJsb2c=" title="https://github.com/GeekEast/redux-blog">Github<i class="fa fa-external-link"></i></span></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;question&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#question&quot;&gt;&lt;/a&gt; Question&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;How to make &lt;code&gt;asynchronous&lt;/code&gt; call in Redux React App?
+&lt;ul&gt;
+&lt;li&gt;the asynchronous request should be called within the &lt;code&gt;action creator&lt;/code&gt; in the &lt;code&gt;componentDidMount()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I did call the asynchronous request call in action creator, but there two bugs: a. action should be plain objects b. use middleware. What’s the reason?
+&lt;ul&gt;
+&lt;li&gt;a. &lt;code&gt;async&lt;/code&gt; will let the action creator return sth not a plain object. Debug to use &lt;code&gt;babeljs.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;b. using &lt;code&gt;promise&lt;/code&gt; will also not solve the problem because you have not got the data before dispatching it to store.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;bad-practice&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#bad-practice&quot;&gt;&lt;/a&gt; Bad Practice&lt;/h3&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; fetchPosts = &lt;span class=&quot;keyword&quot;&gt;async&lt;/span&gt; () =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;// bad approach&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &amp;#123; data &amp;#125; = &lt;span class=&quot;keyword&quot;&gt;await&lt;/span&gt; axios.get(&lt;span class=&quot;string&quot;&gt;&#39;https://jsonplaceholder.typicode.com/posts&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; posts = data;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// this is not the compiled code, go to babeljs.io&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// doesn&#39;t return a plain object because of the `async` &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		type: &lt;span class=&quot;string&quot;&gt;&#39;FETCH_POSTS&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		payload: posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;What’s the right way to do the asynchorous call?
+&lt;ul&gt;
+&lt;li&gt;use Middleware like Redux Thunk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;middleware-way&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#middleware-way&quot;&gt;&lt;/a&gt; Middleware Way&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Middleware allows your action creator to return a &lt;code&gt;function&lt;/code&gt; or an &lt;code&gt;action&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;If you return a &lt;code&gt;function&lt;/code&gt; by an action creator, the middleware will automatically call the function&lt;/li&gt;
+&lt;li&gt;If you return an &lt;code&gt;action&lt;/code&gt;, it acts like the middleware doesn’t do anything.&lt;/li&gt;
+&lt;li&gt;Thunk is used to do asynchronous call before the action is arrived at store.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// thunk way&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; fetchPosts = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; =&amp;gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;async&lt;/span&gt; (dispatch, getState) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &amp;#123; data &amp;#125; = &lt;span class=&quot;keyword&quot;&gt;await&lt;/span&gt; axios.get(&lt;span class=&quot;string&quot;&gt;&#39;https://jsonplaceholder.typicode.com/posts&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// manually dispatch to store after get right data&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	dispatch(&amp;#123; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;FETCH_POSTS&#39;&lt;/span&gt;, &lt;span class=&quot;attr&quot;&gt;payload&lt;/span&gt;: data &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
+    
+      <category term="Redux" scheme="https://geekeast.github.io/tags/Redux/"/>
+    
+      <category term="Thunk" scheme="https://geekeast.github.io/tags/Thunk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Facebook Flux</title>
+    <link href="https://geekeast.github.io/facebookflux.html"/>
+    <id>https://geekeast.github.io/facebookflux.html</id>
+    <published>2019-07-22T23:49:11.000Z</published>
+    <updated>2019-07-23T00:03:21.376Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="main-structure"><a class="markdownIt-Anchor" href="#main-structure"></a> Main Structure</h3><ul><li>View(视图层)</li><li>Action(动作)：视图层发出的动作指令</li><li>Dispatcher(派发器): 接收Actions，执行callback</li><li>Store(数据层): 存储state</li></ul><img style="width:80%; margin:auto" src="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016011503.png"><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;main-structure&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#main-structure&quot;&gt;&lt;/a&gt; Main Structure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;View(视图层)&lt;/li&gt;
+&lt;li&gt;Action(动作)：视图层发出的动作指令&lt;/li&gt;
+&lt;li&gt;Dispatcher(派发器): 接收Actions，执行callback&lt;/li&gt;
+&lt;li&gt;Store(数据层): 存储state&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img style=&quot;width:80%; margin:auto&quot; src=&quot;http://www.ruanyifeng.com/blogimg/asset/2016/bg2016011503.png&quot;&gt;
+    
+    </summary>
+    
+      <category term="Architecture" scheme="https://geekeast.github.io/categories/Architecture/"/>
+    
+    
+      <category term="Architecture" scheme="https://geekeast.github.io/tags/Architecture/"/>
+    
+      <category term="Flux" scheme="https://geekeast.github.io/tags/Flux/"/>
+    
+      <category term="FaceBook" scheme="https://geekeast.github.io/tags/FaceBook/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React Redux</title>
+    <link href="https://geekeast.github.io/react-redux.html"/>
+    <id>https://geekeast.github.io/react-redux.html</id>
+    <published>2019-07-22T04:03:59.000Z</published>
+    <updated>2019-07-24T07:11:44.450Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="key-points"><a class="markdownIt-Anchor" href="#key-points"></a> Key Points</h3><table><thead><tr><th>Name</th><th>What</th><th>Where</th><th>Analogy</th><th>Example</th></tr></thead><tbody><tr><td><strong>Action</strong></td><td>Payloads send from view to store.</td><td>View</td><td>HTTP Post Body</td><td><code>{ type: 'SONG_SELECTED', payload: &quot;Hello world&quot; }</code></td></tr><tr><td><strong>Action Creator</strong></td><td>Function to generate actions</td><td>View</td><td>Wrapper / <strong>Decorator</strong></td><td><code>(song) =&gt; {type:'SONG_SELECTED', payload: song}</code></td></tr><tr><td><code>dispatch()</code></td><td>Function that sends actions to store</td><td>View</td><td>gmail()</td><td><code>dispatch(action)</code></td></tr><tr><td><strong>State</strong></td><td>Data needs to be centralized</td><td>Store</td><td>Static Variable in Java</td><td></td></tr><tr><td><strong>Reducer</strong></td><td>Function to update state according to action</td><td>Store</td><td>Setter method in Java</td><td><code>(selectSong = null, action) =&gt; {if (action.type === 'SONG_SELECTED') return action.payload;} return selectedSong</code></td></tr><tr><td><strong>Store</strong></td><td>The place to store state and reducer</td><td>Global</td><td>Bank</td><td><code>createStore(combinedReducers)</code></td></tr><tr><td><strong>Middleware</strong></td><td>Function that get called with <code>every</code> action we dispatch</td><td>Between Reducer and <code>dispatch()</code></td><td>Gas Station</td><td>Redux Thunk</td></tr></tbody></table><h3 id="architecture"><a class="markdownIt-Anchor" href="#architecture"></a> Architecture</h3><img style="width:100%; margin:auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/reduxarchitect.png"><h3 id="essence"><a class="markdownIt-Anchor" href="#essence"></a> Essence</h3><img style="width:100%; margin:auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190724-163943%402x.png"> <a id="more"></a><h3 id="when-to-use-redux"><a class="markdownIt-Anchor" href="#when-to-use-redux"></a> When to use Redux</h3><ul><li>Different users have different ways to use.</li><li>Colloboration between users.</li><li>Intense commnunication wtih servers or with websocket.</li><li>View need to get data from multiple sources.</li></ul><blockquote><p>Summaruy: the same state is going to be used by many different views, then it’s better to put it into redux.</p></blockquote><h3 id="main-structure"><a class="markdownIt-Anchor" href="#main-structure"></a> Main Structure</h3><ol><li><strong>&quot;What happened in the view?&quot;</strong></li><li><strong>&quot;How to send actions to store?&quot;</strong></li><li><strong>&quot;How to update the store in response to actions?&quot;</strong></li></ol><ul><li><strong>Actions</strong>: payloads send from view to store.</li><li><code>dispatch()</code>: function to send action from view to store</li><li><strong>Reducers</strong>: specify how state changes in response to actions sent to the store. Reducer review <code>current state</code> and <code>action</code> as parameters.</li><li><strong>Store</strong>: hold state; return state <code>getState()</code>; update state <code>dispatch(action)</code>, register listener <code>subscribe(listener)</code></li></ul><h3 id="question"><a class="markdownIt-Anchor" href="#question"></a> Question</h3><ul><li><strong>How the redux match between reducer and action?</strong><ul><li>It happens internal within the store.</li><li>All the reducers will check the action type (<strong>Iteration</strong>)</li></ul></li><li><strong>Can we deal with same type of actions in different reducers?</strong><ul><li>Sure!</li><li><strong>All</strong> these reducers will be triggerred when the action come.</li></ul></li><li><strong>Why we need use action creator?</strong><ul><li>The reason is like whey you use decorator or wrapper function.</li><li><strong>Reason one</strong>: trigger in the future.</li><li><strong>Reason two</strong>: pass external parameters</li></ul></li><li><strong>Why we call it reducer?</strong><ul><li>Usage of state and the state itself is similar to <code>many-to-one</code> relationship.</li><li>Reducer is used to reduce manipulation to update state.</li></ul></li><li><strong>What is difference bewtween <code>ownProps</code> and <code>ReduxProps</code>?</strong><ul><li><code>ownProps</code> is props passed from <code>parent components</code>.</li><li><code>ReduxProps</code> is props passed from <code>redux</code>.</li><li><code>ownProps</code> is used to pass <code>normal</code> props to <code>mapStateToProps</code> function</li></ul></li></ul><h3 id="important"><a class="markdownIt-Anchor" href="#important"></a> Important</h3><h4 id="reducers"><a class="markdownIt-Anchor" href="#reducers"></a> Reducers</h4><ul><li>The key of reducers in the combinedReducers is actually the name of one state.</li><li>The key of reducers must be the same with the return name in the specifc reducer.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mark</span></span><br><span class="line"><span class="keyword">const</span> userReducers = <span class="function">(<span class="params">users = [], action</span>) =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">switch</span> (action.type) &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="string">'FETCH_USER'</span>:</span><br><span class="line"><span class="keyword">return</span> [ ...users, action.payload ];</span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">            <span class="comment">// mark</span></span><br><span class="line"><span class="keyword">return</span> users;</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> combineReducers(&#123;</span><br><span class="line">    <span class="comment">// mark</span></span><br><span class="line">users: userReducers</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h4 id="action-creators"><a class="markdownIt-Anchor" href="#action-creators"></a> Action creators</h4><ul><li>Case: when you pass { actionCreator } to connect()</li><li>you need call it actionCreator by <code>this.props.actionCreator()</code> rather than <code>actionCreator()</code></li><li>Reason: because you doesn’t dispatch the action creator in <code>actionCreator()</code> way. But the <code>this.props.actionCreator</code> is will be automatically <strong>dispatched</strong> by connect function</li></ul><h3 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h3><p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTYvMDkvcmVkdXhfdHV0b3JpYWxfcGFydF9vbmVfYmFzaWNfdXNhZ2VzLmh0bWw=" title="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html">阮一峰：Redux 入门教程（一）：基本用法<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvZ2V0dGluZy1zdGFydGVkLXdpdGgtcmVkdXg=" title="https://egghead.io/courses/getting-started-with-redux">Video: Redux Basics<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvc3RhcnQtbGVhcm5pbmctcmVhY3Q=" title="https://egghead.io/courses/start-learning-react">Video: Redux Advanced<i class="fa fa-external-link"></i></span></p><h3 id="demo"><a class="markdownIt-Anchor" href="#demo"></a> Demo</h3><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L1JlYWN0LVJlZHV4LVNvbmc=" title="https://github.com/GeekEast/React-Redux-Song">Github<i class="fa fa-external-link"></i></span></p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;key-points&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#key-points&quot;&gt;&lt;/a&gt; Key Points&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;What&lt;/th&gt;
+&lt;th&gt;Where&lt;/th&gt;
+&lt;th&gt;Analogy&lt;/th&gt;
+&lt;th&gt;Example&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Payloads send from view to store.&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;HTTP Post Body&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;{ type: &#39;SONG_SELECTED&#39;, payload: &amp;quot;Hello world&amp;quot; }&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Action Creator&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Function to generate actions&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;Wrapper / &lt;strong&gt;Decorator&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;(song) =&amp;gt; {type:&#39;SONG_SELECTED&#39;, payload: song}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;dispatch()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Function that sends actions to store&lt;/td&gt;
+&lt;td&gt;View&lt;/td&gt;
+&lt;td&gt;gmail()&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;dispatch(action)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;State&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Data needs to be centralized&lt;/td&gt;
+&lt;td&gt;Store&lt;/td&gt;
+&lt;td&gt;Static Variable in Java&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Reducer&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Function to update state according to action&lt;/td&gt;
+&lt;td&gt;Store&lt;/td&gt;
+&lt;td&gt;Setter method in Java&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;(selectSong = null, action) =&amp;gt; {if (action.type === &#39;SONG_SELECTED&#39;) return action.payload;} return selectedSong&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Store&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The place to store state and reducer&lt;/td&gt;
+&lt;td&gt;Global&lt;/td&gt;
+&lt;td&gt;Bank&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;createStore(combinedReducers)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Middleware&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Function that get called with &lt;code&gt;every&lt;/code&gt; action we dispatch&lt;/td&gt;
+&lt;td&gt;Between Reducer and &lt;code&gt;dispatch()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Gas Station&lt;/td&gt;
+&lt;td&gt;Redux Thunk&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;architecture&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#architecture&quot;&gt;&lt;/a&gt; Architecture&lt;/h3&gt;
+&lt;img style=&quot;width:100%; margin:auto&quot; src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/reduxarchitect.png&quot;&gt;
+&lt;h3 id=&quot;essence&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#essence&quot;&gt;&lt;/a&gt; Essence&lt;/h3&gt;
+&lt;img style=&quot;width:100%; margin:auto&quot; src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190724-163943%402x.png&quot;&gt;
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
+    
+      <category term="Redux" scheme="https://geekeast.github.io/tags/Redux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pitfalls for IT Interview</title>
+    <link href="https://geekeast.github.io/usaitinterview.html"/>
+    <id>https://geekeast.github.io/usaitinterview.html</id>
+    <published>2019-07-18T03:55:36.000Z</published>
+    <updated>2019-08-24T00:23:06.509Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Interview = Practice + Performance</p></blockquote><h3 id="practice刷题"><a class="markdownIt-Anchor" href="#practice刷题"></a> Practice(刷题)</h3><ul><li>Issues: many leetcode, no difference</li><li>Solution(精刷):<ul><li>Understand problems thoroughly(&gt;=30mins)<ul><li><strong>associate</strong> other problems</li><li>start from <strong>brute force</strong> solution</li></ul></li><li>Review, Summary and Association<ul><li>What <strong>algorithms</strong> of solutions</li><li><strong>related</strong> problems and <strong>difference</strong></li></ul></li><li><strong>Mark</strong> and Rewrite again.</li></ul></li></ul><h3 id="performance表现"><a class="markdownIt-Anchor" href="#performance表现"></a> Performance(表现)</h3><ul><li>Issues: feeling good, no offers</li><li>Solution:<ul><li>make the interviewer comfortable</li><li>Communication is very important as a colleague<ul><li>Ask questions and make problems clear</li><li>don’t just bury your head and no speaking</li><li>You need to perform even you saw the question before.</li></ul></li></ul></li><li>Attitude:<ul><li>Take the interviewee as your colleague.</li><li>you are doing a product, not just a problem.</li></ul></li></ul><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Interview = Practice + Performance&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;practice刷题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#practice刷题&quot;&gt;&lt;/a&gt; Practice(刷题)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Issues: many leetcode, no difference&lt;/li&gt;
+&lt;li&gt;Solution(精刷):
+&lt;ul&gt;
+&lt;li&gt;Understand problems thoroughly(&amp;gt;=30mins)
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;associate&lt;/strong&gt; other problems&lt;/li&gt;
+&lt;li&gt;start from &lt;strong&gt;brute force&lt;/strong&gt; solution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Review, Summary and Association
+&lt;ul&gt;
+&lt;li&gt;What &lt;strong&gt;algorithms&lt;/strong&gt; of solutions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;related&lt;/strong&gt; problems and &lt;strong&gt;difference&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mark&lt;/strong&gt; and Rewrite again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;performance表现&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#performance表现&quot;&gt;&lt;/a&gt; Performance(表现)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Issues: feeling good, no offers&lt;/li&gt;
+&lt;li&gt;Solution:
+&lt;ul&gt;
+&lt;li&gt;make the interviewer comfortable&lt;/li&gt;
+&lt;li&gt;Communication is very important as a colleague
+&lt;ul&gt;
+&lt;li&gt;Ask questions and make problems clear&lt;/li&gt;
+&lt;li&gt;don’t just bury your head and no speaking&lt;/li&gt;
+&lt;li&gt;You need to perform even you saw the question before.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Attitude:
+&lt;ul&gt;
+&lt;li&gt;Take the interviewee as your colleague.&lt;/li&gt;
+&lt;li&gt;you are doing a product, not just a problem.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Career" scheme="https://geekeast.github.io/categories/Career/"/>
+    
+    
+      <category term="Interview" scheme="https://geekeast.github.io/tags/Interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to prepare SDE resume in America?</title>
+    <link href="https://geekeast.github.io/usaitresume.html"/>
+    <id>https://geekeast.github.io/usaitresume.html</id>
+    <published>2019-07-18T03:18:10.000Z</published>
+    <updated>2019-08-24T00:23:42.931Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="education"><a class="markdownIt-Anchor" href="#education"></a> Education</h3><ul><li>University</li><li>Major(Non-cs Major doesn’t matter)</li><li>Graduation Time</li><li><strong>CS related Courses</strong></li><li>GPA (above 3.5)</li></ul><h3 id="experience"><a class="markdownIt-Anchor" href="#experience"></a> Experience</h3><ul><li>Core Part I</li><li>Intership | Jobs: Company, Period, Position</li><li>Process: Project, Problems, Solution</li></ul><h3 id="projects"><a class="markdownIt-Anchor" href="#projects"></a> Projects</h3><ul><li>Core Part II</li><li>Name, period, role</li><li>Process: including key technologies</li><li>Result: your impact</li><li>From near to far, 1-3 Key Projects</li></ul><a id="more"></a><div class="note info">            <h4 id="example"><a class="markdownIt-Anchor" href="#example"></a> Example</h4><ul><li>Format:<ul><li>Summary</li><li>2-3 key techs and results</li><li>Your impact to prove the value.</li></ul></li></ul><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190718-130911.png">          </div><div class="note warning">            <h4 id="how-to-prepare"><a class="markdownIt-Anchor" href="#how-to-prepare"></a> How to prepare?</h4><ul><li>Course Projects</li><li>Personal|team Projects</li></ul>          </div><h3 id="skills"><a class="markdownIt-Anchor" href="#skills"></a> Skills</h3><ul><li>Keep Simple (optional)</li></ul><h3 id="awards"><a class="markdownIt-Anchor" href="#awards"></a> Awards</h3><ul><li>Important Awards(Optional)</li></ul><div class="note danger">            <h4 id="danger-note"><a class="markdownIt-Anchor" href="#danger-note"></a> Danger Note</h4><ul><li>Keep Content in 1 page unless you are very experienced.</li><li>Reversed Time order</li><li>Some action words: <code>complete/construct/design</code> sth using some <code>techs</code> to <code>implement/achieve</code> some <code>functionality/performance</code>enhancement.</li></ul>          </div><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;education&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#education&quot;&gt;&lt;/a&gt; Education&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;University&lt;/li&gt;
+&lt;li&gt;Major(Non-cs Major doesn’t matter)&lt;/li&gt;
+&lt;li&gt;Graduation Time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CS related Courses&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;GPA (above 3.5)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;experience&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#experience&quot;&gt;&lt;/a&gt; Experience&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Core Part I&lt;/li&gt;
+&lt;li&gt;Intership | Jobs: Company, Period, Position&lt;/li&gt;
+&lt;li&gt;Process: Project, Problems, Solution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;projects&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#projects&quot;&gt;&lt;/a&gt; Projects&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Core Part II&lt;/li&gt;
+&lt;li&gt;Name, period, role&lt;/li&gt;
+&lt;li&gt;Process: including key technologies&lt;/li&gt;
+&lt;li&gt;Result: your impact&lt;/li&gt;
+&lt;li&gt;From near to far, 1-3 Key Projects&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Career" scheme="https://geekeast.github.io/categories/Career/"/>
+    
+    
+      <category term="Resume" scheme="https://geekeast.github.io/tags/Resume/"/>
     
   </entry>
   

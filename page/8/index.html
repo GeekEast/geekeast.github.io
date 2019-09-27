@@ -370,7 +370,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/d3tutorial.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/elasticbeanstalk.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -390,7 +390,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/d3tutorial.html" class="post-title-link" itemprop="url">D3.js Tutorial</a>
+                <a href="/elasticbeanstalk.html" class="post-title-link" itemprop="url">Node.js App CI/CD Example with Elastic Beanstalk and Circle CI</a>
               
             
           </h2>
@@ -413,7 +413,7 @@
                 
               
 
-              <time title="Created: 2019-06-03 12:00:26" itemprop="dateCreated datePublished" datetime="2019-06-03T12:00:26+09:30">2019-06-03</time>
+              <time title="Created: 2019-05-23 16:02:22" itemprop="dateCreated datePublished" datetime="2019-05-23T16:02:22+09:30">2019-05-23</time>
             
 
             
@@ -428,7 +428,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-06-05 16:47:51" itemprop="dateModified" datetime="2019-06-05T16:47:51+09:30">2019-06-05</time>
+                <time title="Modified: 2019-05-27 23:46:30" itemprop="dateModified" datetime="2019-05-27T23:46:30+09:30">2019-05-27</time>
               
             
           </span>
@@ -443,7 +443,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Analytics/" itemprop="url" rel="index"><span itemprop="name">Analytics</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
 
                 
                 
@@ -472,7 +472,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">3.3k</span>
+                <span title="Symbols count in article">6.3k</span>
               
 
               
@@ -486,7 +486,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">2 mins.</span>
+                <span title="Reading time">5 mins.</span>
               
             </div>
           
@@ -507,705 +507,275 @@
 
       
         
-          <h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3>
+          <h2 id="simple-skeleton-of-cicd"><a class="markdownIt-Anchor" href="#simple-skeleton-of-cicd"></a> Simple Skeleton of CI/CD</h2>
+<p><img style="width: 60%; margin: auto" src="https://s3-ap-southeast-2.amazonaws.com/geekeaskblogpics/posts/cicdprocess.png"></p>
+<h2 id="related-concepts"><a class="markdownIt-Anchor" href="#related-concepts"></a> Related Concepts:</h2>
 <ul>
-<li>Document: Element in a web page.</li>
-<li>SVG: Scalable <a href="https://vector-conversions.com/vectorizing/raster_vs_vector.html" target="_blank" rel="noopener">Vector Graphics</a>. It defines vector-based graphics in <strong>XML</strong> format. <strong>Here “scalable” means that, if you zoom in or out on an object, it would not appear pixelated.</strong></li>
-<li>Selection: an arraqy of <strong>nodes</strong> in DOM.</li>
-</ul>
-<h3 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h3>
+<li><strong>CI</strong>: <strong>Continuous Integration</strong>: Merge Branch to master after passing the building and testing stage</li>
+<li><strong>CD</strong>:
 <ul>
-<li>Without D3.js</li>
+<li>Continuous Delivery</li>
+<li><strong>Continuous Deployment</strong>: run the code in production server(s)<br>
+<img style="width: 40%; margin: auto" src="https://www.nastel.com/wp-content/uploads/blogpic-32.png"></li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Tedious Iteration</span></span><br><span class="line"><span class="keyword">var</span> paragraphs = docuemnt.getElementsByTagName(<span class="string">"p"</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i =<span class="number">0</span>; i &lt; paragraphs.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> pargraph = paragraphs.item(i);</span><br><span class="line">    paragraph.style.setProperty(<span class="string">"color"</span>, <span class="string">"blue"</span>, <span class="literal">null</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools:</h2>
 <ul>
-<li>With D3.js</li>
+<li>Node.js with yarn</li>
+<li>Git</li>
+<li>Github</li>
+<li>Circle CI</li>
+<li>Elastic Beanstalk</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// a group of elements manipulation</span></span><br><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="string">"blue"</span>);</span><br><span class="line"><span class="comment">// individual element manipulation - the first found</span></span><br><span class="line">d3.select(<span class="string">"body"</span>).style(<span class="string">"background-color"</span>, <span class="string">"black"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="dynamic-properties"><a class="markdownIt-Anchor" href="#dynamic-properties"></a> Dynamic Properties</h3>
-<blockquote>
-<p>Dynamic means use <code>function</code> rather than <code>constants</code> to return content</p>
+<h2 id="about-elastic-beanstalk"><a class="markdownIt-Anchor" href="#about-elastic-beanstalk"></a> About Elastic Beanstalk</h2>
+<ul>
+<li>Configure the <code>production environment</code> for your code, for example with Ubuntu 16.04 and Node.js 10.</li>
+<li>Configure the command to <code>start runing</code> your application, for example <code>npm start</code>.</li>
+<li>Configure <code>security</code>, <code>load balancing</code> and <code>auto scaling</code> service from aws.</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/elasticbeanstalk.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/cssdisplay.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/cssdisplay.html" class="post-title-link" itemprop="url">CSS block inline inline-block</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-21 23:06:43" itemprop="dateCreated datePublished" datetime="2019-05-21T23:06:43+09:30">2019-05-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-07-10 09:31:54" itemprop="dateModified" datetime="2019-07-10T09:31:54+09:30">2019-07-10</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">283</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>display的默认值视type而定；</p>
 </blockquote>
-<ul>
-<li>Randomly color paragraphs.</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"rsl("</span> + <span class="built_in">Math</span>.random()*<span class="number">360</span> + <span class="string">",100%,50%)"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>shades of gray for even and odd nodes</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d, i</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> i % <span class="number">2</span> ? <span class="string">"#fff"</span> : <span class="string">"#eee"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>d</code> for individual bounded <strong>data</strong></li>
-<li><code>i</code> for <strong>index</strong>, start from <code>0</code></li>
-<li><code>first d for first node</code>, <code>second d for second node</code> and son on …</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">'p'</span>)</span><br><span class="line">  .data([<span class="number">4</span>,<span class="number">8</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">23</span>,<span class="number">42</span>]) <span class="comment">// pass data to each node</span></span><br><span class="line">  .style(<span class="string">"font-size"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> d + <span class="string">"px"</span>;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
-<p>Once the data has been <code>bound</code> to the document, you can omit the <code>data</code> operator; D3 will retrieve the previously-bound data. This allows you to recompute properties without rebinding. <strong>How?</strong></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/d3tutorial.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/pgpartion.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/pgpartion.html" class="post-title-link" itemprop="url">Suppressing a repeated column value in PostgreSQL</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-29 15:31:59 / Modified: 15:41:43" itemprop="dateCreated datePublished" datetime="2019-05-29T15:31:59+09:30">2019-05-29</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Database/" itemprop="url" rel="index"><span itemprop="name">Database</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">524</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="backgroud"><a class="markdownIt-Anchor" href="#backgroud"></a> Backgroud:</h3>
-<ul>
-<li>Table I had</li>
-</ul>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Name</th>
-<th style="text-align:center">Project</th>
-<th style="text-align:center">Roles</th>
+<th>Value</th>
+<th>Description</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">James</td>
-<td style="text-align:center">Python</td>
-<td style="text-align:center">Admin</td>
+<td>block</td>
+<td><code>独占一行</code> <code>宽度默认为父级宽度</code> <code>有height/width</code> <code>有margin/padding</code></td>
+<td></td>
 </tr>
 <tr>
-<td style="text-align:center">James</td>
-<td style="text-align:center">Python</td>
-<td style="text-align:center">Coder</td>
+<td>inline</td>
+<td><code>不独占一行</code> <code>宽度随内容变化</code> <code>无heigh/width</code> <code>仅水平marign/padding生效</code></td>
+<td></td>
 </tr>
 <tr>
-<td style="text-align:center">James</td>
-<td style="text-align:center">Java</td>
-<td style="text-align:center">Coder</td>
+<td>inline-block</td>
+<td><code>不独占一行</code> <code>宽度默认随内容变化</code> <code>有height/width</code> <code>有margin/padding</code></td>
+<td><code>高宽</code> <code>padding</code> <code>margin</code></td>
+</tr>
+<tr>
+<td>none</td>
+<td><code>不予显示</code> <code>不占空间</code></td>
+<td></td>
+</tr>
+<tr>
+<td>hidden</td>
+<td><code>不予显示</code> <code>占据空间</code></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>The Result I Want</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Name</th>
-<th style="text-align:center">Project</th>
-<th style="text-align:center">Roles</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>James</code></td>
-<td style="text-align:center">Python</td>
-<td style="text-align:center"><code>Admin, Coder</code></td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">Java</td>
-<td style="text-align:center">Coder</td>
-</tr>
-</tbody>
-</table>
-<h3 id="research"><a class="markdownIt-Anchor" href="#research"></a> Research</h3>
-<ul>
-<li>Oracle <code>Break On</code> with <code>Partition by</code></li>
-<li>Unfortunately, Postgres doesn’t have <code>Break On</code></li>
-</ul>
-<h3 id="solution"><a class="markdownIt-Anchor" href="#solution"></a> Solution</h3>
-<ul>
-<li>Use <code>string_agg(distinct lower(xxx), ',')</code> to combime roles.</li>
-<li>Use <code>row_number() over partition by xxx</code> to get the Row Number</li>
-<li>Use <code>case</code> clause to remove duplicates of name based on the Row Number</li>
-</ul>
-<h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3>
-<p><a href="https://stackoverflow.com/questions/28108682/suppressing-a-repeated-column-value-in-postgresql" target="_blank" rel="noopener">Stack Overflow</a></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/pgpartion.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/slackmessage.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/slackmessage.html" class="post-title-link" itemprop="url">Slack Node.js Message API</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-28 12:43:56" itemprop="dateCreated datePublished" datetime="2019-05-28T12:43:56+09:30">2019-05-28</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-24 10:01:43" itemprop="dateModified" datetime="2019-08-24T10:01:43+09:30">2019-08-24</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Backend/" itemprop="url" rel="index"><span itemprop="name">Backend</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">589</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="tutorials-for-slack-webhook"><a class="markdownIt-Anchor" href="#tutorials-for-slack-webhook"></a> <a href="https://api.slack.com/incoming-webhooks" target="_blank" rel="noopener">Tutorials for Slack Webhook</a></h2>
-<h3 id="install-packages"><a class="markdownIt-Anchor" href="#install-packages"></a> Install Packages</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add request</span><br></pre></td></tr></table></figure>
-<h3 id="send-message-to-slack-channel"><a class="markdownIt-Anchor" href="#send-message-to-slack-channel"></a> Send message to Slack Channel</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">'request'</span>);</span><br><span class="line"><span class="keyword">const</span> options = &#123;</span><br><span class="line">	url: <span class="string">'https://hooks.slack.com/services/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'</span>,</span><br><span class="line">	method: <span class="string">'POST'</span>,</span><br><span class="line">	headers: &#123;</span><br><span class="line">    <span class="string">'Content-type'</span>: <span class="string">'application/json'</span></span><br><span class="line">  &#125;,</span><br><span class="line">	body: <span class="built_in">JSON</span>.stringify(&#123;</span><br><span class="line">    text: <span class="string">'hello'</span>,</span><br><span class="line">    mrkdwn: <span class="literal">true</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callback</span>(<span class="params">error, response, body</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="number">200</span>) &#123;</span><br><span class="line">		<span class="built_in">console</span>.log(body);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">request(options, callback);</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/slackmessage.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/nodesendgmail.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/nodesendgmail.html" class="post-title-link" itemprop="url">Send Gmail by Node.js</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-28 12:42:00" itemprop="dateCreated datePublished" datetime="2019-05-28T12:42:00+09:30">2019-05-28</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-24 10:02:13" itemprop="dateModified" datetime="2019-08-24T10:02:13+09:30">2019-08-24</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Backend/" itemprop="url" rel="index"><span itemprop="name">Backend</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">1.1k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="install-package"><a class="markdownIt-Anchor" href="#install-package"></a> Install Package</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add nodemailer</span><br></pre></td></tr></table></figure>
-<h3 id="send-gmail-in-nodejs"><a class="markdownIt-Anchor" href="#send-gmail-in-nodejs"></a> Send Gmail in Node.js</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// import package</span></span><br><span class="line"><span class="keyword">const</span> nodemailer = <span class="built_in">require</span>(<span class="string">'nodemailer'</span>);</span><br><span class="line"><span class="comment">// create email sender</span></span><br><span class="line"><span class="keyword">var</span> transporter = nodemailer.createTransport(&#123;</span><br><span class="line">	service: <span class="string">'gmail'</span>,</span><br><span class="line">	auth: &#123;</span><br><span class="line">		user: <span class="string">'example@xxx.com'</span>,</span><br><span class="line">		pass: <span class="string">'*****'</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// function to send email</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">sendHtml</span>(<span class="params"> dest</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">const</span> html = <span class="string">'&lt;!DOCTYPE html&gt;    &lt;html&gt;    &lt;head&gt;      &lt;meta charset="utf-8"&gt;      &lt;meta name="viewport" content="width=device-width"&gt;      &lt;title&gt;Welcome&lt;/title&gt;    &lt;/head&gt;    &lt;body&gt; Hello World&lt;/body&gt;    &lt;/html&gt;'</span></span><br><span class="line">	<span class="keyword">const</span> mailOptions = &#123;</span><br><span class="line">		<span class="keyword">from</span>: <span class="string">'"Name" example@xxx.com'</span>, <span class="comment">// login user must equel to this user</span></span><br><span class="line">		to: dest,</span><br><span class="line">		subject: <span class="string">`Subject`</span>,</span><br><span class="line">		text: <span class="string">''</span>,</span><br><span class="line">		html: html</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// start sending</span></span><br><span class="line">	transporter.sendMail(mailOptions, <span class="function"><span class="keyword">function</span>(<span class="params">error, info</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// error handling</span></span><br><span class="line">		<span class="keyword">if</span> (error) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">console</span>.log(error);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">'Message sent: '</span> + info.response);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sendHtml(<span class="string">'dest@xxx.com'</span>);</span><br></pre></td></tr></table></figure>
 <h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/nodesendgmail.html#more" rel="contents">
+              <a class="btn" href="/cssdisplay.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1263,7 +833,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/managemutiplerolesaws.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/css-auto.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -1283,7 +853,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/managemutiplerolesaws.html" class="post-title-link" itemprop="url">AWS Config Switch Roles</a>
+                <a href="/css-auto.html" class="post-title-link" itemprop="url">CSS tricks - Auto</a>
               
             
           </h2>
@@ -1306,12 +876,22 @@
                 
               
 
-              <time title="Created: 2019-05-24 14:06:06 / Modified: 14:29:35" itemprop="dateCreated datePublished" datetime="2019-05-24T14:06:06+09:30">2019-05-24</time>
+              <time title="Created: 2019-05-21 18:33:10" itemprop="dateCreated datePublished" datetime="2019-05-21T18:33:10+09:30">2019-05-21</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-08-24 10:03:06" itemprop="dateModified" datetime="2019-08-24T10:03:06+09:30">2019-08-24</time>
               
             
           </span>
@@ -1326,7 +906,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AWS/" itemprop="url" rel="index"><span itemprop="name">AWS</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
 
                 
                 
@@ -1355,7 +935,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">206</span>
+                <span title="Symbols count in article">274</span>
               
 
               
@@ -1390,20 +970,421 @@
 
       
         
-          <h3 id="prerequsite"><a class="markdownIt-Anchor" href="#prerequsite"></a> Prerequsite</h3>
+          <h2 id="image居中"><a class="markdownIt-Anchor" href="#image居中"></a> Image居中</h2>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">"width: 100%; margin-left:auto; margin-right:auto"</span> <span class="attr">src</span>=<span class="string">"https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png"</span>&gt;</span><span class="tag">&lt;/<span class="name">img</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img style="width: 100%; margin:auto" src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-5.png"></p>
 <ul>
-<li>VS code with Command Line Tool</li>
+<li>为什么<code>auto</code>可以实现img的居中？</li>
+<li>答： 因为CSS规范中说明了：一个有特定宽度的元素，若左右边距为auto，浏览器会取它的容器和该容器的宽度<strong>之差</strong>，<strong>除以2</strong>，作为该元素的<strong>左边距</strong>和<strong>右边距</strong>。</li>
 </ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">code ~/.aws/config</span><br><span class="line">code ~/.aws/credentials</span><br></pre></td></tr></table></figure>
-<h3 id="how-to-switch-the-role"><a class="markdownIt-Anchor" href="#how-to-switch-the-role"></a> How to Switch the role?</h3>
-<ul>
-<li>Modify the role that you want to the default role.</li>
-<li>run <code>aws configure</code> to make it valid.</li>
-</ul>
+<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/managemutiplerolesaws.html#more" rel="contents">
+              <a class="btn" href="/css-auto.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </h2></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/css-tricks.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/css-tricks.html" class="post-title-link" itemprop="url">CSS *</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-21 15:40:50" itemprop="dateCreated datePublished" datetime="2019-05-21T15:40:50+09:30">2019-05-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-07-15 11:41:29" itemprop="dateModified" datetime="2019-07-15T11:41:29+09:30">2019-07-15</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">92</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="何时用"><a class="markdownIt-Anchor" href="#何时用"></a> 何时用<code>*{}</code></h2>
+<ul>
+<li>*的优先级要比inherited高</li>
+<li>在多级继承序列中，期望的style可能被中间元素override，alternative是：不使用<code>inherited</code>，而使用<code>*</code></li>
+</ul>
+
+          
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/reacstate.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/reacstate.html" class="post-title-link" itemprop="url">React Tricks</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-03 12:34:30" itemprop="dateCreated datePublished" datetime="2019-05-03T12:34:30+09:30">2019-05-03</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-05-25 12:30:16" itemprop="dateModified" datetime="2019-05-25T12:30:16+09:30">2019-05-25</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">319</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="automatically-add-state-variable"><a class="markdownIt-Anchor" href="#automatically-add-state-variable"></a> Automatically add state variable</h3>
+<p><code>this.setState({val1: value})</code> will automatically create <code>val1</code> in state. You don’t have to initialize it in the state.<br>
+Unless: <strong>Some functions might need to set initial state after some operations.</strong></p>
+<h3 id><a class="markdownIt-Anchor" href="#"></a> ? :</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">good? <span class="keyword">do</span> good : <span class="keyword">do</span> bad</span><br></pre></td></tr></table></figure>
+<h3 id="-2"><a class="markdownIt-Anchor" href="#-2"></a> &amp;&amp;</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a &amp;&amp; <span class="keyword">do</span> a</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a &amp;&amp; b &amp;&amp; c</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/reacstate.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1461,7 +1442,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/codecommit.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/cssfrostedglass.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -1481,7 +1462,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/codecommit.html" class="post-title-link" itemprop="url">AWS Code Commit</a>
+                <a href="/cssfrostedglass.html" class="post-title-link" itemprop="url">CSS Frosted Glass Effect</a>
               
             
           </h2>
@@ -1504,22 +1485,12 @@
                 
               
 
-              <time title="Created: 2019-05-24 13:51:20" itemprop="dateCreated datePublished" datetime="2019-05-24T13:51:20+09:30">2019-05-24</time>
+              <time title="Created: 2019-05-02 17:35:05 / Modified: 17:36:15" itemprop="dateCreated datePublished" datetime="2019-05-02T17:35:05+09:30">2019-05-02</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-28 13:15:11" itemprop="dateModified" datetime="2019-08-28T13:15:11+09:30">2019-08-28</time>
               
             
           </span>
@@ -1534,7 +1505,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AWS/" itemprop="url" rel="index"><span itemprop="name">AWS</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
 
                 
                 
@@ -1563,7 +1534,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.5k</span>
+                <span title="Symbols count in article">67</span>
               
 
               
@@ -1598,61 +1569,23 @@
 
       
         
+          <p><a href="https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535" target="_blank" rel="noopener">Two Ways to Create a Frosted Glass Effect in CSS</a>;<br>
+<a href="https://www.cnblogs.com/ghost-xyx/p/5677168.html" target="_blank" rel="noopener">CSS技巧收集——毛玻璃效果</a></p>
+<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a>
+          <!--noindex-->
           
-            <h2 id="关于"><a class="markdownIt-Anchor" href="#关于"></a> 关于</h2>
-<p>AWS Code Commit is another ‘github’ or ‘gitlab’, which allows to you <code>host</code> your own code with version control tools like git cli.</p>
-<h2 id="基本操作"><a class="markdownIt-Anchor" href="#基本操作"></a> 基本操作</h2>
-<h3 id="前提"><a class="markdownIt-Anchor" href="#前提"></a> 前提</h3>
-<ul>
-<li>IAM roles for full access to AWS code Commit</li>
-</ul>
-<h3 id="新建目录"><a class="markdownIt-Anchor" href="#新建目录"></a> 新建目录</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># list all commands</span></span><br><span class="line">aws codecommit <span class="built_in">help</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># create repository</span></span><br><span class="line">aws codecommit create-repository --repository-name=admin-report-api</span><br></pre></td></tr></table></figure>
-<h3 id="产生git秘钥"><a class="markdownIt-Anchor" href="#产生git秘钥"></a> 产生Git秘钥</h3>
-<ul>
-<li>In IAM &gt; User &gt; Security Credential &gt; HTTPS Git credentials for AWS CodeCommit &gt; Generate</li>
-<li><code>Click</code> generate to get your git credentials.</li>
-</ul>
-<blockquote>
-<p>Note: You <code>cannot</code> customize this.</p>
-</blockquote>
-<h3 id="克隆到本地"><a class="markdownIt-Anchor" href="#克隆到本地"></a> 克隆到本地</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/admin-report-api</span><br><span class="line"><span class="comment"># then enter the username and password generated from above step.</span></span><br></pre></td></tr></table></figure>
-<h3 id="推送到目录"><a class="markdownIt-Anchor" href="#推送到目录"></a> 推送到目录</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'initialize'</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-<h3 id="分支操作"><a class="markdownIt-Anchor" href="#分支操作"></a> 分支操作</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># check the current brance</span></span><br><span class="line">git branch</span><br><span class="line"><span class="comment"># change to another brance</span></span><br><span class="line">git checkout -b newBranch</span><br><span class="line"><span class="comment"># git checkout means change to another branch.</span></span><br><span class="line"><span class="comment"># git checkout -b means create a branch and then change to it.</span></span><br><span class="line"></span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">'test new branch'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一次使用次命令</span></span><br><span class="line">git push -u origin newBranch</span><br><span class="line"><span class="comment"># 后面可以使用</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-<h3 id="merge-branch"><a class="markdownIt-Anchor" href="#merge-branch"></a> Merge Branch</h3>
-<ul>
-<li>CodeCommit &gt; Source &gt; Repositories &gt; Pull Request &gt; Create Pull Request</li>
-<li>merge后可以选择删除source branch</li>
-</ul>
-<h3 id="compare-commit"><a class="markdownIt-Anchor" href="#compare-commit"></a> Compare Commit</h3>
-<ul>
-<li>CodeCommit &gt; Source &gt; Repositories &gt; commits &gt; compare commits</li>
-</ul>
-<h2 id="整合aws其他服务"><a class="markdownIt-Anchor" href="#整合aws其他服务"></a> 整合AWS其他服务</h2>
-<ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cudWRlbXkuY29tL2Rldm9wcy1vbi1hd3MtdXNpbmctY29kZS1zZXJ2aWNlcy9sZWFybi9sZWN0dXJlLzEyODQwNTkwI292ZXJ2aWV3" title="https://www.udemy.com/devops-on-aws-using-code-services/learn/lecture/12840590#overview">Simple Notification Service(SNS)<i class="fa fa-external-link"></i></span>
-<ul>
-<li>Email</li>
-<li>SMS</li>
-</ul>
-</li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cudWRlbXkuY29tL2Rldm9wcy1vbi1hd3MtdXNpbmctY29kZS1zZXJ2aWNlcy9sZWFybi9sZWN0dXJlLzEyODQwNTk0I292ZXJ2aWV3" title="https://www.udemy.com/devops-on-aws-using-code-services/learn/lecture/12840594#overview">Lambda Function<i class="fa fa-external-link"></i></span>
-<ul>
-<li>prerequisite: IAM role for lambda function execute</li>
-<li>settings &gt; trigger (lambda function created at first)</li>
-</ul>
-</li>
-</ul>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/cssfrostedglass.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
 
       
-    </div>
+    </h2></div>
 
     
 
@@ -1689,7 +1622,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1733,7 +1666,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">101</span>
+                    <span class="site-state-item-count">94</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1796,9 +1729,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -2049,9 +1980,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-count">105</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
