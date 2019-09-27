@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="Implement SSL on Elastic Beanstalk  Step 1: Enable Elastic Beanstalk Load Balancer Step 2: Config HTTPS to HTTP listening rule in Elastic Beanstalk Step 3: Check the security ruls of Load Balancer St">
-<meta name="keywords" content="CMU">
+  <meta name="description" content="Encrypted Post. Please Enter Token.">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="28-08-19 Notes">
-<meta property="og:url" content="https://geekeast.github.io/280819notes.html">
+<meta property="og:title" content="Assignment 2">
+<meta property="og:url" content="https://geekeast.github.io/java-ta-2109/Pafranci.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Implement SSL on Elastic Beanstalk  Step 1: Enable Elastic Beanstalk Load Balancer Step 2: Config HTTPS to HTTP listening rule in Elastic Beanstalk Step 3: Check the security ruls of Load Balancer St">
+<meta property="og:description" content="Encrypted Post. Please Enter Token.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-10T00:39:49.730Z">
+<meta property="og:updated_time" content="2019-09-26T13:11:06.861Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="28-08-19 Notes">
-<meta name="twitter:description" content="Implement SSL on Elastic Beanstalk  Step 1: Enable Elastic Beanstalk Load Balancer Step 2: Config HTTPS to HTTP listening rule in Elastic Beanstalk Step 3: Check the security ruls of Load Balancer St">
+<meta name="twitter:title" content="Assignment 2">
+<meta name="twitter:description" content="Encrypted Post. Please Enter Token.">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/280819notes.html">
+  <link rel="canonical" href="https://geekeast.github.io/java-ta-2109/Pafranci.html">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>28-08-19 Notes | 雪中印</title>
+  <title>Assignment 2 | 雪中印</title>
   
 
 
@@ -372,7 +372,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/280819notes.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/java-ta-2109/Pafranci.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -389,7 +389,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">28-08-19 Notes
+          <h2 class="post-title" itemprop="name headline">Assignment 2
 
               
             
@@ -413,26 +413,32 @@
                 
               
 
-              <time title="Created: 2019-08-28 14:58:35" itemprop="dateCreated datePublished" datetime="2019-08-28T14:58:35+09:30">2019-08-28</time>
+              <time title="Created: 2019-09-26 22:07:28 / Modified: 22:41:06" itemprop="dateCreated datePublished" datetime="2019-09-26T22:07:28+09:30">2019-09-26</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-09-10 10:09:49" itemprop="dateModified" datetime="2019-09-10T10:09:49+09:30">2019-09-10</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/TA/" itemprop="url" rel="index"><span itemprop="name">TA</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -463,7 +469,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">278</span>
+                <span title="Symbols count in article">2.8k</span>
               
 
               
@@ -477,7 +483,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2 mins.</span>
               
             </div>
           
@@ -497,15 +503,20 @@
       
 
       
-        <h3 id="implement-ssl-on-elastic-beanstalk"><a class="markdownIt-Anchor" href="#implement-ssl-on-elastic-beanstalk"></a> Implement SSL on Elastic Beanstalk</h3>
-<ul>
-<li>Step 1: Enable Elastic Beanstalk Load Balancer</li>
-<li>Step 2: Config HTTPS to HTTP listening rule in Elastic Beanstalk</li>
-<li>Step 3: Check the security ruls of Load Balancer</li>
-<li>Step 4: Config DOMAIN and CNAME to link to EBS url(may not use AWS Route 53)</li>
-</ul>
-<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>
-
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">
+    <label for="pass">Please Enter Token Here</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
 
       
@@ -513,6 +524,39 @@
 
     
       
+
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/java-ta-2109/Kechengc.html" rel="bookmark">Assignment 2</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/java-ta-2109/chenluj.html" rel="bookmark">Assignment 2</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/java-ta-2109/jiruh.html" rel="bookmark">Assignment 2</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/java-ta-2109/tfunahas.html" rel="bookmark">Assignment 2</a></div>
+      
+    </li>
+  
+  </ul>
 
 
     
@@ -539,6 +583,12 @@
     <footer class="post-footer">
 
       
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
+      
 
       
       
@@ -560,8 +610,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/sqlformaterminifier.html" rel="next" title="SQL Formatter and Minifier">
-                <i class="fa fa-chevron-left"></i> SQL Formatter and Minifier
+              <a href="/java-ta-2109/Kechengc.html" rel="next" title="Assignment 2">
+                <i class="fa fa-chevron-left"></i> Assignment 2
               </a>
             
           </div>
@@ -570,8 +620,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/configgitssh.html" rel="prev" title="Config SSH with Github and GitLab">
-                Config SSH with Github and GitLab <i class="fa fa-chevron-right"></i>
+              <a href="/java-ta-2109/tfunahas.html" rel="prev" title="Assignment 2">
+                Assignment 2 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -617,17 +667,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1131,23 +1172,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#implement-ssl-on-elastic-beanstalk"><span class="nav-number">1.</span> <span class="nav-text"> Implement SSL on Elastic Beanstalk</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number"></span> <span class="nav-text"> </span></a></li></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
