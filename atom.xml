@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-09-27T07:56:33.339Z</updated>
+  <updated>2019-10-05T18:52:57.199Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>High-Rating Restaurant Search</title>
+    <link href="https://geekeast.github.io/toys/searchfood.html"/>
+    <id>https://geekeast.github.io/toys/searchfood.html</id>
+    <published>2019-10-05T18:49:36.000Z</published>
+    <updated>2019-10-05T18:52:57.199Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="project"><a class="markdownIt-Anchor" href="#project"></a> Project</h2><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L3NlYXJjaC1nb29kLWVhdA==" title="https://github.com/GeekEast/search-good-eat">Github<i class="fa fa-external-link"></i></span> <code>git clone git@github.com:GeekEast/search-good-eat.git</code></p><h2 id="description"><a class="markdownIt-Anchor" href="#description"></a> Description</h2><ul><li>Searching api for good restaurants by <code>latitude</code>, <code>longtitude</code>, and <code>radius</code>.</li><li>Bottomn line of google <code>ratings</code> and <code>number_of_reviews</code> is required.</li></ul><h2 id="warning"><a class="markdownIt-Anchor" href="#warning"></a> Warning</h2><ul><li>See the <span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5nb29nbGUuY29tL21hcHMtcGxhdGZvcm0vcHJpY2luZy9zaGVldC8=" title="https://cloud.google.com/maps-platform/pricing/sheet/">API pricing<i class="fa fa-external-link"></i></span> before happy hour with it.</li><li>Recommend to apply for a brand new <code>Google</code> account and use the <strong>free</strong> google cloud credit which’s worth <code>$300</code>.</li></ul><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2><ul><li>Get <span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vbWFwcy9kb2N1bWVudGF0aW9uL2phdmFzY3JpcHQvZ2V0LWFwaS1rZXk=" title="https://developers.google.com/maps/documentation/javascript/get-api-key">API Key<i class="fa fa-external-link"></i></span>: <code>export GOOGLE_MAP_API_KEY=&quot;{google_map_api_key}&quot;</code></li><li>Run code: <code>yarn &amp;&amp; yarn start</code></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// get restaurants information with constraints:</span></span><br><span class="line"><span class="comment">// a radius of 2000m arount place(lat:-34.928471, lng:138.593174)</span></span><br><span class="line"><span class="comment">// with ratings &gt;= 4.5 and number of reviews &gt;= 40</span></span><br><span class="line">main(<span class="string">"-34.928471"</span>, <span class="string">"138.593174"</span>, <span class="number">2000</span>, <span class="number">4.5</span>, <span class="number">40</span>); <span class="comment">// result saved in data/places.csv</span></span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="issues"><a class="markdownIt-Anchor" href="#issues"></a> Issues:</h2><ul><li>The performance is low due the restriction of Google Places API;</li><li><strong>How to append object to array asynchronously?</strong>.</li></ul><h2 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h2><p><span class="exturl" data-url="aHR0cHM6Ly9weXRob24uZ290cmFpbmVkLmNvbS9nb29nbGUtcGxhY2VzLWFwaS1leHRyYWN0aW5nLWxvY2F0aW9uLWRhdGEtcmV2aWV3cy8=" title="https://python.gotrained.com/google-places-api-extracting-location-data-reviews/">3rd Party Tutorial<i class="fa fa-external-link"></i></span></p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2VvZGF0YXNvdXJjZS5jb20vZGlzdGFuY2UtY2FsY3VsYXRvcg==" title="https://www.geodatasource.com/distance-calculator">Distance Calculator<i class="fa fa-external-link"></i></span></p><p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vcGxhY2VzL3dlYi1zZXJ2aWNlL3N1cHBvcnRlZF90eXBlcw==" title="https://developers.google.com/places/web-service/supported_types">Places Types<i class="fa fa-external-link"></i></span></p><p><span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5nb29nbGUuY29tL21hcHMtcGxhdGZvcm0vcHJpY2luZy9zaGVldC8=" title="https://cloud.google.com/maps-platform/pricing/sheet/">Places Pricing<i class="fa fa-external-link"></i></span></p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;project&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#project&quot;&gt;&lt;/a&gt; Project&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/GeekEast/search-good-eat&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github&lt;/a&gt; &lt;code&gt;git clone git@github.com:GeekEast/search-good-eat.git&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;description&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#description&quot;&gt;&lt;/a&gt; Description&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Searching api for good restaurants by &lt;code&gt;latitude&lt;/code&gt;, &lt;code&gt;longtitude&lt;/code&gt;, and &lt;code&gt;radius&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Bottomn line of google &lt;code&gt;ratings&lt;/code&gt; and &lt;code&gt;number_of_reviews&lt;/code&gt; is required.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;warning&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#warning&quot;&gt;&lt;/a&gt; Warning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;See the &lt;a href=&quot;https://cloud.google.com/maps-platform/pricing/sheet/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;API pricing&lt;/a&gt; before happy hour with it.&lt;/li&gt;
+&lt;li&gt;Recommend to apply for a brand new &lt;code&gt;Google&lt;/code&gt; account and use the &lt;strong&gt;free&lt;/strong&gt; google cloud credit which’s worth &lt;code&gt;$300&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;quick-start&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#quick-start&quot;&gt;&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Get &lt;a href=&quot;https://developers.google.com/maps/documentation/javascript/get-api-key&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;API Key&lt;/a&gt;: &lt;code&gt;export GOOGLE_MAP_API_KEY=&amp;quot;{google_map_api_key}&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run code: &lt;code&gt;yarn &amp;amp;&amp;amp; yarn start&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// get restaurants information with constraints:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// a radius of 2000m arount place(lat:-34.928471, lng:138.593174)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// with ratings &amp;gt;= 4.5 and number of reviews &amp;gt;= 40&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;main(&lt;span class=&quot;string&quot;&gt;&quot;-34.928471&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;138.593174&quot;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2000&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4.5&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;40&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// result saved in data/places.csv&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+    
+    
+      <category term="API" scheme="https://geekeast.github.io/tags/API/"/>
+    
+  </entry>
   
   <entry>
     <title>Java OOP</title>
@@ -620,11 +659,11 @@
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
-    
       <category term="Bootstrap" scheme="https://geekeast.github.io/tags/Bootstrap/"/>
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
+    
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
     
   </entry>
   
@@ -938,73 +977,6 @@
       <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
     
       <category term="Redux" scheme="https://geekeast.github.io/tags/Redux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pitfalls for IT Interview</title>
-    <link href="https://geekeast.github.io/usaitinterview.html"/>
-    <id>https://geekeast.github.io/usaitinterview.html</id>
-    <published>2019-07-18T03:55:36.000Z</published>
-    <updated>2019-08-24T00:23:06.509Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Interview = Practice + Performance</p></blockquote><h3 id="practice刷题"><a class="markdownIt-Anchor" href="#practice刷题"></a> Practice(刷题)</h3><ul><li>Issues: many leetcode, no difference</li><li>Solution(精刷):<ul><li>Understand problems thoroughly(&gt;=30mins)<ul><li><strong>associate</strong> other problems</li><li>start from <strong>brute force</strong> solution</li></ul></li><li>Review, Summary and Association<ul><li>What <strong>algorithms</strong> of solutions</li><li><strong>related</strong> problems and <strong>difference</strong></li></ul></li><li><strong>Mark</strong> and Rewrite again.</li></ul></li></ul><h3 id="performance表现"><a class="markdownIt-Anchor" href="#performance表现"></a> Performance(表现)</h3><ul><li>Issues: feeling good, no offers</li><li>Solution:<ul><li>make the interviewer comfortable</li><li>Communication is very important as a colleague<ul><li>Ask questions and make problems clear</li><li>don’t just bury your head and no speaking</li><li>You need to perform even you saw the question before.</li></ul></li></ul></li><li>Attitude:<ul><li>Take the interviewee as your colleague.</li><li>you are doing a product, not just a problem.</li></ul></li></ul><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Interview = Practice + Performance&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;practice刷题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#practice刷题&quot;&gt;&lt;/a&gt; Practice(刷题)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Issues: many leetcode, no difference&lt;/li&gt;
-&lt;li&gt;Solution(精刷):
-&lt;ul&gt;
-&lt;li&gt;Understand problems thoroughly(&amp;gt;=30mins)
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;associate&lt;/strong&gt; other problems&lt;/li&gt;
-&lt;li&gt;start from &lt;strong&gt;brute force&lt;/strong&gt; solution&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Review, Summary and Association
-&lt;ul&gt;
-&lt;li&gt;What &lt;strong&gt;algorithms&lt;/strong&gt; of solutions&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;related&lt;/strong&gt; problems and &lt;strong&gt;difference&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mark&lt;/strong&gt; and Rewrite again.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;performance表现&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#performance表现&quot;&gt;&lt;/a&gt; Performance(表现)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Issues: feeling good, no offers&lt;/li&gt;
-&lt;li&gt;Solution:
-&lt;ul&gt;
-&lt;li&gt;make the interviewer comfortable&lt;/li&gt;
-&lt;li&gt;Communication is very important as a colleague
-&lt;ul&gt;
-&lt;li&gt;Ask questions and make problems clear&lt;/li&gt;
-&lt;li&gt;don’t just bury your head and no speaking&lt;/li&gt;
-&lt;li&gt;You need to perform even you saw the question before.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Attitude:
-&lt;ul&gt;
-&lt;li&gt;Take the interviewee as your colleague.&lt;/li&gt;
-&lt;li&gt;you are doing a product, not just a problem.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Career" scheme="https://geekeast.github.io/categories/Career/"/>
-    
-    
-      <category term="Interview" scheme="https://geekeast.github.io/tags/Interview/"/>
     
   </entry>
   
