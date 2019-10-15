@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-10-15T00:26:29.509Z</updated>
+  <updated>2019-10-15T01:27:40.766Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://geekeast.github.io/closedockonmac.html"/>
     <id>https://geekeast.github.io/closedockonmac.html</id>
     <published>2019-10-15T00:24:19.000Z</published>
-    <updated>2019-10-15T00:26:29.509Z</updated>
+    <updated>2019-10-15T01:27:40.766Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools</h3><ul><li>Alfred</li><li>Context</li></ul><h3 id="modify-the-config-of-dock"><a class="markdownIt-Anchor" href="#modify-the-config-of-dock"></a> Modify the config of Dock</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dock autohide-delay -int 0 &amp;&amp; killall Dock  <span class="comment">##（shortest）</span></span><br><span class="line">defaults write com.apple.dock autohide-delay -int 0.5 &amp;&amp; killall Dock  <span class="comment">##（0.5s）</span></span><br><span class="line">defaults write com.apple.dock autohide-delay -int 10  &amp;&amp; killall Dock  <span class="comment">##（10s）</span></span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
+    <content type="html"><![CDATA[<h3 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools</h3><ul><li>Alfred</li><li>Context</li></ul><h3 id="modify-the-config-of-dock"><a class="markdownIt-Anchor" href="#modify-the-config-of-dock"></a> Modify the config of Dock</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dock autohide-delay -int 0 &amp;&amp; killall Dock  <span class="comment">##（shortest）</span></span><br><span class="line">defaults write com.apple.dock autohide-delay -int 0.5 &amp;&amp; killall Dock  <span class="comment">##（0.5s）</span></span><br><span class="line">defaults write com.apple.dock autohide-delay -int 10  &amp;&amp; killall Dock  <span class="comment">##（10s）</span></span><br></pre></td></tr></table></figure><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
     
     <summary type="html">
     
@@ -34,6 +34,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&quot;modify-the-config-of-dock&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#modify-the-config-of-dock&quot;&gt;&lt;/a&gt; Modify the config of Dock&lt;/h3&gt;
 &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 0 &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（shortest）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 0.5 &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（0.5s）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 10  &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（10s）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
     
     </summary>
     
@@ -687,11 +688,11 @@
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
       <category term="Bootstrap" scheme="https://geekeast.github.io/tags/Bootstrap/"/>
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
     
   </entry>
   
