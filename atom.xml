@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-10-15T03:35:26.863Z</updated>
+  <updated>2019-10-15T04:58:03.038Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -21,13 +21,26 @@
     <link href="https://geekeast.github.io/popclip.html"/>
     <id>https://geekeast.github.io/popclip.html</id>
     <published>2019-10-15T03:32:26.000Z</published>
-    <updated>2019-10-15T03:35:26.863Z</updated>
+    <updated>2019-10-15T04:58:03.038Z</updated>
     
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<h3 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools</h3><ul><li>PopClip<ul><li>You can <code>turn off</code></li></ul></li><li>BetterTouchTool<ul><li><code>fn</code>+<code>z</code>: pop up the menu (by applescript)</li></ul></li></ul><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Insert script code here</span></span><br><span class="line"><span class="keyword">tell</span> <span class="built_in">application</span> <span class="string">"PopClip"</span> <span class="keyword">to</span> appear</span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
     
     <summary type="html">
     
-      Encrypted Post. Please Enter Token.
+      &lt;h3 id=&quot;tools&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tools&quot;&gt;&lt;/a&gt; Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;PopClip
+&lt;ul&gt;
+&lt;li&gt;You can &lt;code&gt;turn off&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BetterTouchTool
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fn&lt;/code&gt;+&lt;code&gt;z&lt;/code&gt;: pop up the menu (by applescript)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#Insert script code here&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;tell&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;PopClip&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt; appear&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
