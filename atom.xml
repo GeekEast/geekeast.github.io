@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-10-06T15:48:14.131Z</updated>
+  <updated>2019-10-15T00:26:29.509Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Close Dock on Mac Forever</title>
+    <link href="https://geekeast.github.io/closedockonmac.html"/>
+    <id>https://geekeast.github.io/closedockonmac.html</id>
+    <published>2019-10-15T00:24:19.000Z</published>
+    <updated>2019-10-15T00:26:29.509Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools</h3><ul><li>Alfred</li><li>Context</li></ul><h3 id="modify-the-config-of-dock"><a class="markdownIt-Anchor" href="#modify-the-config-of-dock"></a> Modify the config of Dock</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dock autohide-delay -int 0 &amp;&amp; killall Dock  <span class="comment">##（shortest）</span></span><br><span class="line">defaults write com.apple.dock autohide-delay -int 0.5 &amp;&amp; killall Dock  <span class="comment">##（0.5s）</span></span><br><span class="line">defaults write com.apple.dock autohide-delay -int 10  &amp;&amp; killall Dock  <span class="comment">##（10s）</span></span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;tools&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tools&quot;&gt;&lt;/a&gt; Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Alfred&lt;/li&gt;
+&lt;li&gt;Context&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;modify-the-config-of-dock&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#modify-the-config-of-dock&quot;&gt;&lt;/a&gt; Modify the config of Dock&lt;/h3&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 0 &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（shortest）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 0.5 &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（0.5s）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 10  &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（10s）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Mac" scheme="https://geekeast.github.io/categories/Mac/"/>
+    
+    
+      <category term="Mac" scheme="https://geekeast.github.io/tags/Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>High-Rating Restaurant Search</title>
@@ -887,96 +915,6 @@
       <category term="Flux" scheme="https://geekeast.github.io/tags/Flux/"/>
     
       <category term="FaceBook" scheme="https://geekeast.github.io/tags/FaceBook/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React Redux</title>
-    <link href="https://geekeast.github.io/react-redux.html"/>
-    <id>https://geekeast.github.io/react-redux.html</id>
-    <published>2019-07-22T04:03:59.000Z</published>
-    <updated>2019-07-24T07:11:44.450Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="key-points"><a class="markdownIt-Anchor" href="#key-points"></a> Key Points</h3><table><thead><tr><th>Name</th><th>What</th><th>Where</th><th>Analogy</th><th>Example</th></tr></thead><tbody><tr><td><strong>Action</strong></td><td>Payloads send from view to store.</td><td>View</td><td>HTTP Post Body</td><td><code>{ type: 'SONG_SELECTED', payload: &quot;Hello world&quot; }</code></td></tr><tr><td><strong>Action Creator</strong></td><td>Function to generate actions</td><td>View</td><td>Wrapper / <strong>Decorator</strong></td><td><code>(song) =&gt; {type:'SONG_SELECTED', payload: song}</code></td></tr><tr><td><code>dispatch()</code></td><td>Function that sends actions to store</td><td>View</td><td>gmail()</td><td><code>dispatch(action)</code></td></tr><tr><td><strong>State</strong></td><td>Data needs to be centralized</td><td>Store</td><td>Static Variable in Java</td><td></td></tr><tr><td><strong>Reducer</strong></td><td>Function to update state according to action</td><td>Store</td><td>Setter method in Java</td><td><code>(selectSong = null, action) =&gt; {if (action.type === 'SONG_SELECTED') return action.payload;} return selectedSong</code></td></tr><tr><td><strong>Store</strong></td><td>The place to store state and reducer</td><td>Global</td><td>Bank</td><td><code>createStore(combinedReducers)</code></td></tr><tr><td><strong>Middleware</strong></td><td>Function that get called with <code>every</code> action we dispatch</td><td>Between Reducer and <code>dispatch()</code></td><td>Gas Station</td><td>Redux Thunk</td></tr></tbody></table><h3 id="architecture"><a class="markdownIt-Anchor" href="#architecture"></a> Architecture</h3><img style="width:100%; margin:auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/reduxarchitect.png"><h3 id="essence"><a class="markdownIt-Anchor" href="#essence"></a> Essence</h3><img style="width:100%; margin:auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190724-163943%402x.png"> <a id="more"></a><h3 id="when-to-use-redux"><a class="markdownIt-Anchor" href="#when-to-use-redux"></a> When to use Redux</h3><ul><li>Different users have different ways to use.</li><li>Colloboration between users.</li><li>Intense commnunication wtih servers or with websocket.</li><li>View need to get data from multiple sources.</li></ul><blockquote><p>Summaruy: the same state is going to be used by many different views, then it’s better to put it into redux.</p></blockquote><h3 id="main-structure"><a class="markdownIt-Anchor" href="#main-structure"></a> Main Structure</h3><ol><li><strong>&quot;What happened in the view?&quot;</strong></li><li><strong>&quot;How to send actions to store?&quot;</strong></li><li><strong>&quot;How to update the store in response to actions?&quot;</strong></li></ol><ul><li><strong>Actions</strong>: payloads send from view to store.</li><li><code>dispatch()</code>: function to send action from view to store</li><li><strong>Reducers</strong>: specify how state changes in response to actions sent to the store. Reducer review <code>current state</code> and <code>action</code> as parameters.</li><li><strong>Store</strong>: hold state; return state <code>getState()</code>; update state <code>dispatch(action)</code>, register listener <code>subscribe(listener)</code></li></ul><h3 id="question"><a class="markdownIt-Anchor" href="#question"></a> Question</h3><ul><li><strong>How the redux match between reducer and action?</strong><ul><li>It happens internal within the store.</li><li>All the reducers will check the action type (<strong>Iteration</strong>)</li></ul></li><li><strong>Can we deal with same type of actions in different reducers?</strong><ul><li>Sure!</li><li><strong>All</strong> these reducers will be triggerred when the action come.</li></ul></li><li><strong>Why we need use action creator?</strong><ul><li>The reason is like whey you use decorator or wrapper function.</li><li><strong>Reason one</strong>: trigger in the future.</li><li><strong>Reason two</strong>: pass external parameters</li></ul></li><li><strong>Why we call it reducer?</strong><ul><li>Usage of state and the state itself is similar to <code>many-to-one</code> relationship.</li><li>Reducer is used to reduce manipulation to update state.</li></ul></li><li><strong>What is difference bewtween <code>ownProps</code> and <code>ReduxProps</code>?</strong><ul><li><code>ownProps</code> is props passed from <code>parent components</code>.</li><li><code>ReduxProps</code> is props passed from <code>redux</code>.</li><li><code>ownProps</code> is used to pass <code>normal</code> props to <code>mapStateToProps</code> function</li></ul></li></ul><h3 id="important"><a class="markdownIt-Anchor" href="#important"></a> Important</h3><h4 id="reducers"><a class="markdownIt-Anchor" href="#reducers"></a> Reducers</h4><ul><li>The key of reducers in the combinedReducers is actually the name of one state.</li><li>The key of reducers must be the same with the return name in the specifc reducer.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mark</span></span><br><span class="line"><span class="keyword">const</span> userReducers = <span class="function">(<span class="params">users = [], action</span>) =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">switch</span> (action.type) &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="string">'FETCH_USER'</span>:</span><br><span class="line"><span class="keyword">return</span> [ ...users, action.payload ];</span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">            <span class="comment">// mark</span></span><br><span class="line"><span class="keyword">return</span> users;</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> combineReducers(&#123;</span><br><span class="line">    <span class="comment">// mark</span></span><br><span class="line">users: userReducers</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h4 id="action-creators"><a class="markdownIt-Anchor" href="#action-creators"></a> Action creators</h4><ul><li>Case: when you pass { actionCreator } to connect()</li><li>you need call it actionCreator by <code>this.props.actionCreator()</code> rather than <code>actionCreator()</code></li><li>Reason: because you doesn’t dispatch the action creator in <code>actionCreator()</code> way. But the <code>this.props.actionCreator</code> is will be automatically <strong>dispatched</strong> by connect function</li></ul><h3 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h3><p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG9nLzIwMTYvMDkvcmVkdXhfdHV0b3JpYWxfcGFydF9vbmVfYmFzaWNfdXNhZ2VzLmh0bWw=" title="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html">阮一峰：Redux 入门教程（一）：基本用法<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvZ2V0dGluZy1zdGFydGVkLXdpdGgtcmVkdXg=" title="https://egghead.io/courses/getting-started-with-redux">Video: Redux Basics<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9lZ2doZWFkLmlvL2NvdXJzZXMvc3RhcnQtbGVhcm5pbmctcmVhY3Q=" title="https://egghead.io/courses/start-learning-react">Video: Redux Advanced<i class="fa fa-external-link"></i></span></p><h3 id="demo"><a class="markdownIt-Anchor" href="#demo"></a> Demo</h3><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L1JlYWN0LVJlZHV4LVNvbmc=" title="https://github.com/GeekEast/React-Redux-Song">Github<i class="fa fa-external-link"></i></span></p><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;key-points&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#key-points&quot;&gt;&lt;/a&gt; Key Points&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;What&lt;/th&gt;
-&lt;th&gt;Where&lt;/th&gt;
-&lt;th&gt;Analogy&lt;/th&gt;
-&lt;th&gt;Example&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Payloads send from view to store.&lt;/td&gt;
-&lt;td&gt;View&lt;/td&gt;
-&lt;td&gt;HTTP Post Body&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;{ type: &#39;SONG_SELECTED&#39;, payload: &amp;quot;Hello world&amp;quot; }&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Action Creator&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Function to generate actions&lt;/td&gt;
-&lt;td&gt;View&lt;/td&gt;
-&lt;td&gt;Wrapper / &lt;strong&gt;Decorator&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;(song) =&amp;gt; {type:&#39;SONG_SELECTED&#39;, payload: song}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;dispatch()&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Function that sends actions to store&lt;/td&gt;
-&lt;td&gt;View&lt;/td&gt;
-&lt;td&gt;gmail()&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;dispatch(action)&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;State&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Data needs to be centralized&lt;/td&gt;
-&lt;td&gt;Store&lt;/td&gt;
-&lt;td&gt;Static Variable in Java&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Reducer&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Function to update state according to action&lt;/td&gt;
-&lt;td&gt;Store&lt;/td&gt;
-&lt;td&gt;Setter method in Java&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;(selectSong = null, action) =&amp;gt; {if (action.type === &#39;SONG_SELECTED&#39;) return action.payload;} return selectedSong&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Store&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;The place to store state and reducer&lt;/td&gt;
-&lt;td&gt;Global&lt;/td&gt;
-&lt;td&gt;Bank&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;createStore(combinedReducers)&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Middleware&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Function that get called with &lt;code&gt;every&lt;/code&gt; action we dispatch&lt;/td&gt;
-&lt;td&gt;Between Reducer and &lt;code&gt;dispatch()&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Gas Station&lt;/td&gt;
-&lt;td&gt;Redux Thunk&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;architecture&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#architecture&quot;&gt;&lt;/a&gt; Architecture&lt;/h3&gt;
-&lt;img style=&quot;width:100%; margin:auto&quot; src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/reduxarchitect.png&quot;&gt;
-&lt;h3 id=&quot;essence&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#essence&quot;&gt;&lt;/a&gt; Essence&lt;/h3&gt;
-&lt;img style=&quot;width:100%; margin:auto&quot; src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190724-163943%402x.png&quot;&gt;
-    
-    </summary>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
-    
-    
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
-      <category term="Redux" scheme="https://geekeast.github.io/tags/Redux/"/>
     
   </entry>
   
