@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-10-15T04:58:03.038Z</updated>
+  <updated>2019-10-16T00:33:40.539Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://geekeast.github.io/popclip.html"/>
     <id>https://geekeast.github.io/popclip.html</id>
     <published>2019-10-15T03:32:26.000Z</published>
-    <updated>2019-10-15T04:58:03.038Z</updated>
+    <updated>2019-10-16T00:33:40.539Z</updated>
     
     <content type="html"><![CDATA[<h3 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools</h3><ul><li>PopClip<ul><li>You can <code>turn off</code></li></ul></li><li>BetterTouchTool<ul><li><code>fn</code>+<code>z</code>: pop up the menu (by applescript)</li></ul></li></ul><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Insert script code here</span></span><br><span class="line"><span class="keyword">tell</span> <span class="built_in">application</span> <span class="string">"PopClip"</span> <span class="keyword">to</span> appear</span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
     
@@ -725,11 +725,11 @@
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
       <category term="Bootstrap" scheme="https://geekeast.github.io/tags/Bootstrap/"/>
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
     
   </entry>
   
