@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-10-16T00:33:40.539Z</updated>
+  <updated>2019-10-21T10:59:32.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Introduction to Maven</title>
+    <link href="https://geekeast.github.io/mavenentry.html"/>
+    <id>https://geekeast.github.io/mavenentry.html</id>
+    <published>2019-10-21T10:59:32.000Z</published>
+    <updated>2019-10-21T10:59:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="groupid-and-aritfactid"><a class="markdownIt-Anchor" href="#groupid-and-aritfactid"></a> <code>groupId</code> and <code>aritfactId</code></h3><ul><li><span class="exturl" data-url="aHR0cHM6Ly9tYXZlbi5hcGFjaGUub3JnL2d1aWRlcy9taW5pL2d1aWRlLW5hbWluZy1jb252ZW50aW9ucy5odG1s" title="https://maven.apache.org/guides/mini/guide-naming-conventions.html">docs<i class="fa fa-external-link"></i></span></li><li><code>groupId</code>: used to uniquely identify your projecr across all projects ex:<code>org.apache</code></li><li><code>artifactId</code>: name of the jar without version ex:<code>.maven</code></li><li>Example: <code>org.apache.maven</code></li></ul><h3 id="maven-central-repository"><a class="markdownIt-Anchor" href="#maven-central-repository"></a> Maven Central Repository</h3><p><span class="exturl" data-url="aHR0cHM6Ly9tdm5yZXBvc2l0b3J5LmNvbS8=" title="https://mvnrepository.com/">MVNRepository<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9zZWFyY2gubWF2ZW4ub3JnLw==" title="https://search.maven.org/">Sonatype<i class="fa fa-external-link"></i></span></p><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;groupid-and-aritfactid&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#groupid-and-aritfactid&quot;&gt;&lt;/a&gt; &lt;code&gt;groupId&lt;/code&gt; and &lt;code&gt;aritfactId&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://maven.apache.org/guides/mini/guide-naming-conventions.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groupId&lt;/code&gt;: used to uniquely identify your projecr across all projects ex:&lt;code&gt;org.apache&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;artifactId&lt;/code&gt;: name of the jar without version ex:&lt;code&gt;.maven&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Example: &lt;code&gt;org.apache.maven&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;maven-central-repository&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#maven-central-repository&quot;&gt;&lt;/a&gt; Maven Central Repository&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://mvnrepository.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MVNRepository&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://search.maven.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sonatype&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="https://geekeast.github.io/categories/Java/"/>
+    
+    
+      <category term="Maven" scheme="https://geekeast.github.io/tags/Maven/"/>
+    
+  </entry>
   
   <entry>
     <title>PopClip Setup</title>
@@ -864,62 +895,6 @@
       <category term="Array" scheme="https://geekeast.github.io/tags/Array/"/>
     
       <category term="Object" scheme="https://geekeast.github.io/tags/Object/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redux Thunk</title>
-    <link href="https://geekeast.github.io/reduxthunk.html"/>
-    <id>https://geekeast.github.io/reduxthunk.html</id>
-    <published>2019-07-23T06:03:22.000Z</published>
-    <updated>2019-07-24T13:06:52.474Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="question"><a class="markdownIt-Anchor" href="#question"></a> Question</h2><ol><li>How to make <code>asynchronous</code> call in Redux React App?<ul><li>the asynchronous request should be called within the <code>action creator</code> in the <code>componentDidMount()</code></li></ul></li><li>I did call the asynchronous request call in action creator, but there two bugs: a. action should be plain objects b. use middleware. What’s the reason?<ul><li>a. <code>async</code> will let the action creator return sth not a plain object. Debug to use <code>babeljs.io</code></li><li>b. using <code>promise</code> will also not solve the problem because you have not got the data before dispatching it to store.</li></ul></li></ol><h3 id="bad-practice"><a class="markdownIt-Anchor" href="#bad-practice"></a> Bad Practice</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> fetchPosts = <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line"><span class="comment">// bad approach</span></span><br><span class="line"><span class="keyword">const</span> &#123; data &#125; = <span class="keyword">await</span> axios.get(<span class="string">'https://jsonplaceholder.typicode.com/posts'</span>);</span><br><span class="line">    <span class="keyword">const</span> posts = data;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// this is not the compiled code, go to babeljs.io</span></span><br><span class="line">    <span class="comment">// doesn't return a plain object because of the `async` </span></span><br><span class="line"><span class="keyword">return</span> &#123;</span><br><span class="line">type: <span class="string">'FETCH_POSTS'</span>,</span><br><span class="line">payload: posts</span><br><span class="line">&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><ol start="3"><li>What’s the right way to do the asynchorous call?<ul><li>use Middleware like Redux Thunk</li></ul></li></ol><h3 id="middleware-way"><a class="markdownIt-Anchor" href="#middleware-way"></a> Middleware Way</h3><ul><li>Middleware allows your action creator to return a <code>function</code> or an <code>action</code></li><li>If you return a <code>function</code> by an action creator, the middleware will automatically call the function</li><li>If you return an <code>action</code>, it acts like the middleware doesn’t do anything.</li><li>Thunk is used to do asynchronous call before the action is arrived at store.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// thunk way</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> fetchPosts = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">async</span> (dispatch, getState) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> &#123; data &#125; = <span class="keyword">await</span> axios.get(<span class="string">'https://jsonplaceholder.typicode.com/posts'</span>);</span><br><span class="line">    <span class="comment">// manually dispatch to store after get right data</span></span><br><span class="line">dispatch(&#123; <span class="attr">type</span>: <span class="string">'FETCH_POSTS'</span>, <span class="attr">payload</span>: data &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="what-is-middleware"><a class="markdownIt-Anchor" href="#what-is-middleware"></a> What is middleware?</h3><ul><li>Middleware is added between <code>reducers</code> and <code>dispatch()</code></li><li>could <code>STOP</code>, <code>MODIFY</code> actions</li><li>Redux-thunk is a middleware to deal with async issues of React.</li></ul><h3 id="memoization"><a class="markdownIt-Anchor" href="#memoization"></a> Memoization</h3><ul><li>is a way to cache <code>function</code></li><li>There are many ways to cache.</li></ul><table><thead><tr><th>Name</th><th>Time</th><th>Where</th></tr></thead><tbody><tr><td>Function cache</td><td>at the same time</td><td>Local</td></tr><tr><td>HTTP cache</td><td>at different time</td><td>Server</td></tr></tbody></table><h4 id="entrance"><a class="markdownIt-Anchor" href="#entrance"></a> Entrance</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUser</span>(<span class="params">id</span>) </span>&#123;</span><br><span class="line">    fetch(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Made a request!"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> memoizedGetUser = _.memoize(getUser);</span><br><span class="line">memoizedGetUser(<span class="number">3</span>);</span><br></pre></td></tr></table></figure><h4 id="wrong"><a class="markdownIt-Anchor" href="#wrong"></a> Wrong!</h4><ul><li>same id, same function, rather than the action itself!</li><li>so same request will still be called multiple times.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fetchUser = _.memoize(<span class="function">(<span class="params">id</span>)=&gt;</span><span class="function">(<span class="params">dispatch</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> response = <span class="keyword">await</span> ...id;</span><br><span class="line">    dispatch(...);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h4 id="wrong-again"><a class="markdownIt-Anchor" href="#wrong-again"></a> Wrong Again!</h4><ul><li>everytime we call fetchUser, we create a new function.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fetchUser = <span class="function">(<span class="params">id</span>) =&gt;</span> _.memoize(<span class="keyword">async</span> (dispatch) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> reponse = <span class="keyword">await</span> ...id;</span><br><span class="line">    dispatch(...);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h4 id="right"><a class="markdownIt-Anchor" href="#right"></a> Right!!!</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// private functions you don't want other programmer to modify</span></span><br><span class="line"><span class="keyword">const</span> _fetchUser = _.memoize(<span class="keyword">async</span> (id, dispatch) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> response = <span class="keyword">await</span> ...id;</span><br><span class="line">    dispatch(...);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">const</span> fetchUser = <span class="function"><span class="params">id</span> =&gt;</span> dispatch =&gt; &#123;</span><br><span class="line">    _fetchUser(id, dispatch);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="the-simpler-way-even-doesnt-work"><a class="markdownIt-Anchor" href="#the-simpler-way-even-doesnt-work"></a> The simpler way even doesn’t work …</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> fetchUser = <span class="function">(<span class="params">id</span>) =&gt;</span> (dispatch) =&gt;</span><br><span class="line">_.memoize(<span class="keyword">async</span> (id, dispatch) =&gt; &#123;</span><br><span class="line"><span class="keyword">const</span> &#123; data &#125; = <span class="keyword">await</span> axios.get(<span class="string">`https://jsonplaceholder.typicode.com/users/<span class="subst">$&#123;id&#125;</span>`</span>);</span><br><span class="line">dispatch(&#123; <span class="attr">type</span>: <span class="string">'FETCH_USER'</span>, <span class="attr">payload</span>: data &#125;);</span><br><span class="line">&#125;)(id, dispatch);</span><br></pre></td></tr></table></figure><h4 id="conclusion-_"><a class="markdownIt-Anchor" href="#conclusion-_"></a> Conclusion @_@</h4><ul><li>always make <code>_.memoize()</code> inside a wrapper function like <code>_fetchUser()</code> if you want to pass <code>parameters</code> into it.</li></ul><h3 id="when-do-you-need-to-use-await"><a class="markdownIt-Anchor" href="#when-do-you-need-to-use-await"></a> When do you need to use <code>await</code>?</h3><ul><li>The current request depends on the response of last request.</li></ul><h3 id="related-projects"><a class="markdownIt-Anchor" href="#related-projects"></a> Related Projects</h3><h2 id="github"><a class="markdownIt-Anchor" href="#github"></a> <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L3JlZHV4LWJsb2c=" title="https://github.com/GeekEast/redux-blog">Github<i class="fa fa-external-link"></i></span></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;question&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#question&quot;&gt;&lt;/a&gt; Question&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;How to make &lt;code&gt;asynchronous&lt;/code&gt; call in Redux React App?
-&lt;ul&gt;
-&lt;li&gt;the asynchronous request should be called within the &lt;code&gt;action creator&lt;/code&gt; in the &lt;code&gt;componentDidMount()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;I did call the asynchronous request call in action creator, but there two bugs: a. action should be plain objects b. use middleware. What’s the reason?
-&lt;ul&gt;
-&lt;li&gt;a. &lt;code&gt;async&lt;/code&gt; will let the action creator return sth not a plain object. Debug to use &lt;code&gt;babeljs.io&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;b. using &lt;code&gt;promise&lt;/code&gt; will also not solve the problem because you have not got the data before dispatching it to store.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;bad-practice&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#bad-practice&quot;&gt;&lt;/a&gt; Bad Practice&lt;/h3&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; fetchPosts = &lt;span class=&quot;keyword&quot;&gt;async&lt;/span&gt; () =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;// bad approach&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &amp;#123; data &amp;#125; = &lt;span class=&quot;keyword&quot;&gt;await&lt;/span&gt; axios.get(&lt;span class=&quot;string&quot;&gt;&#39;https://jsonplaceholder.typicode.com/posts&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; posts = data;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// this is not the compiled code, go to babeljs.io&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// doesn&#39;t return a plain object because of the `async` &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		type: &lt;span class=&quot;string&quot;&gt;&#39;FETCH_POSTS&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		payload: posts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;What’s the right way to do the asynchorous call?
-&lt;ul&gt;
-&lt;li&gt;use Middleware like Redux Thunk&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;middleware-way&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#middleware-way&quot;&gt;&lt;/a&gt; Middleware Way&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Middleware allows your action creator to return a &lt;code&gt;function&lt;/code&gt; or an &lt;code&gt;action&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;If you return a &lt;code&gt;function&lt;/code&gt; by an action creator, the middleware will automatically call the function&lt;/li&gt;
-&lt;li&gt;If you return an &lt;code&gt;action&lt;/code&gt;, it acts like the middleware doesn’t do anything.&lt;/li&gt;
-&lt;li&gt;Thunk is used to do asynchronous call before the action is arrived at store.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// thunk way&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; fetchPosts = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; =&amp;gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;async&lt;/span&gt; (dispatch, getState) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &amp;#123; data &amp;#125; = &lt;span class=&quot;keyword&quot;&gt;await&lt;/span&gt; axios.get(&lt;span class=&quot;string&quot;&gt;&#39;https://jsonplaceholder.typicode.com/posts&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// manually dispatch to store after get right data&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	dispatch(&amp;#123; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&#39;FETCH_POSTS&#39;&lt;/span&gt;, &lt;span class=&quot;attr&quot;&gt;payload&lt;/span&gt;: data &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
-    
-    
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
-      <category term="Redux" scheme="https://geekeast.github.io/tags/Redux/"/>
-    
-      <category term="Thunk" scheme="https://geekeast.github.io/tags/Thunk/"/>
     
   </entry>
   

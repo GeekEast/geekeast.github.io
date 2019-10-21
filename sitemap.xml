@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/mavenentry.html</loc>
+    
+    <lastmod>2019-10-21T10:59:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/popclip.html</loc>
     
     <lastmod>2019-10-16T00:33:40.539Z</lastmod>
@@ -688,6 +695,13 @@
   </url>
   
   <url>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -696,13 +710,6 @@
   
   <url>
     <loc>https://geekeast.github.io/project/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
