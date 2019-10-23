@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-10-21T10:59:32.000Z</updated>
+  <updated>2019-10-23T06:14:12.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Create TOC for Markdown by Doctoc and Husky</title>
+    <link href="https://geekeast.github.io/createmarkdowntoc.html"/>
+    <id>https://geekeast.github.io/createmarkdowntoc.html</id>
+    <published>2019-10-23T06:14:12.000Z</published>
+    <updated>2019-10-23T06:14:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>Pre: <code>npm</code> &amp; <code>yarn</code></li><li>Init <code>npm init -y</code></li><li>Install <code>yarn add -dev husky doctoc</code></li><li>Appednd <code>package.json</code></li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"husky": &#123;</span><br><span class="line">  "hooks": &#123;</span><br><span class="line">    "pre-commit": "yarn doctoc README.md --github --title \"## Table Of Content\" &amp;&amp; git add -A"</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L3NlcnZlcmxlc3MtZW50cnk=" title="https://github.com/GeekEast/serverless-entry">Example<i class="fa fa-external-link"></i></span></li></ul><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;Pre: &lt;code&gt;npm&lt;/code&gt; &amp;amp; &lt;code&gt;yarn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Init &lt;code&gt;npm init -y&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;code&gt;yarn add -dev husky doctoc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Appednd &lt;code&gt;package.json&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&quot;husky&quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &quot;hooks&quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &quot;pre-commit&quot;: &quot;yarn doctoc README.md --github --title \&quot;## Table Of Content\&quot; &amp;amp;&amp;amp; git add -A&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/GeekEast/serverless-entry&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="https://geekeast.github.io/categories/Git/"/>
+    
+    
+      <category term="Markdown" scheme="https://geekeast.github.io/tags/Markdown/"/>
+    
+      <category term="TOC" scheme="https://geekeast.github.io/tags/TOC/"/>
+    
+      <category term="Github" scheme="https://geekeast.github.io/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>Introduction to Maven</title>
@@ -373,9 +408,9 @@
     
       <category term="SSH" scheme="https://geekeast.github.io/tags/SSH/"/>
     
-      <category term="CI/CD" scheme="https://geekeast.github.io/tags/CI-CD/"/>
-    
       <category term="Github" scheme="https://geekeast.github.io/tags/Github/"/>
+    
+      <category term="CI/CD" scheme="https://geekeast.github.io/tags/CI-CD/"/>
     
       <category term="GitLab" scheme="https://geekeast.github.io/tags/GitLab/"/>
     
@@ -756,11 +791,11 @@
       <category term="Frontend" scheme="https://geekeast.github.io/categories/Frontend/"/>
     
     
+      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
+    
       <category term="Bootstrap" scheme="https://geekeast.github.io/tags/Bootstrap/"/>
     
       <category term="CSS" scheme="https://geekeast.github.io/tags/CSS/"/>
-    
-      <category term="Frontend" scheme="https://geekeast.github.io/tags/Frontend/"/>
     
   </entry>
   
@@ -816,85 +851,6 @@
       <category term="Router" scheme="https://geekeast.github.io/tags/Router/"/>
     
       <category term="Streaming Video" scheme="https://geekeast.github.io/tags/Streaming-Video/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Read Update and Delete in ES6</title>
-    <link href="https://geekeast.github.io/arrayoperationinreact.html"/>
-    <id>https://geekeast.github.io/arrayoperationinreact.html</id>
-    <published>2019-07-24T01:22:02.000Z</published>
-    <updated>2019-08-31T04:49:46.508Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="array"><a class="markdownIt-Anchor" href="#array"></a> Array</h3><table><thead><tr><th style="text-align:center">Manipulation</th><th style="text-align:center">Bad Practice</th><th style="text-align:center">Good Practice</th></tr></thead><tbody><tr><td style="text-align:center"><code>Add</code></td><td style="text-align:center"><code>state.push('a')</code></td><td style="text-align:center"><code>[...state,'hi']</code></td></tr><tr><td style="text-align:center"><code>Remove</code></td><td style="text-align:center"><code>state.pop()</code></td><td style="text-align:center"><code>state.filter(..)</code></td></tr><tr><td style="text-align:center"><code>Update</code></td><td style="text-align:center"><code>state[0]='hi'</code></td><td style="text-align:center"><code>state.map(...)</code></td></tr></tbody></table><h3 id="object"><a class="markdownIt-Anchor" href="#object"></a> Object</h3><table><thead><tr><th style="text-align:center">Manipulation</th><th style="text-align:center">Bad Practice</th><th style="text-align:center">Good Practice</th></tr></thead><tbody><tr><td style="text-align:center"><code>Add</code></td><td style="text-align:center"><code>state.age=30</code></td><td style="text-align:center"><code>{...state,age:30}</code></td></tr><tr><td style="text-align:center"><code>Remove</code></td><td style="text-align:center"><code>delete state.name</code></td><td style="text-align:center"><code>{...state,age:undefined}</code> <code>_.omit(state,'age')</code></td></tr><tr><td style="text-align:center"><code>Update</code></td><td style="text-align:center"><code>state.name='Sam'</code></td><td style="text-align:center"><code>{...state,name:'Sam'}</code></td></tr></tbody></table><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;array&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#array&quot;&gt;&lt;/a&gt; Array&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Manipulation&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Bad Practice&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Good Practice&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Add&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.push(&#39;a&#39;)&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;[...state,&#39;hi&#39;]&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Remove&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.pop()&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.filter(..)&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Update&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state[0]=&#39;hi&#39;&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.map(...)&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;object&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#object&quot;&gt;&lt;/a&gt; Object&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Manipulation&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Bad Practice&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;Good Practice&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Add&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.age=30&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;{...state,age:30}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Remove&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;delete state.name&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;{...state,age:undefined}&lt;/code&gt; &lt;code&gt;_.omit(state,&#39;age&#39;)&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;Update&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;state.name=&#39;Sam&#39;&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;code&gt;{...state,name:&#39;Sam&#39;}&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-    
-    </summary>
-    
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
-    
-    
-      <category term="React" scheme="https://geekeast.github.io/tags/React/"/>
-    
-      <category term="Array" scheme="https://geekeast.github.io/tags/Array/"/>
-    
-      <category term="Object" scheme="https://geekeast.github.io/tags/Object/"/>
     
   </entry>
   
