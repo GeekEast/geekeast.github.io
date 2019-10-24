@@ -370,6 +370,238 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/d3tutorial.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/d3tutorial.html" class="post-title-link" itemprop="url">D3.js Tutorial</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-06-03 12:00:26" itemprop="dateCreated datePublished" datetime="2019-06-03T12:00:26+09:30">2019-06-03</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-06-05 16:47:51" itemprop="dateModified" datetime="2019-06-05T16:47:51+09:30">2019-06-05</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Analytics/" itemprop="url" rel="index"><span itemprop="name">Analytics</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">3.3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3>
+<ul>
+<li>Document: Element in a web page.</li>
+<li>SVG: Scalable <a href="https://vector-conversions.com/vectorizing/raster_vs_vector.html" target="_blank" rel="noopener">Vector Graphics</a>. It defines vector-based graphics in <strong>XML</strong> format. <strong>Here “scalable” means that, if you zoom in or out on an object, it would not appear pixelated.</strong></li>
+<li>Selection: an arraqy of <strong>nodes</strong> in DOM.</li>
+</ul>
+<h3 id="introduction"><a class="markdownIt-Anchor" href="#introduction"></a> Introduction</h3>
+<ul>
+<li>Without D3.js</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Tedious Iteration</span></span><br><span class="line"><span class="keyword">var</span> paragraphs = docuemnt.getElementsByTagName(<span class="string">"p"</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i =<span class="number">0</span>; i &lt; paragraphs.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> pargraph = paragraphs.item(i);</span><br><span class="line">    paragraph.style.setProperty(<span class="string">"color"</span>, <span class="string">"blue"</span>, <span class="literal">null</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>With D3.js</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// a group of elements manipulation</span></span><br><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="string">"blue"</span>);</span><br><span class="line"><span class="comment">// individual element manipulation - the first found</span></span><br><span class="line">d3.select(<span class="string">"body"</span>).style(<span class="string">"background-color"</span>, <span class="string">"black"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="dynamic-properties"><a class="markdownIt-Anchor" href="#dynamic-properties"></a> Dynamic Properties</h3>
+<blockquote>
+<p>Dynamic means use <code>function</code> rather than <code>constants</code> to return content</p>
+</blockquote>
+<ul>
+<li>Randomly color paragraphs.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"rsl("</span> + <span class="built_in">Math</span>.random()*<span class="number">360</span> + <span class="string">",100%,50%)"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>shades of gray for even and odd nodes</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">"p"</span>).style(<span class="string">"color"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d, i</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> i % <span class="number">2</span> ? <span class="string">"#fff"</span> : <span class="string">"#eee"</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>d</code> for individual bounded <strong>data</strong></li>
+<li><code>i</code> for <strong>index</strong>, start from <code>0</code></li>
+<li><code>first d for first node</code>, <code>second d for second node</code> and son on …</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d3.selectAll(<span class="string">'p'</span>)</span><br><span class="line">  .data([<span class="number">4</span>,<span class="number">8</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">23</span>,<span class="number">42</span>]) <span class="comment">// pass data to each node</span></span><br><span class="line">  .style(<span class="string">"font-size"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> d + <span class="string">"px"</span>;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+<p>Once the data has been <code>bound</code> to the document, you can omit the <code>data</code> operator; D3 will retrieve the previously-bound data. This allows you to recompute properties without rebinding. <strong>How?</strong></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/d3tutorial.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/pgpartion.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1453,206 +1685,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/pr.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/pr.html" class="post-title-link" itemprop="url">PR Related Websites</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-24 13:40:57" itemprop="dateCreated datePublished" datetime="2019-05-24T13:40:57+09:30">2019-05-24</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-24 10:02:33" itemprop="dateModified" datetime="2019-08-24T10:02:33+09:30">2019-08-24</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Australia/" itemprop="url" rel="index"><span itemprop="name">Australia</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">28</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-table" target="_blank" rel="noopener">Subclass 189</a><br>
-<a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190/points-table" target="_blank" rel="noopener">Subclass 190</a></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/pr.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1701,7 +1733,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">100</span>
+                    <span class="site-state-item-count">101</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1772,7 +1804,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">22</span>
+                      
+                    
+                    <span class="site-state-item-count">23</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
