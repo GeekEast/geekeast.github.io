@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Ubuntu Install Zsh &amp;amp; Oh My Zsh &amp;amp; Plugins 12345678910sudo apt install -y zshsh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;  # need passwo">
+  <meta name="description" content="Ubuntu Install Zsh &amp;amp; Oh My Zsh &amp;amp; Plugins 123456789101112sudo apt install -y zshsh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;  # need pa">
 <meta name="keywords" content="Ubuntu 18.04,ZSH,Oh My Zsh,Installation">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Install Zsh on Ubuntu 18.04">
 <meta property="og:url" content="https://geekeast.github.io/ubuntuinstallzsh.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Ubuntu Install Zsh &amp;amp; Oh My Zsh &amp;amp; Plugins 12345678910sudo apt install -y zshsh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;  # need passwo">
+<meta property="og:description" content="Ubuntu Install Zsh &amp;amp; Oh My Zsh &amp;amp; Plugins 123456789101112sudo apt install -y zshsh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;  # need pa">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-21T04:16:18.813Z">
+<meta property="og:updated_time" content="2019-10-25T03:09:54.598Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install Zsh on Ubuntu 18.04">
-<meta name="twitter:description" content="Ubuntu Install Zsh &amp;amp; Oh My Zsh &amp;amp; Plugins 12345678910sudo apt install -y zshsh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;  # need passwo">
+<meta name="twitter:description" content="Ubuntu Install Zsh &amp;amp; Oh My Zsh &amp;amp; Plugins 123456789101112sudo apt install -y zshsh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;  # need pa">
 
 
 
@@ -428,7 +428,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-04-21 13:46:18" itemprop="dateModified" datetime="2019-04-21T13:46:18+09:30">2019-04-21</time>
+                <time title="Modified: 2019-10-25 13:39:54" itemprop="dateModified" datetime="2019-10-25T13:39:54+10:30">2019-10-25</time>
               
             
           </span>
@@ -479,7 +479,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">608</span>
+                <span title="Symbols count in article">794</span>
               
 
               
@@ -514,7 +514,7 @@
 
       
         <h2 id="ubuntu-install-zsh-oh-my-zsh-plugins"><a class="markdownIt-Anchor" href="#ubuntu-install-zsh-oh-my-zsh-plugins"></a> Ubuntu Install Zsh &amp; Oh My Zsh &amp; Plugins</h2>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install -y zsh</span><br><span class="line">sh -c <span class="string">"<span class="variable">$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span>  <span class="comment"># need password.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># install plugins</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-autosuggestions</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</span><br><span class="line">nano ~/.zshrc</span><br><span class="line">plugins=(git zsh-autosuggestions zsh-syntax-highlighting) <span class="comment"># ~/.zshrc</span></span><br><span class="line"><span class="comment"># theme 'amuse'</span></span><br><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install -y zsh</span><br><span class="line">sh -c <span class="string">"<span class="variable">$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span>  <span class="comment"># need password.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># install plugins</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-autosuggestions</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/popstas/zsh-command-time.git <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/<span class="built_in">command</span>-time</span><br><span class="line">nano ~/.zshrc</span><br><span class="line">   plugins=(git zsh-autosuggestions zsh-syntax-highlighting <span class="built_in">command</span>-time) <span class="comment"># ~/.zshrc</span></span><br><span class="line">   ZSH_COMMAND_TIME_COLOR=<span class="string">"cyan"</span> <span class="comment"># ~/.zshrc</span></span><br><span class="line"><span class="comment"># theme 'amuse'</span></span><br><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <hr>
 
