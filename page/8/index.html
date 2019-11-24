@@ -370,6 +370,215 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/session-cookies.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/session-cookies.html" class="post-title-link" itemprop="url">Session vs Cookie</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-06-25 18:11:10" itemprop="dateCreated datePublished" datetime="2019-06-25T18:11:10+09:30">2019-06-25</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-08-24 10:01:10" itemprop="dateModified" datetime="2019-08-24T10:01:10+09:30">2019-08-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">386</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="concept"><a class="markdownIt-Anchor" href="#concept"></a> Concept</h3>
+<p>HTTP 协议中，客户端向服务端发起请求，服务端响应请求。服务端要怎样辨识客户端的请求是来自于同一个用户呢？这就需要一种<code>身份验证机制</code>。事实上存在这样一种机制，利用session和cookie，实现了对用户身份的验证。简单来说，session是存储在服务端的<code>半个钥匙</code>，cookie是用户每次发起http请求都要携带的<code>另一半钥匙</code>，服务器会通过比对着会得知当前请求时来自于哪个用户。</p>
+<h3 id="http-process"><a class="markdownIt-Anchor" href="#http-process"></a> HTTP Process:</h3>
+<ol>
+<li>客户端<code>第一次</code>发起请求。</li>
+<li>服务端响应请求，生成用于表示当前用户的<code>session</code>并存储，并且将一半钥匙第一次存储到响应的cookie中。</li>
+<li>客户端收到响应，拿到了一半钥匙存储在<code>cookie</code>当中。</li>
+<li>客户端再次发起请求，服务器收到请求，获取<code>cookie</code>中的一半钥匙，服务器进行比对，验证用户及用户状态</li>
+</ol>
+<h3 id="links"><a class="markdownIt-Anchor" href="#links"></a> Links</h3>
+<p><a href="https://flaviocopes.com/express-sessions/" target="_blank" rel="noopener">Express session</a></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/session-cookies.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/checktypeinjs.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1460,209 +1669,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/slackmessage.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/slackmessage.html" class="post-title-link" itemprop="url">Slack Node.js Message API</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-28 12:43:56" itemprop="dateCreated datePublished" datetime="2019-05-28T12:43:56+09:30">2019-05-28</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-24 10:01:43" itemprop="dateModified" datetime="2019-08-24T10:01:43+09:30">2019-08-24</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Backend/" itemprop="url" rel="index"><span itemprop="name">Backend</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">589</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="tutorials-for-slack-webhook"><a class="markdownIt-Anchor" href="#tutorials-for-slack-webhook"></a> <a href="https://api.slack.com/incoming-webhooks" target="_blank" rel="noopener">Tutorials for Slack Webhook</a></h2>
-<h3 id="install-packages"><a class="markdownIt-Anchor" href="#install-packages"></a> Install Packages</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add request</span><br></pre></td></tr></table></figure>
-<h3 id="send-message-to-slack-channel"><a class="markdownIt-Anchor" href="#send-message-to-slack-channel"></a> Send message to Slack Channel</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">'request'</span>);</span><br><span class="line"><span class="keyword">const</span> options = &#123;</span><br><span class="line">	url: <span class="string">'https://hooks.slack.com/services/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'</span>,</span><br><span class="line">	method: <span class="string">'POST'</span>,</span><br><span class="line">	headers: &#123;</span><br><span class="line">    <span class="string">'Content-type'</span>: <span class="string">'application/json'</span></span><br><span class="line">  &#125;,</span><br><span class="line">	body: <span class="built_in">JSON</span>.stringify(&#123;</span><br><span class="line">    text: <span class="string">'hello'</span>,</span><br><span class="line">    mrkdwn: <span class="literal">true</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callback</span>(<span class="params">error, response, body</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (!error &amp;&amp; response.statusCode == <span class="number">200</span>) &#123;</span><br><span class="line">		<span class="built_in">console</span>.log(body);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">request(options, callback);</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/slackmessage.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1711,7 +1717,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">104</span>
+                    <span class="site-state-item-count">105</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2051,7 +2057,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">111</span>
+                      
+                    
+                    <span class="site-state-item-count">112</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>

@@ -370,6 +370,222 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/reactrouterreduxstream.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/reactrouterreduxstream.html" class="post-title-link" itemprop="url">Video Streaming in React</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-30 13:21:56 / Modified: 13:25:43" itemprop="dateCreated datePublished" datetime="2019-07-30T13:21:56+09:30">2019-07-30</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">8.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">6 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="react-router"><a class="markdownIt-Anchor" href="#react-router"></a> React Router</h2>
+<h3 id="dependency"><a class="markdownIt-Anchor" href="#dependency"></a> Dependency</h3>
+<ul>
+<li>
+<p>react-router-dom</p>
+</li>
+<li>
+<p>Router doesn’t care about <code>localhost:3000</code>, it cares about sth behind <code>localhost:3000</code> like <code>/</code></p>
+</li>
+</ul>
+<h3 id="question"><a class="markdownIt-Anchor" href="#question"></a> Question</h3>
+<ul>
+<li>
+<p><strong>Please see the following code and answer what will happen after enter <code>localhost:3000</code></strong></p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;BrowserRouter&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/"</span> exact component=&#123;PageOne&#125; /&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/"</span> exact component=&#123;PageTwo&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/BrowserRouter&gt;</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>The PageOne and PageTwo Component will be both displayed.</li>
+<li>Browser Router will check <code>all</code> the path and matched route will be displayed one by one.</li>
+</ol>
+</li>
+<li>
+<p><strong>Please see the following code and answer what will happen after enter <code>localhost:3000</code></strong></p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;BrowserRouter&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/"</span>  component=&#123;Home&#125; /&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/pageone"</span>  component=&#123;PageOne&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/BrowserRouter&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>The PageOne will be displayed.</li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/reactrouterreduxstream.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/arrayoperationinreact.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1541,226 +1757,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/usaitresume.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/usaitresume.html" class="post-title-link" itemprop="url">How to prepare SDE resume in America?</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-07-18 12:48:10" itemprop="dateCreated datePublished" datetime="2019-07-18T12:48:10+09:30">2019-07-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-24 09:53:42" itemprop="dateModified" datetime="2019-08-24T09:53:42+09:30">2019-08-24</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Career/" itemprop="url" rel="index"><span itemprop="name">Career</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">845</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="education"><a class="markdownIt-Anchor" href="#education"></a> Education</h3>
-<ul>
-<li>University</li>
-<li>Major(Non-cs Major doesn’t matter)</li>
-<li>Graduation Time</li>
-<li><strong>CS related Courses</strong></li>
-<li>GPA (above 3.5)</li>
-</ul>
-<h3 id="experience"><a class="markdownIt-Anchor" href="#experience"></a> Experience</h3>
-<ul>
-<li>Core Part I</li>
-<li>Intership | Jobs: Company, Period, Position</li>
-<li>Process: Project, Problems, Solution</li>
-</ul>
-<h3 id="projects"><a class="markdownIt-Anchor" href="#projects"></a> Projects</h3>
-<ul>
-<li>Core Part II</li>
-<li>Name, period, role</li>
-<li>Process: including key technologies</li>
-<li>Result: your impact</li>
-<li>From near to far, 1-3 Key Projects</li>
-</ul>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/usaitresume.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1809,7 +1805,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">104</span>
+                    <span class="site-state-item-count">105</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2149,7 +2145,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">111</span>
+                      
+                    
+                    <span class="site-state-item-count">112</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
