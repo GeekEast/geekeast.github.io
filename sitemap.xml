@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/functionalprogramming-1.html</loc>
+    
+    <lastmod>2019-11-24T07:18:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/functionalprogramming.html</loc>
+    
+    <lastmod>2019-11-24T07:17:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/floatoverflow.html</loc>
     
     <lastmod>2019-11-24T06:32:51.000Z</lastmod>
@@ -716,14 +730,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/about/index.html</loc>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
+    <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
