@@ -370,6 +370,205 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/jsscope.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/jsscope.html" class="post-title-link" itemprop="url">Scope in Javascript</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-24 22:16:28" itemprop="dateCreated datePublished" datetime="2019-11-24T22:16:28+10:30">2019-11-24</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">4 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="scope"><a class="markdownIt-Anchor" href="#scope"></a> Scope</h3>
+<h4 id="compiler-vs-interpreter"><a class="markdownIt-Anchor" href="#compiler-vs-interpreter"></a> Compiler vs Interpreter</h4>
+<ul>
+<li><a href="https://www.zhihu.com/question/21486706" target="_blank" rel="noopener">Reference</a></li>
+<li><code>Compilter</code>: compile source code to machine code and run</li>
+<li><code>Interpreter</code>: interpret and run the code at the same time</li>
+</ul>
+<blockquote>
+<p>Javascript is <strong>not</strong> <code>interpreted</code> langauage. It’s a <code>compiled</code> language with <code>two pass processing</code>. One is compling the code and declare all the <strong>scope</strong> and <strong>left hand things</strong>. Another is evaluating the <strong>right hand things</strong> and run the code eventually.</p>
+</blockquote>
+<h4 id="how-compiler-works"><a class="markdownIt-Anchor" href="#how-compiler-works"></a> <a href="https://frontendmasters.com/courses/deep-javascript-v3/lexical-scope-review/" target="_blank" rel="noopener">How Compiler Works</a></h4>
+<ul>
+<li><strong>Simple</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// declare teacher in global scope</span></span><br><span class="line"><span class="keyword">var</span> teacher = <span class="string">'kyle'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// create another scope within the global scope</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">otherClass</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// declare teacher in otherClass scope</span></span><br><span class="line">  <span class="keyword">var</span> teacher = <span class="string">'Suzy'</span>;</span><br><span class="line">  <span class="comment">// it doesn't have any effect on our scopes</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Welcome"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// create another scope within the global scope</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ask</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// declare question in ask scope</span></span><br><span class="line">  <span class="keyword">var</span> question = <span class="string">'Why?'</span>;</span><br><span class="line">  <span class="comment">// call the question in the ask scope</span></span><br><span class="line">  <span class="built_in">console</span>.log(question);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// the compiling stage for create buckets and marbles has been done</span></span><br><span class="line"><span class="comment">// then will be handed over to the v8 and then run the code</span></span><br><span class="line">otherClass();</span><br><span class="line">ask();</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jsscope.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/jsequality.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1379,192 +1578,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/floatoverflow.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/floatoverflow.html" class="post-title-link" itemprop="url">Float Issue in Javascript</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-11-24 17:02:51" itemprop="dateCreated datePublished" datetime="2019-11-24T17:02:51+10:30">2019-11-24</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">55</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="equality-check"><a class="markdownIt-Anchor" href="#equality-check"></a> Equality Check</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.abs(<span class="number">0.3</span> - (<span class="number">0.1</span>+<span class="number">0.2</span>)) &lt; <span class="number">1e-6</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/floatoverflow.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1613,7 +1626,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">107</span>
+                    <span class="site-state-item-count">108</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1959,7 +1972,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">114</span>
+                      
+                    
+                    <span class="site-state-item-count">115</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
