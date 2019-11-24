@@ -214,8 +214,8 @@
   
   <entry>
     <title>Functional Programming</title>
-    <link href="https://geekeast.github.io/functionalprogramming-1.html"/>
-    <id>https://geekeast.github.io/functionalprogramming-1.html</id>
+    <link href="https://geekeast.github.io/functionalprogramming.html"/>
+    <id>https://geekeast.github.io/functionalprogramming.html</id>
     <published>2019-11-24T07:18:43.000Z</published>
     <updated>2019-11-24T07:18:43.000Z</updated>
     
@@ -244,28 +244,6 @@
     
     
       <category term="Functional Programming" scheme="https://geekeast.github.io/tags/Functional-Programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>functionalprogramming</title>
-    <link href="https://geekeast.github.io/functionalprogramming.html"/>
-    <id>https://geekeast.github.io/functionalprogramming.html</id>
-    <published>2019-11-24T07:17:44.000Z</published>
-    <updated>2019-11-24T07:17:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please Enter Token Here">    <label for="pass">Please Enter Token Here</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+7YWmXqKqdmRY7rgFUerQtKpyPZrYUsp23ziwDntHj9IuS9gAiId7cNuapgd2qaSQyKkg+6ZhnHZEQLa4C8LW6jNEYQr6nSRE9Fbwsh5A6MZPdob0LCfkUly+2kCuyI0xDqvNBme+J0FF4zM3j7TDXyYTVchZ6I4tcb9bF52oaD9FtuFvZKlPoHYCanGEbZ1QROvyj2HxMsgwadBvvTNU3vMrkWlgXWjFHByu/5+Aqhv/Ro5CS/Y83hFGUllIVxTgkr90Qv7x54VqYE2DogsHQOxOFj4iEjNydDBVy5cvmvAEHqx2fTuJUDdjCyevHrFEnuh0jh8JblEz6eLvTyzzysE1PExFcfO8=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Encrypted Post. Please Enter Token.
-    
-    </summary>
-    
-      <category term="TA" scheme="https://geekeast.github.io/categories/TA/"/>
-    
-    
-      <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
     
   </entry>
   
@@ -749,6 +727,84 @@
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;name&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;sum&lt;/span&gt;(income) &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; info &lt;span class=&quot;keyword&quot;&gt;group&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;rollup&lt;/span&gt;(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Database" scheme="https://geekeast.github.io/categories/Database/"/>
+    
+    
+      <category term="Postgres" scheme="https://geekeast.github.io/tags/Postgres/"/>
+    
+      <category term="Database" scheme="https://geekeast.github.io/tags/Database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Append Total in Postgres</title>
+    <link href="https://geekeast.github.io/pgaddonerowsum.html"/>
+    <id>https://geekeast.github.io/pgaddonerowsum.html</id>
+    <published>2019-08-28T03:58:17.000Z</published>
+    <updated>2019-08-28T04:05:51.745Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="问题"><a class="markdownIt-Anchor" href="#问题"></a> 问题</h2><ul><li>原表</li></ul><table><thead><tr><th>Name</th><th>Income</th></tr></thead><tbody><tr><td>A</td><td>100</td></tr><tr><td>B</td><td>200</td></tr><tr><td>C</td><td>300</td></tr></tbody></table><ul><li>需求</li></ul><table><thead><tr><th>Name</th><th>Income</th></tr></thead><tbody><tr><td>A</td><td>100</td></tr><tr><td>B</td><td>200</td></tr><tr><td>C</td><td>300</td></tr><tr><td></td><td>600</td></tr></tbody></table><a id="more"></a><ul><li>思路<ul><li><code>ROOLUP</code> function</li></ul></li><li>解决</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">name</span>, </span><br><span class="line">       <span class="keyword">SUM</span>(income) </span><br><span class="line"><span class="keyword">FROM</span>   info </span><br><span class="line"><span class="keyword">GROUP</span>  <span class="keyword">BY</span> <span class="keyword">rollup</span>( <span class="number">1</span> );</span><br></pre></td></tr></table></figure><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;问题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#问题&quot;&gt;&lt;/a&gt; 问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;原表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Income&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C&lt;/td&gt;
+&lt;td&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;需求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Income&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C&lt;/td&gt;
+&lt;td&gt;300&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
     
     </summary>
     
