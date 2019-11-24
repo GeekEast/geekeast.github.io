@@ -370,6 +370,207 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/jsequality.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/jsequality.html" class="post-title-link" itemprop="url">Equality in Javascript</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-24 22:07:56" itemprop="dateCreated datePublished" datetime="2019-11-24T22:07:56+10:30">2019-11-24</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">940</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="abastract-equality-comparison"><a class="markdownIt-Anchor" href="#abastract-equality-comparison"></a> Abastract Equality Comparison</h3>
+<h4 id="vs"><a class="markdownIt-Anchor" href="#vs"></a> <code>==</code> vs <code>===</code></h4>
+<ul>
+<li><a href="https://www.ecma-international.org/ecma-262/9.0/#sec-abstract-equality-comparison" target="_blank" rel="noopener">SPEC</a></li>
+</ul>
+<blockquote>
+<p>Only use the <code>==</code> when you know the type especially when implicit coercion is very helpful.</p>
+</blockquote>
+<h4 id="allows-for-coercion"><a class="markdownIt-Anchor" href="#allows-for-coercion"></a> <code>==</code> allows for coercion</h4>
+<ul>
+<li><code>null</code> equal to <code>undefined</code>.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ws1 = &#123;<span class="attr">topic</span>: <span class="literal">null</span>&#125;;</span><br><span class="line"><span class="keyword">const</span> ws2 = &#123;&#125;;</span><br><span class="line"><span class="keyword">if</span> (ws1.topic === <span class="literal">null</span> || ws1.topic === <span class="literal">undefined</span>)</span><br><span class="line"><span class="keyword">if</span> (ws1.topic == <span class="literal">null</span>);</span><br><span class="line"><span class="comment">// better and simple!</span></span><br><span class="line"><span class="keyword">if</span> (ws2.topic === <span class="literal">null</span> || ws2.topic === <span class="literal">undefined</span>)</span><br><span class="line"><span class="keyword">if</span> (ws2.topic == <span class="literal">null</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>any is number, compare number</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ele1 = <span class="number">1</span>；</span><br><span class="line"><span class="keyword">const</span> ele2 = ele.value; <span class="comment">// I don't know the type!</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// if you want to do the comparison between numebrs</span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">Number</span>(ele1) === <span class="built_in">Number</span>(ele2))</span><br><span class="line"></span><br><span class="line"><span class="comment">// why not use</span></span><br><span class="line"><span class="keyword">if</span> (ele1 == ele2)</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jsequality.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/jscoercion.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -493,13 +694,11 @@
 
       
         
-          
-            <a id="more"></a>
-<h3 id="abstract-operations"><a class="markdownIt-Anchor" href="#abstract-operations"></a> Abstract Operations</h3>
+          <h3 id="abstract-operations"><a class="markdownIt-Anchor" href="#abstract-operations"></a> Abstract Operations</h3>
 <blockquote>
 <p>ToPrimitive, ToString, ToNumber, ToBoolean</p>
 </blockquote>
-<h4 id><a class="markdownIt-Anchor" href="#"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10b3ByaW1pdGl2ZQ==" title="https://www.ecma-international.org/ecma-262/9.0/#sec-toprimitive"><strong>ToPrimitive(hint)</strong><i class="fa fa-external-link"></i></span></h4>
+<h4 id><a class="markdownIt-Anchor" href="#"></a> <a href="https://www.ecma-international.org/ecma-262/9.0/#sec-toprimitive" target="_blank" rel="noopener"><strong>ToPrimitive(hint)</strong></a></h4>
 <blockquote>
 <p>convert from <code>non-primitive</code> to <code>primitive</code></p>
 </blockquote>
@@ -519,7 +718,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="tostring"><a class="markdownIt-Anchor" href="#tostring"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10b3N0cmluZw==" title="https://www.ecma-international.org/ecma-262/9.0/#sec-tostring">ToString<i class="fa fa-external-link"></i></span></h4>
+<h4 id="tostring"><a class="markdownIt-Anchor" href="#tostring"></a> <a href="https://www.ecma-international.org/ecma-262/9.0/#sec-tostring" target="_blank" rel="noopener">ToString</a></h4>
 <ul>
 <li><strong>Primitive Type</strong></li>
 </ul>
@@ -536,109 +735,15 @@
 <li><strong>Override <code>toString()</code> for <code>object</code></strong></li>
 </ul>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># overRide toString() method to return 'X'</span></span><br><span class="line">&#123; <span class="function"><span class="title">toString</span></span>()&#123;<span class="built_in">return</span> <span class="string">"X"</span>;&#125;&#125; -&gt; <span class="string">"X"</span></span><br></pre></td></tr></table></figure>
-<h4 id="tonumber"><a class="markdownIt-Anchor" href="#tonumber"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10b251bWJlcg==" title="https://www.ecma-international.org/ecma-262/9.0/#sec-tonumber">ToNumber<i class="fa fa-external-link"></i></span></h4>
-<blockquote>
-<p>= <code>ToPrimitive(number)</code></p>
-</blockquote>
-<ul>
-<li><strong>Conversion from <code>primitive</code> type</strong></li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">""</span> -&gt; 0 <span class="comment"># weird!</span></span><br><span class="line"><span class="string">"0"</span> -&gt; 0 <span class="comment"># not weird!</span></span><br><span class="line"><span class="string">" 009 "</span> -&gt; 9</span><br><span class="line"><span class="string">"3.14159"</span> -&gt; 3.14159</span><br><span class="line"><span class="string">"0."</span> -&gt; 0</span><br><span class="line"><span class="string">".0"</span> -&gt; 0</span><br><span class="line"><span class="string">"."</span> -&gt; NaN  <span class="comment">#!</span></span><br><span class="line"><span class="string">"0xaf"</span> -&gt; 175</span><br><span class="line"><span class="literal">false</span> -&gt; 0</span><br><span class="line"><span class="literal">true</span> -&gt; 1</span><br><span class="line">null -&gt; 0 <span class="comment">#!</span></span><br><span class="line">undefined -&gt; NaN</span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>Conversion from <code>non-primitive</code> type</strong></li>
-</ul>
-<blockquote>
-<p>will invoke the <code>toPrimitive(Number)</code> abstract operaiton</p>
-</blockquote>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">""</span>] -&gt; 0</span><br><span class="line">[<span class="string">"0"</span>] -&gt; 0</span><br><span class="line">[<span class="string">"-0"</span>] -&gt; -0</span><br><span class="line">[null] -&gt; 0</span><br><span class="line">[undefined] -&gt; 0</span><br><span class="line">[1,2,3] -&gt; NaN</span><br><span class="line">[[[[]]]] -&gt; 0</span><br><span class="line">&#123;..&#125; -&gt; NaN</span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>Override <code>valueOf()</code> for object</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; valueOf()&#123;<span class="keyword">return</span> <span class="number">3</span>&#125;&#125; -&gt; <span class="number">3</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>Operation</strong> <code>valueOf()</code></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">valueOf()&#123;<span class="keyword">return</span> <span class="keyword">this</span>;&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="toboolean"><a class="markdownIt-Anchor" href="#toboolean"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10b2Jvb2xlYW4=" title="https://www.ecma-international.org/ecma-262/9.0/#sec-toboolean">ToBoolean<i class="fa fa-external-link"></i></span></h4>
-<blockquote>
-<p>ToBoolean only does <code>look up</code>, do <strong>not</strong> invode any other <code>abstract operations</code></p>
-</blockquote>
-<ul>
-<li><strong>False</strong>
-<ul>
-<li><code>&quot;&quot;</code></li>
-<li><code>0, -0</code></li>
-<li><code>null</code></li>
-<li><code>NaN</code></li>
-<li><code>undefined</code></li>
-<li><code>false</code></li>
-</ul>
-</li>
-<li><strong>True</strong>
-<ul>
-<li><code>&quot;foo&quot;</code></li>
-<li><code>23</code></li>
-<li><code>{a:'1'}</code></li>
-<li><code>[1,3]</code></li>
-<li><code>function(){...}</code></li>
-<li><code>true</code></li>
-<li>…</li>
-</ul>
-</li>
-</ul>
-<h3 id="explicit-coercion"><a class="markdownIt-Anchor" href="#explicit-coercion"></a> Explicit Coercion</h3>
-<h4 id="to-string"><a class="markdownIt-Anchor" href="#to-string"></a> to string</h4>
-<ul>
-<li><strong>use <code>${}</code></strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> y = <span class="number">1</span></span><br><span class="line"><span class="keyword">const</span> x = <span class="string">`a asdasdasd <span class="subst">$&#123;y&#125;</span>`</span> <span class="comment">// be will be coercied to string implicitly</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>use <code>+</code></strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> x = <span class="string">"a"</span> + b <span class="comment">// be will be coercied to string implicitly</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>use <code>Array.prototype.join()</code></strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>].join(<span class="string">""</span>)</span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>use <code>toString()</code> of a non-primitive type</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = &#123;&#125;</span><br><span class="line">x.toString();</span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>use <code>String()</code>: Recommended</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="to-number"><a class="markdownIt-Anchor" href="#to-number"></a> to number</h4>
-<ul>
-<li><strong>use <code>+</code></strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+<span class="string">"324"</span> <span class="comment">// wiil be converted to a number</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>use <code>Number()</code>: Recommended</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(<span class="string">"123"</span>);</span><br></pre></td></tr></table></figure>
-<h4 id="to-boolean"><a class="markdownIt-Anchor" href="#to-boolean"></a> to boolean</h4>
-<ul>
-<li><strong>use <code>!!</code></strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!!a.b</span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>use <code>Boolean()</code></strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Boolean</span>(<span class="string">""</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="implicit-coercion"><a class="markdownIt-Anchor" href="#implicit-coercion"></a> Implicit Coercion</h3>
-<blockquote>
-<p>Boxing: Wrap primitive types up as Objects</p>
-</blockquote>
-<ul>
-<li>Just let the boxing happens which has performance benefits.</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">"abc"</span>;</span><br><span class="line">a.length; <span class="comment">// will be boxed as an object</span></span><br><span class="line">a.toUpperCase() <span class="comment">// will be boxed as an object</span></span><br></pre></td></tr></table></figure>
-<h3 id="corner-case"><a class="markdownIt-Anchor" href="#corner-case"></a> Corner Case</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(<span class="string">""</span>) <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="string">" \t\n"</span>) <span class="comment">//0</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">null</span>) <span class="comment">//0</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">NaN</span>) <span class="comment">//NaN</span></span><br><span class="line"><span class="built_in">Number</span>([]) <span class="comment">//0</span></span><br><span class="line"><span class="built_in">Number</span>([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]) <span class="comment">// ！NaN</span></span><br><span class="line"><span class="built_in">Number</span>([<span class="literal">null</span>]) <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Number</span>(&#123;&#125;) <span class="comment">// NaN</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">String</span>(<span class="number">-0</span>) <span class="comment">// "0"</span></span><br><span class="line"><span class="built_in">String</span>(<span class="literal">null</span>) <span class="comment">// "null"</span></span><br><span class="line"><span class="built_in">String</span>(<span class="literal">undefined</span>) <span class="comment">// "undefined"</span></span><br><span class="line"><span class="built_in">String</span>( [<span class="literal">null</span>] ) <span class="comment">// ""</span></span><br><span class="line"><span class="built_in">String</span>( [<span class="literal">undefined</span>] ) <span class="comment">// ""</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Boolean</span>( <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">false</span>)); <span class="literal">true</span> <span class="comment">// the object exists</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">true</span>) <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">false</span>) <span class="comment">//0</span></span><br><span class="line"></span><br><span class="line"><span class="number">1</span>&lt;<span class="number">2</span>&lt;<span class="number">3</span> <span class="comment">// true</span></span><br><span class="line">(<span class="number">1</span>&lt;<span class="number">2</span>)&lt;<span class="number">3</span></span><br><span class="line"><span class="number">1</span>&lt;<span class="number">3</span>  <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="string">''</span>;</span><br><span class="line"><span class="built_in">Number</span>(a) <span class="comment">// 0</span></span><br><span class="line">a = <span class="string">'  \t\n'</span></span><br><span class="line"><span class="built_in">Number</span>(a) <span class="comment">//0</span></span><br></pre></td></tr></table></figure>
-<hr>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/jscoercion.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
 
@@ -1460,196 +1565,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/pasteimagemarkdown.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/pasteimagemarkdown.html" class="post-title-link" itemprop="url">Paste Image Enhancer in VS-code</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-10-25 04:18:41" itemprop="dateCreated datePublished" datetime="2019-10-25T04:18:41+10:30">2019-10-25</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VSCode/" itemprop="url" rel="index"><span itemprop="name">VSCode</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">279</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="plugin"><a class="markdownIt-Anchor" href="#plugin"></a> Plugin</h3>
-<ul>
-<li>Paste Image</li>
-</ul>
-<h3 id="settings"><a class="markdownIt-Anchor" href="#settings"></a> Settings</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"pasteImage.path": "$&#123;projectRoot&#125;/img",</span><br><span class="line">"pasteImage.basePath": "$&#123;projectRoot&#125;",</span><br><span class="line">"pasteImage.insertPattern": "&lt;div style=\"text-align:center; margin:auto\"&gt;&lt;img src=\"$&#123;imageFilePath&#125;\"&gt;&lt;/div&gt;",</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/pasteimagemarkdown.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1698,7 +1613,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-count">107</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2042,7 +1957,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">113</span>
+                      
+                    
+                    <span class="site-state-item-count">114</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
