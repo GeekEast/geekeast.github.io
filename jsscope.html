@@ -465,7 +465,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">6k</span>
+                <span title="Symbols count in article">5.2k</span>
               
 
               
@@ -653,50 +653,6 @@
 <li><code>let</code> <strong>hoisted</strong></li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> a = <span class="number">20</span>;</span><br><span class="line">foo();  <span class="comment">// This is perfectly valid</span></span><br></pre></td></tr></table></figure>
-<h3 id="commons"><a class="markdownIt-Anchor" href="#commons"></a> Commons</h3>
-<h4 id="terms"><a class="markdownIt-Anchor" href="#terms"></a> Terms</h4>
-<ul>
-<li>
-<p><strong>Shadowing</strong>: have two variables in <strong>different</strong> scopes with the <strong>same</strong> name</p>
-</li>
-<li>
-<p><strong>Left and Right Position</strong></p>
-<ul>
-<li><strong>Left</strong>: the variable to be signed a value to</li>
-<li><strong>Right</strong>: the value to be assigned to a varibale.</li>
-</ul>
-</li>
-<li>
-<p><strong>Compile Time</strong></p>
-<ul>
-<li>declare the left side things</li>
-</ul>
-</li>
-<li>
-<p><strong>Run Time</strong></p>
-<ul>
-<li>execute the right side things</li>
-</ul>
-</li>
-<li>
-<p><strong>parameter vs argument</strong></p>
-<ul>
-<li><strong>parameter</strong>: left side thing for obtaining values</li>
-<li><strong>argument</strong>: right side thing for extracting values</li>
-</ul>
-</li>
-</ul>
-<h4 id="lexical-scope"><a class="markdownIt-Anchor" href="#lexical-scope"></a> Lexical Scope</h4>
-<ul>
-<li>AkA: <strong>static scope</strong></li>
-<li>The scope is decided during the <strong>compile</strong> stage</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = <span class="number">5</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun2</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d"</span>, x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="dynamic-scope"><a class="markdownIt-Anchor" href="#dynamic-scope"></a> Dynamic scope</h4>
-<ul>
-<li>The scope is decided in the <strong>run</strong> stage, depends on the call chain of method.</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>, x);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dummy1</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = <span class="number">5</span>;</span><br><span class="line">    fun();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dummy2</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x = <span class="number">10</span>;</span><br><span class="line">    fun();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 
       
@@ -1452,7 +1408,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#scope"><span class="nav-number">1.</span> <span class="nav-text"> Scope</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#compiler-vs-interpreter"><span class="nav-number">1.1.</span> <span class="nav-text"> Compiler vs Interpreter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#how-compiler-works"><span class="nav-number">1.2.</span> <span class="nav-text"> How Compiler Works</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#function-types"><span class="nav-number">1.3.</span> <span class="nav-text"> Function Types</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#iife"><span class="nav-number">1.4.</span> <span class="nav-text"> IIFE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#block-scoping"><span class="nav-number">1.5.</span> <span class="nav-text"> Block Scoping</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hoisting"><span class="nav-number">1.6.</span> <span class="nav-text"> Hoisting</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#commons"><span class="nav-number">2.</span> <span class="nav-text"> Commons</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#terms"><span class="nav-number">2.1.</span> <span class="nav-text"> Terms</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lexical-scope"><span class="nav-number">2.2.</span> <span class="nav-text"> Lexical Scope</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dynamic-scope"><span class="nav-number">2.3.</span> <span class="nav-text"> Dynamic scope</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#scope"><span class="nav-number">1.</span> <span class="nav-text"> Scope</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#compiler-vs-interpreter"><span class="nav-number">1.1.</span> <span class="nav-text"> Compiler vs Interpreter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#how-compiler-works"><span class="nav-number">1.2.</span> <span class="nav-text"> How Compiler Works</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#function-types"><span class="nav-number">1.3.</span> <span class="nav-text"> Function Types</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#iife"><span class="nav-number">1.4.</span> <span class="nav-text"> IIFE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#block-scoping"><span class="nav-number">1.5.</span> <span class="nav-text"> Block Scoping</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hoisting"><span class="nav-number">1.6.</span> <span class="nav-text"> Hoisting</span></a></li></ol></li></ol></div>
             
 
           </div>
