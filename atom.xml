@@ -84,9 +84,9 @@
       <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
     
     
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
-    
       <category term="Object" scheme="https://geekeast.github.io/tags/Object/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
   </entry>
   
@@ -414,7 +414,7 @@
     <published>2019-10-23T06:14:12.000Z</published>
     <updated>2019-10-23T06:14:12.000Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>Pre: <code>npm</code> &amp; <code>yarn</code></li><li>Init <code>npm init -y</code></li><li>Install <code>yarn add --dev husky doctoc</code></li><li>Appednd <code>package.json</code></li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"husky": &#123;</span><br><span class="line">  "hooks": &#123;</span><br><span class="line">    "pre-commit": "yarn doctoc README.md --github --title \"## Table Of Content\" &amp;&amp; git add -A"</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L3NlcnZlcmxlc3MtZW50cnk=" title="https://github.com/GeekEast/serverless-entry">Example<i class="fa fa-external-link"></i></span></li></ul><a id="more"></a><hr>]]></content>
+    <content type="html"><![CDATA[<ul><li>Pre: <code>npm</code> &amp; <code>yarn</code></li><li>Init <code>npm init -y</code></li><li>Install <code>yarn add --dev husky doctoc</code></li><li>Appednd <code>package.json</code></li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">"husky": &#123;</span><br><span class="line">  "hooks": &#123;</span><br><span class="line">    "pre-commit": "yarn doctoc . --github --title \"## Table Of Content\" &amp;&amp; git add -A"</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dlZWtFYXN0L3NlcnZlcmxlc3MtZW50cnk=" title="https://github.com/GeekEast/serverless-entry">Example<i class="fa fa-external-link"></i></span></li></ul><a id="more"></a><hr>]]></content>
     
     <summary type="html">
     
@@ -424,7 +424,7 @@
 &lt;li&gt;Install &lt;code&gt;yarn add --dev husky doctoc&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Appednd &lt;code&gt;package.json&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&quot;husky&quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &quot;hooks&quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &quot;pre-commit&quot;: &quot;yarn doctoc README.md --github --title \&quot;## Table Of Content\&quot; &amp;amp;&amp;amp; git add -A&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&quot;husky&quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &quot;hooks&quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &quot;pre-commit&quot;: &quot;yarn doctoc . --github --title \&quot;## Table Of Content\&quot; &amp;amp;&amp;amp; git add -A&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/GeekEast/serverless-entry&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -434,11 +434,11 @@
       <category term="Git" scheme="https://geekeast.github.io/categories/Git/"/>
     
     
+      <category term="Github" scheme="https://geekeast.github.io/tags/Github/"/>
+    
       <category term="Markdown" scheme="https://geekeast.github.io/tags/Markdown/"/>
     
       <category term="TOC" scheme="https://geekeast.github.io/tags/TOC/"/>
-    
-      <category term="Github" scheme="https://geekeast.github.io/tags/Github/"/>
     
   </entry>
   
