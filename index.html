@@ -370,6 +370,398 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/jsobject.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/jsobject.html" class="post-title-link" itemprop="url">Object in Javascript</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-25 10:31:08" itemprop="dateCreated datePublished" datetime="2019-11-25T10:31:08+10:30">2019-11-25</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">10k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">7 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="this"><a class="markdownIt-Anchor" href="#this"></a> <code>this</code></h3>
+<blockquote>
+<p>A function’s this references the <strong>execution context</strong> for that call, determined entirely by <strong>how the function was called</strong></p>
+</blockquote>
+<h4 id="scope-and-closure"><a class="markdownIt-Anchor" href="#scope-and-closure"></a> Scope and Closure</h4>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> teacher = <span class="string">'Kyle'</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ask</span>(<span class="params">question</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(teacher, question);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">otherClass</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// won't output Suzy but Kyle</span></span><br><span class="line">  <span class="keyword">var</span> teacher = <span class="string">"Suzy"</span>;</span><br><span class="line">  ask(<span class="string">"Why?"</span>)</span><br><span class="line">&#125;</span><br><span class="line">otherClass();</span><br></pre></td></tr></table></figure>
+<h4 id="object-and-this"><a class="markdownIt-Anchor" href="#object-and-this"></a> Object and <code>this</code></h4>
+<blockquote>
+<p><code>Prototype chaining</code> happens after <code>this</code></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.prototype.teacher = <span class="string">'kyle'</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ask</span>(<span class="params">question</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.teacher, question);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">otherClass</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> teacher = <span class="string">"Suzy"</span>;</span><br><span class="line">  ask(<span class="string">"Why?"</span>)</span><br><span class="line">&#125;</span><br><span class="line">otherClass();</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jsobject.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/jsclosure.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/jsclosure.html" class="post-title-link" itemprop="url">Closure in Javascript</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-25 09:58:16" itemprop="dateCreated datePublished" datetime="2019-11-25T09:58:16+10:30">2019-11-25</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">2.8k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="closure"><a class="markdownIt-Anchor" href="#closure"></a> Closure</h3>
+<blockquote>
+<p>Closure is when a function “remembers” its’ <strong>lexical scope</strong> even when the function is executed <strong>outside</strong> the lexical scope.</p>
+</blockquote>
+<h4 id="examples"><a class="markdownIt-Anchor" href="#examples"></a> Examples</h4>
+<ul>
+<li><strong>Example 1</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ask</span>(<span class="params">question</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// waitASec close over the variable called question.</span></span><br><span class="line">  setTimeout(<span class="function"><span class="keyword">function</span> <span class="title">waitASec</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(question);</span><br><span class="line">  &#125;, <span class="number">100</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ask(<span class="string">"What is closure?"</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>Example 2</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ask</span>(<span class="params">question</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// question is preserved with the function called holdYourQuestion()</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="title">holdYourQuestion</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(question);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> myQuestion = ask(<span class="string">"What is closure"</span>);</span><br><span class="line">myQuestions();</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/jsclosure.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/jsscope.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1195,395 +1587,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/functionalprogramming.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/functionalprogramming.html" class="post-title-link" itemprop="url">Functional Programming</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-11-24 17:48:43" itemprop="dateCreated datePublished" datetime="2019-11-24T17:48:43+10:30">2019-11-24</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Functional-Programming/" itemprop="url" rel="index"><span itemprop="name">Functional Programming</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">199</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="functional-programming"><a class="markdownIt-Anchor" href="#functional-programming"></a> Functional Programming</h3>
-<blockquote>
-<p>extract side effect rather than terminate it</p>
-</blockquote>
-<h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3>
-<ul>
-<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0" target="_blank" rel="noopener">Functional Programming</a></li>
-<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976" target="_blank" rel="noopener">Pure Function</a></li>
-<li><a href="https://frontendmasters.com/courses/functional-js-lite/side-effects/" target="_blank" rel="noopener">Side Effect</a></li>
-<li><a href="http://learnyouahaskell.com/chapters" target="_blank" rel="noopener">Learn you a haskell for great good</a></li>
-<li><a href="http://www.cs.cmu.edu/~15150/index.html" target="_blank" rel="noopener">FP CMU Course</a></li>
-<li><a href="http://www.aqee.net/post/why-haskell-is-worth-learning.html" target="_blank" rel="noopener">Haskell</a></li>
-<li><a href="https://elixir-lang.org/" target="_blank" rel="noopener">Elixir</a></li>
-</ul>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/functionalprogramming.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/floatoverflow.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/floatoverflow.html" class="post-title-link" itemprop="url">Float Issue in Javascript</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-11-24 17:02:51" itemprop="dateCreated datePublished" datetime="2019-11-24T17:02:51+10:30">2019-11-24</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">55</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="equality-check"><a class="markdownIt-Anchor" href="#equality-check"></a> Equality Check</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.abs(<span class="number">0.3</span> - (<span class="number">0.1</span>+<span class="number">0.2</span>)) &lt; <span class="number">1e-6</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/floatoverflow.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1627,7 +1635,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">107</span>
+                    <span class="site-state-item-count">109</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1975,7 +1983,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">115</span>
+                      
+                    
+                    <span class="site-state-item-count">116</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
