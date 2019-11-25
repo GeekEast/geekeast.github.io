@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/course-recommendation.html</loc>
+    
+    <lastmod>2019-11-25T09:49:00.227Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/jsprototype.html</loc>
     
     <lastmod>2019-11-25T04:38:43.000Z</lastmod>
@@ -173,13 +180,6 @@
     <loc>https://geekeast.github.io/gitlabcicd.html</loc>
     
     <lastmod>2019-09-11T15:51:20.696Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/course-recommendation.html</loc>
-    
-    <lastmod>2019-09-10T03:52:21.502Z</lastmod>
     
   </url>
   
@@ -772,20 +772,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/about/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
@@ -793,7 +779,21 @@
   </url>
   
   <url>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
