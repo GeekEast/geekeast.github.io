@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-11-26T04:04:39.000Z</updated>
+  <updated>2019-11-27T02:44:49.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Program vs Process vs Thread</title>
+    <link href="https://geekeast.github.io/programprocessthread.html"/>
+    <id>https://geekeast.github.io/programprocessthread.html</id>
+    <published>2019-11-27T02:44:49.000Z</published>
+    <updated>2019-11-27T02:44:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="program-process-thread"><a class="markdownIt-Anchor" href="#program-process-thread"></a> Program, Process, Thread</h3><ul><li>MacOS: Activity Monitor</li><li>Windows: Task Manager</li><li>Linux: Top</li></ul><h4 id="program"><a class="markdownIt-Anchor" href="#program"></a> Program</h4><blockquote><p>the code stored on your computer disk or non-volatile memory to fulfill a certain task. Including System Programs and Application Programs.</p></blockquote><ul><li>Program will be compiled or programmed to binary in memory before executing it.</li></ul><h4 id="process"><a class="markdownIt-Anchor" href="#process"></a> Process</h4><blockquote><p>An <code>instance</code> of program that has been loaded into <code>memory</code> along with all the <code>resources</code> needed to operate.</p></blockquote><ul><li>The <strong>Operating System</strong> handles the task manageing the resource needed to turn program into processes.</li><li>Resources includes:<ul><li><strong>register</strong>: some part of <strong>CPU</strong> to store <code>binary</code></li><li><strong>program counter</strong>: special <code>register</code> in <strong>CPU</strong> to do counter work</li><li><strong>stack</strong>: data structure to store <strong>local</strong> and <strong>small</strong> things in memory, managed <strong>automatically</strong>.</li><li><strong>heap</strong>: data structure to store <strong>global</strong> and <strong>big</strong> things in memory, managed <strong>manually</strong> or by <strong>Garbage Collection</strong>.</li></ul></li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-12-45-39.png" "></div><a id="more"></a><ul><li>Features:<ul><li><strong>One</strong> program may be associated with <strong>many</strong> processes.</li><li><strong>Independent</strong> Memory Address Space.</li><li>Inter-communication is <strong>expensive</strong>.</li><li><strong>Robust</strong>: One failed won’t cause another to fail.</li></ul></li></ul><h4 id="thread"><a class="markdownIt-Anchor" href="#thread"></a> Thread</h4><blockquote><p>A unit of execution within a process. One process can have one up to many threads.</p></blockquote><ul><li>Features:<ul><li>Share the same <code>heap</code> in a process</li><li>Share the same <code>code</code> in a process</li><li>Has independent <code>registers</code></li><li>Has independent <code>stacks</code></li><li>Inter-communication is <strong>less expensive</strong></li><li><strong>Vulnerable</strong>: one fail can cause another to fail in the same process.</li></ul></li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-12-57-32.png"></div><h4 id="cocurrency-vs-parallelism"><a class="markdownIt-Anchor" href="#cocurrency-vs-parallelism"></a> Cocurrency vs Parallelism</h4><ul><li>Mutiple CPU cores: Parallelism with genuine simultaneous execution</li><li>Single CPU core: cocurrency with interleaving of process in time to give apperance of simultaneous execution.</li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-13-14-20.png"></div><h4 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h4><ul><li>The program starts out as a <code>text</code> file of programming <strong>code</strong>.</li><li>The program is <code>compiled</code> or <code>interpreted</code> into <strong>binary</strong> form.</li><li>The program is loaded into <code>memory</code>.</li><li>The program becomes <code>one</code> or <code>more</code> running <strong>processes</strong>.</li><li>Processes are <code>typically</code> <strong>independent</strong> of each other</li><li>While threads exists as the <code>subset</code> of a process</li><li>Threads can talk with each other more <code>easily</code> than processes can</li><li>Threads are <code>vulnerable</code> to problems caused by other threads in the same process.</li></ul><h2 id="div-styletext-aligncenter-marginautoimg-srchttpsgeekeaskblogpicss3-ap-southeast-2amazonawscomposts2019-11-27-13-10-13pngdiv"><a class="markdownIt-Anchor" href="#div-styletext-aligncenter-marginautoimg-srchttpsgeekeaskblogpicss3-ap-southeast-2amazonawscomposts2019-11-27-13-10-13pngdiv"></a> <div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-13-10-13.png"></div></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;program-process-thread&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#program-process-thread&quot;&gt;&lt;/a&gt; Program, Process, Thread&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MacOS: Activity Monitor&lt;/li&gt;
+&lt;li&gt;Windows: Task Manager&lt;/li&gt;
+&lt;li&gt;Linux: Top&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;program&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#program&quot;&gt;&lt;/a&gt; Program&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;the code stored on your computer disk or non-volatile memory to fulfill a certain task. Including System Programs and Application Programs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Program will be compiled or programmed to binary in memory before executing it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;process&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#process&quot;&gt;&lt;/a&gt; Process&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An &lt;code&gt;instance&lt;/code&gt; of program that has been loaded into &lt;code&gt;memory&lt;/code&gt; along with all the &lt;code&gt;resources&lt;/code&gt; needed to operate.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;Operating System&lt;/strong&gt; handles the task manageing the resource needed to turn program into processes.&lt;/li&gt;
+&lt;li&gt;Resources includes:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;register&lt;/strong&gt;: some part of &lt;strong&gt;CPU&lt;/strong&gt; to store &lt;code&gt;binary&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;program counter&lt;/strong&gt;: special &lt;code&gt;register&lt;/code&gt; in &lt;strong&gt;CPU&lt;/strong&gt; to do counter work&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;stack&lt;/strong&gt;: data structure to store &lt;strong&gt;local&lt;/strong&gt; and &lt;strong&gt;small&lt;/strong&gt; things in memory, managed &lt;strong&gt;automatically&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;heap&lt;/strong&gt;: data structure to store &lt;strong&gt;global&lt;/strong&gt; and &lt;strong&gt;big&lt;/strong&gt; things in memory, managed &lt;strong&gt;manually&lt;/strong&gt; or by &lt;strong&gt;Garbage Collection&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&quot;text-align:center; margin:auto&quot;&gt;&lt;img src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-12-45-39.png&quot; &quot;&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="Computer Science" scheme="https://geekeast.github.io/categories/Computer-Science/"/>
+    
+    
+      <category term="Computer System" scheme="https://geekeast.github.io/tags/Computer-System/"/>
+    
+      <category term="C" scheme="https://geekeast.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>AJAX</title>
@@ -745,35 +797,6 @@
       <category term="Data Engineer" scheme="https://geekeast.github.io/tags/Data-Engineer/"/>
     
       <category term="Data Science" scheme="https://geekeast.github.io/tags/Data-Science/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git Switch Repo</title>
-    <link href="https://geekeast.github.io/gitswitchrepo.html"/>
-    <id>https://geekeast.github.io/gitswitchrepo.html</id>
-    <published>2019-09-12T02:49:19.000Z</published>
-    <updated>2019-09-12T02:51:20.270Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>Modify</li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="built_in">set</span>-url origin git@github.com:xxx/demo.git</span><br></pre></td></tr></table></figure><ul><li>Remove and Create</li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin git@github.com:xxx/demo.git</span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;Modify&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git remote &lt;span class=&quot;built_in&quot;&gt;set&lt;/span&gt;-url origin git@github.com:xxx/demo.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;Remove and Create&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git remote rm origin&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git remote add origin git@github.com:xxx/demo.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="CI/CD" scheme="https://geekeast.github.io/categories/CI-CD/"/>
-    
-    
-      <category term="Git" scheme="https://geekeast.github.io/tags/Git/"/>
     
   </entry>
   
