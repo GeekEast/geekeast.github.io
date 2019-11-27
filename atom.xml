@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-11-27T06:01:45.000Z</updated>
+  <updated>2019-11-27T13:06:14.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How HTTP works?</title>
+    <link href="https://geekeast.github.io/httpfun.html"/>
+    <id>https://geekeast.github.io/httpfun.html</id>
+    <published>2019-11-27T13:06:14.000Z</published>
+    <updated>2019-11-27T13:06:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="http"><a class="markdownIt-Anchor" href="#http"></a> HTTP</h3><blockquote><p>HTTP协议建立在TCP连接基础上，是一种允许浏览器向服务器获取资源的协议。</p></blockquote><h4 id="问题"><a class="markdownIt-Anchor" href="#问题"></a> 问题</h4><ul><li>为什么第一次访问站点时，打开速度很慢，再次访问时，速度就很快了？</li><li>当登录一个网站后，下次再访问该站点，就已经处于登录状态了？</li></ul><h4 id="http请求流程"><a class="markdownIt-Anchor" href="#http请求流程"></a> HTTP请求流程</h4><ol><li>构建请求  <code>GET /index.html HTTP1.1</code></li><li>查找浏览器缓存，如果有则直接返回，没有则继续下一步</li><li>查找DNS缓存，如果有则进行下一步，没有则请求DNS服务器</li><li>Chrome同域名最多6个tcp链接; 如果是第六个之后，则进入TCP队列进行等待，否则进行下一步</li><li>建立TCP连接。进行3次握手</li></ol><a id="more"></a><ol start="6"><li>发送HTTP请求</li></ol><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-23-24-34.png"></div><ol start="7"><li>返回请求</li></ol><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-23-25-48.png"></div><ol start="8"><li>或者重定向：如果响应状态吗是3xx, 则要进行重定向，导引到另外一个页面，要从1再开始</li><li>最后断开或者保持链接： <code>Connection: Keep-Alive</code>的情况下要保持链接，否则正常断开链接</li></ol><h4 id="问题解决"><a class="markdownIt-Anchor" href="#问题解决"></a> 问题解决:</h4><ul><li>为什么第一次访问站点时，打开速度很慢，再次访问时，速度就很快了？- <strong>缓存</strong><ul><li>通过响应头中的<code>Cache-Control</code>来控制是<code>是否缓存</code>，<code>缓存周期</code>等等</li></ul></li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-23-31-16.png"></div><ul><li>当登录一个网站后，下次再访问该站点，就已经处于登录状态了？- Cookies<ul><li>通过响应头中的<code>Set-Cookie</code>来添加cookie，存储在请求头的<code>Cookie</code>字段中</li></ul></li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-23-34-54.png"></div><h4 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h4><h2 id="div-styletext-aligncenter-marginautoimg-srchttpsgeekeaskblogpicss3-ap-southeast-2amazonawscomposts2019-11-27-23-35-27pngdiv"><a class="markdownIt-Anchor" href="#div-styletext-aligncenter-marginautoimg-srchttpsgeekeaskblogpicss3-ap-southeast-2amazonawscomposts2019-11-27-23-35-27pngdiv"></a> <div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-23-35-27.png"></div></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;http&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#http&quot;&gt;&lt;/a&gt; HTTP&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HTTP协议建立在TCP连接基础上，是一种允许浏览器向服务器获取资源的协议。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;问题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#问题&quot;&gt;&lt;/a&gt; 问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;为什么第一次访问站点时，打开速度很慢，再次访问时，速度就很快了？&lt;/li&gt;
+&lt;li&gt;当登录一个网站后，下次再访问该站点，就已经处于登录状态了？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;http请求流程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#http请求流程&quot;&gt;&lt;/a&gt; HTTP请求流程&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;构建请求  &lt;code&gt;GET /index.html HTTP1.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查找浏览器缓存，如果有则直接返回，没有则继续下一步&lt;/li&gt;
+&lt;li&gt;查找DNS缓存，如果有则进行下一步，没有则请求DNS服务器&lt;/li&gt;
+&lt;li&gt;Chrome同域名最多6个tcp链接; 如果是第六个之后，则进入TCP队列进行等待，否则进行下一步&lt;/li&gt;
+&lt;li&gt;建立TCP连接。进行3次握手&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Network" scheme="https://geekeast.github.io/categories/Network/"/>
+    
+    
+      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
+    
+      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
+    
+  </entry>
   
   <entry>
     <title>How TCP/IP Works</title>
@@ -678,11 +718,11 @@
       <category term="Git" scheme="https://geekeast.github.io/categories/Git/"/>
     
     
-      <category term="Github" scheme="https://geekeast.github.io/tags/Github/"/>
-    
       <category term="Markdown" scheme="https://geekeast.github.io/tags/Markdown/"/>
     
       <category term="TOC" scheme="https://geekeast.github.io/tags/TOC/"/>
+    
+      <category term="Github" scheme="https://geekeast.github.io/tags/Github/"/>
     
   </entry>
   
@@ -751,35 +791,6 @@
       <category term="Mac" scheme="https://geekeast.github.io/tags/Mac/"/>
     
       <category term="Efficiency" scheme="https://geekeast.github.io/tags/Efficiency/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Close Dock on Mac Forever</title>
-    <link href="https://geekeast.github.io/closedockonmac.html"/>
-    <id>https://geekeast.github.io/closedockonmac.html</id>
-    <published>2019-10-15T00:24:19.000Z</published>
-    <updated>2019-10-15T01:27:40.766Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools</h3><ul><li>Alfred</li><li>Context</li></ul><h3 id="modify-the-config-of-dock"><a class="markdownIt-Anchor" href="#modify-the-config-of-dock"></a> Modify the config of Dock</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dock autohide-delay -int 0 &amp;&amp; killall Dock  <span class="comment">##（shortest）</span></span><br><span class="line">defaults write com.apple.dock autohide-delay -int 0.5 &amp;&amp; killall Dock  <span class="comment">##（0.5s）</span></span><br><span class="line">defaults write com.apple.dock autohide-delay -int 10  &amp;&amp; killall Dock  <span class="comment">##（10s）</span></span><br></pre></td></tr></table></figure><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;tools&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tools&quot;&gt;&lt;/a&gt; Tools&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Alfred&lt;/li&gt;
-&lt;li&gt;Context&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;modify-the-config-of-dock&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#modify-the-config-of-dock&quot;&gt;&lt;/a&gt; Modify the config of Dock&lt;/h3&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 0 &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（shortest）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 0.5 &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（0.5s）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;defaults write com.apple.dock autohide-delay -int 10  &amp;amp;&amp;amp; killall Dock  &lt;span class=&quot;comment&quot;&gt;##（10s）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
-    
-    </summary>
-    
-      <category term="Mac" scheme="https://geekeast.github.io/categories/Mac/"/>
-    
-    
-      <category term="Mac" scheme="https://geekeast.github.io/tags/Mac/"/>
     
   </entry>
   
