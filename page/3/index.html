@@ -370,6 +370,221 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/js-types.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/js-types.html" class="post-title-link" itemprop="url">Types in Javascript</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-24 18:02:16" itemprop="dateCreated datePublished" datetime="2019-11-24T18:02:16+10:30">2019-11-24</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">3.3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="types"><a class="markdownIt-Anchor" href="#types"></a> Types</h3>
+<blockquote>
+<p>In Javascript, statement “every thing is a an object” is <strong>wrong</strong>. Primitive types are not objects. But some of them can <strong>behave</strong> like objects.</p>
+</blockquote>
+<h4 id><a class="markdownIt-Anchor" href="#"></a> <a href="https://www.ecma-international.org/ecma-262/9.0/#sec-primitive-value" target="_blank" rel="noopener"><strong>Primitive Types</strong></a></h4>
+<blockquote>
+<p>In Javascript, <code>variable</code> doesn’t have types, <code>value</code> have.</p>
+</blockquote>
+<ul>
+<li><code>Undefined</code>: <strong>created</strong> but has <strong>no</strong> value; <strong>default</strong> value</li>
+<li><code>Null</code>: represents the intentional absence of any <strong>object</strong> value</li>
+<li><code>Boolean</code>: <code>true</code> or <code>false</code> (not <code>1</code> and <code>0</code>); can behave like an object: <code>Boolean</code></li>
+<li><code>Number</code>: <code>NaN</code>, <code>-0</code>, <code>0</code>，<code>-Infinite</code>, <code>Infinite</code>and others; can behave like an object: <code>Number</code></li>
+<li><code>String</code>: <code>''</code> and other; can behave like an object: <code>String</code></li>
+<li><code>Symbol</code>: <strong>unique</strong> and <strong>non-string</strong></li>
+</ul>
+<h4 id="-2"><a class="markdownIt-Anchor" href="#-2"></a> <a href="https://www.ecma-international.org/ecma-262/9.0/#sec-terms-and-definitions-object" target="_blank" rel="noopener"><strong>Object</strong></a></h4>
+<blockquote>
+<p>a collection of properties; a sinle prototype</p>
+</blockquote>
+<ul>
+<li><code>null</code></li>
+<li><code>array</code></li>
+<li><code>function</code></li>
+<li>…</li>
+</ul>
+<h4 id="quick-example"><a class="markdownIt-Anchor" href="#quick-example"></a> Quick Example</h4>
+<ul>
+<li><strong>Normal Parts</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> v; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// undefined;</span></span><br><span class="line"></span><br><span class="line">v = <span class="string">'1'</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// string</span></span><br><span class="line"></span><br><span class="line">v = <span class="number">2</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">//number</span></span><br><span class="line"></span><br><span class="line">v = <span class="literal">true</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// boolean</span></span><br><span class="line"></span><br><span class="line">v = &#123;&#125;; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// object</span></span><br><span class="line"></span><br><span class="line">v = <span class="built_in">Symbol</span>(); <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// symbol</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/js-types.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/functionalprogramming.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1317,218 +1532,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/popclip.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/popclip.html" class="post-title-link" itemprop="url">PopClip Setup</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-10-15 14:02:26" itemprop="dateCreated datePublished" datetime="2019-10-15T14:02:26+10:30">2019-10-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-10-16 11:03:40" itemprop="dateModified" datetime="2019-10-16T11:03:40+10:30">2019-10-16</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Mac/" itemprop="url" rel="index"><span itemprop="name">Mac</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">160</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools</h3>
-<ul>
-<li>PopClip
-<ul>
-<li>You can <code>turn off</code></li>
-</ul>
-</li>
-<li>BetterTouchTool
-<ul>
-<li><code>fn</code>+<code>z</code>: pop up the menu (by applescript)</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Insert script code here</span></span><br><span class="line"><span class="keyword">tell</span> <span class="built_in">application</span> <span class="string">"PopClip"</span> <span class="keyword">to</span> appear</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/popclip.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1577,7 +1580,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">115</span>
+                    <span class="site-state-item-count">116</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1945,7 +1948,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">123</span>
+                      
+                    
+                    <span class="site-state-item-count">124</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>

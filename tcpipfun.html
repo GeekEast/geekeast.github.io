@@ -110,24 +110,25 @@
 
 
 
-  <meta name="description" content="Sharing is the best way to learn.">
-<meta name="keywords" content="CMU">
-<meta property="og:type" content="website">
-<meta property="og:title" content="雪中印">
-<meta property="og:url" content="https://geekeast.github.io/tags/Webpack/index.html">
+  <meta name="description" content="TCP/IP 工作原理  问题  Packet如何送达主机? 主机如何将Packet转交给应用? Packet是如何被完整地送达应用程序？   主机定位  网络层:- 通过Internet Protocol, 即IP 数据在经过网络层时，会被加上IP头，其中包含IP地址，再传入下一层   程序定位UDP  传输层:- 通过User Datagram Protocol, 即UDP 数据在经过传输层">
+<meta name="keywords" content="TCP&#x2F;IP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How TCP&#x2F;IP Works">
+<meta property="og:url" content="https://geekeast.github.io/tcpipfun.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Sharing is the best way to learn.">
+<meta property="og:description" content="TCP/IP 工作原理  问题  Packet如何送达主机? 主机如何将Packet转交给应用? Packet是如何被完整地送达应用程序？   主机定位  网络层:- 通过Internet Protocol, 即IP 数据在经过网络层时，会被加上IP头，其中包含IP地址，再传入下一层   程序定位UDP  传输层:- 通过User Datagram Protocol, 即UDP 数据在经过传输层">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-11-27T06:01:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="雪中印">
-<meta name="twitter:description" content="Sharing is the best way to learn.">
+<meta name="twitter:title" content="How TCP&#x2F;IP Works">
+<meta name="twitter:description" content="TCP/IP 工作原理  问题  Packet如何送达主机? 主机如何将Packet转交给应用? Packet是如何被完整地送达应用程序？   主机定位  网络层:- 通过Internet Protocol, 即IP 数据在经过网络层时，会被加上IP头，其中包含IP地址，再传入下一层   程序定位UDP  传输层:- 通过User Datagram Protocol, 即UDP 数据在经过传输层">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/tags/Webpack/">
+  <link rel="canonical" href="https://geekeast.github.io/tcpipfun.html">
 
 
 
@@ -137,7 +138,7 @@
   };
 </script>
 
-  <title>Tag: Webpack | 雪中印</title>
+  <title>How TCP/IP Works | 雪中印</title>
   
 
 
@@ -185,7 +186,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,7 +279,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -349,80 +350,297 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Webpack<small>Tag</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/tcpipfun.html">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/createreactfromscatch.html" itemprop="url">
-            
-              <span itemprop="name">Create React App From Scratch</span>
-            
-          </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">How TCP/IP Works
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-14T10:48:00+09:30" content="2019-08-14">
-          08-14
-        </time>
-      </div>
+              
+            
+          </h2>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-27 16:31:45" itemprop="dateCreated datePublished" datetime="2019-11-27T16:31:45+10:30">2019-11-27</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Network/" itemprop="url" rel="index"><span itemprop="name">Network</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon" title="Views">
+            <i class="fa fa-eye"></i>
+            
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">712</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="tcpip-工作原理"><a class="markdownIt-Anchor" href="#tcpip-工作原理"></a> TCP/IP 工作原理</h3>
+<h4 id="问题"><a class="markdownIt-Anchor" href="#问题"></a> 问题</h4>
+<ul>
+<li>Packet如何送达<strong>主机</strong>?</li>
+<li>主机如何将Packet<strong>转交</strong>给应用?</li>
+<li>Packet是如何被<strong>完整地</strong>送达应用程序？</li>
+</ul>
+<h4 id="主机定位"><a class="markdownIt-Anchor" href="#主机定位"></a> 主机定位</h4>
+<ul>
+<li><strong>网络层</strong>:- 通过Internet Protocol, 即<strong>IP</strong></li>
+<li>数据在经过<strong>网络层</strong>时，会被加上<strong>IP头</strong>，其中包含<strong>IP</strong>地址，再传入下一层</li>
+</ul>
+<h4 id="程序定位udp"><a class="markdownIt-Anchor" href="#程序定位udp"></a> 程序定位UDP</h4>
+<ul>
+<li><strong>传输层</strong>:- 通过User Datagram Protocol, 即<strong>UDP</strong></li>
+<li>数据在经过<strong>传输层</strong>时，会被加上<strong>UDP头</strong>，其中包含<strong>端口号</strong> ，再传入下一层</li>
+<li>特性: 传输速度<strong>快</strong>; 无<strong>重发</strong>机制，不能保证<strong>数据可靠性</strong>; 无数据组装还原机制</li>
+<li>应用: <strong>在线视频</strong>、<strong>互动游戏</strong></li>
+<li></li>
+</ul>
+<a id="more"></a>
+<h4 id="程序定位-完整送达tcp"><a class="markdownIt-Anchor" href="#程序定位-完整送达tcp"></a> 程序定位 + 完整送达TCP</h4>
+<ul>
+<li><strong>传输层</strong>:- 通过Transmission Control Protocol, 即<strong>TCP</strong></li>
+<li><strong>TCP</strong>也能够通过端口号定位程序</li>
+<li>数据在经过<strong>传输层</strong>时，会被加上<strong>TCP头</strong>，其中包含<code>端口号</code>和<code>重构序号</code></li>
+<li>特性: 传输速度<strong>慢</strong>；有<strong>重传</strong>机制；数<strong>据包排序机制</strong>，能够<strong>重构</strong>为完整文件</li>
+</ul>
+<h4 id="tcp连接生命周期"><a class="markdownIt-Anchor" href="#tcp连接生命周期"></a> TCP连接生命周期</h4>
+<ul>
+<li>建立链接: <strong>三</strong>次握手: 一次发起，两次确认；</li>
+<li>传输数据: 接收端需要对接收到<strong>每个</strong>数据包进行核对确认; 如果发送数据包，<code>很久都未收到返回的数据包</code>，则判别为数据包<code>丢失</code>，启动<strong>重传</strong>机制；大的数据包会被分解成小的数据包，按照<code>序号</code>在接收端进行<strong>组合</strong>。</li>
+<li>断开链接: <strong>四</strong>次分手: 前两次保证关闭<code>发送端</code>；后两次保证关闭<code>接收端</code>；</li>
+</ul>
+<blockquote>
+<p><code>三次握手</code>，<code>数据包验证机制</code>以及<code>四次握手</code>，传输的数据包总数量提高了<code>一倍</code>，传输时间变<strong>长</strong>。</p>
+</blockquote>
+<h4 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h4>
+<ul>
+<li>IP负责定位主机</li>
+<li>UDP/TCP负责定位应用程序</li>
+</ul>
+<h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly90aW1lLmdlZWtiYW5nLm9yZy9jb2x1bW4vYXJ0aWNsZS8xMTM1NTA=" title="https://time.geekbang.org/column/article/113550">02 | TCP协议：如何保证页面文件能被完整送达浏览器？<i class="fa fa-external-link"></i></span></li>
+</ul>
+<hr>
+
+      
 
       
     </div>
 
+    
+      
+
+
+    
+
+    
+    
+    
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 60px 0 0; margin: auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/images/zeng.jpg" alt="James Tan wechat" style="width: 14em; max-width: 100%;">
+  <div style="margin-top: 20px">人工智能学习资源 欢迎订阅我的公众号</div>
+</div>
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/TCP-IP/" rel="tag"># TCP/IP</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/osi7.html" rel="next" title="OSI 7 Layers">
+                <i class="fa fa-chevron-left"></i> OSI 7 Layers
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -442,8 +660,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1048,6 +1275,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#tcpip-工作原理"><span class="nav-number">1.</span> <span class="nav-text"> TCP/IP 工作原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">1.1.</span> <span class="nav-text"> 问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主机定位"><span class="nav-number">1.2.</span> <span class="nav-text"> 主机定位</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#程序定位udp"><span class="nav-number">1.3.</span> <span class="nav-text"> 程序定位UDP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#程序定位-完整送达tcp"><span class="nav-number">1.4.</span> <span class="nav-text"> 程序定位 + 完整送达TCP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tcp连接生命周期"><span class="nav-number">1.5.</span> <span class="nav-text"> TCP连接生命周期</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">1.6.</span> <span class="nav-text"> 总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reference"><span class="nav-number">2.</span> <span class="nav-text"> Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -1220,6 +1464,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -1241,6 +1489,41 @@
 
   
 
+
+  
+    
+
+  
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'e3bc82557deb4539bea0',
+    clientSecret: 'ccd5f13f3f7cba21085500585cfc05da2591baf4',
+    repo: 'blog_comment',
+    owner: 'GeekEast',
+    admin: ['GeekEast'],
+    id: md5(location.pathname),
+    
+      language: 'en',
+    
+    distractionFreeMode: 'false'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
@@ -1583,6 +1866,25 @@
   
 
   
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 17170,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
 
   
 
