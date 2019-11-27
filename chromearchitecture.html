@@ -110,24 +110,24 @@
 
 
 
-  <meta name="description" content="Chrome Architecture  Chrome  More Tools &amp;gt; Task Mangager    单进程浏览器  浏览器的所有功能模块都运行在同一个进程且同一个线程当中   存在问题  不稳定：任意意外都会引起整个浏览器的崩溃 不流畅：同步执行一卡则全卡，还有内存泄露(只有一个heap) 不安全：恶意插件和恶意脚本可以从任何从浏览器的任何一大个地方access系统资源">
+  <meta name="description" content="Chrome Architecture  Task Manager  More Tools &amp;gt; Task Mangager    单进程浏览器  浏览器的所有功能模块都运行在同一个进程且同一个线程当中   存在问题  不稳定：任意意外都会引起整个浏览器的崩溃 不流畅：同步执行一卡则全卡，还有内存泄露(只有一个heap) 不安全：恶意插件和恶意脚本可以从任何从浏览器的任何一大个地方acces">
 <meta name="keywords" content="Chrome,Architecture">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Chrome Architecture">
 <meta property="og:url" content="https://geekeast.github.io/chromearchitecture.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Chrome Architecture  Chrome  More Tools &amp;gt; Task Mangager    单进程浏览器  浏览器的所有功能模块都运行在同一个进程且同一个线程当中   存在问题  不稳定：任意意外都会引起整个浏览器的崩溃 不流畅：同步执行一卡则全卡，还有内存泄露(只有一个heap) 不安全：恶意插件和恶意脚本可以从任何从浏览器的任何一大个地方access系统资源">
+<meta property="og:description" content="Chrome Architecture  Task Manager  More Tools &amp;gt; Task Mangager    单进程浏览器  浏览器的所有功能模块都运行在同一个进程且同一个线程当中   存在问题  不稳定：任意意外都会引起整个浏览器的崩溃 不流畅：同步执行一卡则全卡，还有内存泄露(只有一个heap) 不安全：恶意插件和恶意脚本可以从任何从浏览器的任何一大个地方acces">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://geekeast.github.io/img/2019-11-27-10-20-09.png">
-<meta property="og:image" content="https://geekeast.github.io/img/2019-11-27-14-17-26.png">
-<meta property="og:image" content="https://geekeast.github.io/img/2019-11-27-14-21-18.png">
-<meta property="og:image" content="https://geekeast.github.io/img/2019-11-27-14-31-28.png">
-<meta property="og:image" content="https://geekeast.github.io/img/2019-11-27-14-33-22.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-10-20-09.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-14-17-26.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-14-21-18.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-14-31-28.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-14-33-22.png">
 <meta property="og:updated_time" content="2019-11-27T04:11:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chrome Architecture">
-<meta name="twitter:description" content="Chrome Architecture  Chrome  More Tools &amp;gt; Task Mangager    单进程浏览器  浏览器的所有功能模块都运行在同一个进程且同一个线程当中   存在问题  不稳定：任意意外都会引起整个浏览器的崩溃 不流畅：同步执行一卡则全卡，还有内存泄露(只有一个heap) 不安全：恶意插件和恶意脚本可以从任何从浏览器的任何一大个地方access系统资源">
-<meta name="twitter:image" content="https://geekeast.github.io/img/2019-11-27-10-20-09.png">
+<meta name="twitter:description" content="Chrome Architecture  Task Manager  More Tools &amp;gt; Task Mangager    单进程浏览器  浏览器的所有功能模块都运行在同一个进程且同一个线程当中   存在问题  不稳定：任意意外都会引起整个浏览器的崩溃 不流畅：同步执行一卡则全卡，还有内存泄露(只有一个heap) 不安全：恶意插件和恶意脚本可以从任何从浏览器的任何一大个地方acces">
+<meta name="twitter:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-10-20-09.png">
 
 
 
@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">824</span>
+                <span title="Symbols count in article">830</span>
               
 
               
@@ -506,11 +506,11 @@
 
       
         <h2 id="chrome-architecture"><a class="markdownIt-Anchor" href="#chrome-architecture"></a> Chrome Architecture</h2>
-<h3 id="chrome"><a class="markdownIt-Anchor" href="#chrome"></a> Chrome</h3>
+<h3 id="task-manager"><a class="markdownIt-Anchor" href="#task-manager"></a> Task Manager</h3>
 <blockquote>
 <p>More Tools &gt; Task Mangager</p>
 </blockquote>
-<div style="text-align:center; margin:auto"><img src="img/2019-11-27-10-20-09.png"></div>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-10-20-09.png"></div>
 <h3 id="单进程浏览器"><a class="markdownIt-Anchor" href="#单进程浏览器"></a> 单进程浏览器</h3>
 <ul>
 <li>浏览器的所有功能模块都运行在同一个进程且同一个线程当中</li>
@@ -523,7 +523,7 @@
 </ul>
 <h3 id="多进程浏览器"><a class="markdownIt-Anchor" href="#多进程浏览器"></a> 多进程浏览器</h3>
 <h4 id="早期chrome"><a class="markdownIt-Anchor" href="#早期chrome"></a> 早期Chrome</h4>
-<div style="text-align:center; margin:auto"><img src="img/2019-11-27-14-17-26.png"></div>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-14-17-26.png"></div>
 <ul>
 <li>稳定：进程相互隔离</li>
 <li>流畅：多个渲染进程，卡也只卡一个页面；关闭单个页面，单个heap回收，解决泄露</li>
@@ -531,7 +531,7 @@
 </ul>
 <a id="more"></a>
 <h4 id="现代chrome"><a class="markdownIt-Anchor" href="#现代chrome"></a> 现代Chrome</h4>
-<div style="text-align:center; margin:auto"><img src="img/2019-11-27-14-21-18.png"></div>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-14-21-18.png"></div>
 <ul>
 <li><strong>Browser</strong>: 浏览器本身页面显示，用户交互，进程管理，存储功能</li>
 <li><strong>Tabs(Renders)</strong>: 排版引擎Blink, V8引擎；Critical Render Path</li>
@@ -549,7 +549,7 @@
 <blockquote>
 <p>2016年， Chrome官方团队使用<code>Services Oriented Architecture</code>; 各项模块会被重构成对立的 <strong>Service</strong>, 每个<strong>Service</strong>包含独立<strong>Process</strong>，<strong>Process</strong> 访问通过<strong>Interface</strong>编程来控制，通过<strong>IPC</strong>访问，从而构建一个更内聚，松耦合、易于维护和拓展的系统</p>
 </blockquote>
-<div style="text-align:center; margin:auto"><img src="img/2019-11-27-14-31-28.png"></div>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-14-31-28.png"></div>
 <ul>
 <li>弹性模式:
 <ul>
@@ -558,7 +558,7 @@
 </ul>
 </li>
 </ul>
-<div style="text-align:center; margin:auto"><img src="img/2019-11-27-14-33-22.png"></div>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-14-33-22.png"></div>
 <h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly90aW1lLmdlZWtiYW5nLm9yZy9jb2x1bW4vYXJ0aWNsZS8xMTM1MTM=" title="https://time.geekbang.org/column/article/113513">浏览器工作原理与实践<i class="fa fa-external-link"></i></span></li>
@@ -1314,7 +1314,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#chrome-architecture"><span class="nav-number">1.</span> <span class="nav-text"> Chrome Architecture</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#chrome"><span class="nav-number">1.1.</span> <span class="nav-text"> Chrome</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单进程浏览器"><span class="nav-number">1.2.</span> <span class="nav-text"> 单进程浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#存在问题"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 存在问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多进程浏览器"><span class="nav-number">1.3.</span> <span class="nav-text"> 多进程浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#早期chrome"><span class="nav-number">1.3.1.</span> <span class="nav-text"> 早期Chrome</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#现代chrome"><span class="nav-number">1.3.2.</span> <span class="nav-text"> 现代Chrome</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#存在问题-2"><span class="nav-number">1.3.3.</span> <span class="nav-text"> 存在问题：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#未来chrome"><span class="nav-number">1.3.4.</span> <span class="nav-text"> 未来Chrome</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reference"><span class="nav-number">1.4.</span> <span class="nav-text"> Reference</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#chrome-architecture"><span class="nav-number">1.</span> <span class="nav-text"> Chrome Architecture</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#task-manager"><span class="nav-number">1.1.</span> <span class="nav-text"> Task Manager</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单进程浏览器"><span class="nav-number">1.2.</span> <span class="nav-text"> 单进程浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#存在问题"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 存在问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多进程浏览器"><span class="nav-number">1.3.</span> <span class="nav-text"> 多进程浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#早期chrome"><span class="nav-number">1.3.1.</span> <span class="nav-text"> 早期Chrome</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#现代chrome"><span class="nav-number">1.3.2.</span> <span class="nav-text"> 现代Chrome</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#存在问题-2"><span class="nav-number">1.3.3.</span> <span class="nav-text"> 存在问题：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#未来chrome"><span class="nav-number">1.3.4.</span> <span class="nav-text"> 未来Chrome</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reference"><span class="nav-number">1.4.</span> <span class="nav-text"> Reference</span></a></li></ol></li></ol></div>
             
 
           </div>
