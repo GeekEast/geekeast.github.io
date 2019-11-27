@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-11-27T02:53:48.000Z</updated>
+  <updated>2019-11-27T04:11:42.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chrome Architecture</title>
+    <link href="https://geekeast.github.io/chromearchitecture.html"/>
+    <id>https://geekeast.github.io/chromearchitecture.html</id>
+    <published>2019-11-27T04:11:42.000Z</published>
+    <updated>2019-11-27T04:11:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="chrome-architecture"><a class="markdownIt-Anchor" href="#chrome-architecture"></a> Chrome Architecture</h2><h3 id="chrome"><a class="markdownIt-Anchor" href="#chrome"></a> Chrome</h3><blockquote><p>More Tools &gt; Task Mangager</p></blockquote><div style="text-align:center; margin:auto"><img src="img/2019-11-27-10-20-09.png"></div><h3 id="单进程浏览器"><a class="markdownIt-Anchor" href="#单进程浏览器"></a> 单进程浏览器</h3><ul><li>浏览器的所有功能模块都运行在同一个进程且同一个线程当中</li></ul><h4 id="存在问题"><a class="markdownIt-Anchor" href="#存在问题"></a> 存在问题</h4><ul><li>不稳定：任意意外都会引起整个浏览器的崩溃</li><li>不流畅：同步执行一卡则全卡，还有内存泄露(只有一个heap)</li><li>不安全：恶意插件和恶意脚本可以从任何从浏览器的任何一大个地方access系统资源</li></ul><h3 id="多进程浏览器"><a class="markdownIt-Anchor" href="#多进程浏览器"></a> 多进程浏览器</h3><h4 id="早期chrome"><a class="markdownIt-Anchor" href="#早期chrome"></a> 早期Chrome</h4><div style="text-align:center; margin:auto"><img src="img/2019-11-27-14-17-26.png"></div><ul><li>稳定：进程相互隔离</li><li>流畅：多个渲染进程，卡也只卡一个页面；关闭单个页面，单个heap回收，解决泄露</li><li>安全: 安全沙箱，不能在硬盘写如数据，不能在敏感位置读取数据</li></ul><a id="more"></a><h4 id="现代chrome"><a class="markdownIt-Anchor" href="#现代chrome"></a> 现代Chrome</h4><div style="text-align:center; margin:auto"><img src="img/2019-11-27-14-21-18.png"></div><ul><li><strong>Browser</strong>: 浏览器本身页面显示，用户交互，进程管理，存储功能</li><li><strong>Tabs(Renders)</strong>: 排版引擎Blink, V8引擎；Critical Render Path</li><li><strong>Plugins</strong>: 负责插件运行</li><li><strong>GPU</strong>: GPU负责UI界面绘制</li><li><strong>Extensions(plugins)</strong>: 负责拓展运行</li><li><strong>Network</strong>: 网络资源加载</li></ul><h4 id="存在问题-2"><a class="markdownIt-Anchor" href="#存在问题-2"></a> 存在问题：</h4><ul><li><strong>更高的资源占用</strong>: 每个进程都会包含公共基础结构的<strong>副本</strong></li><li><strong>更复杂的体系结构</strong>: 模块间耦合性高，拓展性差</li></ul><h4 id="未来chrome"><a class="markdownIt-Anchor" href="#未来chrome"></a> 未来Chrome</h4><blockquote><p>2016年， Chrome官方团队使用<code>Services Oriented Architecture</code>; 各项模块会被重构成对立的 <strong>Service</strong>, 每个<strong>Service</strong>包含独立<strong>Process</strong>，<strong>Process</strong> 访问通过<strong>Interface</strong>编程来控制，通过<strong>IPC</strong>访问，从而构建一个更内聚，松耦合、易于维护和拓展的系统</p></blockquote><div style="text-align:center; margin:auto"><img src="img/2019-11-27-14-31-28.png"></div><ul><li>弹性模式:<ul><li>在资源受限的设备上，服务会整合到一个进程中，以节省内存占用</li><li>在性能强大的设备上，会采用多进程的方式运行</li></ul></li></ul><div style="text-align:center; margin:auto"><img src="img/2019-11-27-14-33-22.png"></div><h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3><ul><li><span class="exturl" data-url="aHR0cHM6Ly90aW1lLmdlZWtiYW5nLm9yZy9jb2x1bW4vYXJ0aWNsZS8xMTM1MTM=" title="https://time.geekbang.org/column/article/113513">浏览器工作原理与实践<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vd2ViL3VwZGF0ZXMvMjAxOC8wOS9pbnNpZGUtYnJvd3Nlci1wYXJ0MSNicm93c2VyLWFyY2hpdGVjdHVyZQ==" title="https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture">Google: Browser Architecture<i class="fa fa-external-link"></i></span></li></ul><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;chrome-architecture&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#chrome-architecture&quot;&gt;&lt;/a&gt; Chrome Architecture&lt;/h2&gt;
+&lt;h3 id=&quot;chrome&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#chrome&quot;&gt;&lt;/a&gt; Chrome&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;More Tools &amp;gt; Task Mangager&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div style=&quot;text-align:center; margin:auto&quot;&gt;&lt;img src=&quot;img/2019-11-27-10-20-09.png&quot;&gt;&lt;/div&gt;
+&lt;h3 id=&quot;单进程浏览器&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#单进程浏览器&quot;&gt;&lt;/a&gt; 单进程浏览器&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;浏览器的所有功能模块都运行在同一个进程且同一个线程当中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;存在问题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#存在问题&quot;&gt;&lt;/a&gt; 存在问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;不稳定：任意意外都会引起整个浏览器的崩溃&lt;/li&gt;
+&lt;li&gt;不流畅：同步执行一卡则全卡，还有内存泄露(只有一个heap)&lt;/li&gt;
+&lt;li&gt;不安全：恶意插件和恶意脚本可以从任何从浏览器的任何一大个地方access系统资源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;多进程浏览器&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#多进程浏览器&quot;&gt;&lt;/a&gt; 多进程浏览器&lt;/h3&gt;
+&lt;h4 id=&quot;早期chrome&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#早期chrome&quot;&gt;&lt;/a&gt; 早期Chrome&lt;/h4&gt;
+&lt;div style=&quot;text-align:center; margin:auto&quot;&gt;&lt;img src=&quot;img/2019-11-27-14-17-26.png&quot;&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;稳定：进程相互隔离&lt;/li&gt;
+&lt;li&gt;流畅：多个渲染进程，卡也只卡一个页面；关闭单个页面，单个heap回收，解决泄露&lt;/li&gt;
+&lt;li&gt;安全: 安全沙箱，不能在硬盘写如数据，不能在敏感位置读取数据&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Browser" scheme="https://geekeast.github.io/categories/Browser/"/>
+    
+    
+      <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
+    
+      <category term="Architecture" scheme="https://geekeast.github.io/tags/Architecture/"/>
+    
+  </entry>
   
   <entry>
     <title>Cocurrency vs Parallelism</title>
@@ -736,55 +783,6 @@
     
     
       <category term="Java" scheme="https://geekeast.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Biology &amp; SOLID</title>
-    <link href="https://geekeast.github.io/solidprinciple.html"/>
-    <id>https://geekeast.github.io/solidprinciple.html</id>
-    <published>2019-09-25T02:32:35.000Z</published>
-    <updated>2019-09-25T05:36:23.551Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="biology"><a class="markdownIt-Anchor" href="#biology"></a> Biology</h2><h3 id="cell-core"><a class="markdownIt-Anchor" href="#cell-core"></a> Cell Core</h3><ul><li>Anything that is <strong>not</strong> passed from outside</li><li>Include:<ul><li>Outside: <span style="color: red; font-weight: bold">Strong Coupling<span></span></span></li><li>Self: should be simple, <span id="s" style="color: #0288D2; font-weight: bold">only for one purpose</span>.</li></ul></li></ul><h3 id="span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan"><a class="markdownIt-Anchor" href="#span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan"></a> <span id="o" style="color: #0288D2; font-weight: bold">Cell Wall</span></h3><ul><li>Anything that is passed from outside<ul><li>Level 1. <code>primitive</code>: <code>only</code> one type</li><li>Level 2. <code>function</code>: <code>only</code> one type</li><li>Level 3. <code>class</code>: any class <strong>extends</strong> that class(<span id="l" style="color: #0288D2; font-weight: bold">add new parent sometimes</span>)</li><li>Level 4. <code>interface</code>: any class <strong>implements</strong> that interface(<span id="i" style="color: #0288D2; font-weight: bold">slim</span>)</li><li>Level 5. <code>generics</code>: any type <strong>extends</strong> something (extends = implement)</li></ul></li></ul><h3 id="span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan"><a class="markdownIt-Anchor" href="#span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan"></a> <span id="d" style="color: #0288D2; font-weight: bold">Decoupling</span></h3><ul><li>Move <strong>Outside</strong> things in Cell <code>Core</code> to Cell <code>Wall</code>.</li><li>Make <strong>reference</strong> of things in Cell more <code>abstract</code>.</li></ul><a id="more"></a><h2 id="solid"><a class="markdownIt-Anchor" href="#solid"></a> SOLID</h2><h3 id="a-hrefssingle-responsibilitya"><a class="markdownIt-Anchor" href="#a-hrefssingle-responsibilitya"></a> <a href="#s">Single Responsibility</a></h3><ul><li>The <code>core</code> of a <strong>cell</strong> should be <code>pure</code>, <code>simple</code> and <code>only</code> for <code>one</code> purpose.</li></ul><h3 id="a-hrefoopenclosea"><a class="markdownIt-Anchor" href="#a-hrefoopenclosea"></a> <a href="#o">Open/Close</a></h3><ul><li>Don’t have to modify <code>core</code> in order to <strong>link</strong> to other cells.</li></ul><h3 id="a-hreflliskv-substitutiona"><a class="markdownIt-Anchor" href="#a-hreflliskv-substitutiona"></a> <a href="#l">Liskv Substitution</a></h3><ul><li>Clothes for <code>children</code> should also be suitable for <code>parents</code>.</li><li>Solution: make <code>new parents</code> between <code>old parents</code> and the <code>child</code>.</li></ul><h3 id="a-hrefiinterface-segregationa"><a class="markdownIt-Anchor" href="#a-hrefiinterface-segregationa"></a> <a href="#i">Interface Segregation</a></h3><ul><li><code>Enough</code> but <strong>not more</strong> things in <code>Interface</code> for it to be implemented in <code>class</code>.</li></ul><h3 id="a-hrefddependency-inversiona"><a class="markdownIt-Anchor" href="#a-hrefddependency-inversiona"></a> <a href="#d">Dependency Inversion</a></h3><ul><li>Cell Wall should use <code>Interface</code>, not <code>class</code>.</li></ul><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;biology&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#biology&quot;&gt;&lt;/a&gt; Biology&lt;/h2&gt;
-&lt;h3 id=&quot;cell-core&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cell-core&quot;&gt;&lt;/a&gt; Cell Core&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Anything that is &lt;strong&gt;not&lt;/strong&gt; passed from outside&lt;/li&gt;
-&lt;li&gt;Include:
-&lt;ul&gt;
-&lt;li&gt;Outside: &lt;span style=&quot;color: red; font-weight: bold&quot;&gt;Strong Coupling&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Self: should be simple, &lt;span id=&quot;s&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;only for one purpose&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#span-ido-stylecolor-0288d2-font-weight-boldcell-wallspan&quot;&gt;&lt;/a&gt; &lt;span id=&quot;o&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;Cell Wall&lt;/span&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Anything that is passed from outside
-&lt;ul&gt;
-&lt;li&gt;Level 1. &lt;code&gt;primitive&lt;/code&gt;: &lt;code&gt;only&lt;/code&gt; one type&lt;/li&gt;
-&lt;li&gt;Level 2. &lt;code&gt;function&lt;/code&gt;: &lt;code&gt;only&lt;/code&gt; one type&lt;/li&gt;
-&lt;li&gt;Level 3. &lt;code&gt;class&lt;/code&gt;: any class &lt;strong&gt;extends&lt;/strong&gt; that class(&lt;span id=&quot;l&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;add new parent sometimes&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;Level 4. &lt;code&gt;interface&lt;/code&gt;: any class &lt;strong&gt;implements&lt;/strong&gt; that interface(&lt;span id=&quot;i&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;slim&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;Level 5. &lt;code&gt;generics&lt;/code&gt;: any type &lt;strong&gt;extends&lt;/strong&gt; something (extends = implement)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#span-idd-stylecolor-0288d2-font-weight-bolddecouplingspan&quot;&gt;&lt;/a&gt; &lt;span id=&quot;d&quot; style=&quot;color: #0288D2; font-weight: bold&quot;&gt;Decoupling&lt;/span&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Move &lt;strong&gt;Outside&lt;/strong&gt; things in Cell &lt;code&gt;Core&lt;/code&gt; to Cell &lt;code&gt;Wall&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Make &lt;strong&gt;reference&lt;/strong&gt; of things in Cell more &lt;code&gt;abstract&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Object-Oriented Design" scheme="https://geekeast.github.io/categories/Object-Oriented-Design/"/>
-    
-    
-      <category term="OOP" scheme="https://geekeast.github.io/tags/OOP/"/>
     
   </entry>
   
