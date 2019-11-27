@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/simultaneousexe.html</loc>
+    
+    <lastmod>2019-11-27T02:53:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/programprocessthread.html</loc>
     
     <lastmod>2019-11-27T02:44:49.000Z</lastmod>
@@ -800,14 +807,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
+    <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     

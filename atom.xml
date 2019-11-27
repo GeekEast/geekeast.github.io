@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-11-27T02:44:49.000Z</updated>
+  <updated>2019-11-27T02:53:48.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -17,13 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Cocurrency vs Parallelism</title>
+    <link href="https://geekeast.github.io/simultaneousexe.html"/>
+    <id>https://geekeast.github.io/simultaneousexe.html</id>
+    <published>2019-11-27T02:53:48.000Z</published>
+    <updated>2019-11-27T02:53:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="cocurrency-vs-parallelism"><a class="markdownIt-Anchor" href="#cocurrency-vs-parallelism"></a> Cocurrency vs Parallelism</h4><ul><li>Mutiple CPU cores: Parallelism with genuine simultaneous execution</li><li>Single CPU core: cocurrency with interleaving of process in time to give apperance of simultaneous execution.</li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-13-14-20.png"></div><a id="more"></a>---]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;cocurrency-vs-parallelism&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#cocurrency-vs-parallelism&quot;&gt;&lt;/a&gt; Cocurrency vs Parallelism&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Mutiple CPU cores: Parallelism with genuine simultaneous execution&lt;/li&gt;
+&lt;li&gt;Single CPU core: cocurrency with interleaving of process in time to give apperance of simultaneous execution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&quot;text-align:center; margin:auto&quot;&gt;&lt;img src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-13-14-20.png&quot;&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="Computer Science" scheme="https://geekeast.github.io/categories/Computer-Science/"/>
+    
+    
+      <category term="Computer System" scheme="https://geekeast.github.io/tags/Computer-System/"/>
+    
+      <category term="Cocurrency" scheme="https://geekeast.github.io/tags/Cocurrency/"/>
+    
+      <category term="Parallelism" scheme="https://geekeast.github.io/tags/Parallelism/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Program vs Process vs Thread</title>
     <link href="https://geekeast.github.io/programprocessthread.html"/>
     <id>https://geekeast.github.io/programprocessthread.html</id>
     <published>2019-11-27T02:44:49.000Z</published>
     <updated>2019-11-27T02:44:49.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="program-process-thread"><a class="markdownIt-Anchor" href="#program-process-thread"></a> Program, Process, Thread</h3><ul><li>MacOS: Activity Monitor</li><li>Windows: Task Manager</li><li>Linux: Top</li></ul><h4 id="program"><a class="markdownIt-Anchor" href="#program"></a> Program</h4><blockquote><p>the code stored on your computer disk or non-volatile memory to fulfill a certain task. Including System Programs and Application Programs.</p></blockquote><ul><li>Program will be compiled or programmed to binary in memory before executing it.</li></ul><h4 id="process"><a class="markdownIt-Anchor" href="#process"></a> Process</h4><blockquote><p>An <code>instance</code> of program that has been loaded into <code>memory</code> along with all the <code>resources</code> needed to operate.</p></blockquote><ul><li>The <strong>Operating System</strong> handles the task manageing the resource needed to turn program into processes.</li><li>Resources includes:<ul><li><strong>register</strong>: some part of <strong>CPU</strong> to store <code>binary</code></li><li><strong>program counter</strong>: special <code>register</code> in <strong>CPU</strong> to do counter work</li><li><strong>stack</strong>: data structure to store <strong>local</strong> and <strong>small</strong> things in memory, managed <strong>automatically</strong>.</li><li><strong>heap</strong>: data structure to store <strong>global</strong> and <strong>big</strong> things in memory, managed <strong>manually</strong> or by <strong>Garbage Collection</strong>.</li></ul></li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-12-45-39.png" "></div><a id="more"></a><ul><li>Features:<ul><li><strong>One</strong> program may be associated with <strong>many</strong> processes.</li><li><strong>Independent</strong> Memory Address Space.</li><li>Inter-communication is <strong>expensive</strong>.</li><li><strong>Robust</strong>: One failed won’t cause another to fail.</li></ul></li></ul><h4 id="thread"><a class="markdownIt-Anchor" href="#thread"></a> Thread</h4><blockquote><p>A unit of execution within a process. One process can have one up to many threads.</p></blockquote><ul><li>Features:<ul><li>Share the same <code>heap</code> in a process</li><li>Share the same <code>code</code> in a process</li><li>Has independent <code>registers</code></li><li>Has independent <code>stacks</code></li><li>Inter-communication is <strong>less expensive</strong></li><li><strong>Vulnerable</strong>: one fail can cause another to fail in the same process.</li></ul></li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-12-57-32.png"></div><h4 id="cocurrency-vs-parallelism"><a class="markdownIt-Anchor" href="#cocurrency-vs-parallelism"></a> Cocurrency vs Parallelism</h4><ul><li>Mutiple CPU cores: Parallelism with genuine simultaneous execution</li><li>Single CPU core: cocurrency with interleaving of process in time to give apperance of simultaneous execution.</li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-13-14-20.png"></div><h4 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h4><ul><li>The program starts out as a <code>text</code> file of programming <strong>code</strong>.</li><li>The program is <code>compiled</code> or <code>interpreted</code> into <strong>binary</strong> form.</li><li>The program is loaded into <code>memory</code>.</li><li>The program becomes <code>one</code> or <code>more</code> running <strong>processes</strong>.</li><li>Processes are <code>typically</code> <strong>independent</strong> of each other</li><li>While threads exists as the <code>subset</code> of a process</li><li>Threads can talk with each other more <code>easily</code> than processes can</li><li>Threads are <code>vulnerable</code> to problems caused by other threads in the same process.</li></ul><h2 id="div-styletext-aligncenter-marginautoimg-srchttpsgeekeaskblogpicss3-ap-southeast-2amazonawscomposts2019-11-27-13-10-13pngdiv"><a class="markdownIt-Anchor" href="#div-styletext-aligncenter-marginautoimg-srchttpsgeekeaskblogpicss3-ap-southeast-2amazonawscomposts2019-11-27-13-10-13pngdiv"></a> <div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-13-10-13.png"></div></h2>]]></content>
+    <content type="html"><![CDATA[<h3 id="program-process-thread"><a class="markdownIt-Anchor" href="#program-process-thread"></a> Program, Process, Thread</h3><ul><li>MacOS: Activity Monitor</li><li>Windows: Task Manager</li><li>Linux: Top</li></ul><h4 id="program"><a class="markdownIt-Anchor" href="#program"></a> Program</h4><blockquote><p>the code stored on your computer disk or non-volatile memory to fulfill a certain task. Including System Programs and Application Programs.</p></blockquote><ul><li>Program will be compiled or programmed to binary in memory before executing it.</li></ul><h4 id="process"><a class="markdownIt-Anchor" href="#process"></a> Process</h4><blockquote><p>An <code>instance</code> of program that has been loaded into <code>memory</code> along with all the <code>resources</code> needed to operate.</p></blockquote><ul><li>The <strong>Operating System</strong> handles the task manageing the resource needed to turn program into processes.</li><li>Resources includes:<ul><li><strong>register</strong>: some part of <strong>CPU</strong> to store <code>binary</code></li><li><strong>program counter</strong>: special <code>register</code> in <strong>CPU</strong> to do counter work</li><li><strong>stack</strong>: data structure to store <strong>local</strong> and <strong>small</strong> things in memory, managed <strong>automatically</strong>.</li><li><strong>heap</strong>: data structure to store <strong>global</strong> and <strong>big</strong> things in memory, managed <strong>manually</strong> or by <strong>Garbage Collection</strong>.</li></ul></li></ul><a id="more"></a><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-12-45-39.png" "></div>- Features:  - **One** program may be associated with **many** processes.  - **Independent** Memory Address Space.  - Inter-communication is **expensive**.  - **Robust**: One failed won't cause another to fail. <h4 id="thread"><a class="markdownIt-Anchor" href="#thread"></a> Thread</h4><blockquote><p>A unit of execution within a process. One process can have one up to many threads.</p></blockquote><ul><li>Features:<ul><li>Share the same <code>heap</code> in a process</li><li>Share the same <code>code</code> in a process</li><li>Has independent <code>registers</code></li><li>Has independent <code>stacks</code></li><li>Inter-communication is <strong>less expensive</strong></li><li><strong>Vulnerable</strong>: one fail can cause another to fail in the same process.</li></ul></li></ul><div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-12-57-32.png"></div><h4 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> Summary</h4><ul><li>The program starts out as a <code>text</code> file of programming <strong>code</strong>.</li><li>The program is <code>compiled</code> or <code>interpreted</code> into <strong>binary</strong> form.</li><li>The program is loaded into <code>memory</code>.</li><li>The program becomes <code>one</code> or <code>more</code> running <strong>processes</strong>.</li><li>Processes are <code>typically</code> <strong>independent</strong> of each other</li><li>While threads exists as the <code>subset</code> of a process</li><li>Threads can talk with each other more <code>easily</code> than processes can</li><li>Threads are <code>vulnerable</code> to problems caused by other threads in the same process.</li></ul><h2 id="div-styletext-aligncenter-marginautoimg-srchttpsgeekeaskblogpicss3-ap-southeast-2amazonawscomposts2019-11-27-13-10-13pngdiv"><a class="markdownIt-Anchor" href="#div-styletext-aligncenter-marginautoimg-srchttpsgeekeaskblogpicss3-ap-southeast-2amazonawscomposts2019-11-27-13-10-13pngdiv"></a> <div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-13-10-13.png"></div></h2>]]></content>
     
     <summary type="html">
     
@@ -55,7 +86,6 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div style=&quot;text-align:center; margin:auto&quot;&gt;&lt;img src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-12-45-39.png&quot; &quot;&gt;&lt;/div&gt;
     
     </summary>
     
@@ -749,54 +779,6 @@
     
     
       <category term="OOP" scheme="https://geekeast.github.io/tags/OOP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AWS Data Insights Learning Series</title>
-    <link href="https://geekeast.github.io/awsdatalearningseries.html"/>
-    <id>https://geekeast.github.io/awsdatalearningseries.html</id>
-    <published>2019-09-24T06:28:45.000Z</published>
-    <updated>2019-09-24T09:58:38.190Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="architecture"><a class="markdownIt-Anchor" href="#architecture"></a> Architecture</h2><h3 id="design-principle-for-aws-products"><a class="markdownIt-Anchor" href="#design-principle-for-aws-products"></a> Design Principle for AWS Products</h3><ul><li><strong>Flexibility</strong>: Scale in the future</li><li><strong>10x Speed</strong>: performance really matters</li><li><strong>De-couple</strong>: Infrastructure Reuse</li><li><strong>Experimental at Scale</strong>: Break and Succeed</li><li><strong>Test and fail fast</strong>: Quicker to find the right wat</li><li><strong>Not invented yest</strong>: innovative</li><li><strong>No more silos</strong>: data products are connected</li><li><strong>Multiple Personas</strong>: integrated different jobs</li><li><strong>Ready for AIML</strong>: Support Intelligence</li></ul><h3 id="modern-data-architecture"><a class="markdownIt-Anchor" href="#modern-data-architecture"></a> Modern Data Architecture</h3><ol><li>Data Source</li><li>Data Ingest</li><li>Batch Data Pipelines</li><li>Event Pipelines</li><li>Serving</li><li>Business Outcomes</li></ol><p><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/architecture/Modern+Data+Architecture.jpeg"></p><a id="more"></a><h3 id="solution-based-learning-paths"><a class="markdownIt-Anchor" href="#solution-based-learning-paths"></a> Solution Based Learning Paths</h3><p><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/architecture/Solution+Based+Learning+Paths.jpeg"></p><h2 id="data-lakes"><a class="markdownIt-Anchor" href="#data-lakes"></a> Data Lakes</h2><h3 id="aws-database-and-analytics"><a class="markdownIt-Anchor" href="#aws-database-and-analytics"></a> AWS Database and Analytics</h3><ul><li>Business Intelligence &amp; Machine Learning<ul><li>Amazon Quicksight: Dashboard</li><li>Amazon SageMaker: Develop/Deploy ML Model</li><li>Amazon Comprehend: Natural Language Processing</li><li>Amazon Rekognition: Video and Image</li><li>Amazon Lex: chatbot</li><li>Amazon Trascribe: Speech Recognition</li><li>AWS DeepLens: DL enable Video Camera for Devs</li></ul></li><li>Database:<ul><li>QLDB: Ledger Database</li><li>Neptune: Graph Database</li><li>ElastiCache: Redis, Memcached</li><li>DynamoDB: Key-value, Document</li><li>Aurora: MySQL, PostgreSQL</li><li>Timestream: Time series</li><li>RDS: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server</li></ul></li><li>Analytics<ul><li>Amazon Redshift: Data warehousing</li><li>Athena: Query AWS with SQL</li><li>EMR: Hadoop and Spark</li><li>Kinesis: real-time data processing</li><li>ElasticSearch: Search</li></ul></li><li>Data Lake:<ul><li>S3/Glacier: Storage</li><li>Lake Formation: form lake</li><li>Glue: ETL, Data catalog</li></ul></li><li>Data Movement:<ul><li>Database Migration Service: from database to AWS</li><li>Snowball: Large Data from/to AWS</li><li>Snowmobile: Super Large Data from/to AWS</li><li>Kinesis Data Firehouse: realtime data to storage and analytics.</li><li>Kinesis Data Streams: collect data at scale for real-time analytics</li><li>Data Pipeline: data movement and transformation</li><li>Direct Connect: build network from premises to aws<br><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/Data+Lakes/Analytics+Portfolio.jpeg"><br><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/Data+Lakes/Fasted+way+to+build+secure+data+lakes.jpg"></li></ul></li></ul><h2 id="sage-maker"><a class="markdownIt-Anchor" href="#sage-maker"></a> Sage Maker</h2><h3 id="aws-machine-learning-stack"><a class="markdownIt-Anchor" href="#aws-machine-learning-stack"></a> AWS Machine Learning Stack</h3><p><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/Machine+Learning/AWS+ML+Stack.jpg"></p><h3 id="sagemaker-pipeline"><a class="markdownIt-Anchor" href="#sagemaker-pipeline"></a> SageMaker Pipeline</h3><p><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/Machine+Learning/pipeline.jpg"></p><h3 id="labeling"><a class="markdownIt-Anchor" href="#labeling"></a> Labeling</h3><p><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/Machine+Learning/ground+truth.jpg"></p><h3 id="models"><a class="markdownIt-Anchor" href="#models"></a> Models</h3><p><img style="width: 80%; margin: auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/Machine+Learning/models.jpg"></p><h3 id="aws-robotics"><a class="markdownIt-Anchor" href="#aws-robotics"></a> AWS Robotics</h3><iframe width="560" height="315" style="display: block; margin: 0 auto;" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/video/aws.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;architecture&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#architecture&quot;&gt;&lt;/a&gt; Architecture&lt;/h2&gt;
-&lt;h3 id=&quot;design-principle-for-aws-products&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#design-principle-for-aws-products&quot;&gt;&lt;/a&gt; Design Principle for AWS Products&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Flexibility&lt;/strong&gt;: Scale in the future&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;10x Speed&lt;/strong&gt;: performance really matters&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;De-couple&lt;/strong&gt;: Infrastructure Reuse&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Experimental at Scale&lt;/strong&gt;: Break and Succeed&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test and fail fast&lt;/strong&gt;: Quicker to find the right wat&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Not invented yest&lt;/strong&gt;: innovative&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;No more silos&lt;/strong&gt;: data products are connected&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multiple Personas&lt;/strong&gt;: integrated different jobs&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ready for AIML&lt;/strong&gt;: Support Intelligence&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;modern-data-architecture&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#modern-data-architecture&quot;&gt;&lt;/a&gt; Modern Data Architecture&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Data Source&lt;/li&gt;
-&lt;li&gt;Data Ingest&lt;/li&gt;
-&lt;li&gt;Batch Data Pipelines&lt;/li&gt;
-&lt;li&gt;Event Pipelines&lt;/li&gt;
-&lt;li&gt;Serving&lt;/li&gt;
-&lt;li&gt;Business Outcomes&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img style=&quot;width: 80%; margin: auto&quot; src=&quot;https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/architecture/Modern+Data+Architecture.jpeg&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AWS" scheme="https://geekeast.github.io/categories/AWS/"/>
-    
-    
-      <category term="AWS" scheme="https://geekeast.github.io/tags/AWS/"/>
-    
-      <category term="Data Engineer" scheme="https://geekeast.github.io/tags/Data-Engineer/"/>
-    
-      <category term="Data Science" scheme="https://geekeast.github.io/tags/Data-Science/"/>
     
   </entry>
   

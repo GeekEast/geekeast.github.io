@@ -370,6 +370,271 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/react-redux.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/react-redux.html" class="post-title-link" itemprop="url">React Redux</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-22 13:33:59" itemprop="dateCreated datePublished" datetime="2019-07-22T13:33:59+09:30">2019-07-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-07-24 16:41:44" itemprop="dateModified" datetime="2019-07-24T16:41:44+09:30">2019-07-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">3.4k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="key-points"><a class="markdownIt-Anchor" href="#key-points"></a> Key Points</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>What</th>
+<th>Where</th>
+<th>Analogy</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Action</strong></td>
+<td>Payloads send from view to store.</td>
+<td>View</td>
+<td>HTTP Post Body</td>
+<td><code>{ type: 'SONG_SELECTED', payload: &quot;Hello world&quot; }</code></td>
+</tr>
+<tr>
+<td><strong>Action Creator</strong></td>
+<td>Function to generate actions</td>
+<td>View</td>
+<td>Wrapper / <strong>Decorator</strong></td>
+<td><code>(song) =&gt; {type:'SONG_SELECTED', payload: song}</code></td>
+</tr>
+<tr>
+<td><code>dispatch()</code></td>
+<td>Function that sends actions to store</td>
+<td>View</td>
+<td>gmail()</td>
+<td><code>dispatch(action)</code></td>
+</tr>
+<tr>
+<td><strong>State</strong></td>
+<td>Data needs to be centralized</td>
+<td>Store</td>
+<td>Static Variable in Java</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Reducer</strong></td>
+<td>Function to update state according to action</td>
+<td>Store</td>
+<td>Setter method in Java</td>
+<td><code>(selectSong = null, action) =&gt; {if (action.type === 'SONG_SELECTED') return action.payload;} return selectedSong</code></td>
+</tr>
+<tr>
+<td><strong>Store</strong></td>
+<td>The place to store state and reducer</td>
+<td>Global</td>
+<td>Bank</td>
+<td><code>createStore(combinedReducers)</code></td>
+</tr>
+<tr>
+<td><strong>Middleware</strong></td>
+<td>Function that get called with <code>every</code> action we dispatch</td>
+<td>Between Reducer and <code>dispatch()</code></td>
+<td>Gas Station</td>
+<td>Redux Thunk</td>
+</tr>
+</tbody>
+</table>
+<h3 id="architecture"><a class="markdownIt-Anchor" href="#architecture"></a> Architecture</h3>
+<img style="width:100%; margin:auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/reduxarchitect.png">
+<h3 id="essence"><a class="markdownIt-Anchor" href="#essence"></a> Essence</h3>
+<img style="width:100%; margin:auto" src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/WX20190724-163943%402x.png">
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/react-redux.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/usaitinterview.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1410,301 +1675,6 @@ This case probably doesn’t occur that often but if you got an element with no 
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/cssselector.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/cssselector.html" class="post-title-link" itemprop="url">CSS Selector</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-07-15 11:36:45" itemprop="dateCreated datePublished" datetime="2019-07-15T11:36:45+09:30">2019-07-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-08-15 16:00:58" itemprop="dateModified" datetime="2019-08-15T16:00:58+09:30">2019-08-15</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Frontend/" itemprop="url" rel="index"><span itemprop="name">Frontend</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">1.5k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="css-selector"><a class="markdownIt-Anchor" href="#css-selector"></a> CSS Selector</h2>
-<table>
-<thead>
-<tr>
-<th>Example</th>
-<th>Description</th>
-<th>Stress</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.btn</code></td>
-<td>Select all elements with class=“btn”</td>
-<td>类</td>
-</tr>
-<tr>
-<td><code>#firstname</code></td>
-<td>Selects the element with id=“firstname”</td>
-<td>ID</td>
-</tr>
-<tr>
-<td><code>*</code></td>
-<td>Selects all elements</td>
-<td>继承断层时应用</td>
-</tr>
-<tr>
-<td><code>p</code></td>
-<td>Selects all <code>&lt;p&gt;</code> elements</td>
-<td>单个元素</td>
-</tr>
-<tr>
-<td><code>div, p</code></td>
-<td>any <code>&lt;div&gt;</code> elements and <code>&lt;p&gt;</code> elements</td>
-<td>多个元素</td>
-</tr>
-<tr>
-<td><code>div p</code></td>
-<td>any <code>&lt;p&gt;</code> item that is a descendant of an <code>&lt;div&gt;</code></td>
-<td>儿子们</td>
-</tr>
-<tr>
-<td><code>div.btn</code></td>
-<td><code>div</code> element with <code>btn</code> as class</td>
-<td>单个元素(<strong>多个条件无空格</strong>)</td>
-</tr>
-<tr>
-<td><code>div &gt; p</code></td>
-<td>any <code>&lt;p&gt;</code> item that is a direct descendant of an <code>&lt;div&gt;</code></td>
-<td>最亲儿子(only one)</td>
-</tr>
-<tr>
-<td><code>div ~ p</code></td>
-<td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with something in between.</td>
-<td>弟弟们</td>
-</tr>
-<tr>
-<td><code>div + p</code></td>
-<td>any <code>&lt;p&gt;</code> after an <code>&lt;img&gt;</code> with nothing in between.</td>
-<td>最近弟弟(only one)</td>
-</tr>
-<tr>
-<td><code>:hover</code></td>
-<td>selects elements when the mouse cursor is current over them</td>
-<td>状态</td>
-</tr>
-<tr>
-<td><code>::before</code></td>
-<td>allows you to insert content onto a page from CSS</td>
-<td>内容</td>
-</tr>
-<tr>
-<td><code>E[attr]</code></td>
-<td><code>a[title]</code></td>
-<td>attribute name exists</td>
-</tr>
-<tr>
-<td><code>E[attr=val]</code></td>
-<td><code>input[type=text]</code></td>
-<td>equal</td>
-</tr>
-<tr>
-<td><code>E[attr*=val]</code></td>
-<td><code>div[class*=font]</code></td>
-<td>attribute values contain</td>
-</tr>
-<tr>
-<td><code>E[attr^=val]</code></td>
-<td><code>div[class^=footer]</code></td>
-<td>start with</td>
-</tr>
-<tr>
-<td><code>E[attr$=val]</code></td>
-<td><code>div[class$=font]</code></td>
-<td>end with</td>
-</tr>
-</tbody>
-</table>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/cssselector.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1753,7 +1723,7 @@ This case probably doesn’t occur that often but if you got an element with no 
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">112</span>
+                    <span class="site-state-item-count">113</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2111,7 +2081,11 @@ This case probably doesn’t occur that often but if you got an element with no 
                     
                       
                     
-                    <span class="site-state-item-count">119</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">121</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
