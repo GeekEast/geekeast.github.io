@@ -110,25 +110,37 @@
 
 
 
-  <meta name="description" content="Javascript遍历方式比较 javascript遍历; 1234var arr = [&amp;#123;name:&apos;bb&apos;&amp;#125;,5,&apos;test&apos;]for (item of arr) &amp;#123;    console.log(item)&amp;#125;  Javascript写入文本文件 javascript写入文本文件 12345678910111213141516// writefile">
-<meta name="keywords" content="Javascript">
+  <meta name="description" content="渲染过程详解  DOM Tree  Stage 1: Build DOM Tree  Input: HTML Process: parse html Output: DOM Tree    Stage 1: Load Subresource  Preload Scanner: Load images, CSS and JavaScript from Cache or Network     Ja">
+<meta name="keywords" content="Chrome,Render">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Javascript Notes">
-<meta property="og:url" content="https://geekeast.github.io/javscriptTutorial.html">
+<meta property="og:title" content="Internal Render Process">
+<meta property="og:url" content="https://geekeast.github.io/renderprocess.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Javascript遍历方式比较 javascript遍历; 1234var arr = [&amp;#123;name:&apos;bb&apos;&amp;#125;,5,&apos;test&apos;]for (item of arr) &amp;#123;    console.log(item)&amp;#125;  Javascript写入文本文件 javascript写入文本文件 12345678910111213141516// writefile">
+<meta property="og:description" content="渲染过程详解  DOM Tree  Stage 1: Build DOM Tree  Input: HTML Process: parse html Output: DOM Tree    Stage 1: Load Subresource  Preload Scanner: Load images, CSS and JavaScript from Cache or Network     Ja">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-21T04:13:46.858Z">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-33-25.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-13-10-23.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-35-12.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-35-23.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-40-38.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-42-49.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-51-24.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-15-10-22.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-15-37-43.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-15-43-13.png">
+<meta property="og:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-15-43-26.png">
+<meta property="og:updated_time" content="2019-11-28T05:19:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript Notes">
-<meta name="twitter:description" content="Javascript遍历方式比较 javascript遍历; 1234var arr = [&amp;#123;name:&apos;bb&apos;&amp;#125;,5,&apos;test&apos;]for (item of arr) &amp;#123;    console.log(item)&amp;#125;  Javascript写入文本文件 javascript写入文本文件 12345678910111213141516// writefile">
+<meta name="twitter:title" content="Internal Render Process">
+<meta name="twitter:description" content="渲染过程详解  DOM Tree  Stage 1: Build DOM Tree  Input: HTML Process: parse html Output: DOM Tree    Stage 1: Load Subresource  Preload Scanner: Load images, CSS and JavaScript from Cache or Network     Ja">
+<meta name="twitter:image" content="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-33-25.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/javscriptTutorial.html">
+  <link rel="canonical" href="https://geekeast.github.io/renderprocess.html">
 
 
 
@@ -138,7 +150,7 @@
   };
 </script>
 
-  <title>Javascript Notes | 雪中印</title>
+  <title>Internal Render Process | 雪中印</title>
   
 
 
@@ -372,7 +384,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/javscriptTutorial.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/renderprocess.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -389,7 +401,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Javascript Notes
+          <h2 class="post-title" itemprop="name headline">Internal Render Process
 
               
             
@@ -413,23 +425,9 @@
                 
               
 
-              <time title="Created: 2019-04-10 16:35:06" itemprop="dateCreated datePublished" datetime="2019-04-10T16:35:06+09:30">2019-04-10</time>
+              <time title="Created: 2019-11-28 15:49:40" itemprop="dateCreated datePublished" datetime="2019-11-28T15:49:40+10:30">2019-11-28</time>
             
 
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                <time title="Modified: 2019-04-21 13:43:46" itemprop="dateModified" datetime="2019-04-21T13:43:46+09:30">2019-04-21</time>
-              
             
           </span>
 
@@ -443,7 +441,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Fullstack/" itemprop="url" rel="index"><span itemprop="name">Fullstack</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Network/" itemprop="url" rel="index"><span itemprop="name">Network</span></a></span>
 
                 
                 
@@ -479,7 +477,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">957</span>
+                <span title="Symbols count in article">3k</span>
               
 
               
@@ -493,7 +491,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2 mins.</span>
               
             </div>
           
@@ -513,20 +511,130 @@
       
 
       
-        <h2 id="javascript遍历方式比较"><a class="markdownIt-Anchor" href="#javascript遍历方式比较"></a> Javascript遍历方式比较</h2>
-<p><span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uaW0vcG9zdC81YTNhNTllNzUxODgyNTY5OGU3MjM3NmI=" title="https://juejin.im/post/5a3a59e7518825698e72376b">javascript遍历<i class="fa fa-external-link"></i></span>;</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [&#123;<span class="attr">name</span>:<span class="string">'bb'</span>&#125;,<span class="number">5</span>,<span class="string">'test'</span>]</span><br><span class="line"><span class="keyword">for</span> (item <span class="keyword">of</span> arr) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(item)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="javascript写入文本文件"><a class="markdownIt-Anchor" href="#javascript写入文本文件"></a> Javascript写入文本文件</h2>
-<p><span class="exturl" data-url="aHR0cHM6Ly9zdGFja2FidXNlLmNvbS93cml0aW5nLXRvLWZpbGVzLWluLW5vZGUtanMv" title="https://stackabuse.com/writing-to-files-in-node-js/">javascript写入文本文件<i class="fa fa-external-link"></i></span></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// writefile.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> lyrics = <span class="string">'But still I\'m having memories of high speeds when the cops crashed\n'</span> +  </span><br><span class="line">             <span class="string">'As I laugh, pushin the gas while my Glocks blast\n'</span> + </span><br><span class="line">             <span class="string">'We was young and we was dumb but we had heart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// write to a new file named 2pac.txt</span></span><br><span class="line">fs.writeFile(<span class="string">'2pac.txt'</span>, lyrics, (err) =&gt; &#123;  </span><br><span class="line">    <span class="comment">// throws an error, you could also catch it here</span></span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// success case, the file was saved</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Lyric saved!'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+        <h2 id="渲染过程详解"><a class="markdownIt-Anchor" href="#渲染过程详解"></a> 渲染过程详解</h2>
+<h3 id="dom-tree"><a class="markdownIt-Anchor" href="#dom-tree"></a> DOM Tree</h3>
+<h4 id="stage-1-build-dom-tree"><a class="markdownIt-Anchor" href="#stage-1-build-dom-tree"></a> Stage 1: Build DOM Tree</h4>
+<ul>
+<li>Input: <code>HTML</code></li>
+<li>Process: parse html</li>
+<li>Output: <code>DOM Tree</code></li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-33-25.png"></div>
+<h4 id="stage-1-load-subresource"><a class="markdownIt-Anchor" href="#stage-1-load-subresource"></a> Stage 1: Load Subresource</h4>
+<ul>
+<li><code>Preload Scanner</code>: Load <code>images</code>, <code>CSS</code> and <code>JavaScript</code> from <strong>Cache</strong> or <strong>Network</strong></li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-13-10-23.png"></div>
+<ul>
+<li>
+<p><strong>Javascript Block</strong></p>
+<ul>
+<li>When the HTML parser finds a <code>&lt;script&gt;</code> tag, it pauses the parsing of the HTML document and has to load, parse, and execute the JavaScript code.</li>
+<li>Because JavaScript can change the shape of the document using things like <code>document.write()</code> which changes the entire DOM structure.</li>
+</ul>
+</li>
+<li>
+<p><strong>Customize Javascript Loading</strong></p>
+<ul>
+<li>If your JavaScript does not use <code>document.write()</code>, you can add <code>async</code> or <code>defer</code> attribute to the <code>&lt;script&gt;</code>tag. The browser then loads and runs the JavaScript code asynchronously and does not block the parsing.</li>
+<li>You may also use JavaScript module if that’s suitable. <code>&lt;link rel=&quot;preload&quot;&gt;</code> is a way to inform browser that the resource is definitely needed for current navigation and you would like to download as soon as possible.</li>
+</ul>
+</li>
+</ul>
 <a id="more"></a>
-<h2 id="javascript单复数转化"><a class="markdownIt-Anchor" href="#javascript单复数转化"></a> Javascript单复数转化</h2>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hhc2hhbnAvbm9kZS1wbHVyYWxpemU=" title="https://github.com/hashanp/node-pluralize">单复数转化<i class="fa fa-external-link"></i></span>;</p>
-<h2 id="javascript判断数据类型"><a class="markdownIt-Anchor" href="#javascript判断数据类型"></a> Javascript判断数据类型</h2>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vb25lcGl4ZWwvcC81MTI2MDQ2Lmh0bWw=" title="https://www.cnblogs.com/onepixel/p/5126046.html">js判断数据类型<i class="fa fa-external-link"></i></span></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> variable);</span><br></pre></td></tr></table></figure>
-<h2 id="javascript读取json文件"><a class="markdownIt-Anchor" href="#javascript读取json文件"></a> Javascript读取json文件</h2>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"><span class="keyword">const</span> dict = fs.readFileSync(<span class="string">'utils/swagger/dict.json'</span>)</span><br><span class="line">dictObj = <span class="built_in">JSON</span>.parse(dict);</span><br><span class="line"><span class="built_in">console</span>.log(dictObj[<span class="string">'timestamp without time zone'</span>]);</span><br></pre></td></tr></table></figure>
+<h3 id="compute-style"><a class="markdownIt-Anchor" href="#compute-style"></a> Compute Style</h3>
+<h4 id="stage-1-convert-css-to-stylesheets"><a class="markdownIt-Anchor" href="#stage-1-convert-css-to-stylesheets"></a> Stage 1: Convert CSS to styleSheets</h4>
+<ul>
+<li>Input: <code>CSS</code></li>
+<li>Process: calculate style for each DOM node.</li>
+<li>Output: <code>styleSheets</code></li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-35-12.png"></div>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-35-23.png"></div>
+<h4 id="stage-2-css-rule-standardization"><a class="markdownIt-Anchor" href="#stage-2-css-rule-standardization"></a> Stage 2: CSS Rule Standardization</h4>
+<ul>
+<li>Process: <strong>standardize</strong> css values</li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-40-38.png"></div>
+<h4 id="stage-3-apply-css-rules-to-dom-tree"><a class="markdownIt-Anchor" href="#stage-3-apply-css-rules-to-dom-tree"></a> Stage 3: Apply CSS Rules to DOM Tree</h4>
+<ul>
+<li>Process: Appy <strong>inheritance</strong>, <strong>Cascade rules</strong></li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-42-49.png"></div>
+<ul>
+<li><code>Inpection: Chrome &gt; Elements &gt; Computed</code></li>
+</ul>
+<h3 id="layout"><a class="markdownIt-Anchor" href="#layout"></a> Layout</h3>
+<h4 id="stage-1-prepare-layout-tree"><a class="markdownIt-Anchor" href="#stage-1-prepare-layout-tree"></a> Stage 1: Prepare Layout Tree</h4>
+<ul>
+<li>Input: <code>DOM</code>, <code>styleSheets</code></li>
+<li>Process: Traverse <strong>visble</strong> node of DOM tree, apply <code>styleSheets</code> rules</li>
+<li>Output: <strong>Layout Tree</strong></li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-51-24.png"></div>
+<h4 id="stage-2-compute-layout"><a class="markdownIt-Anchor" href="#stage-2-compute-layout"></a> Stage 2: Compute Layout</h4>
+<ul>
+<li>Input: Layout Tree</li>
+<li>Process: compute <strong>coordinates</strong></li>
+<li>output: Layout Tree (future - <code>LayoutNG</code>)</li>
+</ul>
+<h3 id="layer"><a class="markdownIt-Anchor" href="#layer"></a> Layer</h3>
+<h4 id="stage-1-build-layer"><a class="markdownIt-Anchor" href="#stage-1-build-layer"></a> Stage 1: Build Layer</h4>
+<ul>
+<li>Process: the main thread walk through the layout tree to generate layers based on animation, z-index and so on</li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-15-10-22.png"></div>
+<h3 id="paint"><a class="markdownIt-Anchor" href="#paint"></a> Paint</h3>
+<h4 id="stage-1-generate-paint-orders"><a class="markdownIt-Anchor" href="#stage-1-generate-paint-orders"></a> Stage 1: Generate Paint Orders</h4>
+<h3 id="composition"><a class="markdownIt-Anchor" href="#composition"></a> Composition</h3>
+<h4 id="stage-1-rasterization"><a class="markdownIt-Anchor" href="#stage-1-rasterization"></a> Stage 1: Rasterization</h4>
+<ul>
+<li><code>Compositor thread</code> divides each <code>layer</code> to small <code>tiles</code></li>
+<li><code>Compositor thread</code> <strong>prioritizes</strong> and <strong>sends</strong> tiles to <code>raster threads</code></li>
+<li>After rasterization, <code>Raster threads</code> will store result in GPU Memory and return <code>Draw quads</code> to <code>compositor thread</code></li>
+</ul>
+<h4 id="stage-2-display"><a class="markdownIt-Anchor" href="#stage-2-display"></a> Stage 2: Display</h4>
+<ul>
+<li><code>Compositor thread</code> will collect <code>Draw Quads</code> and combine them as the <strong>Compositor Frame</strong></li>
+<li>Then the <strong>compositor Frame</strong> will be sent to the <strong>Browser Process</strong> via <code>IPC</code></li>
+<li>The <strong>Browser Process</strong> then will send the <strong>Compositor Frame</strong> to <code>GPU</code> and let the GPU to <code>display</code>.</li>
+</ul>
+<h3 id="important-concepts"><a class="markdownIt-Anchor" href="#important-concepts"></a> Important Concepts</h3>
+<blockquote>
+<p>Raster Turning this information into pixels on the screen is called rasterizing.<br>
+Compositing: Compositing is a technique to <code>separate</code> parts of a page into <code>layers</code>, <code>rasterize</code> them <code>separately</code>, and <strong>composite</strong> as a page in a separate thread called <code>compositor thread</code>. If scroll happens, since layers are <strong>already</strong> rasterized, all it has to do is to <code>composite a new frame</code>.</p>
+</blockquote>
+<h3 id="optimization"><a class="markdownIt-Anchor" href="#optimization"></a> Optimization</h3>
+<h4 id="重排"><a class="markdownIt-Anchor" href="#重排"></a> 重排</h4>
+<blockquote>
+<p>通过JavaScript或者CSS改变元素的几何位置属性</p>
+</blockquote>
+<ul>
+<li>影响: Layout Tree及后面的步骤全都得重来</li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-15-37-43.png"></div>
+<h4 id="重绘"><a class="markdownIt-Anchor" href="#重绘"></a> 重绘</h4>
+<blockquote>
+<p>通过JavaScript更改元素的样式</p>
+</blockquote>
+<ul>
+<li>影响: 触发Paint及后面的步骤全都得重来</li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-15-43-13.png"></div>
+<h4 id="合成"><a class="markdownIt-Anchor" href="#合成"></a> 合成</h4>
+<blockquote>
+<p>执行transform的操作</p>
+</blockquote>
+<ul>
+<li>影响：触发Rasterization及后面的步骤全部重来</li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-15-43-26.png"></div>
+<h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY2hyb21pdW0ub3JnL0hvbWU=" title="https://www.chromium.org/Home">Chromium Project<i class="fa fa-external-link"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vd2ViL3VwZGF0ZXMvMjAxOC8wOS9pbnNpZGUtYnJvd3Nlci1wYXJ0Mw==" title="https://developers.google.com/web/updates/2018/09/inside-browser-part3">Google: Inside look at modern web browser (part 3)<i class="fa fa-external-link"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly90aW1lLmdlZWtiYW5nLm9yZy9jb2x1bW4vYXJ0aWNsZS8xMTgyMDU=" title="https://time.geekbang.org/column/article/118205">05 | 渲染流程（上）：HTML、CSS和JavaScript，是如何变成页面的？<i class="fa fa-external-link"></i></span></li>
+</ul>
 <hr>
 
       
@@ -543,28 +651,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/javascriptinheritance.html" rel="bookmark">Inheritance in Javascript</a></div>
+      <div class="popular-posts-title"><a href="/chromearchitecture.html" rel="bookmark">Chrome Architecture</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/ajax.html" rel="bookmark">AJAX</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/axios.html" rel="bookmark">Asynchronous Client - Axios</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/checktypeinjs.html" rel="bookmark">Type Check in Javascript</a></div>
+      <div class="popular-posts-title"><a href="/chromenavigation.html" rel="bookmark">Chrome Navigation</a></div>
       
     </li>
   
@@ -597,7 +691,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
+            <a href="/tags/Chrome/" rel="tag"># Chrome</a>
+          
+            <a href="/tags/Render/" rel="tag"># Render</a>
           
         </div>
       
@@ -622,8 +718,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/ssrinfo.html" rel="next" title="SSR Information">
-                <i class="fa fa-chevron-left"></i> SSR Information
+              <a href="/chromenavigation.html" rel="next" title="Chrome Navigation">
+                <i class="fa fa-chevron-left"></i> Chrome Navigation
               </a>
             
           </div>
@@ -631,10 +727,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/restfulProtocol.html" rel="prev" title="Restful Protocol">
-                Restful Protocol <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1310,7 +1402,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript遍历方式比较"><span class="nav-number">1.</span> <span class="nav-text"> Javascript遍历方式比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript写入文本文件"><span class="nav-number">2.</span> <span class="nav-text"> Javascript写入文本文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript单复数转化"><span class="nav-number">3.</span> <span class="nav-text"> Javascript单复数转化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript判断数据类型"><span class="nav-number">4.</span> <span class="nav-text"> Javascript判断数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript读取json文件"><span class="nav-number">5.</span> <span class="nav-text"> Javascript读取json文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#渲染过程详解"><span class="nav-number">1.</span> <span class="nav-text"> 渲染过程详解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#dom-tree"><span class="nav-number">1.1.</span> <span class="nav-text"> DOM Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-1-build-dom-tree"><span class="nav-number">1.1.1.</span> <span class="nav-text"> Stage 1: Build DOM Tree</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-1-load-subresource"><span class="nav-number">1.1.2.</span> <span class="nav-text"> Stage 1: Load Subresource</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#compute-style"><span class="nav-number">1.2.</span> <span class="nav-text"> Compute Style</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-1-convert-css-to-stylesheets"><span class="nav-number">1.2.1.</span> <span class="nav-text"> Stage 1: Convert CSS to styleSheets</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-2-css-rule-standardization"><span class="nav-number">1.2.2.</span> <span class="nav-text"> Stage 2: CSS Rule Standardization</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-3-apply-css-rules-to-dom-tree"><span class="nav-number">1.2.3.</span> <span class="nav-text"> Stage 3: Apply CSS Rules to DOM Tree</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#layout"><span class="nav-number">1.3.</span> <span class="nav-text"> Layout</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-1-prepare-layout-tree"><span class="nav-number">1.3.1.</span> <span class="nav-text"> Stage 1: Prepare Layout Tree</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-2-compute-layout"><span class="nav-number">1.3.2.</span> <span class="nav-text"> Stage 2: Compute Layout</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#layer"><span class="nav-number">1.4.</span> <span class="nav-text"> Layer</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-1-build-layer"><span class="nav-number">1.4.1.</span> <span class="nav-text"> Stage 1: Build Layer</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#paint"><span class="nav-number">1.5.</span> <span class="nav-text"> Paint</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-1-generate-paint-orders"><span class="nav-number">1.5.1.</span> <span class="nav-text"> Stage 1: Generate Paint Orders</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#composition"><span class="nav-number">1.6.</span> <span class="nav-text"> Composition</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-1-rasterization"><span class="nav-number">1.6.1.</span> <span class="nav-text"> Stage 1: Rasterization</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stage-2-display"><span class="nav-number">1.6.2.</span> <span class="nav-text"> Stage 2: Display</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#important-concepts"><span class="nav-number">1.7.</span> <span class="nav-text"> Important Concepts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#optimization"><span class="nav-number">1.8.</span> <span class="nav-text"> Optimization</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#重排"><span class="nav-number">1.8.1.</span> <span class="nav-text"> 重排</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重绘"><span class="nav-number">1.8.2.</span> <span class="nav-text"> 重绘</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#合成"><span class="nav-number">1.8.3.</span> <span class="nav-text"> 合成</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reference"><span class="nav-number">1.9.</span> <span class="nav-text"> Reference</span></a></li></ol></li></ol></div>
             
 
           </div>
