@@ -65,9 +65,9 @@
       <category term="Browser" scheme="https://geekeast.github.io/categories/Developer/Browser/"/>
     
     
-      <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
-    
       <category term="Render" scheme="https://geekeast.github.io/tags/Render/"/>
+    
+      <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
     
   </entry>
   
@@ -174,9 +174,9 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Developer/Network/"/>
     
     
-      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
-    
       <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
+    
+      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
     
   </entry>
   
@@ -424,6 +424,8 @@
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
     
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
+    
     
       <category term="AJAX" scheme="https://geekeast.github.io/tags/AJAX/"/>
     
@@ -464,6 +466,8 @@
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
     
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
+    
     
       <category term="Prototype" scheme="https://geekeast.github.io/tags/Prototype/"/>
     
@@ -497,6 +501,8 @@
       <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
     
     
       <category term="Object" scheme="https://geekeast.github.io/tags/Object/"/>
@@ -533,6 +539,8 @@
       <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
     
     
       <category term="Closure" scheme="https://geekeast.github.io/tags/Closure/"/>
@@ -571,6 +579,8 @@
       <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
     
     
       <category term="Lexical Scope" scheme="https://geekeast.github.io/tags/Lexical-Scope/"/>
@@ -611,6 +621,8 @@
       <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
     
     
       <category term="Equality" scheme="https://geekeast.github.io/tags/Equality/"/>
@@ -676,6 +688,8 @@
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
     
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
+    
     
       <category term="Coercion" scheme="https://geekeast.github.io/tags/Coercion/"/>
     
@@ -729,6 +743,8 @@
       <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
     
     
       <category term="Types" scheme="https://geekeast.github.io/tags/Types/"/>
@@ -789,6 +805,8 @@
       <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
     
       <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
     
     
   </entry>
