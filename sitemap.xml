@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/arrayequal.html</loc>
+    
+    <lastmod>2019-12-12T06:36:35.223Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/Developer/language/javascript/tsdecorators.html</loc>
     
     <lastmod>2019-12-12T06:31:49.574Z</lastmod>
@@ -537,13 +544,6 @@
     <loc>https://geekeast.github.io/Developer/optimization/fullstackperformanceoptimal.html</loc>
     
     <lastmod>2019-12-12T06:16:46.053Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/language/javascript/arrayequal.html</loc>
-    
-    <lastmod>2019-12-12T06:15:28.140Z</lastmod>
     
   </url>
   
