@@ -2,6 +2,125 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/Developer/browser/session-cookies.html</loc>
+    
+    <lastmod>2019-12-12T06:21:06.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/ubuntuinstallzsh.html</loc>
+    
+    <lastmod>2019-12-12T06:20:39.219Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/linuxcommands.html</loc>
+    
+    <lastmod>2019-12-12T06:20:36.081Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/installnodepostgreonubuntu.html</loc>
+    
+    <lastmod>2019-12-12T06:20:33.171Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/findbigfilelinux.html</loc>
+    
+    <lastmod>2019-12-12T06:20:29.494Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/awkparsecsv.html</loc>
+    
+    <lastmod>2019-12-12T06:20:26.841Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/gitswitchrepo.html</loc>
+    
+    <lastmod>2019-12-12T06:20:22.448Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/gitlfs.html</loc>
+    
+    <lastmod>2019-12-12T06:20:19.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/gitlabcicd.html</loc>
+    
+    <lastmod>2019-12-12T06:20:16.990Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/git-credential.html</loc>
+    
+    <lastmod>2019-12-12T06:20:14.305Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/configgitssh.html</loc>
+    
+    <lastmod>2019-12-12T06:20:08.860Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/managemutiplerolesaws.html</loc>
+    
+    <lastmod>2019-12-12T06:20:04.389Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/elasticbeanstalk.html</loc>
+    
+    <lastmod>2019-12-12T06:20:01.439Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/codecommit.html</loc>
+    
+    <lastmod>2019-12-12T06:19:58.056Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/awsdatalearningseries.html</loc>
+    
+    <lastmod>2019-12-12T06:19:55.527Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/aws-command.html</loc>
+    
+    <lastmod>2019-12-12T06:19:50.805Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-12-12T06:19:14.826Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/Developer/framework/nodejs/searchfood.html</loc>
     
     <lastmod>2019-12-12T06:17:17.474Z</lastmod>
@@ -429,83 +548,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/Developer/cicd/linux/ubuntuinstallzsh.html</loc>
-    
-    <lastmod>2019-12-12T06:11:03.845Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/linux/linuxcommands.html</loc>
-    
-    <lastmod>2019-12-12T06:10:59.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/linux/installnodepostgreonubuntu.html</loc>
-    
-    <lastmod>2019-12-12T06:10:56.645Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/linux/findbigfilelinux.html</loc>
-    
-    <lastmod>2019-12-12T06:10:47.112Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/linux/awkparsecsv.html</loc>
-    
-    <lastmod>2019-12-12T06:10:43.577Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/git/gitswitchrepo.html</loc>
-    
-    <lastmod>2019-12-12T06:10:38.128Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/git/gitlfs.html</loc>
-    
-    <lastmod>2019-12-12T06:10:34.089Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/git/gitlabcicd.html</loc>
-    
-    <lastmod>2019-12-12T06:10:30.211Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/git/git-credential.html</loc>
-    
-    <lastmod>2019-12-12T06:10:26.979Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/git/configgitssh.html</loc>
-    
-    <lastmod>2019-12-12T06:10:23.085Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/aws/managemutiplerolesaws.html</loc>
-    
-    <lastmod>2019-12-12T06:10:18.130Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/Developer/architecture/facebookflux.html</loc>
     
     <lastmod>2019-12-12T06:07:46.908Z</lastmod>
@@ -583,13 +625,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/Developer/browser/session-cookies.html</loc>
-    
-    <lastmod>2019-12-12T05:30:17.488Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/Editor/vscodeTutorial.html</loc>
     
     <lastmod>2019-12-12T05:26:48.506Z</lastmod>
@@ -600,13 +635,6 @@
     <loc>https://geekeast.github.io/Career/usaitresume.html</loc>
     
     <lastmod>2019-12-12T05:22:57.122Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/aws/elasticbeanstalk.html</loc>
-    
-    <lastmod>2019-12-12T05:19:12.215Z</lastmod>
     
   </url>
   
@@ -649,27 +677,6 @@
     <loc>https://geekeast.github.io/Analytics/descriptiveanalysis.html</loc>
     
     <lastmod>2019-12-12T04:21:08.509Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/aws/aws-command.html</loc>
-    
-    <lastmod>2019-12-12T04:17:08.417Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/aws/awsdatalearningseries.html</loc>
-    
-    <lastmod>2019-12-12T04:16:59.901Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/aws/codecommit.html</loc>
-    
-    <lastmod>2019-12-12T04:16:34.480Z</lastmod>
     
   </url>
   
@@ -817,13 +824,6 @@
     <loc>https://geekeast.github.io/Developer/language/java/mavenentry.html</loc>
     
     <lastmod>2019-10-21T10:59:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/categories/index.html</loc>
-    
-    <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   

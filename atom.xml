@@ -60,7 +60,9 @@
     
     </summary>
     
-      <category term="Browser" scheme="https://geekeast.github.io/categories/Browser/"/>
+      <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
+    
+      <category term="Browser" scheme="https://geekeast.github.io/categories/Developer/Browser/"/>
     
     
       <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
@@ -125,7 +127,9 @@
     
     </summary>
     
-      <category term="Browser" scheme="https://geekeast.github.io/categories/Browser/"/>
+      <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
+    
+      <category term="Browser" scheme="https://geekeast.github.io/categories/Developer/Browser/"/>
     
     
       <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
@@ -170,9 +174,9 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Developer/Network/"/>
     
     
-      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
-    
       <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
+    
+      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
     
   </entry>
   
