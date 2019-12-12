@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="Types  Static Testing: Typescript Unit Testing: Jest &amp;amp; Enzyme Integration Testing: Cypress, Selenium User Acceptance Testing: Tested by real users">
-<meta name="keywords" content="Testing,UAT">
+  <meta name="description" content="Automatically add state variable this.setState({val1: value}) will automatically create val1 in state. You don’t have to initialize it in the state. Unless: Some functions might need to set initial s">
+<meta name="keywords" content="CMU">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Testing Types in Web">
-<meta property="og:url" content="https://geekeast.github.io/javascript/typesoftestingweb.html">
+<meta property="og:title" content="React Tricks">
+<meta property="og:url" content="https://geekeast.github.io/react/reactricks.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Types  Static Testing: Typescript Unit Testing: Jest &amp;amp; Enzyme Integration Testing: Cypress, Selenium User Acceptance Testing: Tested by real users">
+<meta property="og:description" content="Automatically add state variable this.setState({val1: value}) will automatically create val1 in state. You don’t have to initialize it in the state. Unless: Some functions might need to set initial s">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-12-12T05:33:11.811Z">
+<meta property="og:updated_time" content="2019-12-12T05:44:37.220Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Testing Types in Web">
-<meta name="twitter:description" content="Types  Static Testing: Typescript Unit Testing: Jest &amp;amp; Enzyme Integration Testing: Cypress, Selenium User Acceptance Testing: Tested by real users">
+<meta name="twitter:title" content="React Tricks">
+<meta name="twitter:description" content="Automatically add state variable this.setState({val1: value}) will automatically create val1 in state. You don’t have to initialize it in the state. Unless: Some functions might need to set initial s">
 
 
 
 
 
 
-  <link rel="canonical" href="https://geekeast.github.io/javascript/typesoftestingweb.html">
+  <link rel="canonical" href="https://geekeast.github.io/react/reactricks.html">
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Testing Types in Web | 雪中印</title>
+  <title>React Tricks | 雪中印</title>
   
 
 
@@ -372,7 +372,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/javascript/typesoftestingweb.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/react/reactricks.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -389,7 +389,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Testing Types in Web
+          <h2 class="post-title" itemprop="name headline">React Tricks
 
               
             
@@ -413,7 +413,7 @@
                 
               
 
-              <time title="Created: 2019-08-19 10:01:19" itemprop="dateCreated datePublished" datetime="2019-08-19T10:01:19+09:30">2019-08-19</time>
+              <time title="Created: 2019-05-03 12:34:30" itemprop="dateCreated datePublished" datetime="2019-05-03T12:34:30+09:30">2019-05-03</time>
             
 
             
@@ -428,7 +428,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-12-12 16:03:11" itemprop="dateModified" datetime="2019-12-12T16:03:11+10:30">2019-12-12</time>
+                <time title="Modified: 2019-12-12 16:14:37" itemprop="dateModified" datetime="2019-12-12T16:14:37+10:30">2019-12-12</time>
               
             
           </span>
@@ -443,7 +443,7 @@
               </span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React/" itemprop="url" rel="index"><span itemprop="name">React</span></a></span>
 
                 
                 
@@ -479,7 +479,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">155</span>
+                <span title="Symbols count in article">319</span>
               
 
               
@@ -513,14 +513,16 @@
       
 
       
-        <h3 id="types"><a class="markdownIt-Anchor" href="#types"></a> Types</h3>
-<ul>
-<li><strong>Static Testing</strong>: Typescript</li>
-<li><strong>Unit Testing</strong>: Jest &amp; Enzyme</li>
-<li><strong>Integration Testing</strong>: Cypress, Selenium</li>
-<li><strong>User Acceptance Testing</strong>: Tested by real users</li>
-</ul>
-<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>
+        <h3 id="automatically-add-state-variable"><a class="markdownIt-Anchor" href="#automatically-add-state-variable"></a> Automatically add state variable</h3>
+<p><code>this.setState({val1: value})</code> will automatically create <code>val1</code> in state. You don’t have to initialize it in the state.<br>
+Unless: <strong>Some functions might need to set initial state after some operations.</strong></p>
+<h3 id><a class="markdownIt-Anchor" href="#"></a> ? :</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">good? <span class="keyword">do</span> good : <span class="keyword">do</span> bad</span><br></pre></td></tr></table></figure>
+<h3 id="-2"><a class="markdownIt-Anchor" href="#-2"></a> &amp;&amp;</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a &amp;&amp; <span class="keyword">do</span> a</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a &amp;&amp; b &amp;&amp; c</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<hr>
 
       
 
@@ -555,14 +557,6 @@
     <footer class="post-footer">
 
       
-        <div class="post-tags">
-          
-            <a href="/tags/Testing/" rel="tag"># Testing</a>
-          
-            <a href="/tags/UAT/" rel="tag"># UAT</a>
-          
-        </div>
-      
 
       
       
@@ -584,8 +578,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/backend/nodejs/npmandyarn.html" rel="next" title="NPM vs Yarn">
-                <i class="fa fa-chevron-left"></i> NPM vs Yarn
+              <a href="/frontend/css/cssfrostedglass.html" rel="next" title="CSS Frosted Glass Effect">
+                <i class="fa fa-chevron-left"></i> CSS Frosted Glass Effect
               </a>
             
           </div>
@@ -594,8 +588,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/optimization/fullstackperformanceoptimal.html" rel="prev" title="Web Performnace Optimization">
-                Web Performnace Optimization <i class="fa fa-chevron-right"></i>
+              <a href="/frontend/css/css-tricks.html" rel="prev" title="CSS *">
+                CSS * <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -749,7 +743,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">29</span>
+                      
+                    
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1018,23 +1014,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">120</span>
+                    <span class="site-state-item-count">112</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -1270,7 +1250,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#types"><span class="nav-number">1.</span> <span class="nav-text"> Types</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number"></span> <span class="nav-text"> </span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#automatically-add-state-variable"><span class="nav-number">1.</span> <span class="nav-text"> Automatically add state variable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text"> ? :</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#-2"><span class="nav-number">3.</span> <span class="nav-text"> &amp;&amp;</span></a></li></ol></div>
             
 
           </div>

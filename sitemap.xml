@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/database/postgres/pgpartion.html</loc>
+    
+    <lastmod>2019-12-12T05:48:30.352Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/database/postgres/pg.html</loc>
+    
+    <lastmod>2019-12-12T05:47:59.275Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/testing/typesoftestingweb.html</loc>
+    
+    <lastmod>2019-12-12T05:47:11.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/linux/awkparsecsv.html</loc>
+    
+    <lastmod>2019-12-12T05:46:17.226Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/linux/findbigfilelinux.html</loc>
+    
+    <lastmod>2019-12-12T05:46:15.726Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/linux/ubuntuinstallzsh.html</loc>
+    
+    <lastmod>2019-12-12T05:46:13.575Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/linux/linuxcommands.html</loc>
+    
+    <lastmod>2019-12-12T05:46:10.490Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/react/reactricks.html</loc>
+    
+    <lastmod>2019-12-12T05:44:37.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/react/reactrouter.html</loc>
+    
+    <lastmod>2019-12-12T05:44:12.925Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/react/reacttutorial.html</loc>
+    
+    <lastmod>2019-12-12T05:44:02.968Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/learning/certificate.html</loc>
     
     <lastmod>2019-12-12T05:41:46.589Z</lastmod>
@@ -135,13 +205,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/react/reacttutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:36:33.320Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/react/reactstatefunc.html</loc>
     
     <lastmod>2019-12-12T05:36:28.171Z</lastmod>
@@ -156,23 +219,9 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/react/reactrouter.html</loc>
-    
-    <lastmod>2019-12-12T05:36:17.094Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/react/react-redux.html</loc>
     
     <lastmod>2019-12-12T05:36:11.717Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reacstate.html</loc>
-    
-    <lastmod>2019-12-12T05:36:07.165Z</lastmod>
     
   </url>
   
@@ -212,27 +261,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/linux/findbigfilelinux.html</loc>
-    
-    <lastmod>2019-12-12T05:34:07.011Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linux/awkparsecsv.html</loc>
-    
-    <lastmod>2019-12-12T05:34:04.155Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linux/linuxcommands.html</loc>
-    
-    <lastmod>2019-12-12T05:34:01.097Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/learning/learnitbydoing.html</loc>
     
     <lastmod>2019-12-12T05:33:51.369Z</lastmod>
@@ -250,13 +278,6 @@
     <loc>https://geekeast.github.io/learning/backendallinone.html</loc>
     
     <lastmod>2019-12-12T05:33:33.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javascript/typesoftestingweb.html</loc>
-    
-    <lastmod>2019-12-12T05:33:11.811Z</lastmod>
     
   </url>
   
@@ -352,13 +373,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/database/postgres/pgpartion.html</loc>
-    
-    <lastmod>2019-12-12T05:30:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/database/postgres/pgaddonerowsum.html</loc>
     
     <lastmod>2019-12-12T05:30:40.000Z</lastmod>
@@ -367,13 +381,6 @@
   
   <url>
     <loc>https://geekeast.github.io/database/postgres/postgresTutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:30:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/database/postgres/pg.html</loc>
     
     <lastmod>2019-12-12T05:30:40.000Z</lastmod>
     
@@ -513,14 +520,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/backend/nodejs/nodesendgmail.html</loc>
+    <loc>https://geekeast.github.io/backend/nodejs/nodetutorial.html</loc>
     
     <lastmod>2019-12-12T05:19:33.069Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/backend/nodejs/nodetutorial.html</loc>
+    <loc>https://geekeast.github.io/backend/nodejs/nodesendgmail.html</loc>
     
     <lastmod>2019-12-12T05:19:33.069Z</lastmod>
     
@@ -551,13 +558,6 @@
     <loc>https://geekeast.github.io/australia/pr.html</loc>
     
     <lastmod>2019-12-12T05:19:03.068Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linux/ubuntuinstallzsh.html</loc>
-    
-    <lastmod>2019-12-12T05:16:35.596Z</lastmod>
     
   </url>
   
@@ -828,14 +828,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
+    <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
