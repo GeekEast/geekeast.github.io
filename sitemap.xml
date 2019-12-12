@@ -2,6 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/learning/certificate.html</loc>
+    
+    <lastmod>2019-12-12T05:41:46.589Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/react/importcssreact.html</loc>
+    
+    <lastmod>2019-12-12T05:41:33.483Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/position.html</loc>
+    
+    <lastmod>2019-12-12T05:41:18.815Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/lengthpercentage.html</loc>
+    
+    <lastmod>2019-12-12T05:41:14.416Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/flexbox.html</loc>
+    
+    <lastmod>2019-12-12T05:41:11.771Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/csszindex.html</loc>
+    
+    <lastmod>2019-12-12T05:41:08.956Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/cssh1.html</loc>
+    
+    <lastmod>2019-12-12T05:41:01.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/cssfrostedglass.html</loc>
+    
+    <lastmod>2019-12-12T05:40:59.351Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/cssdisplay.html</loc>
+    
+    <lastmod>2019-12-12T05:40:56.819Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/css3.html</loc>
+    
+    <lastmod>2019-12-12T05:40:52.485Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/frontend/css/bootstraptutorial.html</loc>
+    
+    <lastmod>2019-12-12T05:40:47.110Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/optimization/fullstackperformanceoptimal.html</loc>
+    
+    <lastmod>2019-12-12T05:40:31.877Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/visualization/d3tutorial.html</loc>
     
     <lastmod>2019-12-12T05:37:43.066Z</lastmod>
@@ -93,13 +177,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/react/importcssreact.html</loc>
-    
-    <lastmod>2019-12-12T05:36:02.450Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/react/createreactfromscatch.html</loc>
     
     <lastmod>2019-12-12T05:35:54.739Z</lastmod>
@@ -117,13 +194,6 @@
     <loc>https://geekeast.github.io/pattern/solidprinciple.html</loc>
     
     <lastmod>2019-12-12T05:34:54.634Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/optimization/fullstackperformanceoptimal.html</loc>
-    
-    <lastmod>2019-12-12T05:34:33.974Z</lastmod>
     
   </url>
   
@@ -173,13 +243,6 @@
     <loc>https://geekeast.github.io/learning/course-recommendation.html</loc>
     
     <lastmod>2019-12-12T05:33:40.065Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/learning/certificate.html</loc>
-    
-    <lastmod>2019-12-12T05:33:37.403Z</lastmod>
     
   </url>
   
@@ -296,7 +359,7 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/database/postgres/pg.html</loc>
+    <loc>https://geekeast.github.io/database/postgres/pgaddonerowsum.html</loc>
     
     <lastmod>2019-12-12T05:30:40.000Z</lastmod>
     
@@ -310,7 +373,7 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/database/postgres/pgaddonerowsum.html</loc>
+    <loc>https://geekeast.github.io/database/postgres/pg.html</loc>
     
     <lastmod>2019-12-12T05:30:40.000Z</lastmod>
     
@@ -324,13 +387,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/frontend/css/position.html</loc>
-    
-    <lastmod>2019-12-12T05:29:15.044Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/frontend/css/margincollapsing.html</loc>
     
     <lastmod>2019-12-12T05:29:10.979Z</lastmod>
@@ -338,30 +394,9 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/frontend/css/lengthpercentage.html</loc>
-    
-    <lastmod>2019-12-12T05:29:03.167Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/frontend/html/htmlhead.html</loc>
     
     <lastmod>2019-12-12T05:28:10.994Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/flexbox.html</loc>
-    
-    <lastmod>2019-12-12T05:27:57.364Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/csszindex.html</loc>
-    
-    <lastmod>2019-12-12T05:27:55.461Z</lastmod>
     
   </url>
   
@@ -387,37 +422,9 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/frontend/css/cssh1.html</loc>
-    
-    <lastmod>2019-12-12T05:27:41.445Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/cssfrostedglass.html</loc>
-    
-    <lastmod>2019-12-12T05:27:39.313Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/cssdisplay.html</loc>
-    
-    <lastmod>2019-12-12T05:27:37.366Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/frontend/css/cssboxsizing.html</loc>
     
     <lastmod>2019-12-12T05:27:35.377Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/css3.html</loc>
-    
-    <lastmod>2019-12-12T05:27:33.477Z</lastmod>
     
   </url>
   
@@ -432,13 +439,6 @@
     <loc>https://geekeast.github.io/frontend/css/css-auto.html</loc>
     
     <lastmod>2019-12-12T05:27:28.931Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/bootstraptutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:27:23.381Z</lastmod>
     
   </url>
   
