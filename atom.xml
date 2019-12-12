@@ -18,8 +18,8 @@
   
   <entry>
     <title>Internal Render Process</title>
-    <link href="https://geekeast.github.io/renderprocess.html"/>
-    <id>https://geekeast.github.io/renderprocess.html</id>
+    <link href="https://geekeast.github.io/browser/renderprocess.html"/>
+    <id>https://geekeast.github.io/browser/renderprocess.html</id>
     <published>2019-11-28T05:19:40.000Z</published>
     <updated>2019-11-28T05:19:40.000Z</updated>
     
@@ -60,7 +60,7 @@
     
     </summary>
     
-      <category term="Network" scheme="https://geekeast.github.io/categories/Network/"/>
+      <category term="Browser" scheme="https://geekeast.github.io/categories/Browser/"/>
     
     
       <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
@@ -71,8 +71,8 @@
   
   <entry>
     <title>Chrome Navigation</title>
-    <link href="https://geekeast.github.io/chromenavigation.html"/>
-    <id>https://geekeast.github.io/chromenavigation.html</id>
+    <link href="https://geekeast.github.io/browser/chromenavigation.html"/>
+    <id>https://geekeast.github.io/browser/chromenavigation.html</id>
     <published>2019-11-28T01:01:01.000Z</published>
     <updated>2019-11-28T01:01:01.000Z</updated>
     
@@ -125,7 +125,7 @@
     
     </summary>
     
-      <category term="Network" scheme="https://geekeast.github.io/categories/Network/"/>
+      <category term="Browser" scheme="https://geekeast.github.io/categories/Browser/"/>
     
     
       <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
@@ -136,8 +136,8 @@
   
   <entry>
     <title>How HTTP works?</title>
-    <link href="https://geekeast.github.io/httpfun.html"/>
-    <id>https://geekeast.github.io/httpfun.html</id>
+    <link href="https://geekeast.github.io/network/httpfun.html"/>
+    <id>https://geekeast.github.io/network/httpfun.html</id>
     <published>2019-11-27T13:06:14.000Z</published>
     <updated>2019-11-27T13:06:14.000Z</updated>
     
@@ -168,16 +168,16 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Network/"/>
     
     
-      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
-    
       <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
+    
+      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
     
   </entry>
   
   <entry>
     <title>How TCP/IP Works</title>
-    <link href="https://geekeast.github.io/tcpipfun.html"/>
-    <id>https://geekeast.github.io/tcpipfun.html</id>
+    <link href="https://geekeast.github.io/network/tcpipfun.html"/>
+    <id>https://geekeast.github.io/network/tcpipfun.html</id>
     <published>2019-11-27T06:01:45.000Z</published>
     <updated>2019-11-27T06:01:45.000Z</updated>
     
@@ -216,8 +216,8 @@
   
   <entry>
     <title>OSI 7 Layers</title>
-    <link href="https://geekeast.github.io/osi7.html"/>
-    <id>https://geekeast.github.io/osi7.html</id>
+    <link href="https://geekeast.github.io/network/osi7.html"/>
+    <id>https://geekeast.github.io/network/osi7.html</id>
     <published>2019-11-27T05:32:58.000Z</published>
     <updated>2019-11-27T05:32:58.000Z</updated>
     
@@ -240,8 +240,8 @@
   
   <entry>
     <title>Chrome Architecture</title>
-    <link href="https://geekeast.github.io/chromearchitecture.html"/>
-    <id>https://geekeast.github.io/chromearchitecture.html</id>
+    <link href="https://geekeast.github.io/browser/chromearchitecture.html"/>
+    <id>https://geekeast.github.io/browser/chromearchitecture.html</id>
     <published>2019-11-27T04:11:42.000Z</published>
     <updated>2019-11-27T04:11:42.000Z</updated>
     
@@ -287,8 +287,8 @@
   
   <entry>
     <title>Cocurrency vs Parallelism</title>
-    <link href="https://geekeast.github.io/simultaneousexe.html"/>
-    <id>https://geekeast.github.io/simultaneousexe.html</id>
+    <link href="https://geekeast.github.io/parallelism/simultaneousexe.html"/>
+    <id>https://geekeast.github.io/parallelism/simultaneousexe.html</id>
     <published>2019-11-27T02:53:48.000Z</published>
     <updated>2019-11-27T02:53:48.000Z</updated>
     
@@ -311,7 +311,7 @@
     
     </summary>
     
-      <category term="Computer Science" scheme="https://geekeast.github.io/categories/Computer-Science/"/>
+      <category term="Parallelism" scheme="https://geekeast.github.io/categories/Parallelism/"/>
     
     
       <category term="Computer System" scheme="https://geekeast.github.io/tags/Computer-System/"/>
@@ -324,8 +324,8 @@
   
   <entry>
     <title>Program vs Process vs Thread</title>
-    <link href="https://geekeast.github.io/programprocessthread.html"/>
-    <id>https://geekeast.github.io/programprocessthread.html</id>
+    <link href="https://geekeast.github.io/parallelism/programprocessthread.html"/>
+    <id>https://geekeast.github.io/parallelism/programprocessthread.html</id>
     <published>2019-11-27T02:44:49.000Z</published>
     <updated>2019-11-27T02:44:49.000Z</updated>
     
@@ -364,7 +364,7 @@
     
     </summary>
     
-      <category term="Computer Science" scheme="https://geekeast.github.io/categories/Computer-Science/"/>
+      <category term="Parallelism" scheme="https://geekeast.github.io/categories/Parallelism/"/>
     
     
       <category term="Computer System" scheme="https://geekeast.github.io/tags/Computer-System/"/>
@@ -375,8 +375,8 @@
   
   <entry>
     <title>AJAX</title>
-    <link href="https://geekeast.github.io/ajax.html"/>
-    <id>https://geekeast.github.io/ajax.html</id>
+    <link href="https://geekeast.github.io/javascript/ajax.html"/>
+    <id>https://geekeast.github.io/javascript/ajax.html</id>
     <published>2019-11-26T04:04:39.000Z</published>
     <updated>2019-11-26T04:04:39.000Z</updated>
     
@@ -408,19 +408,17 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
     
       <category term="AJAX" scheme="https://geekeast.github.io/tags/AJAX/"/>
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>Prototype in Javascript</title>
-    <link href="https://geekeast.github.io/jsprototype.html"/>
-    <id>https://geekeast.github.io/jsprototype.html</id>
+    <link href="https://geekeast.github.io/javascript/jsprototype.html"/>
+    <id>https://geekeast.github.io/javascript/jsprototype.html</id>
     <published>2019-11-25T04:38:43.000Z</published>
     <updated>2019-11-25T04:38:43.000Z</updated>
     
@@ -448,10 +446,8 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
       <category term="Prototype" scheme="https://geekeast.github.io/tags/Prototype/"/>
     
@@ -459,8 +455,8 @@
   
   <entry>
     <title>Object in Javascript</title>
-    <link href="https://geekeast.github.io/jsobject.html"/>
-    <id>https://geekeast.github.io/jsobject.html</id>
+    <link href="https://geekeast.github.io/javascript/jsobject.html"/>
+    <id>https://geekeast.github.io/javascript/jsobject.html</id>
     <published>2019-11-25T00:01:08.000Z</published>
     <updated>2019-11-25T00:01:08.000Z</updated>
     
@@ -482,10 +478,8 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
       <category term="Object" scheme="https://geekeast.github.io/tags/Object/"/>
     
@@ -493,8 +487,8 @@
   
   <entry>
     <title>Closure in Javascript</title>
-    <link href="https://geekeast.github.io/jsclosure.html"/>
-    <id>https://geekeast.github.io/jsclosure.html</id>
+    <link href="https://geekeast.github.io/javascript/jsclosure.html"/>
+    <id>https://geekeast.github.io/javascript/jsclosure.html</id>
     <published>2019-11-24T23:28:16.000Z</published>
     <updated>2019-11-24T23:28:16.000Z</updated>
     
@@ -518,10 +512,8 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
       <category term="Closure" scheme="https://geekeast.github.io/tags/Closure/"/>
     
@@ -529,8 +521,8 @@
   
   <entry>
     <title>Scope in Javascript</title>
-    <link href="https://geekeast.github.io/jsscope.html"/>
-    <id>https://geekeast.github.io/jsscope.html</id>
+    <link href="https://geekeast.github.io/javascript/jsscope.html"/>
+    <id>https://geekeast.github.io/javascript/jsscope.html</id>
     <published>2019-11-24T11:46:28.000Z</published>
     <updated>2019-11-24T11:46:28.000Z</updated>
     
@@ -556,10 +548,8 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
       <category term="Lexical Scope" scheme="https://geekeast.github.io/tags/Lexical-Scope/"/>
     
@@ -567,8 +557,8 @@
   
   <entry>
     <title>Equality in Javascript</title>
-    <link href="https://geekeast.github.io/jsequality.html"/>
-    <id>https://geekeast.github.io/jsequality.html</id>
+    <link href="https://geekeast.github.io/javascript/jsequality.html"/>
+    <id>https://geekeast.github.io/javascript/jsequality.html</id>
     <published>2019-11-24T11:37:56.000Z</published>
     <updated>2019-11-24T11:37:56.000Z</updated>
     
@@ -596,10 +586,8 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
       <category term="Equality" scheme="https://geekeast.github.io/tags/Equality/"/>
     
@@ -607,8 +595,8 @@
   
   <entry>
     <title>Coercion in Javascript</title>
-    <link href="https://geekeast.github.io/jscoercion.html"/>
-    <id>https://geekeast.github.io/jscoercion.html</id>
+    <link href="https://geekeast.github.io/javascript/jscoercion.html"/>
+    <id>https://geekeast.github.io/javascript/jscoercion.html</id>
     <published>2019-11-24T11:02:17.000Z</published>
     <updated>2019-11-24T11:02:17.000Z</updated>
     
@@ -660,10 +648,8 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
       <category term="Coercion" scheme="https://geekeast.github.io/tags/Coercion/"/>
     
@@ -671,8 +657,8 @@
   
   <entry>
     <title>Types in Javascript</title>
-    <link href="https://geekeast.github.io/js-types.html"/>
-    <id>https://geekeast.github.io/js-types.html</id>
+    <link href="https://geekeast.github.io/javascript/js-types.html"/>
+    <id>https://geekeast.github.io/javascript/js-types.html</id>
     <published>2019-11-24T07:32:16.000Z</published>
     <updated>2019-11-24T07:32:16.000Z</updated>
     
@@ -714,10 +700,8 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
       <category term="Types" scheme="https://geekeast.github.io/tags/Types/"/>
     
@@ -725,8 +709,8 @@
   
   <entry>
     <title>Functional Programming</title>
-    <link href="https://geekeast.github.io/functionalprogramming.html"/>
-    <id>https://geekeast.github.io/functionalprogramming.html</id>
+    <link href="https://geekeast.github.io/cs/functionalprogramming.html"/>
+    <id>https://geekeast.github.io/cs/functionalprogramming.html</id>
     <published>2019-11-24T07:18:43.000Z</published>
     <updated>2019-11-24T07:18:43.000Z</updated>
     
@@ -751,7 +735,7 @@
     
     </summary>
     
-      <category term="Functional Programming" scheme="https://geekeast.github.io/categories/Functional-Programming/"/>
+      <category term="Computer Science" scheme="https://geekeast.github.io/categories/Computer-Science/"/>
     
     
       <category term="Functional Programming" scheme="https://geekeast.github.io/tags/Functional-Programming/"/>
@@ -760,8 +744,8 @@
   
   <entry>
     <title>Float Issue in Javascript</title>
-    <link href="https://geekeast.github.io/floatoverflow.html"/>
-    <id>https://geekeast.github.io/floatoverflow.html</id>
+    <link href="https://geekeast.github.io/javascript/floatoverflow.html"/>
+    <id>https://geekeast.github.io/javascript/floatoverflow.html</id>
     <published>2019-11-24T06:32:51.000Z</published>
     <updated>2019-11-24T06:32:51.000Z</updated>
     
@@ -774,17 +758,15 @@
     
     </summary>
     
-      <category term="Fullstack" scheme="https://geekeast.github.io/categories/Fullstack/"/>
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Javascript/"/>
     
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/tags/Javascript/"/>
     
   </entry>
   
   <entry>
     <title>Paste Image Enhancer in VS-code</title>
-    <link href="https://geekeast.github.io/pasteimagemarkdown.html"/>
-    <id>https://geekeast.github.io/pasteimagemarkdown.html</id>
+    <link href="https://geekeast.github.io/editor/pasteimagemarkdown.html"/>
+    <id>https://geekeast.github.io/editor/pasteimagemarkdown.html</id>
     <published>2019-10-24T17:48:41.000Z</published>
     <updated>2019-10-24T17:48:41.000Z</updated>
     
@@ -801,17 +783,19 @@
     
     </summary>
     
-      <category term="VSCode" scheme="https://geekeast.github.io/categories/VSCode/"/>
+      <category term="Editor" scheme="https://geekeast.github.io/categories/Editor/"/>
     
     
       <category term="Markdown" scheme="https://geekeast.github.io/tags/Markdown/"/>
+    
+      <category term="vscode" scheme="https://geekeast.github.io/tags/vscode/"/>
     
   </entry>
   
   <entry>
     <title>Create TOC for Markdown by Doctoc and Husky</title>
-    <link href="https://geekeast.github.io/createmarkdowntoc.html"/>
-    <id>https://geekeast.github.io/createmarkdowntoc.html</id>
+    <link href="https://geekeast.github.io/editor/createmarkdowntoc.html"/>
+    <id>https://geekeast.github.io/editor/createmarkdowntoc.html</id>
     <published>2019-10-23T06:14:12.000Z</published>
     <updated>2019-10-23T06:14:12.000Z</updated>
     
@@ -832,14 +816,14 @@
     
     </summary>
     
-      <category term="Git" scheme="https://geekeast.github.io/categories/Git/"/>
+      <category term="Editor" scheme="https://geekeast.github.io/categories/Editor/"/>
     
-    
-      <category term="Github" scheme="https://geekeast.github.io/tags/Github/"/>
     
       <category term="Markdown" scheme="https://geekeast.github.io/tags/Markdown/"/>
     
       <category term="TOC" scheme="https://geekeast.github.io/tags/TOC/"/>
+    
+      <category term="Github" scheme="https://geekeast.github.io/tags/Github/"/>
     
   </entry>
   
