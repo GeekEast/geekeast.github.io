@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/algorithms/3sum.html</loc>
+    
+    <lastmod>2019-12-12T05:54:55.329Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/mac/aria2c.html</loc>
+    
+    <lastmod>2019-12-12T05:54:23.462Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/backend/nodejs/yarn.html</loc>
     
     <lastmod>2019-12-12T05:53:11.212Z</lastmod>
@@ -173,13 +187,6 @@
     <loc>https://geekeast.github.io/visualization/d3tutorial.html</loc>
     
     <lastmod>2019-12-12T05:37:43.066Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/utils/aria2c.html</loc>
-    
-    <lastmod>2019-12-12T05:37:39.729Z</lastmod>
     
   </url>
   
@@ -520,14 +527,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/backend/nodejs/nodesendgmail.html</loc>
+    <loc>https://geekeast.github.io/backend/nodejs/nodescheduler.html</loc>
     
     <lastmod>2019-12-12T05:19:33.069Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/backend/nodejs/nodescheduler.html</loc>
+    <loc>https://geekeast.github.io/backend/nodejs/nodesendgmail.html</loc>
     
     <lastmod>2019-12-12T05:19:33.069Z</lastmod>
     
@@ -635,13 +642,6 @@
     <loc>https://geekeast.github.io/analytics/descriptiveanalysis.html</loc>
     
     <lastmod>2019-12-12T04:21:08.509Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/algorithms/3sum.html</loc>
-    
-    <lastmod>2019-12-12T04:19:35.905Z</lastmod>
     
   </url>
   
