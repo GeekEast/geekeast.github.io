@@ -2,819 +2,819 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://geekeast.github.io/algorithms/3sum.html</loc>
+    <loc>https://geekeast.github.io/Developer/framework/nodejs/searchfood.html</loc>
+    
+    <lastmod>2019-12-12T06:17:17.474Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/visualization/d3tutorial.html</loc>
+    
+    <lastmod>2019-12-12T06:16:55.634Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/testing/typesoftestingweb.html</loc>
+    
+    <lastmod>2019-12-12T06:16:50.648Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/optimization/fullstackperformanceoptimal.html</loc>
+    
+    <lastmod>2019-12-12T06:16:46.053Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/tsdecorators.html</loc>
+    
+    <lastmod>2019-12-12T06:16:14.949Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/javscriptTutorial.html</loc>
+    
+    <lastmod>2019-12-12T06:15:50.559Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/javascriptinheritance.html</loc>
+    
+    <lastmod>2019-12-12T06:15:47.657Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/es6.html</loc>
+    
+    <lastmod>2019-12-12T06:15:40.398Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/checktypeinjs.html</loc>
+    
+    <lastmod>2019-12-12T06:15:37.543Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/axios.html</loc>
+    
+    <lastmod>2019-12-12T06:15:34.024Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/arrayoperationinreact.html</loc>
+    
+    <lastmod>2019-12-12T06:15:30.941Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/arrayequal.html</loc>
+    
+    <lastmod>2019-12-12T06:15:28.140Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/java/javaoop.html</loc>
+    
+    <lastmod>2019-12-12T06:15:16.562Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/html/htmlloading.html</loc>
+    
+    <lastmod>2019-12-12T06:15:12.124Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/html/htmlhead.html</loc>
+    
+    <lastmod>2019-12-12T06:15:09.073Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/html/htmldimension.html</loc>
+    
+    <lastmod>2019-12-12T06:15:05.511Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/position.html</loc>
+    
+    <lastmod>2019-12-12T06:14:53.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/margincollapsing.html</loc>
+    
+    <lastmod>2019-12-12T06:14:50.176Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/lengthpercentage.html</loc>
+    
+    <lastmod>2019-12-12T06:14:47.255Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/flexbox.html</loc>
+    
+    <lastmod>2019-12-12T06:14:44.312Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/csszindex.html</loc>
+    
+    <lastmod>2019-12-12T06:14:41.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/csswaystoaddstyle.html</loc>
+    
+    <lastmod>2019-12-12T06:14:37.898Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/cssselector.html</loc>
+    
+    <lastmod>2019-12-12T06:14:34.890Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/cssjavascript.html</loc>
+    
+    <lastmod>2019-12-12T06:14:32.045Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/cssh1.html</loc>
+    
+    <lastmod>2019-12-12T06:14:28.993Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/cssfrostedglass.html</loc>
+    
+    <lastmod>2019-12-12T06:14:26.176Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/cssdisplay.html</loc>
+    
+    <lastmod>2019-12-12T06:14:23.718Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/cssboxsizing.html</loc>
+    
+    <lastmod>2019-12-12T06:14:21.166Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/css3.html</loc>
+    
+    <lastmod>2019-12-12T06:14:18.427Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/css-tricks.html</loc>
+    
+    <lastmod>2019-12-12T06:14:15.061Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/css-auto.html</loc>
+    
+    <lastmod>2019-12-12T06:14:12.140Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/language/css/bootstraptutorial.html</loc>
+    
+    <lastmod>2019-12-12T06:14:07.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/slack/slackmessage.html</loc>
+    
+    <lastmod>2019-12-12T06:13:44.132Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/restful/routermatch.html</loc>
+    
+    <lastmod>2019-12-12T06:13:39.139Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/restful/restfulProtocol.html</loc>
+    
+    <lastmod>2019-12-12T06:13:34.434Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/whousereact.html</loc>
+    
+    <lastmod>2019-12-12T06:13:29.191Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/reduxthunk.html</loc>
+    
+    <lastmod>2019-12-12T06:13:25.936Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/reactvsmvc.html</loc>
+    
+    <lastmod>2019-12-12T06:13:22.695Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/reactuilibrary.html</loc>
+    
+    <lastmod>2019-12-12T06:13:19.432Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/reacttutorial.html</loc>
+    
+    <lastmod>2019-12-12T06:13:15.636Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/reactstatefunc.html</loc>
+    
+    <lastmod>2019-12-12T06:13:12.493Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/reactrouterreduxstream.html</loc>
+    
+    <lastmod>2019-12-12T06:13:09.554Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/reactrouter.html</loc>
+    
+    <lastmod>2019-12-12T06:13:06.769Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/reactricks.html</loc>
+    
+    <lastmod>2019-12-12T06:13:03.778Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/react-redux.html</loc>
+    
+    <lastmod>2019-12-12T06:13:00.085Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/importcssreact.html</loc>
+    
+    <lastmod>2019-12-12T06:12:56.533Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/createreactfromscatch.html</loc>
+    
+    <lastmod>2019-12-12T06:12:52.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/react/amplifyreactnotemaker.html</loc>
+    
+    <lastmod>2019-12-12T06:12:48.303Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/nodejs/yarn.html</loc>
+    
+    <lastmod>2019-12-12T06:12:33.444Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/nodejs/npmandyarn.html</loc>
+    
+    <lastmod>2019-12-12T06:12:28.548Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/nodejs/nodetutorial.html</loc>
+    
+    <lastmod>2019-12-12T06:12:22.750Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/nodejs/nodesendgmail.html</loc>
+    
+    <lastmod>2019-12-12T06:12:15.798Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/nodejs/nodescheduler.html</loc>
+    
+    <lastmod>2019-12-12T06:12:09.548Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/nodejs/downgradetonode8mac.html</loc>
+    
+    <lastmod>2019-12-12T06:12:02.080Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/framework/express/expressTutorial.html</loc>
+    
+    <lastmod>2019-12-12T06:11:54.713Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/database/sql/resuablesql.html</loc>
+    
+    <lastmod>2019-12-12T06:11:32.833Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/database/sql/sqlformaterminifier.html</loc>
+    
+    <lastmod>2019-12-12T06:11:31.206Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/database/postgres/postgresTutorial.html</loc>
+    
+    <lastmod>2019-12-12T06:11:21.275Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/database/postgres/pgpartion.html</loc>
+    
+    <lastmod>2019-12-12T06:11:18.414Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/database/postgres/pgaddonerowsum.html</loc>
+    
+    <lastmod>2019-12-12T06:11:15.044Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/database/postgres/pg.html</loc>
+    
+    <lastmod>2019-12-12T06:11:10.712Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/ubuntuinstallzsh.html</loc>
+    
+    <lastmod>2019-12-12T06:11:03.845Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/linuxcommands.html</loc>
+    
+    <lastmod>2019-12-12T06:10:59.725Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/installnodepostgreonubuntu.html</loc>
+    
+    <lastmod>2019-12-12T06:10:56.645Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/findbigfilelinux.html</loc>
+    
+    <lastmod>2019-12-12T06:10:47.112Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/linux/awkparsecsv.html</loc>
+    
+    <lastmod>2019-12-12T06:10:43.577Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/gitswitchrepo.html</loc>
+    
+    <lastmod>2019-12-12T06:10:38.128Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/gitlfs.html</loc>
+    
+    <lastmod>2019-12-12T06:10:34.089Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/gitlabcicd.html</loc>
+    
+    <lastmod>2019-12-12T06:10:30.211Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/git-credential.html</loc>
+    
+    <lastmod>2019-12-12T06:10:26.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/configgitssh.html</loc>
+    
+    <lastmod>2019-12-12T06:10:23.085Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/managemutiplerolesaws.html</loc>
+    
+    <lastmod>2019-12-12T06:10:18.130Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Developer/architecture/facebookflux.html</loc>
+    
+    <lastmod>2019-12-12T06:07:46.908Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Computer%20Science/pattern/solidprinciple.html</loc>
+    
+    <lastmod>2019-12-12T06:07:10.851Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Learning/algorithm.html</loc>
+    
+    <lastmod>2019-12-12T06:02:30.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://geekeast.github.io/Computer%20Science/algorithms/3sum.html</loc>
     
     <lastmod>2019-12-12T05:54:55.329Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/mac/aria2c.html</loc>
+    <loc>https://geekeast.github.io/Mac/aria2c.html</loc>
     
     <lastmod>2019-12-12T05:54:23.462Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/backend/nodejs/yarn.html</loc>
-    
-    <lastmod>2019-12-12T05:53:11.212Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backend/nodejs/downgradetonode8mac.html</loc>
-    
-    <lastmod>2019-12-12T05:52:57.161Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/database/postgres/pgpartion.html</loc>
-    
-    <lastmod>2019-12-12T05:48:30.352Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/database/postgres/pg.html</loc>
-    
-    <lastmod>2019-12-12T05:47:59.275Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/testing/typesoftestingweb.html</loc>
-    
-    <lastmod>2019-12-12T05:47:11.098Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linux/awkparsecsv.html</loc>
-    
-    <lastmod>2019-12-12T05:46:17.226Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linux/findbigfilelinux.html</loc>
-    
-    <lastmod>2019-12-12T05:46:15.726Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linux/ubuntuinstallzsh.html</loc>
-    
-    <lastmod>2019-12-12T05:46:13.575Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/linux/linuxcommands.html</loc>
-    
-    <lastmod>2019-12-12T05:46:10.490Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reactricks.html</loc>
-    
-    <lastmod>2019-12-12T05:44:37.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reactrouter.html</loc>
-    
-    <lastmod>2019-12-12T05:44:12.925Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reacttutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:44:02.968Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/learning/certificate.html</loc>
+    <loc>https://geekeast.github.io/Learning/certificate.html</loc>
     
     <lastmod>2019-12-12T05:41:46.589Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/react/importcssreact.html</loc>
-    
-    <lastmod>2019-12-12T05:41:33.483Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/position.html</loc>
-    
-    <lastmod>2019-12-12T05:41:18.815Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/lengthpercentage.html</loc>
-    
-    <lastmod>2019-12-12T05:41:14.416Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/flexbox.html</loc>
-    
-    <lastmod>2019-12-12T05:41:11.771Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/csszindex.html</loc>
-    
-    <lastmod>2019-12-12T05:41:08.956Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/cssh1.html</loc>
-    
-    <lastmod>2019-12-12T05:41:01.681Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/cssfrostedglass.html</loc>
-    
-    <lastmod>2019-12-12T05:40:59.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/cssdisplay.html</loc>
-    
-    <lastmod>2019-12-12T05:40:56.819Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/css3.html</loc>
-    
-    <lastmod>2019-12-12T05:40:52.485Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/bootstraptutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:40:47.110Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/optimization/fullstackperformanceoptimal.html</loc>
-    
-    <lastmod>2019-12-12T05:40:31.877Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/visualization/d3tutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:37:43.066Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Projects/searchfood.html</loc>
-    
-    <lastmod>2019-12-12T05:37:30.144Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/whousereact.html</loc>
-    
-    <lastmod>2019-12-12T05:36:52.851Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reduxthunk.html</loc>
-    
-    <lastmod>2019-12-12T05:36:47.444Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reactvsmvc.html</loc>
-    
-    <lastmod>2019-12-12T05:36:43.088Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reactuilibrary.html</loc>
-    
-    <lastmod>2019-12-12T05:36:37.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reactstatefunc.html</loc>
-    
-    <lastmod>2019-12-12T05:36:28.171Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/reactrouterreduxstream.html</loc>
-    
-    <lastmod>2019-12-12T05:36:22.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/react-redux.html</loc>
-    
-    <lastmod>2019-12-12T05:36:11.717Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/createreactfromscatch.html</loc>
-    
-    <lastmod>2019-12-12T05:35:54.739Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/react/amplifyreactnotemaker.html</loc>
-    
-    <lastmod>2019-12-12T05:35:50.584Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/pattern/solidprinciple.html</loc>
-    
-    <lastmod>2019-12-12T05:34:54.634Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/mac/popclip.html</loc>
+    <loc>https://geekeast.github.io/Mac/popclip.html</loc>
     
     <lastmod>2019-12-12T05:34:18.146Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/mac/mymacshortcut.html</loc>
+    <loc>https://geekeast.github.io/Mac/mymacshortcut.html</loc>
     
     <lastmod>2019-12-12T05:34:14.832Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/learning/learnitbydoing.html</loc>
+    <loc>https://geekeast.github.io/Learning/learnitbydoing.html</loc>
     
     <lastmod>2019-12-12T05:33:51.369Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/learning/course-recommendation.html</loc>
+    <loc>https://geekeast.github.io/Learning/course-recommendation.html</loc>
     
     <lastmod>2019-12-12T05:33:40.065Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/learning/backendallinone.html</loc>
+    <loc>https://geekeast.github.io/Learning/backendallinone.html</loc>
     
     <lastmod>2019-12-12T05:33:33.553Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/tsdecorators.html</loc>
-    
-    <lastmod>2019-12-12T05:33:07.581Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javascript/javscriptTutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:32:36.519Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javascript/javascriptinheritance.html</loc>
-    
-    <lastmod>2019-12-12T05:32:32.791Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javascript/es6.html</loc>
-    
-    <lastmod>2019-12-12T05:32:23.330Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javascript/checktypeinjs.html</loc>
-    
-    <lastmod>2019-12-12T05:32:19.640Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javascript/axios.html</loc>
-    
-    <lastmod>2019-12-12T05:32:14.904Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javascript/arrayoperationinreact.html</loc>
-    
-    <lastmod>2019-12-12T05:32:10.828Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/javascript/arrayequal.html</loc>
-    
-    <lastmod>2019-12-12T05:32:08.203Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/java/javaoop.html</loc>
-    
-    <lastmod>2019-12-12T05:31:38.607Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/html/htmlloading.html</loc>
-    
-    <lastmod>2019-12-12T05:31:23.090Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/html/htmldimension.html</loc>
-    
-    <lastmod>2019-12-12T05:31:19.113Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/database/sql/resuablesql.html</loc>
-    
-    <lastmod>2019-12-12T05:30:59.852Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/database/sql/sqlformaterminifier.html</loc>
-    
-    <lastmod>2019-12-12T05:30:57.343Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/database/postgres/postgresTutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:30:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/database/postgres/pgaddonerowsum.html</loc>
-    
-    <lastmod>2019-12-12T05:30:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/browser/session-cookies.html</loc>
+    <loc>https://geekeast.github.io/Developer/browser/session-cookies.html</loc>
     
     <lastmod>2019-12-12T05:30:17.488Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/frontend/css/margincollapsing.html</loc>
-    
-    <lastmod>2019-12-12T05:29:10.979Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/html/htmlhead.html</loc>
-    
-    <lastmod>2019-12-12T05:28:10.994Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/csswaystoaddstyle.html</loc>
-    
-    <lastmod>2019-12-12T05:27:53.529Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/cssselector.html</loc>
-    
-    <lastmod>2019-12-12T05:27:51.760Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/cssjavascript.html</loc>
-    
-    <lastmod>2019-12-12T05:27:49.677Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/cssboxsizing.html</loc>
-    
-    <lastmod>2019-12-12T05:27:35.377Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/css-tricks.html</loc>
-    
-    <lastmod>2019-12-12T05:27:31.494Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/frontend/css/css-auto.html</loc>
-    
-    <lastmod>2019-12-12T05:27:28.931Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/env/installnodepostgreonubuntu.html</loc>
-    
-    <lastmod>2019-12-12T05:26:55.217Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/editor/vscodeTutorial.html</loc>
+    <loc>https://geekeast.github.io/Editor/vscodeTutorial.html</loc>
     
     <lastmod>2019-12-12T05:26:48.506Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/career/usaitresume.html</loc>
+    <loc>https://geekeast.github.io/Career/usaitresume.html</loc>
     
     <lastmod>2019-12-12T05:22:57.122Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/backend/nodejs/npmandyarn.html</loc>
-    
-    <lastmod>2019-12-12T05:20:58.342Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backend/express/expressTutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:20:38.199Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backend/restful/routermatch.html</loc>
-    
-    <lastmod>2019-12-12T05:20:21.686Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backend/restful/restfulProtocol.html</loc>
-    
-    <lastmod>2019-12-12T05:20:19.736Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backend/slack/slackmessage.html</loc>
-    
-    <lastmod>2019-12-12T05:20:03.836Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backend/nodejs/nodescheduler.html</loc>
-    
-    <lastmod>2019-12-12T05:19:33.069Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backend/nodejs/nodesendgmail.html</loc>
-    
-    <lastmod>2019-12-12T05:19:33.069Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/backend/nodejs/nodetutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:19:33.069Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/aws/managemutiplerolesaws.html</loc>
-    
-    <lastmod>2019-12-12T05:19:13.945Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/aws/elasticbeanstalk.html</loc>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/elasticbeanstalk.html</loc>
     
     <lastmod>2019-12-12T05:19:12.215Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/australia/pr.html</loc>
+    <loc>https://geekeast.github.io/Australia/pr.html</loc>
     
     <lastmod>2019-12-12T05:19:03.068Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/mac/closedockonmac.html</loc>
+    <loc>https://geekeast.github.io/Mac/closedockonmac.html</loc>
     
     <lastmod>2019-12-12T05:07:52.492Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/career/usaitinterview.html</loc>
+    <loc>https://geekeast.github.io/Career/usaitinterview.html</loc>
     
     <lastmod>2019-12-12T04:59:18.215Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/career/mlinterview.html</loc>
+    <loc>https://geekeast.github.io/Career/mlinterview.html</loc>
     
     <lastmod>2019-12-12T04:59:13.151Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/git/gitswitchrepo.html</loc>
-    
-    <lastmod>2019-12-12T04:56:37.369Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/git/gitlfs.html</loc>
-    
-    <lastmod>2019-12-12T04:56:28.199Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/git/gitlabcicd.html</loc>
-    
-    <lastmod>2019-12-12T04:56:13.287Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/git/git-credential.html</loc>
-    
-    <lastmod>2019-12-12T04:55:59.892Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/git/configgitssh.html</loc>
-    
-    <lastmod>2019-12-12T04:55:41.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/blog/mdtutorial.html</loc>
+    <loc>https://geekeast.github.io/Blog/mdtutorial.html</loc>
     
     <lastmod>2019-12-12T04:27:04.529Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/architecture/facebookflux.html</loc>
-    
-    <lastmod>2019-12-12T04:22:11.652Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/analytics/descriptiveanalysis.html</loc>
+    <loc>https://geekeast.github.io/Analytics/descriptiveanalysis.html</loc>
     
     <lastmod>2019-12-12T04:21:08.509Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/algorithms/learningpath.html</loc>
-    
-    <lastmod>2019-12-12T04:18:07.343Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/aws/aws-command.html</loc>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/aws-command.html</loc>
     
     <lastmod>2019-12-12T04:17:08.417Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/aws/awsdatalearningseries.html</loc>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/awsdatalearningseries.html</loc>
     
     <lastmod>2019-12-12T04:16:59.901Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/aws/codecommit.html</loc>
+    <loc>https://geekeast.github.io/Developer/cicd/aws/codecommit.html</loc>
     
     <lastmod>2019-12-12T04:16:34.480Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/browser/renderprocess.html</loc>
+    <loc>https://geekeast.github.io/Developer/browser/renderprocess.html</loc>
     
     <lastmod>2019-11-28T05:19:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/browser/chromenavigation.html</loc>
+    <loc>https://geekeast.github.io/Developer/browser/chromenavigation.html</loc>
     
     <lastmod>2019-11-28T01:01:01.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/network/httpfun.html</loc>
+    <loc>https://geekeast.github.io/Developer/network/httpfun.html</loc>
     
     <lastmod>2019-11-27T13:06:14.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/network/tcpipfun.html</loc>
+    <loc>https://geekeast.github.io/Developer/network/tcpipfun.html</loc>
     
     <lastmod>2019-11-27T06:01:45.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/network/osi7.html</loc>
+    <loc>https://geekeast.github.io/Developer/network/osi7.html</loc>
     
     <lastmod>2019-11-27T05:32:58.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/browser/chromearchitecture.html</loc>
+    <loc>https://geekeast.github.io/Developer/browser/chromearchitecture.html</loc>
     
     <lastmod>2019-11-27T04:11:42.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/parallelism/simultaneousexe.html</loc>
+    <loc>https://geekeast.github.io/Computer%20Science/parallelism/simultaneousexe.html</loc>
     
     <lastmod>2019-11-27T02:53:48.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/parallelism/programprocessthread.html</loc>
+    <loc>https://geekeast.github.io/Computer%20Science/parallelism/programprocessthread.html</loc>
     
     <lastmod>2019-11-27T02:44:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/ajax.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/ajax.html</loc>
     
     <lastmod>2019-11-26T04:04:39.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/jsprototype.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/jsprototype.html</loc>
     
     <lastmod>2019-11-25T04:38:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/jsobject.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/jsobject.html</loc>
     
     <lastmod>2019-11-25T00:01:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/jsclosure.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/jsclosure.html</loc>
     
     <lastmod>2019-11-24T23:28:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/jsscope.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/jsscope.html</loc>
     
     <lastmod>2019-11-24T11:46:28.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/jsequality.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/jsequality.html</loc>
     
     <lastmod>2019-11-24T11:37:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/jscoercion.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/jscoercion.html</loc>
     
     <lastmod>2019-11-24T11:02:17.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/js-types.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/js-types.html</loc>
     
     <lastmod>2019-11-24T07:32:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/cs/functionalprogramming.html</loc>
+    <loc>https://geekeast.github.io/Computer%20Science/functional%20programming/functionalprogramming.html</loc>
     
     <lastmod>2019-11-24T07:18:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/javascript/floatoverflow.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/javascript/floatoverflow.html</loc>
     
     <lastmod>2019-11-24T06:32:51.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/editor/pasteimagemarkdown.html</loc>
+    <loc>https://geekeast.github.io/Editor/pasteimagemarkdown.html</loc>
     
     <lastmod>2019-10-24T17:48:41.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/editor/createmarkdowntoc.html</loc>
+    <loc>https://geekeast.github.io/Editor/createmarkdowntoc.html</loc>
     
     <lastmod>2019-10-23T06:14:12.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/java/mavenentry.html</loc>
+    <loc>https://geekeast.github.io/Developer/language/java/mavenentry.html</loc>
     
     <lastmod>2019-10-21T10:59:32.000Z</lastmod>
     
