@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-12-13T00:46:56.000Z</updated>
+  <updated>2019-12-13T09:33:42.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Node Upgrade</title>
+    <link href="https://geekeast.github.io/Developer/framework/nodejs/upgradenode.html"/>
+    <id>https://geekeast.github.io/Developer/framework/nodejs/upgradenode.html</id>
+    <published>2019-12-13T09:33:42.000Z</published>
+    <updated>2019-12-13T09:33:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="install-n"><a class="markdownIt-Anchor" href="#install-n"></a> Install n</h3><p><code>sudo npm install n -g</code></p><h3 id="install-node-latest-stable-version"><a class="markdownIt-Anchor" href="#install-node-latest-stable-version"></a> Install Node latest stable version</h3><p><code>sudo n stable</code></p><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;install-n&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#install-n&quot;&gt;&lt;/a&gt; Install n&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;sudo npm install n -g&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;install-node-latest-stable-version&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#install-node-latest-stable-version&quot;&gt;&lt;/a&gt; Install Node latest stable version&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;sudo n stable&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
+    
+      <category term="Framework" scheme="https://geekeast.github.io/categories/Developer/Framework/"/>
+    
+      <category term="Node" scheme="https://geekeast.github.io/categories/Developer/Framework/Node/"/>
+    
+    
+      <category term="Node.js" scheme="https://geekeast.github.io/tags/Node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript Module History</title>
@@ -844,35 +873,6 @@
     
       <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Paste Image Enhancer in VS-code</title>
-    <link href="https://geekeast.github.io/Document/pasteimagemarkdown.html"/>
-    <id>https://geekeast.github.io/Document/pasteimagemarkdown.html</id>
-    <published>2019-10-24T17:48:41.000Z</published>
-    <updated>2019-10-24T17:48:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="plugin"><a class="markdownIt-Anchor" href="#plugin"></a> Plugin</h3><ul><li>Paste Image</li></ul><h3 id="settings"><a class="markdownIt-Anchor" href="#settings"></a> Settings</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"pasteImage.path": "$&#123;projectRoot&#125;/img",</span><br><span class="line">"pasteImage.basePath": "$&#123;projectRoot&#125;",</span><br><span class="line">"pasteImage.insertPattern": "&lt;div style=\"text-align:center; margin:auto\"&gt;&lt;img src=\"$&#123;imageFilePath&#125;\"&gt;&lt;/div&gt;",</span><br></pre></td></tr></table></figure><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;plugin&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#plugin&quot;&gt;&lt;/a&gt; Plugin&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Paste Image&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;settings&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#settings&quot;&gt;&lt;/a&gt; Settings&lt;/h3&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&quot;pasteImage.path&quot;: &quot;$&amp;#123;projectRoot&amp;#125;/img&quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&quot;pasteImage.basePath&quot;: &quot;$&amp;#123;projectRoot&amp;#125;&quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&quot;pasteImage.insertPattern&quot;: &quot;&amp;lt;div style=\&quot;text-align:center; margin:auto\&quot;&amp;gt;&amp;lt;img src=\&quot;$&amp;#123;imageFilePath&amp;#125;\&quot;&amp;gt;&amp;lt;/div&amp;gt;&quot;,&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Document" scheme="https://geekeast.github.io/categories/Document/"/>
-    
-    
-      <category term="Markdown" scheme="https://geekeast.github.io/tags/Markdown/"/>
-    
-      <category term="vscode" scheme="https://geekeast.github.io/tags/vscode/"/>
     
   </entry>
   
