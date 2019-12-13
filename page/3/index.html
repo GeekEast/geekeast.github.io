@@ -370,6 +370,221 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/language/javascript/jsprototype.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/Developer/language/javascript/jsprototype.html" class="post-title-link" itemprop="url">Prototype in Javascript</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-25 15:08:43" itemprop="dateCreated datePublished" datetime="2019-11-25T15:08:43+10:30">2019-11-25</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/" itemprop="url" rel="index"><span itemprop="name">Developer</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/Language/" itemprop="url" rel="index"><span itemprop="name">Language</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/Language/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">3.7k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">3 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="prototype"><a class="markdownIt-Anchor" href="#prototype"></a> Prototype</h3>
+<blockquote>
+<p>The <strong>prototype</strong> system follows the <strong>delegation</strong> pattern rather than the traditional <code>class</code> pattern</p>
+</blockquote>
+<h4 id="constructor-call"><a class="markdownIt-Anchor" href="#constructor-call"></a> Constructor Call</h4>
+<ul>
+<li>Objects are created by <code>contructor</code> call (using <code>new</code>)</li>
+<li>Constructor is used to producing instances that link properties and methods define in the constructor and link to prototype.</li>
+<li>2 Kinds of code reuse:
+<ul>
+<li><code>Non-static</code>: One happens in the <code>constructor</code>: copy <code>values</code></li>
+<li><code>Static</code>: Another happens in the <code>prototype chain</code>: copy <code>references</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="old-school"><a class="markdownIt-Anchor" href="#old-school"></a> Old School</h4>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Workshop</span>(<span class="params">teacher</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.teacher = teacher;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Workshop.prototype.ask = <span class="function"><span class="keyword">function</span>(<span class="params">question</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.teacher, question);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> deepJS = <span class="keyword">new</span> Workshop(<span class="string">"Kyle"</span>);</span><br><span class="line"><span class="keyword">var</span> reactJS = <span class="keyword">new</span> Workshop(<span class="string">"Suzy"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// deepJS doesn't have the ask method, how can he call it?</span></span><br><span class="line"><span class="comment">// by default, if there is no property existing in current object, it will go up along the prototype chain</span></span><br><span class="line">deepJS.ask(<span class="string">"Deep JS"</span>);</span><br><span class="line">reactJS.ask(<span class="string">"React JS"</span>);</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/Developer/language/javascript/jsprototype.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/language/javascript/jsobject.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1442,235 +1657,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/language/javascript/js-types.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/Developer/language/javascript/js-types.html" class="post-title-link" itemprop="url">Types in Javascript</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-11-24 18:02:16" itemprop="dateCreated datePublished" datetime="2019-11-24T18:02:16+10:30">2019-11-24</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/" itemprop="url" rel="index"><span itemprop="name">Developer</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/Language/" itemprop="url" rel="index"><span itemprop="name">Language</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/Language/Javascript/" itemprop="url" rel="index"><span itemprop="name">Javascript</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">3.3k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">2 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="types"><a class="markdownIt-Anchor" href="#types"></a> Types</h3>
-<blockquote>
-<p>In Javascript, statement “every thing is a an object” is <strong>wrong</strong>. Primitive types are not objects. But some of them can <strong>behave</strong> like objects.</p>
-</blockquote>
-<h4 id><a class="markdownIt-Anchor" href="#"></a> <a href="https://www.ecma-international.org/ecma-262/9.0/#sec-primitive-value" target="_blank" rel="noopener"><strong>Primitive Types</strong></a></h4>
-<blockquote>
-<p>In Javascript, <code>variable</code> doesn’t have types, <code>value</code> have.</p>
-</blockquote>
-<ul>
-<li><code>Undefined</code>: <strong>created</strong> but has <strong>no</strong> value; <strong>default</strong> value</li>
-<li><code>Null</code>: represents the intentional absence of any <strong>object</strong> value</li>
-<li><code>Boolean</code>: <code>true</code> or <code>false</code> (not <code>1</code> and <code>0</code>); can behave like an object: <code>Boolean</code></li>
-<li><code>Number</code>: <code>NaN</code>, <code>-0</code>, <code>0</code>，<code>-Infinite</code>, <code>Infinite</code>and others; can behave like an object: <code>Number</code></li>
-<li><code>String</code>: <code>''</code> and other; can behave like an object: <code>String</code></li>
-<li><code>Symbol</code>: <strong>unique</strong> and <strong>non-string</strong></li>
-</ul>
-<h4 id="-2"><a class="markdownIt-Anchor" href="#-2"></a> <a href="https://www.ecma-international.org/ecma-262/9.0/#sec-terms-and-definitions-object" target="_blank" rel="noopener"><strong>Object</strong></a></h4>
-<blockquote>
-<p>a collection of properties; a sinle prototype</p>
-</blockquote>
-<ul>
-<li><code>null</code></li>
-<li><code>array</code></li>
-<li><code>function</code></li>
-<li>…</li>
-</ul>
-<h4 id="quick-example"><a class="markdownIt-Anchor" href="#quick-example"></a> Quick Example</h4>
-<ul>
-<li><strong>Normal Parts</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> v; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// undefined;</span></span><br><span class="line"></span><br><span class="line">v = <span class="string">'1'</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// string</span></span><br><span class="line"></span><br><span class="line">v = <span class="number">2</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">//number</span></span><br><span class="line"></span><br><span class="line">v = <span class="literal">true</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// boolean</span></span><br><span class="line"></span><br><span class="line">v = &#123;&#125;; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// object</span></span><br><span class="line"></span><br><span class="line">v = <span class="built_in">Symbol</span>(); <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// symbol</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/Developer/language/javascript/js-types.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1719,7 +1705,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">119</span>
+                    <span class="site-state-item-count">120</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
