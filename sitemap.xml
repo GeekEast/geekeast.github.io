@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/Document/vscodeTutorial.html</loc>
+    
+    <lastmod>2019-12-13T05:39:50.375Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/Developer/language/javascript/jsmodulesys.html</loc>
     
     <lastmod>2019-12-13T00:46:56.000Z</lastmod>
@@ -632,13 +639,6 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/Editor/vscodeTutorial.html</loc>
-    
-    <lastmod>2019-12-12T05:26:48.506Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://geekeast.github.io/Career/usaitresume.html</loc>
     
     <lastmod>2019-12-12T05:22:57.122Z</lastmod>
@@ -814,14 +814,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/Editor/pasteimagemarkdown.html</loc>
+    <loc>https://geekeast.github.io/Document/pasteimagemarkdown.html</loc>
     
     <lastmod>2019-10-24T17:48:41.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/Editor/createmarkdowntoc.html</loc>
+    <loc>https://geekeast.github.io/Document/createmarkdowntoc.html</loc>
     
     <lastmod>2019-10-23T06:14:12.000Z</lastmod>
     
@@ -835,14 +835,14 @@
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/project/index.html</loc>
+    <loc>https://geekeast.github.io/tags/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://geekeast.github.io/tags/index.html</loc>
+    <loc>https://geekeast.github.io/project/index.html</loc>
     
     <lastmod>2019-03-14T07:51:56.000Z</lastmod>
     
