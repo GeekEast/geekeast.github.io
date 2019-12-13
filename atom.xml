@@ -101,9 +101,9 @@
       <category term="Browser" scheme="https://geekeast.github.io/categories/Developer/Browser/"/>
     
     
-      <category term="Render" scheme="https://geekeast.github.io/tags/Render/"/>
-    
       <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
+    
+      <category term="Render" scheme="https://geekeast.github.io/tags/Render/"/>
     
   </entry>
   
@@ -210,9 +210,9 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Developer/Network/"/>
     
     
-      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
-    
       <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
+    
+      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
     
   </entry>
   
