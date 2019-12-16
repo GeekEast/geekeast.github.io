@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/Developer/database/postgres/postgresTutorial.html</loc>
+    
+    <lastmod>2019-12-16T13:40:23.967Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/Mac/foldertreemac.html</loc>
     
     <lastmod>2019-12-13T23:45:38.000Z</lastmod>
@@ -404,13 +411,6 @@
     <loc>https://geekeast.github.io/Developer/database/postgres/pgpartion.html</loc>
     
     <lastmod>2019-12-12T06:27:59.156Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/database/postgres/postgresTutorial.html</loc>
-    
-    <lastmod>2019-12-12T06:27:58.667Z</lastmod>
     
   </url>
   
