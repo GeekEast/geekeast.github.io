@@ -17,7 +17,7 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>modulesysjs</title>
+    <title>Module Pattern in Javascript</title>
     <link href="https://geekeast.github.io/Developer/language/javascript/modulesysjs.html"/>
     <id>https://geekeast.github.io/Developer/language/javascript/modulesysjs.html</id>
     <published>2019-12-17T23:28:48.000Z</published>
@@ -191,9 +191,9 @@
       <category term="Browser" scheme="https://geekeast.github.io/categories/Developer/Browser/"/>
     
     
-      <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
-    
       <category term="Render" scheme="https://geekeast.github.io/tags/Render/"/>
+    
+      <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
     
   </entry>
   
@@ -300,9 +300,9 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Developer/Network/"/>
     
     
-      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
-    
       <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
+    
+      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
     
   </entry>
   
