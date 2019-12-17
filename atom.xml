@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-12-13T23:45:38.000Z</updated>
+  <updated>2019-12-17T23:28:48.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>modulesysjs</title>
+    <link href="https://geekeast.github.io/Developer/language/javascript/modulesysjs.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/modulesysjs.html</id>
+    <published>2019-12-17T23:28:48.000Z</published>
+    <updated>2019-12-17T23:28:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
+    
+      <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
+    
+    
+      <category term="Module" scheme="https://geekeast.github.io/tags/Module/"/>
+    
+  </entry>
   
   <entry>
     <title>Generate Folder Tree in Mac</title>
@@ -843,41 +874,6 @@
     
     
       <category term="Types" scheme="https://geekeast.github.io/tags/Types/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Functional Programming</title>
-    <link href="https://geekeast.github.io/Computer%20Science/functional%20programming/functionalprogramming.html"/>
-    <id>https://geekeast.github.io/Computer Science/functional programming/functionalprogramming.html</id>
-    <published>2019-11-24T07:18:43.000Z</published>
-    <updated>2019-11-24T07:18:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="functional-programming"><a class="markdownIt-Anchor" href="#functional-programming"></a> Functional Programming</h3><blockquote><p>extract side effect rather than terminate it</p></blockquote><h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3><ul><li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2phdmFzY3JpcHQtc2NlbmUvbWFzdGVyLXRoZS1qYXZhc2NyaXB0LWludGVydmlldy13aGF0LWlzLWZ1bmN0aW9uYWwtcHJvZ3JhbW1pbmctN2YyMThjNjhiM2Ew" title="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0">Functional Programming<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2phdmFzY3JpcHQtc2NlbmUvbWFzdGVyLXRoZS1qYXZhc2NyaXB0LWludGVydmlldy13aGF0LWlzLWEtcHVyZS1mdW5jdGlvbi1kMWMwNzZiZWM5NzY=" title="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976">Pure Function<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9mcm9udGVuZG1hc3RlcnMuY29tL2NvdXJzZXMvZnVuY3Rpb25hbC1qcy1saXRlL3NpZGUtZWZmZWN0cy8=" title="https://frontendmasters.com/courses/functional-js-lite/side-effects/">Side Effect<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cDovL2xlYXJueW91YWhhc2tlbGwuY29tL2NoYXB0ZXJz" title="http://learnyouahaskell.com/chapters">Learn you a haskell for great good<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cDovL3d3dy5jcy5jbXUuZWR1L34xNTE1MC9pbmRleC5odG1s" title="http://www.cs.cmu.edu/~15150/index.html">FP CMU Course<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cDovL3d3dy5hcWVlLm5ldC9wb3N0L3doeS1oYXNrZWxsLWlzLXdvcnRoLWxlYXJuaW5nLmh0bWw=" title="http://www.aqee.net/post/why-haskell-is-worth-learning.html">Haskell<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9lbGl4aXItbGFuZy5vcmcv" title="https://elixir-lang.org/">Elixir<i class="fa fa-external-link"></i></span></li></ul><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;functional-programming&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#functional-programming&quot;&gt;&lt;/a&gt; Functional Programming&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;extract side effect rather than terminate it&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;reference&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#reference&quot;&gt;&lt;/a&gt; Reference&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Functional Programming&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Pure Function&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://frontendmasters.com/courses/functional-js-lite/side-effects/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Side Effect&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://learnyouahaskell.com/chapters&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Learn you a haskell for great good&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.cs.cmu.edu/~15150/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FP CMU Course&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.aqee.net/post/why-haskell-is-worth-learning.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Haskell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://elixir-lang.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Elixir&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Computer Science" scheme="https://geekeast.github.io/categories/Computer-Science/"/>
-    
-      <category term="Functional Programming" scheme="https://geekeast.github.io/categories/Computer-Science/Functional-Programming/"/>
-    
     
   </entry>
   

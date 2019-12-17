@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/modulesysjs.html</loc>
+    
+    <lastmod>2019-12-17T23:28:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/Developer/database/postgres/postgresTutorial.html</loc>
     
-    <lastmod>2019-12-16T13:40:23.967Z</lastmod>
+    <lastmod>2019-12-16T13:47:48.482Z</lastmod>
     
   </url>
   
