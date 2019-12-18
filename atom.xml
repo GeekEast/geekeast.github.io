@@ -23,7 +23,7 @@
     <published>2019-12-18T04:17:54.000Z</published>
     <updated>2019-12-18T04:17:54.000Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="shim"><a class="markdownIt-Anchor" href="#shim"></a> Shim</h4><ul><li>组合多个API，哪个能用就用哪个</li></ul><h4 id="polyfill"><a class="markdownIt-Anchor" href="#polyfill"></a> Polyfill</h4><ul><li>如果不支持该功能，就加载一个新的API</li><li>如果已经支持该功能，就用原生的API</li></ul><h4 id="monkey-patching"><a class="markdownIt-Anchor" href="#monkey-patching"></a> Monkey Patching</h4><ul><li>不等第三库的修补，强制覆盖错误方法</li></ul><a id="more"></a><h4 id="对比"><a class="markdownIt-Anchor" href="#对比"></a> 对比</h4><ul><li>共同: <strong>临时</strong>修改已有的库或者API; 都是为了一项功能能够<strong>正常运作</strong>;</li><li>不同:<ul><li><code>shim</code>: 宁烂<strong>无缺</strong>，无差别选</li><li><code>polyfill</code>: <strong>原生优先</strong>，新来候补</li><li><code>Monkey Patching</code>: 已有bug, <strong>更正错误</strong></li></ul></li></ul><hr>]]></content>
+    <content type="html"><![CDATA[<h4 id="shim"><a class="markdownIt-Anchor" href="#shim"></a> Shim</h4><ul><li>组合多个API，哪个能用就用哪个</li></ul><h4 id="polyfill"><a class="markdownIt-Anchor" href="#polyfill"></a> Polyfill</h4><ul><li>如果不支持该功能，就加载一个新的API</li><li>如果已经支持该功能，就用原生的API</li></ul><h4 id="monkey-patching"><a class="markdownIt-Anchor" href="#monkey-patching"></a> Monkey Patching</h4><ul><li>不等第三库的修补，强制覆盖错误方法</li></ul><a id="more"></a><h4 id="对比"><a class="markdownIt-Anchor" href="#对比"></a> 对比</h4><ul><li>共同: <strong>临时</strong>修改已有的库或者API; 都是为了一项功能能够<strong>正常运作</strong>;</li><li>不同:<ul><li><code>shim</code>: 宁烂<strong>无缺</strong>，无差别选</li><li><code>polyfill</code>: <strong>原生优先</strong>，新来候补</li><li><code>Monkey Patching</code>: 已有bug, <strong>更正错误</strong></li></ul></li></ul><h4 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h4><ul><li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Zhc2FudGhrL2pzLWJpdHMvYmxvYi9tYXN0ZXIvanMvc2hpbS1wb2x5ZmlsbC1tb25rZXlwYXRjaC5qcw==" title="https://github.com/vasanthk/js-bits/blob/master/js/shim-polyfill-monkeypatch.js">shim-polyfill-monkeypatch.js<i class="fa fa-external-link"></i></span></li></ul><hr>]]></content>
     
     <summary type="html">
     
@@ -196,9 +196,9 @@
       <category term="Browser" scheme="https://geekeast.github.io/categories/Developer/Browser/"/>
     
     
-      <category term="Render" scheme="https://geekeast.github.io/tags/Render/"/>
-    
       <category term="Chrome" scheme="https://geekeast.github.io/tags/Chrome/"/>
+    
+      <category term="Render" scheme="https://geekeast.github.io/tags/Render/"/>
     
   </entry>
   
