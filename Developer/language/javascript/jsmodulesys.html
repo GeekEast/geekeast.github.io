@@ -481,7 +481,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">3.2k</span>
+                <span title="Symbols count in article">3.3k</span>
               
 
               
@@ -553,47 +553,92 @@
 <h4 id="解决方案3-xxxxjs"><a class="markdownIt-Anchor" href="#解决方案3-xxxxjs"></a> 解决方案3: XXXXJS</h4>
 <h5 id="commonjs"><a class="markdownIt-Anchor" href="#commonjs"></a> CommonJS</h5>
 <ul>
+<li>运行在<strong>服务器端</strong></li>
 <li><strong>同步</strong>加载</li>
 <li><strong>运行时</strong>加载:</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// lib/greeting.js</span></span><br><span class="line"><span class="keyword">const</span> helloInLang = &#123;</span><br><span class="line">    en: <span class="string">'Hello world!'</span>,</span><br><span class="line">    es: <span class="string">'¡Hola mundo!'</span>,</span><br><span class="line">    ru: <span class="string">'Привет мир!'</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> getHello = <span class="function"><span class="keyword">function</span> (<span class="params">lang</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> helloInLang[lang];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">exports.getHello = getHello;</span><br><span class="line">exports.sayHello = <span class="function"><span class="keyword">function</span> (<span class="params">lang</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(getHello(lang))</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// hello.js</span></span><br><span class="line"><span class="keyword">const</span> sayHello = <span class="built_in">require</span>(<span class="string">'./lib/greeting'</span>).sayHello;</span><br><span class="line"></span><br><span class="line">sayHello(<span class="string">'ru'</span>);</span><br></pre></td></tr></table></figure>
 <ul>
-<li>每个文件就是一个模块，有自己的<strong>作用域</strong>，内置一个<code>module</code>对象</li>
+<li>每个文件就是一个模块，有自己的<strong>作用域</strong>(函数作用域)，内置一个<code>module</code>对象</li>
+<li>require实际上会<strong>编译</strong>和<strong>运行</strong><code>js</code>文件中的<strong>所有的</strong>内容</li>
 <li>模块可以多次加载，但是只会在第一次<strong>加载时运行一次</strong>, 然后运行结果就被<strong>缓存</strong>了，以后再加载，就直接读取缓存结果。要想让模块再次运行，必须<strong>清除缓存</strong>。</li>
 <li>模块加载的顺序，按照其在代码中出现的顺序。</li>
+<li>exports负责开发<code>数据接口</code>，模块文件中的<code>this</code>默认指向了<strong>module.exports</strong></li>
 <li><code>复制值</code>而不是<code>复制引用</code></li>
 </ul>
 <h5 id="requirejs"><a class="markdownIt-Anchor" href="#requirejs"></a> RequireJS</h5>
 <ul>
+<li>用在<strong>浏览器端</strong></li>
 <li><strong>运行时</strong>加载</li>
 <li><strong>异步</strong>加载</li>
-<li>基于AMD</li>
+<li>基于<code>AMD</code></li>
 <li>依赖<strong>前置</strong></li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AMD</span></span><br><span class="line">define(</span><br><span class="line">    [<span class="string">'./a'</span>, <span class="string">'./b'</span>], <span class="comment">// &lt;- 前置声明，也就是在主体运行前就已经加载并运行了模块a和模块b</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// more code ..</span></span><br><span class="line">    &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <h5 id="seajs"><a class="markdownIt-Anchor" href="#seajs"></a> SeaJS</h5>
 <ul>
+<li>用在<strong>浏览器端</strong></li>
 <li><strong>运行时</strong>加载</li>
 <li><strong>异步</strong>记载</li>
-<li>基于CMD</li>
+<li>基于<code>CMD</code></li>
 <li><strong>即时</strong>加载</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// CMD</span></span><br><span class="line">define(<span class="function"><span class="keyword">function</span> (<span class="params">require</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="built_in">require</span>(<span class="string">'./a'</span>); <span class="comment">// &lt;- 运行到此处才开始加载并运行模块a</span></span><br><span class="line">    <span class="keyword">var</span> b = <span class="built_in">require</span>(<span class="string">'./b'</span>); <span class="comment">// &lt;- 运行到此处才开始加载并运行模块b</span></span><br><span class="line">    <span class="comment">// more code ..</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <h4 id="解决方案4-module-pattern"><a class="markdownIt-Anchor" href="#解决方案4-module-pattern"></a> 解决方案4: Module Pattern</h4>
 <ul>
-<li>编译时加载</li>
-<li>通用模块解决方案</li>
+<li><strong>编译</strong>时加载</li>
+<li>是<code>浏览器端</code>和<code>服务器端</code>的<strong>通用</strong>解决方案</li>
 <li>加载: <code>import</code>,<strong>只能写在顶层</strong></li>
 <li>导出: <code>export</code></li>
 <li><code>复制引用</code>而非<code>复制值</code></li>
 </ul>
-<h4 id="commonjs-vs-es-module"><a class="markdownIt-Anchor" href="#commonjs-vs-es-module"></a> CommonJS vs ES Module</h4>
+<h4 id="commonjs-vs-amdcmd-vs-es-module"><a class="markdownIt-Anchor" href="#commonjs-vs-amdcmd-vs-es-module"></a> CommonJS vs AMD(CMD) vs ES Module</h4>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th>CommonJS</th>
+<th>AMD(CMD)</th>
+<th>ES Module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>加载时机</strong></td>
+<td><code>运行</code>时加载</td>
+<td><code>运行</code>时加载</td>
+<td><code>编译时</code>加载</td>
+</tr>
+<tr>
+<td><strong>加载内容</strong></td>
+<td><code>对象</code></td>
+<td><code>对象</code></td>
+<td><code>接口</code></td>
+</tr>
+<tr>
+<td><strong>加载程度</strong></td>
+<td><code>全部载入</code></td>
+<td><code>全部载入</code></td>
+<td><code>部分</code>载入</td>
+</tr>
+<tr>
+<td><strong>拷贝机制</strong></td>
+<td>拷贝<code>值</code></td>
+<td>拷贝<code>值</code></td>
+<td>拷贝<code>引用</code></td>
+</tr>
+<tr>
+<td><strong>this指向</strong></td>
+<td><code>当前模块的exports对象</code></td>
+<td><code>当前模块的exports对象</code></td>
+<td><code>undefined</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="注意点"><a class="markdownIt-Anchor" href="#注意点"></a> 注意点:</h4>
 <ul>
-<li>加载时机：CommonJS 是运行时加载（动态加载），ES Module 是编译时加载（静态加载）</li>
-<li>加载模块：CommonJS 模块就是对象，加载的是该对象，ES Module 模块不是对象，加载的不是对象，是接口</li>
-<li>加载结果：CommonJS 加载的是整个模块，即将所有的接口全部加载进来，ES Module 可以单独加载其中的某个接口（方法）</li>
-<li>输出：CommonJS 输出值的拷贝，ES Module 输出值的引用</li>
-<li>this: CommonJS 指向当前模块，ES Module 指向 undefined</li>
+<li>ES Module 加载的不是对象，因此无法访问加载的模块本身</li>
+<li></li>
 </ul>
 <h4 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h4>
 <ul>
@@ -608,18 +653,6 @@
 
     
       
-
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/Developer/language/javascript/modulesysjs.html" rel="bookmark">Module Pattern in Javascript</a></div>
-      
-    </li>
-  
-  </ul>
 
 
     
@@ -757,7 +790,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">121</span>
+                    <span class="site-state-item-count">120</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1359,7 +1392,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#javascript-模块系统"><span class="nav-number">1.</span> <span class="nav-text"> Javascript 模块系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#背景"><span class="nav-number">1.1.</span> <span class="nav-text"> 背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案1-命名空间模式"><span class="nav-number">1.2.</span> <span class="nav-text"> 解决方案1: 命名空间模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案2-iife闭包"><span class="nav-number">1.3.</span> <span class="nav-text"> 解决方案2: IIFE+闭包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案3-xxxxjs"><span class="nav-number">1.4.</span> <span class="nav-text"> 解决方案3: XXXXJS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案4-module-pattern"><span class="nav-number">1.5.</span> <span class="nav-text"> 解决方案4: Module Pattern</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#commonjs-vs-es-module"><span class="nav-number">1.6.</span> <span class="nav-text"> CommonJS vs ES Module</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#reference"><span class="nav-number">1.7.</span> <span class="nav-text"> Reference</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#javascript-模块系统"><span class="nav-number">1.</span> <span class="nav-text"> Javascript 模块系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#背景"><span class="nav-number">1.1.</span> <span class="nav-text"> 背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案1-命名空间模式"><span class="nav-number">1.2.</span> <span class="nav-text"> 解决方案1: 命名空间模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案2-iife闭包"><span class="nav-number">1.3.</span> <span class="nav-text"> 解决方案2: IIFE+闭包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案3-xxxxjs"><span class="nav-number">1.4.</span> <span class="nav-text"> 解决方案3: XXXXJS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案4-module-pattern"><span class="nav-number">1.5.</span> <span class="nav-text"> 解决方案4: Module Pattern</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#commonjs-vs-amdcmd-vs-es-module"><span class="nav-number">1.6.</span> <span class="nav-text"> CommonJS vs AMD(CMD) vs ES Module</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意点"><span class="nav-number">1.7.</span> <span class="nav-text"> 注意点:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#reference"><span class="nav-number">1.8.</span> <span class="nav-text"> Reference</span></a></li></ol></li></ol></div>
             
 
           </div>
