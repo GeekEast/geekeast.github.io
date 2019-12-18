@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/Developer/language/javascript/shimpollfill.html</loc>
+    
+    <lastmod>2019-12-18T04:17:54.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/Developer/database/postgres/postgresTutorial.html</loc>
     
     <lastmod>2019-12-16T13:47:48.482Z</lastmod>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-12-13T23:45:38.000Z</updated>
+  <updated>2019-12-18T04:17:54.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Shim &amp; Polyfill &amp; Monkey Patching</title>
+    <link href="https://geekeast.github.io/Developer/language/javascript/shimpollfill.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/shimpollfill.html</id>
+    <published>2019-12-18T04:17:54.000Z</published>
+    <updated>2019-12-18T04:17:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="shim"><a class="markdownIt-Anchor" href="#shim"></a> Shim</h4><ul><li>组合多个API，哪个能用就用哪个</li></ul><h4 id="polyfill"><a class="markdownIt-Anchor" href="#polyfill"></a> Polyfill</h4><ul><li>如果不支持该功能，就加载一个新的API</li><li>如果已经支持该功能，就用原生的API</li></ul><h4 id="monkey-patching"><a class="markdownIt-Anchor" href="#monkey-patching"></a> Monkey Patching</h4><p>不等第三库的修补，强制覆盖错误方法</p><h4 id="对比"><a class="markdownIt-Anchor" href="#对比"></a> 对比</h4><ul><li>共同: <strong>临时</strong>修改已有的库或者API; 都是为了一项功能能够<strong>正常运作</strong>;</li><li>不同:<ul><li><code>shim</code>: 宁烂<strong>无缺</strong>，无差别选</li><li><code>polyfill</code>: <strong>原生优先</strong>，新来候补</li><li><code>Monkey Patching</code>: 已有bug, <strong>更正错误</strong></li></ul></li></ul><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;shim&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#shim&quot;&gt;&lt;/a&gt; Shim&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;组合多个API，哪个能用就用哪个&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;polyfill&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#polyfill&quot;&gt;&lt;/a&gt; Polyfill&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;如果不支持该功能，就加载一个新的API&lt;/li&gt;
+&lt;li&gt;如果已经支持该功能，就用原生的API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;monkey-patching&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#monkey-patching&quot;&gt;&lt;/a&gt; Monkey Patching&lt;/h4&gt;
+&lt;p&gt;不等第三库的修补，强制覆盖错误方法&lt;/p&gt;
+&lt;h4 id=&quot;对比&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#对比&quot;&gt;&lt;/a&gt; 对比&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;共同: &lt;strong&gt;临时&lt;/strong&gt;修改已有的库或者API; 都是为了一项功能能够&lt;strong&gt;正常运作&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;不同:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;shim&lt;/code&gt;: 宁烂&lt;strong&gt;无缺&lt;/strong&gt;，无差别选&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;polyfill&lt;/code&gt;: &lt;strong&gt;原生优先&lt;/strong&gt;，新来候补&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Monkey Patching&lt;/code&gt;: 已有bug, &lt;strong&gt;更正错误&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
+    
+      <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
+    
+      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Generate Folder Tree in Mac</title>
@@ -269,9 +314,9 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Developer/Network/"/>
     
     
-      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
-    
       <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
+    
+      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
     
   </entry>
   
@@ -843,41 +888,6 @@
     
     
       <category term="Types" scheme="https://geekeast.github.io/tags/Types/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Functional Programming</title>
-    <link href="https://geekeast.github.io/Computer%20Science/functional%20programming/functionalprogramming.html"/>
-    <id>https://geekeast.github.io/Computer Science/functional programming/functionalprogramming.html</id>
-    <published>2019-11-24T07:18:43.000Z</published>
-    <updated>2019-11-24T07:18:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="functional-programming"><a class="markdownIt-Anchor" href="#functional-programming"></a> Functional Programming</h3><blockquote><p>extract side effect rather than terminate it</p></blockquote><h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3><ul><li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2phdmFzY3JpcHQtc2NlbmUvbWFzdGVyLXRoZS1qYXZhc2NyaXB0LWludGVydmlldy13aGF0LWlzLWZ1bmN0aW9uYWwtcHJvZ3JhbW1pbmctN2YyMThjNjhiM2Ew" title="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0">Functional Programming<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9tZWRpdW0uY29tL2phdmFzY3JpcHQtc2NlbmUvbWFzdGVyLXRoZS1qYXZhc2NyaXB0LWludGVydmlldy13aGF0LWlzLWEtcHVyZS1mdW5jdGlvbi1kMWMwNzZiZWM5NzY=" title="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976">Pure Function<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9mcm9udGVuZG1hc3RlcnMuY29tL2NvdXJzZXMvZnVuY3Rpb25hbC1qcy1saXRlL3NpZGUtZWZmZWN0cy8=" title="https://frontendmasters.com/courses/functional-js-lite/side-effects/">Side Effect<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cDovL2xlYXJueW91YWhhc2tlbGwuY29tL2NoYXB0ZXJz" title="http://learnyouahaskell.com/chapters">Learn you a haskell for great good<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cDovL3d3dy5jcy5jbXUuZWR1L34xNTE1MC9pbmRleC5odG1s" title="http://www.cs.cmu.edu/~15150/index.html">FP CMU Course<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cDovL3d3dy5hcWVlLm5ldC9wb3N0L3doeS1oYXNrZWxsLWlzLXdvcnRoLWxlYXJuaW5nLmh0bWw=" title="http://www.aqee.net/post/why-haskell-is-worth-learning.html">Haskell<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9lbGl4aXItbGFuZy5vcmcv" title="https://elixir-lang.org/">Elixir<i class="fa fa-external-link"></i></span></li></ul><a id="more"></a><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;functional-programming&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#functional-programming&quot;&gt;&lt;/a&gt; Functional Programming&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;extract side effect rather than terminate it&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;reference&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#reference&quot;&gt;&lt;/a&gt; Reference&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Functional Programming&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Pure Function&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://frontendmasters.com/courses/functional-js-lite/side-effects/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Side Effect&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://learnyouahaskell.com/chapters&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Learn you a haskell for great good&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.cs.cmu.edu/~15150/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FP CMU Course&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.aqee.net/post/why-haskell-is-worth-learning.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Haskell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://elixir-lang.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Elixir&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Computer Science" scheme="https://geekeast.github.io/categories/Computer-Science/"/>
-    
-      <category term="Functional Programming" scheme="https://geekeast.github.io/categories/Computer-Science/Functional-Programming/"/>
-    
     
   </entry>
   
