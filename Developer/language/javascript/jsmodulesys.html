@@ -481,7 +481,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">3.3k</span>
+                <span title="Symbols count in article">3.4k</span>
               
 
               
@@ -562,7 +562,8 @@
 <li>每个文件就是一个模块，有自己的<strong>作用域</strong>(函数作用域)，内置一个<code>module</code>对象</li>
 <li>require实际上会<strong>编译</strong>和<strong>运行</strong><code>js</code>文件中的<strong>所有的</strong>内容</li>
 <li>模块可以多次加载，但是只会在第一次<strong>加载时运行一次</strong>, 然后运行结果就被<strong>缓存</strong>了，以后再加载，就直接读取缓存结果。要想让模块再次运行，必须<strong>清除缓存</strong>。</li>
-<li>模块加载的顺序，按照其在代码中出现的顺序。</li>
+<li>模块加载的顺序，按照其在代码中出现的顺序, 导出的对象为<code>module.exports</code></li>
+<li>exports只是<code>module.exports</code>的引用，<code>exports=xxx</code>不会对<code>module.exports</code>有任何影响, 应该使用<code>exports.xxx=xxx</code></li>
 <li>exports负责开发<code>数据接口</code>，模块文件中的<code>this</code>默认指向了<strong>module.exports</strong></li>
 <li><code>复制值</code>而不是<code>复制引用</code></li>
 </ul>
