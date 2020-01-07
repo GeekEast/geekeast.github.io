@@ -370,6 +370,239 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/browser/chromenavigation.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/Developer/browser/chromenavigation.html" class="post-title-link" itemprop="url">Chrome Navigation</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-28 11:31:01" itemprop="dateCreated datePublished" datetime="2019-11-28T11:31:01+10:30">2019-11-28</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/" itemprop="url" rel="index"><span itemprop="name">Developer</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/Browser/" itemprop="url" rel="index"><span itemprop="name">Browser</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">777</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="chrome导航"><a class="markdownIt-Anchor" href="#chrome导航"></a> Chrome导航</h3>
+<h4 id="导航流程"><a class="markdownIt-Anchor" href="#导航流程"></a> 导航流程</h4>
+<blockquote>
+<p>用户发出 URL 请求到页面开始解析的这个过程，就叫做导航</p>
+</blockquote>
+<ul>
+<li><strong>用户输入</strong>: 用户在浏览器进程里输入<code>请求信息</code>, <code>UI进程</code>将会处理<code>用户输入</code></li>
+<li><strong>导航开始</strong>: 发起<code>URL请求</code>,中间伴随DNS查找, TLS链接等过程，(可能有<strong>重定向</strong>发生); <strong>Spinner开始转转转</strong></li>
+<li><strong>网络进程</strong>: 获取<code>响应</code>信息, <strong>网络进程</strong>将会读取<code>响应头</code>, 确认<code>请求类型</code>; 同时伴随着安全检查(CORB)
+<ul>
+<li>content-type: html -&gt; <strong>继续导航</strong></li>
+<li>content-type: application/octet-stream -&gt; <strong>下载文件，导航终止</strong></li>
+</ul>
+</li>
+<li><strong>渲染准备</strong>: 一般情况下，<code>浏览器进程</code>这时会开始分配<code>渲染进程</code>, 优化的方法是在浏览器开始发起HTTP请求的时候(即<code>导航开始</code>的时候)，渲染进程的分配也同步开始;
+<ul>
+<li><code>一般</code>每个页面对应一个渲染流程</li>
+<li><strong>同一站点</strong>(根域名、协议相同)公用一个渲染进程，前提是从一个页面中<strong>单击</strong>打开了另外一个页面<code>process-per-site-instance</code></li>
+</ul>
+</li>
+<li><strong>导航提交</strong>: 当<code>网络进程数据</code>和<code>渲染进程</code>全部<strong>就绪</strong>
+<ul>
+<li><code>浏览器进程</code>通知<code>渲染进程</code>提交导航;</li>
+<li>同时<code>传输数据</code>给<code>渲染进程</code></li>
+</ul>
+</li>
+<li><strong>提交确认</strong>: <code>渲染进程</code><strong>确认</strong>提交导航，并将此消息通知浏览器进程; <strong>此时导航正式结束</strong>
+<ul>
+<li><code>地址栏</code>更新</li>
+<li><code>安全状态</code>更新</li>
+<li><code>前进后退</code>更新(Histroy Session)</li>
+</ul>
+</li>
+<li><strong>渲染阶段</strong>: <code>渲染进程</code>开始进入<code>页面解析</code>阶段</li>
+<li><strong>渲染完成</strong>，<code>渲染进程</code>发送消息给<code>浏览器进程</code>，<strong>浏览器停止标签加载动画</strong></li>
+</ul>
+<h4 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h4>
+<ul>
+<li>导航是指从<code>用户输入</code>请求到<code>渲染开始</code>之<strong>前</strong>的这个<strong>准备</strong>过程</li>
+<li>导航过程中会发生<code>HTTP请求</code>、<code>渲染进程分配</code></li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-10-56-35.png"></div>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/Developer/browser/chromenavigation.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/network/httpfun.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1385,225 +1618,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Computer Science/parallelism/programprocessthread.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/Computer Science/parallelism/programprocessthread.html" class="post-title-link" itemprop="url">Program vs Process vs Thread</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-11-27 13:14:49" itemprop="dateCreated datePublished" datetime="2019-11-27T13:14:49+10:30">2019-11-27</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Science/" itemprop="url" rel="index"><span itemprop="name">Computer Science</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Science/Parallelism/" itemprop="url" rel="index"><span itemprop="name">Parallelism</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">856</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="program-process-thread"><a class="markdownIt-Anchor" href="#program-process-thread"></a> Program, Process, Thread</h3>
-<ul>
-<li>MacOS: Activity Monitor</li>
-<li>Windows: Task Manager</li>
-<li>Linux: Top</li>
-</ul>
-<h4 id="program"><a class="markdownIt-Anchor" href="#program"></a> Program</h4>
-<blockquote>
-<p>the code stored on your computer disk or non-volatile memory to fulfill a certain task. Including System Programs and Application Programs.</p>
-</blockquote>
-<ul>
-<li>Program will be compiled or programmed to binary in memory before executing it.</li>
-</ul>
-<h4 id="process"><a class="markdownIt-Anchor" href="#process"></a> Process</h4>
-<blockquote>
-<p>An <code>instance</code> of program that has been loaded into <code>memory</code> along with all the <code>resources</code> needed to operate.</p>
-</blockquote>
-<ul>
-<li>The <strong>Operating System</strong> handles the task manageing the resource needed to turn program into processes.</li>
-<li>Resources includes:
-<ul>
-<li><strong>register</strong>: some part of <strong>CPU</strong> to store <code>binary</code></li>
-<li><strong>program counter</strong>: special <code>register</code> in <strong>CPU</strong> to do counter work</li>
-<li><strong>stack</strong>: data structure to store <strong>local</strong> and <strong>small</strong> things in memory, managed <strong>automatically</strong>.</li>
-<li><strong>heap</strong>: data structure to store <strong>global</strong> and <strong>big</strong> things in memory, managed <strong>manually</strong> or by <strong>Garbage Collection</strong>.</li>
-</ul>
-</li>
-</ul>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/Computer Science/parallelism/programprocessthread.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1652,7 +1666,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">121</span>
+                    <span class="site-state-item-count">122</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2258,7 +2272,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-paw"></i>
   </span>

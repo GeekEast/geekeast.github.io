@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2019-12-18T04:17:54.000Z</updated>
+  <updated>2020-01-07T01:19:02.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rookie to a new Project</title>
+    <link href="https://geekeast.github.io/Learning/howtolearn.html"/>
+    <id>https://geekeast.github.io/Learning/howtolearn.html</id>
+    <published>2020-01-07T01:19:02.000Z</published>
+    <updated>2020-01-07T01:19:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>以项目实践为导向进行代码学习</p></blockquote><h3 id="有项目需求和参考项目-公司项目"><a class="markdownIt-Anchor" href="#有项目需求和参考项目-公司项目"></a> 有项目需求和参考项目 (公司项目)</h3><ul><li>逆向工程: 找一个相近的项目，进行拆解，制作成思维导图;</li><li>正向工程: 根据项目需求，开始编程, 大体结构和思路参考样本工程</li><li>查字典: 代码参考样本项目, 文档参考官方文档;</li><li>总结提炼: 重塑思维导图，标记自己的部分;</li></ul><h3 id="无项目需求和有参考项目-个人项目"><a class="markdownIt-Anchor" href="#无项目需求和有参考项目-个人项目"></a> 无项目需求和有参考项目 (个人项目)</h3><ul><li>逆向工程: 找一个项目，进行拆解，提取需求，制作成思维导图;</li><li>正向工程: 根据项目需求，开始编程, 大体结构和思路参考样本工程</li><li>查字典: 代码参考样本项目, 文档参考官方文档;</li><li>总结提炼: 重塑思维导图，标记自己的部分;</li></ul><h3 id="有项目需求和无参考项目-开创项目"><a class="markdownIt-Anchor" href="#有项目需求和无参考项目-开创项目"></a> 有项目需求和无参考项目 (开创项目)</h3><ul><li>高级工程师/专家咨询和社区提问</li><li>项目需求分析和组件拆解</li><li>组件开发和拼装</li><li>总结提炼: 制作思维导图</li></ul><h3 id="反馈源"><a class="markdownIt-Anchor" href="#反馈源"></a> 反馈源</h3><ul><li>Senior Developer/Engineer</li><li>Pair programming</li><li>Test</li><li>Product Manager</li><li>Community/Group</li><li>Expert/Authority</li><li>Sample Code</li></ul><h3 id="刻意练习"><a class="markdownIt-Anchor" href="#刻意练习"></a> 刻意练习</h3><ul><li>审核: 自我审核，别人审核</li><li>交互: 结对编程, 代码竞赛</li><li>图: 知识基提取, 反复打磨</li><li>线性: 相同或者相似项目多做</li></ul><h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a> <a id="more"></a></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;以项目实践为导向进行代码学习&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;有项目需求和参考项目-公司项目&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#有项目需求和参考项目-公司项目&quot;&gt;&lt;/a&gt; 有项目需求和参考项目 (公司项目)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;逆向工程: 找一个相近的项目，进行拆解，制作成思维导图;&lt;/li&gt;
+&lt;li&gt;正向工程: 根据项目需求，开始编程, 大体结构和思路参考样本工程&lt;/li&gt;
+&lt;li&gt;查字典: 代码参考样本项目, 文档参考官方文档;&lt;/li&gt;
+&lt;li&gt;总结提炼: 重塑思维导图，标记自己的部分;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;无项目需求和有参考项目-个人项目&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#无项目需求和有参考项目-个人项目&quot;&gt;&lt;/a&gt; 无项目需求和有参考项目 (个人项目)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;逆向工程: 找一个项目，进行拆解，提取需求，制作成思维导图;&lt;/li&gt;
+&lt;li&gt;正向工程: 根据项目需求，开始编程, 大体结构和思路参考样本工程&lt;/li&gt;
+&lt;li&gt;查字典: 代码参考样本项目, 文档参考官方文档;&lt;/li&gt;
+&lt;li&gt;总结提炼: 重塑思维导图，标记自己的部分;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;有项目需求和无参考项目-开创项目&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#有项目需求和无参考项目-开创项目&quot;&gt;&lt;/a&gt; 有项目需求和无参考项目 (开创项目)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;高级工程师/专家咨询和社区提问&lt;/li&gt;
+&lt;li&gt;项目需求分析和组件拆解&lt;/li&gt;
+&lt;li&gt;组件开发和拼装&lt;/li&gt;
+&lt;li&gt;总结提炼: 制作思维导图&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;反馈源&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#反馈源&quot;&gt;&lt;/a&gt; 反馈源&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Senior Developer/Engineer&lt;/li&gt;
+&lt;li&gt;Pair programming&lt;/li&gt;
+&lt;li&gt;Test&lt;/li&gt;
+&lt;li&gt;Product Manager&lt;/li&gt;
+&lt;li&gt;Community/Group&lt;/li&gt;
+&lt;li&gt;Expert/Authority&lt;/li&gt;
+&lt;li&gt;Sample Code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;刻意练习&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#刻意练习&quot;&gt;&lt;/a&gt; 刻意练习&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;审核: 自我审核，别人审核&lt;/li&gt;
+&lt;li&gt;交互: 结对编程, 代码竞赛&lt;/li&gt;
+&lt;li&gt;图: 知识基提取, 反复打磨&lt;/li&gt;
+&lt;li&gt;线性: 相同或者相似项目多做&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;-more-&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-more-&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Learning" scheme="https://geekeast.github.io/categories/Learning/"/>
+    
+    
+      <category term="Project" scheme="https://geekeast.github.io/tags/Project/"/>
+    
+  </entry>
   
   <entry>
     <title>Shim &amp; Polyfill &amp; Monkey Patching</title>
@@ -305,9 +368,9 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Developer/Network/"/>
     
     
-      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
-    
       <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
+    
+      <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
     
   </entry>
   
@@ -823,62 +886,6 @@
     
     
       <category term="Coercion" scheme="https://geekeast.github.io/tags/Coercion/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Types in Javascript</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/js-types.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/js-types.html</id>
-    <published>2019-11-24T07:32:16.000Z</published>
-    <updated>2019-11-24T07:32:16.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="types"><a class="markdownIt-Anchor" href="#types"></a> Types</h3><blockquote><p>In Javascript, statement “every thing is a an object” is <strong>wrong</strong>. Primitive types are not objects. But some of them can <strong>behave</strong> like objects.</p></blockquote><h4 id><a class="markdownIt-Anchor" href="#"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy1wcmltaXRpdmUtdmFsdWU=" title="https://www.ecma-international.org/ecma-262/9.0/#sec-primitive-value"><strong>Primitive Types</strong><i class="fa fa-external-link"></i></span></h4><blockquote><p>In Javascript, <code>variable</code> doesn’t have types, <code>value</code> have.</p></blockquote><ul><li><code>Undefined</code>: <strong>created</strong> but has <strong>no</strong> value; <strong>default</strong> value</li><li><code>Null</code>: represents the intentional absence of any <strong>object</strong> value</li><li><code>Boolean</code>: <code>true</code> or <code>false</code> (not <code>1</code> and <code>0</code>); can behave like an object: <code>Boolean</code></li><li><code>Number</code>: <code>NaN</code>, <code>-0</code>, <code>0</code>，<code>-Infinite</code>, <code>Infinite</code>and others; can behave like an object: <code>Number</code></li><li><code>String</code>: <code>''</code> and other; can behave like an object: <code>String</code></li><li><code>Symbol</code>: <strong>unique</strong> and <strong>non-string</strong></li></ul><h4 id="-2"><a class="markdownIt-Anchor" href="#-2"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10ZXJtcy1hbmQtZGVmaW5pdGlvbnMtb2JqZWN0" title="https://www.ecma-international.org/ecma-262/9.0/#sec-terms-and-definitions-object"><strong>Object</strong><i class="fa fa-external-link"></i></span></h4><blockquote><p>a collection of properties; a sinle prototype</p></blockquote><ul><li><code>null</code></li><li><code>array</code></li><li><code>function</code></li><li>…</li></ul><h4 id="quick-example"><a class="markdownIt-Anchor" href="#quick-example"></a> Quick Example</h4><ul><li><strong>Normal Parts</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> v; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// undefined;</span></span><br><span class="line"></span><br><span class="line">v = <span class="string">'1'</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// string</span></span><br><span class="line"></span><br><span class="line">v = <span class="number">2</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">//number</span></span><br><span class="line"></span><br><span class="line">v = <span class="literal">true</span>; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// boolean</span></span><br><span class="line"></span><br><span class="line">v = &#123;&#125;; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// object</span></span><br><span class="line"></span><br><span class="line">v = <span class="built_in">Symbol</span>(); <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v); <span class="comment">// symbol</span></span><br></pre></td></tr></table></figure><a id="more"></a><ul><li><strong>Weird Parts</strong></li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> doesntExist) <span class="comment">// undefined! I think it should be undeclared.</span></span><br><span class="line"><span class="keyword">var</span> v = <span class="literal">null</span>; <span class="built_in">console</span>.log(v) <span class="comment">// object! why not null?</span></span><br><span class="line">v = <span class="function"><span class="keyword">function</span>(<span class="params"></span>); <span class="title">console</span>.<span class="title">log</span>(<span class="params">v</span>) // <span class="title">function</span>! <span class="title">what</span>? <span class="title">why</span> <span class="title">not</span> <span class="title">object</span>?</span></span><br><span class="line">v = [1,2,3]; console.log(v); // object! strange! and what a mess!</span><br></pre></td></tr></table></figure><ul><li><strong>Weird Parts Exploration</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(doesnExist) <span class="comment">// ReferenceError</span></span><br><span class="line"><span class="keyword">var</span> v = <span class="literal">null</span>; <span class="built_in">console</span>.log(v === <span class="literal">null</span>); <span class="comment">// true</span></span><br><span class="line"><span class="keyword">var</span> v = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;; <span class="built_in">console</span>.log(<span class="keyword">typeof</span> v === <span class="string">'function'</span>); <span class="comment">// true</span></span><br><span class="line">v = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]; <span class="built_in">console</span>.log(<span class="built_in">Array</span>.isArray(v)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure><h3 id="emptiness"><a class="markdownIt-Anchor" href="#emptiness"></a> Emptiness</h3><ul><li><code>Undeclared</code>; <strong>not declared</strong>;</li><li><code>Uninitialized</code>: <strong>declared</strong> but <strong>cannot be accessed</strong> to; <code>Temporal Dead Zone</code>.</li><li><code>Undefined</code> <strong>declared</strong> but has <strong>no value</strong>;</li><li><code>null</code>: an <strong>object</strong> with value of <strong>null</strong>;</li><li><code>NaN</code>: a <strong>number</strong> but an <strong>invalid</strong> number;</li></ul><h3 id="special-value"><a class="markdownIt-Anchor" href="#special-value"></a> Special value</h3><h4 id="special-nan"><a class="markdownIt-Anchor" href="#special-nan"></a> Special NaN</h4><ul><li><strong>String to Number</strong> by <code>Number()</code></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myAge = <span class="built_in">Number</span>(<span class="string">'0o46'</span>); <span class="comment">// octal number for 46</span></span><br><span class="line"><span class="keyword">var</span> myNextAge = <span class="built_in">Number</span>(<span class="string">'39'</span>); <span class="comment">// 39</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ''-&gt; 0; '-0' -&gt; 0; infinite -&gt; NaN; -infinite -&gt; NaN</span></span><br><span class="line"><span class="keyword">var</span> myCatsAge = <span class="built_in">Number</span>(<span class="string">'n/a'</span>); <span class="comment">// NaN</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// coerce to number at first</span></span><br><span class="line">myAge - <span class="string">"my son's age"</span>; <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure><ul><li><strong>Equality on NaN</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myCatsAge === myCatsAge; <span class="comment">// false!</span></span><br></pre></td></tr></table></figure><ul><li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy1pc25hbi1udW1iZXI=" title="https://www.ecma-international.org/ecma-262/9.0/#sec-isnan-number"><strong>isNaN</strong><i class="fa fa-external-link"></i></span>: implicit coercion happens</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">isNaN</span>(myAge); <span class="comment">// false</span></span><br><span class="line"><span class="built_in">isNaN</span>(myCatsAge) <span class="comment">// true</span></span><br><span class="line"><span class="built_in">isNaN</span>(<span class="string">"my son's age"</span>); <span class="comment">// true</span></span><br></pre></td></tr></table></figure><ul><li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy1udW1iZXIuaXNuYW4=" title="https://www.ecma-international.org/ecma-262/9.0/#sec-number.isnan"><strong>Number.isNaN()</strong><i class="fa fa-external-link"></i></span>: no coercion happens</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>.isNaN(myCatsAge); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">Number</span>.isNaN(<span class="string">"my son's age"</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure><ul><li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy1zYW1ldmFsdWU=" title="https://www.ecma-international.org/ecma-262/9.0/#sec-samevalue"><strong>Strict Check</strong><i class="fa fa-external-link"></i></span></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.is(<span class="string">'hello'</span>, <span class="literal">NaN</span>) <span class="comment">// false</span></span><br></pre></td></tr></table></figure><ul><li>Don’t use <code>undefined</code>, <code>null</code>, <code>false</code>, <code>-1</code>, <code>0</code> to replace <code>NaN</code>. <code>NaN</code> is the <code>only</code> proper representation of an <code>invalid</code> <strong>number</strong>.</li></ul><h4 id="special-0"><a class="markdownIt-Anchor" href="#special-0"></a> Special -0</h4><blockquote><p><code>Zero</code> with <strong>direction</strong> <code>minus</code></p></blockquote><ul><li><strong>Weird Parts</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> trendRate = <span class="number">-0</span>;</span><br><span class="line"><span class="built_in">console</span>.log(trendRate === <span class="number">-0</span>)  <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(trendRate.toString()) <span class="comment">// "0" !</span></span><br><span class="line"><span class="built_in">console</span>.log(trendRate === <span class="number">0</span>) <span class="comment">// true !</span></span><br><span class="line"><span class="built_in">console</span>.log(trendRate &lt; <span class="number">0</span>) <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(trendRate &gt; <span class="number">0</span>) <span class="comment">// false</span></span><br></pre></td></tr></table></figure><ul><li><span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy1zYW1ldmFsdWU=" title="https://www.ecma-international.org/ecma-262/9.0/#sec-samevalue"><strong>Strict check</strong><i class="fa fa-external-link"></i></span></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.is(trendRate, <span class="number">-0</span>) <span class="comment">// true</span></span><br><span class="line"><span class="built_in">Object</span>.is(trendRate, <span class="number">0</span>) <span class="comment">// false;</span></span><br></pre></td></tr></table></figure><ul><li><strong>Obtain Direction</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.sign(<span class="number">-3</span>)); <span class="comment">//-1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.sign(<span class="number">3</span>)); <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.sign(<span class="number">-0</span>)); <span class="comment">// -0!</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.sign(<span class="number">0</span>)); <span class="comment">// 0!</span></span><br></pre></td></tr></table></figure><ul><li><strong>Custom Direction Getter</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sign</span>(<span class="params">v</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> v !== <span class="number">0</span> ? <span class="built_in">Math</span>.sign(v) : <span class="built_in">Object</span>.is(v, <span class="number">-0</span>) ? <span class="number">-1</span> : <span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line">sign(<span class="number">-3</span>) <span class="comment">// -1</span></span><br><span class="line">sign(<span class="number">3</span>) <span class="comment">// 1</span></span><br><span class="line">sign(<span class="number">-0</span>) <span class="comment">// -1</span></span><br><span class="line">sign(<span class="number">0</span>) <span class="comment">// 1</span></span><br></pre></td></tr></table></figure><h3 id="constructor-time"><a class="markdownIt-Anchor" href="#constructor-time"></a> Constructor Time</h3><ul><li>You should use <code>new</code> to build <code>constructor</code> when</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>();</span><br><span class="line"><span class="built_in">Array</span>();</span><br><span class="line"><span class="built_in">Function</span>();</span><br><span class="line"><span class="built_in">Date</span>();</span><br><span class="line"><span class="built_in">RegExp</span>();</span><br><span class="line"><span class="built_in">Error</span>();</span><br></pre></td></tr></table></figure><ul><li>You should avoid <code>new</code> when</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>();</span><br><span class="line"><span class="built_in">Number</span>();</span><br><span class="line"><span class="built_in">Boolean</span>()</span><br></pre></td></tr></table></figure><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;types&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#types&quot;&gt;&lt;/a&gt; Types&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In Javascript, statement “every thing is a an object” is &lt;strong&gt;wrong&lt;/strong&gt;. Primitive types are not objects. But some of them can &lt;strong&gt;behave&lt;/strong&gt; like objects.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://www.ecma-international.org/ecma-262/9.0/#sec-primitive-value&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Primitive Types&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In Javascript, &lt;code&gt;variable&lt;/code&gt; doesn’t have types, &lt;code&gt;value&lt;/code&gt; have.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Undefined&lt;/code&gt;: &lt;strong&gt;created&lt;/strong&gt; but has &lt;strong&gt;no&lt;/strong&gt; value; &lt;strong&gt;default&lt;/strong&gt; value&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Null&lt;/code&gt;: represents the intentional absence of any &lt;strong&gt;object&lt;/strong&gt; value&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Boolean&lt;/code&gt;: &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; (not &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;0&lt;/code&gt;); can behave like an object: &lt;code&gt;Boolean&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Number&lt;/code&gt;: &lt;code&gt;NaN&lt;/code&gt;, &lt;code&gt;-0&lt;/code&gt;, &lt;code&gt;0&lt;/code&gt;，&lt;code&gt;-Infinite&lt;/code&gt;, &lt;code&gt;Infinite&lt;/code&gt;and others; can behave like an object: &lt;code&gt;Number&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;String&lt;/code&gt;: &lt;code&gt;&#39;&#39;&lt;/code&gt; and other; can behave like an object: &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Symbol&lt;/code&gt;: &lt;strong&gt;unique&lt;/strong&gt; and &lt;strong&gt;non-string&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;-2&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#-2&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://www.ecma-international.org/ecma-262/9.0/#sec-terms-and-definitions-object&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Object&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;a collection of properties; a sinle prototype&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;null&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;array&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;function&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;quick-example&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#quick-example&quot;&gt;&lt;/a&gt; Quick Example&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Normal Parts&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; v; &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; v); &lt;span class=&quot;comment&quot;&gt;// undefined;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;v = &lt;span class=&quot;string&quot;&gt;&#39;1&#39;&lt;/span&gt;; &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; v); &lt;span class=&quot;comment&quot;&gt;// string&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;v = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;; &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; v); &lt;span class=&quot;comment&quot;&gt;//number&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;v = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;; &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; v); &lt;span class=&quot;comment&quot;&gt;// boolean&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;v = &amp;#123;&amp;#125;; &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; v); &lt;span class=&quot;comment&quot;&gt;// object&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;v = &lt;span class=&quot;built_in&quot;&gt;Symbol&lt;/span&gt;(); &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; v); &lt;span class=&quot;comment&quot;&gt;// symbol&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
-    
-      <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
-    
-    
-      <category term="Types" scheme="https://geekeast.github.io/tags/Types/"/>
     
   </entry>
   
