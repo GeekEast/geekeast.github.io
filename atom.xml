@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekeast.github.io/"/>
-  <updated>2020-01-07T01:19:02.000Z</updated>
+  <updated>2020-01-10T00:35:35.000Z</updated>
   <id>https://geekeast.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>租房启事 - Rent</title>
+    <link href="https://geekeast.github.io/renthouse.html"/>
+    <id>https://geekeast.github.io/renthouse.html</id>
+    <published>2020-01-10T00:35:35.000Z</published>
+    <updated>2020-01-10T00:35:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="房子信息"><a class="markdownIt-Anchor" href="#房子信息"></a> 房子信息</h3><ul><li>位置: Unit 28, 12-26 Wilcox Street, Adelaide, SA 5000</li><li>交通: 出门3分钟G10、99系列、72x系列通往Adelaide Uni和Flinders Unit</li><li>生活: 在Chinatown西南侧，早上路过chinatown，晚上路过chinatown，chinatown, chinatown</li><li>室友: 全职码农一枚，平时偶尔吃吃鸡，喜欢健身和羽毛球，爱干净爱安静，拒绝couple，因为太拥挤</li><li>价格: $150/week + share bills, bills包括水电煤气网，网络是NBN，吃鸡刷剧都没问题</li><li>要求: 作息规律，无不良嗜好，爱干净整洁，男女不限</li></ul><h3 id="图片"><a class="markdownIt-Anchor" href="#图片"></a> 图片</h3><ul><li>客厅</li></ul><a id="more"></a><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;房子信息&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#房子信息&quot;&gt;&lt;/a&gt; 房子信息&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;位置: Unit 28, 12-26 Wilcox Street, Adelaide, SA 5000&lt;/li&gt;
+&lt;li&gt;交通: 出门3分钟G10、99系列、72x系列通往Adelaide Uni和Flinders Unit&lt;/li&gt;
+&lt;li&gt;生活: 在Chinatown西南侧，早上路过chinatown，晚上路过chinatown，chinatown, chinatown&lt;/li&gt;
+&lt;li&gt;室友: 全职码农一枚，平时偶尔吃吃鸡，喜欢健身和羽毛球，爱干净爱安静，拒绝couple，因为太拥挤&lt;/li&gt;
+&lt;li&gt;价格: $150/week + share bills, bills包括水电煤气网，网络是NBN，吃鸡刷剧都没问题&lt;/li&gt;
+&lt;li&gt;要求: 作息规律，无不良嗜好，爱干净整洁，男女不限&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;图片&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#图片&quot;&gt;&lt;/a&gt; 图片&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;客厅&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Lift" scheme="https://geekeast.github.io/categories/Lift/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Rookie to a new Project</title>
@@ -81,8 +113,8 @@
   
   <entry>
     <title>Shim &amp; Polyfill &amp; Monkey Patching</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/shimpollfill.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/shimpollfill.html</id>
+    <link href="https://geekeast.github.io/developer/language/javascript/shimpollfill.html"/>
+    <id>https://geekeast.github.io/developer/language/javascript/shimpollfill.html</id>
     <published>2019-12-18T04:17:54.000Z</published>
     <updated>2019-12-18T04:17:54.000Z</updated>
     
@@ -117,8 +149,8 @@
   
   <entry>
     <title>Generate Folder Tree in Mac</title>
-    <link href="https://geekeast.github.io/Mac/foldertreemac.html"/>
-    <id>https://geekeast.github.io/Mac/foldertreemac.html</id>
+    <link href="https://geekeast.github.io/mac/foldertreemac.html"/>
+    <id>https://geekeast.github.io/mac/foldertreemac.html</id>
     <published>2019-12-13T23:45:38.000Z</published>
     <updated>2019-12-13T23:45:38.000Z</updated>
     
@@ -147,8 +179,8 @@
   
   <entry>
     <title>Node Upgrade</title>
-    <link href="https://geekeast.github.io/Developer/framework/nodejs/upgradenode.html"/>
-    <id>https://geekeast.github.io/Developer/framework/nodejs/upgradenode.html</id>
+    <link href="https://geekeast.github.io/developer/framework/nodejs/upgradenode.html"/>
+    <id>https://geekeast.github.io/developer/framework/nodejs/upgradenode.html</id>
     <published>2019-12-13T09:33:42.000Z</published>
     <updated>2019-12-13T09:33:42.000Z</updated>
     
@@ -176,8 +208,8 @@
   
   <entry>
     <title>JavaScript Module History</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/jsmodulesys.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/jsmodulesys.html</id>
+    <link href="https://geekeast.github.io/developer/language/javascript/jsmodulesys.html"/>
+    <id>https://geekeast.github.io/developer/language/javascript/jsmodulesys.html</id>
     <published>2019-12-13T00:46:56.000Z</published>
     <updated>2019-12-13T00:46:56.000Z</updated>
     
@@ -212,8 +244,8 @@
   
   <entry>
     <title>Internal Render Process</title>
-    <link href="https://geekeast.github.io/Developer/browser/renderprocess.html"/>
-    <id>https://geekeast.github.io/Developer/browser/renderprocess.html</id>
+    <link href="https://geekeast.github.io/developer/browser/renderprocess.html"/>
+    <id>https://geekeast.github.io/developer/browser/renderprocess.html</id>
     <published>2019-11-28T05:19:40.000Z</published>
     <updated>2019-11-28T05:19:40.000Z</updated>
     
@@ -267,8 +299,8 @@
   
   <entry>
     <title>Chrome Navigation</title>
-    <link href="https://geekeast.github.io/Developer/browser/chromenavigation.html"/>
-    <id>https://geekeast.github.io/Developer/browser/chromenavigation.html</id>
+    <link href="https://geekeast.github.io/developer/browser/chromenavigation.html"/>
+    <id>https://geekeast.github.io/developer/browser/chromenavigation.html</id>
     <published>2019-11-28T01:01:01.000Z</published>
     <updated>2019-11-28T01:01:01.000Z</updated>
     
@@ -334,8 +366,8 @@
   
   <entry>
     <title>How HTTP works?</title>
-    <link href="https://geekeast.github.io/Developer/network/httpfun.html"/>
-    <id>https://geekeast.github.io/Developer/network/httpfun.html</id>
+    <link href="https://geekeast.github.io/developer/network/httpfun.html"/>
+    <id>https://geekeast.github.io/developer/network/httpfun.html</id>
     <published>2019-11-27T13:06:14.000Z</published>
     <updated>2019-11-27T13:06:14.000Z</updated>
     
@@ -368,16 +400,16 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Developer/Network/"/>
     
     
-      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
-    
       <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
+    
+      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
     
   </entry>
   
   <entry>
     <title>How TCP/IP Works</title>
-    <link href="https://geekeast.github.io/Developer/network/tcpipfun.html"/>
-    <id>https://geekeast.github.io/Developer/network/tcpipfun.html</id>
+    <link href="https://geekeast.github.io/developer/network/tcpipfun.html"/>
+    <id>https://geekeast.github.io/developer/network/tcpipfun.html</id>
     <published>2019-11-27T06:01:45.000Z</published>
     <updated>2019-11-27T06:01:45.000Z</updated>
     
@@ -418,8 +450,8 @@
   
   <entry>
     <title>OSI 7 Layers</title>
-    <link href="https://geekeast.github.io/Developer/network/osi7.html"/>
-    <id>https://geekeast.github.io/Developer/network/osi7.html</id>
+    <link href="https://geekeast.github.io/developer/network/osi7.html"/>
+    <id>https://geekeast.github.io/developer/network/osi7.html</id>
     <published>2019-11-27T05:32:58.000Z</published>
     <updated>2019-11-27T05:32:58.000Z</updated>
     
@@ -444,8 +476,8 @@
   
   <entry>
     <title>Chrome Architecture</title>
-    <link href="https://geekeast.github.io/Developer/browser/chromearchitecture.html"/>
-    <id>https://geekeast.github.io/Developer/browser/chromearchitecture.html</id>
+    <link href="https://geekeast.github.io/developer/browser/chromearchitecture.html"/>
+    <id>https://geekeast.github.io/developer/browser/chromearchitecture.html</id>
     <published>2019-11-27T04:11:42.000Z</published>
     <updated>2019-11-27T04:11:42.000Z</updated>
     
@@ -493,8 +525,8 @@
   
   <entry>
     <title>Cocurrency vs Parallelism</title>
-    <link href="https://geekeast.github.io/Computer%20Science/parallelism/simultaneousexe.html"/>
-    <id>https://geekeast.github.io/Computer Science/parallelism/simultaneousexe.html</id>
+    <link href="https://geekeast.github.io/computer%20Science/parallelism/simultaneousexe.html"/>
+    <id>https://geekeast.github.io/computer Science/parallelism/simultaneousexe.html</id>
     <published>2019-11-27T02:53:48.000Z</published>
     <updated>2019-11-27T02:53:48.000Z</updated>
     
@@ -530,8 +562,8 @@
   
   <entry>
     <title>Program vs Process vs Thread</title>
-    <link href="https://geekeast.github.io/Computer%20Science/parallelism/programprocessthread.html"/>
-    <id>https://geekeast.github.io/Computer Science/parallelism/programprocessthread.html</id>
+    <link href="https://geekeast.github.io/computer%20Science/parallelism/programprocessthread.html"/>
+    <id>https://geekeast.github.io/computer Science/parallelism/programprocessthread.html</id>
     <published>2019-11-27T02:44:49.000Z</published>
     <updated>2019-11-27T02:44:49.000Z</updated>
     
@@ -581,8 +613,8 @@
   
   <entry>
     <title>AJAX</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/ajax.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/ajax.html</id>
+    <link href="https://geekeast.github.io/developer/language/javascript/ajax.html"/>
+    <id>https://geekeast.github.io/developer/language/javascript/ajax.html</id>
     <published>2019-11-26T04:04:39.000Z</published>
     <updated>2019-11-26T04:04:39.000Z</updated>
     
@@ -627,8 +659,8 @@
   
   <entry>
     <title>Prototype in Javascript</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/jsprototype.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/jsprototype.html</id>
+    <link href="https://geekeast.github.io/developer/language/javascript/jsprototype.html"/>
+    <id>https://geekeast.github.io/developer/language/javascript/jsprototype.html</id>
     <published>2019-11-25T04:38:43.000Z</published>
     <updated>2019-11-25T04:38:43.000Z</updated>
     
@@ -669,8 +701,8 @@
   
   <entry>
     <title>Object in Javascript</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/jsobject.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/jsobject.html</id>
+    <link href="https://geekeast.github.io/developer/language/javascript/jsobject.html"/>
+    <id>https://geekeast.github.io/developer/language/javascript/jsobject.html</id>
     <published>2019-11-25T00:01:08.000Z</published>
     <updated>2019-11-25T00:01:08.000Z</updated>
     
@@ -705,8 +737,8 @@
   
   <entry>
     <title>Closure in Javascript</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/jsclosure.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/jsclosure.html</id>
+    <link href="https://geekeast.github.io/developer/language/javascript/jsclosure.html"/>
+    <id>https://geekeast.github.io/developer/language/javascript/jsclosure.html</id>
     <published>2019-11-24T23:28:16.000Z</published>
     <updated>2019-11-24T23:28:16.000Z</updated>
     
@@ -743,8 +775,8 @@
   
   <entry>
     <title>Scope in Javascript</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/jsscope.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/jsscope.html</id>
+    <link href="https://geekeast.github.io/developer/language/javascript/jsscope.html"/>
+    <id>https://geekeast.github.io/developer/language/javascript/jsscope.html</id>
     <published>2019-11-24T11:46:28.000Z</published>
     <updated>2019-11-24T11:46:28.000Z</updated>
     
@@ -783,8 +815,8 @@
   
   <entry>
     <title>Equality in Javascript</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/jsequality.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/jsequality.html</id>
+    <link href="https://geekeast.github.io/developer/language/javascript/jsequality.html"/>
+    <id>https://geekeast.github.io/developer/language/javascript/jsequality.html</id>
     <published>2019-11-24T11:37:56.000Z</published>
     <updated>2019-11-24T11:37:56.000Z</updated>
     
@@ -820,72 +852,6 @@
     
     
       <category term="Equality" scheme="https://geekeast.github.io/tags/Equality/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coercion in Javascript</title>
-    <link href="https://geekeast.github.io/Developer/language/javascript/jscoercion.html"/>
-    <id>https://geekeast.github.io/Developer/language/javascript/jscoercion.html</id>
-    <published>2019-11-24T11:02:17.000Z</published>
-    <updated>2019-11-24T11:02:17.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="abstract-operations"><a class="markdownIt-Anchor" href="#abstract-operations"></a> Abstract Operations</h3><blockquote><p>ToPrimitive, ToString, ToNumber, ToBoolean</p></blockquote><h4 id><a class="markdownIt-Anchor" href="#"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10b3ByaW1pdGl2ZQ==" title="https://www.ecma-international.org/ecma-262/9.0/#sec-toprimitive"><strong>ToPrimitive(hint)</strong><i class="fa fa-external-link"></i></span></h4><blockquote><p>convert from <code>non-primitive</code> to <code>primitive</code></p></blockquote><ul><li>Hint: number<ul><li><code>valueOf()</code></li><li><code>toString()</code></li><li><code>valueOf()</code></li></ul></li><li>Hint: string<ul><li><code>toString()</code></li><li><code>valueOf()</code></li><li><code>toString()</code></li></ul></li></ul><h4 id="tostring"><a class="markdownIt-Anchor" href="#tostring"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10b3N0cmluZw==" title="https://www.ecma-international.org/ecma-262/9.0/#sec-tostring">ToString<i class="fa fa-external-link"></i></span></h4><ul><li><strong>Primitive Type</strong></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">null -&gt; <span class="string">'null'</span></span><br><span class="line">undefined -&gt; <span class="string">'undefined'</span></span><br><span class="line"><span class="literal">true</span> -&gt; <span class="string">'true'</span></span><br><span class="line"><span class="literal">false</span> -&gt; <span class="string">'false'</span></span><br><span class="line">3.14159 -&gt; <span class="string">'3.14159'</span></span><br><span class="line">0 -&gt; <span class="string">'0'</span></span><br><span class="line">-0 -&gt; <span class="string">'0'</span> <span class="comment"># !</span></span><br></pre></td></tr></table></figure><ul><li><strong>Weird Conversion from Array</strong></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[] -&gt; <span class="string">''</span></span><br><span class="line">[1,2,3] -&gt; <span class="string">'1,2,3'</span></span><br><span class="line">[null, undefined] -&gt; <span class="string">','</span></span><br><span class="line">[[[],[],[]],[]] -&gt; <span class="string">',,,'</span></span><br><span class="line">[,,,,] -&gt; <span class="string">',,,'</span></span><br></pre></td></tr></table></figure><ul><li><strong>Weird Conversion from Object</strong></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#125; -&gt; <span class="string">"[object Object]"</span></span><br><span class="line">&#123;a:2&#125; -&gt; <span class="string">"[object Object]"</span></span><br></pre></td></tr></table></figure><ul><li><strong>Override <code>toString()</code> for <code>object</code></strong></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># overRide toString() method to return 'X'</span></span><br><span class="line">&#123; <span class="function"><span class="title">toString</span></span>()&#123;<span class="built_in">return</span> <span class="string">"X"</span>;&#125;&#125; -&gt; <span class="string">"X"</span></span><br></pre></td></tr></table></figure><a id="more"></a><h4 id="tonumber"><a class="markdownIt-Anchor" href="#tonumber"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10b251bWJlcg==" title="https://www.ecma-international.org/ecma-262/9.0/#sec-tonumber">ToNumber<i class="fa fa-external-link"></i></span></h4><blockquote><p>= <code>ToPrimitive(number)</code></p></blockquote><ul><li><strong>Conversion from <code>primitive</code> type</strong></li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">""</span> -&gt; 0 <span class="comment"># weird!</span></span><br><span class="line"><span class="string">"0"</span> -&gt; 0 <span class="comment"># not weird!</span></span><br><span class="line"><span class="string">" 009 "</span> -&gt; 9</span><br><span class="line"><span class="string">"3.14159"</span> -&gt; 3.14159</span><br><span class="line"><span class="string">"0."</span> -&gt; 0</span><br><span class="line"><span class="string">".0"</span> -&gt; 0</span><br><span class="line"><span class="string">"."</span> -&gt; NaN  <span class="comment">#!</span></span><br><span class="line"><span class="string">"0xaf"</span> -&gt; 175</span><br><span class="line"><span class="literal">false</span> -&gt; 0</span><br><span class="line"><span class="literal">true</span> -&gt; 1</span><br><span class="line">null -&gt; 0 <span class="comment">#!</span></span><br><span class="line">undefined -&gt; NaN</span><br></pre></td></tr></table></figure><ul><li><strong>Conversion from <code>non-primitive</code> type</strong></li></ul><blockquote><p>will invoke the <code>toPrimitive(Number)</code> abstract operaiton</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">""</span>] -&gt; 0</span><br><span class="line">[<span class="string">"0"</span>] -&gt; 0</span><br><span class="line">[<span class="string">"-0"</span>] -&gt; -0</span><br><span class="line">[null] -&gt; 0</span><br><span class="line">[undefined] -&gt; 0</span><br><span class="line">[1,2,3] -&gt; NaN</span><br><span class="line">[[[[]]]] -&gt; 0</span><br><span class="line">&#123;..&#125; -&gt; NaN</span><br></pre></td></tr></table></figure><ul><li><strong>Override <code>valueOf()</code> for object</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; valueOf()&#123;<span class="keyword">return</span> <span class="number">3</span>&#125;&#125; -&gt; <span class="number">3</span></span><br></pre></td></tr></table></figure><ul><li><strong>Operation</strong> <code>valueOf()</code></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">valueOf()&#123;<span class="keyword">return</span> <span class="keyword">this</span>;&#125;</span><br></pre></td></tr></table></figure><h4 id="toboolean"><a class="markdownIt-Anchor" href="#toboolean"></a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWNtYS1pbnRlcm5hdGlvbmFsLm9yZy9lY21hLTI2Mi85LjAvI3NlYy10b2Jvb2xlYW4=" title="https://www.ecma-international.org/ecma-262/9.0/#sec-toboolean">ToBoolean<i class="fa fa-external-link"></i></span></h4><blockquote><p>ToBoolean only does <code>look up</code>, do <strong>not</strong> invode any other <code>abstract operations</code></p></blockquote><ul><li><strong>False</strong><ul><li><code>&quot;&quot;</code></li><li><code>0, -0</code></li><li><code>null</code></li><li><code>NaN</code></li><li><code>undefined</code></li><li><code>false</code></li></ul></li><li><strong>True</strong><ul><li><code>&quot;foo&quot;</code></li><li><code>23</code></li><li><code>{a:'1'}</code></li><li><code>[1,3]</code></li><li><code>function(){...}</code></li><li><code>true</code></li><li>…</li></ul></li></ul><h3 id="explicit-coercion"><a class="markdownIt-Anchor" href="#explicit-coercion"></a> Explicit Coercion</h3><h4 id="to-string"><a class="markdownIt-Anchor" href="#to-string"></a> to string</h4><ul><li><strong>use <code>${}</code></strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> y = <span class="number">1</span></span><br><span class="line"><span class="keyword">const</span> x = <span class="string">`a asdasdasd <span class="subst">$&#123;y&#125;</span>`</span> <span class="comment">// be will be coercied to string implicitly</span></span><br></pre></td></tr></table></figure><ul><li><strong>use <code>+</code></strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> x = <span class="string">"a"</span> + b <span class="comment">// be will be coercied to string implicitly</span></span><br></pre></td></tr></table></figure><ul><li><strong>use <code>Array.prototype.join()</code></strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>].join(<span class="string">""</span>)</span><br></pre></td></tr></table></figure><ul><li><strong>use <code>toString()</code> of a non-primitive type</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> x = &#123;&#125;</span><br><span class="line">x.toString();</span><br></pre></td></tr></table></figure><ul><li><strong>use <code>String()</code>: Recommended</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure><h4 id="to-number"><a class="markdownIt-Anchor" href="#to-number"></a> to number</h4><ul><li><strong>use <code>+</code></strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+<span class="string">"324"</span> <span class="comment">// wiil be converted to a number</span></span><br></pre></td></tr></table></figure><ul><li><strong>use <code>Number()</code>: Recommended</strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(<span class="string">"123"</span>);</span><br></pre></td></tr></table></figure><h4 id="to-boolean"><a class="markdownIt-Anchor" href="#to-boolean"></a> to boolean</h4><ul><li><strong>use <code>!!</code></strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!!a.b</span><br></pre></td></tr></table></figure><ul><li><strong>use <code>Boolean()</code></strong></li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Boolean</span>(<span class="string">""</span>)</span><br></pre></td></tr></table></figure><h3 id="implicit-coercion"><a class="markdownIt-Anchor" href="#implicit-coercion"></a> Implicit Coercion</h3><blockquote><p>Boxing: Wrap primitive types up as Objects</p></blockquote><ul><li>Just let the boxing happens which has performance benefits.</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">"abc"</span>;</span><br><span class="line">a.length; <span class="comment">// will be boxed as an object</span></span><br><span class="line">a.toUpperCase() <span class="comment">// will be boxed as an object</span></span><br></pre></td></tr></table></figure><h3 id="corner-case"><a class="markdownIt-Anchor" href="#corner-case"></a> Corner Case</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(<span class="string">""</span>) <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="string">" \t\n"</span>) <span class="comment">//0</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">null</span>) <span class="comment">//0</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">NaN</span>) <span class="comment">//NaN</span></span><br><span class="line"><span class="built_in">Number</span>([]) <span class="comment">//0</span></span><br><span class="line"><span class="built_in">Number</span>([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]) <span class="comment">// ！NaN</span></span><br><span class="line"><span class="built_in">Number</span>([<span class="literal">null</span>]) <span class="comment">// 0</span></span><br><span class="line"><span class="built_in">Number</span>(&#123;&#125;) <span class="comment">// NaN</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">String</span>(<span class="number">-0</span>) <span class="comment">// "0"</span></span><br><span class="line"><span class="built_in">String</span>(<span class="literal">null</span>) <span class="comment">// "null"</span></span><br><span class="line"><span class="built_in">String</span>(<span class="literal">undefined</span>) <span class="comment">// "undefined"</span></span><br><span class="line"><span class="built_in">String</span>( [<span class="literal">null</span>] ) <span class="comment">// ""</span></span><br><span class="line"><span class="built_in">String</span>( [<span class="literal">undefined</span>] ) <span class="comment">// ""</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Boolean</span>( <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">false</span>)); <span class="literal">true</span> <span class="comment">// the object exists</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">true</span>) <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">false</span>) <span class="comment">//0</span></span><br><span class="line"></span><br><span class="line"><span class="number">1</span>&lt;<span class="number">2</span>&lt;<span class="number">3</span> <span class="comment">// true</span></span><br><span class="line">(<span class="number">1</span>&lt;<span class="number">2</span>)&lt;<span class="number">3</span></span><br><span class="line"><span class="number">1</span>&lt;<span class="number">3</span>  <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="string">''</span>;</span><br><span class="line"><span class="built_in">Number</span>(a) <span class="comment">// 0</span></span><br><span class="line">a = <span class="string">'  \t\n'</span></span><br><span class="line"><span class="built_in">Number</span>(a) <span class="comment">//0</span></span><br></pre></td></tr></table></figure><hr>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;abstract-operations&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#abstract-operations&quot;&gt;&lt;/a&gt; Abstract Operations&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ToPrimitive, ToString, ToNumber, ToBoolean&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://www.ecma-international.org/ecma-262/9.0/#sec-toprimitive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;ToPrimitive(hint)&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;convert from &lt;code&gt;non-primitive&lt;/code&gt; to &lt;code&gt;primitive&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Hint: number
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;valueOf()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;toString()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;valueOf()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Hint: string
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;toString()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;valueOf()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;toString()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;tostring&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#tostring&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://www.ecma-international.org/ecma-262/9.0/#sec-tostring&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ToString&lt;/a&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Primitive Type&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;null -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;null&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;undefined -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;undefined&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt; -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt; -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;false&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3.14159 -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;3.14159&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;0 -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;0&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-0 -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;0&#39;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;# !&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Weird Conversion from Array&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[1,2,3] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;1,2,3&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[null, undefined] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;,&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[[[],[],[]],[]] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;,,,&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[,,,,] -&amp;gt; &lt;span class=&quot;string&quot;&gt;&#39;,,,&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Weird Conversion from Object&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&amp;#125; -&amp;gt; &lt;span class=&quot;string&quot;&gt;&quot;[object Object]&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;a:2&amp;#125; -&amp;gt; &lt;span class=&quot;string&quot;&gt;&quot;[object Object]&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Override &lt;code&gt;toString()&lt;/code&gt; for &lt;code&gt;object&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# overRide toString() method to return &#39;X&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;toString&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;X&quot;&lt;/span&gt;;&amp;#125;&amp;#125; -&amp;gt; &lt;span class=&quot;string&quot;&gt;&quot;X&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Developer" scheme="https://geekeast.github.io/categories/Developer/"/>
-    
-      <category term="Language" scheme="https://geekeast.github.io/categories/Developer/Language/"/>
-    
-      <category term="Javascript" scheme="https://geekeast.github.io/categories/Developer/Language/Javascript/"/>
-    
-    
-      <category term="Coercion" scheme="https://geekeast.github.io/tags/Coercion/"/>
     
   </entry>
   

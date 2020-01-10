@@ -370,7 +370,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/browser/chromenavigation.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/developer/browser/renderprocess.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -390,7 +390,228 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/Developer/browser/chromenavigation.html" class="post-title-link" itemprop="url">Chrome Navigation</a>
+                <a href="/developer/browser/renderprocess.html" class="post-title-link" itemprop="url">Internal Render Process</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-28 15:49:40" itemprop="dateCreated datePublished" datetime="2019-11-28T15:49:40+10:30">2019-11-28</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/" itemprop="url" rel="index"><span itemprop="name">Developer</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Developer/Browser/" itemprop="url" rel="index"><span itemprop="name">Browser</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="渲染过程详解"><a class="markdownIt-Anchor" href="#渲染过程详解"></a> 渲染过程详解</h2>
+<h3 id="dom-tree"><a class="markdownIt-Anchor" href="#dom-tree"></a> DOM Tree</h3>
+<h4 id="stage-1-build-dom-tree"><a class="markdownIt-Anchor" href="#stage-1-build-dom-tree"></a> Stage 1: Build DOM Tree</h4>
+<ul>
+<li>Input: <code>HTML</code></li>
+<li>Process: parse html</li>
+<li>Output: <code>DOM Tree</code></li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-12-33-25.png"></div>
+<h4 id="stage-1-load-subresource"><a class="markdownIt-Anchor" href="#stage-1-load-subresource"></a> Stage 1: Load Subresource</h4>
+<ul>
+<li><code>Preload Scanner</code>: Load <code>images</code>, <code>CSS</code> and <code>JavaScript</code> from <strong>Cache</strong> or <strong>Network</strong></li>
+</ul>
+<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-28-13-10-23.png"></div>
+<ul>
+<li>
+<p><strong>Javascript Block</strong></p>
+<ul>
+<li>When the HTML parser finds a <code>&lt;script&gt;</code> tag, it pauses the parsing of the HTML document and has to load, parse, and execute the JavaScript code.</li>
+<li>Because JavaScript can change the shape of the document using things like <code>document.write()</code> which changes the entire DOM structure.</li>
+</ul>
+</li>
+<li>
+<p><strong>Customize Javascript Loading</strong></p>
+<ul>
+<li>If your JavaScript does not use <code>document.write()</code>, you can add <code>async</code> or <code>defer</code> attribute to the <code>&lt;script&gt;</code>tag. The browser then loads and runs the JavaScript code asynchronously and does not block the parsing.</li>
+<li>You may also use JavaScript module if that’s suitable. <code>&lt;link rel=&quot;preload&quot;&gt;</code> is a way to inform browser that the resource is definitely needed for current navigation and you would like to download as soon as possible.</li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/developer/browser/renderprocess.html#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/developer/browser/chromenavigation.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="James Tan">
+      <meta itemprop="description" content="Sharing is the best way to learn.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雪中印">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/developer/browser/chromenavigation.html" class="post-title-link" itemprop="url">Chrome Navigation</a>
               
             
           </h2>
@@ -545,7 +766,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/Developer/browser/chromenavigation.html#more" rel="contents">
+              <a class="btn" href="/developer/browser/chromenavigation.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -603,7 +824,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/network/httpfun.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/developer/network/httpfun.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -623,7 +844,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/Developer/network/httpfun.html" class="post-title-link" itemprop="url">How HTTP works?</a>
+                <a href="/developer/network/httpfun.html" class="post-title-link" itemprop="url">How HTTP works?</a>
               
             
           </h2>
@@ -753,7 +974,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/Developer/network/httpfun.html#more" rel="contents">
+              <a class="btn" href="/developer/network/httpfun.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -811,7 +1032,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/network/tcpipfun.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/developer/network/tcpipfun.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -831,7 +1052,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/Developer/network/tcpipfun.html" class="post-title-link" itemprop="url">How TCP/IP Works</a>
+                <a href="/developer/network/tcpipfun.html" class="post-title-link" itemprop="url">How TCP/IP Works</a>
               
             
           </h2>
@@ -963,7 +1184,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/Developer/network/tcpipfun.html#more" rel="contents">
+              <a class="btn" href="/developer/network/tcpipfun.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1021,7 +1242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/network/osi7.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/developer/network/osi7.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -1041,7 +1262,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/Developer/network/osi7.html" class="post-title-link" itemprop="url">OSI 7 Layers</a>
+                <a href="/developer/network/osi7.html" class="post-title-link" itemprop="url">OSI 7 Layers</a>
               
             
           </h2>
@@ -1157,7 +1378,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/Developer/network/osi7.html#more" rel="contents">
+              <a class="btn" href="/developer/network/osi7.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1215,7 +1436,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Developer/browser/chromearchitecture.html">
+    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/developer/browser/chromearchitecture.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="James Tan">
@@ -1235,7 +1456,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/Developer/browser/chromearchitecture.html" class="post-title-link" itemprop="url">Chrome Architecture</a>
+                <a href="/developer/browser/chromearchitecture.html" class="post-title-link" itemprop="url">Chrome Architecture</a>
               
             
           </h2>
@@ -1372,7 +1593,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/Developer/browser/chromearchitecture.html#more" rel="contents">
+              <a class="btn" href="/developer/browser/chromearchitecture.html#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1383,209 +1604,6 @@
 
       
     </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://geekeast.github.io/Computer Science/parallelism/simultaneousexe.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="James Tan">
-      <meta itemprop="description" content="Sharing is the best way to learn.">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="雪中印">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/Computer Science/parallelism/simultaneousexe.html" class="post-title-link" itemprop="url">Cocurrency vs Parallelism</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-11-27 13:23:48" itemprop="dateCreated datePublished" datetime="2019-11-27T13:23:48+10:30">2019-11-27</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Science/" itemprop="url" rel="index"><span itemprop="name">Computer Science</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Computer-Science/Parallelism/" itemprop="url" rel="index"><span itemprop="name">Parallelism</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">248</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="cocurrency-vs-parallelism"><a class="markdownIt-Anchor" href="#cocurrency-vs-parallelism"></a> Cocurrency vs Parallelism</h3>
-<ul>
-<li>Mutiple CPU cores: Parallelism with genuine simultaneous execution</li>
-<li>Single CPU core: cocurrency with interleaving of process in time to give apperance of simultaneous execution.</li>
-</ul>
-<div style="text-align:center; margin:auto"><img src="https://geekeaskblogpics.s3-ap-southeast-2.amazonaws.com/posts/2019-11-27-13-14-20.png"></div>
-<h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3>
-<ul>
-<li><a href="https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html" target="_blank" rel="noopener">Stack and Heap</a></li>
-<li><a href="https://www.gribblelab.org/CBootCamp/1_Why_Program_In_C.html" target="_blank" rel="noopener">Language C</a></li>
-</ul>
-<h2 id="-more-"><a class="markdownIt-Anchor" href="#-more-"></a>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/Computer Science/parallelism/simultaneousexe.html#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-
-      
-    </h2></div>
 
     
 
@@ -1666,7 +1684,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">122</span>
+                    <span class="site-state-item-count">123</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1765,7 +1783,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">37</span>
+                      
+                    
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -2114,7 +2134,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://geekeast.github.io/mdtutorial.html" title="https://geekeast.github.io/mdtutorial.html">Hexo Markdown Notes For Blog</a>
+                    <a href="https://geekeast.github.io/blog/mdtutorial.html" title="https://geekeast.github.io/blog/mdtutorial.html">Hexo Markdown Notes For Blog</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
