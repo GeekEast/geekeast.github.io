@@ -18,8 +18,8 @@
   
   <entry>
     <title>租房启事 - Rent</title>
-    <link href="https://geekeast.github.io/renthouse.html"/>
-    <id>https://geekeast.github.io/renthouse.html</id>
+    <link href="https://geekeast.github.io/Renthouse/renthouse.html"/>
+    <id>https://geekeast.github.io/Renthouse/renthouse.html</id>
     <published>2020-01-10T00:35:35.000Z</published>
     <updated>2020-01-10T00:35:35.000Z</updated>
     
@@ -48,8 +48,8 @@
   
   <entry>
     <title>Rookie to a new Project</title>
-    <link href="https://geekeast.github.io/learning/howtolearn.html"/>
-    <id>https://geekeast.github.io/learning/howtolearn.html</id>
+    <link href="https://geekeast.github.io/Learning/howtolearn.html"/>
+    <id>https://geekeast.github.io/Learning/howtolearn.html</id>
     <published>2020-01-07T01:19:02.000Z</published>
     <updated>2020-01-07T01:19:02.000Z</updated>
     
@@ -111,8 +111,8 @@
   
   <entry>
     <title>Shim &amp; Polyfill &amp; Monkey Patching</title>
-    <link href="https://geekeast.github.io/developer/language/javascript/shimpollfill.html"/>
-    <id>https://geekeast.github.io/developer/language/javascript/shimpollfill.html</id>
+    <link href="https://geekeast.github.io/Developer/language/javascript/shimpollfill.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/shimpollfill.html</id>
     <published>2019-12-18T04:17:54.000Z</published>
     <updated>2019-12-18T04:17:54.000Z</updated>
     
@@ -147,8 +147,8 @@
   
   <entry>
     <title>Generate Folder Tree in Mac</title>
-    <link href="https://geekeast.github.io/mac/foldertreemac.html"/>
-    <id>https://geekeast.github.io/mac/foldertreemac.html</id>
+    <link href="https://geekeast.github.io/Mac/foldertreemac.html"/>
+    <id>https://geekeast.github.io/Mac/foldertreemac.html</id>
     <published>2019-12-13T23:45:38.000Z</published>
     <updated>2019-12-13T23:45:38.000Z</updated>
     
@@ -177,8 +177,8 @@
   
   <entry>
     <title>Node Upgrade</title>
-    <link href="https://geekeast.github.io/developer/framework/nodejs/upgradenode.html"/>
-    <id>https://geekeast.github.io/developer/framework/nodejs/upgradenode.html</id>
+    <link href="https://geekeast.github.io/Developer/framework/nodejs/upgradenode.html"/>
+    <id>https://geekeast.github.io/Developer/framework/nodejs/upgradenode.html</id>
     <published>2019-12-13T09:33:42.000Z</published>
     <updated>2019-12-13T09:33:42.000Z</updated>
     
@@ -206,8 +206,8 @@
   
   <entry>
     <title>JavaScript Module History</title>
-    <link href="https://geekeast.github.io/developer/language/javascript/jsmodulesys.html"/>
-    <id>https://geekeast.github.io/developer/language/javascript/jsmodulesys.html</id>
+    <link href="https://geekeast.github.io/Developer/language/javascript/jsmodulesys.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/jsmodulesys.html</id>
     <published>2019-12-13T00:46:56.000Z</published>
     <updated>2019-12-13T00:46:56.000Z</updated>
     
@@ -242,8 +242,8 @@
   
   <entry>
     <title>Internal Render Process</title>
-    <link href="https://geekeast.github.io/developer/browser/renderprocess.html"/>
-    <id>https://geekeast.github.io/developer/browser/renderprocess.html</id>
+    <link href="https://geekeast.github.io/Developer/browser/renderprocess.html"/>
+    <id>https://geekeast.github.io/Developer/browser/renderprocess.html</id>
     <published>2019-11-28T05:19:40.000Z</published>
     <updated>2019-11-28T05:19:40.000Z</updated>
     
@@ -297,8 +297,8 @@
   
   <entry>
     <title>Chrome Navigation</title>
-    <link href="https://geekeast.github.io/developer/browser/chromenavigation.html"/>
-    <id>https://geekeast.github.io/developer/browser/chromenavigation.html</id>
+    <link href="https://geekeast.github.io/Developer/browser/chromenavigation.html"/>
+    <id>https://geekeast.github.io/Developer/browser/chromenavigation.html</id>
     <published>2019-11-28T01:01:01.000Z</published>
     <updated>2019-11-28T01:01:01.000Z</updated>
     
@@ -364,8 +364,8 @@
   
   <entry>
     <title>How HTTP works?</title>
-    <link href="https://geekeast.github.io/developer/network/httpfun.html"/>
-    <id>https://geekeast.github.io/developer/network/httpfun.html</id>
+    <link href="https://geekeast.github.io/Developer/network/httpfun.html"/>
+    <id>https://geekeast.github.io/Developer/network/httpfun.html</id>
     <published>2019-11-27T13:06:14.000Z</published>
     <updated>2019-11-27T13:06:14.000Z</updated>
     
@@ -398,16 +398,16 @@
       <category term="Network" scheme="https://geekeast.github.io/categories/Developer/Network/"/>
     
     
-      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
-    
       <category term="Network" scheme="https://geekeast.github.io/tags/Network/"/>
+    
+      <category term="HTTP" scheme="https://geekeast.github.io/tags/HTTP/"/>
     
   </entry>
   
   <entry>
     <title>How TCP/IP Works</title>
-    <link href="https://geekeast.github.io/developer/network/tcpipfun.html"/>
-    <id>https://geekeast.github.io/developer/network/tcpipfun.html</id>
+    <link href="https://geekeast.github.io/Developer/network/tcpipfun.html"/>
+    <id>https://geekeast.github.io/Developer/network/tcpipfun.html</id>
     <published>2019-11-27T06:01:45.000Z</published>
     <updated>2019-11-27T06:01:45.000Z</updated>
     
@@ -448,8 +448,8 @@
   
   <entry>
     <title>OSI 7 Layers</title>
-    <link href="https://geekeast.github.io/developer/network/osi7.html"/>
-    <id>https://geekeast.github.io/developer/network/osi7.html</id>
+    <link href="https://geekeast.github.io/Developer/network/osi7.html"/>
+    <id>https://geekeast.github.io/Developer/network/osi7.html</id>
     <published>2019-11-27T05:32:58.000Z</published>
     <updated>2019-11-27T05:32:58.000Z</updated>
     
@@ -474,8 +474,8 @@
   
   <entry>
     <title>Chrome Architecture</title>
-    <link href="https://geekeast.github.io/developer/browser/chromearchitecture.html"/>
-    <id>https://geekeast.github.io/developer/browser/chromearchitecture.html</id>
+    <link href="https://geekeast.github.io/Developer/browser/chromearchitecture.html"/>
+    <id>https://geekeast.github.io/Developer/browser/chromearchitecture.html</id>
     <published>2019-11-27T04:11:42.000Z</published>
     <updated>2019-11-27T04:11:42.000Z</updated>
     
@@ -523,8 +523,8 @@
   
   <entry>
     <title>Cocurrency vs Parallelism</title>
-    <link href="https://geekeast.github.io/computer%20Science/parallelism/simultaneousexe.html"/>
-    <id>https://geekeast.github.io/computer Science/parallelism/simultaneousexe.html</id>
+    <link href="https://geekeast.github.io/Computer%20Science/parallelism/simultaneousexe.html"/>
+    <id>https://geekeast.github.io/Computer Science/parallelism/simultaneousexe.html</id>
     <published>2019-11-27T02:53:48.000Z</published>
     <updated>2019-11-27T02:53:48.000Z</updated>
     
@@ -560,8 +560,8 @@
   
   <entry>
     <title>Program vs Process vs Thread</title>
-    <link href="https://geekeast.github.io/computer%20Science/parallelism/programprocessthread.html"/>
-    <id>https://geekeast.github.io/computer Science/parallelism/programprocessthread.html</id>
+    <link href="https://geekeast.github.io/Computer%20Science/parallelism/programprocessthread.html"/>
+    <id>https://geekeast.github.io/Computer Science/parallelism/programprocessthread.html</id>
     <published>2019-11-27T02:44:49.000Z</published>
     <updated>2019-11-27T02:44:49.000Z</updated>
     
@@ -611,8 +611,8 @@
   
   <entry>
     <title>AJAX</title>
-    <link href="https://geekeast.github.io/developer/language/javascript/ajax.html"/>
-    <id>https://geekeast.github.io/developer/language/javascript/ajax.html</id>
+    <link href="https://geekeast.github.io/Developer/language/javascript/ajax.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/ajax.html</id>
     <published>2019-11-26T04:04:39.000Z</published>
     <updated>2019-11-26T04:04:39.000Z</updated>
     
@@ -657,8 +657,8 @@
   
   <entry>
     <title>Prototype in Javascript</title>
-    <link href="https://geekeast.github.io/developer/language/javascript/jsprototype.html"/>
-    <id>https://geekeast.github.io/developer/language/javascript/jsprototype.html</id>
+    <link href="https://geekeast.github.io/Developer/language/javascript/jsprototype.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/jsprototype.html</id>
     <published>2019-11-25T04:38:43.000Z</published>
     <updated>2019-11-25T04:38:43.000Z</updated>
     
@@ -699,8 +699,8 @@
   
   <entry>
     <title>Object in Javascript</title>
-    <link href="https://geekeast.github.io/developer/language/javascript/jsobject.html"/>
-    <id>https://geekeast.github.io/developer/language/javascript/jsobject.html</id>
+    <link href="https://geekeast.github.io/Developer/language/javascript/jsobject.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/jsobject.html</id>
     <published>2019-11-25T00:01:08.000Z</published>
     <updated>2019-11-25T00:01:08.000Z</updated>
     
@@ -735,8 +735,8 @@
   
   <entry>
     <title>Closure in Javascript</title>
-    <link href="https://geekeast.github.io/developer/language/javascript/jsclosure.html"/>
-    <id>https://geekeast.github.io/developer/language/javascript/jsclosure.html</id>
+    <link href="https://geekeast.github.io/Developer/language/javascript/jsclosure.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/jsclosure.html</id>
     <published>2019-11-24T23:28:16.000Z</published>
     <updated>2019-11-24T23:28:16.000Z</updated>
     
@@ -773,8 +773,8 @@
   
   <entry>
     <title>Scope in Javascript</title>
-    <link href="https://geekeast.github.io/developer/language/javascript/jsscope.html"/>
-    <id>https://geekeast.github.io/developer/language/javascript/jsscope.html</id>
+    <link href="https://geekeast.github.io/Developer/language/javascript/jsscope.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/jsscope.html</id>
     <published>2019-11-24T11:46:28.000Z</published>
     <updated>2019-11-24T11:46:28.000Z</updated>
     
@@ -813,8 +813,8 @@
   
   <entry>
     <title>Equality in Javascript</title>
-    <link href="https://geekeast.github.io/developer/language/javascript/jsequality.html"/>
-    <id>https://geekeast.github.io/developer/language/javascript/jsequality.html</id>
+    <link href="https://geekeast.github.io/Developer/language/javascript/jsequality.html"/>
+    <id>https://geekeast.github.io/Developer/language/javascript/jsequality.html</id>
     <published>2019-11-24T11:37:56.000Z</published>
     <updated>2019-11-24T11:37:56.000Z</updated>
     
