@@ -458,7 +458,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">1.7k</span>
+                <span title="Symbols count in article">466</span>
               
 
               
@@ -493,7 +493,8 @@
 
       
         
-          Encrypted Post. Please Enter Token.
+          <h3 id="transform"><a class="markdownIt-Anchor" href="#transform"></a> Transform</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> tasks = [&#123; <span class="string">"a"</span>: <span class="number">1</span> &#125;, &#123; <span class="string">"a"</span>: <span class="number">2</span> &#125;, &#123; <span class="string">"a"</span>: <span class="number">3</span> &#125;, &#123; <span class="string">"a"</span>: <span class="number">4</span> &#125;, &#123; <span class="string">"a"</span>: <span class="number">4</span> &#125;];</span><br><span class="line"><span class="built_in">console</span>.log(_.compact(_.transform(tasks, (_res, _val, _key) =&gt; &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(_res);</span><br><span class="line">  <span class="built_in">console</span>.log(_val);</span><br><span class="line">  <span class="built_in">console</span>.log(_key);</span><br><span class="line">  <span class="keyword">const</span> key = _.get(_val, <span class="string">'a'</span>);</span><br><span class="line">  <span class="keyword">const</span> oldValues = _.get(_res, key, []);</span><br><span class="line">  <span class="keyword">const</span> newValues = [...oldValues, _val]</span><br><span class="line">  <span class="keyword">return</span> _.set(_res, key, newValues);</span><br><span class="line">&#125;, []))); <span class="comment">// the default store</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
