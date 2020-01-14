@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/Developer/cicd/git/configgitssh.html</loc>
+    
+    <lastmod>2020-01-14T23:18:01.286Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/lodash.html</loc>
     
     <lastmod>2020-01-13T05:35:05.000Z</lastmod>
@@ -516,13 +523,6 @@
     <loc>https://geekeast.github.io/Developer/cicd/git/git-credential.html</loc>
     
     <lastmod>2019-12-12T06:25:10.694Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Developer/cicd/git/configgitssh.html</loc>
-    
-    <lastmod>2019-12-12T06:25:01.126Z</lastmod>
     
   </url>
   

@@ -1584,7 +1584,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-12-12 16:55:01" itemprop="dateModified" datetime="2019-12-12T16:55:01+10:30">2019-12-12</time>
+                <time title="Modified: 2020-01-15 09:48:01" itemprop="dateModified" datetime="2020-01-15T09:48:01+10:30">2020-01-15</time>
               
             
           </span>
@@ -1642,7 +1642,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">463</span>
+                <span title="Symbols count in article">630</span>
               
 
               
@@ -1677,9 +1677,13 @@
 
       
         
-          <h3 id="create-config-file"><a class="markdownIt-Anchor" href="#create-config-file"></a> Create Config File</h3>
+          <h3 id="generate-key"><a class="markdownIt-Anchor" href="#generate-key"></a> Generate Key</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">"example@email.com"</span> &amp;&amp; cat ~/.ssh/[private_key_file_name].pub</span><br></pre></td></tr></table></figure>
+<h3 id="add-key"><a class="markdownIt-Anchor" href="#add-key"></a> Add Key</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add ~/.ssh/[private_key_file_name].pub</span><br></pre></td></tr></table></figure>
+<h3 id="create-config-file"><a class="markdownIt-Anchor" href="#create-config-file"></a> Create Config File</h3>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ~/.ssh/config</span></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line">Host gitlab.com</span><br><span class="line">    HostName gitlab.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~/.ssh/gitlab_rsa</span><br></pre></td></tr></table></figure>
-<h3 id="generate-key"><a class="markdownIt-Anchor" href="#generate-key"></a> Generate Key</h3>
+<h3 id="generate-key-2"><a class="markdownIt-Anchor" href="#generate-key-2"></a> Generate Key</h3>
 <ul>
 <li>id_rsa for github private key filename</li>
 <li>gitlab_rsa for gitlab private key filename</li>

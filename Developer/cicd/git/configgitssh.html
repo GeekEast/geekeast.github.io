@@ -110,18 +110,18 @@
 
 
 
-  <meta name="description" content="Create Config File 12345678910# ~/.ssh/configHost github.com    HostName github.com    PreferredAuthentications publickey    IdentityFile ~/.ssh/id_rsaHost gitlab.com    HostName gitlab.com    Prefer">
+  <meta name="description" content="Generate Key 1ssh-keygen -t rsa -b 4096 -C &quot;example@email.com&quot; &amp;amp;&amp;amp; cat ~/.ssh/[private_key_file_name].pub  Add Key 1ssh-add ~/.ssh/[private_key_file_name].pub  Create Config File 12345678910#">
 <meta name="keywords" content="Github,SSH,GitLab">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Config SSH with Github and GitLab">
 <meta property="og:url" content="https://geekeast.github.io/Developer/cicd/git/configgitssh.html">
 <meta property="og:site_name" content="雪中印">
-<meta property="og:description" content="Create Config File 12345678910# ~/.ssh/configHost github.com    HostName github.com    PreferredAuthentications publickey    IdentityFile ~/.ssh/id_rsaHost gitlab.com    HostName gitlab.com    Prefer">
+<meta property="og:description" content="Generate Key 1ssh-keygen -t rsa -b 4096 -C &quot;example@email.com&quot; &amp;amp;&amp;amp; cat ~/.ssh/[private_key_file_name].pub  Add Key 1ssh-add ~/.ssh/[private_key_file_name].pub  Create Config File 12345678910#">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-12-12T06:25:01.126Z">
+<meta property="og:updated_time" content="2020-01-14T23:18:01.286Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Config SSH with Github and GitLab">
-<meta name="twitter:description" content="Create Config File 12345678910# ~/.ssh/configHost github.com    HostName github.com    PreferredAuthentications publickey    IdentityFile ~/.ssh/id_rsaHost gitlab.com    HostName gitlab.com    Prefer">
+<meta name="twitter:description" content="Generate Key 1ssh-keygen -t rsa -b 4096 -C &quot;example@email.com&quot; &amp;amp;&amp;amp; cat ~/.ssh/[private_key_file_name].pub  Add Key 1ssh-add ~/.ssh/[private_key_file_name].pub  Create Config File 12345678910#">
 
 
 
@@ -428,7 +428,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                <time title="Modified: 2019-12-12 16:55:01" itemprop="dateModified" datetime="2019-12-12T16:55:01+10:30">2019-12-12</time>
+                <time title="Modified: 2020-01-15 09:48:01" itemprop="dateModified" datetime="2020-01-15T09:48:01+10:30">2020-01-15</time>
               
             
           </span>
@@ -493,7 +493,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">463</span>
+                <span title="Symbols count in article">630</span>
               
 
               
@@ -527,9 +527,13 @@
       
 
       
-        <h3 id="create-config-file"><a class="markdownIt-Anchor" href="#create-config-file"></a> Create Config File</h3>
+        <h3 id="generate-key"><a class="markdownIt-Anchor" href="#generate-key"></a> Generate Key</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">"example@email.com"</span> &amp;&amp; cat ~/.ssh/[private_key_file_name].pub</span><br></pre></td></tr></table></figure>
+<h3 id="add-key"><a class="markdownIt-Anchor" href="#add-key"></a> Add Key</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add ~/.ssh/[private_key_file_name].pub</span><br></pre></td></tr></table></figure>
+<h3 id="create-config-file"><a class="markdownIt-Anchor" href="#create-config-file"></a> Create Config File</h3>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ~/.ssh/config</span></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line">Host gitlab.com</span><br><span class="line">    HostName gitlab.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~/.ssh/gitlab_rsa</span><br></pre></td></tr></table></figure>
-<h3 id="generate-key"><a class="markdownIt-Anchor" href="#generate-key"></a> Generate Key</h3>
+<h3 id="generate-key-2"><a class="markdownIt-Anchor" href="#generate-key-2"></a> Generate Key</h3>
 <ul>
 <li>id_rsa for github private key filename</li>
 <li>gitlab_rsa for gitlab private key filename</li>
@@ -558,14 +562,14 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/Developer/cicd/git/gitlfs.html" rel="bookmark">Github Push Large files</a></div>
+      <div class="popular-posts-title"><a href="/Developer/cicd/git/git-credential.html" rel="bookmark">Git Push without password</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/Developer/cicd/git/git-credential.html" rel="bookmark">Git Push without password</a></div>
+      <div class="popular-posts-title"><a href="/Developer/cicd/git/gitlfs.html" rel="bookmark">Github Push Large files</a></div>
       
     </li>
   
@@ -1326,7 +1330,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#create-config-file"><span class="nav-number">1.</span> <span class="nav-text"> Create Config File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#generate-key"><span class="nav-number">2.</span> <span class="nav-text"> Generate Key</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number"></span> <span class="nav-text"> </span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#generate-key"><span class="nav-number">1.</span> <span class="nav-text"> Generate Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#add-key"><span class="nav-number">2.</span> <span class="nav-text"> Add Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#create-config-file"><span class="nav-number">3.</span> <span class="nav-text"> Create Config File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#generate-key-2"><span class="nav-number">4.</span> <span class="nav-text"> Generate Key</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#-more-"><span class="nav-number"></span> <span class="nav-text"> </span></a></li></div>
             
 
           </div>
