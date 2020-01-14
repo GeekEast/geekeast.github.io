@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://geekeast.github.io/Learning/topcscourse.html</loc>
+    
+    <lastmod>2020-01-14T23:40:20.938Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geekeast.github.io/Developer/cicd/git/configgitssh.html</loc>
     
     <lastmod>2020-01-14T23:39:34.210Z</lastmod>
@@ -656,13 +663,6 @@
     <loc>https://geekeast.github.io/Learning/learnitbydoing.html</loc>
     
     <lastmod>2019-12-12T05:33:51.369Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geekeast.github.io/Learning/course-recommendation.html</loc>
-    
-    <lastmod>2019-12-12T05:33:40.065Z</lastmod>
     
   </url>
   
